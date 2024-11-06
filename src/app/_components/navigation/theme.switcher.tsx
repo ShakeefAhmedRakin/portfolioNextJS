@@ -13,7 +13,12 @@ export function ThemeSwitcher() {
     setMounted(true);
   }, []);
 
-  if (!mounted) return null;
+  if (!mounted)
+    return (
+      <button className="aspect-square rounded-full border-text border h-9 w-9 flex justify-center items-center">
+        <span className="loading loading-spinner loading-xs text-text"></span>
+      </button>
+    );
 
   const toggleTheme = () => {
     setTheme(theme === "light" ? "dark" : "light");
