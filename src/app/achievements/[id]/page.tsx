@@ -5,12 +5,16 @@ import Link from "next/link";
 import { CgExternal } from "react-icons/cg";
 import { Metadata } from "next";
 
+type AchievementParams = {
+  params: {
+    id: string;
+  };
+};
+
 // Async function to generate metadata
 export async function generateMetadata({
   params,
-}: {
-  params: { id: string };
-}): Promise<Metadata> {
+}: AchievementParams): Promise<Metadata> {
   const { id } = await params;
   const award = await awards.find((award) => award.id === id);
 
@@ -48,9 +52,7 @@ export async function generateMetadata({
 
 export default async function AchievementDetails({
   params,
-}: {
-  params: { id: string };
-}) {
+}: AchievementParams) {
   const { id } = await params;
   const award = awards.find((award) => award.id === id);
 
