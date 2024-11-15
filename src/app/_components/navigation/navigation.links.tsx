@@ -14,7 +14,9 @@ export default function NavigationLinks({
   const pathname = usePathname(); // Get the current path
 
   const linkClasses = (path: string) =>
-    `duration-300 ${pathname === path && "text-primary"}`;
+    `duration-200 ${
+      pathname === path && "text-primary bg-primary-lighter"
+    } hover:bg-primary-lighter hover:text-primary font-medium p-2.5 rounded-full`;
 
   return (
     <>

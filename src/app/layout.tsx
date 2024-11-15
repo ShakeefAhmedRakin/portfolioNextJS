@@ -3,19 +3,19 @@ import "./globals.css";
 import Navbar from "./_components/navigation/navbar";
 
 // FONTS
-import { Roboto_Mono, Inter } from "next/font/google";
+import { Montserrat, Poppins } from "next/font/google";
 import { Providers } from "./providers";
 
-const robotoFont = Roboto_Mono({
-  weight: ["100", "200", "300", "400", "500", "600", "700"],
+const montserrat = Montserrat({
+  weight: ["100", "200", "300", "400", "500", "800", "700", "800", "900"],
   subsets: ["latin"],
-  variable: "--font-roboto-mono",
+  variable: "--font-montserrat",
 });
 
-const interFont = Inter({
+const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   subsets: ["latin"],
-  variable: "--font-inter",
+  variable: "--font-poppins",
 });
 
 export const metadata: Metadata = {
@@ -32,11 +32,16 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`antialiased ${robotoFont.variable} ${interFont.variable} bg-background transition-[background-color] duration-300`}
+        className={`antialiased ${montserrat.variable} ${poppins.variable}`}
       >
         <Providers>
           <Navbar />
-          {children}
+          <div
+            id="children-body"
+            className="mt-[88px] md:mt-[96px] bg-backgroundDark"
+          >
+            {children}
+          </div>
         </Providers>
       </body>
     </html>

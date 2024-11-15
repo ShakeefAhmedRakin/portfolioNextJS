@@ -15,8 +15,8 @@ export function ThemeSwitcher() {
 
   if (!mounted)
     return (
-      <button className="aspect-square rounded-full border-text border h-9 w-9 flex justify-center items-center">
-        <span className="loading loading-spinner loading-xs text-text"></span>
+      <button className="aspect-square rounded-full border-none text-accent hover:text-primary  hover:bg-primary-lighter border h-9 w-9 flex justify-center items-center">
+        <span className="loading loading-spinner loading-xs text-accent"></span>
       </button>
     );
 
@@ -27,12 +27,12 @@ export function ThemeSwitcher() {
   return (
     <button
       onClick={toggleTheme}
-      className="aspect-square rounded-full border-text border h-9 w-9 flex justify-center items-center"
+      className="aspect-square rounded-full border-none text-accent hover:text-primary  hover:bg-primary-lighter border h-9 w-9 flex justify-center items-center"
     >
       {theme === "light" ? (
-        <FiMoon className="text-text text-lg" /> // Moon icon for light theme
+        <FiMoon className="text-lg" /> // Moon icon for light theme
       ) : (
-        <FiSun className="text-text text-lg" /> // Sun icon for dark theme
+        <FiSun className="text-lg" /> // Sun icon for dark theme
       )}
     </button>
   );

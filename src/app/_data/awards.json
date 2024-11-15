@@ -1,0 +1,288 @@
+[
+  {
+    "isFeatured": true,
+    "photo": "/awardslogos/nali2024.png",
+    "position": "Bronze Medal",
+    "title": "New Academia Learning Innovation 2024",
+    "date": "2024-10-01",
+    "people": [
+      {
+        "name": "Dr. Yusliza Yusoff",
+        "link": "Supervisor"
+      },
+      {
+        "name": "Shakeef Ahmed Rakin",
+        "link": "Supervisor"
+      },
+      {
+        "name": "Adnan Shafi",
+        "link": "Software Developer"
+      },
+      {
+        "name": "Toya Lazmin Khan",
+        "link": "Software Developer"
+      },
+      {
+        "name": "Nicholas Pang Jia Chern",
+        "link": "Software Developer"
+      },
+      {
+        "name": "Nazihah Surati",
+        "link": "Software Developer"
+      }
+    ],
+    "blog": {
+      "title": "Presenting MASRETT at New Academia Learning Innovation 2024",
+      "summary": "In October 2024, I had the chance to present MASRETT (Malaysian Sign Language Real-Time Tutorial) at the Pre-NALI 2024 workshops, hosted by Universiti Teknologi Malaysia (UTM). The event, aimed at exploring innovative ways to integrate research into teaching, provided a platform for educators, researchers, and technology enthusiasts to share ideas and insights. It was an exciting opportunity for our team to showcase a demo of MASRETT, a project we’ve been working on to make learning Malaysian Sign Language (MSL) more accessible and interactive for the deaf and hard-of-hearing community in Malaysia.",
+      "content": [
+        {
+          "title": "About MASRETT",
+          "text": "MASRETT is designed to allow users to practice MSL using their webcams, providing real-time feedback on their signs. The platform includes features like progress tracking, quizzes, and a sandbox mode where learners can practice at their own pace. While the project is still in its early stages, our demo highlighted what’s to come: a powerful tool for MSL learning that integrates AI and real-time technology. The primary focus of our demo was the real-time model implementation, which tracks user progress and gives feedback as they practice.",
+          "image": null
+        },
+        {
+          "title": "Technical Contributions",
+          "text": "Adnan Shafi and I contributed remotely to MASRETT, focusing on the technical side of things. Our responsibilities included developing the web platform using the MERN stack (MongoDB, Express.js, React, Node.js) and implementing the real-time sign language detection model. The integration of this AI-powered model was one of the most exciting parts of the project, as it allowed us to give users immediate feedback on their sign language skills. Although the real-time detection system isn’t fully complete, the demo provided a glimpse into the potential of what we’re building.",
+          "image": {
+            "url": "https://i.ibb.co.com/2qKVJyd/screenshot.png",
+            "source": "https://masrett-e5a0f.web.app/",
+            "label": "MASRETT Web Platform Demo",
+            "alt": "MASRETT Web Platform Demo"
+          }
+        },
+        {
+          "title": "Future Plans",
+          "text": "The project isn’t finished yet—there’s still a lot of work to be done before MASRETT is ready for full release. While we’ve successfully implemented features like progress tracking and real-time sign language feedback, we plan to expand the platform with more interactive elements, better model accuracy, and enhanced user engagement. Our team, including Toya Lazmin Khan, Nicholas Pang Jia Chern, Nazihah Surati, and our supervisor, Dr. Yusliza Yusoff, is committed to completing MASRETT and turning it into a fully functional platform for learning MSL.",
+          "image": null
+        },
+        {
+          "title": "Recognition at NALI 2024",
+          "text": "At NALI 2024, the bronze medal we received wasn’t just a recognition of our work—it was a reminder of the impact that this project could have on the community. MASRETT is still a work in progress, but the feedback and interest we received at the event have only motivated us to finish the project and make it as accessible and user-friendly as possible. I’m looking forward to what comes next and can’t wait to see how MASRETT evolves in the future.",
+          "image": {
+            "url": "https://i.ibb.co.com/KbfPdRS/medal.jpg",
+            "source": null,
+            "label": "Bronze Medal Award",
+            "alt": "Bronze Medal Award"
+          }
+        },
+        {
+          "text": "Working on MASRETT has been a challenging yet deeply meaningful experience for me. Presenting it at NALI 2024 felt like a milestone—not because of the award, but because it was a chance to show people something our team truly believes in. Hearing firsthand how MASRETT could help people in the deaf and hard-of-hearing community reminded me why we started this project. There’s still a lot to do, and some days are tough, but seeing the positive response motivates me to keep going. I’m looking forward to building on this momentum and bringing MASRETT closer to a platform that can make a real difference."
+        }
+      ]
+    },
+    "mainImage": {
+      "url": "https://i.ibb.co.com/L8nGT47/462585357-991222532808195-2615018901330388891-n.jpg",
+      "source": "https://www.facebook.com/photo/?fbid=991222519474863&set=pcb.991231829473932",
+      "label": "Bronze Medal Award At NALI 2024",
+      "alt": "Bronze Medal Award At NALI 2024"
+    },
+    "eventName": "New Academia Learning Innovation",
+    "linkedInPost": "https://www.linkedin.com/post/nali2024",
+    "id": "new-academia-learning-innovation-2024",
+    "seo": {
+      "keywords": [
+        "New Academia Learning Innovation",
+        "education",
+        "Kuala Lumpur",
+        "learning technologies",
+        "student engagement",
+        "hackathon"
+      ],
+      "slug": "new-academia-learning-innovation-2024",
+      "socialMediaLinks": {
+        "linkedin": "https://www.linkedin.com/post/nali2024"
+      }
+    }
+  },
+
+  {
+    "isFeatured": true,
+    "photo": "/awardslogos/bitnbuild.png",
+    "position": "Top 10 Finalists",
+    "title": "GDSC CRCE BitNBuild’24 Hackathon",
+    "date": "2024-02-01",
+    "blogTitle": "Presenting MASRETT at New Academia Learning Innovation 2024",
+    "description": "A competitive hackathon organized by Google Developer Student Clubs CRCE to encourage innovative problem-solving.",
+    "content": [
+      {
+        "title": "Hackathon Summary",
+        "text": "The BitNBuild Hackathon 2024, organized by GDSC CRCE, focused on encouraging students to develop innovative tech solutions."
+      },
+      {
+        "title": "Our Project",
+        "text": "We developed a machine learning application to solve real-time data analysis problems, placing us among the top 10 finalists."
+      },
+      {
+        "title": "Experience",
+        "text": "This hackathon provided a collaborative environment and hands-on experience, essential for expanding our skills and networks.",
+        "image": {
+          "url": "/images/bitnbuild2024_experience.png",
+          "label": "Team collaborating during BitNBuild Hackathon"
+        }
+      }
+    ],
+    "eventName": "BitNBuild Hackathon",
+    "linkedInPost": null,
+    "id": "gdsc-crce-bitnbuild-24-hackathon",
+    "seo": {
+      "keywords": [
+        "BitNBuild Hackathon",
+        "GDSC CRCE",
+        "hackathon",
+        "machine learning",
+        "top 10 finalists"
+      ],
+      "slug": "gdsc-crce-bitnbuild-24-hackathon",
+      "socialMediaLinks": {}
+    }
+  },
+  {
+    "isFeatured": true,
+    "photo": "/awardslogos/kitahack2024.png",
+    "position": "Participatory",
+    "title": "GDSC Kitahack 2024",
+    "date": "2024-01-01",
+    "blogTitle": "Presenting MASRETT at New Academia Learning Innovation 2024",
+    "description": "A hackathon hosted by GDSC focusing on community-centered projects and local impact.",
+    "content": [
+      {
+        "title": "Event Overview",
+        "text": "GDSC Kitahack 2024 emphasized community-centered projects, with participants encouraged to address local challenges through technology."
+      },
+      {
+        "title": "Our Participation",
+        "text": "We developed a solution aimed at environmental sustainability, focusing on waste management through IoT."
+      }
+    ],
+    "eventName": "Kitahack 2024",
+    "linkedInPost": null,
+    "id": "gdsc-kitahack-2024",
+    "seo": {
+      "keywords": [
+        "GDSC Kitahack",
+        "community-centered projects",
+        "hackathon",
+        "IoT",
+        "environmental sustainability"
+      ],
+      "slug": "gdsc-kitahack-2024",
+      "socialMediaLinks": {}
+    }
+  },
+  {
+    "isFeatured": true,
+    "photo": "/awardslogos/devhack2023.png",
+    "position": "Top 10 Finalists",
+    "title": "Devhack 2023",
+    "date": "2023-12-01",
+    "blogTitle": "Presenting MASRETT at New Academia Learning Innovation 2024",
+    "description": "A national-level hackathon aimed at nurturing young developers and promoting innovative solutions.",
+    "content": [
+      {
+        "title": "Competition Overview",
+        "text": "Devhack 2023 was a national-level hackathon focused on fostering young talent in the tech industry and promoting innovative solutions."
+      },
+      {
+        "title": "Our Solution",
+        "text": "We developed an AI-powered tool to improve accessibility for visually impaired individuals, landing us a place in the top 10 finalists.",
+        "image": {
+          "url": "/images/devhack2023_solution.png",
+          "label": "Demo of accessibility tool"
+        }
+      }
+    ],
+    "eventName": "Devhack 2023",
+    "linkedInPost": "https://www.linkedin.com/post/devhack2023",
+    "id": "devhack-2023",
+    "seo": {
+      "keywords": [
+        "Devhack 2023",
+        "AI-powered tool",
+        "accessibility",
+        "hackathon",
+        "top 10 finalists"
+      ],
+      "slug": "devhack-2023",
+      "socialMediaLinks": {
+        "linkedin": "https://www.linkedin.com/post/devhack2023"
+      }
+    }
+  },
+  {
+    "isFeatured": true,
+    "photo": "/awardslogos/myrapid.png",
+    "position": "Runners Up",
+    "title": "MyRapid Bus x UTM Data Hackathon 2023",
+    "date": "2023-09-01",
+    "blogTitle": "Presenting MASRETT at New Academia Learning Innovation 2024",
+    "description": "A hackathon organized by MyRapid and UTM, focusing on data-driven solutions to improve urban transportation.",
+    "content": [
+      {
+        "title": "Hackathon Focus",
+        "text": "Hosted by MyRapid and UTM, this hackathon aimed at data-driven solutions to improve urban transportation in Malaysia."
+      },
+      {
+        "title": "Our Winning Idea",
+        "text": "We created a predictive model for optimizing bus schedules based on real-time data, securing us the runners-up position."
+      },
+      {
+        "title": "Learning Experience",
+        "text": "This event allowed us to work on real-world data and contribute to enhancing public transportation efficiency.",
+        "image": {
+          "url": "/images/myrapid2023_learning.png",
+          "label": "Team presenting project"
+        }
+      }
+    ],
+    "eventName": "MyRapid Bus Data Hackathon",
+    "linkedInPost": "https://www.linkedin.com/post/myrapid-bus-data-hackathon",
+    "id": "myrapid-bus-utm-data-hackathon-2023",
+    "seo": {
+      "keywords": [
+        "MyRapid Bus Data Hackathon",
+        "urban transportation",
+        "predictive model",
+        "data-driven solutions",
+        "runners up"
+      ],
+      "slug": "myrapid-bus-utm-data-hackathon-2023",
+      "socialMediaLinks": {
+        "linkedin": "https://www.linkedin.com/post/myrapid-bus-data-hackathon"
+      }
+    }
+  },
+  {
+    "isFeatured": true,
+    "photo": "/awardslogos/innojam.png",
+    "position": "5th Place",
+    "title": "InnoJam 2023: Smart Sustainable City",
+    "date": "2023-09-01",
+    "blogTitle": "Presenting MASRETT at New Academia Learning Innovation 2024",
+    "description": "An innovation jam aimed at designing sustainable solutions for urban challenges, hosted by Smart City Council.",
+    "content": [
+      {
+        "title": "Event Background",
+        "text": "InnoJam 2023 focused on designing sustainable solutions for urban environments, held by the Smart City Council."
+      },
+      {
+        "title": "Our Project",
+        "text": "Our project, aimed at reducing city traffic congestion through predictive analytics, earned us a 5th place finish."
+      }
+    ],
+    "eventName": "InnoJam 2023",
+    "linkedInPost": null,
+    "id": "innojam-2023-smart-sustainable-city",
+    "seo": {
+      "keywords": [
+        "InnoJam 2023",
+        "sustainable solutions",
+        "smart city",
+        "urban challenges",
+        "predictive analytics",
+        "5th place"
+      ],
+      "slug": "innojam-2023-smart-sustainable-city",
+      "socialMediaLinks": {}
+    }
+  }
+]

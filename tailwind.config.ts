@@ -12,13 +12,20 @@ const config: Config = {
       colors: {
         text: "var(--text)",
         background: "var(--background)",
-        primary: "var(--primary)",
-        secondary: "var(--secondary)",
+        backgroundDark: "var(--background-dark)",
+        primary: {
+          DEFAULT: "var(--primary)",
+          lighter: "var(--primary-light)",
+        },
+        secondary: {
+          DEFAULT: "var(--secondary)",
+          lighter: "var(--secondary-light)",
+        },
         accent: "var(--accent)",
       },
       fontFamily: {
-        heading: ["var(--font-inter)"],
-        body: ["var(--font-roboto-mono)"],
+        heading: ["var(--font-montserrat)"],
+        body: ["var(--font-poppins)"],
       },
     },
   },

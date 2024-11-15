@@ -1,68 +1,52 @@
-import Image from "next/image";
 import Link from "next/link";
 import NavigationDropDown from "./navigationdropdown";
 import { ThemeSwitcher } from "./theme.switcher";
-import NavigationLinks from "../navigation.links";
+import NavigationLinks from "./navigation.links";
+import Logo from "../brand/logo";
 
 export default function Navbar() {
   return (
     <>
       <nav
-        className="sticky top-0 bg-background shadow-sm shadow-primary z-50  transition-[background-color] duration-300"
+        className="fixed w-full top-0 bg-background z-50 shadow-sm"
         aria-label="Main Navigation"
       >
-        <div className="container mx-auto px-8 md:px-10 lg:px-20 xl:px-40 2xl:px-72 py-6 ">
+        <div className="container mx-auto px-4 md:px-10 lg:px-20 xl:px-40 py-6">
           {/* Navbar */}
           <div className="flex items-center justify-between">
             {/* Navbar Start - Logo */}
             <div>
-              <Link href="/" aria-label="Homepage">
-                <Image
-                  className="hidden lg:flex"
-                  src="/logos/logolarge.png"
-                  width={120}
-                  height={200}
-                  alt="Website Logo Large"
-                  priority
-                />
-                <Image
-                  className="flex lg:hidden"
-                  src="/logos/logosmall.png"
-                  width={35}
-                  height={35}
-                  alt="Website Logo Small"
-                  priority
-                />
-              </Link>
+              <Logo />
             </div>
 
-            {/* Navbar End */}
-            <div className="flex items-center">
+            {/* Navbar Middle */}
+            <div className="flex items-center justify-center flex-1">
               {/* Navbar Navigation Links */}
               <ul
-                className="font-heading text-sm gap-7 text-text lg:gap-9 font-medium hidden md:flex"
+                className="font-heading u font-light text-text gap-4 xl:gap-8  text-sm hidden w-full justify-center lg:flex"
                 role="menubar"
               >
                 <NavigationLinks isDropDownLinks={false}></NavigationLinks>
               </ul>
-
-              {/* Resume Button */}
-              <Link href="/resume" aria-label="Resume Page">
+            </div>
+            {/* Navbar End */}
+            <div className="flex items-center justify-end gap-2">
+              {/* Theme Switcher */}
+              <div aria-label="Toggle Theme">
+                <ThemeSwitcher />
+              </div>
+              {/* Contact Button */}
+              <Link href="/contact" aria-label="Contact Page">
                 <button
-                  className="btn border-none bg-gradient-to-br from-primary via-primary to-accent text-background shadow-md hover:border-none rounded-lg ml-6"
-                  aria-label="Resume"
+                  className="btn rounded-full bg-transparent border-primary text-primary shadow-none hover:bg-primary-lighter hover:text-primary hover:border-primary hidden md:flex"
+                  aria-label="contact"
                 >
-                  Resume
+                  Get In Touch
                 </button>
               </Link>
 
-              {/* Theme Switcher */}
-              <div className="mx-4" aria-label="Toggle Theme">
-                <ThemeSwitcher />
-              </div>
-
               {/* Navigation Dropdown */}
-              <div className="md:hidden" aria-label="Navigation Menu">
+              <div className="lg:hidden" aria-label="Navigation Menu">
                 <NavigationDropDown />
               </div>
             </div>

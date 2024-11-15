@@ -1,0 +1,25 @@
+[
+    {
+        "isActive": true,
+        "position": "Junior Full Stack Engineer",
+        "company": "Twlick",
+        "startDate": "2024-10-01",
+        "endDate": null,  
+        "description": [
+            "Developed and maintained features using Next.js, Supabase, PostgreSQL, and ShadCN UI on multiple concurrent projects."
+        ]
+    },
+    {
+        "isActive": true,
+        "position": ".NET Software Developer",
+        "company": "Prudence Dublin College, HOLOS-IE",
+        "startDate": "2024-08-01",
+        "endDate": null,
+        "description": [
+            "Developed and maintained features for the HOLOS-IE application using C# and MVVM architecture.",
+            "Assisted in implementing UI components with Avalonia and Telerik for enhanced design.",
+            "Debugged existing issues, improving code quality and functionality.",
+            "Collaborated with the development team on feature feasibility."
+        ]
+    }
+]

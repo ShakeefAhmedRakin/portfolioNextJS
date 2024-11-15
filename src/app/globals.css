@@ -4,17 +4,49 @@
 
 @layer base {
   :root {
-    --text: #121211;
-    --background: #f3f3f3;
-    --primary: #0079d6;
-    --secondary: #003461;
-    --accent: #02cfa9;
+    --text: #081130;
+    --background: #ffffff;
+    --background-dark: #fcfcfc;
+    --primary: #1a90ff;
+    --primary-light: #ebf5ff;
+    --secondary: #6a3dff;
+    --secondary-light: #f6f4ff;
+    --accent: #06071e;
   }
+
   .dark {
-    --text: #eeeeed;
-    --background: #141414;
-    --primary: #29a2ff;
-    --secondary: #9ed2ff;
-    --accent: #30fdd7;
+    --text: #ffffff;
+    --background: #161616;
+    --background-dark: #131313;
+    --primary: #0077e6;
+    --primary-light: #002a54;
+    --secondary: #795ed3;
+    --secondary-light: #272238;
+    --accent: #e1e2f9;
   }
+}
+
+html {
+  overflow-y: scroll;
+  scrollbar-width: thin;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+.fade-in-delayed {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+  animation-delay: 1s;
 }

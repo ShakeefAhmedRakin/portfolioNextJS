@@ -1,7 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  images: {
+    domains: ["scontent.fdac14-1.fna.fbcdn.net", "i.ibb.co.com"], // Add the external image domain here
+  },
 };
 
 export default nextConfig;
