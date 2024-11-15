@@ -2,7 +2,6 @@
 import { useEffect, useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoClose } from "react-icons/io5";
-import Image from "next/image";
 import NavigationLinks from "./navigation.links";
 import Link from "next/link";
 import Logo from "../brand/logo";

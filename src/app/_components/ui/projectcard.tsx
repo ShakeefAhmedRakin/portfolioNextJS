@@ -2,13 +2,11 @@ import Link from "next/link";
 import { FaArrowRightLong } from "react-icons/fa6";
 
 export default function ProjectCards({
-  projectId,
   projectTitle,
   projectDescription,
   projectTags,
   projectHref,
 }: {
-  projectId?: string;
   projectTitle: string;
   projectDescription: string;
   projectTags: string[];
