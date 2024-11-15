@@ -1,14 +1,5 @@
 import workData from "../_data/work.json";
 
-interface WorkDataItem {
-  isActive: boolean;
-  position: string;
-  company: string;
-  startDate: string;
-  endDate: string | null;
-  description: string[];
-}
-
 export default function Work() {
   function parseDate(dateStr: string | null | undefined) {
     return dateStr ? new Date(dateStr) : new Date();
