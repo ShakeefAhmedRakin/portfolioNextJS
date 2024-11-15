@@ -1,20 +1,33 @@
 import workData from "../_data/work.json";
 
+interface WorkDataItem {
+  isActive: boolean;
+  position: string;
+  company: string;
+  startDate: string;
+  endDate: string | null;
+  description: string[];
+}
+
 export default function Work() {
-  // Helper function to convert date strings into Date objects for sorting
-  function parseDate(dateStr) {
-    return dateStr ? new Date(dateStr) : new Date(); // If null, set to current date
+  function parseDate(dateStr: string | null | undefined) {
+    return dateStr ? new Date(dateStr) : new Date();
   }
 
-  // Separate and sort active positions (current positions)
   const activePositions = workData
     .filter((item) => item.isActive)
-    .sort((a, b) => parseDate(b.startDate) - parseDate(a.startDate));
+    .sort(
+      (a, b) =>
+        parseDate(b.startDate).getTime() - parseDate(a.startDate).getTime()
+    );
 
   // Separate and sort past positions (where isActive is false)
   const pastPositions = workData
     .filter((item) => !item.isActive)
-    .sort((a, b) => parseDate(b.startDate) - parseDate(a.startDate));
+    .sort(
+      (a, b) =>
+        parseDate(b.startDate).getTime() - parseDate(a.startDate).getTime()
+    );
 
   return (
     <section className="bg-backgroundDark min-h-screen">
