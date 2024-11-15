@@ -5,30 +5,24 @@ import Link from "next/link";
 import { CgExternal } from "react-icons/cg";
 import { Metadata } from "next";
 
-type AchievementParams = {
-  params: {
-    id: string;
-  };
-};
-
 // Async function to generate metadata
 export async function generateMetadata({
   params,
-}: AchievementParams): Promise<Metadata> {
-  const { id } = await params;
-  const award = await awards.find((award) => award.id === id);
+}: {
+  params: Promise<{ id: string }>;
+}): Promise<Metadata> {
+  const { id } = await params; // Extract 'id' after resolving the promise
+  const award = awards.find((award) => award.id === id);
 
   return {
-    // PAGE GOOGLE TITLE / DESCRIPTION
-    title: award?.blog?.title,
-    description: award?.blog?.summary,
-
-    // OPEN GRAPH METADATA
+    title: award?.blog?.title || "Achievement Details",
+    description:
+      award?.blog?.summary || "Explore details about this achievement.",
     openGraph: {
       title: award?.blog?.title,
       type: "article",
       description: award?.blog?.summary,
-      authors: award?.people?.map((person) => person.name),
+      authors: award?.people?.map((person) => person.name) || [],
       url: `${process.env.WEBSITE_URL}/achievements/${award?.id}`,
       images: [
         {
@@ -36,8 +30,6 @@ export async function generateMetadata({
         },
       ],
     },
-
-    // TWITTER METADATA
     twitter: {
       title: award?.blog?.title,
       description: award?.blog?.summary,
@@ -52,7 +44,9 @@ export async function generateMetadata({
 
 export default async function AchievementDetails({
   params,
-}: AchievementParams) {
+}: {
+  params: Promise<{ id: string }>;
+}) {
   const { id } = await params;
   const award = awards.find((award) => award.id === id);
 
