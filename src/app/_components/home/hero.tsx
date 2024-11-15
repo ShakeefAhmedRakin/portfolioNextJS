@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { IoIosArrowForward } from "react-icons/io";
-import HeroAnimation from "../ui/heroanimation";
+// import HeroAnimation from "../ui/heroanimation";
 import AnimatedTitle from "../animations/titleanimation";
 
 export default function Hero() {
@@ -52,7 +52,7 @@ export default function Hero() {
             className="aspect-square z-10 border border-primary shadow-primary shadow object-cover rounded-full min-w-[250px] md:min-w-[300px] max-w-[250px] xl:max-w-sm w-full"
           ></Image>
           <div className="absolute w-[150%] max-w-[100vw] -bottom-16 md:-bottom-20">
-            <HeroAnimation></HeroAnimation>
+            {/* <HeroAnimation></HeroAnimation> */}
           </div>
         </div>
       </div>
