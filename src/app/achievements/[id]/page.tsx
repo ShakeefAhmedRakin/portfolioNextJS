@@ -4,8 +4,14 @@ import awards from "../../_data/awards.json";
 import Link from "next/link";
 import { CgExternal } from "react-icons/cg";
 import { Metadata } from "next";
+import BlogNotFound from "@/app/_components/errors/blognotfound";
 
-// Async function to generate metadata
+export async function generateStaticParams() {
+  return awards.map((award) => ({
+    id: award.id,
+  }));
+}
+
 export async function generateMetadata({
   params,
 }: {
@@ -15,27 +21,54 @@ export async function generateMetadata({
   const award = awards.find((award) => award.id === id);
 
   return {
-    title: award?.blog?.title || "Achievement Details",
+    // GOOGLE INDEXING SEO TAGS
+    title: award?.seo?.googleIndexing?.title || "Achievement Details",
     description:
-      award?.blog?.summary || "Explore details about this achievement.",
+      award?.seo?.googleIndexing?.description ||
+      "Explore details about this achievement.",
+    keywords: award?.seo?.googleIndexing?.keywords || "Achievement, Details",
+    publisher: "Shakeef Ahmed Rakin",
+    alternates: {
+      canonical: `${process.env.WEBSITE_URL}/achievements/${award?.id}`,
+    },
+    robots: "index, follow",
+
+    // PREVIEW TAGS FOR SOCIAL MEDIA
     openGraph: {
-      title: award?.blog?.title,
+      title: award?.seo?.openGraphCard?.title || award?.blog?.title,
       type: "article",
-      description: award?.blog?.summary,
+      description:
+        award?.seo?.openGraphCard?.description || award?.blog?.summary,
       authors: award?.people?.map((person) => person.name) || [],
       url: `${process.env.WEBSITE_URL}/achievements/${award?.id}`,
       images: [
         {
-          url: award?.mainImage?.url || award?.photo || "/logos/logo.png",
+          url:
+            award?.seo?.openGraphCard?.image ||
+            award?.mainImage?.url ||
+            award?.photo ||
+            "/logos/logo.png",
+          alt:
+            award?.seo?.openGraphCard?.imgAlt ||
+            award?.mainImage?.alt ||
+            "Achievement Image",
         },
       ],
     },
     twitter: {
-      title: award?.blog?.title,
-      description: award?.blog?.summary,
+      title: award?.seo?.twitterCard?.title || award?.blog?.title,
+      description: award?.seo?.twitterCard?.description || award?.blog?.summary,
       images: [
         {
-          url: award?.mainImage?.url || award?.photo || "/logos/logo.png",
+          url:
+            award?.seo?.twitterCard?.image ||
+            award?.mainImage?.url ||
+            award?.photo ||
+            "/logos/logo.png",
+          alt:
+            award?.seo?.twitterCard?.imgAlt ||
+            award?.mainImage?.alt ||
+            "Achievement Image",
         },
       ],
     },
@@ -51,7 +84,7 @@ export default async function AchievementDetails({
   const award = awards.find((award) => award.id === id);
 
   if (!award) {
-    return <p>Loading...</p>;
+    return BlogNotFound();
   }
 
   return (
@@ -110,9 +143,13 @@ export default async function AchievementDetails({
           {/* CONTENT SECTIONS */}
           {award.blog?.content.map((section, index) => (
             <section key={index} className="mt-5">
-              <h2 className="font-heading text-text font-bold text-md md:text-lg xl:text-xl">
-                {section?.title}
-              </h2>
+              {section?.title && (
+                <>
+                  <h2 className="font-heading text-text font-bold text-md md:text-lg xl:text-xl">
+                    {section?.title}
+                  </h2>
+                </>
+              )}
               <p className="my-4 font-body font-light text-text text-xs lg:text-base">
                 {section?.text}
               </p>

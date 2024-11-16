@@ -2,7 +2,12 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   images: {
-    domains: ["scontent.fdac14-1.fna.fbcdn.net", "i.ibb.co.com"], // Add the external image domain here
+    domains: [
+      "scontent.fdac14-1.fna.fbcdn.net",
+      "i.ibb.co.com",
+      "media.licdn.com",
+      "i.postimg.cc",
+    ], // Add the external image domain here
   },
 };
 
