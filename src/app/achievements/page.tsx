@@ -46,8 +46,8 @@ export default function Achievements() {
                     href={`achievements/${award.id}`}
                     className="rounded-full mt-4"
                   >
-                    <button className="btn btn-sm bg-transparent text-primary rounded-full border-background shadow-none relative font-body text-xs group hover:bg-primary hover:text-background hover:border-primary w-full underline">
-                      View Details
+                    <button className="btn btn-sm bg-transparent text-primary rounded-full border dark:border-gray-800 shadow-none relative font-body text-xs group hover:bg-primary hover:text-background hover:border-primary w-full underline">
+                      Details
                       <IoIosArrowForward className="absolute right-2 text-lg opacity-0 group-hover:opacity-100 duration-[100ms]" />
                     </button>
                   </Link>

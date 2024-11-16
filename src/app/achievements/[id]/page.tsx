@@ -216,7 +216,7 @@ export default async function AchievementDetails({
                 })}
               </p>
             </div>
-
+            <hr className="my-5" />
             {/* List of People */}
             <div className="flex flex-col space-y-2">
               {award?.people?.map((person, index) => (
@@ -224,7 +224,25 @@ export default async function AchievementDetails({
                   {/* Person's Avatar */}
                   <BsPerson className="text-text" />
                   {/* Person's Name */}
-                  <p className="font-body text-xs text-text">{person.name}</p>
+                  {person.link ? (
+                    <>
+                      <Link
+                        href={person.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={`View information about ${person.name}`}
+                        className="font-body text-xs text-text underline"
+                      >
+                        {person.name}
+                      </Link>
+                    </>
+                  ) : (
+                    <>
+                      <p className="font-body text-xs text-text">
+                        {person.name}
+                      </p>
+                    </>
+                  )}
                 </div>
               ))}
             </div>

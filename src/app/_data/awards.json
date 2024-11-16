@@ -8,27 +8,27 @@
     "people": [
       {
         "name": "Dr. Yusliza Yusoff",
-        "link": "Supervisor"
+        "link": "https://www.linkedin.com/in/yusliza/"
       },
       {
         "name": "Shakeef Ahmed Rakin",
-        "link": "Supervisor"
+        "link": "https://www.linkedin.com/in/shakeef-ahmed-rakin/"
       },
       {
         "name": "Adnan Shafi",
-        "link": "Software Developer"
+        "link": "https://www.linkedin.com/in/adnan-shafi1/"
       },
       {
         "name": "Toya Lazmin Khan",
-        "link": "Software Developer"
+        "link": null
       },
       {
         "name": "Nicholas Pang Jia Chern",
-        "link": "Software Developer"
+        "link": "https://eportfolio.utm.my/user/nicholas-pang-jia-chern"
       },
       {
         "name": "Nazihah Surati",
-        "link": "Software Developer"
+        "link": "https://www.linkedin.com/in/nazihah-surati-7b2069271/"
       }
     ],
     "blog": {
@@ -103,17 +103,14 @@
         "title": "Bronze Medal at New Academia Learning Innovation 2024 | MASRETT",
         "description": "Shakeef Ahmed Rakin and his team received the Bronze Medal at NALI 2024 for their MASRETT project. Learn about the team's journey and innovative work.",
         "image": "https://i.ibb.co.com/L8nGT47/462585357-991222532808195-2615018901330388891-n.jpg",
-        "imgAlt": "Bronze Medal Award at NALI 2024",
-        "url": "https://shakeefahmedrakin.vercel.app/achievements/new-academia-learning-innovation-2024"
+        "imgAlt": "Bronze Medal Award at NALI 2024"
       },
       "openGraphCard": {
         "title": "Bronze Medal at New Academia Learning Innovation 2024 | MASRETT",
         "type": "article",
         "image": "https://i.ibb.co.com/L8nGT47/462585357-991222532808195-2615018901330388891-n.jpg",
         "imgAlt": "Bronze Medal Award at NALI 2024",
-        "site_name": "Shakeef Ahmed Rakin - Achievements",
-        "description": "Our innovative MASRETT project won a Bronze Medal at the New Academia Learning Innovation 2024 event. Read about the journey, team contributions, and future plans.",
-        "locale": "en_US"
+        "description": "Our innovative MASRETT project won a Bronze Medal at the New Academia Learning Innovation 2024 event. Read about the journey, team contributions, and future plans."
       }
     }
   },
@@ -126,19 +123,19 @@
     "people": [
       {
         "name": "Shakeef Ahmed Rakin",
-        "link": "Software Developer"
+        "link": "https://www.linkedin.com/in/shakeef-ahmed-rakin/"
       },
       {
         "name": "Adnan Shafi",
-        "link": "Software Developer"
+        "link": "https://www.linkedin.com/in/adnan-shafi1/"
       },
       {
         "name": "Gm Shimon",
-        "link": "Team Member"
+        "link": "https://www.linkedin.com/in/gm-shimon/"
       },
       {
         "name": "John A. Gomez",
-        "link": "Team Member"
+        "link": null
       }
     ],
     "blog": {
@@ -168,7 +165,6 @@
           "text": "The biggest takeaway for me wasn’t just the technical skills or the project itself—it was realizing that I could build something substantial within a limited time frame. The challenge forced me to think quickly, prioritize effectively, and trust my abilities. It also reaffirmed the importance of teamwork. Everyone brought their strengths to the table, and together we created something meaningful in just a day. I’m looking forward to taking this experience into future challenges."
         },
         {
-          "title": "Looking Ahead",
           "text": "AgriSmart is still in its early stages, but the potential is clear. While the hackathon is over, the experience has left me motivated to keep refining my skills and exploring new ideas. I now know that even under intense constraints, I can deliver results, and I’m excited to see where this confidence takes me."
         }
       ]
@@ -185,7 +181,7 @@
     "seo": {
       "googleIndexing": {
         "title": "Top 10 Finalists at GDSC CRCE BitNBuild’24 Hackathon | Shakeef Ahmed Rakin",
-        "description": "Our AgriSmart project secured a spot in the Top 10 Finalists at GDSC CRCE BitNBuild’24 Hackathon. Learn more about the experience and our innovative solution.",
+        "description": "Our AgriSmart project secured a spot in the Top 10 Finalists at GDSC CRCE BitNBuild’24 Hackathon. Learn more about the experience.",
         "keywords": [
           "AgriSmart",
           "GDSC CRCE BitNBuild’24",
@@ -206,51 +202,121 @@
         "title": "Top 10 Finalists at GDSC CRCE BitNBuild’24 Hackathon | AgriSmart",
         "description": "Shakeef Ahmed Rakin and team made it to the Top 10 Finalists at GDSC CRCE BitNBuild’24 Hackathon. Discover the story behind AgriSmart, a farming logistics platform.",
         "image": "https://media.licdn.com/dms/image/v2/D5622AQG-JfZ4sT1v2A/feedshare-shrink_800/feedshare-shrink_800/0/1710263130678?e=1734566400&v=beta&t=bHTwrH5VLHcGYAlTwizE4M6C8PbgqWgnBqFv5Gwq7R0",
-        "imgAlt": "Top 10 Finalists at BitNBuild 2024",
-        "url": "https://shakeefahmedrakin.vercel.app/achievements/gdsc-crce-bitnbuild-2024"
+        "imgAlt": "Top 10 Finalists at BitNBuild 2024"
       },
       "openGraphCard": {
         "title": "Top 10 Finalists at GDSC CRCE BitNBuild’24 Hackathon | AgriSmart",
         "type": "article",
         "image": "https://media.licdn.com/dms/image/v2/D5622AQG-JfZ4sT1v2A/feedshare-shrink_800/feedshare-shrink_800/0/1710263130678?e=1734566400&v=beta&t=bHTwrH5VLHcGYAlTwizE4M6C8PbgqWgnBqFv5Gwq7R0",
         "imgAlt": "Top 10 Finalists at BitNBuild 2024",
-        "site_name": "Shakeef Ahmed Rakin - Achievements",
-        "description": "Our AgriSmart project secured a Top 10 spot at GDSC CRCE BitNBuild’24 Hackathon. Read about the journey, challenges, and our innovative approach to farming logistics.",
-        "locale": "en_US"
+        "description": "Our AgriSmart project secured a Top 10 spot at GDSC CRCE BitNBuild’24 Hackathon. Read about the journey, challenges, and our innovative approach to farming logistics."
       }
     }
   },
   {
     "isFeatured": true,
     "photo": "/awardslogos/kitahack2024.png",
-    "position": "Participatory",
-    "title": "GDSC Kitahack 2024",
-    "date": "2024-01-01",
-    "blogTitle": "Presenting MASRETT at New Academia Learning Innovation 2024",
-    "description": "A hackathon hosted by GDSC focusing on community-centered projects and local impact.",
-    "content": [
+    "position": "Participatory Award",
+    "title": "Kitahack 2024",
+    "date": "2024-01-15",
+    "people": [
       {
-        "title": "Event Overview",
-        "text": "GDSC Kitahack 2024 emphasized community-centered projects, with participants encouraged to address local challenges through technology."
+        "name": "Shakeef Ahmed Rakin",
+        "link": "https://www.linkedin.com/in/shakeef-ahmed-rakin/"
       },
       {
-        "title": "Our Participation",
-        "text": "We developed a solution aimed at environmental sustainability, focusing on waste management through IoT."
+        "name": "Gm Shimon",
+        "link": "https://www.linkedin.com/in/gm-shimon/"
+      },
+      {
+        "name": "Adnan Shafi",
+        "link": "https://www.linkedin.com/in/adnan-shafi1/"
+      },
+      {
+        "name": "K M Towhidul Islam",
+        "link": "https://www.linkedin.com/in/kmtowhidulislam/"
       }
     ],
+    "blog": {
+      "title": "Participatory Award at Kitahack 2024",
+      "summary": "Despite not securing the top spot, our team received a Participatory Award at Kitahack 2024 for our innovative project, ReWaste. The experience was filled with valuable lessons that will shape my approach to future projects.",
+      "content": [
+        {
+          "title": "About ReWaste",
+          "text": "ReWaste was an innovative platform designed to tackle the underutilization of agricultural waste in Malaysia. The platform connects sellers of agricultural waste with power plant owners, enabling them to engage in a sustainable bidding process that contributes to cleaner energy production. By utilizing AI-driven tools, we streamlined the selling process, creating a win-win situation for both sellers and power plant owners.",
+          "image": {
+            "url": "https://i.postimg.cc/NML5qWwZ/rewaste.png",
+            "source": "https://i.postimg.cc/NML5qWwZ/rewaste.png",
+            "label": "ReWaste Project",
+            "alt": "ReWaste Project"
+          }
+        },
+        {
+          "title": "Our Project Idea",
+          "text": "The core idea behind ReWaste was to create an online auction platform for agricultural waste. Sellers would put their waste up for auction where they would add listings specifying the type of waste available (e.g., coconut waste, palm oil biomass), the quantity, initial price, and any specific terms or conditions. Buyers bid on the listings to compete for prices. Buyers place competitive bids on the agricultural waste listings that match their requirements. This would allow them to access these resources at lower prices, fostering an efficient and cost-effective marketplace."
+        },
+        {
+          "text": "The idea of ReWaste was unique. For Plant Owners, they would experience reduced operational costs by securing agricultural waste at lower prices compared to coal. Through co-firing, they would achieve a cleaner, eco-conscious approach, consuming less coal and significantly decreasing carbon emissions. For Farmers, they would find a new avenue for waste utilization, earning revenue while contributing to a greener environment."
+        },
+        {
+          "title": "Key Takeaways",
+          "text": "The journey was filled with valuable lessons, the most important being the significance of pre-planning and design. I realized that diving straight into implementation without adequate planning hindered our progress. This reinforced my belief in the value of systematic approaches, such as the concepts taught in 'System Analysis and Design' courses, including use cases and activity diagrams. Proper preparation is crucial to the success of any project."
+        },
+        {
+          "title": "Personal Experience",
+          "text": "While we didn’t clinch the top spot, the experience was invaluable. I learned a great deal about the importance of structured planning, teamwork, and AI integration in solving real-world challenges. My teammates and I faced challenges, but our collaboration allowed us to create something meaningful and impactful. This experience has definitely shaped my approach to future endeavors."
+        },
+        {
+          "title": "What I Learned",
+          "text": "The biggest lesson from Kitahack 2024 was the importance of proper planning and design in the success of a project. It also reinforced my belief in the power of teamwork, as every member contributed to our project in meaningful ways. Even though we didn't win, the journey itself was a rewarding experience that taught me valuable lessons that I will carry forward into my future projects."
+        },
+        {
+          "text": "ReWaste, while a failed endeavor at Kitahack 2024, has the potential to make a lasting impact. The participatory award we received was a reflection of the hard work and dedication of our team. I'm proud of what we achieved and excited to continue exploring ways to apply technology to sustainability."
+        }
+      ]
+    },
+    "mainImage": {
+      "url": "https://media.licdn.com/dms/image/v2/D5622AQExlxK8PgMQfw/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1707229712997?e=1734566400&v=beta&t=Zji-LzePk7mVGjwKzXrwa4tBi4hNwo1zU6NrWZVkt50",
+      "source": "https://www.linkedin.com/posts/shakeef-ahmed-rakin_kitahack2024-rewaste-techinnovation-activity-7160640426889158656-Yu43?utm_source=share&utm_medium=member_desktop",
+      "label": "Participatory Award at Kitahack 2024",
+      "alt": "Participatory Award at Kitahack 2024"
+    },
     "eventName": "Kitahack 2024",
-    "linkedInPost": null,
-    "id": "gdsc-kitahack-2024",
+    "linkedInPost": "https://www.linkedin.com/post/kitahack2024",
+    "id": "kitahack-2024",
     "seo": {
-      "keywords": [
-        "GDSC Kitahack",
-        "community-centered projects",
-        "hackathon",
-        "IoT",
-        "environmental sustainability"
-      ],
-      "slug": "gdsc-kitahack-2024",
-      "socialMediaLinks": {}
+      "googleIndexing": {
+        "title": "Participatory Award at Kitahack 2024 | Shakeef Ahmed Rakin",
+        "description": "Shakeef Ahmed Rakin received the Participatory Award at Kitahack 2024 for their innovative project, ReWaste. Learn about the journey and lessons learned.",
+        "keywords": [
+          "ReWaste",
+          "Kitahack 2024",
+          "Participatory Award",
+          "Sustainability",
+          "Tech Innovation",
+          "AI",
+          "Agriculture Technology",
+          "Teamwork",
+          "Hackathon Experience",
+          "Shakeef Ahmed Rakin"
+        ],
+        "publisher": "Shakeef Ahmed Rakin",
+        "image": "https://media.licdn.com/dms/image/v2/D5622AQExlxK8PgMQfw/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1707229712997?e=1734566400&v=beta&t=Zji-LzePk7mVGjwKzXrwa4tBi4hNwo1zU6NrWZVkt50",
+        "imgAlt": "Participatory Award at Kitahack 2024"
+      },
+      "twitterCard": {
+        "title": "Participatory Award at Kitahack 2024 | ReWaste",
+        "description": "Shakeef Ahmed Rakin and team earned the Participatory Award at Kitahack 2024 for their ReWaste project, an innovative platform for sustainable agriculture. Read the full story.",
+        "image": "https://media.licdn.com/dms/image/v2/D5622AQExlxK8PgMQfw/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1707229712997?e=1734566400&v=beta&t=Zji-LzePk7mVGjwKzXrwa4tBi4hNwo1zU6NrWZVkt50",
+        "imgAlt": "Participatory Award at Kitahack 2024"
+      },
+      "openGraphCard": {
+        "title": "Participatory Award at Kitahack 2024 | ReWaste",
+        "type": "article",
+        "image": "https://media.licdn.com/dms/image/v2/D5622AQExlxK8PgMQfw/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1707229712997?e=1734566400&v=beta&t=Zji-LzePk7mVGjwKzXrwa4tBi4hNwo1zU6NrWZVkt50",
+        "imgAlt": "Participatory Award at Kitahack 2024",
+        "description": "Shakeef Ahmed Rakin and team received the Participatory Award at Kitahack 2024 for their innovative project, ReWaste. Read about the journey, challenges, and key takeaways from the event."
+      }
     }
   },
   {
