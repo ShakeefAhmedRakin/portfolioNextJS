@@ -54,6 +54,7 @@ export async function generateMetadata({
             "Achievement Image",
         },
       ],
+      siteName: "Shakeef Ahmed Rakin - Portfolio",
     },
     twitter: {
       title: award?.seo?.twitterCard?.title || award?.blog?.title,

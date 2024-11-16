@@ -22,6 +22,9 @@ export const metadata: Metadata = {
   title: "Shakeef Ahmed Rakin | Full Stack Developer & AI Enthusiast",
   description:
     "Portfolio of Shakeef Ahmed Rakin, a versatile software engineer with experience in being a full stack developer and machine learning enthusiast, .NET, AI/ML applications, and impactful projects. Discover his work, achievements, and professional journey.",
+  verification: {
+    google: process.env.GOOGLE_VERIFICATION,
+  },
 };
 
 export default function RootLayout({
