@@ -478,6 +478,7 @@
           "image": {
             "url": "/awardblogimages/myrapid2023/solution.png",
             "label": "MaintainIQ System Overview",
+            "source": null,
             "alt": "MaintainIQ System Overview"
           }
         },
@@ -492,6 +493,7 @@
           "image": {
             "url": "/awardblogimages/myrapid2023/model.png",
             "label": "Naive Bayes Model for Predictive Maintenance",
+            "source": null,
             "alt": "Naive Bayes Model for Predictive Maintenance"
           }
         },
