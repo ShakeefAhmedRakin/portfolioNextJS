@@ -476,7 +476,7 @@
           "title": "About MaintainIQ",
           "text": "MaintainIQ is a smart maintenance management system designed to predict and prevent bus breakdowns using AI. The system analyzes data collected from bus sensors to forecast engine health and optimize spare parts inventory. The project aims to help improve operational efficiency by identifying potential failures before they occur, reducing downtime and costs.",
           "image": {
-            "url": "/awardblogimages/myrapid2023/solution.png",
+            "url": "/awardblogimages/myrapid2023/solution.PNG",
             "label": "MaintainIQ System Overview",
             "source": null,
             "alt": "MaintainIQ System Overview"
@@ -491,7 +491,7 @@
           "title": "Steps Taken in Data Analysis",
           "text": "To build a robust predictive model, I followed a structured approach to data analysis. First, I focused on Canbus and engine repair data, filtering it to include only MRT feeder buses and data from 2023. I then created a CSV file with unique VEH_IDs for MRT feeder buses and filtered the engine repair data to match. Next, I analyzed the data to calculate the average number of maintenance entries per bus (8 times per month) and discovered that 25.3% of buses were waiting for spare parts. I also calculated the time difference between normal maintenance and buses waiting for parts, which averaged 12 days. With the data prepared, I applied a Naive Bayes model to predict engine health based on this historical data.",
           "image": {
-            "url": "/awardblogimages/myrapid2023/model.png",
+            "url": "/awardblogimages/myrapid2023/model.PNG",
             "label": "Naive Bayes Model for Predictive Maintenance",
             "source": null,
             "alt": "Naive Bayes Model for Predictive Maintenance"
@@ -504,7 +504,7 @@
       ]
     },
     "mainImage": {
-      "url": "/awardblogimages/myrapid2023/present.JPEG",
+      "url": "/awardblogimages/myrapid2023/present.jpeg",
       "source": null,
       "label": "MaintainIQ at MyRapid Bus x UTM Data Hackathon",
       "alt": "MaintainIQ at MyRapid Bus x UTM Data Hackathon"
