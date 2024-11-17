@@ -24,13 +24,16 @@ export default function NavigationDropDown() {
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = "hidden";
+      document.documentElement.style.overflow = "hidden"; // Ensure the <html> element is also restricted
       setIsAnimating(true);
     } else {
       document.body.style.overflow = "auto";
+      document.documentElement.style.overflow = "auto"; // Restore the <html> element overflow
     }
 
     return () => {
       document.body.style.overflow = "auto";
+      document.documentElement.style.overflow = "auto"; // Cleanup when component unmounts
     };
   }, [isOpen]);
 
@@ -77,7 +80,11 @@ export default function NavigationDropDown() {
               isDropDownLinks={true}
               handleLinkClick={handleLinkClick}
             ></NavigationLinks>
-            <Link href="/resume" aria-label="Resume Page">
+            <Link
+              href="/resume"
+              aria-label="Resume Page"
+              className="rounded-full"
+            >
               <button
                 className="btn rounded-full bg-secondary border-secondary hover:border-primary text-background hover:bg-primary flex md:hidden"
                 aria-label="Resume"
@@ -85,7 +92,11 @@ export default function NavigationDropDown() {
                 Resume
               </button>
             </Link>
-            <Link href="/contact" aria-label="Contact Page">
+            <Link
+              href="/contact"
+              aria-label="Contact Page"
+              className="rounded-full"
+            >
               <button
                 className="btn rounded-full bg-transparent text-accent border-accent hover:bg-accent hover:text-background hover:border-accent flex md:hidden"
                 aria-label="Contact"

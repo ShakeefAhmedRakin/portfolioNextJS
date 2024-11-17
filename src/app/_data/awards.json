@@ -323,81 +323,223 @@
     "isFeatured": true,
     "photo": "/awardslogos/devhack2023.png",
     "position": "Top 10 Finalists",
-    "title": "Devhack 2023",
-    "date": "2023-12-01",
-    "blogTitle": "Presenting MASRETT at New Academia Learning Innovation 2024",
-    "description": "A national-level hackathon aimed at nurturing young developers and promoting innovative solutions.",
-    "content": [
+    "title": "DevHack 2023",
+    "date": "2023-12-15",
+    "people": [
       {
-        "title": "Competition Overview",
-        "text": "Devhack 2023 was a national-level hackathon focused on fostering young talent in the tech industry and promoting innovative solutions."
+        "name": "Shakeef Ahmed Rakin",
+        "link": "https://www.linkedin.com/in/shakeef-ahmed-rakin/"
       },
       {
-        "title": "Our Solution",
-        "text": "We developed an AI-powered tool to improve accessibility for visually impaired individuals, landing us a place in the top 10 finalists.",
-        "image": {
-          "url": "/images/devhack2023_solution.png",
-          "label": "Demo of accessibility tool"
-        }
+        "name": "Adnan Shafi",
+        "link": "https://www.linkedin.com/in/adnan-shafi1/"
+      },
+      {
+        "name": "Gm Shimon",
+        "link": "https://www.linkedin.com/in/gm-shimon/"
+      },
+      {
+        "name": "Arshad Parvez Dipto",
+        "link": "https://www.linkedin.com/in/arshaddipto/"
+      },
+      {
+        "name": "Daren Tan",
+        "link": "https://www.linkedin.com/in/daren-tan/"
       }
     ],
-    "eventName": "Devhack 2023",
+    "blog": {
+      "title": "Top 10 Finalists at DevHack 2023",
+      "summary": "Our team secured a spot in the Top 10 Finalists at DevHack 2023 for our innovative project, BillsGo. It was a remarkable journey filled with creativity and collaboration, addressing real-world challenges in utility bill management.",
+      "content": [
+        {
+          "title": "About BillsGo",
+          "text": "BillsGo is an all-in-one utility bill payment and collection app designed to simplify bill management for users and service providers. The app integrates features like Google Pay support, centralized bill tracking, and visualized dashboards to address inefficiencies in traditional billing systems.",
+          "image": {
+            "url": "/awardblogimages/devhack2023/userside.PNG",
+            "source": null,
+            "label": "BillsGo Project - User End",
+            "alt": "BillsGo Project - User End"
+          }
+        },
+        {
+          "title": "The Idea and Teamwork",
+          "text": "The idea for BillsGo stemmed from the challenges faced by utility users and companies in managing bills and collections. Adnan and I brainstormed the project idea, refining it through discussions to address real-world problems effectively. Meanwhile, Shimon and Dipto focused on developing the demo app, ensuring it was ready to showcase to the judges. I prepared the slides to clearly present our concept, tying together the technical and business aspects of the project.",
+          "image": {
+            "url": "/awardblogimages/devhack2023/serviceside.PNG",
+            "source": null,
+            "label": "BillsGo Project - Service End",
+            "alt": "BillsGo Project - Service End"
+          }
+        },
+        {
+          "title": "Mentorship and Growth",
+          "text": "Throughout the competition, Adnan and I were mentored by Mr. Daren Tan, a highly experienced hackathon participant and organizer. He provided valuable insights on ideation, business planning, and presenting ideas effectively. This mentorship helped us understand the importance of aligning technical solutions with user needs and delivering a compelling narrative. The lessons we learned from him about creating impactful presentations and clearly communicating our vision were instrumental in our success."
+        },
+        {
+          "title": "Features of BillsGo",
+          "text": "For Users: BillsGo offers centralized bill management, effortless payments via Google Pay, and automatic reminders for due dates. These features help users avoid late payment charges and simplify the bill management process. For Service Providers: BillsGo includes a Google Maps-integrated dashboard for visualizing overdue bills, streamlining service disconnection, and enhancing operational efficiency."
+        },
+        {
+          "title": "Key Takeaways",
+          "text": "Working on BillsGo taught us the value of teamwork, clear communication, and user-focused design. The mentorship we received emphasized the importance of addressing specific pain points with practical solutions while ensuring the project's presentation resonated with judges and stakeholders alike."
+        },
+        {
+          "title": "Personal Experience",
+          "text": "Participating in DevHack 2023 was an enriching experience. Collaborating with a diverse team and overcoming challenges reinforced the importance of adaptability and perseverance. Securing a spot among the Top 10 Finalists was a testament to our efforts and the impact of our solution."
+        },
+        {
+          "title": "Looking Ahead",
+          "text": "BillsGo, while a finalist project at DevHack 2023, has the potential to transform bill management processes for users and service providers. The recognition we received highlights the innovation and dedication of our team. Moving forward, we aim to explore ways to bring this concept to life and solve real-world challenges in the utility sector."
+        }
+      ]
+    },
+    "mainImage": {
+      "url": "/awardblogimages/devhack2023/main.PNG",
+      "source": null,
+      "label": "BillsGo App At Devhack2023",
+      "alt": "BillsGo App At Devhack2023"
+    },
+    "eventName": "DevHack 2023",
     "linkedInPost": "https://www.linkedin.com/post/devhack2023",
     "id": "devhack-2023",
     "seo": {
-      "keywords": [
-        "Devhack 2023",
-        "AI-powered tool",
-        "accessibility",
-        "hackathon",
-        "top 10 finalists"
-      ],
-      "slug": "devhack-2023",
-      "socialMediaLinks": {
-        "linkedin": "https://www.linkedin.com/post/devhack2023"
+      "googleIndexing": {
+        "title": "Top 10 Finalists at DevHack 2023 | Shakeef Ahmed Rakin",
+        "description": "Securing a Top 10 Finalist position at DevHack 2023 for their project, BillsGo. Discover how they tackled real-world challenges in bill management.",
+        "keywords": [
+          "BillsGo",
+          "DevHack 2023",
+          "Top 10 Finalists",
+          "Utility Bill Management",
+          "Tech Innovation",
+          "Google Pay Integration",
+          "Seamless Bill Tracking",
+          "Hackathon Experience",
+          "Shakeef Ahmed Rakin"
+        ],
+        "publisher": "Shakeef Ahmed Rakin",
+        "image": "/awardblogimages/devhack2023/main.PNG",
+        "imgAlt": "Top 10 Finalists at DevHack 2023"
+      },
+      "twitterCard": {
+        "title": "Top 10 Finalists at DevHack 2023 | BillsGo",
+        "description": "Team UTM Systematic Squad secured a Top 10 Finalist position at DevHack 2023 for their BillsGo project, an innovative utility bill management app. Read the full story.",
+        "image": "/awardblogimages/devhack2023/main.PNG",
+        "imgAlt": "Top 10 Finalists at DevHack 2023"
+      },
+      "openGraphCard": {
+        "title": "Top 10 Finalists at DevHack 2023 | BillsGo",
+        "type": "article",
+        "image": "/awardblogimages/devhack2023/main.PNG",
+        "imgAlt": "Top 10 Finalists at DevHack 2023",
+        "description": "Shakeef Ahmed Rakin and Team UTM Systematic Squad earned a Top 10 Finalist position at DevHack 2023 for their innovative project, BillsGo. Learn about the journey and key takeaways."
       }
     }
   },
   {
     "isFeatured": true,
     "photo": "/awardslogos/myrapid.png",
-    "position": "Runners Up",
+    "position": "1st Runner-Up",
     "title": "MyRapid Bus x UTM Data Hackathon 2023",
-    "date": "2023-09-01",
-    "blogTitle": "Presenting MASRETT at New Academia Learning Innovation 2024",
-    "description": "A hackathon organized by MyRapid and UTM, focusing on data-driven solutions to improve urban transportation.",
-    "content": [
+    "date": "2023-09-30",
+    "people": [
       {
-        "title": "Hackathon Focus",
-        "text": "Hosted by MyRapid and UTM, this hackathon aimed at data-driven solutions to improve urban transportation in Malaysia."
+        "name": "Nor Erne Nazira Bazin (Advisor)",
+        "link": "https://www.linkedin.com/in/ernenazira/"
       },
       {
-        "title": "Our Winning Idea",
-        "text": "We created a predictive model for optimizing bus schedules based on real-time data, securing us the runners-up position."
+        "name": "Shakeef Ahmed Rakin",
+        "link": "https://www.linkedin.com/in/shakeef-ahmed-rakin/"
       },
       {
-        "title": "Learning Experience",
-        "text": "This event allowed us to work on real-world data and contribute to enhancing public transportation efficiency.",
-        "image": {
-          "url": "/images/myrapid2023_learning.png",
-          "label": "Team presenting project"
-        }
+        "name": "Adnan Shafi",
+        "link": "https://www.linkedin.com/in/adnan-shafi1/"
+      },
+      {
+        "name": "Gm Shimon",
+        "link": "https://www.linkedin.com/in/gm-shimon/"
+      },
+      {
+        "name": "Arshad Parvez Dipto",
+        "link": "https://www.linkedin.com/in/arshaddipto/"
+      },
+      {
+        "name": "Abeda Rezwana Khanam (MBA)",
+        "link": "https://www.linkedin.com/in/abedarezwana/"
       }
     ],
-    "eventName": "MyRapid Bus Data Hackathon",
-    "linkedInPost": "https://www.linkedin.com/post/myrapid-bus-data-hackathon",
-    "id": "myrapid-bus-utm-data-hackathon-2023",
+    "blog": {
+      "title": "2nd Place at MyRapid Bus x UTM Data Hackathon 2023",
+      "summary": "Our team earned 2nd place at the MyRapid Bus x UTM Data Hackathon 2023 with MaintainIQ, a Smart Maintenance Management System. The project focused on AI-driven predictive maintenance for buses, tackling real-world challenges like early detection of breakdowns and inventory management.",
+      "content": [
+        {
+          "title": "About MaintainIQ",
+          "text": "MaintainIQ is a smart maintenance management system designed to predict and prevent bus breakdowns using AI. The system analyzes data collected from bus sensors to forecast engine health and optimize spare parts inventory. The project aims to help improve operational efficiency by identifying potential failures before they occur, reducing downtime and costs.",
+          "image": {
+            "url": "/awardblogimages/myrapid2023/solution.png",
+            "label": "MaintainIQ System Overview",
+            "alt": "MaintainIQ System Overview"
+          }
+        },
+        {
+          "title": "My Contribution",
+          "text": "I contributed remotely by focusing on the data analysis and AI model development for the MaintainIQ project. I started by preprocessing large datasets from MyRapid, including Canbus and engine repair data. I filtered the data to focus on MRT feeder buses and extracted the relevant data for 2023. I then analyzed maintenance patterns and identified key metrics like the average number of maintenance entries per bus and the percentage of buses waiting for spare parts. I used the Naive Bayes model for the predictive model, as it was well-suited for the small dataset and the categorization of engine health into discrete labels. After preparing the data, I trained the model to forecast potential engine health issues based on historical data. This predictive model forms the core of MaintainIQ, enabling proactive maintenance decisions.",
+          "image": null
+        },
+        {
+          "title": "Steps Taken in Data Analysis",
+          "text": "To build a robust predictive model, I followed a structured approach to data analysis. First, I focused on Canbus and engine repair data, filtering it to include only MRT feeder buses and data from 2023. I then created a CSV file with unique VEH_IDs for MRT feeder buses and filtered the engine repair data to match. Next, I analyzed the data to calculate the average number of maintenance entries per bus (8 times per month) and discovered that 25.3% of buses were waiting for spare parts. I also calculated the time difference between normal maintenance and buses waiting for parts, which averaged 12 days. With the data prepared, I applied a Naive Bayes model to predict engine health based on this historical data.",
+          "image": {
+            "url": "/awardblogimages/myrapid2023/model.png",
+            "label": "Naive Bayes Model for Predictive Maintenance",
+            "alt": "Naive Bayes Model for Predictive Maintenance"
+          }
+        },
+        {
+          "title": "Looking Ahead",
+          "text": "This hackathon experience has given us valuable insights into how data-driven solutions can improve the transportation sector. The predictive maintenance model can significantly reduce downtime and improve efficiency for bus fleets."
+        }
+      ]
+    },
+    "mainImage": {
+      "url": "/awardblogimages/myrapid2023/present.JPEG",
+      "source": null,
+      "label": "MaintainIQ at MyRapid Bus x UTM Data Hackathon",
+      "alt": "MaintainIQ at MyRapid Bus x UTM Data Hackathon"
+    },
+    "eventName": "MyRapid Bus x UTM Data Hackathon 2023",
+    "linkedInPost": "https://www.linkedin.com/post/myrapid2023",
+    "id": "myrapid-bus-utm-2023",
     "seo": {
-      "keywords": [
-        "MyRapid Bus Data Hackathon",
-        "urban transportation",
-        "predictive model",
-        "data-driven solutions",
-        "runners up"
-      ],
-      "slug": "myrapid-bus-utm-data-hackathon-2023",
-      "socialMediaLinks": {
-        "linkedin": "https://www.linkedin.com/post/myrapid-bus-data-hackathon"
+      "googleIndexing": {
+        "title": "1st Runner-Up at MyRapid Bus x UTM Data Hackathon 2023 | Shakeef Ahmed Rakin",
+        "description": "Secured the 2nd position at MyRapid Bus x UTM Data Hackathon 2023 for our project, MaintainIQ. Learn how we addressed bus maintenance challenges with AI.",
+        "keywords": [
+          "MaintainIQ",
+          "MyRapid Bus x UTM Data Hackathon",
+          "1st Runner-Up",
+          "Smart Maintenance Management",
+          "AI Predictive Maintenance",
+          "Inventory Management",
+          "Hackathon Experience",
+          "Shakeef Ahmed Rakin"
+        ],
+        "publisher": "Shakeef Ahmed Rakin",
+        "image": "/awardblogimages/myrapid2023/present.JPEG",
+        "imgAlt": "MaintainIQ at MyRapid Bus x UTM Data Hackathon"
+      },
+      "twitterCard": {
+        "title": "1st Runner-Up at MyRapid Bus x UTM Data Hackathon 2023 | MaintainIQ",
+        "description": "Our team secured the 1st Runner-Up position at MyRapid Bus x UTM Data Hackathon 2023 with MaintainIQ, a smart maintenance management system using AI. Discover the journey.",
+        "image": "/awardblogimages/myrapid2023/present.JPEG",
+        "imgAlt": "MaintainIQ at MyRapid Bus x UTM Data Hackathon"
+      },
+      "openGraphCard": {
+        "title": "1st Runner-Up at MyRapid Bus x UTM Data Hackathon 2023 | MaintainIQ",
+        "type": "article",
+        "image": "/awardblogimages/myrapid2023/present.JPEG",
+        "imgAlt": "MaintainIQ at MyRapid Bus x UTM Data Hackathon",
+        "description": "Shakeef Ahmed Rakin and team achieved 1st Runner-Up at MyRapid Bus x UTM Data Hackathon 2023 for their innovative project, MaintainIQ. Read more about their experience and learnings."
       }
     }
   },

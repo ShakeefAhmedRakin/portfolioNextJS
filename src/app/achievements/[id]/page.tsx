@@ -113,7 +113,7 @@ export default async function AchievementDetails({
           {/* MAIN IMAGE */}
           {award?.mainImage && (
             <>
-              <figure className="max-w-xl mx-auto my-4">
+              <figure className="mx-auto my-4 bg-background flex items-center flex-col rounded-xl shadow">
                 <Image
                   src={award.mainImage.url}
                   alt={award.mainImage.alt}
@@ -125,10 +125,10 @@ export default async function AchievementDetails({
                   className="object-contain max-w-xl max-h-[400px] w-full"
                 />
                 <figcaption className="text-center text-[9px] md:text-xs flex items-center justify-center gap-2 bg-background rounded-full shadow-sm mt-1 text-text">
-                  <span> Caption: {award?.mainImage?.label}</span>
-                  {award?.mainImage?.url && (
+                  <span>{award?.mainImage?.label}</span>
+                  {award?.mainImage?.source && (
                     <Link
-                      href={award.mainImage.source}
+                      href={award?.mainImage?.source}
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label={`View the image for ${award.blogTitle} in full size`}
@@ -156,7 +156,7 @@ export default async function AchievementDetails({
               </p>
               {section?.image && (
                 <>
-                  <figure className="max-w-xl mx-auto my-4">
+                  <figure className="mx-auto my-4 bg-background flex items-center flex-col rounded-xl shadow">
                     <Image
                       src={section?.image?.url}
                       alt={section?.image?.alt}
@@ -168,7 +168,7 @@ export default async function AchievementDetails({
                       className="object-contain max-w-xl max-h-[400px] w-full"
                     />
                     <figcaption className="text-center text-[9px] md:text-xs flex justify-center items-center gap-2 bg-background rounded-full shadow-sm mt-1 text-text">
-                      <span>Caption: {section?.image?.label}</span>
+                      <span>{section?.image?.label}</span>
                       {section?.image?.source && (
                         <Link
                           href={section?.image?.source}
