@@ -6,6 +6,7 @@ import { Metadata } from "next";
 
 export function generateMetadata(): Metadata {
   return {
+    metadataBase: new URL(process.env.WEBSITE_URL || "http://localhost:3000"),
     // GOOGLE INDEXING SEO TAGS
     title: "Shakeef Ahmed Rakin - Achievements | Hackathons | Competitions",
     description:

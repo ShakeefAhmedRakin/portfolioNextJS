@@ -21,6 +21,7 @@ export async function generateMetadata({
   const award = awards.find((award) => award.id === id);
 
   return {
+    metadataBase: new URL(process.env.WEBSITE_URL || "http://localhost:3000"),
     // GOOGLE INDEXING SEO TAGS
     title: award?.seo?.googleIndexing?.title || "Achievement Details",
     description:
@@ -131,7 +132,7 @@ export default async function AchievementDetails({
                       href={award?.mainImage?.source}
                       target="_blank"
                       rel="noopener noreferrer"
-                      aria-label={`View the image for ${award.blogTitle} in full size`}
+                      aria-label={`View the image for ${award.title} in full size`}
                     >
                       <CgExternal className="text-text text-lg" />
                     </Link>

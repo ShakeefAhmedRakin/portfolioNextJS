@@ -19,6 +19,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.WEBSITE_URL || "http://localhost:3000"),
   title: "Shakeef Ahmed Rakin | Full Stack Developer & AI Enthusiast",
   description:
     "Portfolio of Shakeef Ahmed Rakin, a versatile software engineer with experience in being a full stack developer and machine learning enthusiast, .NET, AI/ML applications, and impactful projects. Discover his work, achievements, and professional journey.",
