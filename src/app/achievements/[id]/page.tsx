@@ -5,6 +5,7 @@ import Link from "next/link";
 import { CgExternal } from "react-icons/cg";
 import { Metadata } from "next";
 import BlogNotFound from "@/app/_components/errors/blognotfound";
+import { BlogPosting, WithContext } from "schema-dts";
 
 export async function generateStaticParams() {
   return awards.map((award) => ({
@@ -89,8 +90,58 @@ export default async function AchievementDetails({
     return BlogNotFound();
   }
 
+  // Prepare JSON-LD
+  const jsonLd: WithContext<BlogPosting> = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: award.blog?.title,
+    description:
+      award.blog?.summary || "Explore details about this achievement.",
+    datePublished: award.date,
+    dateModified: award.date,
+    image: {
+      "@type": "ImageObject",
+      url: award.mainImage?.url || award.photo,
+    },
+    author: {
+      "@type": "Person",
+      name: "Shakeef Ahmed Rakin",
+    },
+    url: `${process.env.WEBSITE_URL}/achievements/${award?.id}`,
+    publisher: {
+      "@type": "Organization",
+      name: "Shakeef Ahmed Rakin",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://shakeefahmedrakin.vercel.app/logos/logo.png",
+      },
+    },
+    creator: "Shakeef Ahmed Rakin",
+    maintainer: "Shakeef Ahmed Rakin",
+    mainEntityOfPage: `${process.env.WEBSITE_URL}/achievements/${award?.id}`,
+    keywords: award.seo?.googleIndexing?.keywords?.join(", "),
+    articleBody:
+      award?.blog?.title +
+      award?.blog?.summary +
+      award.blog?.content
+        .map((section) => section?.title + section.text)
+        .join(" "),
+    articleSection: [
+      "Achievements",
+      "Details",
+      "Hackathon",
+      "Competition",
+      "Datathon",
+    ],
+    abstract: award?.blog?.summary,
+  };
+
   return (
     <section className="bg-backgroundDark min-h-screen">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <div className="container mx-auto px-4 md:px-10 lg:px-20 xl:px-40 py-16 flex flex-col md:flex-row gap-5">
         <article className="flex-1">
           {/* HEADER */}
