@@ -531,13 +531,13 @@
         "imgAlt": "MaintainIQ at MyRapid Bus x UTM Data Hackathon"
       },
       "twitterCard": {
-        "title": "1st Runner-Up at MyRapid Bus x UTM Data Hackathon 2023 | MaintainIQ",
+        "title": "1st Runner-Up at MyRapid Bus x UTM Data Hackathon 2023 | Shakeef Ahmed Rakin",
         "description": "Our team secured the 1st Runner-Up position at MyRapid Bus x UTM Data Hackathon 2023 with MaintainIQ, a smart maintenance management system using AI. Discover the journey.",
         "image": "/awardblogimages/myrapid2023/present.jpeg",
         "imgAlt": "MaintainIQ at MyRapid Bus x UTM Data Hackathon"
       },
       "openGraphCard": {
-        "title": "1st Runner-Up at MyRapid Bus x UTM Data Hackathon 2023 | MaintainIQ",
+        "title": "1st Runner-Up at MyRapid Bus x UTM Data Hackathon 2023 | Shakeef Ahmed Rakin",
         "type": "article",
         "image": "/awardblogimages/myrapid2023/present.jpeg",
         "imgAlt": "MaintainIQ at MyRapid Bus x UTM Data Hackathon",
@@ -551,32 +551,99 @@
     "position": "5th Place",
     "title": "InnoJam 2023: Smart Sustainable City",
     "date": "2023-09-01",
-    "blogTitle": "Presenting MASRETT at New Academia Learning Innovation 2024",
-    "description": "An innovation jam aimed at designing sustainable solutions for urban challenges, hosted by Smart City Council.",
-    "content": [
+    "people": [
       {
-        "title": "Event Background",
-        "text": "InnoJam 2023 focused on designing sustainable solutions for urban environments, held by the Smart City Council."
+        "name": "Shakeef Ahmed Rakin",
+        "link": "https://www.linkedin.com/in/shakeef-ahmed-rakin/"
       },
       {
-        "title": "Our Project",
-        "text": "Our project, aimed at reducing city traffic congestion through predictive analytics, earned us a 5th place finish."
+        "name": "Adnan Shafi",
+        "link": "https://www.linkedin.com/in/adnan-shafi1/"
+      },
+      {
+        "name": "Chin Chia Yuan",
+        "link": "https://www.linkedin.com/in/chinchiayuan94/"
+      },
+      {
+        "name": "Furqan Qadri",
+        "link": "https://www.linkedin.com/in/furqan-qadri/"
       }
     ],
-    "eventName": "InnoJam 2023",
+    "blog": {
+      "title": "5th Place at InnoJam 2023: Smart Sustainable City",
+      "summary": "Our team secured 5th place at InnoJam 2023 with ReCycgo, a mobile application for businesses aimed at optimizing waste management through smart logistics. The project tackled critical challenges in achieving Malaysia's recycling goals.",
+      "content": [
+        {
+          "title": "About ReCycgo",
+          "text": "ReCycgo is a mobile application designed to help businesses (B2B) optimize waste management. The app leverages smart logistics to monitor trash weight via connected smart dustbins, provides real-time updates to lorry drivers and waste collectors, and predicts future trash volumes using data analytics. The goal is to reduce logistical delays and improve Malaysia's recycling rate to achieve the national target of 40% by 2025.",
+          "image": {
+            "url": "/awardblogimages/innojam2023/overview.PNG",
+            "label": "ReCycgo System Overview",
+            "source": null,
+            "alt": "ReCycgo System Overview"
+          }
+        },
+        {
+          "title": "My Contribution",
+          "text": "I contributed remotely to the project by brainstorming the idea with the team, preparing presentation slides, and crafting the pitch to effectively communicate our solution's vision and potential impact. My focus was on ensuring the presentation demonstrated the practical and technical aspects of ReCycgo."
+        },
+        {
+          "title": "Key Insights",
+          "text": "Malaysia loses an estimated RM476 million annually due to poor recycling practices. Our solution addresses this by combining technology and logistics to reduce landfill costs and delays in waste management. During the event, we highlighted the potential of our system to improve operational efficiency for businesses while contributing to sustainability."
+        },
+        {
+          "title": "Event Experience",
+          "text": "InnoJam 2023 was held in conjunction with InnoEx 2023 and organized by Cyberview. The event gathered participants from diverse backgrounds, including university students and professionals, to design sustainable solutions for urban challenges in Cyberjaya. Over two days, we worked on leveraging open data to envision Cyberjaya as a model Smart Sustainable City.",
+          "image": {
+            "url": "/awardblogimages/innojam2023/team.jpeg",
+            "label": "InnoJam 2023 Event Overview",
+            "source": "https://www.linkedin.com/posts/adnan-shafi1_innojam-smartcitydesignchallenge-opendata-activity-7106662960122515456-MoCM?utm_source=share&utm_medium=member_desktop",
+            "alt": "InnoJam 2023 Event Overview"
+          }
+        }
+      ]
+    },
+    "mainImage": {
+      "url": "/awardblogimages/innojam2023/RecycGo.png",
+      "source": null,
+      "label": "RyCycGo At InnoJam 2023",
+      "alt": "RyCycGo At InnoJam 2023"
+    },
+    "eventName": "InnoJam 2023: Smart Sustainable City",
     "linkedInPost": null,
     "id": "innojam-2023-smart-sustainable-city",
     "seo": {
-      "keywords": [
-        "InnoJam 2023",
-        "sustainable solutions",
-        "smart city",
-        "urban challenges",
-        "predictive analytics",
-        "5th place"
-      ],
-      "slug": "innojam-2023-smart-sustainable-city",
-      "socialMediaLinks": {}
+      "googleIndexing": {
+        "title": "5th Place at InnoJam 2023 | ReCycgo | Shakeef Ahmed Rakin",
+        "description": "Learn how Team Modular Fold tackled waste management challenges at InnoJam 2023 with ReCycgo, earning 5th place.",
+        "keywords": [
+          "InnoJam 2023",
+          "ReCycgo",
+          "Smart Sustainable City",
+          "Waste Management",
+          "Shakeef Ahmed Rakin",
+          "Cyberjaya Innovation",
+          "Sustainability",
+          "Smart Logistics",
+          "Hackathon Experience"
+        ],
+        "publisher": "Shakeef Ahmed Rakin",
+        "image": "/awardblogimages/innojam2023/og.jpeg",
+        "imgAlt": "Team Modular Fold at InnoJam 2023"
+      },
+      "twitterCard": {
+        "title": "5th Place at InnoJam 2023 | ReCycgo | Shakeef Ahmed Rakin",
+        "description": "ReCycgo: A mobile app optimizing waste management for businesses. Learn how Team Modular Fold made an impact at InnoJam 2023.",
+        "image": "/awardblogimages/innojam2023/og.jpeg",
+        "imgAlt": "Team Modular Fold at InnoJam 2023"
+      },
+      "openGraphCard": {
+        "title": "5th Place at InnoJam 2023 | ReCycgo | Shakeef Ahmed Rakin",
+        "type": "article",
+        "image": "/awardblogimages/innojam2023/og.jpeg",
+        "imgAlt": "Team Modular Fold at InnoJam 2023",
+        "description": "Discover how ReCycgo, a smart waste management solution, earned Team Modular Fold a top 5 finish at InnoJam 2023."
+      }
     }
   }
 ]
