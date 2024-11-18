@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   ],
   publisher: "Shakeef Ahmed Rakin",
   alternates: {
-    canonical: `${process.env.WEBSITE_URL}`,
+    canonical: `${process.env.WEBSITE_URL}/`,
   },
   robots: "index, follow",
   verification: {
