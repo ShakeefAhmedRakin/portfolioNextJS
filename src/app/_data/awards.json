@@ -577,7 +577,7 @@
           "title": "About ReCycgo",
           "text": "ReCycgo is a mobile application designed to help businesses (B2B) optimize waste management. The app leverages smart logistics to monitor trash weight via connected smart dustbins, provides real-time updates to lorry drivers and waste collectors, and predicts future trash volumes using data analytics. The goal is to reduce logistical delays and improve Malaysia's recycling rate to achieve the national target of 40% by 2025.",
           "image": {
-            "url": "/awardblogimages/innojam2023/overview.PNG",
+            "url": "/awardblogimages/innojam2023/overview.png",
             "label": "ReCycgo System Overview",
             "source": null,
             "alt": "ReCycgo System Overview"
