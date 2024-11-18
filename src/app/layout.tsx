@@ -20,11 +20,53 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.WEBSITE_URL || "http://localhost:3000"),
-  title: "Shakeef Ahmed Rakin | Full Stack Developer & AI Enthusiast",
+  title: "Shakeef Ahmed Rakin | Full Stack Engineer",
   description:
-    "Portfolio of Shakeef Ahmed Rakin, a versatile software engineer with experience in being a full stack developer and machine learning enthusiast, .NET, AI/ML applications, and impactful projects. Discover his work, achievements, and professional journey.",
+    "Portfolio of Shakeef Ahmed Rakin, a versatile software engineer with experience in full stack engineering, .NET, and AI/ML applications. Currently working at HOLOS-IE and twlick. Discover his work, achievements, and professional journey.",
+  keywords: [
+    "Shakeef Ahmed Rakin",
+    "Achievements",
+    "Portfolio",
+    "Competitions",
+    "Machine Learning",
+    "Full-Stack Development",
+    "Hackathons",
+    "holos-ie",
+    "twlick",
+  ],
+  publisher: "Shakeef Ahmed Rakin",
+  alternates: {
+    canonical: `${process.env.WEBSITE_URL}`,
+  },
+  robots: "index, follow",
   verification: {
     google: process.env.GOOGLE_VERIFICATION,
+  },
+  // PREVIEW TAGS FOR SOCIAL MEDIA
+  openGraph: {
+    title: "Shakeef Ahmed Rakin | Full Stack Engineer",
+    type: "website",
+    description:
+      "Portfolio of Shakeef Ahmed Rakin, a versatile software engineer with experience in full stack engineering, .NET, and AI/ML applications. Currently working at HOLOS-IE and twlick. Discover his work, achievements, and professional journey.",
+    url: `${process.env.WEBSITE_URL}`,
+    images: [
+      {
+        url: "/og_images/home.png",
+        alt: "Shakeef Ahmed Rakin ",
+      },
+    ],
+    siteName: "Shakeef Ahmed Rakin - Portfolio",
+  },
+  twitter: {
+    title: "Shakeef Ahmed Rakin | Full Stack Engineer",
+    description:
+      "Portfolio of Shakeef Ahmed Rakin, a versatile software engineer with experience in full stack engineering, .NET, and AI/ML applications. Currently working at HOLOS-IE and twlick. Discover his work, achievements, and professional journey.",
+    images: [
+      {
+        url: "/og_images/home.png",
+        alt: "Shakeef Ahmed Rakin ",
+      },
+    ],
   },
 };
 
