@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(process.env.WEBSITE_URL || "http://localhost:3000"),
   title: "Shakeef Ahmed Rakin | Full Stack Engineer",
   description:
-    "Portfolio of Shakeef Ahmed Rakin, a versatile software engineer with experience in full stack engineering, .NET, and AI/ML applications. Currently working at HOLOS-IE and twlick. Discover his work, achievements, and professional journey.",
+    "Portfolio of Shakeef Ahmed Rakin, a versatile software engineer with experience in full stack engineering, .NET, and AI/ML applications. Currently working at HOLOS-IE and Twlick. Discover his work, achievements, and professional journey.",
   keywords: [
     "Shakeef Ahmed Rakin",
     "Achievements",

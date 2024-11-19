@@ -121,10 +121,10 @@ export default async function AchievementDetails({
     mainEntityOfPage: `${process.env.WEBSITE_URL}/achievements/${award?.id}`,
     keywords: award.seo?.googleIndexing?.keywords?.join(", "),
     articleBody:
-      award?.blog?.title +
       award?.blog?.summary +
+      " " +
       award.blog?.content
-        .map((section) => section?.title + section.text)
+        .map((section) => section?.title + " " + section.text + " ")
         .join(" "),
     articleSection: [
       "Achievements",
