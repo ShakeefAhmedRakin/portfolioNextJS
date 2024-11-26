@@ -36,37 +36,59 @@
       "summary": "In October 2024, I had the chance to present MASRETT (Malaysian Sign Language Real-Time Tutorial) at the Pre-NALI 2024 workshops, hosted by Universiti Teknologi Malaysia (UTM). The event, aimed at exploring innovative ways to integrate research into teaching, provided a platform for educators, researchers, and technology enthusiasts to share ideas and insights. It was an exciting opportunity for our team to showcase a demo of MASRETT, a project we’ve been working on to make learning Malaysian Sign Language (MSL) more accessible and interactive for the deaf and hard-of-hearing community in Malaysia.",
       "content": [
         {
-          "title": "About MASRETT",
-          "text": "MASRETT is designed to allow users to practice MSL using their webcams, providing real-time feedback on their signs. The platform includes features like progress tracking, quizzes, and a sandbox mode where learners can practice at their own pace. While the project is still in its early stages, our demo highlighted what’s to come: a powerful tool for MSL learning that integrates AI and real-time technology. The primary focus of our demo was the real-time model implementation, which tracks user progress and gives feedback as they practice.",
-          "image": null
+          "type": "title",
+          "content": "About MASRETT"
         },
         {
-          "title": "Technical Contributions",
-          "text": "Adnan Shafi and I contributed remotely to MASRETT, focusing on the technical side of things. Our responsibilities included developing the web platform using the MERN stack (MongoDB, Express.js, React, Node.js) and implementing the real-time sign language detection model. The integration of this AI-powered model was one of the most exciting parts of the project, as it allowed us to give users immediate feedback on their sign language skills. Although the real-time detection system isn’t fully complete, the demo provided a glimpse into the potential of what we’re building.",
-          "image": {
-            "url": "https://i.ibb.co.com/2qKVJyd/screenshot.png",
+          "type": "text",
+          "content": "MASRETT is designed to allow users to practice MSL using their webcams, providing real-time feedback on their signs. The platform includes features like progress tracking, quizzes, and a sandbox mode where learners can practice at their own pace. While the project is still in its early stages, our demo highlighted what’s to come: a powerful tool for MSL learning that integrates AI and real-time technology. The primary focus of our demo was the real-time model implementation, which tracks user progress and gives feedback as they practice."
+        },
+        {
+          "type": "title",
+          "content": "Technical Contributions"
+        },
+        {
+          "type": "text",
+          "content": "Adnan Shafi and I contributed remotely to MASRETT, focusing on the technical side of things. Our responsibilities included developing the web platform using the MERN stack (MongoDB, Express.js, React, Node.js) and implementing the real-time sign language detection model. The integration of this AI-powered model was one of the most exciting parts of the project, as it allowed us to give users immediate feedback on their sign language skills. Although the real-time detection system isn’t fully complete, the demo provided a glimpse into the potential of what we’re building."
+        },
+        {
+          "type": "image",
+          "content": {
+            "url": "https://i.ibb.co/2qKVJyd/screenshot.png",
             "source": "https://masrett-e5a0f.web.app/",
             "label": "MASRETT Web Platform Demo",
             "alt": "MASRETT Web Platform Demo"
           }
         },
         {
-          "title": "Future Plans",
-          "text": "The project isn’t finished yet—there’s still a lot of work to be done before MASRETT is ready for full release. While we’ve successfully implemented features like progress tracking and real-time sign language feedback, we plan to expand the platform with more interactive elements, better model accuracy, and enhanced user engagement. Our team, including Toya Lazmin Khan, Nicholas Pang Jia Chern, Nazihah Surati, and our supervisor, Dr. Yusliza Yusoff, is committed to completing MASRETT and turning it into a fully functional platform for learning MSL.",
-          "image": null
+          "type": "title",
+          "content": "Future Plans"
         },
         {
-          "title": "Recognition at NALI 2024",
-          "text": "At NALI 2024, the bronze medal we received wasn’t just a recognition of our work—it was a reminder of the impact that this project could have on the community. MASRETT is still a work in progress, but the feedback and interest we received at the event have only motivated us to finish the project and make it as accessible and user-friendly as possible. I’m looking forward to what comes next and can’t wait to see how MASRETT evolves in the future.",
-          "image": {
-            "url": "https://i.ibb.co.com/KbfPdRS/medal.jpg",
+          "type": "text",
+          "content": "The project isn’t finished yet—there’s still a lot of work to be done before MASRETT is ready for full release. While we’ve successfully implemented features like progress tracking and real-time sign language feedback, we plan to expand the platform with more interactive elements, better model accuracy, and enhanced user engagement. Our team, including Toya Lazmin Khan, Nicholas Pang Jia Chern, Nazihah Surati, and our supervisor, Dr. Yusliza Yusoff, is committed to completing MASRETT and turning it into a fully functional platform for learning MSL."
+        },
+
+        {
+          "type": "title",
+          "content": "Recognition at NALI 2024"
+        },
+        {
+          "type": "text",
+          "content": "At NALI 2024, the bronze medal we received wasn’t just a recognition of our work—it was a reminder of the impact that this project could have on the community. MASRETT is still a work in progress, but the feedback and interest we received at the event have only motivated us to finish the project and make it as accessible and user-friendly as possible. I’m looking forward to what comes next and can’t wait to see how MASRETT evolves in the future."
+        },
+        {
+          "type": "image",
+          "content": {
+            "url": "https://i.ibb.co/KbfPdRS/medal.jpg",
             "source": null,
             "label": "Bronze Medal Award",
             "alt": "Bronze Medal Award"
           }
         },
         {
-          "text": "Working on MASRETT has been a challenging yet deeply meaningful experience for me. Presenting it at NALI 2024 felt like a milestone—not because of the award, but because it was a chance to show people something our team truly believes in. Hearing firsthand how MASRETT could help people in the deaf and hard-of-hearing community reminded me why we started this project. There’s still a lot to do, and some days are tough, but seeing the positive response motivates me to keep going. I’m looking forward to building on this momentum and bringing MASRETT closer to a platform that can make a real difference."
+          "type": "text",
+          "content": "Working on MASRETT has been a challenging yet deeply meaningful experience for me. Presenting it at NALI 2024 felt like a milestone—not because of the award, but because it was a chance to show people something our team truly believes in. Hearing firsthand how MASRETT could help people in the deaf and hard-of-hearing community reminded me why we started this project. There’s still a lot to do, and some days are tough, but seeing the positive response motivates me to keep going. I’m looking forward to building on this momentum and bringing MASRETT closer to a platform that can make a real difference."
         }
       ]
     },

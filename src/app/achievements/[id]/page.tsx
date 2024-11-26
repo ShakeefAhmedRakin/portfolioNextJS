@@ -124,7 +124,14 @@ export default async function AchievementDetails({
       award?.blog?.summary +
       " " +
       award.blog?.content
-        .map((section) => section?.title + " " + section.text + " ")
+        .map((section) => {
+          if (section.type === "text") {
+            return section.content;
+          }
+          if (section.type === "title") {
+            return section.content;
+          }
+        })
         .join(" "),
     articleSection: [
       "Achievements",
@@ -194,24 +201,20 @@ export default async function AchievementDetails({
           )}
 
           {/* CONTENT SECTIONS */}
-          {award.blog?.content.map((section, index) => (
-            <section key={index} className="mt-5">
-              {section?.title && (
-                <>
-                  <h2 className="font-heading text-text font-bold text-md md:text-lg xl:text-xl">
-                    {section?.title}
-                  </h2>
-                </>
-              )}
-              <p className="my-4 font-body font-light text-text text-xs lg:text-base">
-                {section?.text}
-              </p>
-              {section?.image && (
-                <>
-                  <figure className="mx-auto my-4 bg-background flex items-center flex-col rounded-xl shadow">
+          {award.blog?.content.map((section) => {
+            switch (section.type) {
+              case "text":
+                return (
+                  <p className="my-3 font-body font-light text-text text-xs lg:text-base">
+                    {section?.content}
+                  </p>
+                );
+              case "image":
+                return (
+                  <figure className="my-3 mx-auto  bg-background flex items-center flex-col rounded-xl shadow">
                     <Image
-                      src={section?.image?.url}
-                      alt={section?.image?.alt}
+                      src={section?.content?.url}
+                      alt={section?.content?.alt}
                       draggable={false}
                       sizes="100vw"
                       width={0}
@@ -219,11 +222,11 @@ export default async function AchievementDetails({
                       fill={false}
                       className="object-contain max-w-xl max-h-[400px] w-full"
                     />
-                    <figcaption className="text-center text-[9px] md:text-xs flex justify-center items-center gap-2 bg-background rounded-full shadow-sm mt-1 text-text">
-                      <span>{section?.image?.label}</span>
-                      {section?.image?.source && (
+                    <figcaption className="text-center text-[9px] md:text-xs flex justify-center items-center gap-2 bg-background rounded-full shadow-sm mt-1 pb-1 text-text">
+                      <span>{section?.content?.label}</span>
+                      {section?.content?.source && (
                         <Link
-                          href={section?.image?.source}
+                          href={section?.content?.source}
                           target="_blank"
                           rel="noopener noreferrer"
                           aria-label={`View the image for ${section?.text} in full size`}
@@ -233,10 +236,17 @@ export default async function AchievementDetails({
                       )}
                     </figcaption>
                   </figure>
-                </>
-              )}
-            </section>
-          ))}
+                );
+              case "title":
+                return (
+                  <h2 className="my-3 font-heading text-text font-bold text-md md:text-lg xl:text-xl">
+                    {section?.content}
+                  </h2>
+                );
+              default:
+                return null; // Handle unknown types if needed
+            }
+          })}
         </article>
 
         {/* RIGHT SIDE STICKY CARD */}
