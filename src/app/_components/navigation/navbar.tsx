@@ -1,10 +1,9 @@
-import Link from "next/link";
 import NavigationDropDown from "./navigationdropdown";
 import { ThemeSwitcher } from "./theme.switcher";
 import NavigationLinks from "./navigation.links";
 import Logo from "../brand/logo";
 import NextBreadcrumb from "./breadcrumbs";
-import { ButtonPrimaryOutline, ButtonSecondaryFilled } from "../ui/Buttons";
+import { ButtonPrimaryOutline } from "../ui/Buttons";
 
 export default function Navbar() {
   return (

@@ -1,8 +1,6 @@
-import Link from "next/link";
 import ProjectCards from "../ui/projectcard";
 import SectionBadge from "../ui/sectionbadge";
 import SectionTitle from "../ui/sectiontitle";
-import { IoIosArrowForward } from "react-icons/io";
 import projects from "../../_data/projectIDs.json";
 import { ButtonSecondaryFilled } from "../ui/Buttons";
 

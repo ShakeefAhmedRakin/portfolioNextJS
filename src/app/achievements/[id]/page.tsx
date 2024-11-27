@@ -204,54 +204,69 @@ export default async function AchievementDetails({
           {award.blog?.content.map((section, index) => {
             switch (section.type) {
               case "text":
-                return (
-                  <p
-                    className="my-3 font-body font-light text-text text-xs lg:text-base"
-                    key={index}
-                  >
-                    {section?.content}
-                  </p>
-                );
+                if (typeof section.content === "string") {
+                  return (
+                    <p
+                      className="my-3 font-body font-light text-text text-xs lg:text-base"
+                      key={index}
+                    >
+                      {section.content}
+                    </p>
+                  );
+                }
+                return null; // Safeguard against unexpected content type
+
               case "image":
-                return (
-                  <figure
-                    className="my-3 mx-auto  bg-background flex items-center flex-col rounded-xl shadow"
-                    key={index}
-                  >
-                    <Image
-                      src={section?.content?.url}
-                      alt={section?.content?.alt}
-                      draggable={false}
-                      sizes="100vw"
-                      width={0}
-                      height={0}
-                      fill={false}
-                      className="object-contain max-w-xl max-h-[400px] w-full"
-                    />
-                    <figcaption className="text-center text-[9px] md:text-xs flex justify-center items-center gap-2 bg-background rounded-full shadow-sm mt-1 pb-1 text-text">
-                      <span>{section?.content?.label}</span>
-                      {section?.content?.source && (
-                        <Link
-                          href={section?.content?.source}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          aria-label={`View the image for ${section?.text} in full size`}
-                        >
-                          <CgExternal className="text-text text-lg" />
-                        </Link>
-                      )}
-                    </figcaption>
-                  </figure>
-                );
+                if (
+                  typeof section.content === "object" &&
+                  section.content.url
+                ) {
+                  return (
+                    <figure
+                      className="my-3 mx-auto bg-background flex items-center flex-col rounded-xl shadow"
+                      key={index}
+                    >
+                      <Image
+                        src={section.content.url}
+                        alt={section.content.alt}
+                        draggable={false}
+                        sizes="100vw"
+                        width={0}
+                        height={0}
+                        fill={false}
+                        className="object-contain max-w-xl max-h-[400px] w-full"
+                      />
+                      <figcaption className="text-center text-[9px] md:text-xs flex justify-center items-center gap-2 bg-background rounded-full shadow-sm mt-1 pb-1 text-text">
+                        <span>{section.content.label}</span>
+                        {section.content.source && (
+                          <Link
+                            href={section.content.source}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label={`View the image for ${section.content.label} in full size`}
+                          >
+                            <CgExternal className="text-text text-lg" />
+                          </Link>
+                        )}
+                      </figcaption>
+                    </figure>
+                  );
+                }
+                return null;
+
               case "title":
-                return (
-                  <h2
-                    className="my-3 font-heading text-text font-bold text-md md:text-lg xl:text-xl"
-                    key={index}
-                  >
-                    {section?.content}
-                  </h2>
-                );
+                if (typeof section.content === "string") {
+                  return (
+                    <h2
+                      className="my-3 font-heading text-text font-bold text-md md:text-lg xl:text-xl"
+                      key={index}
+                    >
+                      {section.content}
+                    </h2>
+                  );
+                }
+                return null;
+
               default:
                 return null; // Handle unknown types if needed
             }
