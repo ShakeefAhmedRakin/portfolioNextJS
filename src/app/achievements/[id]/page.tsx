@@ -201,17 +201,23 @@ export default async function AchievementDetails({
           )}
 
           {/* CONTENT SECTIONS */}
-          {award.blog?.content.map((section) => {
+          {award.blog?.content.map((section, index) => {
             switch (section.type) {
               case "text":
                 return (
-                  <p className="my-3 font-body font-light text-text text-xs lg:text-base">
+                  <p
+                    className="my-3 font-body font-light text-text text-xs lg:text-base"
+                    key={index}
+                  >
                     {section?.content}
                   </p>
                 );
               case "image":
                 return (
-                  <figure className="my-3 mx-auto  bg-background flex items-center flex-col rounded-xl shadow">
+                  <figure
+                    className="my-3 mx-auto  bg-background flex items-center flex-col rounded-xl shadow"
+                    key={index}
+                  >
                     <Image
                       src={section?.content?.url}
                       alt={section?.content?.alt}
@@ -239,7 +245,10 @@ export default async function AchievementDetails({
                 );
               case "title":
                 return (
-                  <h2 className="my-3 font-heading text-text font-bold text-md md:text-lg xl:text-xl">
+                  <h2
+                    className="my-3 font-heading text-text font-bold text-md md:text-lg xl:text-xl"
+                    key={index}
+                  >
                     {section?.content}
                   </h2>
                 );

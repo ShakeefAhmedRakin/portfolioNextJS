@@ -1,7 +1,6 @@
 import Image from "next/image";
-import Link from "next/link";
-import { IoIosArrowForward } from "react-icons/io";
 import AnimatedTitle from "../animations/titleanimation";
+import { ButtonPrimaryFilled, ButtonSecondaryFilled } from "../ui/Buttons";
 
 export default function Hero() {
   return (
@@ -26,19 +25,21 @@ export default function Hero() {
             machine learning projects, including natural language processing and
             computer vision.
           </p>
-          <div className="flex max-w-sm gap-1 justify-between mt-8 fade-in-delayed">
-            <Link href={"/resume"} className="w-full rounded-full">
-              <button className="btn bg-primary text-background rounded-full border-transparent shadow-none relative  group hover:bg-primary hover:text-background hover:border-primary w-full">
-                View Resume
-                <IoIosArrowForward className="absolute right-2 text-lg opacity-0 group-hover:opacity-100 duration-300" />
-              </button>
-            </Link>
-            <Link href={"/about"} className="w-full rounded-full">
-              <button className="btn bg-transparent text-primary border-primary rounded-full shadow-none hover:bg-primary-lighter hover:border-primary relative  group w-full">
-                Learn More
-                <IoIosArrowForward className="absolute right-2 text-lg opacity-0 group-hover:opacity-100 duration-300" />
-              </button>
-            </Link>
+          <div className="flex gap-2 mt-5 fade-in-delayed max-w-[450px]">
+            <ButtonPrimaryFilled
+              href="/resume"
+              ariaLabel="My Resume"
+              className="w-full"
+            >
+              View Resume
+            </ButtonPrimaryFilled>
+            <ButtonSecondaryFilled
+              href="/about"
+              ariaLabel="About Me"
+              className="w-full"
+            >
+              Learn More About Me
+            </ButtonSecondaryFilled>
           </div>
         </div>
         <div className="flex justify-center relative min-w-[250px] md:min-w-[300px] max-w-[250px] xl:max-w-sm w-full fade-in-delayed">

@@ -4,6 +4,7 @@ import SectionBadge from "../ui/sectionbadge";
 import SectionTitle from "../ui/sectiontitle";
 import { IoIosArrowForward } from "react-icons/io";
 import awards from "../../_data/awards.json";
+import { ButtonPrimaryFilled, ButtonPrimaryOutline } from "../ui/Buttons";
 
 export default function Highlights() {
   return (
@@ -33,12 +34,15 @@ export default function Highlights() {
                   />
                 ))}
             </div>
-            <Link href="/achievements" className="mt-8 md:mt-16">
-              <button className="btn btn-sm lg:btn-md bg-transparent px-7 md:px-9 text-[9px] lg:text-base text-primary border-primary rounded-full shadow-none hover:bg-primary-lighter hover:border-primary relative group">
-                View More Information
-                <IoIosArrowForward className="absolute right-2 text-lg opacity-0 group-hover:opacity-100 duration-300" />
-              </button>
-            </Link>
+            <div className="mt-10">
+              <ButtonPrimaryFilled
+                href="/achievements"
+                ariaLabel="View My Achievements"
+                className="w-56"
+              >
+                View All Achievements
+              </ButtonPrimaryFilled>
+            </div>
           </div>
         </div>
       </section>

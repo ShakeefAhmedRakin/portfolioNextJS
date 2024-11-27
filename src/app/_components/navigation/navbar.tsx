@@ -4,6 +4,7 @@ import { ThemeSwitcher } from "./theme.switcher";
 import NavigationLinks from "./navigation.links";
 import Logo from "../brand/logo";
 import NextBreadcrumb from "./breadcrumbs";
+import { ButtonPrimaryOutline, ButtonSecondaryFilled } from "../ui/Buttons";
 
 export default function Navbar() {
   return (
@@ -45,18 +46,9 @@ export default function Navbar() {
               <ThemeSwitcher />
             </div>
             {/* Contact Button */}
-            <Link
-              href="/contact"
-              aria-label="Go to Contact Page"
-              className="rounded-full"
-            >
-              <button
-                className="btn rounded-full bg-transparent border-primary text-primary shadow-none hover:bg-primary-lighter hover:text-primary hover:border-primary hidden md:flex"
-                aria-label="Contact Us"
-              >
-                Get In Touch
-              </button>
-            </Link>
+            <ButtonPrimaryOutline href="/contact" ariaLabel="Contact Me">
+              Get In Touch
+            </ButtonPrimaryOutline>
 
             {/* Navigation Dropdown */}
             <div className="lg:hidden">

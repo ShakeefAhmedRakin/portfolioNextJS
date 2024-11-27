@@ -11,9 +11,9 @@ export default function SectionBadge({
         <span
           className={`${
             type === "primary"
-              ? "text-primary bg-primary-lighter"
-              : "text-secondary bg-secondary-lighter"
-          } py-2 px-8 text-center rounded-full font-heading font-semibold text-xs md:text-xs`}
+              ? "text-primary bg-primary-lighter shadow-primary"
+              : "text-secondary bg-secondary-lighter shadow-secondary"
+          } py-2 px-8 text-center rounded-full font-heading font-semibold text-xs md:text-xs shadow`}
         >
           {titleContent.toUpperCase()}
         </span>

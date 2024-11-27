@@ -4,6 +4,7 @@ import SectionBadge from "../ui/sectionbadge";
 import SectionTitle from "../ui/sectiontitle";
 import { IoIosArrowForward } from "react-icons/io";
 import projects from "../../_data/projectIDs.json";
+import { ButtonSecondaryFilled } from "../ui/Buttons";
 
 export default function FeaturedProjects() {
   return (
@@ -31,13 +32,14 @@ export default function FeaturedProjects() {
             ))}
           </div>
 
-          <div className="flex justify-center">
-            <Link href="/projects" className="mt-8 md:mt-8">
-              <button className="btn btn-sm lg:btn-md bg-transparent px-7 md:px-9 text-[9px] lg:text-base text-secondary border-secondary rounded-full shadow-none hover:bg-secondary-lighter hover:border-secondary relative group">
-                View All Projects
-                <IoIosArrowForward className="absolute right-2 text-lg opacity-0 group-hover:opacity-100 duration-300" />
-              </button>
-            </Link>
+          <div className="flex justify-center mt-8">
+            <ButtonSecondaryFilled
+              href="/projects"
+              ariaLabel="View All Projects"
+              className="w-56"
+            >
+              View All Projects
+            </ButtonSecondaryFilled>
           </div>
         </div>
       </section>
