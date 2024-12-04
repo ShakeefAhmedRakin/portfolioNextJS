@@ -1,8 +1,9 @@
 import Image from "next/image";
 import awards from "../_data/awards.json";
 import Link from "next/link";
-import { IoIosArrowForward } from "react-icons/io";
 import { Metadata } from "next";
+import { CiClock1 } from "react-icons/ci";
+import { BiCalendar } from "react-icons/bi";
 
 export function generateMetadata(): Metadata {
   return {
@@ -63,47 +64,50 @@ export default function Achievements() {
           <h1 className="font-heading text-text font-bold text-lg md:text-xl xl:text-3xl mb-2 md:mb-4">
             My <span className="text-primary">Achievements</span>
           </h1>
-          <p className="my-4 font-body font-light text-text text-xs lg:text-base">
-            As I approached the end of my university life, I actively
-            participated in various competitions, which allowed me to gain
-            hands-on experience in a wide array of fields, from full-stack web
-            development to machine learning.
-          </p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="mt-8">
             {awards.map((award, index) => (
               <div key={index}>
-                <div className="flex flex-col h-full bg-background py-4 px-8 shadow rounded-xl">
-                  <Image
-                    src={award.photo}
-                    width={128}
-                    height={128}
-                    draggable={false}
-                    sizes="100vw"
-                    alt={`${award.title} logo`}
-                    className="mx-auto mb-2 w-[80px] lg:w-[128px] object-contain"
-                  />
-                  <h1 className="font-heading flex-1 text-xs text-center font-medium text-text">
-                    {award.title}
-                  </h1>
-                  <h2 className="text-center text-xs font-heading my-1 text-primary font-bold">
-                    {award.position}
-                  </h2>
-                  <h3 className="text-center font-body text-[9px] italic text-text">
-                    {new Date(award.date).toLocaleDateString("en-US", {
-                      month: "long",
-                      year: "numeric",
-                    })}
-                  </h3>
-                  <Link
-                    href={`achievements/${award.id}`}
-                    className="rounded-full mt-4"
-                  >
-                    <button className="btn btn-sm bg-transparent text-primary rounded-full border dark:border-gray-800 shadow-none relative font-body text-xs group hover:bg-primary hover:text-background hover:border-primary w-full underline">
-                      Details
-                      <IoIosArrowForward className="absolute right-2 text-lg opacity-0 group-hover:opacity-100 duration-[100ms]" />
-                    </button>
-                  </Link>
+                <div className="flex md:flex-row flex-col-reverse gap-3 md:gap-10">
+                  <div className="text-text flex-1">
+                    <h1 className="font-heading font-semibold text-xs md:text-xl line-clamp-1">
+                      {award.blog.title}
+                    </h1>
+                    <p className="line-clamp-4 md:line-clamp-3 lg:line-clamp-2 font-body text-[11px] md:text-sm mt-2 font-light text-gray-600 dark:text-gray-300">
+                      {award.blog.summary}
+                    </p>
+                    <Link
+                      href={`/achievements/${award.id}`}
+                      className="rounded-lg"
+                    >
+                      <button className="py-2 px-4 mb-5 md:mb-10 mt-3 mb:mt-6 rounded-lg shadow hover:shadow-primary duration-150 border hover:border-primary active:scale-[0.98] font-heading text-[9px] md:text-xs font-semibold">
+                        Read Story
+                      </button>
+                    </Link>
+                    <div className="flex items-center gap-4 font-heading">
+                      <span className="flex items-center gap-2 text-[10px] md:text-xs  text-gray-600 dark:text-gray-300 font-bold">
+                        <CiClock1 className="text-sm md:text-lg text-text"></CiClock1>
+                        2 min read
+                      </span>
+                      <span className="flex items-center gap-2 text-[10px] md:text-xs  text-gray-600 dark:text-gray-300 font-bold">
+                        <BiCalendar className="text-sm md:text-lg"></BiCalendar>
+                        {new Date(award.date).toLocaleDateString("en-US", {
+                          month: "long",
+                          year: "numeric",
+                        })}
+                      </span>
+                    </div>
+                  </div>
+                  <div className="relative md:max-w-[250px] lg:max-w-xs w-full aspect-video rounded-2xl">
+                    <Image
+                      src={award?.mainImage?.url}
+                      fill={true}
+                      alt={award?.mainImage?.alt}
+                      draggable={false}
+                      className="h-full w-full object-cover rounded-2xl"
+                    ></Image>
+                  </div>
                 </div>
+                <hr className="my-10" />
               </div>
             ))}
           </div>
