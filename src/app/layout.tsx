@@ -78,7 +78,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`antialiased ${montserrat.variable} ${poppins.variable}`}
+        className={`antialiased ${montserrat.variable} ${poppins.variable} bg-background`}
       >
         <Providers>
           <Navbar />

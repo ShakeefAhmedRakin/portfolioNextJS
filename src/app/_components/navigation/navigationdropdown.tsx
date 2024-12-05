@@ -3,8 +3,8 @@ import { useEffect, useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoClose } from "react-icons/io5";
 import NavigationLinks from "./navigation.links";
-import Link from "next/link";
 import Logo from "../brand/logo";
+import { ButtonPrimaryFilled, ButtonSecondaryFilled } from "../ui/Buttons";
 
 export default function NavigationDropDown() {
   const [isOpen, setIsOpen] = useState(false);
@@ -54,7 +54,7 @@ export default function NavigationDropDown() {
           role="dialog"
           aria-modal="true"
           aria-labelledby="dropdown-navigation-logo"
-          className={`fixed w-screen h-screen z-50 flex flex-col items-center justify-center inset-0 bg-white dark:bg-black bg-opacity-70 dark:bg-opacity-20 backdrop-blur duration-300 transition-opacity ${
+          className={`fixed w-screen h-screen z-50 flex flex-col items-center justify-center inset-0 bg-white dark:bg-black bg-opacity-95 dark:bg-opacity-90 backdrop-blur duration-300 transition-opacity ${
             isAnimating ? "opacity-100" : "opacity-0"
           }`}
           style={{ transition: "opacity 0.3s ease-in-out" }}
@@ -73,37 +73,27 @@ export default function NavigationDropDown() {
           </button>
           <Logo />
           <ul
-            className="p-4 flex flex-col items-center text-text justify-center gap-7 font-heading font-medium"
+            className="p-4 mt-4 flex flex-col items-center text-text justify-center gap-7 font-heading font-medium"
             aria-label="Main navigation links"
           >
             <NavigationLinks
               isDropDownLinks={true}
               handleLinkClick={handleLinkClick}
             ></NavigationLinks>
-            <Link
+            <ButtonSecondaryFilled
               href="/resume"
-              aria-label="Resume Page"
-              className="rounded-full"
+              ariaLabel="View Resume"
+              className="w-40"
             >
-              <button
-                className="btn rounded-full bg-secondary border-secondary hover:border-primary text-background hover:bg-primary flex md:hidden"
-                aria-label="Resume"
-              >
-                Resume
-              </button>
-            </Link>
-            <Link
+              View Resume
+            </ButtonSecondaryFilled>
+            <ButtonPrimaryFilled
               href="/contact"
-              aria-label="Contact Page"
-              className="rounded-full"
+              ariaLabel="Contact Me"
+              className="w-40"
             >
-              <button
-                className="btn rounded-full bg-transparent text-accent border-accent hover:bg-accent hover:text-background hover:border-accent flex md:hidden"
-                aria-label="Contact"
-              >
-                Get In Touch
-              </button>
-            </Link>
+              Get In Touch
+            </ButtonPrimaryFilled>
           </ul>
         </div>
       )}

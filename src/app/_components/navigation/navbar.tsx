@@ -8,7 +8,7 @@ import { ButtonPrimaryOutline } from "../ui/Buttons";
 export default function Navbar() {
   return (
     <header
-      className="fixed w-full top-0 bg-background z-50 shadow dark:shadow-primary"
+      className="fixed w-full top-0 backdrop-blur bg-white dark:bg-black bg-opacity-80 dark:bg-opacity-70 z-50 shadow dark:shadow-primary"
       aria-label="Main Navigation"
     >
       <nav
