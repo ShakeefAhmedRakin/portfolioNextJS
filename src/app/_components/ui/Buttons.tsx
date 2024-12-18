@@ -7,6 +7,7 @@ interface ButtonProps {
   className?: string;
   ariaLabel?: string; // For accessibility
   openInNewTab?: boolean; // Determines if the link opens in a new tab
+  icon?: ReactNode;
 }
 
 export function ButtonPrimaryFilled({
@@ -15,6 +16,7 @@ export function ButtonPrimaryFilled({
   className,
   ariaLabel,
   openInNewTab,
+  icon,
 }: ButtonProps) {
   return (
     <Link
@@ -27,7 +29,8 @@ export function ButtonPrimaryFilled({
         aria-label={ariaLabel}
         className={`hover:before:bg-secondary border-primary hover:border-secondary relative h-[40px] md:h-[50px] overflow-hidden ${className} rounded-full border bg-primary duration-500 px-3 text-white shadow shadow-primary transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-primary before:transition-all before:duration-500 hover:text-white hover:shadow-secondary hover:before:left-0 hover:before:w-full active:scale-[0.9]`}
       >
-        <span className="relative z-10 text-xs md:text-sm font-body">
+        <span className="relative z-10 text-[10px] md:text-sm font-body flex items-center justify-center gap-2">
+          {icon}
           {children}
         </span>
       </button>
@@ -41,6 +44,7 @@ export function ButtonSecondaryFilled({
   className,
   ariaLabel,
   openInNewTab,
+  icon,
 }: ButtonProps) {
   return (
     <Link
@@ -53,7 +57,8 @@ export function ButtonSecondaryFilled({
         aria-label={ariaLabel}
         className={`hover:before:bg-primary border-secondary hover:border-primary relative h-[40px] md:h-[50px] overflow-hidden ${className} rounded-full border bg-secondary duration-500 px-3 text-white shadow shadow-secondary transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-secondary before:transition-all before:duration-500 hover:text-white hover:shadow-primary hover:before:left-0 hover:before:w-full active:scale-[0.9]`}
       >
-        <span className="relative z-10 text-xs md:text-sm font-body">
+        <span className="relative z-10 text-[10px] md:text-sm font-body flex items-center justify-center gap-2">
+          {icon}
           {children}
         </span>
       </button>
@@ -67,6 +72,7 @@ export function ButtonPrimaryOutline({
   className,
   ariaLabel,
   openInNewTab,
+  icon,
 }: ButtonProps) {
   return (
     <Link
@@ -79,7 +85,8 @@ export function ButtonPrimaryOutline({
         aria-label={ariaLabel}
         className={`hover:before:bg-primary border-primary hover:border-primary relative h-[40px] md:h-[50px] overflow-hidden ${className} rounded-full border bg-transparent duration-500 px-3 text-primary shadow transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-primary before:transition-all before:duration-500 hover:text-white hover:shadow-primary hover:before:left-0 hover:before:w-full active:scale-[0.9]`}
       >
-        <span className="relative z-10 text-xs md:text-sm font-body">
+        <span className="relative z-10 text-[10px] md:text-sm font-body flex items-center justify-center gap-2">
+          {icon}
           {children}
         </span>
       </button>
@@ -93,6 +100,7 @@ export function ButtonSecondaryOutline({
   className,
   ariaLabel,
   openInNewTab,
+  icon,
 }: ButtonProps) {
   return (
     <Link
@@ -105,7 +113,8 @@ export function ButtonSecondaryOutline({
         aria-label={ariaLabel}
         className={`hover:before:bg-secondary border-secondary hover:border-secondary relative h-[40px] md:h-[50px] overflow-hidden ${className} rounded-full border bg-transparent duration-500 px-3 text-secondary shadow transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-secondary before:transition-all before:duration-500 hover:text-white hover:shadow-secondary hover:before:left-0 hover:before:w-full active:scale-[0.9]`}
       >
-        <span className="relative z-10 text-xs md:text-sm font-body">
+        <span className="relative z-10 text-[10px] md:text-sm font-body flex items-center justify-center gap-2">
+          {icon}
           {children}
         </span>
       </button>

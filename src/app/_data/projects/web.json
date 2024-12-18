@@ -1,0 +1,38 @@
+[
+  {
+    "id": "blood-bridge",
+    "color": "D81328",
+    "isFeatured": false,
+    "title": "Blood Bridge",
+    "type": "Full Stack Web Application",
+    "coverPhoto": {
+      "src": "",
+      "url": "/projects/web/bloodbridge/cover.png",
+      "alt": "Blood Bridge - Cover Photo"
+    },
+    "technology": "MERN",
+    "date": "2023-11-25",
+    "tags": ["React", "Express", "Node.js", "MongoDB", "Firebase"],
+    "overview": "The Blood Donation Application is a comprehensive platform designed to facilitate and streamline blood donation activities. Built using the MERN stack (MongoDB, Express.js, React, Node.js), this application serves as a user-friendly interface connecting blood donors with individuals in need of blood donations. It focuses on user roles, authentication, donation requests, content management, and role-based access control to ensure efficient and secure blood donation processes.",
+    "githubLinks": [
+      {
+        "label": "Frontend",
+        "url": "https://github.com/ShakeefAhmedRakin/BloodBridge-Client"
+      },
+      {
+        "label": "Backend",
+        "url": "https://github.com/ShakeefAhmedRakin/BloodBridge-Server"
+      }
+    ],
+    "demoLinks": [
+      {
+        "label": "View Website",
+        "url": "https://bloodbridge-140aa.web.app/"
+      }
+    ],
+    "tech-stack": [],
+    "frontend-stack": ["React", "Redux", "Material-UI"],
+    "backend-stack": ["Express", "Node.js", "MongoDB", "Firebase"],
+    "mainDescription": []
+  }
+]
