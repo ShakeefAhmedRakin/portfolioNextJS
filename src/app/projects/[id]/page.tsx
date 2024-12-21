@@ -1,5 +1,5 @@
 import Image from "next/image";
-import projects from "../../_data/projects/web.json";
+import projects from "../../_data/projects.json";
 import {
   ButtonPrimaryOutline,
   ButtonSecondaryOutline,
@@ -8,6 +8,7 @@ import { BsGithub } from "react-icons/bs";
 import { CgExternal } from "react-icons/cg";
 import ProjectNotFound from "@/app/_components/errors/projectnotfound";
 import { Metadata } from "next";
+import { CreativeWork, WithContext } from "schema-dts";
 
 export async function generateStaticParams() {
   return projects.map((project) => ({
@@ -89,8 +90,43 @@ export default async function AchievementDetails({
     return ProjectNotFound();
   }
 
+  /// Prepare JSON-LD
+  const jsonLd: WithContext<CreativeWork> = {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    name: project?.title + " - " + project?.subtitle,
+    description: project?.summary || "Explore details about this project.",
+    datePublished: project?.date,
+    image: {
+      "@type": "ImageObject",
+      url: project?.coverPhoto.url,
+    },
+    author: {
+      "@type": "Person",
+      name: "Shakeef Ahmed Rakin",
+    },
+    url: `${process.env.WEBSITE_URL}/projects/${project?.id}`,
+    publisher: {
+      "@type": "Organization",
+      name: "Shakeef Ahmed Rakin",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://shakeefahmedrakin.vercel.app/logos/logo.png",
+      },
+    },
+    creator: "Shakeef Ahmed Rakin",
+    maintainer: "Shakeef Ahmed Rakin",
+    mainEntityOfPage: `${process.env.WEBSITE_URL}/projects/${project?.id}`,
+    keywords: project.seo?.googleIndexing?.keywords?.join(", "),
+    abstract: project?.summary,
+  };
+
   return (
     <section className="bg-backgroundDark min-h-screen">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <div className="container mx-auto px-4 md:px-20 lg:px-32 xl:px-64 py-16">
         <article>
           {/* PROJECT HEADER */}
