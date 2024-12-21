@@ -3,6 +3,7 @@
     "id": "blood-bridge",
     "isFeatured": false,
     "isWorkInProgress": false,
+    "type": "web",
     "title": "Blood Bridge",
     "subtitle": "Full Stack Web Application",
     "coverPhoto": {
@@ -296,6 +297,40 @@
         "title": "Final Conclusion",
         "content": "Working on this project has given me valuable experience in building a full-stack application with real-world functionality. It taught me how to implement secure user authentication, particularly protecting private API endpoints using JWT tokens. This allowed me to handle role-based access and ensure that sensitive data was only accessible to authorized users. I also gained hands-on experience with integrating third-party services like Stripe for payment processing. Overall, the project strengthened my skills in both front-end and back-end development, helping me understand the complexities of building and securing a full-stack web application."
       }
-    ]
+    ],
+    "seo": {
+      "googleIndexing": {
+        "title": "Blood Bridge | Full Stack Web Application | Shakeef Ahmed Rakin",
+        "description": "BloodBridge is a full-stack web application designed to connect blood donors, recipients, and volunteers. It includes features like user role management, donation request handling, and content creation. Learn more about this project by Shakeef Ahmed Rakin.",
+        "keywords": [
+          "BloodBridge",
+          "BloodBridge Web Application",
+          "BloodBridge Full Stack",
+          "BloodBridge MERN Stack",
+          "BloodBridge React",
+          "BloodBridge Express",
+          "BloodBridge Node.js",
+          "BloodBridge MongoDB",
+          "BloodBridge Firebase",
+          "Shakeef Ahmed Rakin"
+        ],
+        "publisher": "Shakeef Ahmed Rakin",
+        "image": "/projects/web/bloodbridge/cover.png",
+        "imgAlt": "Blood Bridge - Cover Photo"
+      },
+      "twitterCard": {
+        "title": "Blood Bridge | Full Stack Web Application | Shakeef Ahmed Rakin",
+        "description": "BloodBridge is a full-stack web application designed to connect blood donors, recipients, and volunteers. It includes features like user role management, donation request handling, and content creation. Learn more about this project by Shakeef Ahmed Rakin.",
+        "image": "/projects/web/bloodbridge/cover.png",
+        "imgAlt": "Blood Bridge - Cover Photo"
+      },
+      "openGraphCard": {
+        "title": "Blood Bridge | Full Stack Web Application | Shakeef Ahmed Rakin",
+        "type": "article",
+        "image": "/projects/web/bloodbridge/cover.png",
+        "imgAlt": "Blood Bridge - Cover Photo",
+        "description": "BloodBridge is a full-stack web application designed to connect blood donors, recipients, and volunteers. It includes features like user role management, donation request handling, and content creation. Learn more about this project by Shakeef Ahmed Rakin."
+      }
+    }
   }
 ]

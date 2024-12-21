@@ -1,16 +1,80 @@
 import Image from "next/image";
-import projects from "../../../_data/projects/web.json";
+import projects from "../../_data/projects/web.json";
 import {
   ButtonPrimaryOutline,
   ButtonSecondaryOutline,
 } from "@/app/_components/ui/Buttons";
 import { BsGithub } from "react-icons/bs";
 import { CgExternal } from "react-icons/cg";
+import ProjectNotFound from "@/app/_components/errors/projectnotfound";
+import { Metadata } from "next";
 
 export async function generateStaticParams() {
   return projects.map((project) => ({
     id: project.id,
   }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}): Promise<Metadata> {
+  const { id } = await params; //
+  const project = projects.find((project) => project.id === id);
+
+  return {
+    metadataBase: new URL(process.env.WEBSITE_URL || "http://localhost:3000"),
+    // GOOGLE INDEXING SEO TAGS
+    title: project?.seo?.googleIndexing?.title || "Achievement Details",
+    description:
+      project?.seo?.googleIndexing?.description ||
+      "Explore details about this achievement.",
+    keywords: project?.seo?.googleIndexing?.keywords || "Achievement, Details",
+    publisher: "Shakeef Ahmed Rakin",
+    alternates: {
+      canonical: `${process.env.WEBSITE_URL}/projects/${project?.id}`,
+    },
+    robots: "index, follow",
+
+    // PREVIEW TAGS FOR SOCIAL MEDIA
+    openGraph: {
+      title: project?.seo?.openGraphCard?.title || project?.title,
+      type: "article",
+      description: project?.seo?.openGraphCard?.description || project?.summary,
+      authors: "Shakeef Ahmed Rakin",
+      url: `${process.env.WEBSITE_URL}/projects/${project?.id}`,
+      images: [
+        {
+          url:
+            project?.seo?.openGraphCard?.image ||
+            project?.coverPhoto?.url ||
+            "/logos/logo.png",
+          alt:
+            project?.seo?.openGraphCard?.imgAlt ||
+            project?.coverPhoto?.alt ||
+            "Project Image",
+        },
+      ],
+      siteName: "Shakeef Ahmed Rakin - Portfolio",
+    },
+    twitter: {
+      title: project?.seo?.twitterCard?.title || project?.title,
+      description: project?.seo?.twitterCard?.description || project?.summary,
+      images: [
+        {
+          url:
+            project?.seo?.openGraphCard?.image ||
+            project?.coverPhoto?.url ||
+            "/logos/logo.png",
+          alt:
+            project?.seo?.openGraphCard?.imgAlt ||
+            project?.coverPhoto?.alt ||
+            "Project Image",
+        },
+      ],
+    },
+  };
 }
 
 export default async function AchievementDetails({
@@ -20,6 +84,10 @@ export default async function AchievementDetails({
 }) {
   const { id } = await params;
   const project = projects.find((project) => project.id === id);
+
+  if (!project) {
+    return ProjectNotFound();
+  }
 
   return (
     <section className="bg-backgroundDark min-h-screen">
@@ -101,7 +169,7 @@ export default async function AchievementDetails({
             <h2 className="font-heading text-text mt-4 mb-2 font-bold text-base md:text-lg xl:text-2xl">
               Project Summary
             </h2>
-            <p className="font-body font-light text-text text-xs lg:text-base max-w-4xl">
+            <p className="font-body font-light text-text text-xs lg:text-base max-w-4xl text-justify">
               {project?.summary}
             </p>
           </header>
