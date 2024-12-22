@@ -1,9 +1,15 @@
+"use client";
 import Link from "next/link";
 
-export default function Logo({ isFooter = false }) {
+export default function Logo({ isFooter = false, handleLinkClick = () => {} }) {
   return (
     <>
-      <Link href="/" aria-label="Homepage" className="flex items-center">
+      <Link
+        href="/"
+        aria-label="Homepage"
+        className="flex items-center"
+        onClick={handleLinkClick}
+      >
         <svg
           version="1.0"
           xmlns="http://www.w3.org/2000/svg"

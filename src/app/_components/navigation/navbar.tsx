@@ -3,7 +3,7 @@ import { ThemeSwitcher } from "./theme.switcher";
 import NavigationLinks from "./navigation.links";
 import Logo from "../brand/logo";
 import NextBreadcrumb from "./breadcrumbs";
-import { ButtonPrimaryOutline } from "../ui/Buttons";
+import { ButtonPrimaryFilled } from "../ui/Buttons";
 
 export default function Navbar() {
   return (
@@ -45,9 +45,9 @@ export default function Navbar() {
               <ThemeSwitcher />
             </div>
             {/* Contact Button */}
-            <ButtonPrimaryOutline href="/contact" ariaLabel="Contact Me">
+            <ButtonPrimaryFilled href="/contact" ariaLabel="Contact Me">
               Get In Touch
-            </ButtonPrimaryOutline>
+            </ButtonPrimaryFilled>
 
             {/* Navigation Dropdown */}
             <div className="lg:hidden">

@@ -71,29 +71,33 @@ export default function NavigationDropDown() {
           >
             <IoClose />
           </button>
-          <Logo />
+          <Logo handleLinkClick={handleLinkClick} />
           <ul
-            className="p-4 mt-4 flex flex-col items-center text-text justify-center gap-7 font-heading font-medium"
+            className="p-4 mt-7 flex flex-col items-center text-text justify-center gap-7 font-heading font-medium"
             aria-label="Main navigation links"
           >
             <NavigationLinks
               isDropDownLinks={true}
               handleLinkClick={handleLinkClick}
             ></NavigationLinks>
-            <ButtonSecondaryFilled
-              href="/resume"
-              ariaLabel="View Resume"
-              className="w-40"
-            >
-              View Resume
-            </ButtonSecondaryFilled>
-            <ButtonPrimaryFilled
-              href="/contact"
-              ariaLabel="Contact Me"
-              className="w-40"
-            >
-              Get In Touch
-            </ButtonPrimaryFilled>
+            <div onClick={handleLinkClick} className="rounded-full">
+              <ButtonSecondaryFilled
+                href="/resume"
+                ariaLabel="View Resume"
+                className="w-40"
+              >
+                View Resume
+              </ButtonSecondaryFilled>
+            </div>
+            <div onClick={handleLinkClick} className="rounded-full">
+              <ButtonPrimaryFilled
+                href="/contact"
+                ariaLabel="Contact Me"
+                className="w-40"
+              >
+                Get In Touch
+              </ButtonPrimaryFilled>
+            </div>
           </ul>
         </div>
       )}

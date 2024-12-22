@@ -27,7 +27,7 @@ export function ThemeSwitcher() {
   return (
     <button
       onClick={toggleTheme}
-      className="aspect-square rounded-full border-none text-accent hover:text-primary  hover:bg-primary-lighter border h-9 w-9 flex justify-center items-center"
+      className="aspect-square rounded-full border-none text-accent hover:text-primary duration-300 hover:bg-primary-lighter border h-9 w-9 flex justify-center items-center"
     >
       {theme === "light" ? (
         <FiMoon className="text-lg" /> // Moon icon for light theme
