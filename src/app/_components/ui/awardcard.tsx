@@ -24,7 +24,7 @@ export default function AwardCard({
         <h1 className="text-center max-w-[70%] flex-1 mb-2 text-text font-heading font-semibold text-[9px] md:text-xs">
           {awardTitle}
         </h1>
-        <h2 className="text-center text-primary font-heading font-medium text-[9px] md:text-xs">
+        <h2 className="text-center text-primary font-heading text-[9px] md:text-xs font-semibold">
           {awardDescription}
         </h2>
       </div>
