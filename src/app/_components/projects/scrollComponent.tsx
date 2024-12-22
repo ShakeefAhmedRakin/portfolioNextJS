@@ -13,7 +13,10 @@ export default function ScrollToViewComponent({
   const scrollTo = useCallback((sectionId: string) => {
     const section = document.getElementById(sectionId);
     if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
+      const offset = 120;
+      const top = section.getBoundingClientRect().top + window.scrollY - offset;
+
+      window.scrollTo({ top, behavior: "smooth" });
     }
   }, []);
 

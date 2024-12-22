@@ -1,6 +1,8 @@
 import Image from "next/image";
 import AnimatedTitle from "../animations/titleanimation";
 import { ButtonPrimaryFilled, ButtonSecondaryFilled } from "../ui/Buttons";
+import { BsGithub, BsLinkedin, BsStackOverflow } from "react-icons/bs";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -41,6 +43,39 @@ export default function Hero() {
               Learn More About Me
             </ButtonSecondaryFilled>
           </div>
+          {/* SOCIAL LINKS */}
+          <div className="flex justify-center md:justify-start mt-6 gap-10 fade-in-delayed ml-4 text-[26px] md:text-3xl">
+            <Link
+              href="https://github.com/ShakeefAhmedRakin"
+              className="p-3 rounded-full text-text opacity-80 border border-transparent hover:text-primary hover:border-primary duration-300 active:scale-[0.9]"
+              passHref
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span className="sr-only">GitHub</span>
+              <BsGithub />
+            </Link>
+            <Link
+              href="https://www.linkedin.com/in/shakeef-ahmed-rakin"
+              className="p-3 rounded-full text-text opacity-80 border border-transparent hover:text-primary hover:border-primary duration-300 active:scale-[0.9]"
+              passHref
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span className="sr-only">LinkedIn</span>
+              <BsLinkedin />
+            </Link>
+            <Link
+              href="https://stackexchange.com/users/38680194/shakeef-ahmed-rakin"
+              className="p-3 rounded-full text-text opacity-80 border border-transparent hover:text-primary hover:border-primary duration-300 active:scale-[0.9]"
+              passHref
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span className="sr-only">GitHub</span>
+              <BsStackOverflow />
+            </Link>
+          </div>
         </div>
         <div className="flex justify-center relative min-w-[250px] md:min-w-[300px] max-w-[250px] xl:max-w-sm w-full fade-in-delayed">
           <Image
@@ -51,9 +86,6 @@ export default function Hero() {
             alt="photo"
             className="aspect-square z-10 border border-primary shadow-primary shadow object-cover rounded-full min-w-[250px] md:min-w-[300px] max-w-[250px] xl:max-w-sm w-full"
           ></Image>
-          <div className="absolute w-[150%] max-w-[100vw] -bottom-16 md:-bottom-20">
-            {/* <HeroAnimation></HeroAnimation> */}
-          </div>
         </div>
       </div>
     </section>

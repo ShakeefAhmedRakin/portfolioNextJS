@@ -5,6 +5,7 @@ import Navbar from "./_components/navigation/navbar";
 // FONTS
 import { Montserrat, Poppins } from "next/font/google";
 import { Providers } from "./providers";
+import Footer from "./_components/navigation/footer";
 
 const montserrat = Montserrat({
   weight: ["100", "200", "300", "400", "500", "800", "700", "800", "900"],
@@ -88,6 +89,7 @@ export default function RootLayout({
           >
             {children}
           </div>
+          <Footer />
         </Providers>
       </body>
     </html>
