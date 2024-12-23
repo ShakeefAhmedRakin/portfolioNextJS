@@ -3,6 +3,8 @@ import workData from "../_data/work.json";
 import Image from "next/image";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import Link from "next/link";
+import { Metadata } from "next";
+import { Person, WithContext } from "schema-dts";
 
 // Helper function to format date
 const formatDate = (date: string | null | undefined) => {
@@ -175,7 +177,54 @@ const renderPositions = (positions: WorkItem[], isActive: boolean) => (
   </div>
 );
 
-const Work: React.FC = () => {
+export function generateMetadata(): Metadata {
+  return {
+    metadataBase: new URL(process.env.WEBSITE_URL || "http://localhost:3000"),
+    title: "Shakeef Ahmed Rakin - Work Experience",
+    description:
+      "Explore the work experience of Shakeef Ahmed Rakin, showcasing his current and past positions, along with the projects he has worked on.",
+    keywords: [
+      "Shakeef Ahmed Rakin",
+      "Work Experience",
+      "Full-stack Developer",
+      "Machine Learning Engineer",
+      "Software Engineer",
+      "Web Developer",
+    ],
+    publisher: "Shakeef Ahmed Rakin",
+    alternates: {
+      canonical: `${process.env.WEBSITE_URL}/work`,
+    },
+    robots: "index, follow",
+    openGraph: {
+      title: "Work Experience | Shakeef Ahmed Rakin",
+      type: "website",
+      description:
+        "Explore the work experience of Shakeef Ahmed Rakin, showcasing his current and past positions, along with the projects he has worked on.",
+      url: `${process.env.WEBSITE_URL}/work`,
+      images: [
+        {
+          url: "/og_images/home.png",
+          alt: "Shakeef Ahmed Rakin - Work Experience",
+        },
+      ],
+      siteName: "Shakeef Ahmed Rakin - Portfolio",
+    },
+    twitter: {
+      title: "Work Experience | Shakeef Ahmed Rakin",
+      description:
+        "Explore the work experience of Shakeef Ahmed Rakin, showcasing his current and past positions, along with the projects he has worked on.",
+      images: [
+        {
+          url: "/og_images/home.png",
+          alt: "Shakeef Ahmed Rakin - Work Experience",
+        },
+      ],
+    },
+  };
+}
+
+export default function Work() {
   const parseDate = (dateStr: string | null | undefined): Date => {
     return dateStr ? new Date(dateStr) : new Date();
   };
@@ -195,8 +244,42 @@ const Work: React.FC = () => {
         parseDate(b.startDate).getTime() - parseDate(a.startDate).getTime()
     );
 
+  const jsonLd: WithContext<Person> = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "Shakeef Ahmed Rakin",
+    additionalName: "Rakin",
+    affiliation: workData.map((item) => {
+      return { "@type": "Organization", name: item.company };
+    }),
+    hasOccupation: workData.map((item) => {
+      return {
+        "@type": "Occupation",
+        name: item.position,
+        occupationLocation: item.companyLocation,
+      };
+    }),
+    jobTitle: workData.map((item) => item.position),
+    nationality: "Bangladeshi",
+    worksFor: workData.map((item) => {
+      return {
+        "@type": "Organization",
+        name: item.company,
+        url: item.companyLink || undefined,
+        location: item.companyLocation,
+        description: item.description,
+      };
+    }),
+    image: `${process.env.WEBSITE_URL}/hero.jpg`,
+    url: `${process.env.WEBSITE_URL}/work`,
+  };
+
   return (
     <section className="bg-backgroundDark min-h-screen">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <div className="container mx-auto px-4 md:px-10 lg:px-20 xl:px-40 py-16">
         <h1 className="font-heading text-text font-bold text-lg md:text-xl xl:text-3xl">
           Work <span className="text-primary">Experience</span>
@@ -232,6 +315,4 @@ const Work: React.FC = () => {
       </div>
     </section>
   );
-};
-
-export default Work;
+}
