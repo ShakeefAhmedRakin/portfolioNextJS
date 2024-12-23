@@ -99,7 +99,7 @@ export default async function AchievementDetails({
     datePublished: project?.date,
     image: {
       "@type": "ImageObject",
-      url: project?.coverPhoto.url,
+      url: `${process.env.WEBSITE_URL}${project?.coverPhoto.url}`,
     },
     author: {
       "@type": "Person",

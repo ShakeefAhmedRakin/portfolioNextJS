@@ -1,10 +1,14 @@
-import ProjectCards from "../ui/projectcard";
 import SectionBadge from "../ui/sectionbadge";
 import SectionTitle from "../ui/sectiontitle";
-import projects from "../../_data/projectIDs.json";
+import projects from "../../_data/projects.json";
 import { ButtonSecondaryFilled } from "../ui/Buttons";
+import ProjectCard from "../ui/projectcard";
 
 export default function FeaturedProjects() {
+  const sortedProjects = projects.sort(
+    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+  );
+
   return (
     <>
       <section className="bg-backgroundDark pb-32 px-2">
@@ -18,16 +22,12 @@ export default function FeaturedProjects() {
             type="secondary"
           />
           {/* SECTION CONTENT */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-8">
-            {projects.map((projects) => (
-              <ProjectCards
-                key={projects.id}
-                projectTitle={projects.projectTitle}
-                projectDescription={projects.projectDescription}
-                projectTags={projects.projectTags}
-                projectHref={projects.link}
-              ></ProjectCards>
-            ))}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-8">
+            {sortedProjects
+              .filter((project) => project.isFeatured)
+              .map((project) => (
+                <ProjectCard key={project.id} project={project} />
+              ))}
           </div>
 
           <div className="flex justify-center mt-8">

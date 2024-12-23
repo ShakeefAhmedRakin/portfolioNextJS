@@ -1,7 +1,7 @@
 [
   {
     "id": "blood-bridge",
-    "isFeatured": false,
+    "isFeatured": true,
     "isWorkInProgress": false,
     "type": "Web Development",
     "title": "Blood Bridge",
@@ -335,7 +335,7 @@
   },
   {
     "id": "topshelf",
-    "isFeatured": false,
+    "isFeatured": true,
     "isWorkInProgress": false,
     "type": "Web Development",
     "title": "TopShelf",
