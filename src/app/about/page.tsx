@@ -136,7 +136,7 @@ export default function About() {
                   {category.skills.map((skill) => (
                     <span
                       key={skill.name}
-                      className="bg-base-200 dark:bg-background rounded-lg p-4 flex gap-4 items-center"
+                      className="bg-background shadow rounded-lg p-4 flex gap-4 items-center"
                     >
                       <span className="text-xl min-w-[16px] max-w-[16px]">
                         {skill.icon}
