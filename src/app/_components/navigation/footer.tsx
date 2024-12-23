@@ -39,7 +39,7 @@ export default function Footer() {
                 <BsLinkedin className="h-7 w-7" aria-hidden="true" />
               </Link>
               <Link
-                href="https://stackexchange.com/users/38680194/shakeef-ahmed-rakin"
+                href="https://stackoverflow.com/users/28897060/shakeef-ahmed-rakin"
                 className="text-gray-300 hover:text-white"
                 target="_blank"
                 rel="noopener noreferrer"

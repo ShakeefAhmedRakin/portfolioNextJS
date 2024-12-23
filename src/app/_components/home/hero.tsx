@@ -66,7 +66,7 @@ export default function Hero() {
               <BsLinkedin />
             </Link>
             <Link
-              href="https://stackexchange.com/users/38680194/shakeef-ahmed-rakin"
+              href="https://stackoverflow.com/users/28897060/shakeef-ahmed-rakin"
               className="p-3 rounded-full text-text opacity-80 border border-transparent hover:text-primary hover:border-primary duration-300 active:scale-[0.9]"
               passHref
               target="_blank"
