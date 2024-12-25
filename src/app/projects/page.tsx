@@ -130,12 +130,12 @@ export default function ProjectsPage() {
       />
       <div className="container mx-auto px-4 md:px-10 lg:px-20 xl:px-40 py-16">
         <h1
-          className="font-heading text-text font-bold text-lg md:text-xl xl:text-3xl"
+          className="font-heading text-text font-bold text-lg md:text-xl xl:text-3xl mb-4"
           id="projects-heading"
         >
           My <span className="text-primary">Projects</span>
         </h1>
-        <hr className="my-4" />
+
         <ScrollToViewComponent projectsByType={projectsByType} />
         {Object.keys(projectsByType).map((type) => (
           <section key={type} id={type} aria-labelledby={`${type}-heading`}>

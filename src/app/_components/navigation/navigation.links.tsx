@@ -47,16 +47,14 @@ export default function NavigationLinks({
         Work
       </Link>
       <Link
-        href="/publications"
+        href="/research"
         aria-label={
-          isDropDownLinks
-            ? "Navigate to Publications page"
-            : "Publications Page"
+          isDropDownLinks ? "Navigate to Research page" : "Research Page"
         }
         onClick={handleLinkClick}
-        className={linkClasses("/publications")}
+        className={linkClasses("/research")}
       >
-        Publications
+        Research
       </Link>
       <Link
         href="/achievements"

@@ -73,8 +73,8 @@ export default function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/publications" className="hover:underline">
-                    Publications
+                  <Link href="/research" className="hover:underline">
+                    Research
                   </Link>
                 </li>
                 <li>
@@ -95,7 +95,7 @@ export default function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/contact" className="hover:underline">
+                  <Link href="/get-in-touch" className="hover:underline">
                     Get In Touch
                   </Link>
                 </li>

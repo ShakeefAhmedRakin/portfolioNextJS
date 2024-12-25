@@ -44,8 +44,8 @@ export default function Navbar() {
             <div aria-label="Toggle Theme">
               <ThemeSwitcher />
             </div>
-            {/* Contact Button */}
-            <ButtonPrimaryFilled href="/contact" ariaLabel="Contact Me">
+            {/* Get In Touch Button */}
+            <ButtonPrimaryFilled href="/get-in-touch" ariaLabel="Contact Me">
               Get In Touch
             </ButtonPrimaryFilled>
 

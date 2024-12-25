@@ -1,0 +1,59 @@
+[
+  {
+    "id": "Optimizing-American-Sign-Language-Recognition-with-Binarized-Neural-Networks-A-Comparative-Study-with-Traditional-Models",
+    "isFeatured": false,
+    "status": { "label": "Thesis", "color": "green" },
+    "isPublished": true,
+    "journalOrOrg": {
+      "name": "BRAC University",
+      "link": "https://www.bracu.ac.bd/",
+      "image": "/research/bracu.png"
+    },
+    "lastUpdatedDate": "05/01/2024",
+    "link": "",
+    "title": "Optimizing American Sign Language Recognition with Binarized Neural Networks: A Comparative Study with Traditional Models",
+    "authors": [
+      {
+        "name": "Shakeef Ahmed Rakin",
+        "link": "https://www.linkedin.com/in/shakeef-ahmed-rakin/",
+        "isSupervisor": false
+      },
+      {
+        "name": "Md.Tahjid Ahsan",
+        "link": null,
+        "isSupervisor": false
+      },
+      {
+        "name": "Mohammed Intishar Rahman",
+        "link": null,
+        "isSupervisor": false
+      },
+      {
+        "name": "Afif Alamgir Lizel",
+        "link": "https://www.linkedin.com/in/afif-alamgir-6638aa268/",
+        "isSupervisor": false
+      },
+      {
+        "name": "Md Sifat Mahmud",
+        "link": null,
+        "isSupervisor": false
+      },
+      {
+        "name": "Md Tanzim Reza",
+        "link": "https://www.bracu.ac.bd/about/people/md-tanzim-reza",
+        "isSupervisor": true
+      }
+    ],
+    "keywords": [
+      "Artificial Intelligence (AI)",
+      "Sign Language",
+      "Deep Learning",
+      "American Sign Language (ASL)",
+      "Binarized Neural Networks (BNNs)",
+      "Larq"
+    ],
+    "abstract": "Sign language is crucial for communication among individuals with hearing or speech impairments. Automated recognition systems are essential for learning and translating different sign language variants. However, these systems often face high computational demands and large memory footprints, limiting their use in real-time and resource-constrained environments. This research develops an optimized pipeline for American Sign Language (ASL) recognition, comparing Binarized Neural Networks (BNNs) with traditional full-precision neural networks. Using Larq, a library for training binarized models, we leverage BNNs' reduced memory and computational needs, suitable for embedded systems and edge devices. The study uses a dataset of ASL alphabet images, applying data augmentation to address data imbalance and occlusions. Both binarized and traditional models are trained and evaluated on accuracy, precision, recall, F1-score, memory footprints, and inference times. Results show that BNNs offer competitive performance with significantly lower computational requirements, demonstrating their potential for efficient and accessible ASL recognition systems.",
+    "pathToPDF": "",
+    "paperContent": []
+  }
+]

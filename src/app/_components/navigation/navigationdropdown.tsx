@@ -91,7 +91,7 @@ export default function NavigationDropDown() {
             </div>
             <div onClick={handleLinkClick} className="rounded-full">
               <ButtonPrimaryFilled
-                href="/contact"
+                href="/get-in-touch"
                 ariaLabel="Contact Me"
                 className="w-40"
               >

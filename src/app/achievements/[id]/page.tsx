@@ -159,13 +159,13 @@ export default async function AchievementDetails({
                 year: "numeric",
               })}
             </span>
-            <h1 className="font-heading text-text font-bold text-lg md:text-xl xl:text-3xl">
+            <h1 className="font-heading text-text font-bold text-lg md:text-xl xl:text-3xl mb-4">
               {award.blog?.title}
             </h1>
           </header>
 
           {/* DESCRIPTION */}
-          <p className="my-4 font-body font-light text-text text-xs lg:text-base">
+          <p className="mb-4 font-body font-light text-text text-xs lg:text-base">
             {award.blog?.summary}
           </p>
 

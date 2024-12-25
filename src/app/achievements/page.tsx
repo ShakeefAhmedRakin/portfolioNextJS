@@ -63,11 +63,11 @@ export default function Achievements() {
       <section className="container mx-auto px-4 md:px-10 lg:px-20 xl:px-40 py-16">
         <h1
           id="achievements-heading"
-          className="font-heading text-text font-bold text-lg md:text-xl xl:text-3xl mb-2 md:mb-4"
+          className="font-heading text-text font-bold text-lg md:text-xl xl:text-3xl mb-4"
         >
           My <span className="text-primary">Achievements</span>
         </h1>
-        <div className="mt-8">
+        <div>
           {awards.map((award, index) => (
             <article
               key={index}

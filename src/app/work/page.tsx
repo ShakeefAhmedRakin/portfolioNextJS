@@ -281,17 +281,17 @@ export default function Work() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <div className="container mx-auto px-4 md:px-10 lg:px-20 xl:px-40 py-16">
-        <h1 className="font-heading text-text font-bold text-lg md:text-xl xl:text-3xl">
+        <h1 className="font-heading text-text font-bold text-lg md:text-xl xl:text-3xl mb-4">
           Work <span className="text-primary">Experience</span>
         </h1>
 
         {/* Current Positions Section */}
         <div className="flex flex-col md:flex-row gap-10">
           <div className="w-full">
-            <h2 className="font-heading text-text font-semibold mt-4 text-md md:text-lg">
+            <h2 className="font-heading text-text font-bold text-md md:text-lg xl:text-2xl mb-2">
               Current Positions
             </h2>
-            <hr className="mt-1 mb-3 md:my-4" />
+            <hr className="mb-2" />
             <div className="border-l">
               {renderPositions(activePositions, true)}
             </div>
@@ -302,10 +302,10 @@ export default function Work() {
         {pastPositions.length > 0 && (
           <div className="flex flex-col md:flex-row gap-10 mt-10">
             <div className="w-full">
-              <h2 className="font-heading text-text font-semibold mt-4 text-md md:text-lg">
+              <h2 className="font-heading text-text font-bold text-md md:text-lg xl:text-2xl mb-2">
                 Past Positions
               </h2>
-              <hr className="mt-1 mb-3 md:my-4" />
+              <hr className="mb-2" />
               <div className="border-l">
                 {renderPositions(pastPositions, false)}
               </div>

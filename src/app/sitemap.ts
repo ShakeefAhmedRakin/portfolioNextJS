@@ -26,7 +26,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       lastModified: new Date().toISOString(),
     },
     {
-      url: `${process.env.WEBSITE_URL}/publications`,
+      url: `${process.env.WEBSITE_URL}/research`,
       priority: 0.8,
       lastModified: new Date().toISOString(),
     },
