@@ -1,8 +1,11 @@
 import projects from "../_data/projects.json";
-import ScrollToViewComponent from "../_components/projects/scrollComponent";
+import ScrollToViewComponent from "../_components/animations/scrollComponent";
 import { Metadata } from "next";
 import { CreativeWorkSeries, WithContext } from "schema-dts";
 import ProjectCard from "../_components/ui/projectcard";
+import LayoutWrapper from "../_components/wrappers/LayoutWrapper";
+import TitleLarge from "../_components/ui/TitleLarge";
+import TitleMedium from "../_components/ui/TitleMedium";
 
 export function generateMetadata(): Metadata {
   return {
@@ -51,23 +54,7 @@ export function generateMetadata(): Metadata {
 }
 
 export default function ProjectsPage() {
-  // Sort projects by date (most recent first)
-  const sortedProjects = projects.sort(
-    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
-  );
-
-  // Group projects by type
-  const projectsByType = sortedProjects.reduce(
-    (acc: { [key: string]: typeof projects }, project) => {
-      if (!acc[project?.type]) {
-        acc[project.type] = [];
-      }
-      acc[project.type].push(project);
-      return acc;
-    },
-    {}
-  );
-
+  const sortedAndGroupedProjects = ReadSortAndGroupProjectsByType();
   const jsonLd: WithContext<CreativeWorkSeries> = {
     "@context": "https://schema.org",
     "@type": "CreativeWorkSeries",
@@ -120,41 +107,51 @@ export default function ProjectsPage() {
   };
 
   return (
-    <section
-      className="bg-backgroundDark min-h-screen"
-      aria-labelledby="projects-heading"
-    >
+    <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <div className="container mx-auto px-4 md:px-10 lg:px-20 xl:px-40 py-16">
-        <h1
-          className="font-heading text-text font-bold text-lg md:text-xl xl:text-3xl mb-4"
-          id="projects-heading"
-        >
-          My <span className="text-primary">Projects</span>
-        </h1>
+      <LayoutWrapper>
+        <TitleLarge
+          firstTitle="My"
+          secondTitle="Projects"
+          isPrimary={true}
+        ></TitleLarge>
 
-        <ScrollToViewComponent projectsByType={projectsByType} />
-        {Object.keys(projectsByType).map((type) => (
+        <ScrollToViewComponent projectsByType={sortedAndGroupedProjects} />
+        {Object.keys(sortedAndGroupedProjects).map((type) => (
           <section key={type} id={type} aria-labelledby={`${type}-heading`}>
             <hr className="my-4" />
-            <h2
-              className="font-heading text-text font-bold text-md md:text-lg xl:text-2xl mb-2"
-              id={`${type}-heading`}
-            >
-              {type}
-            </h2>
+            <TitleMedium id={`${type}-heading`} title={type} />
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-              {projectsByType[type].map((project) => (
+              {sortedAndGroupedProjects[type].map((project) => (
                 <ProjectCard key={project.id} project={project} />
               ))}
             </div>
             <hr className="my-4" />
           </section>
         ))}
-      </div>
-    </section>
+      </LayoutWrapper>
+    </>
   );
 }
+
+const ReadSortAndGroupProjectsByType = () => {
+  const sortedProjects = projects.sort(
+    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+  );
+
+  // Group projects by type
+  const sortedAndGroupedProjects = sortedProjects.reduce(
+    (acc: { [key: string]: typeof projects }, project) => {
+      if (!acc[project?.type]) {
+        acc[project.type] = [];
+      }
+      acc[project.type].push(project);
+      return acc;
+    },
+    {}
+  );
+  return sortedAndGroupedProjects;
+};

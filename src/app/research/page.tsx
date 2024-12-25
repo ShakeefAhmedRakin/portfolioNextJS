@@ -1,19 +1,18 @@
 import researches from "../_data/research.json";
-import ResearchCard from "../_components/ui/researchcard";
+import ResearchCard from "./_components/researchcard";
+import LayoutWrapper from "../_components/wrappers/LayoutWrapper";
+import TitleLarge from "../_components/ui/TitleLarge";
+import TitleMedium from "../_components/ui/TitleMedium";
 
 export default function Research() {
   return (
-    <section className="bg-backgroundDark min-h-screen">
-      <div className="container mx-auto px-4 md:px-10 lg:px-20 xl:px-40 py-16">
-        <h1 className="font-heading text-text font-bold text-lg md:text-xl xl:text-3xl mb-4">
-          My <span className="text-primary">Research</span>
-        </h1>
+    <>
+      <LayoutWrapper>
+        <TitleLarge firstTitle="My" secondTitle="Research" isPrimary={true} />
         {/* Completed Research */}
         {researches.filter((research) => research.isPublished).length > 0 && (
           <div>
-            <h2 className="font-heading text-text font-bold text-md md:text-lg xl:text-2xl mb-2">
-              Completed Research
-            </h2>
+            <TitleMedium title="Completed Research" />
             <hr className="mb-2" />
             <div className="space-y-6">
               {researches
@@ -27,9 +26,7 @@ export default function Research() {
         {/* Ongoing Research */}
         {researches.filter((research) => !research.isPublished).length > 0 && (
           <div className="mt-8">
-            <h2 className="font-heading text-text font-bold text-md md:text-lg xl:text-2xl mb-2">
-              Ongoing Research
-            </h2>
+            <TitleMedium title="Ongoing Research" />
             <hr className="mb-2" />
             <div className="space-y-6">
               {researches
@@ -40,7 +37,7 @@ export default function Research() {
             </div>
           </div>
         )}
-      </div>
-    </section>
+      </LayoutWrapper>
+    </>
   );
 }

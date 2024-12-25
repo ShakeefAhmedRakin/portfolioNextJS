@@ -2,19 +2,56 @@
 import React, { useState } from "react";
 import { MdMail, MdMessage, MdPerson } from "react-icons/md";
 import { IoIosSend } from "react-icons/io";
+import emailjs from "@emailjs/browser";
 import { CgSpinner } from "react-icons/cg";
+import { toast } from "sonner";
 
-export default function ContactForm() {
+export default function ContactForm({
+  serviceID,
+  templateID,
+  publicKey,
+}: {
+  serviceID: string | undefined;
+  templateID: string | undefined;
+  publicKey: string | undefined;
+}) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [isSending, setIsSending] = useState(false);
   const [error, setError] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission logic here
     setIsSending(true);
+    try {
+      const templateParams = {
+        user_name: name,
+        user_email: email,
+        message: message,
+      };
+
+      const res = await emailjs.send(
+        serviceID ?? "",
+        templateID ?? "",
+        templateParams,
+        publicKey
+      );
+
+      if (res.status === 200) {
+        toast.success("Message sent successfully!");
+        setName("");
+        setEmail("");
+        setMessage("");
+      } else {
+        toast.error("Error sending message. Please try again later.");
+      }
+    } catch (error) {
+      console.log(error);
+      toast.error("Error sending message. Please try again later.");
+    } finally {
+      setIsSending(false);
+    }
   };
 
   return (

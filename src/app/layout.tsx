@@ -6,6 +6,7 @@ import Navbar from "./_components/navigation/navbar";
 import { Montserrat, Poppins } from "next/font/google";
 import { Providers } from "./providers";
 import Footer from "./_components/navigation/footer";
+import { Toaster } from "sonner";
 
 const montserrat = Montserrat({
   weight: ["100", "200", "300", "400", "500", "800", "700", "800", "900"],
@@ -82,6 +83,7 @@ export default function RootLayout({
         className={`antialiased ${montserrat.variable} ${poppins.variable} bg-background`}
       >
         <Providers>
+          <Toaster richColors></Toaster>
           <Navbar />
           <div
             id="children-body"
