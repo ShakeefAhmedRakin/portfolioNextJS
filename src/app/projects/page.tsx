@@ -1,11 +1,11 @@
 import projects from "../_data/projects.json";
 import ScrollToViewComponent from "../_components/animations/scrollComponent";
 import { Metadata } from "next";
-import { CreativeWorkSeries, WithContext } from "schema-dts";
 import ProjectCard from "../_components/ui/projectcard";
 import LayoutWrapper from "../_components/wrappers/LayoutWrapper";
 import TitleLarge from "../_components/ui/TitleLarge";
 import TitleMedium from "../_components/ui/TitleMedium";
+import { SetSchemaProjectsPage } from "../_util/metadata/ProjectsPage/SetSchemaProjectsPage";
 
 export function generateMetadata(): Metadata {
   return {
@@ -55,63 +55,10 @@ export function generateMetadata(): Metadata {
 
 export default function ProjectsPage() {
   const sortedAndGroupedProjects = ReadSortAndGroupProjectsByType();
-  const jsonLd: WithContext<CreativeWorkSeries> = {
-    "@context": "https://schema.org",
-    "@type": "CreativeWorkSeries",
-    name: "Shakeef Ahmed Rakin's Projects",
-    description:
-      "A collection of projects showcasing skills in Full-Stack Development, Machine Learning, and Software Engineering.",
-    creator: {
-      "@type": "Person",
-      name: "Shakeef Ahmed Rakin",
-      url: process.env.WEBSITE_URL,
-    },
-    publisher: {
-      "@type": "Organization",
-      name: "Shakeef Ahmed Rakin",
-      logo: {
-        "@type": "ImageObject",
-        url: "/logos/logo.png",
-      },
-    },
-    workExample: projects.map((project) => ({
-      "@type": "CreativeWork",
-      name: project.title,
-      description: project.summary,
-      datePublished: project.date,
-      url: `${process.env.WEBSITE_URL}/projects/${project.id}`,
-      image: {
-        "@type": "ImageObject",
-        url: project.coverPhoto?.url || "/default-image.jpg",
-        alt: project.coverPhoto?.alt || `Cover photo for ${project.title}`,
-      },
-      keywords: project.tags.join(", "),
-      author: {
-        "@type": "Person",
-        name: "Shakeef Ahmed Rakin",
-      },
-    })),
-    sameAs: [
-      "https://www.linkedin.com/in/shakeef-ahmed-rakin/",
-      "https://github.com/ShakeefAhmedRakin",
-    ],
-    additionalType: "https://schema.org/CreativeWorkSeries",
-    genre: [
-      "Full-Stack Development",
-      "Machine Learning",
-      "Software Engineering",
-      "Web Development",
-      "UI/UX Design",
-      ".NET Development",
-    ],
-  };
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
+      <SetSchemaProjectsPage />
       <LayoutWrapper>
         <TitleLarge
           firstTitle="My"

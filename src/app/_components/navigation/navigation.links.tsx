@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import navigationLinks from "../../_data/navigationLinks.json";
 
 interface NavigationLinksProps {
   isDropDownLinks: boolean;
@@ -20,59 +21,21 @@ export default function NavigationLinks({
 
   return (
     <>
-      <Link
-        href="/about"
-        title="About"
-        aria-label={isDropDownLinks ? "Navigate to About page" : "About Page"}
-        onClick={handleLinkClick}
-        className={linkClasses("/about")}
-      >
-        About
-      </Link>
-      <Link
-        href="/projects"
-        title="Projects"
-        aria-label={
-          isDropDownLinks ? "Navigate to Projects page" : "Projects Page"
-        }
-        onClick={handleLinkClick}
-        className={linkClasses("/projects")}
-      >
-        Projects
-      </Link>
-      <Link
-        href="/work"
-        title="Work"
-        aria-label={isDropDownLinks ? "Navigate to Work page" : "Work Page"}
-        onClick={handleLinkClick}
-        className={linkClasses("/work")}
-      >
-        Work
-      </Link>
-      <Link
-        href="/research"
-        title="Research"
-        aria-label={
-          isDropDownLinks ? "Navigate to Research page" : "Research Page"
-        }
-        onClick={handleLinkClick}
-        className={linkClasses("/research")}
-      >
-        Research
-      </Link>
-      <Link
-        href="/achievements"
-        title="Achievements"
-        aria-label={
-          isDropDownLinks
-            ? "Navigate to Achievements page"
-            : "Achievements Page"
-        }
-        onClick={handleLinkClick}
-        className={linkClasses("/achievements")}
-      >
-        Achievements
-      </Link>
+      {navigationLinks.map((link, index) => {
+        if (link.isShown === false) return null;
+        return (
+          <Link
+            key={`${link.title}-${index}`}
+            href={link.route}
+            title={link.title}
+            aria-label={link["aria-label"]}
+            onClick={handleLinkClick}
+            className={linkClasses(link.route)}
+          >
+            <span>{link.label}</span>
+          </Link>
+        );
+      })}
     </>
   );
 }

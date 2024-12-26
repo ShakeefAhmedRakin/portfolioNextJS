@@ -6,7 +6,6 @@ export default function Logo({ isFooter = false, handleLinkClick = () => {} }) {
     <>
       <Link
         href="/"
-        title="Homepage"
         aria-label="Homepage"
         className="flex items-center"
         onClick={handleLinkClick}

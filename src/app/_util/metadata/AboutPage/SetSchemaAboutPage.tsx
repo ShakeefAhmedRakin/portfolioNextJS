@@ -20,13 +20,6 @@ export function SetSchemaAboutPage() {
       url: `${process.env.WEBSITE_URL}`,
       jobTitle: work.map((item) => item.position),
     },
-    character: {
-      "@type": "Person",
-      name: "Shakeef Ahmed Rakin",
-      image: `${process.env.WEBSITE_URL}/hero.png`,
-      url: `${process.env.WEBSITE_URL}`,
-      jobTitle: work.map((item) => item.position),
-    },
     editor: {
       "@type": "Person",
       name: "Shakeef Ahmed Rakin",

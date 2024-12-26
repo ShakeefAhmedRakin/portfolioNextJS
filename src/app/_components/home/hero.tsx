@@ -1,7 +1,7 @@
 import Image from "next/image";
 import AnimatedTitle from "../animations/titleanimation";
 import { ButtonPrimaryFilled, ButtonSecondaryFilled } from "../ui/Buttons";
-import { BsGithub, BsLinkedin, BsStackOverflow } from "react-icons/bs";
+import { socialLinks } from "../../_data/socialLinks";
 import Link from "next/link";
 
 export default function Hero() {
@@ -45,36 +45,19 @@ export default function Hero() {
           </div>
           {/* SOCIAL LINKS */}
           <div className="flex justify-center md:justify-start mt-6 gap-10 fade-in-delayed ml-4 text-[26px] md:text-3xl">
-            <Link
-              href="https://github.com/ShakeefAhmedRakin"
-              className="p-3 rounded-full text-text opacity-80 border border-transparent hover:text-primary hover:border-primary duration-300 active:scale-[0.9]"
-              passHref
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <span className="sr-only">GitHub</span>
-              <BsGithub />
-            </Link>
-            <Link
-              href="https://www.linkedin.com/in/shakeef-ahmed-rakin"
-              className="p-3 rounded-full text-text opacity-80 border border-transparent hover:text-primary hover:border-primary duration-300 active:scale-[0.9]"
-              passHref
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <span className="sr-only">LinkedIn</span>
-              <BsLinkedin />
-            </Link>
-            <Link
-              href="https://stackoverflow.com/users/28897060/shakeef-ahmed-rakin"
-              className="p-3 rounded-full text-text opacity-80 border border-transparent hover:text-primary hover:border-primary duration-300 active:scale-[0.9]"
-              passHref
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <span className="sr-only">GitHub</span>
-              <BsStackOverflow />
-            </Link>
+            {socialLinks.map((link, index) => (
+              <Link
+                key={index}
+                href={link.url}
+                rel="noopener noreferrer"
+                target="_blank"
+                aria-label={link.ariaLabel}
+                className="p-3 rounded-full text-text opacity-80 border border-transparent hover:text-primary hover:border-primary duration-300 active:scale-[0.9]"
+              >
+                {link.icon}
+              </Link>
+            ))}
+            {/* <SocialLinks iconClassName="" /> */}
           </div>
         </div>
         <div className="flex justify-center relative min-w-[250px] md:min-w-[300px] max-w-[250px] xl:max-w-sm w-full fade-in-delayed">
