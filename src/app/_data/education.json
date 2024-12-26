@@ -1,22 +1,23 @@
 [
-      {
-        "degree": "B.Sc. In Computer Science and Engineering",
-        "institution": "BRAC University",
-        "duration": "May 2020 - May 2024",
-        "type": "Bachelor"
-      },
-      {
-        "degree": "GCE International A Levels",
-        "institution": "Cambridge",
-        "duration": "June 2018 - Nov 2019",
-        "type": "A Levels"
-      },
-      {
-        "degree": "GCE International O Levels",
-        "institution": "Cambridge",
-        "duration": "June 2016 - Nov 2016",
-        "type": "O Levels"
-      }
-    
+  {
+    "degree": "B.Sc. In Computer Science and Engineering",
+    "institution": "BRAC University",
+    "duration": "May 2020 - May 2024",
+    "type": "Bachelor",
+    "url": "https://www.bracu.ac.bd/"
+  },
+  {
+    "degree": "GCE International A Levels",
+    "institution": "Cambridge",
+    "duration": "June 2018 - Nov 2019",
+    "type": "A Levels",
+    "url": "https://www.cambridgeinternational.org/"
+  },
+  {
+    "degree": "GCE International O Levels",
+    "institution": "Cambridge",
+    "duration": "June 2016 - Nov 2016",
+    "type": "O Levels",
+    "url": "https://www.cambridgeinternational.org/"
+  }
 ]
-  
