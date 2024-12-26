@@ -31,7 +31,7 @@ export const MetadataAboutPage: Metadata = {
     url: `${process.env.WEBSITE_URL}/about`,
     images: [
       {
-        url: "/og_images/aboutme.png",
+        url: "/og_images/aboutpage.png",
         alt: "About Me | Shakeef Ahmed Rakin",
       },
     ],
@@ -42,7 +42,7 @@ export const MetadataAboutPage: Metadata = {
     title: "About Me | Shakeef Ahmed Rakin",
     images: [
       {
-        url: "/og_images/aboutme.png",
+        url: "/og_images/aboutpage.png",
         alt: "About Me | Shakeef Ahmed Rakin",
       },
     ],
