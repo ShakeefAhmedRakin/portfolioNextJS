@@ -6,11 +6,34 @@ import { skills } from "@/app/_data/skills";
 export function SetSchemaAboutPage() {
   const jsonLd: WithContext<WebPage> = {
     "@context": "https://schema.org",
-    "@type": "WebPage",
+    "@type": "AboutPage",
     name: "About Shakeef Ahmed Rakin",
     description:
       "Learn more about Shakeef Ahmed Rakin, a Full Stack Engineer from Bangladesh with expertise in web development, problem-solving, and machine learning.",
     url: `${process.env.WEBSITE_URL}/about`,
+    image: `${process.env.WEBSITE_URL}/og_images/aboutpage.png`,
+    headline: "About Shakeef Ahmed Rakin",
+    accountablePerson: {
+      "@type": "Person",
+      name: "Shakeef Ahmed Rakin",
+      image: `${process.env.WEBSITE_URL}/hero.png`,
+      url: `${process.env.WEBSITE_URL}`,
+      jobTitle: work.map((item) => item.position),
+    },
+    character: {
+      "@type": "Person",
+      name: "Shakeef Ahmed Rakin",
+      image: `${process.env.WEBSITE_URL}/hero.png`,
+      url: `${process.env.WEBSITE_URL}`,
+      jobTitle: work.map((item) => item.position),
+    },
+    editor: {
+      "@type": "Person",
+      name: "Shakeef Ahmed Rakin",
+      image: `${process.env.WEBSITE_URL}/hero.png`,
+      url: `${process.env.WEBSITE_URL}`,
+      jobTitle: work.map((item) => item.position),
+    },
     mainEntity: {
       "@type": "Person",
       name: "Shakeef Ahmed Rakin",
