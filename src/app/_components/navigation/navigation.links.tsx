@@ -22,6 +22,7 @@ export default function NavigationLinks({
     <>
       <Link
         href="/about"
+        title="About"
         aria-label={isDropDownLinks ? "Navigate to About page" : "About Page"}
         onClick={handleLinkClick}
         className={linkClasses("/about")}
@@ -30,6 +31,7 @@ export default function NavigationLinks({
       </Link>
       <Link
         href="/projects"
+        title="Projects"
         aria-label={
           isDropDownLinks ? "Navigate to Projects page" : "Projects Page"
         }
@@ -40,6 +42,7 @@ export default function NavigationLinks({
       </Link>
       <Link
         href="/work"
+        title="Work"
         aria-label={isDropDownLinks ? "Navigate to Work page" : "Work Page"}
         onClick={handleLinkClick}
         className={linkClasses("/work")}
@@ -48,6 +51,7 @@ export default function NavigationLinks({
       </Link>
       <Link
         href="/research"
+        title="Research"
         aria-label={
           isDropDownLinks ? "Navigate to Research page" : "Research Page"
         }
@@ -58,6 +62,7 @@ export default function NavigationLinks({
       </Link>
       <Link
         href="/achievements"
+        title="Achievements"
         aria-label={
           isDropDownLinks
             ? "Navigate to Achievements page"

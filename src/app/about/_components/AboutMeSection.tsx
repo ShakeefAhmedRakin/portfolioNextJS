@@ -5,13 +5,13 @@ export default function AboutMeSection() {
     <div className="flex flex-col md:flex-row gap-10">
       <div>
         <p className="font-body font-light text-text text-xs lg:text-base">
-          Born and raised in Dhaka, Bangladesh, I started my coding journey
-          during my undergraduate studies in Computer Science and Engineering.
-          Towards the end of my university life, I have actively participated in
-          courses and competitions, where I gained hands-on experience in a wide
-          range of fields, from full-stack web development to machine learning.
-          These experiences helped me develop a strong foundation in both
-          problem-solving and technical skills.
+          Hi! I am Shakeef Ahmed Rakin. Born and raised in Dhaka, Bangladesh, I
+          started my coding journey during my undergraduate studies in Computer
+          Science and Engineering. Towards the end of my university life, I have
+          actively participated in courses and competitions, where I gained
+          hands-on experience in a wide range of fields, from full-stack web
+          development to machine learning. These experiences helped me develop a
+          strong foundation in both problem-solving and technical skills.
         </p>
         <p className="mt-4 font-body font-light text-text text-xs lg:text-base">
           Beyond work, I enjoy music, gaming, and anime. These hobbies of mine

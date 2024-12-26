@@ -9,9 +9,9 @@ export default function SkillsSection() {
             key={category.category}
             className="bg-backgroundDark p-5 rounded-md text-text shadow-sm shadow-secondary"
           >
-            <h1 className="font-heading text-lg font-bold mb-1">
+            <h2 className="font-heading text-lg font-bold mb-1">
               {category.category}
-            </h1>
+            </h2>
             <p className="font-body mb-5 text-xs">{category.description}</p>
             <div className="grid grid-cols-2 gap-3">
               {category.skills.map((skill) => (
@@ -22,9 +22,9 @@ export default function SkillsSection() {
                   <span className="text-xl min-w-[16px] max-w-[16px]">
                     {skill.icon}
                   </span>
-                  <span className="flex-1 text-[10px] lg:text-xs font-medium font-heading">
+                  <h3 className="flex-1 text-[10px] lg:text-xs font-medium font-heading">
                     {skill.name}
-                  </span>
+                  </h3>
                 </span>
               ))}
             </div>

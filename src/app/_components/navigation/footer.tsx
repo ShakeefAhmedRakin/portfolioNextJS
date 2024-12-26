@@ -23,6 +23,7 @@ export default function Footer() {
               <Link
                 href="https://github.com/ShakeefAhmedRakin"
                 className="text-gray-300 hover:text-white"
+                title="GitHub"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Visit GitHub profile"
@@ -32,6 +33,7 @@ export default function Footer() {
               <Link
                 href="https://www.linkedin.com/in/shakeef-ahmed-rakin"
                 className="text-gray-300 hover:text-white"
+                title="LinkedIn"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Visit LinkedIn profile"
@@ -41,6 +43,7 @@ export default function Footer() {
               <Link
                 href="https://stackoverflow.com/users/28897060/shakeef-ahmed-rakin"
                 className="text-gray-300 hover:text-white"
+                title="Stack Overflow"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Visit Stack Overflow profile"
@@ -58,27 +61,39 @@ export default function Footer() {
               </h3>
               <ul className="mt-4 flex flex-col gap-y-2 md:gap-y-4 text-gray-200 font-body text-xs md:text-sm">
                 <li>
-                  <Link href="/about" className="hover:underline">
+                  <Link href="/about" className="hover:underline" title="About">
                     About
                   </Link>
                 </li>
                 <li>
-                  <Link href="/projects" className="hover:underline">
+                  <Link
+                    href="/projects"
+                    className="hover:underline"
+                    title="Projects"
+                  >
                     Projects
                   </Link>
                 </li>
                 <li>
-                  <Link href="/work" className="hover:underline">
+                  <Link href="/work" className="hover:underline" title="Work">
                     Work
                   </Link>
                 </li>
                 <li>
-                  <Link href="/research" className="hover:underline">
+                  <Link
+                    href="/research"
+                    className="hover:underline"
+                    title="Research"
+                  >
                     Research
                   </Link>
                 </li>
                 <li>
-                  <Link href="/achievements" className="hover:underline">
+                  <Link
+                    href="/achievements"
+                    className="hover:underline"
+                    title="Achievements"
+                  >
                     Achievements
                   </Link>
                 </li>
@@ -90,12 +105,20 @@ export default function Footer() {
               </h3>
               <ul className="mt-4 flex flex-col gap-y-2 md:gap-y-4 text-gray-200 font-body text-xs md:text-sm">
                 <li>
-                  <Link href="/resume" className="hover:underline">
+                  <Link
+                    href="/resume"
+                    className="hover:underline"
+                    title="View Resume"
+                  >
                     View Resume
                   </Link>
                 </li>
                 <li>
-                  <Link href="/get-in-touch" className="hover:underline">
+                  <Link
+                    href="/get-in-touch"
+                    className="hover:underline"
+                    title="Get In Touch"
+                  >
                     Get In Touch
                   </Link>
                 </li>
