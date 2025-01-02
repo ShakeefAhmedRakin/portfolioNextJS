@@ -22,7 +22,7 @@ export default function NavigationLinks({
   return (
     <>
       {navigationLinks.map((link, index) => {
-        if (link.isShown === false) return null;
+        if (link.isShownOnNav === false) return null;
         return (
           <Link
             key={`${link.title}-${index}`}

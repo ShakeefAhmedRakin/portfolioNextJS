@@ -1,6 +1,7 @@
-import { BsGithub, BsLinkedin, BsStackOverflow } from "react-icons/bs";
 import Logo from "../brand/logo";
 import Link from "next/link";
+import { socialLinks } from "@/app/_data/socialLinks";
+import NavigationLinks from "../../_data/navigationLinks.json";
 
 export default function Footer() {
   return (
@@ -20,36 +21,20 @@ export default function Footer() {
               Solutions
             </p>
             <nav aria-label="Social Links" className="flex space-x-6">
-              <Link
-                href="https://github.com/ShakeefAhmedRakin"
-                className="text-gray-300 hover:text-white"
-                title="GitHub"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Visit GitHub profile"
-              >
-                <BsGithub className="h-7 w-7" aria-hidden="true" />
-              </Link>
-              <Link
-                href="https://www.linkedin.com/in/shakeef-ahmed-rakin"
-                className="text-gray-300 hover:text-white"
-                title="LinkedIn"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Visit LinkedIn profile"
-              >
-                <BsLinkedin className="h-7 w-7" aria-hidden="true" />
-              </Link>
-              <Link
-                href="https://stackoverflow.com/users/28897060/shakeef-ahmed-rakin"
-                className="text-gray-300 hover:text-white"
-                title="Stack Overflow"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Visit Stack Overflow profile"
-              >
-                <BsStackOverflow className="h-7 w-7" aria-hidden="true" />
-              </Link>
+              {socialLinks.map((link, index) => (
+                <Link
+                  key={index}
+                  href={link.url}
+                  className="text-gray-300 hover:text-white text-[28px]"
+                  title={link.title}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={link.ariaLabel}
+                >
+                  <span className="sr-only">{link.ariaLabel}</span>
+                  {link.icon}
+                </Link>
+              ))}
             </nav>
           </section>
 
@@ -60,43 +45,20 @@ export default function Footer() {
                 Navigation
               </h3>
               <ul className="mt-4 flex flex-col gap-y-2 md:gap-y-4 text-gray-200 font-body text-xs md:text-sm">
-                <li>
-                  <Link href="/about" className="hover:underline" title="About">
-                    About
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/projects"
-                    className="hover:underline"
-                    title="Projects"
-                  >
-                    Projects
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/work" className="hover:underline" title="Work">
-                    Work
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/research"
-                    className="hover:underline"
-                    title="Research"
-                  >
-                    Research
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/achievements"
-                    className="hover:underline"
-                    title="Achievements"
-                  >
-                    Achievements
-                  </Link>
-                </li>
+                {NavigationLinks.filter((link) => link.isShownOnFooterNav).map(
+                  (link, index) => (
+                    <li key={index}>
+                      <Link
+                        href={link.route}
+                        title={link.label}
+                        className="hover:underline"
+                        aria-label={link["aria-label"]}
+                      >
+                        {link.label}
+                      </Link>
+                    </li>
+                  )
+                )}
               </ul>
             </div>
             <div>
@@ -104,24 +66,20 @@ export default function Footer() {
                 Resources
               </h3>
               <ul className="mt-4 flex flex-col gap-y-2 md:gap-y-4 text-gray-200 font-body text-xs md:text-sm">
-                <li>
-                  <Link
-                    href="/resume"
-                    className="hover:underline"
-                    title="View Resume"
-                  >
-                    View Resume
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/get-in-touch"
-                    className="hover:underline"
-                    title="Get In Touch"
-                  >
-                    Get In Touch
-                  </Link>
-                </li>
+                {NavigationLinks.filter(
+                  (link) => link.isShownOnFooterResources
+                ).map((link, index) => (
+                  <li key={index}>
+                    <Link
+                      href={link.route}
+                      title={link.label}
+                      className="hover:underline"
+                      aria-label={link["aria-label"]}
+                    >
+                      {link.label}
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </div>
           </section>

@@ -1,6 +1,6 @@
+import { socialLinks } from "@/app/_data/socialLinks";
 import Image from "next/image";
 import Link from "next/link";
-import { BsGithub, BsLinkedin, BsStackOverflow } from "react-icons/bs";
 import { MdMail } from "react-icons/md";
 
 export default function LinksSection() {
@@ -31,36 +31,20 @@ export default function LinksSection() {
           <hr />
           {/* SOCIAL LINKS */}
           <div className="flex justify-center mt-6 gap-10 text-[26px] md:text-3xl">
-            <Link
-              href="https://github.com/ShakeefAhmedRakin"
-              className="p-3 rounded-full text-text opacity-80 border border-transparent hover:text-secondary hover:border-secondary duration-300 active:scale-[0.9]"
-              passHref
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <span className="sr-only">GitHub</span>
-              <BsGithub />
-            </Link>
-            <Link
-              href="https://www.linkedin.com/in/shakeef-ahmed-rakin"
-              className="p-3 rounded-full text-text opacity-80 border border-transparent hover:text-secondary hover:border-secondary duration-300 active:scale-[0.9]"
-              passHref
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <span className="sr-only">LinkedIn</span>
-              <BsLinkedin />
-            </Link>
-            <Link
-              href="https://stackoverflow.com/users/28897060/shakeef-ahmed-rakin"
-              className="p-3 rounded-full text-text opacity-80 border border-transparent hover:text-secondary hover:border-secondary duration-300 active:scale-[0.9]"
-              passHref
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <span className="sr-only">GitHub</span>
-              <BsStackOverflow />
-            </Link>
+            {socialLinks.map((link, index) => (
+              <Link
+                title={link.name}
+                key={index}
+                href={link.url}
+                rel="noopener noreferrer"
+                target="_blank"
+                aria-label={link.ariaLabel}
+                className="p-3 rounded-full text-text opacity-80 border border-transparent hover:text-secondary hover:border-secondary duration-300 active:scale-[0.9]"
+              >
+                <span className="sr-only">{link.ariaLabel}</span>
+                {link.icon}
+              </Link>
+            ))}
           </div>
         </div>
       </div>

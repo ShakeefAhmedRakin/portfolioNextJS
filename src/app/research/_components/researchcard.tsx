@@ -86,6 +86,7 @@ export default function ResearchCard({ research }: ResearchCardProps) {
                 width={100}
                 className="rounded-full"
                 height={100}
+                priority
               ></Image>
               <h3>{research.journalOrOrg.name}</h3>
             </div>

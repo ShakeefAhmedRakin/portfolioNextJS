@@ -1,15 +1,17 @@
 import Hero from "./_components/home/hero";
-import Highlights from "./_components/home/highlights";
-import FeaturedProjects from "./_components/home/featuredprojects";
+import FeaturedProjects from "./_components/home/featured-projects";
 import SetSchemaHomePage from "./_util/metadata/HomePage/SetSchemaHomePage";
+import FeaturedAchievements from "./_components/home/featured-achievements";
+import FeaturedResearch from "./_components/home/featured-research";
 
 export default function Home() {
   return (
     <>
       <SetSchemaHomePage />
       <Hero />
-      <Highlights />
+      <FeaturedAchievements />
       <FeaturedProjects />
+      <FeaturedResearch />
     </>
   );
 }

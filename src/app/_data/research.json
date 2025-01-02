@@ -1,7 +1,7 @@
 [
   {
     "id": "Optimizing-American-Sign-Language-Recognition-with-Binarized-Neural-Networks-A-Comparative-Study-with-Traditional-Models",
-    "isFeatured": false,
+    "isFeatured": true,
     "status": { "label": "Thesis", "color": "green" },
     "isPublished": true,
     "journalOrOrg": {

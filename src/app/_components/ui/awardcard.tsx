@@ -21,12 +21,12 @@ export default function AwardCard({
           alt={awardTitle + " photo"}
           className="w-full max-w-[90px] md:max-w-[130px]"
         ></Image>
-        <h1 className="text-center max-w-[70%] flex-1 mb-2 text-text font-heading font-semibold text-[9px] md:text-xs">
+        <h3 className="text-center max-w-[70%] flex-1 mb-2 text-text font-heading font-semibold text-[9px] md:text-xs">
           {awardTitle}
-        </h1>
-        <h2 className="text-center text-primary font-heading text-[9px] md:text-xs font-semibold">
+        </h3>
+        <p className="text-center text-primary font-heading text-[9px] md:text-xs font-semibold">
           {awardDescription}
-        </h2>
+        </p>
       </div>
     </>
   );

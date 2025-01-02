@@ -3,11 +3,12 @@ import AnimatedTitle from "../animations/titleanimation";
 import { ButtonPrimaryFilled, ButtonSecondaryFilled } from "../ui/Buttons";
 import { socialLinks } from "../../_data/socialLinks";
 import Link from "next/link";
+import LayoutWrapper from "../wrappers/LayoutWrapper";
 
 export default function Hero() {
   return (
-    <section className="relative bg-backgroundDark bg-[url('/backgroundhero.png')] bg-cover bg-center py-8 lg:py-44 fade-in">
-      <div className="flex flex-col-reverse z-40 lg:flex-row items-center gap-8 md:gap-20 container mx-auto px-4 md:px-10 lg:px-20 xl:px-40">
+    <LayoutWrapper className="relative bg-backgroundDark bg-[url('/backgroundhero.png')] bg-cover bg-center py-10 fade-in">
+      <div className="flex flex-col-reverse z-40 lg:flex-row items-center gap-8 md:gap-20">
         <div className="flex-1">
           <AnimatedTitle
             text="Full Stack Engineer"
@@ -54,10 +55,10 @@ export default function Hero() {
                 aria-label={link.ariaLabel}
                 className="p-3 rounded-full text-text opacity-80 border border-transparent hover:text-primary hover:border-primary duration-300 active:scale-[0.9]"
               >
+                <span className="sr-only">{link.ariaLabel}</span>
                 {link.icon}
               </Link>
             ))}
-            {/* <SocialLinks iconClassName="" /> */}
           </div>
         </div>
         <div className="flex justify-center relative min-w-[250px] md:min-w-[300px] max-w-[250px] xl:max-w-sm w-full fade-in-delayed">
@@ -71,6 +72,6 @@ export default function Hero() {
           ></Image>
         </div>
       </div>
-    </section>
+    </LayoutWrapper>
   );
 }

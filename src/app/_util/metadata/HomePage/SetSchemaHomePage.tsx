@@ -1,5 +1,4 @@
 import { Graph } from "schema-dts";
-import navigationLinks from "../../../_data/navigationLinks.json";
 import { socialLinks } from "../../../_data/socialLinks";
 import awards from "../../../_data/awards.json";
 
@@ -52,15 +51,14 @@ export default function SetSchemaHomePage() {
       {
         "@type": "BreadcrumbList",
         "@id": `${process.env.WEBSITE_URL}/#breadcrumb`,
-        itemListElement: navigationLinks.map((link, index) => {
-          return {
+        itemListElement: [
+          {
             "@type": "ListItem",
-            position: index + 1,
-            name: link.label,
-            item: `${process.env.WEBSITE_URL}${link.route}`,
-            url: `${process.env.WEBSITE_URL}${link.route}`,
-          };
-        }),
+            position: 1,
+            name: "Home",
+            item: `${process.env.WEBSITE_URL}`,
+          },
+        ],
       },
       {
         "@type": "WebSite",
@@ -86,6 +84,20 @@ export default function SetSchemaHomePage() {
           caption: "Shakeef Ahmed Rakin - Full Stack Engineer",
         },
         sameAs: socialLinks.map((link) => link.url),
+      },
+      {
+        "@type": "Organization",
+        "@id": `${process.env.WEBSITE_URL}/#organization`,
+        image: {
+          "@id": `${process.env.WEBSITE_URL}/#primaryImage`,
+        },
+        url: `${process.env.WEBSITE_URL}`,
+        sameAs: socialLinks.map((link) => link.url),
+        logo: `${process.env.WEBSITE_URL}/logos/logo.png`,
+        name: "Shakeef Ahmed Rakin",
+        description:
+          "Full Stack Engineer from Dhaka, Bangladesh with a strong background in developing web applications and integrating AI solutions.",
+        email: "shakeef.rakin321@gmail.com",
       },
     ],
   };

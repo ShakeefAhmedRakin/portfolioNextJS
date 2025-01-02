@@ -4,50 +4,80 @@
     "title": "Home",
     "aria-label": "Navigate to the Home page",
     "route": "/",
-    "isShown": false
+    "isShownOnNav": false,
+    "isShownOnFooterNav": false,
+    "isShownOnFooterResources": false
   },
   {
     "label": "About",
     "title": "About",
     "aria-label": "Navigate to the About page",
-    "route": "/about"
+    "route": "/about",
+    "isShownOnNav": true,
+    "isShownOnFooterNav": true,
+    "isShownOnFooterResources": false
   },
   {
     "label": "Projects",
     "title": "Projects",
     "aria-label": "Navigate to the Projects page",
-    "route": "/projects"
+    "route": "/projects",
+    "isShownOnNav": true,
+    "isShownOnFooterNav": true,
+    "isShownOnFooterResources": false
   },
   {
     "label": "Work",
     "title": "Work",
     "aria-label": "Navigate to the Work page",
-    "route": "/work"
+    "route": "/work",
+    "isShownOnNav": true,
+    "isShownOnFooterNav": true,
+    "isShownOnFooterResources": false
   },
   {
     "label": "Research",
     "title": "Research",
     "aria-label": "Navigate to the Research page",
-    "route": "/research"
+    "route": "/research",
+    "isShownOnNav": true,
+    "isShownOnFooterNav": true,
+    "isShownOnFooterResources": false
   },
   {
     "label": "Achievements",
     "title": "Achievements",
     "aria-label": "Navigate to the Achievements page",
-    "route": "/achievements"
+    "route": "/achievements",
+    "isShownOnNav": true,
+    "isShownOnFooterNav": true,
+    "isShownOnFooterResources": false
   },
   {
-    "label": "Contacts",
-    "title": "Contacts",
-    "aria-label": "Navigate to the Contacts page",
+    "label": "Get In Touch",
+    "title": "Get In Touch",
+    "aria-label": "Navigate to the Get In Touch page",
     "route": "/get-in-touch",
-    "isShown": false
+    "isShownOnNav": false,
+    "isShownOnFooterNav": false,
+    "isShownOnFooterResources": true
   },
   {
-    "label": "Resume",
+    "label": "View Resume",
     "title": "Resume",
     "aria-label": "Navigate to the Resume page",
     "route": "/resume",
-    "isShown": false
+    "isShownOnNav": false,
+    "isShownOnFooterNav": false,
+    "isShownOnFooterResources": true
+  },
+  {
+    "label": "View Blogs",
+    "title": "Blogs",
+    "aria-label": "Navigate to the Blogs page",
+    "route": "/blogs",
+    "isShownOnNav": false,
+    "isShownOnFooterNav": false,
+    "isShownOnFooterResources": true
   }
 ]
