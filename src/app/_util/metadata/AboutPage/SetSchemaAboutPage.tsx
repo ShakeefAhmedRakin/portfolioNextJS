@@ -11,7 +11,7 @@ export function SetSchemaAboutPage() {
       // MAIN PAGE
       {
         "@type": "ProfilePage",
-        "@id": `${process.env.WEBSITE_URL}/about/#profile`,
+        "@id": `${process.env.WEBSITE_URL}/about/#about`,
         dateCreated: "2025-01-02T23:22:12.039Z",
         dateModified: new Date().toISOString(),
         mainEntity: {
