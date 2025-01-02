@@ -7,8 +7,8 @@ import LayoutWrapper from "../wrappers/LayoutWrapper";
 
 export default function Hero() {
   return (
-    <LayoutWrapper className="relative bg-backgroundDark bg-[url('/backgroundhero.png')] bg-cover bg-center py-10 fade-in">
-      <div className="flex flex-col-reverse z-40 lg:flex-row items-center gap-8 md:gap-20">
+    <LayoutWrapper className="relative bg-backgroundDark bg-[url('/backgroundhero.png')] bg-cover bg-center xl:py-28 fade-in">
+      <div className="flex flex-col-reverse z-40 md:flex-row items-center gap-8 lg:gap-20">
         <div className="flex-1">
           <AnimatedTitle
             text="Full Stack Engineer"
@@ -61,15 +61,16 @@ export default function Hero() {
             ))}
           </div>
         </div>
-        <div className="flex justify-center relative min-w-[250px] md:min-w-[300px] max-w-[250px] xl:max-w-sm w-full fade-in-delayed">
-          <Image
-            src={"/hero.jpg"}
-            width={0}
-            height={0}
-            sizes="100vw"
-            alt="photo"
-            className="aspect-square z-10 border border-primary shadow-primary shadow object-cover rounded-full min-w-[250px] md:min-w-[300px] max-w-[250px] xl:max-w-sm w-full"
-          ></Image>
+        <div className="fade-in-delayed flex justify-center items-center aspect-square max-w-[250px] lg:max-w-sm w-full">
+          <div className="relative aspect-square w-full">
+            <Image
+              src={"/hero.jpg"}
+              draggable={false}
+              fill={true}
+              alt="photo"
+              className="aspect-square z-10 border border-primary shadow-primary shadow-md object-cover rounded-full"
+            ></Image>
+          </div>
         </div>
       </div>
     </LayoutWrapper>
