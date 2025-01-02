@@ -1,4 +1,4 @@
-import { ButtonSecondaryOutline } from "../_components/ui/Buttons";
+import { ButtonPrimaryFilled } from "../_components/ui/Buttons";
 import TitleLarge from "../_components/ui/TitleLarge";
 import TitleMedium from "../_components/ui/TitleMedium";
 import LayoutWrapper from "../_components/wrappers/LayoutWrapper";
@@ -16,7 +16,7 @@ export default function ResumePage() {
           a detailed overview of my resume and download the PDF version for your
           reference using the link below.
         </p>
-        <ButtonSecondaryOutline
+        <ButtonPrimaryFilled
           href="https://drive.google.com/file/d/1KEX5j0xOPu2IFVyMyHDRlAR04qb7Pauz/view"
           ariaLabel="Download Resume"
           openInNewTab={true}
@@ -24,7 +24,7 @@ export default function ResumePage() {
           icon={<GrDocumentDownload className="w-4 h-4" />}
         >
           Download Resume
-        </ButtonSecondaryOutline>
+        </ButtonPrimaryFilled>
         <hr className="my-3" />
         <iframe
           className="h-full mx-auto max-w-2xl w-full min-h-[75vh] bg-[#1B1B1B] pt-1 pb-1 pl-1 rounded-lg"
