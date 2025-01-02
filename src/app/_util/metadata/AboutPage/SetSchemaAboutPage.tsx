@@ -14,12 +14,6 @@ export function SetSchemaAboutPage() {
         "@id": `${process.env.WEBSITE_URL}/about/#person`,
         dateCreated: "2025-01-02T23:22:12.039Z",
         dateModified: new Date().toISOString(),
-        mainEntity: {
-          "@id": `${process.env.WEBSITE_URL}/about/#person`,
-        },
-        breadcrumb: {
-          "@id": `${process.env.WEBSITE_URL}/about/#breadcrumb`,
-        },
       },
       // MAIN ENTITY
       {
