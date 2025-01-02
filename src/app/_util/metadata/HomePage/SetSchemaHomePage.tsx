@@ -31,6 +31,9 @@ export default function SetSchemaHomePage() {
         breadcrumb: {
           "@id": `${process.env.WEBSITE_URL}/#breadcrumb`,
         },
+        sourceOrganization: {
+          "@id": `${process.env.WEBSITE_URL}/#organization`,
+        },
         inLanguage: "en-US",
         potentialAction: socialLinks.map((link) => {
           return {
