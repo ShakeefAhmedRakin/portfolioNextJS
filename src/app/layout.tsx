@@ -22,6 +22,15 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.WEBSITE_URL || "http://localhost:3000"),
+  authors: [
+    {
+      name: "Shakeef Ahmed Rakin",
+      url: `${process.env.WEBSITE_URL}}`,
+    },
+  ],
+  creator: "Shakeef Ahmed Rakin",
+  publisher: "Shakeef Ahmed Rakin",
+  robots: "index, follow",
   icons: [
     { rel: "icon", url: "/logos/logo.png" },
     { rel: "apple-touch-icon", url: "/logos/logo.png" },

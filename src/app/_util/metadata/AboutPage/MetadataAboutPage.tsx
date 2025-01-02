@@ -5,25 +5,9 @@ export const MetadataAboutPage: Metadata = {
   title: "About Me | Shakeef Ahmed Rakin",
   description:
     "Learn about Shakeef Ahmed Rakin, a full-stack engineer from Dhaka, Bangladesh. Explore his background, education and technical expertise.",
-  authors: [
-    {
-      name: "Shakeef Ahmed Rakin",
-      url: `${process.env.WEBSITE_URL}}`,
-    },
-  ],
-  keywords: [
-    "Shakeef Ahmed Rakin",
-    "About Me",
-    "Portfolio",
-    "Machine Learning",
-    "Full Stack Engineer",
-  ],
-  creator: "Shakeef Ahmed Rakin",
-  publisher: "Shakeef Ahmed Rakin",
   alternates: {
     canonical: `${process.env.WEBSITE_URL}/about`,
   },
-  robots: "index, follow",
   openGraph: {
     title: "About Me | Shakeef Ahmed Rakin",
     siteName: "Shakeef Ahmed Rakin",
