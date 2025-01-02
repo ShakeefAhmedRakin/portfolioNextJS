@@ -1,5 +1,5 @@
 import { BiHome } from "react-icons/bi";
-import { ButtonPrimaryFilled } from "../ui/Buttons";
+import { ButtonPrimaryFilled } from "../../_components/ui/Buttons";
 
 export default function BlogNotFound() {
   return (

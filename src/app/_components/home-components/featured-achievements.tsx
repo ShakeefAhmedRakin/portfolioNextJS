@@ -1,6 +1,6 @@
-import AwardCard from "../ui/awardcard";
-import SectionBadge from "../ui/sectionbadge";
-import SectionTitle from "../ui/sectiontitle";
+import AwardCard from "./awardcard";
+import SectionBadge from "./sectionbadge";
+import SectionTitle from "./sectiontitle";
 import awards from "../../_data/awards.json";
 import { ButtonPrimaryFilled } from "../ui/Buttons";
 import LayoutWrapper from "../wrappers/LayoutWrapper";

@@ -6,7 +6,7 @@ import {
 } from "@/app/_components/ui/Buttons";
 import { BsGithub } from "react-icons/bs";
 import { CgExternal } from "react-icons/cg";
-import ProjectNotFound from "@/app/_components/errors/projectnotfound";
+import ProjectNotFound from "@/app/projects/_components/projectnotfound";
 import { Metadata } from "next";
 import { CreativeWork, WithContext } from "schema-dts";
 

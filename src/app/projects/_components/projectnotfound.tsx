@@ -1,4 +1,4 @@
-import { ButtonPrimaryFilled } from "../ui/Buttons";
+import { ButtonPrimaryFilled } from "../../_components/ui/Buttons";
 import { BiHome } from "react-icons/bi";
 
 export default function ProjectNotFound() {

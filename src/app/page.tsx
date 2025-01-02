@@ -1,8 +1,8 @@
-import Hero from "./_components/home/hero";
-import FeaturedProjects from "./_components/home/featured-projects";
+import Hero from "./_components/home-components/hero";
+import FeaturedProjects from "./_components/home-components/featured-projects";
 import SetSchemaHomePage from "./_util/metadata/HomePage/SetSchemaHomePage";
-import FeaturedAchievements from "./_components/home/featured-achievements";
-import FeaturedResearch from "./_components/home/featured-research";
+import FeaturedAchievements from "./_components/home-components/featured-achievements";
+import FeaturedResearch from "./_components/home-components/featured-research";
 import { Metadata } from "next";
 import { MetadataHomePage } from "./_util/metadata/HomePage/MetadataHomePage";
 

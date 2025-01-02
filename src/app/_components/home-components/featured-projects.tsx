@@ -1,8 +1,8 @@
-import SectionBadge from "../ui/sectionbadge";
-import SectionTitle from "../ui/sectiontitle";
+import SectionBadge from "./sectionbadge";
+import SectionTitle from "./sectiontitle";
 import projects from "../../_data/projects.json";
 import { ButtonSecondaryFilled } from "../ui/Buttons";
-import ProjectCard from "../ui/projectcard";
+import ProjectCard from "../../projects/_components/projectcard";
 import LayoutWrapper from "../wrappers/LayoutWrapper";
 
 export default function FeaturedProjects() {

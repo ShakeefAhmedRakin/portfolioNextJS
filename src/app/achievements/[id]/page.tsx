@@ -4,7 +4,7 @@ import awards from "../../_data/awards.json";
 import Link from "next/link";
 import { CgExternal } from "react-icons/cg";
 import { Metadata } from "next";
-import BlogNotFound from "@/app/_components/errors/blognotfound";
+import AchievementBlogNotFound from "@/app/achievements/_components/achievementblognotfound";
 import { BlogPosting, WithContext } from "schema-dts";
 
 export async function generateStaticParams() {
@@ -87,7 +87,7 @@ export default async function AchievementDetails({
   const award = awards.find((award) => award.id === id);
 
   if (!award) {
-    return BlogNotFound();
+    return AchievementBlogNotFound();
   }
 
   // Prepare JSON-LD

@@ -1,7 +1,7 @@
 import projects from "../_data/projects.json";
-import ScrollToViewComponent from "../_components/animations/scrollComponent";
+import ScrollToViewComponent from "./_components/scrollComponent";
 import { Metadata } from "next";
-import ProjectCard from "../_components/ui/projectcard";
+import ProjectCard from "./_components/projectcard";
 import LayoutWrapper from "../_components/wrappers/LayoutWrapper";
 import TitleLarge from "../_components/ui/TitleLarge";
 import TitleMedium from "../_components/ui/TitleMedium";
