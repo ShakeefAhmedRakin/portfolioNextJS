@@ -6,51 +6,10 @@ import LayoutWrapper from "../_components/wrappers/LayoutWrapper";
 import TitleLarge from "../_components/ui/TitleLarge";
 import TitleMedium from "../_components/ui/TitleMedium";
 import { SetSchemaProjectsPage } from "../_util/metadata/ProjectsPage/SetSchemaProjectsPage";
+import { MetadataProjectsPage } from "../_util/metadata/ProjectsPage/MetadataProjectsPage";
 
 export function generateMetadata(): Metadata {
-  return {
-    metadataBase: new URL(process.env.WEBSITE_URL || "http://localhost:3000"),
-    title: "Shakeef Ahmed Rakin - Projects",
-    description:
-      "Explore the projects of Shakeef Ahmed Rakin, including full-stack development, machine learning, and more.",
-    keywords: [
-      "Shakeef Ahmed Rakin",
-      "Projects",
-      "Portfolio",
-      "Machine Learning",
-      "Full-Stack Development",
-    ],
-    publisher: "Shakeef Ahmed Rakin",
-    alternates: {
-      canonical: `${process.env.WEBSITE_URL}/projects`,
-    },
-    robots: "index, follow",
-    openGraph: {
-      title: "Projects | Shakeef Ahmed Rakin",
-      type: "website",
-      description:
-        "Explore the projects of Shakeef Ahmed Rakin, showcasing various competition experiences in full-stack development, machine learning, and more.",
-      url: `${process.env.WEBSITE_URL}/projects`,
-      images: [
-        {
-          url: "/og_images/projectspage.png",
-          alt: "Shakeef Ahmed Rakin - Projects",
-        },
-      ],
-      siteName: "Shakeef Ahmed Rakin - Portfolio",
-    },
-    twitter: {
-      title: "Projects | Shakeef Ahmed Rakin",
-      description:
-        "Explore the projects of Shakeef Ahmed Rakin, including full-stack development, machine learning, and more.",
-      images: [
-        {
-          url: "/og_images/projectspage.png",
-          alt: "Shakeef Ahmed Rakin - Projects",
-        },
-      ],
-    },
-  };
+  return MetadataProjectsPage;
 }
 
 export default function ProjectsPage() {
