@@ -1,12 +1,11 @@
 import { MetadataRoute } from "next";
-// Achievements Data
 import awards from "./_data/awards.json";
 import navigationLinks from "./_data/navigationLinks.json";
 import projects from "./_data/projects.json";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  // Dynamic Achievements Blog Id
   return [
+    // NAVIGATION LINKS
     ...navigationLinks.map((link) => ({
       url: `${process.env.WEBSITE_URL}${link.route}}|`,
       priority: link.route === "/" ? 1 : 0.8,

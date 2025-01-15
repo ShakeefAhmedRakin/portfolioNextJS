@@ -1,4 +1,5 @@
 import { BsGithub, BsLinkedin, BsStackOverflow } from "react-icons/bs";
+import { SiLeetcode } from "react-icons/si";
 export const socialLinks = [
   {
     name: "LinkedIn",
@@ -20,5 +21,12 @@ export const socialLinks = [
     icon: <BsStackOverflow />,
     title: "Stack Overflow",
     ariaLabel: "View Stack Overflow Profile",
+  },
+  {
+    name: "LeetCode",
+    url: "https://leetcode.com/u/Shakeef-Ahmed-Rakin",
+    icon: <SiLeetcode />,
+    title: "LeetCode",
+    ariaLabel: "View LeetCode Profile",
   },
 ];

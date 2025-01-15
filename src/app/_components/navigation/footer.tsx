@@ -16,7 +16,7 @@ export default function Footer() {
             <div className="w-fit">
               <Logo isFooter />
             </div>
-            <p className="text-white font-body text-xs md:text-base">
+            <p className="text-white font-body text-xs md:text-base text-center md:text-left">
               Full Stack Engineer | Dhaka, Bangladesh <br /> Web Apps & AI
               Solutions
             </p>

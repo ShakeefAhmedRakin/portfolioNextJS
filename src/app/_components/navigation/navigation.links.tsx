@@ -12,11 +12,11 @@ export default function NavigationLinks({
   isDropDownLinks,
   handleLinkClick = () => {},
 }: NavigationLinksProps) {
-  const pathname = usePathname(); // Get the current path
+  const pathname = usePathname();
 
   const linkClasses = (path: string) =>
     `duration-200 ${isDropDownLinks && "text-xs md:text-base"} ${
-      pathname === path && "text-primary bg-primary-lighter"
+      pathname.includes(path) && "text-primary bg-primary-lighter"
     } hover:bg-primary-lighter hover:text-primary font-medium p-2.5 rounded-full`;
 
   return (

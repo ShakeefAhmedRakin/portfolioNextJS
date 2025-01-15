@@ -1,0 +1,62 @@
+[
+  {
+    "title": "TypeScript",
+    "logo": "/skillLogos/typescript.png"
+  },
+  {
+    "title": "Python",
+    "logo": "/skillLogos/python.png"
+  },
+  {
+    "title": "C#",
+    "logo": "/skillLogos/csharp.png"
+  },
+  {
+    "title": "Next.js",
+    "logo": "/skillLogos/nextjs.png"
+  },
+  {
+    "title": "Firebase",
+    "logo": "/skillLogos/firebase.png"
+  },
+  {
+    "title": "Supabase",
+    "logo": "/skillLogos/supabase.png"
+  },
+  {
+    "title": "MUI",
+    "logo": "/skillLogos/mui.png"
+  },
+  {
+    "title": "ShadCN UI",
+    "logo": "/skillLogos/shadcn.png"
+  },
+  {
+    "title": "Stripe",
+    "logo": "/skillLogos/stripe.png"
+  },
+  {
+    "title": "Lemon Squeezy",
+    "logo": "/skillLogos/lemon.png"
+  },
+  {
+    "title": "Express.js",
+    "logo": "/skillLogos/expressjs.png"
+  },
+  {
+    "title": "Node.js",
+    "logo": "/skillLogos/nodejs.png"
+  },
+  {
+    "title": "MongoDB",
+    "logo": "/skillLogos/mongo.png"
+  },
+  {
+    "title": "Mongoose",
+    "logo": "/skillLogos/mongoose.png"
+  },
+  {
+    "title": "MySQL",
+    "logo": "/skillLogos/mysql.png"
+  }
+]

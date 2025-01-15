@@ -21,7 +21,7 @@ export function ButtonPrimaryFilled({
   return (
     <Link
       href={href}
-      className={`${className}`}
+      className={`${className} rounded-full`}
       passHref
       {...(openInNewTab && { target: "_blank", rel: "noopener noreferrer" })}
     >
@@ -49,7 +49,7 @@ export function ButtonSecondaryFilled({
   return (
     <Link
       href={href}
-      className={`${className}`}
+      className={`${className} rounded-full`}
       passHref
       {...(openInNewTab && { target: "_blank", rel: "noopener noreferrer" })}
     >
@@ -77,7 +77,7 @@ export function ButtonPrimaryOutline({
   return (
     <Link
       href={href}
-      className={`${className}`}
+      className={`${className} rounded-full`}
       passHref
       {...(openInNewTab && { target: "_blank", rel: "noopener noreferrer" })}
     >
@@ -105,7 +105,7 @@ export function ButtonSecondaryOutline({
   return (
     <Link
       href={href}
-      className={`${className}`}
+      className={`${className} rounded-full`}
       passHref
       {...(openInNewTab && { target: "_blank", rel: "noopener noreferrer" })}
     >

@@ -44,7 +44,7 @@ export default function LinksSection() {
 
           <hr />
           {/* SOCIAL LINKS */}
-          <div className="flex justify-center mt-6 gap-10 text-[26px] md:text-3xl">
+          <div className="flex justify-center mt-6 gap-4 md:gap-6 lg:gap-10 text-[26px] md:text-3xl">
             {socialLinks.map((link, index) => (
               <Link
                 title={link.name}
