@@ -1,46 +1,61 @@
 import AwardCard from "./awardcard";
-import SectionBadge from "./sectionbadge";
-import SectionTitle from "./sectiontitle";
+import { FaArrowRight } from "react-icons/fa6";
 import awards from "../../_data/awards.json";
-import { ButtonPrimaryFilled } from "../ui/Buttons";
+import { ButtonPrimaryFilled, ButtonSecondaryOutline } from "../ui/Buttons";
 import LayoutWrapper from "../wrappers/LayoutWrapper";
+import Image from "next/image";
 
 export default function FeaturedAchievements() {
   return (
     <>
       <LayoutWrapper className="bg-background">
         {/* TITLE CONTENT */}
-        <SectionBadge titleContent="ACHIEVEMENTS" type="primary" />
-        <SectionTitle
-          titleOne="Tech Solutions"
-          titleTwo="Hackathons and Datathons"
-          paragraph="Engaged in creating practical solutions across numerous competitive events"
-          type="primary"
-        />
-
-        {/* SECTION CONTENT */}
-        <div className="flex justify-center w-full items-center flex-col">
-          <div className="grid grid-cols-2 gap-1 md:grid-cols-3 md:gap-2 w-full">
-            {awards
-              .filter((award) => award.isFeatured)
-              .map((award) => (
-                <AwardCard
-                  key={award.title}
-                  awardPhoto={award.photo}
-                  awardDescription={award.position}
-                  awardTitle={award.title}
-                />
-              ))}
-          </div>
-          <div className="mt-10">
-            <ButtonPrimaryFilled
+        <div className="flex flex-col md:flex-row justify-between items-center md:items-start gap-x-16 gap-y-2 text-center md:text-left">
+          <div className="flex-1 whitespace-nowrap">
+            <h2 className="font-heading font-bold text-secondary text-xl lg:text-4xl">
+              Achievements
+            </h2>
+            <h3 className="font-heading font-bold text-base lg:text-xl text-text mt-3">
+              Hackathons and Datathons
+            </h3>
+            <hr className="my-1" />
+            <ButtonSecondaryOutline
               href="/achievements"
-              ariaLabel="View My Achievements"
-              className="w-56"
+              className="w-48 mt-2 max-h-10 hidden md:block"
+              ariaLabel="Learn More About My Achievements"
             >
-              View All Achievements
-            </ButtonPrimaryFilled>
+              Learn More <FaArrowRight></FaArrowRight>
+            </ButtonSecondaryOutline>
           </div>
+          <p className="text-xs md:text-sm lg:text-lg text-text font-body max-w-2xl w-full">
+            During my undergraduate years, I actively participated in multiple
+            competitive events, including hackathons and datathons, where I
+            collaborated with teams to develop practical solutions to real-world
+            problems.
+          </p>
+          <ButtonSecondaryOutline
+            href="/achievements"
+            className="w-48 mt-2 max-h-10 block md:hidden"
+            ariaLabel="Learn More About My Achievements"
+          >
+            Learn More <FaArrowRight></FaArrowRight>
+          </ButtonSecondaryOutline>
+        </div>
+        {/* SECTION CONTENT */}
+        <div className="grid grid-cols-2 md:grid-cols-6 gap-x-12 xl:gap-x-20 mt-10 px-10 md:px-0">
+          {awards
+            .filter((award) => award.isFeatured)
+            .map((award, index) => (
+              <div className="aspect-square relative" key={index}>
+                <Image
+                  key={index}
+                  src={award.photo}
+                  fill
+                  draggable={false}
+                  alt={award.title}
+                ></Image>
+              </div>
+            ))}
         </div>
       </LayoutWrapper>
     </>
