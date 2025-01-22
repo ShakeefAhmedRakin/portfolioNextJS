@@ -11,7 +11,7 @@ export default function References() {
         .sort((a, b) => a.order - b.order)
         .map((reference, index) => (
           <div key={index}>
-            <h3 className="font-heading font-medium text-text text-sm lg:text-base">
+            <h3 className="font-heading font-medium text-text text-sm">
               {reference.name}
             </h3>
             <h4 className="font-body text-text text-xs lg:text-sm">
