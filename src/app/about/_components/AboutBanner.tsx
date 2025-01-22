@@ -71,6 +71,7 @@ export default function AboutBanner() {
                 aria-label={link.ariaLabel}
                 title={link.title}
               >
+                <span className="sr-only">{link.ariaLabel}</span>
                 {link.icon}
               </Link>
             ))}
