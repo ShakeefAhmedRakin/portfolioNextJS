@@ -14,10 +14,10 @@ export default function FeaturedAchievements() {
             <h2 className="font-heading font-bold text-secondary text-xl lg:text-4xl">
               Achievements
             </h2>
-            <h3 className="font-heading font-bold text-base lg:text-xl text-text mt-3">
+            <h3 className="font-heading font-bold text-base lg:text-xl text-text mt-2">
               Hackathons and Datathons
             </h3>
-            <hr className="my-1" />
+            <hr className="my-2" />
             <ButtonSecondaryOutline
               href="/achievements"
               className="w-48 mt-2 max-h-10 hidden md:block"
