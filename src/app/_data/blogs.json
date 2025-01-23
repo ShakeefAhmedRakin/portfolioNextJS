@@ -12,6 +12,18 @@
     "linkToBlog": ""
   },
   {
+    "id": "blog-id33",
+    "dateOfPublication": "2023-11-25",
+    "minutes": 2,
+    "title": "",
+    "summary": "",
+    "coverPhoto": {
+      "url": "",
+      "caption": ""
+    },
+    "linkToBlog": ""
+  },
+  {
     "id": "blog-id2",
     "dateOfPublication": "2024-11-25",
     "minutes": 2,

@@ -2,7 +2,7 @@ import projects from "../../../_data/projects.json";
 import { ButtonSecondaryFilled } from "../../ui/Buttons";
 
 import { FaArrowRight } from "react-icons/fa6";
-import ProjectCarousel from "../components/project-carousel";
+import ProjectCarousel from "./_components/project-carousel";
 
 export default function FeaturedProjects() {
   const sortedProjects = projects

@@ -13,6 +13,7 @@ const config: Config = {
         text: "var(--text)",
         background: "var(--background)",
         backgroundDark: "var(--background-dark)",
+        backgroundAlt: "var(--background-alt)",
         primary: {
           DEFAULT: "var(--primary)",
           lighter: "var(--primary-light)",

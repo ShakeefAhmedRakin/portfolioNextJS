@@ -5,10 +5,7 @@ import NavigationLinks from "../../_data/navigationLinks.json";
 
 export default function Footer() {
   return (
-    <footer
-      className="w-full bg-[#060720] dark:bg-[#070707]"
-      role="contentinfo"
-    >
+    <footer className="w-full bg-backgroundAlt" role="contentinfo">
       <div className="container mx-auto px-4 md:px-10 lg:px-20 xl:px-40 pt-16 md:pt-20 pb-10">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           {/* Logo and Social Links */}

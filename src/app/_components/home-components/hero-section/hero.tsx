@@ -1,5 +1,5 @@
 import Image from "next/image";
-import AnimatedTitle from "../titleanimation";
+import AnimatedTitle from "./_components/titleanimation";
 import { ButtonPrimaryFilled, ButtonSecondaryFilled } from "../../ui/Buttons";
 import { socialLinks } from "../../../_data/socialLinks";
 import Link from "next/link";

@@ -12,6 +12,7 @@
     --secondary: #6a3dff;
     --secondary-light: #f6f4ff;
     --accent: #06071e;
+    --background-alt: #060720;
   }
 
   .dark {
@@ -23,6 +24,7 @@
     --secondary: #795ed3;
     --secondary-light: #272238;
     --accent: #e1e2f9;
+    --background-alt: #000000;
   }
 }
 

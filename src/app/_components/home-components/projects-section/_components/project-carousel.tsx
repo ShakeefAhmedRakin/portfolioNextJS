@@ -20,10 +20,11 @@ type Project = {
 export default function ProjectCarousel({ projects }: { projects: Project[] }) {
   return (
     <>
-      <div className="bg-[#060720] dark:bg-[#070707] pt-20 pb-0 mt-24 xl:mt-32 px-2 lg:px-1">
+      <div className="bg-backgroundAlt pt-20 pb-0 mt-24 xl:mt-32 px-2 lg:px-1">
         <Swiper
           slidesPerView={1}
           spaceBetween={10}
+          loop={true}
           breakpoints={{
             640: {
               slidesPerView: 2,
@@ -42,7 +43,7 @@ export default function ProjectCarousel({ projects }: { projects: Project[] }) {
               spaceBetween: 20,
             },
           }}
-          className="-mt-56 lg:-mt-56 xl:-mt-64"
+          className="-mt-56 lg:-mt-56 xl:-mt-64 hover:cursor-grab active:cursor-grabbing"
           autoplay={{
             pauseOnMouseEnter: true,
             delay: 2000,
