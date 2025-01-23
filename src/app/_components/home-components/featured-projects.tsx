@@ -12,7 +12,7 @@ export default function FeaturedProjects() {
 
   return (
     <>
-      <LayoutWrapper className="bg-backgroundDark">
+      <LayoutWrapper className="bg-background">
         {/* TITLE CONTENT */}
         <SectionBadge titleContent="PROJECTS" type="secondary" />
         <SectionTitle

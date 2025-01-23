@@ -5,6 +5,7 @@ import FeaturedAchievements from "./_components/home-components/featured-achieve
 import FeaturedResearch from "./_components/home-components/featured-research";
 import { Metadata } from "next";
 import { MetadataHomePage } from "./_util/metadata/HomePage/MetadataHomePage";
+import Expertise from "./_components/home-components/expertise";
 
 export function generateMetadata(): Metadata {
   return MetadataHomePage;
@@ -14,6 +15,7 @@ export default function Home() {
     <>
       <SetSchemaHomePage />
       <Hero />
+      <Expertise />
       <FeaturedAchievements />
       <FeaturedProjects />
       <FeaturedResearch />
