@@ -1,5 +1,5 @@
 import { GiArtificialIntelligence } from "react-icons/gi";
-import LayoutWrapper from "../wrappers/LayoutWrapper";
+import LayoutWrapper from "../../wrappers/LayoutWrapper";
 import { FaCode } from "react-icons/fa";
 import { GoPersonFill } from "react-icons/go";
 export default function Expertise() {
@@ -11,7 +11,7 @@ export default function Expertise() {
           My Expertise
         </h2>
         <h3 className="font-heading text-center font-bold text-base lg:text-xl text-text mt-2">
-          Code that solves problems
+          Code that solves problems <br></br> one at a time.
         </h3>
         <hr className="my-3 md:my-5" />
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5">

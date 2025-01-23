@@ -1,9 +1,9 @@
-import { ButtonPrimaryFilled } from "../ui/Buttons";
-import SectionBadge from "./sectionbadge";
-import SectionTitle from "./sectiontitle";
-import LayoutWrapper from "../wrappers/LayoutWrapper";
-import research from "../../_data/research.json";
-import ResearchCard from "./researchCard";
+import { ButtonPrimaryFilled } from "../../ui/Buttons";
+import SectionBadge from "../sectionbadge";
+import SectionTitle from "../sectiontitle";
+import LayoutWrapper from "../../wrappers/LayoutWrapper";
+import research from "../../../_data/research.json";
+import ResearchCard from "../researchCard";
 
 export default function FeaturedResearch() {
   return (

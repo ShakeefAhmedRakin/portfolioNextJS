@@ -1,7 +1,7 @@
 import { FaArrowRight } from "react-icons/fa6";
-import awards from "../../_data/awards.json";
-import { ButtonPrimaryOutline } from "../ui/Buttons";
-import LayoutWrapper from "../wrappers/LayoutWrapper";
+import awards from "../../../_data/awards.json";
+import { ButtonPrimaryOutline } from "../../ui/Buttons";
+import LayoutWrapper from "../../wrappers/LayoutWrapper";
 import Image from "next/image";
 
 export default function FeaturedAchievements() {
