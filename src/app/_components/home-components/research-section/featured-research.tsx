@@ -13,7 +13,7 @@ export default function FeaturedResearch() {
       <LayoutWrapper className="bg-backgroundDark">
         {/* SECTION TITLE */}
         <div className="text-center">
-          <LiaNewspaperSolid className="text-secondary mx-auto text-6xl" />
+          <LiaNewspaperSolid className="text-secondary mx-auto text-5xl" />
           <SectionTitleLarge className="text-secondary">
             Research
           </SectionTitleLarge>

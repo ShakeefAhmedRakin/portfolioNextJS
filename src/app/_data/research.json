@@ -4,47 +4,16 @@
     "isFeatured": true,
     "status": { "label": "Thesis", "color": "green" },
     "isPublished": true,
+    "lastUpdatedDate": "05/01/2024",
+    "link": "",
+    "pathToPDF": "",
+    "title": "Optimizing American Sign Language Recognition with Binarized Neural Networks: A Comparative Study with Traditional Models",
+    "thumbnail": "/research/bracuthesis/larqpapercover.png",
     "journalOrOrg": {
       "name": "BRAC University",
       "link": "https://www.bracu.ac.bd/",
-      "image": "/research/bracu.png"
+      "image": "/research/bracuthesis/bracu.png"
     },
-    "lastUpdatedDate": "05/01/2024",
-    "link": "",
-    "title": "Optimizing American Sign Language Recognition with Binarized Neural Networks: A Comparative Study with Traditional Models",
-    "thumbnail": "/research/larqpapercover.png",
-    "authors": [
-      {
-        "name": "Shakeef Ahmed Rakin",
-        "link": "https://www.linkedin.com/in/shakeef-ahmed-rakin/",
-        "isSupervisor": false
-      },
-      {
-        "name": "Md.Tahjid Ahsan",
-        "link": null,
-        "isSupervisor": false
-      },
-      {
-        "name": "Mohammed Intishar Rahman",
-        "link": null,
-        "isSupervisor": false
-      },
-      {
-        "name": "Afif Alamgir Lizel",
-        "link": "https://www.linkedin.com/in/afif-alamgir-6638aa268/",
-        "isSupervisor": false
-      },
-      {
-        "name": "Md Sifat Mahmud",
-        "link": null,
-        "isSupervisor": false
-      },
-      {
-        "name": "Md Tanzim Reza",
-        "link": "https://www.bracu.ac.bd/about/people/md-tanzim-reza",
-        "isSupervisor": true
-      }
-    ],
     "keywords": [
       "Artificial Intelligence (AI)",
       "Sign Language",
@@ -54,7 +23,125 @@
       "Larq"
     ],
     "abstract": "Sign language is crucial for communication among individuals with hearing or speech impairments. Automated recognition systems are essential for learning and translating different sign language variants. However, these systems often face high computational demands and large memory footprints, limiting their use in real-time and resource-constrained environments. This research develops an optimized pipeline for American Sign Language (ASL) recognition, comparing Binarized Neural Networks (BNNs) with traditional full-precision neural networks. Using Larq, a library for training binarized models, we leverage BNNs' reduced memory and computational needs, suitable for embedded systems and edge devices. The study uses a dataset of ASL alphabet images, applying data augmentation to address data imbalance and occlusions. Both binarized and traditional models are trained and evaluated on accuracy, precision, recall, F1-score, memory footprints, and inference times. Results show that BNNs offer competitive performance with significantly lower computational requirements, demonstrating their potential for efficient and accessible ASL recognition systems.",
-    "pathToPDF": "",
-    "paperContent": []
+    "authors": [
+      {
+        "name": "Shakeef Ahmed Rakin",
+        "titleFirst": "Department of Computer Science and Engineering, BRAC University",
+        "titleSecond": "66 Mohakhali, Dhaka 1212, Bangladesh",
+
+        "link": "https://www.linkedin.com/in/shakeef-ahmed-rakin/"
+      },
+      {
+        "name": "Md.Tahjid Ahsan",
+        "titleFirst": "Department of Computer Science and Engineering, BRAC University",
+        "titleSecond": "66 Mohakhali, Dhaka 1212, Bangladesh",
+        "link": null
+      },
+      {
+        "name": "Mohammed Intishar Rahman",
+        "titleFirst": "Department of Computer Science and Engineering, BRAC University",
+        "titleSecond": "66 Mohakhali, Dhaka 1212, Bangladesh",
+        "link": null
+      },
+      {
+        "name": "Afif Alamgir Lizel",
+        "titleFirst": "Department of Computer Science and Engineering, BRAC University",
+        "titleSecond": "66 Mohakhali, Dhaka 1212, Bangladesh",
+        "link": "https://www.linkedin.com/in/afif-alamgir-6638aa268/"
+      },
+      {
+        "name": "Md Sifat Mahmud",
+        "titleFirst": "Department of Computer Science and Engineering, BRAC University",
+        "titleSecond": "66 Mohakhali, Dhaka 1212, Bangladesh",
+        "link": null
+      },
+      {
+        "name": "Md Tanzim Reza",
+        "titleFirst": "Department of Computer Science and Engineering, BRAC University",
+        "titleSecond": "66 Mohakhali, Dhaka 1212, Bangladesh",
+        "link": "https://www.bracu.ac.bd/about/people/md-tanzim-reza"
+      }
+    ]
+  },
+  {
+    "id": "Malaysian-Sign-Language-Real-Time-Tutorial-using-CNN-Algorithm",
+    "title": "Malaysian Sign Language Real-Time Tutorial using CNN Algorithm",
+    "isFeatured": true,
+    "status": { "label": "PUBLISHED", "color": "green" },
+    "isPublished": true,
+    "lastUpdatedDate": "12/25/2024",
+    "link": "https://semarakilmu.com.my/journals/index.php/applied_sciences_eng_tech/article/view/13326",
+    "pathToPDF": "https://semarakilmu.com.my/journals/index.php/applied_sciences_eng_tech/article/view/13326/10553",
+    "thumbnail": "/research/masrett/masrett-cover.png",
+    "journalOrOrg": {
+      "name": "Journal of Advanced Research in Applied Sciences and Engineering Technology",
+      "link": "https://semarakilmu.com.my/journals/index.php/applied_sciences_eng_tech",
+      "image": "/research/masrett/semarak-journal.png"
+    },
+    "keywords": [
+      "machine learning",
+      "convolutional neural network",
+      "real-time tutorial",
+      "malaysian sign language",
+      "image detection",
+      "artificial intelligence"
+    ],
+    "abstract": "The communication challenges faced by people with hearing and speech impairments in Malaysia are made worse by effective resources for learning Malaysian Sign Language (MSL). The Malaysian Sign Language Real Time Tutorial (MASRETT) is an instructional website designed to decrease the communication gap between both disabled and non-disabled. MASRETT is developed to assist in learning fundamental MSL virtually besides reducing the communication barriers which leads to a better and stronger social relation in Malaysia. Agile software development is the methodology of choice for creating this system since it facilitates the iterative identification and correction of mistakes. The artificial intelligence (AI) model which is convolutional Neural Network (CNN) algorithm is used to recognize the sign language input. The findings indicate that MASRETT significantly enhances accessibility and effectiveness of MSL learning particularly for individuals with lack access to traditional classes. However, the results showed that only 33% of the signatures are recognized using CNN algorithm for real time signs detection. It is observed that the results are not significant because of the limitation in data and inefficient model usage and can be improved using improved algorithm as in future work.",
+    "authors": [
+      {
+        "name": "Meor Adib Zakwan Meor Ahmad Fauzi",
+        "titleFirst": "Faculty of Computing, Universiti Teknologi Malaysia, Skudai, 81310 Johor",
+        "titleSecond": "Bahru, Johor, Malaysia",
+        "link": "https://www.linkedin.com/in/meoradibzakwan"
+      },
+      {
+        "name": "Adnan Shafi",
+        "titleFirst": "Faculty of Computing, Universiti Teknologi Malaysia, Skudai, 81310 Johor",
+        "titleSecond": "Bahru, Johor, Malaysia",
+        "link": "https://www.linkedin.com/in/adnan-shafi1/"
+      },
+      {
+        "name": "Toya Lazmin Khan",
+        "titleFirst": "Faculty of Computing, Universiti Teknologi Malaysia, Skudai, 81310 Johor",
+        "titleSecond": "Bahru, Johor, Malaysia",
+        "link": "https://www.linkedin.com/in/toya-lazmi-khan-470a98219"
+      },
+      {
+        "name": "Nazihah Surati",
+        "titleFirst": "Faculty of Computing, Universiti Teknologi Malaysia, Skudai, 81310 Johor",
+        "titleSecond": "Bahru, Johor, Malaysia",
+        "link": "https://www.linkedin.com/in/nazihah-surati-7b2069271"
+      },
+      {
+        "name": "Lele Mohammed",
+        "titleFirst": "Department of Computer Science, Federal Polytechnic Bauchi, Bauchi",
+        "titleSecond": "740102, Bauchi, Nigeria",
+        "link": null
+      },
+      {
+        "name": "Shakeef Ahmed Rakin",
+        "titleFirst": "Faculty of Computing, Universiti Teknologi Malaysia, Skudai, 81310 Johor",
+        "titleSecond": "Bahru, Johor, Malaysia",
+        "link": "https://www.linkedin.com/in/shakeef-ahmed-rakin/"
+      },
+      {
+        "name": "Nicholas Jia Chern Pang",
+        "titleFirst": "Faculty of Computing, Universiti Teknologi Malaysia, Skudai, 81310 Johor",
+        "titleSecond": "Bahru, Johor, Malaysia",
+        "link": "https://eportfolio.utm.my/user/nicholas-pang-jia-chern"
+      },
+      {
+        "name": "Zuriahati Mohd Yunos",
+        "titleFirst": "Faculty of Computing, Universiti Teknologi Malaysia, Skudai, 81310 Johor",
+        "titleSecond": "Bahru, Johor, Malaysia",
+        "link": "https://scholar.google.com/citations?user=wOAOgjwAAAAJ&hl=en"
+      },
+      {
+        "name": "Sharifah Zarith Rahmah Syed Ahmad",
+        "titleFirst": "Faculty of Computing, Universiti Teknologi Malaysia, Skudai, 81310 Johor",
+        "titleSecond": "Bahru, Johor, Malaysia",
+        "link": "https://scholar.google.com/citations?user=QKVl8_EAAAAJ&hl=en"
+      }
+    ]
   }
 ]

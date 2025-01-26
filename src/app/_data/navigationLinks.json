@@ -18,28 +18,19 @@
     "isShownOnFooterResources": false
   },
   {
-    "label": "Projects",
-    "title": "Projects",
-    "aria-label": "Navigate to the Projects page",
-    "route": "/projects",
-    "isShownOnNav": true,
-    "isShownOnFooterNav": true,
-    "isShownOnFooterResources": false
-  },
-  {
-    "label": "Research",
-    "title": "Research",
-    "aria-label": "Navigate to the Research page",
-    "route": "/research",
-    "isShownOnNav": true,
-    "isShownOnFooterNav": true,
-    "isShownOnFooterResources": false
-  },
-  {
     "label": "Achievements",
     "title": "Achievements",
     "aria-label": "Navigate to the Achievements page",
     "route": "/achievements",
+    "isShownOnNav": true,
+    "isShownOnFooterNav": true,
+    "isShownOnFooterResources": false
+  },
+  {
+    "label": "Projects",
+    "title": "Projects",
+    "aria-label": "Navigate to the Projects page",
+    "route": "/projects",
     "isShownOnNav": true,
     "isShownOnFooterNav": true,
     "isShownOnFooterResources": false
@@ -52,6 +43,15 @@
     "isShownOnNav": true,
     "isShownOnFooterNav": false,
     "isShownOnFooterResources": true
+  },
+  {
+    "label": "Research",
+    "title": "Research",
+    "aria-label": "Navigate to the Research page",
+    "route": "/research",
+    "isShownOnNav": true,
+    "isShownOnFooterNav": true,
+    "isShownOnFooterResources": false
   },
   {
     "label": "Get In Touch",

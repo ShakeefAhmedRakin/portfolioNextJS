@@ -95,7 +95,7 @@ export default function ResearchCard({ research }: ResearchCardProps) {
         )}
         {/* AUTHORS */}
         <ul className="font-body text-xs font-light space-y-1 mt-2">
-          {research.authors
+          {/* {research.authors
             .sort((a, b) =>
               a.isSupervisor === b.isSupervisor ? 0 : a.isSupervisor ? -1 : 1
             )
@@ -117,7 +117,7 @@ export default function ResearchCard({ research }: ResearchCardProps) {
                 )}{" "}
                 {author.isSupervisor && "(Supervisor)"}
               </li>
-            ))}
+            ))} */}
         </ul>
         {/* DATES */}
         <hr className="my-1 md:my-2" />
