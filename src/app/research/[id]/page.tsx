@@ -3,7 +3,7 @@ import allResearch from "../../_data/research.json";
 import TitleLarge from "@/app/_components/ui/TitleLarge";
 import TitleMedium from "@/app/_components/ui/TitleMedium";
 import AuthorList from "./_components/authorList";
-import JournalOrgInfo from "./_components/journalOrgInfo";
+import JournalStatus from "./_components/journalStatus";
 import PaperDetails from "./_components/paperDetails";
 
 export async function generateStaticParams() {
@@ -44,7 +44,10 @@ export default async function ResearchDetails({
             <AuthorList authors={research.authors} />
           </div>
           <div className="flex-1 flex flex-col">
-            <JournalOrgInfo journalOrOrg={research.journalOrOrg} />
+            <JournalStatus
+              journalOrOrg={research.journalOrOrg}
+              status={research.status}
+            />
             <PaperDetails
               keywords={research.keywords}
               researchLink={research.link}

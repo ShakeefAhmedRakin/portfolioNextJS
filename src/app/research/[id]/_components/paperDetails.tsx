@@ -31,7 +31,7 @@ export default function PaperDetails({
           {keywords.map((keyword, index) => (
             <li
               key={keyword}
-              className="text-text font-body font-light capitalize text-sm"
+              className="text-text font-body font-light capitalize text-xs md:text-sm"
             >
               {keyword}
               {index < keywords.length - 1 && ", "}
@@ -55,7 +55,7 @@ export default function PaperDetails({
             <ButtonPrimaryFilled
               href={researchLink}
               ariaLabel={`View Paper`}
-              className="w-full h-fit"
+              className="w-full"
               openInNewTab
             >
               Learn More <FaExternalLinkAlt />
@@ -65,7 +65,7 @@ export default function PaperDetails({
             <ButtonSecondaryFilled
               href={linkToPDF}
               ariaLabel={`View PDF`}
-              className="w-full h-fit"
+              className="w-full"
               openInNewTab
             >
               View PDF <FaExternalLinkAlt />
