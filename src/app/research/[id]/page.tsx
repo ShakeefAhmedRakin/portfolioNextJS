@@ -17,6 +17,7 @@ export default async function ResearchDetails({
   params: Promise<{ id: string }>;
 }) {
   const { id } = await params;
+
   const research = allResearch.find((research) => research.id === id);
 
   if (!research) {

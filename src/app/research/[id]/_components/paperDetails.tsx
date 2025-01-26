@@ -6,8 +6,8 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 
 interface PaperDetailsProps {
   keywords: string[];
-  researchLink?: string;
-  linkToPDF?: string;
+  researchLink?: string | null;
+  linkToPDF?: string | null;
   abstract: string;
 }
 
