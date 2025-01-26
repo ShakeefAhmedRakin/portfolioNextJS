@@ -8,7 +8,7 @@ interface Research {
     color: string;
   };
   title: string;
-  link?: string;
+  link?: string | null;
   keywords: string[];
   abstract: string;
   journalOrOrg?: {
