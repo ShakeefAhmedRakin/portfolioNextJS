@@ -38,9 +38,9 @@ export default function Footer() {
           {/* Navigation Links */}
           <section className="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2">
             <div>
-              <h3 className="text-xs md:text-sm font-semibold font-heading text-white tracking-wider uppercase">
+              <h2 className="text-xs md:text-sm font-semibold font-heading text-white tracking-wider uppercase">
                 Navigation
-              </h3>
+              </h2>
               <ul className="mt-4 flex flex-col gap-y-2 md:gap-y-4 text-gray-200 font-body text-xs md:text-sm">
                 {NavigationLinks.filter((link) => link.isShownOnFooterNav).map(
                   (link, index) => (
@@ -59,9 +59,9 @@ export default function Footer() {
               </ul>
             </div>
             <div>
-              <h3 className="text-xs md:text-sm font-semibold font-heading text-white tracking-wider uppercase">
+              <h2 className="text-xs md:text-sm font-semibold font-heading text-white tracking-wider uppercase">
                 Resources
-              </h3>
+              </h2>
               <ul className="mt-4 flex flex-col gap-y-2 md:gap-y-4 text-gray-200 font-body text-xs md:text-sm">
                 {NavigationLinks.filter(
                   (link) => link.isShownOnFooterResources

@@ -3,6 +3,8 @@ import { ButtonSecondaryFilled } from "../../ui/Buttons";
 
 import { FaArrowRight } from "react-icons/fa6";
 import ProjectCarousel from "./_components/project-carousel";
+import SectionTitleLarge from "../sectionTitleLarge";
+import SectionTitleMedium from "../sectionTitleMedium";
 
 export default function FeaturedProjects() {
   const sortedProjects = projects
@@ -15,12 +17,10 @@ export default function FeaturedProjects() {
         <div className="container mx-auto px-4 md:px-10 lg:px-20 xl:px-40 py-16 lg:py-20">
           <div className="flex flex-col md:flex-row justify-between items-center md:items-center gap-x-16 gap-y-2 text-center md:text-left">
             <div className="flex-1 whitespace-nowrap">
-              <h2 className="font-heading font-bold text-secondary text-xl lg:text-4xl">
+              <SectionTitleLarge className="text-secondary">
                 Projects
-              </h2>
-              <h3 className="font-heading font-bold text-base lg:text-xl text-text mt-2">
-                Featured Side Projects
-              </h3>
+              </SectionTitleLarge>
+              <SectionTitleMedium>Featured Side Projects</SectionTitleMedium>
             </div>
             <ButtonSecondaryFilled
               href="/projects"

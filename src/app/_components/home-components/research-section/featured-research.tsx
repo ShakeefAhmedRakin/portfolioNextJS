@@ -1,44 +1,44 @@
-import { ButtonPrimaryFilled } from "../../ui/Buttons";
+import { ButtonSecondaryFilled } from "../../ui/Buttons";
 import { LiaNewspaperSolid } from "react-icons/lia";
 import LayoutWrapper from "../../wrappers/LayoutWrapper";
-import research from "../../../_data/research.json";
-import ResearchCard from "./_components/researchCard";
+
+import { FaArrowRight } from "react-icons/fa6";
+import ResearchCards from "./_components/researchCards";
+import SectionTitleLarge from "../sectionTitleLarge";
+import SectionTitleMedium from "../sectionTitleMedium";
 
 export default function FeaturedResearch() {
   return (
     <>
       <LayoutWrapper className="bg-backgroundDark">
-        {/* TITLE CONTENT */}
-        <LiaNewspaperSolid className="text-secondary mx-auto text-6xl" />
-        <h2 className="font-heading font-bold text-secondary text-center text-xl lg:text-4xl">
-          Research
-        </h2>
-        <h3 className="font-heading font-bold text-base text-center lg:text-xl text-text mt-2">
-          Completed & Ongoing
-        </h3>
-        <hr className="my-2" />
-        <p className="text-xs md:text-sm lg:text-lg text-text font-body text-center mx-auto max-w-xl">
-          {`Discover my latest research projects that I've collaborated with
+        {/* SECTION TITLE */}
+        <div className="text-center">
+          <LiaNewspaperSolid className="text-secondary mx-auto text-6xl" />
+          <SectionTitleLarge className="text-secondary">
+            Research
+          </SectionTitleLarge>
+          <SectionTitleMedium>Completed & Ongoing</SectionTitleMedium>
+          <hr className="my-2" />
+          <p className="text-xs md:text-sm lg:text-lg text-text font-body mx-auto max-w-xl">
+            {`Discover my latest research projects that I've collaborated with
           esteemed colleagues and institutions`}
-        </p>
+          </p>
+        </div>
+
         {/* SECTION CONTENT */}
-        <div className="flex justify-center w-full items-center flex-col mt-8">
-          <div className="grid grid-cols-1 gap-1 md:grid-cols-2 lg:grid-cols-3 md:gap-2 w-full">
-            {research
-              .filter((research) => research.isFeatured)
-              .map((research) => (
-                <ResearchCard key={research.title} research={research} />
-              ))}
-          </div>
-          <div className="mt-10">
-            <ButtonPrimaryFilled
-              href="/research"
-              ariaLabel="View Details"
-              className="w-56"
-            >
-              Learn More
-            </ButtonPrimaryFilled>
-          </div>
+        <ResearchCards />
+
+        {/* GO TO PAGE BUTTON */}
+        <div className="mt-5 flex gap-2 justify-center md:justify-between items-center">
+          <div className="w-full flex-1 border-t h-fit hidden md:block"></div>
+          <ButtonSecondaryFilled
+            href="/research"
+            ariaLabel="View Details"
+            className="w-56"
+          >
+            View All Research
+            <FaArrowRight></FaArrowRight>
+          </ButtonSecondaryFilled>
         </div>
       </LayoutWrapper>
     </>

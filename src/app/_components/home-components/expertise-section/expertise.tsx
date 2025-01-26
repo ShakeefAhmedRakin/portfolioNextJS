@@ -1,4 +1,6 @@
 import LayoutWrapper from "../../wrappers/LayoutWrapper";
+import SectionTitleLarge from "../sectionTitleLarge";
+import SectionTitleMedium from "../sectionTitleMedium";
 import ServiceCards from "./_components/service-cards";
 
 export default function Expertise() {
@@ -6,12 +8,14 @@ export default function Expertise() {
     <>
       <LayoutWrapper className="bg-background">
         {/* TITLE CONTENT */}
-        <h2 className="font-heading text-center font-bold text-secondary text-xl lg:text-4xl">
-          My Expertise
-        </h2>
-        <h3 className="font-heading text-center font-bold text-base lg:text-xl text-text mt-2">
-          Code that solves problems <br></br> one at a time.
-        </h3>
+        <div className="text-center">
+          <SectionTitleLarge className="text-secondary">
+            My Expertise
+          </SectionTitleLarge>
+          <SectionTitleMedium>
+            Code that solves problems <br></br> one at a time.
+          </SectionTitleMedium>
+        </div>
         <hr className="my-3 md:my-5" />
         <ServiceCards />
       </LayoutWrapper>

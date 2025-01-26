@@ -1,22 +1,21 @@
 import { FaArrowRight } from "react-icons/fa6";
-import awards from "../../../_data/awards.json";
 import { ButtonPrimaryOutline } from "../../ui/Buttons";
 import LayoutWrapper from "../../wrappers/LayoutWrapper";
-import Image from "next/image";
+import AchievementsCards from "./_components/achievementsCards";
+import SectionTitleLarge from "../sectionTitleLarge";
+import SectionTitleMedium from "../sectionTitleMedium";
 
 export default function FeaturedAchievements() {
   return (
     <>
       <LayoutWrapper className="bg-bg-backgroundDark">
-        {/* TITLE CONTENT */}
+        {/* SECTION TITLE & GO TO PAGE BUTTON */}
         <div className="flex flex-col md:flex-row justify-between items-center md:items-start gap-x-16 gap-y-2 text-center md:text-left">
           <div className="flex-1 whitespace-nowrap">
-            <h2 className="font-heading font-bold text-primary text-xl lg:text-4xl">
+            <SectionTitleLarge className="text-primary">
               Achievements
-            </h2>
-            <h3 className="font-heading font-bold text-base lg:text-xl text-text mt-2">
-              Hackathons and Datathons
-            </h3>
+            </SectionTitleLarge>
+            <SectionTitleMedium>Hackathons and Datathons</SectionTitleMedium>
             <hr className="my-2" />
             <ButtonPrimaryOutline
               href="/achievements"
@@ -41,21 +40,7 @@ export default function FeaturedAchievements() {
           </ButtonPrimaryOutline>
         </div>
         {/* SECTION CONTENT */}
-        <div className="grid grid-cols-2 md:grid-cols-6 gap-x-12 xl:gap-x-20 mt-10 px-10 md:px-0">
-          {awards
-            .filter((award) => award.isFeatured)
-            .map((award, index) => (
-              <div className="aspect-square relative" key={index}>
-                <Image
-                  key={index}
-                  src={award.photo}
-                  fill
-                  draggable={false}
-                  alt={award.title}
-                ></Image>
-              </div>
-            ))}
-        </div>
+        <AchievementsCards />
       </LayoutWrapper>
     </>
   );

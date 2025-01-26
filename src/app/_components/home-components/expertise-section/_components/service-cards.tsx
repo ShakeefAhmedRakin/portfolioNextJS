@@ -16,9 +16,9 @@ export default function ServiceCards() {
           <div className="text-3xl lg:text-5xl p-3 bg-white text-secondary w-fit rounded-full mb-5 lg:mb-7">
             {service.icon}
           </div>
-          <h2 className="font-heading font-bold text-sm lg:text-xl">
+          <h4 className="font-heading font-bold text-sm lg:text-xl">
             {service.title}
-          </h2>
+          </h4>
           <p className="font-body text-xs lg:text-base">
             {service.description}
           </p>

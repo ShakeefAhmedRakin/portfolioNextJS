@@ -1,18 +1,20 @@
-export default function TitleMedium({
+import { ReactNode } from "react";
+
+export default function SectionTitleMedium({
   id,
-  title,
   className,
+  children,
 }: {
   id?: string;
-  title: string;
   className?: string;
+  children: ReactNode;
 }) {
   return (
-    <h2
+    <h3
       className={`font-heading text-text font-semibold text-md md:text-lg xl:text-xl mt-2 ${className}`}
       id={id}
     >
-      {title}
-    </h2>
+      {children}
+    </h3>
   );
 }
