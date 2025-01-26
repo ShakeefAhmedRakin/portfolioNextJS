@@ -62,7 +62,9 @@ const NextBreadcrumb = ({
             <React.Fragment key={index}>
               <li className={itemClasses}>
                 {isActive ? (
-                  <span aria-current="page">{itemLink}</span>
+                  <span aria-current="page">
+                    {itemLink.substring(0, 40)}...
+                  </span>
                 ) : (
                   <Link href={href}>{itemLink}</Link>
                 )}

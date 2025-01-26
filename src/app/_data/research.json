@@ -6,11 +6,12 @@
     "isPublished": true,
     "lastUpdatedDate": "05/01/2024",
     "link": "",
-    "pathToPDF": "",
+    "linkToPDF": "",
     "title": "Optimizing American Sign Language Recognition with Binarized Neural Networks: A Comparative Study with Traditional Models",
     "thumbnail": "/research/bracuthesis/larqpapercover.png",
     "journalOrOrg": {
       "name": "BRAC University",
+      "department": "Department of Computer Science and Engineering, BRAC University",
       "link": "https://www.bracu.ac.bd/",
       "image": "/research/bracuthesis/bracu.png"
     },
@@ -28,7 +29,6 @@
         "name": "Shakeef Ahmed Rakin",
         "titleFirst": "Department of Computer Science and Engineering, BRAC University",
         "titleSecond": "66 Mohakhali, Dhaka 1212, Bangladesh",
-
         "link": "https://www.linkedin.com/in/shakeef-ahmed-rakin/"
       },
       {
@@ -71,11 +71,12 @@
     "isPublished": true,
     "lastUpdatedDate": "12/25/2024",
     "link": "https://semarakilmu.com.my/journals/index.php/applied_sciences_eng_tech/article/view/13326",
-    "pathToPDF": "https://semarakilmu.com.my/journals/index.php/applied_sciences_eng_tech/article/view/13326/10553",
+    "linkToPDF": "https://semarakilmu.com.my/journals/index.php/applied_sciences_eng_tech/article/view/13326/10553",
     "thumbnail": "/research/masrett/masrett-cover.png",
     "journalOrOrg": {
-      "name": "Journal of Advanced Research in Applied Sciences and Engineering Technology",
-      "link": "https://semarakilmu.com.my/journals/index.php/applied_sciences_eng_tech",
+      "name": "SEMARAK ILMU SDN BHD",
+      "link": "https://semarakilmu.com.my/main/",
+      "department": "Advanced Research in Applied Sciences and Engineering Technology",
       "image": "/research/masrett/semarak-journal.png"
     },
     "keywords": [

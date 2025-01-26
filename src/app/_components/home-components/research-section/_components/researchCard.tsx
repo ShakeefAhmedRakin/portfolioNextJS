@@ -1,13 +1,15 @@
 import Image from "next/image";
+import Link from "next/link";
 
 interface Research {
   status: {
     label: string;
     color: string;
   };
+  id: string;
   title: string;
   thumbnail: string;
-  lastUpdatedDate?: string;
+  lastUpdatedDate: string;
   abstract: string;
 }
 
@@ -17,7 +19,12 @@ interface ResearchCardProps {
 
 export default function ResearchCard({ research }: ResearchCardProps) {
   return (
-    <div className="bg-background  h-full rounded-lg shadow">
+    <Link
+      className="bg-background  h-full rounded-lg shadow hover:shadow-secondary duration-300 hover:cursor-pointer"
+      href={`/research/${research.id}`}
+      title={`View ${research.title}`}
+      aria-label={`View ${research.title}`}
+    >
       <div className="aspect-video relative">
         <Image
           src={research.thumbnail}
@@ -42,19 +49,16 @@ export default function ResearchCard({ research }: ResearchCardProps) {
         </h3>
 
         <p className="font-body text-text opacity-60 text-xs md:text-sm my-1">
-          {new Date(research?.lastUpdatedDate ?? "").toLocaleDateString(
-            "en-US",
-            {
-              month: "long",
-              year: "numeric",
-            }
-          )}
+          {new Date(research?.lastUpdatedDate).toLocaleDateString("en-US", {
+            month: "long",
+            year: "numeric",
+          })}
         </p>
 
         <p className="text-[9px] md:text-xs font-body line-clamp-5 text-text">
           {research.abstract}
         </p>
       </div>
-    </div>
+    </Link>
   );
 }

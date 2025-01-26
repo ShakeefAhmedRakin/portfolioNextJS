@@ -2,6 +2,7 @@ import { MetadataRoute } from "next";
 import awards from "./_data/awards.json";
 import navigationLinks from "./_data/navigationLinks.json";
 import projects from "./_data/projects.json";
+import research from "./_data/research.json";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   return [
@@ -22,6 +23,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       url: `${process.env.WEBSITE_URL}/achievements/${award.id}`,
       priority: 0.64,
       lastModified: new Date(award?.date).toISOString(),
+    })),
+    // RESEARCH
+    ...research.map((research) => ({
+      url: `${process.env.WEBSITE_URL}/research/${research.id}`,
+      priority: 0.64,
+      lastModified: new Date(research?.lastUpdatedDate).toISOString(),
     })),
   ];
 }
