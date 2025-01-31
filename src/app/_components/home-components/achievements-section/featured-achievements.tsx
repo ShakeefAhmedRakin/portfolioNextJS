@@ -8,7 +8,7 @@ import SectionTitleMedium from "../sectionTitleMedium";
 export default function FeaturedAchievements() {
   return (
     <>
-      <LayoutWrapper className="bg-bg-backgroundDark">
+      <LayoutWrapper className="bg-backgroundDark">
         {/* SECTION TITLE & GO TO PAGE BUTTON */}
         <div className="flex flex-col md:flex-row justify-between items-center md:items-start gap-x-16 gap-y-2 text-center md:text-left">
           <div className="flex-1 whitespace-nowrap">

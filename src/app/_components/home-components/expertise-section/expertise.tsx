@@ -12,13 +12,12 @@ export default function Expertise() {
         <div className="text-center">
           <LiaBuromobelexperte className="text-secondary mx-auto text-5xl" />
           <SectionTitleLarge className="text-secondary">
-            My Expertise
+            Expertise
           </SectionTitleLarge>
-          <SectionTitleMedium>
+          <SectionTitleMedium className="text-text mb-6">
             Code that solves problems <br></br> one at a time.
           </SectionTitleMedium>
         </div>
-        <hr className="my-3 md:my-5" />
         <ServiceCards />
       </LayoutWrapper>
     </>

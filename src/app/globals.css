@@ -17,8 +17,8 @@
 
   .dark {
     --text: #ffffff;
-    --background: #161616;
-    --background-dark: #131313;
+    --background: #0e0e0e;
+    --background-dark: #0c0c0c;
     --primary: #0077e6;
     --primary-light: #002a54;
     --secondary: #795ed3;

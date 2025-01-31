@@ -20,7 +20,7 @@ interface ResearchCardProps {
 export default function ResearchCard({ research }: ResearchCardProps) {
   return (
     <Link
-      className="bg-background  h-full rounded-lg shadow hover:shadow-secondary duration-300 hover:cursor-pointer"
+      className="bg-background h-full border border-secondary rounded-lg shadow shadow-black/10 hover:shadow-secondary duration-300 hover:cursor-pointer"
       href={`/research/${research.id}`}
       title={`View ${research.title}`}
       aria-label={`View ${research.title}`}
@@ -31,7 +31,7 @@ export default function ResearchCard({ research }: ResearchCardProps) {
           fill={true}
           alt={`${research.title} thumbnail`}
           draggable={false}
-          className="object-cover"
+          className="object-cover rounded-t-lg"
         ></Image>
       </div>
 
@@ -44,7 +44,7 @@ export default function ResearchCard({ research }: ResearchCardProps) {
             {research.status.label}
           </h3>
         </div>
-        <h3 className="font-heading text-secondary font-bold text-xs md:text-sm line-clamp-2">
+        <h3 className="font-heading text-text font-bold text-xs md:text-sm line-clamp-2">
           {research?.title}
         </h3>
 

@@ -1,10 +1,10 @@
 "use client";
 import useBlogs from "@/app/_components/blogs/useBlogs";
-import Image from "next/image";
 import Link from "next/link";
-import { FaArrowRight } from "react-icons/fa6";
-import { IoMdStar } from "react-icons/io";
 import { LuLoader2 } from "react-icons/lu";
+import { IoMdStar } from "react-icons/io";
+import Image from "next/image";
+import MediumButton from "./mediumButton";
 
 const Blogs = () => {
   const {
@@ -19,11 +19,11 @@ const Blogs = () => {
       author: string;
     }[];
     loading: boolean;
-  } = useBlogs({ maxBlogs: 3 });
+  } = useBlogs({ maxBlogs: 10 });
 
   return (
     <>
-      <div className="w-full">
+      <div>
         {loading ? (
           <>
             <div className="flex justify-center flex-col text-text items-center py-44">
@@ -85,19 +85,12 @@ const Blogs = () => {
                 </>
               ) : (
                 <>
-                  <h2 className="font-heading text-xl font-bold text-center text-white py-24">
+                  <h2 className="font-heading text-xl font-bold text-center text-text py-24">
                     No Blogs Published Yet!
                   </h2>
                 </>
               )}
-              <Link
-                href={"/blogs"}
-                aria-label="Read All Blogs"
-                title="Read All Blogs"
-                className="w-full flex justify-center gap-2 items-center font-heading font-bold bg-background dark:bg-white rounded-lg p-4 border text-black shadow-inner duration-300 mt-3 text-sm"
-              >
-                View All Blogs <FaArrowRight></FaArrowRight>
-              </Link>
+              <MediumButton></MediumButton>
             </ul>
           </>
         )}

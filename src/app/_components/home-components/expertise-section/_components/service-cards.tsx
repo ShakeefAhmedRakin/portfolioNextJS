@@ -11,7 +11,9 @@ export default function ServiceCards() {
           key={index}
           className={`space-y-3 text-white ${
             index % 2 === 0 ? "bg-gradient-to-tr" : "bg-gradient-to-br"
-          } from-primary to-secondary px-6 md:px-3 lg:px-6 py-8 rounded-lg shadow-md shadow-primary`}
+          } from-primary to-secondary px-6 md:px-3 lg:px-6 py-8 rounded-lg shadow-md ${
+            index % 2 === 0 ? "shadow-primary" : "shadow-secondary"
+          }`}
         >
           <div className="text-3xl lg:text-5xl p-3 bg-white text-secondary w-fit rounded-full mb-5 lg:mb-7">
             {service.icon}

@@ -63,7 +63,11 @@ const NextBreadcrumb = ({
               <li className={itemClasses}>
                 {isActive ? (
                   <span aria-current="page">
-                    {itemLink.substring(0, 40)}...
+                    {itemLink.length > 40 ? (
+                      <>{itemLink.substring(0, 40)}...</>
+                    ) : (
+                      <>{itemLink}</>
+                    )}
                   </span>
                 ) : (
                   <Link href={href}>{itemLink}</Link>
