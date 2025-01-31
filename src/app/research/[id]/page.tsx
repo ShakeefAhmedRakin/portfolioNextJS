@@ -40,7 +40,7 @@ export default async function ResearchDetails({
           <div className="flex-1">
             <AuthorList
               authors={research.authors}
-              journalOrOrgName={research.journalOrOrg.name}
+              journalOrOrgName={research?.journalOrOrg?.name}
             />
           </div>
           <div className="flex-1 flex flex-col">

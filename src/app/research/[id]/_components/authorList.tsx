@@ -9,7 +9,7 @@ interface Author {
 
 interface AuthorListProps {
   authors: Author[];
-  journalOrOrgName: string;
+  journalOrOrgName: string | undefined;
 }
 
 export default function AuthorList({
@@ -50,7 +50,7 @@ export default function AuthorList({
             />
           </li>
         ))}
-        <span className="absolute text-[100px] -rotate-45 font-heading font-bold text-white opacity-5 inset-0 flex items-center justify-center">
+        <span className="absolute text-[100px] -rotate-45 font-heading font-bold text-white opacity-5 inset-0 flex items-center justify-center pointer-events-none">
           {journalOrOrgName}
         </span>
       </ul>
