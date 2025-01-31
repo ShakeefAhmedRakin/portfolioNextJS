@@ -4,6 +4,7 @@ import { ButtonPrimaryFilled, ButtonSecondaryFilled } from "../../ui/Buttons";
 import { socialLinks } from "../../../_data/socialLinks";
 import Link from "next/link";
 import LayoutWrapper from "../../wrappers/LayoutWrapper";
+import personalData from "../../../_data/personalData.json";
 
 export default function Hero() {
   return (
@@ -12,22 +13,19 @@ export default function Hero() {
         <div className="flex flex-col-reverse z-40 md:flex-row items-center gap-8 lg:gap-20">
           <div className="flex-1">
             <AnimatedTitle
-              text="Full Stack Engineer"
+              text={personalData.Person.Title}
               delay={0.035}
               startDelay={0}
               className="font-heading font-bold text-text text-lg md:text-2xl xl:text-4xl"
             ></AnimatedTitle>
             <AnimatedTitle
-              text="Shakeef Ahmed Rakin"
+              text={personalData.Person.FullName}
               delay={0.035}
               startDelay={0.3}
               className="font-heading my-1 md:my-4 font-bold text-primary text-2xl md:text-3xl xl:text-5xl whitespace-nowrap"
             ></AnimatedTitle>
             <p className="font-body text-sm xl:text-base text-text leading-[25px] md:leading-[30px] xl:leading-[32px] fade-in-delayed">
-              Full Stack Engineer from Dhaka, Bangladesh, skilled in developing
-              web applications and integrating AI solutions. Experienced in
-              machine learning projects, including natural language processing
-              and computer vision.
+              {personalData.Person.Description}
             </p>
             <div className="flex gap-2 mt-5 fade-in-delayed max-w-[450px]">
               <ButtonPrimaryFilled

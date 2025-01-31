@@ -1,0 +1,11 @@
+{
+  "Person": {
+    "FirstName": "Shakeef Ahmed",
+    "LastName": "Rakin",
+    "FullName": "Shakeef Ahmed Rakin",
+    "Title": "Full Stack Engineer",
+    "Location": "Dhaka, Bangladesh",
+    "Email": "shakeef.rakin321@gmail.com",
+    "Description": "Full Stack Engineer from Dhaka, Bangladesh, skilled in developing web applications and integrating AI solutions. Experienced in machine learning projects, including natural language processing and computer vision."
+  }
+}

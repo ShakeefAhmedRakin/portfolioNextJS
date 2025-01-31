@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "./_components/navigation/navbar";
+import personalData from "./_data/personalData.json";
 
 // FONTS
 import { Montserrat, Poppins } from "next/font/google";
@@ -24,12 +25,12 @@ export const metadata: Metadata = {
   metadataBase: new URL(process.env.WEBSITE_URL || "http://localhost:3000"),
   authors: [
     {
-      name: "Shakeef Ahmed Rakin",
+      name: `${personalData.Person.FullName}`,
       url: `${process.env.WEBSITE_URL}}`,
     },
   ],
-  creator: "Shakeef Ahmed Rakin",
-  publisher: "Shakeef Ahmed Rakin",
+  creator: `${personalData.Person.FullName}`,
+  publisher: `${personalData.Person.FullName}`,
   robots: "index, follow",
   icons: [
     { rel: "icon", url: "/logos/logo.png" },
