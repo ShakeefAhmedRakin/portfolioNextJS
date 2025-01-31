@@ -8,7 +8,7 @@ export default function TitleLarge({
   isPrimary?: boolean;
 }) {
   return (
-    <h1 className="font-heading text-text font-bold text-lg md:text-xl xl:text-3xl mb-4">
+    <h1 className="font-heading text-text font-bold text-2xl xl:text-3xl mb-4">
       {firstTitle}{" "}
       <span className={`text-${isPrimary ? "primary" : "secondary"}`}>
         {secondTitle}

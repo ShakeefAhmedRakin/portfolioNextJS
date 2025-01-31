@@ -5,8 +5,8 @@
     "status": { "label": "Thesis", "color": "green" },
     "isPublished": true,
     "lastUpdatedDate": "05/01/2024",
-    "link": "",
-    "linkToPDF": "",
+    "link": "https://dspace.bracu.ac.bd/xmlui/handle/10361/25058",
+    "linkToPDF": "https://dspace.bracu.ac.bd/xmlui/bitstream/handle/10361/25058/20301046%2c20301191%2c20301209%2c20301199%2c2010147_CSE.pdf",
     "title": "Optimizing American Sign Language Recognition with Binarized Neural Networks: A Comparative Study with Traditional Models",
     "thumbnail": "/research/bracuthesis/larqpapercover.png",
     "journalOrOrg": {

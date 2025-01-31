@@ -9,12 +9,16 @@ interface Author {
 
 interface AuthorListProps {
   authors: Author[];
+  journalOrOrgName: string;
 }
 
-export default function AuthorList({ authors }: AuthorListProps) {
+export default function AuthorList({
+  authors,
+  journalOrOrgName,
+}: AuthorListProps) {
   return (
     <>
-      <ul className="space-y-3 bg-gradient-to-br from-primary to-secondary p-6 rounded-lg w-full min-h-full shadow-primary shadow text-white">
+      <ul className="space-y-3 bg-gradient-to-br from-primary to-secondary p-6 rounded-lg w-full min-h-full shadow-primary shadow text-white relative overflow-hidden">
         {authors.map((author, index) => (
           <li key={index}>
             <h4 className="font-heading font-bold">
@@ -46,6 +50,9 @@ export default function AuthorList({ authors }: AuthorListProps) {
             />
           </li>
         ))}
+        <span className="absolute text-[100px] -rotate-45 font-heading font-bold text-white opacity-5 inset-0 flex items-center justify-center">
+          {journalOrOrgName}
+        </span>
       </ul>
     </>
   );

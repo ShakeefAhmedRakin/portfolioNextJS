@@ -4,7 +4,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { IoClose } from "react-icons/io5";
 import NavigationLinks from "./navigation.links";
 import Logo from "../brand/logo";
-import { ButtonPrimaryFilled, ButtonSecondaryFilled } from "../ui/Buttons";
+import { ButtonPrimaryFilled } from "../ui/Buttons";
 
 export default function NavigationDropDown() {
   const [isOpen, setIsOpen] = useState(false);
@@ -80,15 +80,6 @@ export default function NavigationDropDown() {
               isDropDownLinks={true}
               handleLinkClick={handleLinkClick}
             ></NavigationLinks>
-            <div onClick={handleLinkClick} className="rounded-full">
-              <ButtonSecondaryFilled
-                href="/resume"
-                ariaLabel="View Resume"
-                className="w-40"
-              >
-                View Resume
-              </ButtonSecondaryFilled>
-            </div>
             <div onClick={handleLinkClick} className="rounded-full">
               <ButtonPrimaryFilled
                 href="/get-in-touch"

@@ -1,5 +1,6 @@
 import { BsGithub, BsLinkedin, BsStackOverflow } from "react-icons/bs";
 import { SiLeetcode } from "react-icons/si";
+import { FaMediumM } from "react-icons/fa";
 export const socialLinks = [
   {
     name: "LinkedIn",
@@ -28,5 +29,12 @@ export const socialLinks = [
     icon: <SiLeetcode />,
     title: "LeetCode",
     ariaLabel: "View LeetCode Profile",
+  },
+  {
+    name: "Medium",
+    url: "https://medium.com/@shakeef.rakin321",
+    icon: <FaMediumM />,
+    title: "Medium",
+    ariaLabel: "View Medium Profile",
   },
 ];

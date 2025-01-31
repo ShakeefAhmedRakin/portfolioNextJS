@@ -4,7 +4,6 @@ import { Metadata } from "next";
 import ProjectCard from "./_components/projectcard";
 import LayoutWrapper from "../_components/wrappers/LayoutWrapper";
 import TitleLarge from "../_components/ui/TitleLarge";
-import TitleMedium from "../_components/ui/TitleMedium";
 import { SetSchemaProjectsPage } from "../_util/metadata/ProjectsPage/SetSchemaProjectsPage";
 import { MetadataProjectsPage } from "../_util/metadata/ProjectsPage/MetadataProjectsPage";
 
@@ -29,7 +28,14 @@ export default function ProjectsPage() {
         {Object.keys(sortedAndGroupedProjects).map((type) => (
           <section key={type} id={type} aria-labelledby={`${type}-heading`}>
             <hr className="my-4" />
-            <TitleMedium id={`${type}-heading`} title={type} />
+            <h2
+              id={`${type}-heading`}
+              title={type}
+              className="bg-gradient-to-br from-primary to-secondary text-white py-3 px-5 rounded-lg font-heading font-bold text-base md:text-lg mb-4"
+            >
+              {type}
+            </h2>
+
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
               {sortedAndGroupedProjects[type].map((project) => (
                 <ProjectCard key={project.id} project={project} />

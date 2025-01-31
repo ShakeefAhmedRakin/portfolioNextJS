@@ -1,10 +1,10 @@
 import LayoutWrapper from "@/app/_components/wrappers/LayoutWrapper";
 import allResearch from "../../_data/research.json";
 import TitleLarge from "@/app/_components/ui/TitleLarge";
-import TitleMedium from "@/app/_components/ui/TitleMedium";
 import AuthorList from "./_components/authorList";
 import JournalStatus from "./_components/journalStatus";
 import PaperDetails from "./_components/paperDetails";
+import ResearchNotFound from "./_components/researchnotfound";
 
 export async function generateStaticParams() {
   return allResearch.map((research) => ({
@@ -23,7 +23,7 @@ export default async function ResearchDetails({
   if (!research) {
     return (
       <LayoutWrapper>
-        <h1>NOT FOUND</h1>
+        <ResearchNotFound></ResearchNotFound>
       </LayoutWrapper>
     );
   }
@@ -32,17 +32,16 @@ export default async function ResearchDetails({
     <>
       <LayoutWrapper>
         <TitleLarge
-          firstTitle="My"
-          secondTitle="Research"
+          firstTitle={research.title}
+          secondTitle=""
           isPrimary={true}
         ></TitleLarge>
-        <TitleMedium title={research.title}></TitleMedium>
-
-        <hr className="my-2" />
-
         <div className="flex flex-col md:flex-row justify-between gap-5">
           <div className="flex-1">
-            <AuthorList authors={research.authors} />
+            <AuthorList
+              authors={research.authors}
+              journalOrOrgName={research.journalOrOrg.name}
+            />
           </div>
           <div className="flex-1 flex flex-col">
             <JournalStatus

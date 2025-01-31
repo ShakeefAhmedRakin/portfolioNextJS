@@ -61,6 +61,7 @@ export default function Achievements() {
           secondTitle="Achievements"
           isPrimary={true}
         />
+        <hr className="mb-4" />
         <div>
           {awards.map((award, index) => (
             <ArticleSection key={index} award={award} />

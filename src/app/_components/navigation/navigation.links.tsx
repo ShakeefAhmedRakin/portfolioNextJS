@@ -15,7 +15,7 @@ export default function NavigationLinks({
   const pathname = usePathname();
 
   const linkClasses = (path: string) =>
-    `duration-200 ${isDropDownLinks && "text-xs md:text-base"} ${
+    `duration-200 ${isDropDownLinks && "text-sm md:text-base"} ${
       pathname.includes(path) && "text-primary bg-primary-lighter"
     } hover:bg-primary-lighter hover:text-primary font-medium p-2.5 rounded-full`;
 

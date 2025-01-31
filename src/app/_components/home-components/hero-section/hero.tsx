@@ -31,22 +31,22 @@ export default function Hero() {
             </p>
             <div className="flex gap-2 mt-5 fade-in-delayed max-w-[450px]">
               <ButtonPrimaryFilled
-                href="/resume"
-                ariaLabel="My Resume"
+                href="/about"
+                ariaLabel="Learn About Me"
                 className="w-full"
               >
-                View Resume
+                About Me
               </ButtonPrimaryFilled>
               <ButtonSecondaryFilled
-                href="/about"
-                ariaLabel="About Me"
+                href="/get-in-touch"
+                ariaLabel="Contact Me"
                 className="w-full"
               >
-                Learn More About Me
+                Get In Touch
               </ButtonSecondaryFilled>
             </div>
             {/* SOCIAL LINKS */}
-            <div className="flex justify-center md:justify-start mt-6 gap-10 fade-in-delayed ml-0 md:ml-4 flex-wrap text-[26px] md:text-3xl">
+            <div className="flex justify-center md:justify-start mt-6 gap-10 fade-in-delayed ml-0 md:ml-4 flex-wrap text-[26px] md:text-2xl xl:text-3xl">
               {socialLinks.map((link, index) => (
                 <Link
                   key={index}
@@ -54,7 +54,7 @@ export default function Hero() {
                   rel="noopener noreferrer"
                   target="_blank"
                   aria-label={link.ariaLabel}
-                  className="p-3 rounded-full text-text opacity-80 border border-transparent hover:text-primary hover:border-primary duration-300 active:scale-[0.9]"
+                  className="p-2 rounded-full text-text opacity-80 border border-transparent hover:text-primary hover:border-primary duration-300 active:scale-[0.9]"
                 >
                   <span className="sr-only">{link.ariaLabel}</span>
                   {link.icon}
