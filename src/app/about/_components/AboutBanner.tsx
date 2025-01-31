@@ -2,9 +2,10 @@ import { socialLinks } from "@/app/_data/socialLinks";
 import Image from "next/image";
 import Link from "next/link";
 import { BiGlobe } from "react-icons/bi";
-import { FaLocationPin } from "react-icons/fa6";
+import { IoLocationSharp } from "react-icons/io5";
 import { MdMail } from "react-icons/md";
 import ViewResumeButton from "./ViewResumeButton";
+import personalData from "../../_data/personalData.json";
 
 export default function AboutBanner() {
   return (
@@ -24,17 +25,17 @@ export default function AboutBanner() {
         <div className="flex-1">
           <div className="flex justify-center md:justify-between items-center">
             <h2 className="font-heading text-2xl text-white font-bold">
-              Shakeef Ahmed Rakin
+              {personalData.Person.FullName}
             </h2>
             <ViewResumeButton className="hidden md:flex" />
           </div>
           <h3 className="font-heading text-lg text-white mt-1 mb-5 md:mb-3">
-            Full Stack Engineer
+            {personalData.Person.Title}
           </h3>
           <div className="flex flex-wrap gap-4 items-center max-w-md text-white font-body mb-2 text-sm">
             <div className="items-center flex gap-2">
-              <FaLocationPin className="w-4 h-4"></FaLocationPin> Dhaka,
-              Bangladesh
+              <IoLocationSharp className="w-4 h-4"></IoLocationSharp>{" "}
+              {personalData.Person.Location}
             </div>
             <Link
               className="items-center flex gap-2 hover:underline"
@@ -47,20 +48,13 @@ export default function AboutBanner() {
               <BiGlobe className="w-4 h-4" />{" "}
               {process.env.WEBSITE_URL?.split("//")[1]}
             </Link>
-            <Link
-              href="mailto:shakeef.rakin321@gmail.com"
-              className="items-center flex gap-2 hover:underline"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="Email Me"
-              aria-label="Email Me"
-            >
+            <span className="items-center flex gap-2">
               <MdMail className="w-4 h-4" />
-              shakeef.rakin321@gmail.com
-            </Link>
+              {personalData.Person.Email}
+            </span>
           </div>
           <hr className="my-5 max-w-lg" />
-          <div className="flex  gap-4 items-center justify-around md:justify-start whitespace-nowrap text-white text-3xl">
+          <div className="flex  gap-4 items-center justify-around md:justify-start whitespace-nowrap text-white text-2xl">
             {socialLinks.map((link) => (
               <Link
                 className="items-center flex gap-2 hover:scale-[1.1] duration-300"

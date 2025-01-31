@@ -1,6 +1,7 @@
 import { Graph } from "schema-dts";
 import { socialLinks } from "../../../_data/socialLinks";
 import awards from "../../../_data/awards.json";
+import personalData from "../../../_data/personalData.json";
 
 export default function SetSchemaHomePage() {
   const graph: Graph = {
@@ -10,7 +11,7 @@ export default function SetSchemaHomePage() {
         "@type": "WebPage",
         "@id": `${process.env.WEBSITE_URL}/`,
         url: `${process.env.WEBSITE_URL}/`,
-        name: "Shakeef Ahmed Rakin | Full Stack Engineer",
+        name: `${personalData.Person.FullName} | ${personalData.Person.Title}`,
         isPartOf: {
           "@id": `${process.env.WEBSITE_URL}/#website`,
         },
@@ -26,8 +27,7 @@ export default function SetSchemaHomePage() {
         award: awards.map((award) => `${award.title}-${award.position}`),
         thumbnailUrl: `${process.env.WEBSITE_URL}/og_images/homepage.png`,
         dateModified: new Date().toISOString(),
-        description:
-          "Full Stack Engineer from Dhaka, Bangladesh with a strong background in developing web applications and integrating AI solutions.",
+        description: `${personalData.Person.Description}`,
         breadcrumb: {
           "@id": `${process.env.WEBSITE_URL}/#breadcrumb`,
         },
@@ -49,7 +49,7 @@ export default function SetSchemaHomePage() {
         "@id": `${process.env.WEBSITE_URL}/#primaryImage`,
         url: `${process.env.WEBSITE_URL}/hero.png`,
         contentUrl: `${process.env.WEBSITE_URL}/hero.png`,
-        caption: "Shakeef Ahmed Rakin - Full Stack Engineer",
+        caption: `${personalData.Person.FullName} | ${personalData.Person.Title}`,
       },
       {
         "@type": "BreadcrumbList",
@@ -67,8 +67,8 @@ export default function SetSchemaHomePage() {
         "@type": "WebSite",
         "@id": `${process.env.WEBSITE_URL}/#website`,
         url: `${process.env.WEBSITE_URL}/`,
-        name: "Shakeef Ahmed Rakin",
-        description: "Software Developer &amp; Full Stack Engineer",
+        name: `${personalData.Person.FullName}`,
+        description: `${personalData.Person.Title}`,
         publisher: {
           "@id": `${process.env.WEBSITE_URL}/#person`,
         },
@@ -78,13 +78,13 @@ export default function SetSchemaHomePage() {
       {
         "@type": "Person",
         "@id": `${process.env.WEBSITE_URL}/#person`,
-        name: "Shakeef Ahmed Rakin",
+        name: `${personalData.Person.FullName}`,
         image: {
           "@type": "ImageObject",
           inLanguage: "en-US",
           url: `${process.env.WEBSITE_URL}/hero.png`,
           contentUrl: `${process.env.WEBSITE_URL}/hero.png`,
-          caption: "Shakeef Ahmed Rakin - Full Stack Engineer",
+          caption: `${personalData.Person.FullName} | ${personalData.Person.Title}`,
         },
         sameAs: socialLinks.map((link) => link.url),
       },
@@ -97,10 +97,9 @@ export default function SetSchemaHomePage() {
         url: `${process.env.WEBSITE_URL}`,
         sameAs: socialLinks.map((link) => link.url),
         logo: `${process.env.WEBSITE_URL}/logos/logo.png`,
-        name: "Shakeef Ahmed Rakin",
-        description:
-          "Full Stack Engineer from Dhaka, Bangladesh with a strong background in developing web applications and integrating AI solutions.",
-        email: "shakeef.rakin321@gmail.com",
+        name: `${personalData.Person.FullName}`,
+        description: `${personalData.Person.Description}`,
+        email: `${personalData.Person.Email}`,
       },
     ],
   };

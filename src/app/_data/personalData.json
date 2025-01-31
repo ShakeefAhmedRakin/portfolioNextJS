@@ -3,9 +3,17 @@
     "FirstName": "Shakeef Ahmed",
     "LastName": "Rakin",
     "FullName": "Shakeef Ahmed Rakin",
+    "SiteName": "Shakeef Ahmed Rakin",
     "Title": "Full Stack Engineer",
+    "Nationality": "Bangladeshi",
     "Location": "Dhaka, Bangladesh",
+    "Gender": "Male",
+    "BirthDate": "2002-11-07",
     "Email": "shakeef.rakin321@gmail.com",
+    "KnownLanguages": ["English, Bengali"],
     "Description": "Full Stack Engineer from Dhaka, Bangladesh, skilled in developing web applications and integrating AI solutions. Experienced in machine learning projects, including natural language processing and computer vision."
+  },
+  "About": {
+    "Description": "Born and raised in Dhaka, Bangladesh, I started my coding journey during my undergraduate studies in Computer Science and Engineering. Towards the end of my university life, I actively participated in courses and competitions, where I gained hands-on experience in a wide range of fields, from full-stack web development to machine learning. These experiences helped me develop a strong foundation in both problem-solving and technical skills. Beyond work, I enjoy music, gaming, and anime."
   }
 }

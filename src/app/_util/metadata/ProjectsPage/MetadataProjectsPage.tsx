@@ -1,36 +1,34 @@
 import { Metadata } from "next";
+import personalData from "../../../_data/personalData.json";
 
 export const MetadataProjectsPage: Metadata = {
   metadataBase: new URL(process.env.WEBSITE_URL || "http://localhost:3000"),
-  title: "Projects | Shakeef Ahmed Rakin",
-  description:
-    "Explore the projects of Shakeef Ahmed Rakin, including full-stack development, machine learning, and more.",
+  title: `Projects | ${personalData.Person.FullName}`,
+  description: `Explore the projects of ${personalData.Person.FullName}, including full-stack development, machine learning, and more.`,
   alternates: {
     canonical: `${process.env.WEBSITE_URL}/projects`,
   },
   openGraph: {
-    title: "Projects | Shakeef Ahmed Rakin",
-    siteName: "Shakeef Ahmed Rakin",
+    title: `Projects | ${personalData.Person.FullName}`,
+    siteName: `${personalData.Person.SiteName}`,
     type: "website",
     url: `${process.env.WEBSITE_URL}/projects`,
     images: [
       {
         url: "/og_images/projectspage.png",
-        alt: "Projects | Shakeef Ahmed Rakin",
+        alt: `Projects | ${personalData.Person.FullName}`,
       },
     ],
-    description:
-      "Explore the projects of Shakeef Ahmed Rakin, including full-stack development, machine learning, and more.",
+    description: `Explore the projects of ${personalData.Person.FullName}, including full-stack development, machine learning, and more.`,
   },
   twitter: {
-    title: "Projects | Shakeef Ahmed Rakin",
+    title: `Projects | ${personalData.Person.FullName}`,
     images: [
       {
         url: "/og_images/projectspage.png",
-        alt: "Projects | Shakeef Ahmed Rakin",
+        alt: `Projects | ${personalData.Person.FullName}`,
       },
     ],
-    description:
-      "Explore the projects of Shakeef Ahmed Rakin, including full-stack development, machine learning, and more.",
+    description: `Explore the projects of ${personalData.Person.FullName}, including full-stack development, machine learning, and more.`,
   },
 };
