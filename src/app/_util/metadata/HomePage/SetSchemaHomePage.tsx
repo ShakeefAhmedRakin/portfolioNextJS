@@ -1,6 +1,6 @@
 import { Graph } from "schema-dts";
 import { socialLinks } from "../../../_data/socialLinks";
-import awards from "../../../_data/awards.json";
+import achievements from "../../../_data/achievements.json";
 import personalData from "../../../_data/personalData.json";
 
 export default function SetSchemaHomePage() {
@@ -24,7 +24,9 @@ export default function SetSchemaHomePage() {
         image: {
           "@id": `${process.env.WEBSITE_URL}/#primaryImage`,
         },
-        award: awards.map((award) => `${award.title}-${award.position}`),
+        award: achievements.map(
+          (achievement) => `${achievement.title}-${achievement.position}`
+        ),
         thumbnailUrl: `${process.env.WEBSITE_URL}/og_images/homepage.png`,
         dateModified: new Date().toISOString(),
         description: `${personalData.Person.Description}`,

@@ -1,5 +1,5 @@
 import { MetadataRoute } from "next";
-import awards from "./_data/awards.json";
+import achievements from "./_data/achievements.json";
 import navigationLinks from "./_data/navigationLinks.json";
 import projects from "./_data/projects.json";
 import research from "./_data/research.json";
@@ -19,10 +19,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       lastModified: new Date(project?.date).toISOString(),
     })),
     // AWARDS
-    ...awards.map((award) => ({
-      url: `${process.env.WEBSITE_URL}/achievements/${award.id}`,
+    ...achievements.map((achievement) => ({
+      url: `${process.env.WEBSITE_URL}/achievements/${achievement.id}`,
       priority: 0.64,
-      lastModified: new Date(award?.date).toISOString(),
+      lastModified: new Date(achievement?.date).toISOString(),
     })),
     // RESEARCH
     ...research.map((research) => ({

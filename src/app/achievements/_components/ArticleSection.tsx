@@ -1,12 +1,13 @@
-import TitleMedium from "@/app/_components/ui/TitleMedium";
 import Image from "next/image";
 import Link from "next/link";
-import { BiCalendar } from "react-icons/bi";
-import { CiClock1 } from "react-icons/ci";
+import { FaArrowRight } from "react-icons/fa";
+import { IoMdStar } from "react-icons/io";
+import { IoPodium } from "react-icons/io5";
 
-interface Award {
+interface Achievement {
   id: string;
   title: string;
+  position: string;
   date: string;
   blog: {
     title: string;
@@ -18,69 +19,63 @@ interface Award {
   };
 }
 
-export default function ArticleSection({ award }: { award: Award }) {
+export default function ArticleSection({
+  achievement,
+}: {
+  achievement: Achievement;
+}) {
   return (
-    <article className="mb-10" aria-labelledby={`${award.title}`}>
-      <div className="flex md:flex-row flex-col-reverse gap-3 md:gap-10">
-        <div className="text-text flex-1">
-          <TitleMedium title={award.blog.title} />
-          <p className="line-clamp-4 md:line-clamp-3 lg:line-clamp-2 font-body text-[11px] md:text-sm mt-2 font-light text-gray-600 dark:text-gray-300">
-            {award.blog.summary}
-          </p>
-          <Link
-            href={`/achievements/${award.id}`}
-            className="rounded-lg"
-            aria-label={`Read the full story of ${award.blog.title}`}
-          >
-            <button
-              className="py-2 px-4 mb-5 md:mb-10 mt-3 md:mt-6 rounded-lg shadow hover:shadow-primary duration-150 border hover:border-primary active:scale-[0.98] font-heading text-[9px] md:text-xs font-semibold"
-              aria-label="Read Story"
-            >
-              Read Story
-            </button>
-          </Link>
-          <div className="flex items-center gap-4 font-heading">
-            <span
-              className="flex items-center gap-2 text-[10px] md:text-xs text-gray-600 dark:text-gray-300 font-bold"
-              aria-label="Estimated read time"
-            >
-              <CiClock1 className="text-sm md:text-lg text-text" />2 min read
-            </span>
-            <span
-              className="flex items-center gap-2 text-[10px] md:text-xs text-gray-600 dark:text-gray-300 font-bold"
-              aria-label={`Published date: ${new Date(
-                award.date
-              ).toLocaleDateString("en-US", {
+    <article className="text-text" aria-labelledby={`${achievement.title}`}>
+      <div className="rounded-lg flex flex-col md:flex-row gap-4">
+        <div className="md:max-w-xs w-full aspect-video relative rounded-md shadow-md">
+          <Image
+            fill={true}
+            src={achievement?.mainImage?.url ?? ""}
+            priority={true}
+            alt={achievement?.mainImage?.alt || "Achievement image"}
+            draggable={false}
+            className="object-cover rounded-md"
+            title={achievement?.mainImage?.alt || "Achievement image"}
+          ></Image>
+        </div>
+        <div className="flex-1 px-3 md:px-0 flex flex-col">
+          <h2 className="font-heading font-bold mb-2 line-clamp-2">
+            {achievement?.blog?.title}
+          </h2>
+          <div className="text-xs flex items-center gap-2 font-heading">
+            <IoPodium className="text-green-500"></IoPodium>
+            <span>{achievement.position}</span>
+            <IoMdStar className="text-yellow-500 text-sm"></IoMdStar>
+            <span>
+              {new Date(achievement.date).toLocaleDateString("en-US", {
                 month: "long",
-                year: "numeric",
-              })}`}
-            >
-              <BiCalendar className="text-sm md:text-lg" />
-              {new Date(award.date).toLocaleDateString("en-US", {
-                month: "long",
+                day: "numeric",
                 year: "numeric",
               })}
             </span>
           </div>
-        </div>
-        <div
-          className="relative md:max-w-[250px] lg:max-w-xs w-full aspect-video rounded-2xl"
-          role="img"
-          aria-label={award?.mainImage?.alt || "Achievement image"}
-        >
-          <Image
-            src={award?.mainImage?.url ?? ""}
-            fill={true}
-            sizes="100%"
-            priority={true}
-            alt={award?.mainImage?.alt || "Achievement image"}
-            draggable={false}
-            className="h-full w-full object-cover rounded-2xl"
-            title={award?.mainImage?.alt || "Achievement image"}
-          />
+          <p className="font-body text-sm font-light line-clamp-6 md:line-clamp-4 mt-2 mb-4">
+            {achievement?.blog?.summary}
+          </p>
+          <div className="flex-1 flex items-end">
+            <Link
+              href={`/achievements/${achievement.id}`}
+              aria-label="Read Story"
+              title="Read Story"
+              className="rounded-lg w-full md:w-fit"
+            >
+              <button
+                className="py-2 w-full md:w-fit justify-center px-4 rounded-lg shadow hover:shadow-primary duration-150 border hover:border-primary active:scale-[0.98] font-heading text-[9px] md:text-xs font-semibold flex items-center gap-2"
+                aria-label="Read Story"
+                title="Read Story"
+              >
+                Read Story <FaArrowRight></FaArrowRight>
+              </button>
+            </Link>
+          </div>
         </div>
       </div>
-      <hr className="my-10" />
+      <hr className="my-4" />
     </article>
   );
 }

@@ -25,7 +25,6 @@ export async function generateMetadata({
   const project = projects.find((project) => project.id === id);
 
   return {
-    metadataBase: new URL(process.env.WEBSITE_URL || "http://localhost:3000"),
     // GOOGLE INDEXING SEO TAGS
     title: project?.seo?.googleIndexing?.title || "Achievement Details",
     description:

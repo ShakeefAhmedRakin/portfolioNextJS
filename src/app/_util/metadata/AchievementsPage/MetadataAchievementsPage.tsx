@@ -2,7 +2,6 @@ import { Metadata } from "next";
 import personalData from "../../../_data/personalData.json";
 
 export const MetadataAchievementsPage: Metadata = {
-  metadataBase: new URL(process.env.WEBSITE_URL || "http://localhost:3000"),
   title: `Achievements | ${personalData.Person.FullName}`,
   description: `Explore the achievements of ${personalData.Person.FullName}, showcasing various competition experiences in full-stack development, machine learning, and more.`,
   alternates: {
