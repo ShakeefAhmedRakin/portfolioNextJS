@@ -5,13 +5,27 @@ import AuthorList from "./_components/authorList";
 import JournalStatus from "./_components/journalStatus";
 import PaperDetails from "./_components/paperDetails";
 import ResearchNotFound from "./_components/researchnotfound";
+import { Metadata } from "next";
+import { generateMetadataForResearchDetailsPage } from "@/app/_util/metadata/ResearchPage/ResearchDetailsPage/MetadataResearchDetailsPage";
+import { SetSchemaResearchDetailsPage } from "@/app/_util/metadata/ResearchPage/ResearchDetailsPage/SetSchemaResearchDetailsPage";
 
 export async function generateStaticParams() {
   return allResearch.map((research) => ({
     id: research.id,
   }));
 }
-export default async function ResearchDetails({
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}): Promise<Metadata> {
+  const { id } = await params;
+
+  return generateMetadataForResearchDetailsPage({ id });
+}
+
+export default async function ResearchDetailsPage({
   params,
 }: {
   params: Promise<{ id: string }>;
@@ -30,6 +44,7 @@ export default async function ResearchDetails({
 
   return (
     <>
+      <SetSchemaResearchDetailsPage id={research?.id} />
       <LayoutWrapper>
         <TitleLarge
           firstTitle={research.title}
