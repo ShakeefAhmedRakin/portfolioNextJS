@@ -1,6 +1,7 @@
 import Image from "next/image";
 import achievements from "../../../_data/achievements.json";
-import { FaInfo } from "react-icons/fa";
+import { FaInfo, FaLinkedin } from "react-icons/fa";
+import Link from "next/link";
 
 export default function InfoCard({
   idOfCurrentAchievement,
@@ -35,6 +36,18 @@ export default function InfoCard({
             {achievement?.position}
           </h4>
         </div>
+        {achievement?.linkedInPost && (
+          <Link
+            href={achievement?.linkedInPost}
+            target="_blank"
+            rel="noopener noreferrer"
+            title="View Post On LinkedIn"
+            aria-label="View Post On LinkedIn"
+            className="py-2 px-4 rounded-lg shadow mt-4 bg-[#0A66C2] hover:shadow-secondary duration-150 active:scale-[0.98] font-heading text-[9px] lg:text-xs font-semibold flex items-center gap-2 text-white justify-center"
+          >
+            LinkedIn <FaLinkedin />
+          </Link>
+        )}
       </div>
     </>
   );

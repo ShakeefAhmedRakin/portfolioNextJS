@@ -54,8 +54,8 @@
         {
           "type": "image",
           "content": {
-            "url": "https://i.ibb.co/2qKVJyd/screenshot.png",
-            "source": "https://masrett-e5a0f.web.app/",
+            "url": "/achievementImages/nali2024/website.png",
+            "source": "/achievementImages/nali2024/website.png",
             "label": "MASRETT Web Platform Demo",
             "alt": "MASRETT Web Platform Demo"
           }
@@ -80,8 +80,8 @@
         {
           "type": "image",
           "content": {
-            "url": "https://i.ibb.co/KbfPdRS/medal.jpg",
-            "source": null,
+            "url": "/achievementImages/nali2024/medal.jpg",
+            "source": "/achievementImages/nali2024/medal.jpg",
             "label": "Bronze Medal Award",
             "alt": "Bronze Medal Award"
           }
@@ -93,13 +93,13 @@
       ]
     },
     "mainImage": {
-      "url": "https://i.ibb.co.com/L8nGT47/462585357-991222532808195-2615018901330388891-n.jpg",
-      "source": "https://www.facebook.com/photo/?fbid=991222519474863&set=pcb.991231829473932",
+      "url": "/achievementImages/nali2024/mainImage.jpg",
+      "source": "/achievementImages/nali2024/mainImage.jpg",
       "label": "Bronze Medal Award At NALI 2024",
       "alt": "Bronze Medal Award At NALI 2024"
     },
     "eventName": "New Academia Learning Innovation",
-    "linkedInPost": "https://www.linkedin.com/post/nali2024",
+    "linkedInPost": null,
     "id": "new-academia-learning-innovation-2024",
     "seo": {
       "googleIndexing": {
@@ -118,19 +118,19 @@
           "Education Innovation"
         ],
         "publisher": "Shakeef Ahmed Rakin",
-        "image": "https://i.ibb.co.com/L8nGT47/462585357-991222532808195-2615018901330388891-n.jpg",
+        "image": "/achievementImages/nali2024/mainImage.jpg",
         "imgAlt": "Bronze Medal Award at New Academia Learning Innovation 2024"
       },
       "twitterCard": {
         "title": "Bronze Medal at New Academia Learning Innovation 2024 | MASRETT",
         "description": "Shakeef Ahmed Rakin and his team received the Bronze Medal at NALI 2024 for their MASRETT project. Learn about the team's journey and innovative work.",
-        "image": "https://i.ibb.co.com/L8nGT47/462585357-991222532808195-2615018901330388891-n.jpg",
+        "image": "/achievementImages/nali2024/mainImage.jpg",
         "imgAlt": "Bronze Medal Award at NALI 2024"
       },
       "openGraphCard": {
         "title": "Bronze Medal at New Academia Learning Innovation 2024 | MASRETT",
         "type": "article",
-        "image": "https://i.ibb.co.com/L8nGT47/462585357-991222532808195-2615018901330388891-n.jpg",
+        "image": "/achievementImages/nali2024/mainImage.jpg",
         "imgAlt": "Bronze Medal Award at NALI 2024",
         "description": "Our innovative MASRETT project won a Bronze Medal at the New Academia Learning Innovation 2024 event. Read about the journey, team contributions, and future plans."
       }
@@ -175,8 +175,8 @@
         {
           "type": "image",
           "content": {
-            "url": "https://i.postimg.cc/cJXnN1yx/agrismartcard.png",
-            "source": "https://i.postimg.cc/cJXnN1yx/agrismartcard.png",
+            "url": "/achievementImages/bitnbuild2024/agrismartcard.png",
+            "source": "/achievementImages/bitnbuild2024/agrismartcard.png",
             "label": "AgriSmart Project",
             "alt": "AgriSmart Project"
           }
@@ -212,13 +212,13 @@
       ]
     },
     "mainImage": {
-      "url": "https://media.licdn.com/dms/image/v2/D5622AQG-JfZ4sT1v2A/feedshare-shrink_800/feedshare-shrink_800/0/1710263130678?e=1734566400&v=beta&t=bHTwrH5VLHcGYAlTwizE4M6C8PbgqWgnBqFv5Gwq7R0",
-      "source": "https://www.linkedin.com/posts/shakeef-ahmed-rakin_bitnbuild24-gdsc-google-activity-7173363493650333696-00Tq?utm_source=share&utm_medium=member_desktop",
+      "url": "/achievementImages/bitnbuild2024/mainImage.jpeg",
+      "source": "/achievementImages/bitnbuild2024/mainImage.jpeg",
       "label": "Top 10 Finalists at BitNBuild 2024",
       "alt": "Top 10 Finalists at BitNBuild 2024"
     },
     "eventName": "GDSC CRCE BitNBuild’24 Hackathon",
-    "linkedInPost": "https://www.linkedin.com/post/bitnbuild2024",
+    "linkedInPost": "https://www.linkedin.com/posts/shakeef-ahmed-rakin_bitnbuild24-gdsc-google-activity-7173363493650333696-00Tq?utm_source=share&utm_medium=member_desktop",
     "id": "gdsc-crce-bitnbuild-2024",
     "seo": {
       "googleIndexing": {
@@ -237,19 +237,19 @@
           "Hackathon Experience"
         ],
         "publisher": "Shakeef Ahmed Rakin",
-        "image": "https://media.licdn.com/dms/image/v2/D5622AQG-JfZ4sT1v2A/feedshare-shrink_800/feedshare-shrink_800/0/1710263130678?e=1734566400&v=beta&t=bHTwrH5VLHcGYAlTwizE4M6C8PbgqWgnBqFv5Gwq7R0",
+        "image": "/achievementImages/bitnbuild2024/mainImage.jpeg",
         "imgAlt": "Top 10 Finalists at BitNBuild 2024"
       },
       "twitterCard": {
         "title": "Top 10 Finalists at GDSC CRCE BitNBuild’24 Hackathon | AgriSmart",
         "description": "Shakeef Ahmed Rakin and team made it to the Top 10 Finalists at GDSC CRCE BitNBuild’24 Hackathon. Discover the story behind AgriSmart, a farming logistics platform.",
-        "image": "https://media.licdn.com/dms/image/v2/D5622AQG-JfZ4sT1v2A/feedshare-shrink_800/feedshare-shrink_800/0/1710263130678?e=1734566400&v=beta&t=bHTwrH5VLHcGYAlTwizE4M6C8PbgqWgnBqFv5Gwq7R0",
+        "image": "/achievementImages/bitnbuild2024/mainImage.jpeg",
         "imgAlt": "Top 10 Finalists at BitNBuild 2024"
       },
       "openGraphCard": {
         "title": "Top 10 Finalists at GDSC CRCE BitNBuild’24 Hackathon | AgriSmart",
         "type": "article",
-        "image": "https://media.licdn.com/dms/image/v2/D5622AQG-JfZ4sT1v2A/feedshare-shrink_800/feedshare-shrink_800/0/1710263130678?e=1734566400&v=beta&t=bHTwrH5VLHcGYAlTwizE4M6C8PbgqWgnBqFv5Gwq7R0",
+        "image": "/achievementImages/bitnbuild2024/mainImage.jpeg",
         "imgAlt": "Top 10 Finalists at BitNBuild 2024",
         "description": "Our AgriSmart project secured a Top 10 spot at GDSC CRCE BitNBuild’24 Hackathon. Read about the journey, challenges, and our innovative approach to farming logistics."
       }
@@ -294,8 +294,8 @@
         {
           "type": "image",
           "content": {
-            "url": "https://i.postimg.cc/NML5qWwZ/rewaste.png",
-            "source": "https://i.postimg.cc/NML5qWwZ/rewaste.png",
+            "url": "/achievementImages/kitahack2023/rewaste.png",
+            "source": "/achievementImages/kitahack2023/rewaste.png",
             "label": "ReWaste Project",
             "alt": "ReWaste Project"
           }
@@ -343,13 +343,13 @@
       ]
     },
     "mainImage": {
-      "url": "https://media.licdn.com/dms/image/v2/D5622AQExlxK8PgMQfw/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1707229712997?e=1734566400&v=beta&t=Zji-LzePk7mVGjwKzXrwa4tBi4hNwo1zU6NrWZVkt50",
-      "source": "https://www.linkedin.com/posts/shakeef-ahmed-rakin_kitahack2024-rewaste-techinnovation-activity-7160640426889158656-Yu43?utm_source=share&utm_medium=member_desktop",
+      "url": "/achievementImages/kitahack2023/mainImage.jpeg",
+      "source": "/achievementImages/kitahack2023/mainImage.jpeg",
       "label": "Participatory Award at Kitahack 2024",
       "alt": "Participatory Award at Kitahack 2024"
     },
     "eventName": "Kitahack 2024",
-    "linkedInPost": "https://www.linkedin.com/post/kitahack2024",
+    "linkedInPost": "https://www.linkedin.com/posts/shakeef-ahmed-rakin_kitahack2024-rewaste-techinnovation-activity-7160640426889158656-Yu43?utm_source=share&utm_medium=member_desktop",
     "id": "kitahack-2024",
     "seo": {
       "googleIndexing": {
@@ -368,19 +368,19 @@
           "Shakeef Ahmed Rakin"
         ],
         "publisher": "Shakeef Ahmed Rakin",
-        "image": "https://media.licdn.com/dms/image/v2/D5622AQExlxK8PgMQfw/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1707229712997?e=1734566400&v=beta&t=Zji-LzePk7mVGjwKzXrwa4tBi4hNwo1zU6NrWZVkt50",
+        "image": "/achievementImages/kitahack2023/mainImage.jpeg",
         "imgAlt": "Participatory Award at Kitahack 2024"
       },
       "twitterCard": {
         "title": "Participatory Award at Kitahack 2024 | ReWaste",
         "description": "Shakeef Ahmed Rakin and team earned the Participatory Award at Kitahack 2024 for their ReWaste project, an innovative platform for sustainable agriculture. Read the full story.",
-        "image": "https://media.licdn.com/dms/image/v2/D5622AQExlxK8PgMQfw/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1707229712997?e=1734566400&v=beta&t=Zji-LzePk7mVGjwKzXrwa4tBi4hNwo1zU6NrWZVkt50",
+        "image": "/achievementImages/kitahack2023/mainImage.jpeg",
         "imgAlt": "Participatory Award at Kitahack 2024"
       },
       "openGraphCard": {
         "title": "Participatory Award at Kitahack 2024 | ReWaste",
         "type": "article",
-        "image": "https://media.licdn.com/dms/image/v2/D5622AQExlxK8PgMQfw/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1707229712997?e=1734566400&v=beta&t=Zji-LzePk7mVGjwKzXrwa4tBi4hNwo1zU6NrWZVkt50",
+        "image": "/achievementImages/kitahack2023/mainImage.jpeg",
         "imgAlt": "Participatory Award at Kitahack 2024",
         "description": "Shakeef Ahmed Rakin and team received the Participatory Award at Kitahack 2024 for their innovative project, ReWaste. Read about the journey, challenges, and key takeaways from the event."
       }
@@ -429,7 +429,7 @@
         {
           "type": "image",
           "content": {
-            "url": "/awardblogimages/devhack2023/userside.PNG",
+            "url": "/achievementImages/devhack2023/userside.PNG",
             "source": null,
             "label": "BillsGo Project - User End",
             "alt": "BillsGo Project - User End"
@@ -446,7 +446,7 @@
         {
           "type": "image",
           "content": {
-            "url": "/awardblogimages/devhack2023/serviceside.PNG",
+            "url": "/achievementImages/devhack2023/serviceside.PNG",
             "source": null,
             "label": "BillsGo Project - Service End",
             "alt": "BillsGo Project - Service End"
@@ -495,13 +495,13 @@
       ]
     },
     "mainImage": {
-      "url": "/awardblogimages/devhack2023/main.PNG",
+      "url": "/achievementImages/devhack2023/main.PNG",
       "source": null,
       "label": "BillsGo App At Devhack2023",
       "alt": "BillsGo App At Devhack2023"
     },
     "eventName": "DevHack 2023",
-    "linkedInPost": "https://www.linkedin.com/post/devhack2023",
+    "linkedInPost": null,
     "id": "devhack-2023",
     "seo": {
       "googleIndexing": {
@@ -519,19 +519,19 @@
           "Shakeef Ahmed Rakin"
         ],
         "publisher": "Shakeef Ahmed Rakin",
-        "image": "/awardblogimages/devhack2023/main.PNG",
+        "image": "/achievementImages/devhack2023/main.PNG",
         "imgAlt": "Top 10 Finalists at DevHack 2023"
       },
       "twitterCard": {
         "title": "Top 10 Finalists at DevHack 2023 | BillsGo",
         "description": "Team UTM Systematic Squad secured a Top 10 Finalist position at DevHack 2023 for their BillsGo project, an innovative utility bill management app. Read the full story.",
-        "image": "/awardblogimages/devhack2023/main.PNG",
+        "image": "/achievementImages/devhack2023/main.PNG",
         "imgAlt": "Top 10 Finalists at DevHack 2023"
       },
       "openGraphCard": {
         "title": "Top 10 Finalists at DevHack 2023 | BillsGo",
         "type": "article",
-        "image": "/awardblogimages/devhack2023/main.PNG",
+        "image": "/achievementImages/devhack2023/main.PNG",
         "imgAlt": "Top 10 Finalists at DevHack 2023",
         "description": "Shakeef Ahmed Rakin and Team UTM Systematic Squad earned a Top 10 Finalist position at DevHack 2023 for their innovative project, BillsGo. Learn about the journey and key takeaways."
       }
@@ -584,7 +584,7 @@
         {
           "type": "image",
           "content": {
-            "url": "/awardblogimages/myrapid2023/solution.PNG",
+            "url": "/achievementImages/myrapid2023/solution.PNG",
             "label": "MaintainIQ System Overview",
             "source": null,
             "alt": "MaintainIQ System Overview"
@@ -609,7 +609,7 @@
         {
           "type": "image",
           "content": {
-            "url": "/awardblogimages/myrapid2023/model.PNG",
+            "url": "/achievementImages/myrapid2023/model.PNG",
             "label": "Naive Bayes Model for Predictive Maintenance",
             "source": null,
             "alt": "Naive Bayes Model for Predictive Maintenance"
@@ -626,13 +626,13 @@
       ]
     },
     "mainImage": {
-      "url": "/awardblogimages/myrapid2023/present.jpeg",
+      "url": "/achievementImages/myrapid2023/present.jpeg",
       "source": null,
       "label": "MaintainIQ at MyRapid Bus x UTM Data Hackathon",
       "alt": "MaintainIQ at MyRapid Bus x UTM Data Hackathon"
     },
     "eventName": "MyRapid Bus x UTM Data Hackathon 2023",
-    "linkedInPost": "https://www.linkedin.com/post/myrapid2023",
+    "linkedInPost": "https://www.linkedin.com/posts/shakeef-ahmed-rakin_achievementunlocked-innovation-teamwork-activity-7114581037468286977-Ht1M?utm_source=share&utm_medium=member_desktop",
     "id": "myrapid-bus-utm-2023",
     "seo": {
       "googleIndexing": {
@@ -649,19 +649,19 @@
           "Shakeef Ahmed Rakin"
         ],
         "publisher": "Shakeef Ahmed Rakin",
-        "image": "/awardblogimages/myrapid2023/present.jpeg",
+        "image": "/achievementImages/myrapid2023/present.jpeg",
         "imgAlt": "MaintainIQ at MyRapid Bus x UTM Data Hackathon"
       },
       "twitterCard": {
         "title": "1st Runner-Up at MyRapid Bus x UTM Data Hackathon 2023 | Shakeef Ahmed Rakin",
         "description": "Our team secured the 1st Runner-Up position at MyRapid Bus x UTM Data Hackathon 2023 with MaintainIQ, a smart maintenance management system using AI. Discover the journey.",
-        "image": "/awardblogimages/myrapid2023/present.jpeg",
+        "image": "/achievementImages/myrapid2023/present.jpeg",
         "imgAlt": "MaintainIQ at MyRapid Bus x UTM Data Hackathon"
       },
       "openGraphCard": {
         "title": "1st Runner-Up at MyRapid Bus x UTM Data Hackathon 2023 | Shakeef Ahmed Rakin",
         "type": "article",
-        "image": "/awardblogimages/myrapid2023/present.jpeg",
+        "image": "/achievementImages/myrapid2023/present.jpeg",
         "imgAlt": "MaintainIQ at MyRapid Bus x UTM Data Hackathon",
         "description": "Shakeef Ahmed Rakin and team achieved 1st Runner-Up at MyRapid Bus x UTM Data Hackathon 2023 for their innovative project, MaintainIQ. Read more about their experience and learnings."
       }
@@ -706,7 +706,7 @@
         {
           "type": "image",
           "content": {
-            "url": "/awardblogimages/innojam2023/overview.png",
+            "url": "/achievementImages/innojam2023/overview.png",
             "label": "ReCycgo System Overview",
             "source": null,
             "alt": "ReCycgo System Overview"
@@ -739,7 +739,7 @@
         {
           "type": "image",
           "content": {
-            "url": "/awardblogimages/innojam2023/team.jpeg",
+            "url": "/achievementImages/innojam2023/team.jpeg",
             "label": "InnoJam 2023 Event Overview",
             "source": "https://www.linkedin.com/posts/adnan-shafi1_innojam-smartcitydesignchallenge-opendata-activity-7106662960122515456-MoCM?utm_source=share&utm_medium=member_desktop",
             "alt": "InnoJam 2023 Event Overview"
@@ -748,13 +748,13 @@
       ]
     },
     "mainImage": {
-      "url": "/awardblogimages/innojam2023/RecycGo.png",
+      "url": "/achievementImages/innojam2023/RecycGo.png",
       "source": null,
       "label": "RyCycGo At InnoJam 2023",
       "alt": "RyCycGo At InnoJam 2023"
     },
     "eventName": "InnoJam 2023: Smart Sustainable City",
-    "linkedInPost": null,
+    "linkedInPost": "https://www.linkedin.com/posts/shakeef-ahmed-rakin_innojam-smartcitydesignchallenge-opendata-activity-7106692680469934080-n32N?utm_source=share&utm_medium=member_desktop",
     "id": "innojam-2023-smart-sustainable-city",
     "seo": {
       "googleIndexing": {
@@ -772,19 +772,19 @@
           "Hackathon Experience"
         ],
         "publisher": "Shakeef Ahmed Rakin",
-        "image": "/awardblogimages/innojam2023/og.jpeg",
+        "image": "/achievementImages/innojam2023/og.jpeg",
         "imgAlt": "Team Modular Fold at InnoJam 2023"
       },
       "twitterCard": {
         "title": "5th Place at InnoJam 2023 | ReCycgo | Shakeef Ahmed Rakin",
         "description": "ReCycgo: A mobile app optimizing waste management for businesses. Learn how Team Modular Fold made an impact at InnoJam 2023.",
-        "image": "/awardblogimages/innojam2023/og.jpeg",
+        "image": "/achievementImages/innojam2023/og.jpeg",
         "imgAlt": "Team Modular Fold at InnoJam 2023"
       },
       "openGraphCard": {
         "title": "5th Place at InnoJam 2023 | ReCycgo | Shakeef Ahmed Rakin",
         "type": "article",
-        "image": "/awardblogimages/innojam2023/og.jpeg",
+        "image": "/achievementImages/innojam2023/og.jpeg",
         "imgAlt": "Team Modular Fold at InnoJam 2023",
         "description": "Discover how ReCycgo, a smart waste management solution, earned Team Modular Fold a top 5 finish at InnoJam 2023."
       }
