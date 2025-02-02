@@ -1,11 +1,19 @@
+import { Metadata } from "next";
 import TitleLarge from "../_components/ui/TitleLarge";
 import LayoutWrapper from "../_components/wrappers/LayoutWrapper";
 import Blogs from "./_components/blogs";
 import MediumProfile from "./_components/mediumProfile";
+import { MetadataBlogsPage } from "../_util/metadata/BlogsPage/MetadataBlogsPage";
+import { SetSchemaBlogsPage } from "../_util/metadata/BlogsPage/SetSchemaBlogsPage";
+
+export function generateMetadata(): Metadata {
+  return MetadataBlogsPage;
+}
 
 export default function BlogPage() {
   return (
     <>
+      <SetSchemaBlogsPage />
       <LayoutWrapper>
         <TitleLarge firstTitle="My" secondTitle="Blogs" isPrimary></TitleLarge>
         <hr className="mb-4" />
