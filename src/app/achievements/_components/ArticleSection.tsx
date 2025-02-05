@@ -1,5 +1,5 @@
+import { ButtonTertiaryFilled } from "@/app/_components/ui/Buttons";
 import Image from "next/image";
-import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
 import { IoMdStar } from "react-icons/io";
 import { IoPodium } from "react-icons/io5";
@@ -58,20 +58,13 @@ export default function ArticleSection({
             {achievement?.blog?.summary}
           </p>
           <div className="flex-1 flex items-end">
-            <Link
+            <ButtonTertiaryFilled
+              variant="white"
               href={`/achievements/${achievement.id}`}
-              aria-label="Read Story"
-              title="Read Story"
-              className="rounded-lg w-full md:w-fit"
+              ariaLabel={`Read Story About ${achievement.title}`}
             >
-              <button
-                className="py-2 w-full md:w-fit justify-center px-4 rounded-lg shadow hover:shadow-primary duration-150 border hover:border-primary active:scale-[0.98] font-heading text-[9px] md:text-xs font-semibold flex items-center gap-2"
-                aria-label="Read Story"
-                title="Read Story"
-              >
-                Read Story <FaArrowRight></FaArrowRight>
-              </button>
-            </Link>
+              Read Story <FaArrowRight></FaArrowRight>
+            </ButtonTertiaryFilled>
           </div>
         </div>
       </div>

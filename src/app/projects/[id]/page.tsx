@@ -7,7 +7,6 @@ import LayoutWrapper from "@/app/_components/wrappers/LayoutWrapper";
 import ProjectBanner from "./_components/ProjectBanner";
 import TableOfContent from "./_components/TableOfContent";
 import CoreFeatures from "./_components/CoreFeatures";
-import { GrProjects } from "react-icons/gr";
 import TechnologyStack from "./_components/TechnologyStack";
 import ProjectOverview from "./_components/ProjectOverview/ProjectOverview";
 
@@ -52,13 +51,9 @@ export default async function ProjectDetailsPage({
       </LayoutWrapper>
       <LayoutWrapper className="-mt-10">
         <div className="flex flex-col md:flex-row-reverse gap-4">
-          <ul className="md:max-w-[280px] 2xl:max-w-xs w-full flex flex-col gap-y-4">
+          <ul className="md:max-w-[280px] 2xl:max-w-xs w-full">
             {/*  TABLE OF CONTENTS*/}
             <TableOfContent projectId={project.id} />
-            {/* FILLER SPACE IN DESKTOP SCREEN */}
-            <div className="bg-gradient-to-br from-primary to-secondary rounded-lg flex-1 shadow-md shadow-primary relative flex items-center justify-center overflow-hidden">
-              <GrProjects className="absolute text-white opacity-10 text-[500px] pointer-events-none" />
-            </div>
           </ul>
           <div className="w-full flex-1 space-y-4">
             <CoreFeatures projectId={project.id} />

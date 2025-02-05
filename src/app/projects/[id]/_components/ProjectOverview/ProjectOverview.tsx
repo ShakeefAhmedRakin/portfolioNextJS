@@ -16,7 +16,7 @@ export default function ProjectOverview({ projectId }: { projectId: string }) {
             Project Overview
           </h3>
           {/* PROJECT OVERVIEW */}
-          <div className="space-y-8">
+          <div className="space-y-4 xl:space-y-8">
             {project?.overviewSections &&
               project?.overviewSections.length > 0 && (
                 <>

@@ -1,5 +1,6 @@
 "use client";
 import useBlogs from "@/app/_components/blogs/useBlogs";
+import { ButtonTertiaryOutline } from "@/app/_components/ui/Buttons";
 import Image from "next/image";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa6";
@@ -26,7 +27,7 @@ const Blogs = () => {
       <div className="w-full">
         {loading ? (
           <>
-            <div className="flex justify-center flex-col text-text items-center py-44">
+            <div className="flex justify-center flex-col items-center font-heading text-xl font-bold text-white py-24">
               <h2 className="font-heading  mb-4 text-sm md:text-base">
                 Fetching Latest Blogs
               </h2>
@@ -90,14 +91,14 @@ const Blogs = () => {
                   </h2>
                 </>
               )}
-              <Link
-                href={"/blogs"}
-                aria-label="Read All Blogs"
-                title="Read All Blogs"
-                className="w-full flex justify-center gap-2 items-center font-heading font-bold text-white active:scale-[0.98] rounded-lg py-2 md:py-3  hover:bg-white hover:text-black border shadow-inner duration-300 mt-3 text-xs"
+              <ButtonTertiaryOutline
+                href="/blogs"
+                className="w-full"
+                ariaLabel="View Latest Blogs"
+                variant="white"
               >
-                View All Blogs <FaArrowRight></FaArrowRight>
-              </Link>
+                View All Blogs <FaArrowRight></FaArrowRight>{" "}
+              </ButtonTertiaryOutline>
             </ul>
           </>
         )}

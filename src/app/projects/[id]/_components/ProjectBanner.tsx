@@ -23,7 +23,7 @@ export default function ProjectBanner({ projectId }: { projectId: string }) {
           sizes="1000"
           priority
         ></Image>
-        {!project?.isWorkInProgress && (
+        {project?.isWorkInProgress && (
           <span className="absolute top-4 left-0 bg-error rounded-r-lg text-white text-[10px] md:text-xs font-bold font-body px-2 py-2">
             WORK-IN-PROGRESS
           </span>

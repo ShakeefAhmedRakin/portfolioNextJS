@@ -1,10 +1,11 @@
 import Link from "next/link";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { FaMediumM } from "react-icons/fa";
+import personalData from "../../_data/personalData.json";
 export default function MediumButton() {
   return (
     <Link
-      href={"https://medium.com/@shakeef.rakin321"}
+      href={personalData.Person.MediumProfileLink}
       aria-label="Visit Medium Profile"
       title="Visit Medium Profile"
       target="_blank"

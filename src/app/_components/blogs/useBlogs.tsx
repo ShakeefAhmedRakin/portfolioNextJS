@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
+import personalData from "../../_data/personalData.json";
 
 const useBlogs = ({ maxBlogs }: { maxBlogs?: number | undefined }) => {
   const [articles, setArticles] = useState([]);
@@ -9,7 +10,9 @@ const useBlogs = ({ maxBlogs }: { maxBlogs?: number | undefined }) => {
     const fetchArticles = async () => {
       try {
         const response = await fetch(
-          "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@shakeef.rakin321"
+          `https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@${
+            personalData.Person.MediumProfileLink.split("@")[1]
+          }`
         );
         const data = await response.json();
         const fetchedArticles = maxBlogs

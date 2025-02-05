@@ -16,7 +16,7 @@ export default function TableOfContent({ projectId }: { projectId: string }) {
     }
   }, []);
   return (
-    <div className="bg-backgroundAlt px-3 pt-3 pb-6 rounded-lg shadow-md space-y-4">
+    <div className="bg-backgroundAlt px-3 pt-3 pb-6 rounded-lg shadow-md space-y-4 h-full">
       <h3 className="flex items-center justify-center gap-2 text-white py-3 px-5 font-heading font-bold text-sm lg:text-lg mb-4 border-b">
         <MdOutlineContentPasteSearch /> Table of Content
       </h3>

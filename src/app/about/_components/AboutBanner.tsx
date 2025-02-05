@@ -4,8 +4,9 @@ import Link from "next/link";
 import { BiGlobe } from "react-icons/bi";
 import { IoLocationSharp } from "react-icons/io5";
 import { MdMail } from "react-icons/md";
-import ViewResumeButton from "./ViewResumeButton";
 import personalData from "../../_data/personalData.json";
+import { ButtonTertiaryOutline } from "@/app/_components/ui/Buttons";
+import { IoIosDocument } from "react-icons/io";
 
 export default function AboutBanner() {
   return (
@@ -17,17 +18,34 @@ export default function AboutBanner() {
             fill={true}
             priority={true}
             draggable={false}
+            sizes="100"
             alt="Hero image"
             className="rounded-sm"
           />
         </div>
-        <ViewResumeButton className="flex md:hidden -my-4" />
+        <ButtonTertiaryOutline
+          className="flex md:hidden whitespace-nowrap w-[80%] mx-auto -my-2"
+          href={personalData.Person.FullCVLink}
+          aria-label="View Full Resume"
+          openInNewTab
+          variant="white"
+        >
+          FULL CV <IoIosDocument className="text-lg" />
+        </ButtonTertiaryOutline>
         <div className="flex-1">
           <div className="flex justify-center md:justify-between items-center">
             <h2 className="font-heading text-2xl text-white font-bold">
               {personalData.Person.FullName}
             </h2>
-            <ViewResumeButton className="hidden md:flex" />
+            <ButtonTertiaryOutline
+              className="hidden md:flex whitespace-nowrap"
+              href={personalData.Person.FullCVLink}
+              aria-label="View Full Resume"
+              openInNewTab
+              variant="white"
+            >
+              FULL CV <IoIosDocument className="text-lg" />
+            </ButtonTertiaryOutline>
           </div>
           <h3 className="font-heading text-lg text-white mt-1 mb-5 md:mb-3">
             {personalData.Person.Title}

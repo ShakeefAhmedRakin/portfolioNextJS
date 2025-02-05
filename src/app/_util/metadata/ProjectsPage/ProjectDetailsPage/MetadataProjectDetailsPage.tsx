@@ -21,7 +21,10 @@ export async function generateMetadataForProjectDetailsPage({
       canonical: `${process.env.WEBSITE_URL}/projects/${project?.id}`,
     },
     openGraph: {
-      title: project?.title,
+      title:
+        project?.title && project?.subtitle
+          ? `${project?.title} - ${project?.subtitle}`
+          : "Project Not Found",
       type: "article",
       description:
         project?.summary.substring(0, 140) + "..." ||
@@ -37,7 +40,10 @@ export async function generateMetadataForProjectDetailsPage({
       siteName: `${personalData.Person.SiteName}`,
     },
     twitter: {
-      title: project?.title || "Project Title",
+      title:
+        project?.title && project?.subtitle
+          ? `${project?.title} - ${project?.subtitle}`
+          : "Project Not Found",
       description:
         project?.summary.substring(0, 140) + "..." ||
         "Explore details about this project.",

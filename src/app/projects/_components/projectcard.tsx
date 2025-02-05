@@ -46,7 +46,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
         />
       </div>
       {/* CARD BLACK OVERLAY */}
-      <div className="absolute bg-gradient-to-b from-transparent to-black bg-opacity-60 bottom-0 rounded-lg w-full h-full"></div>
+      <div className="absolute bg-gradient-to-b from-transparent to-black opacity-100 group-hover:opacity-70 duration-300 bottom-0 rounded-lg w-full h-full"></div>
       {/* PROJECT TITLE BANNER */}
       <span className="absolute top-4 bg-gradient-to-br from-primary to-secondary rounded-r-lg text-white text-xs font-bold font-body px-4 py-2">
         {project?.title}

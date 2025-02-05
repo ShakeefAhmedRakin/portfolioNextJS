@@ -144,7 +144,7 @@ export function ButtonTertiaryOutline({
           variant === "white"
             ? "text-white hover:bg-white hover:text-black border-white"
             : "text-black hover:bg-black hover:text-white border-black"
-        } flex justify-center gap-2 items-center font-heading font-bold  active:scale-[0.98] rounded-lg py-2 md:py-3 border shadow-inner duration-300 text-[10px] lg:text-xs`}
+        } flex justify-center gap-2 items-center font-heading font-bold  active:scale-[0.98] rounded-lg py-2 md:py-3 px-2.5 border shadow-inner duration-300 text-[10px] lg:text-xs`}
       >
         {children}
       </button>
@@ -169,7 +169,7 @@ export function ButtonTertiaryFilled({
       <button
         aria-label={ariaLabel}
         title={ariaLabel}
-        className={`${className} flex justify-center gap-2 items-center font-heading font-bold active:scale-[0.98] rounded-lg py-2 md:py-3 ${
+        className={`${className} flex justify-center gap-2 items-center font-heading font-bold active:scale-[0.98] rounded-lg py-2 md:py-3 px-2.5 ${
           variant === "white"
             ? "bg-white text-black hover:bg-gray-200 border-white"
             : "bg-black text-white hover:bg-black/90 border-black"

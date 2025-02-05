@@ -2,6 +2,7 @@ import Logo from "../brand/logo";
 import Link from "next/link";
 import { socialLinks } from "@/app/_data/socialLinks";
 import NavigationLinks from "../../_data/navigationLinks.json";
+import personalData from "../../_data/personalData.json";
 
 export default function Footer() {
   return (
@@ -85,8 +86,8 @@ export default function Footer() {
         {/* Footer Bottom */}
         <div className="mt-12 border-t border-gray-700 pt-8">
           <p className="text-white font-body text-center text-xs whitespace-nowrap md:text-sm">
-            &copy; {new Date().getFullYear()} Shakeef Ahmed Rakin. All rights
-            reserved.
+            &copy; {new Date().getFullYear()} {personalData.Person.FullName}.
+            All rights reserved.
           </p>
         </div>
       </div>
