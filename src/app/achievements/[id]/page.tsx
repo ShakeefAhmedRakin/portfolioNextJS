@@ -1,6 +1,5 @@
 import achievements from "../../_data/achievements.json";
 import { Metadata } from "next";
-import AchievementBlogNotFound from "@/app/achievements/_components/achievementblognotfound";
 import { generateMetadataForAchievementBlogPage } from "@/app/_util/metadata/AchievementsPage/AchievementBlogPage/MetadataAchievementBlogPage";
 import { SetSchemaAchievementBlogPage } from "@/app/_util/metadata/AchievementsPage/AchievementBlogPage/SetSchemaAchievementBlogPage";
 import LayoutWrapper from "@/app/_components/wrappers/LayoutWrapper";
@@ -10,6 +9,7 @@ import InfoCard from "./_components/infoCard";
 import ArticleComponent from "./_components/articleComponent";
 import MediumButton from "@/app/blogs/_components/mediumButton";
 import { GrAchievement } from "react-icons/gr";
+import BlogNotFound from "@/app/achievements/_components/achievementblognotfound";
 
 export async function generateStaticParams() {
   return achievements.map((achievement) => ({
@@ -36,7 +36,11 @@ export default async function AchievementDetails({
   const achievement = achievements.find((achievement) => achievement.id === id);
 
   if (!achievement) {
-    return AchievementBlogNotFound();
+    return (
+      <LayoutWrapper>
+        <BlogNotFound />
+      </LayoutWrapper>
+    );
   }
 
   return (

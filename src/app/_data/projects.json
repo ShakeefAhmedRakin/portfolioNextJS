@@ -5,9 +5,8 @@
     "isWorkInProgress": false,
     "type": "Web Development",
     "title": "Blood Bridge",
-    "subtitle": "Full Stack Web Application",
+    "subtitle": "Blood Donation Management Platform",
     "coverPhoto": {
-      "src": "",
       "caption": "BloodBridge - Site Overview",
       "url": "/projects/web/bloodbridge/cover.png",
       "alt": "Blood Bridge - Cover Photo"
@@ -25,10 +24,12 @@
         "url": "https://github.com/ShakeefAhmedRakin/BloodBridge-Server"
       }
     ],
-    "demoLinks": {
-      "label": "View Website",
-      "url": "https://bloodbridge-140aa.web.app/"
-    },
+    "demoLinks": [
+      {
+        "label": "View Website",
+        "url": "https://bloodbridge-140aa.web.app/"
+      }
+    ],
     "coreFeatures": {
       "featureList": [
         {
@@ -140,7 +141,6 @@
         "content": {
           "text": "The Register Page lets users create an account by entering their email, name, and password. Users can upload a profile picture, select their blood group, and choose their district and upazila from dropdown menus. There is also a password confirmation field to avoid mistakes. If users already have an account, they can click the link to go to the login page. The process is simple and quick, making it easy to start using the platform.",
           "image": {
-            "src": "",
             "caption": "Register Page",
             "url": "/projects/web/bloodbridge/gallery1.png",
             "alt": "BloodBridge - Register Page"
@@ -153,7 +153,6 @@
         "title": "The Landing Page",
         "content": {
           "image": {
-            "src": "",
             "caption": "Landing Page",
             "url": "/projects/web/bloodbridge/gallery2.png",
             "alt": "BloodBridge - Register Page"
@@ -185,7 +184,6 @@
         "content": {
           "text": "The donor dashboard allows donors to manage their profiles, create and edit donation requests, and view or delete existing requests. Donors can also respond to messages or actions related to their donation requests, ensuring they stay informed and connected with recipients.",
           "image": {
-            "src": "",
             "caption": "Donor Dashboard",
             "url": "/projects/web/bloodbridge/gallery3.png",
             "alt": "BloodBridge - Donor Dashboard"
@@ -204,7 +202,6 @@
         "title": "",
         "content": {
           "image": {
-            "src": "",
             "caption": "Volunteer Dashboard",
             "url": "/projects/web/bloodbridge/gallery4.png",
             "alt": "BloodBridge - Volunteer Dashboard"
@@ -225,7 +222,6 @@
         "content": {
           "text": "The blogging tool allows both volunteers and admins to create, edit, and publish blog posts using a simple rich-text editor. It supports basic formatting options like headings, bold, italics, bullet points, and hyperlinks. Users can add images, format text, and organize content for better readability. Admins have full control over the publication, while volunteers can write and submit posts for review. This tool is designed to make content creation straightforward and ensure blogs are easy to read and manage.",
           "image": {
-            "src": "",
             "caption": "Blog Editor",
             "url": "/projects/web/bloodbridge/gallery5.png",
             "alt": "BloodBridge - Blog Editor"
@@ -244,7 +240,6 @@
         "title": "",
         "content": {
           "image": {
-            "src": "",
             "caption": "Admin Dashboard - User Management",
             "url": "/projects/web/bloodbridge/gallery7.png",
             "alt": "BloodBridge - Admin User Management"
@@ -265,7 +260,6 @@
         "content": {
           "text": "Admins can manage all donation requests through the dashboard. They have the ability to create new requests, edit existing ones, delete irrelevant or outdated requests, and view details of all donation requests on the platform. This gives admins full oversight and control over the blood donation process, ensuring requests are properly handled and updated.",
           "image": {
-            "src": "",
             "caption": "Admin Dashboard - Donation Management",
             "url": "/projects/web/bloodbridge/gallery6.png",
             "alt": "BloodBridge - Admin Donation Management"
@@ -284,7 +278,6 @@
         "title": "",
         "content": {
           "image": {
-            "src": "",
             "caption": "Responsive Design",
             "url": "/projects/web/bloodbridge/gallery8.png",
             "alt": "BloodBridge - Responsive Design"
@@ -297,51 +290,16 @@
         "title": "Final Conclusion",
         "content": "Working on this project has given me valuable experience in building a full-stack application with real-world functionality. It taught me how to implement secure user authentication, particularly protecting private API endpoints using JWT tokens. This allowed me to handle role-based access and ensure that sensitive data was only accessible to authorized users. I also gained hands-on experience with integrating third-party services like Stripe for payment processing. Overall, the project strengthened my skills in both front-end and back-end development, helping me understand the complexities of building and securing a full-stack web application."
       }
-    ],
-    "seo": {
-      "googleIndexing": {
-        "title": "Blood Bridge | Full Stack Web Application | Shakeef Ahmed Rakin",
-        "description": "BloodBridge is a full-stack web application designed to connect blood donors, recipients, and volunteers. It includes features like user role management, donation request handling, and content creation. Learn more about this project by Shakeef Ahmed Rakin.",
-        "keywords": [
-          "BloodBridge",
-          "BloodBridge Web Application",
-          "BloodBridge Full Stack",
-          "BloodBridge MERN Stack",
-          "BloodBridge React",
-          "BloodBridge Express",
-          "BloodBridge Node.js",
-          "BloodBridge MongoDB",
-          "BloodBridge Firebase",
-          "Shakeef Ahmed Rakin"
-        ],
-        "publisher": "Shakeef Ahmed Rakin",
-        "image": "/projects/web/bloodbridge/cover.png",
-        "imgAlt": "Blood Bridge - Cover Photo"
-      },
-      "twitterCard": {
-        "title": "Blood Bridge | Full Stack Web Application | Shakeef Ahmed Rakin",
-        "description": "BloodBridge is a full-stack web application designed to connect blood donors, recipients, and volunteers. It includes features like user role management, donation request handling, and content creation. Learn more about this project by Shakeef Ahmed Rakin.",
-        "image": "/projects/web/bloodbridge/cover.png",
-        "imgAlt": "Blood Bridge - Cover Photo"
-      },
-      "openGraphCard": {
-        "title": "Blood Bridge | Full Stack Web Application | Shakeef Ahmed Rakin",
-        "type": "article",
-        "image": "/projects/web/bloodbridge/cover.png",
-        "imgAlt": "Blood Bridge - Cover Photo",
-        "description": "BloodBridge is a full-stack web application designed to connect blood donors, recipients, and volunteers. It includes features like user role management, donation request handling, and content creation. Learn more about this project by Shakeef Ahmed Rakin."
-      }
-    }
+    ]
   },
   {
     "id": "topshelf",
     "isFeatured": true,
     "isWorkInProgress": false,
     "type": "Web Development",
-    "title": "TopShelf",
+    "title": "Top Shelf",
     "subtitle": "Library Management System",
     "coverPhoto": {
-      "src": "",
       "caption": "TopShelf - Site Overview",
       "url": "/projects/web/topshelf/cover.png",
       "alt": "TopShelf - Cover Photo"
@@ -359,10 +317,12 @@
         "url": "https://github.com/ShakeefAhmedRakin/TopShelf-server"
       }
     ],
-    "demoLinks": {
-      "label": "View Website",
-      "url": "https://topshelf-79995.web.app/"
-    },
+    "demoLinks": [
+      {
+        "label": "View Website",
+        "url": "https://topshelf-79995.web.app/"
+      }
+    ],
     "coreFeatures": {
       "featureList": [
         {
@@ -448,7 +408,6 @@
         "content": {
           "text": "TopShelf organizes books into distinct categories for easy browsing. Each book has detailed information and offers the option to borrow or read. I implemented a real-time book availability system, which involved manipulating the data flow between the frontend and backend. This required working with React for dynamic content updates and integrating MongoDB to track book status and availability.",
           "image": {
-            "src": "",
             "caption": "Book Categories",
             "url": "/projects/web/topshelf/gallery1.png",
             "alt": "TopShelf - Book Categories"
@@ -461,7 +420,6 @@
         "title": "Borrowing and Return System",
         "content": {
           "image": {
-            "src": "",
             "caption": "Borrow and Return Book Modal",
             "url": "/projects/web/topshelf/gallery2.png",
             "alt": "TopShelf - Borrow and Return Modal"
@@ -492,7 +450,6 @@
         "content": {
           "text": "I integrated Firebase authentication to allow users to sign up and log in using either email/password or Google login. This required setting up Firebase on the backend and ensuring that authentication tokens were stored securely. To further enhance security, I used JWT tokens to authenticate API requests and authorize CRUD operations on book data, making sure only authenticated users could perform certain actions.",
           "image": {
-            "src": "",
             "caption": "Login Page",
             "url": "/projects/web/topshelf/gallery3.png",
             "alt": "TopShelf - Login Page"
@@ -511,7 +468,6 @@
         "title": "",
         "content": {
           "image": {
-            "src": "",
             "caption": "Borrowed Books Page",
             "url": "/projects/web/topshelf/gallery4.png",
             "alt": "TopShelf - Borrowed Books Page"
@@ -524,39 +480,196 @@
         "title": "Final Conclusion",
         "content": "Developing TopShelf was an excellent opportunity to apply and refine my full-stack development skills. I gained extensive experience in frontend and backend development, working with technologies like React, Node.js, Express, and MongoDB. Implementing JWT authentication, real-time data updates, and PDF generation allowed me to deepen my understanding of web security, data management, and user interface development. Each feature presented its own challenges, and solving these helped me grow as a developer."
       }
-    ],
-    "seo": {
-      "googleIndexing": {
-        "title": "TopShelf | Library Management System | Shakeef Ahmed Rakin",
-        "description": "TopShelf is a library management system that allows users to browse, borrow, and return books easily. Learn more about this project by Shakeef Ahmed Rakin.",
-        "keywords": [
-          "TopShelf",
-          "Library Management System",
-          "TopShelf React",
-          "TopShelf Firebase",
-          "TopShelf Node.js",
-          "TopShelf Express",
-          "TopShelf MongoDB",
-          "TopShelf JWT",
-          "Shakeef Ahmed Rakin"
-        ],
-        "publisher": "Shakeef Ahmed Rakin",
-        "image": "/projects/web/topshelf/cover.png",
-        "imgAlt": "TopShelf - Cover Photo"
+    ]
+  },
+  {
+    "id": "topshelf",
+    "isFeatured": true,
+    "isWorkInProgress": false,
+    "type": "Web Development",
+    "title": "Top Shelf",
+    "subtitle": "Library Management System",
+    "coverPhoto": {
+      "caption": "TopShelf - Site Overview",
+      "url": "/projects/web/topshelf/cover.png",
+      "alt": "TopShelf - Cover Photo"
+    },
+    "date": "2023-11-09",
+    "tags": ["React", "Express", "Node.js", "MongoDB", "Firebase"],
+    "summary": "TopShelf is a user-centric library management system designed to allow users to browse, borrow, and return books easily. The platform features a responsive design, category-based book display, borrowing and return system, and robust user authentication with Firebase. It integrates JWT tokens for secure operations and allows users to download books as PDFs. TopShelf ensures a seamless experience across devices with key features focused on usability and security.",
+    "githubLinks": [
+      {
+        "label": "Frontend",
+        "url": "https://github.com/ShakeefAhmedRakin/TopShelf-client"
       },
-      "twitterCard": {
-        "title": "TopShelf | Library Management System | Shakeef Ahmed Rakin",
-        "description": "TopShelf is a library management system that allows users to browse, borrow, and return books easily. Learn more about this project by Shakeef Ahmed Rakin.",
-        "image": "/projects/web/topshelf/cover.png",
-        "imgAlt": "TopShelf - Cover Photo"
-      },
-      "openGraphCard": {
-        "title": "TopShelf | Library Management System | Shakeef Ahmed Rakin",
-        "type": "article",
-        "image": "/projects/web/topshelf/cover.png",
-        "imgAlt": "TopShelf - Cover Photo",
-        "description": "TopShelf is a library management system that allows users to browse, borrow, and return books easily. Learn more about this project by Shakeef Ahmed Rakin."
+      {
+        "label": "Backend",
+        "url": "https://github.com/ShakeefAhmedRakin/TopShelf-server"
       }
-    }
+    ],
+    "demoLinks": [
+      {
+        "label": "View Website",
+        "url": "https://topshelf-79995.web.app/"
+      }
+    ],
+    "coreFeatures": {
+      "featureList": [
+        {
+          "title": "Book Management",
+          "points": [
+            "Category-based book display for easy browsing.",
+            "Detailed book information with borrow or read options.",
+            "Each category links to a list of relevant books, with full book details available."
+          ]
+        },
+        {
+          "title": "Borrowing and Return System",
+          "points": [
+            "Borrow button prompts a modal for selecting return dates.",
+            "Borrowed Books page tracks borrowed books with return dates and a return button.",
+            "Borrowing decreases book quantity and adds books to user’s borrowed list."
+          ]
+        },
+        {
+          "title": "Authentication and Security",
+          "points": [
+            "Firebase authentication for secure user login (email/password or Google).",
+            "JWT token-based verification for secure CRUD operations on book-related pages.",
+            "Error handling implemented for registration and login forms."
+          ]
+        },
+        {
+          "title": "Additional Features",
+          "points": [
+            "Responsive design across desktop and mobile.",
+            "Theme toggle for dark/light modes.",
+            "Downloadable book pages in PDF format.",
+            "User-filtered borrowed books section."
+          ]
+        }
+      ]
+    },
+    "techStack": [
+      {
+        "title": "Frontend",
+        "techList": [
+          "React.js",
+          "Tailwind CSS",
+          "DaisyUI",
+          "Flowbite",
+          "React Icons",
+          "React Router",
+          "Firebase",
+          "Sonner",
+          "SwiperJS",
+          "react-rating"
+        ]
+      },
+      {
+        "title": "Backend",
+        "techList": [
+          "Node.js",
+          "Express.js",
+          "MongoDB",
+          "CORS",
+          "Dotenv",
+          "JWT",
+          "Axios"
+        ]
+      },
+      {
+        "title": "Deployment",
+        "techList": ["Vercel", "Firebase Hosting"]
+      }
+    ],
+    "overviewSections": [
+      {
+        "type": "text",
+        "hasTitle": true,
+        "title": "Introduction & Purpose",
+        "content": "TopShelf is a library management system built to efficiently manage book collections. I focused on developing an intuitive system for browsing, borrowing, and returning books. By implementing features such as book management, borrowing/returning systems, and secure user authentication, I gained hands-on experience in full-stack development, from the frontend interface to backend processes and security."
+      },
+      {
+        "type": "text-image",
+        "hasTitle": true,
+        "title": "Book Categories and Details",
+        "imageOnLeft": false,
+        "content": {
+          "text": "TopShelf organizes books into distinct categories for easy browsing. Each book has detailed information and offers the option to borrow or read. I implemented a real-time book availability system, which involved manipulating the data flow between the frontend and backend. This required working with React for dynamic content updates and integrating MongoDB to track book status and availability.",
+          "image": {
+            "caption": "Book Categories",
+            "url": "/projects/web/topshelf/gallery1.png",
+            "alt": "TopShelf - Book Categories"
+          }
+        }
+      },
+      {
+        "type": "image",
+        "hasTitle": true,
+        "title": "Borrowing and Return System",
+        "content": {
+          "image": {
+            "caption": "Borrow and Return Book Modal",
+            "url": "/projects/web/topshelf/gallery2.png",
+            "alt": "TopShelf - Borrow and Return Modal"
+          }
+        }
+      },
+      {
+        "type": "text",
+        "hasTitle": false,
+        "title": "",
+        "content": "The borrowing and return system in TopShelf allows users to borrow books by selecting return dates. I implemented this feature by creating modals for date selection, which interact with the backend to update book availability. I also developed the 'Borrowed Books' page where users can manage their borrowed books and view the return dates. The challenge here was ensuring accurate updates in real-time to reflect borrowing actions and availability."
+      },
+      {
+        "type": "list",
+        "hasTitle": false,
+        "title": "",
+        "content": [
+          "Borrowing books triggers an update in the backend, which adjusts availability and adds the book to the user's borrowed list.",
+          "The borrowed books page displays details such as borrow and return dates, which I built using React to dynamically render content from the database.",
+          "Books can be returned by modifying the borrowed status and updating the book count in real-time, which required handling backend routes with Express."
+        ]
+      },
+      {
+        "type": "text-image",
+        "hasTitle": true,
+        "title": "User Authentication",
+        "imageOnLeft": false,
+        "content": {
+          "text": "I integrated Firebase authentication to allow users to sign up and log in using either email/password or Google login. This required setting up Firebase on the backend and ensuring that authentication tokens were stored securely. To further enhance security, I used JWT tokens to authenticate API requests and authorize CRUD operations on book data, making sure only authenticated users could perform certain actions.",
+          "image": {
+            "caption": "Login Page",
+            "url": "/projects/web/topshelf/gallery3.png",
+            "alt": "TopShelf - Login Page"
+          }
+        }
+      },
+      {
+        "type": "text",
+        "hasTitle": true,
+        "title": "PDF Download and User-Specific Features",
+        "content": "I implemented a feature that allows users to download pages of books as PDFs. This involved integrating a PDF generation library on the frontend to convert book content into downloadable files. Additionally, I developed a user-specific borrowed books section to track individual borrowings. This section retrieves data from MongoDB and dynamically updates based on the authenticated user, which helped me improve my skills in working with data filtering and user-specific views."
+      },
+      {
+        "type": "image",
+        "hasTitle": false,
+        "title": "",
+        "content": {
+          "image": {
+            "caption": "Borrowed Books Page",
+            "url": "/projects/web/topshelf/gallery4.png",
+            "alt": "TopShelf - Borrowed Books Page"
+          }
+        }
+      },
+      {
+        "type": "text",
+        "hasTitle": true,
+        "title": "Final Conclusion",
+        "content": "Developing TopShelf was an excellent opportunity to apply and refine my full-stack development skills. I gained extensive experience in frontend and backend development, working with technologies like React, Node.js, Express, and MongoDB. Implementing JWT authentication, real-time data updates, and PDF generation allowed me to deepen my understanding of web security, data management, and user interface development. Each feature presented its own challenges, and solving these helped me grow as a developer."
+      }
+    ]
   }
 ]

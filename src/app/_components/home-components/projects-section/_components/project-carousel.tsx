@@ -10,9 +10,13 @@ import { FaArrowRight } from "react-icons/fa6";
 type Project = {
   id: string;
   title: string;
+  subtitle: string;
+  tags: string[];
+  date: string;
   type: string;
   coverPhoto: {
     url: string;
+    alt: string;
   };
   isWorkInProgress?: boolean;
 };
@@ -20,7 +24,7 @@ type Project = {
 export default function ProjectCarousel({ projects }: { projects: Project[] }) {
   return (
     <>
-      <div className="bg-backgroundAlt pt-20 pb-0 mt-24 xl:mt-32 px-2 lg:px-1">
+      <div className="bg-backgroundAlt pt-20 pb-0 mt-24 xl:mt-32 px-2 lg:px-0">
         <Swiper
           slidesPerView={1}
           spaceBetween={10}
@@ -28,19 +32,19 @@ export default function ProjectCarousel({ projects }: { projects: Project[] }) {
           breakpoints={{
             640: {
               slidesPerView: 2,
-              spaceBetween: 20,
+              spaceBetween: 10,
             },
             768: {
               slidesPerView: 2,
-              spaceBetween: 20,
+              spaceBetween: 10,
             },
             1024: {
               slidesPerView: 3,
-              spaceBetween: 20,
+              spaceBetween: 10,
             },
             1440: {
               slidesPerView: 4,
-              spaceBetween: 20,
+              spaceBetween: 10,
             },
           }}
           className="-mt-56 lg:-mt-56 xl:-mt-64 hover:cursor-grab active:cursor-grabbing"
@@ -73,45 +77,60 @@ export default function ProjectCarousel({ projects }: { projects: Project[] }) {
 
 const ProjectItem = ({ project }: { project: Project }) => {
   return (
-    <div className="bg-background rounded-b-lg shadow-xl">
+    <Link
+      href={`/projects/${project.id}`}
+      key={project.id}
+      className="shadow-md hover:shadow-secondary duration-300 group"
+      aria-label={`Go to project: ${project.title}`}
+      title={`Go to project: ${project.title}`}
+    >
       <div
-        className="relative"
+        className="relative bg-black rounded-lg"
         style={{
-          aspectRatio: "16/8",
+          aspectRatio: "16/11",
         }}
       >
         <Image
           src={project?.coverPhoto?.url}
+          alt={
+            project?.coverPhoto?.alt ||
+            `Cover photo for project ${project?.title}`
+          }
           fill={true}
-          alt="test"
+          priority
+          sizes="500"
           draggable={false}
-          className="object-cover"
-        ></Image>
-      </div>
-      <div className="p-4">
-        <h4 className="font-heading font-bold text-secondary text-sm lg:text-lg">
-          {project.title}
-          {project.isWorkInProgress && " - (WIP)"}
-        </h4>
-        <hr className="mt-1 mb-1 lg:mb-2" />
-        <div className="flex justify-between items-center">
-          <h5 className="font-heading font-bold text-text text-xs md:text-sm">
-            {project.type}
-          </h5>
-          <Link
-            href={`/projects/${project.id}`}
-            className="rounded-lg"
-            aria-label={`View Project ${project.title}`}
-          >
-            <button
-              className="py-2 px-4 rounded-lg shadow hover:shadow-secondary duration-150 active:scale-[0.98] font-heading text-[9px] lg:text-xs font-semibold flex items-center gap-2 text-text"
-              aria-label="Read Story"
-            >
-              View Project <FaArrowRight />
-            </button>
-          </Link>
+          className="rounded-lg object-cover opacity-80 group-hover:opacity-100 duration-300"
+        />
+        {/* CARD BLACK OVERLAY */}
+        <div className="absolute bg-gradient-to-b from-transparent to-black bg-opacity-60 bottom-0 rounded-lg w-full h-full"></div>
+        {/* PROJECT TITLE BANNER */}
+        <h5 className="absolute top-4 bg-gradient-to-br from-primary to-secondary rounded-r-lg text-white text-xs font-bold font-body px-4 py-2">
+          {project?.title}
+        </h5>
+        {/* PROJECT WIP BANNER */}
+        {project?.isWorkInProgress && (
+          <span className="absolute top-4 right-0 bg-error rounded-l-lg text-white text-xs font-bold font-body px-4 py-2">
+            WIP
+          </span>
+        )}
+        {/* PROJECT DETAILS */}
+        <div className="absolute w-full bottom-0 h-fit flex flex-col px-4 py-6">
+          <span className="font-body font-semibold text-white text-[9px] mb-1">
+            {new Date(project?.date || "").toLocaleDateString("en-US", {
+              month: "long",
+              day: "numeric",
+              year: "numeric",
+            })}
+          </span>
+          <h6 className="font-body font-semibold line-clamp-1 text-white group-hover:underline text-xs md:text-sm">
+            {project.subtitle} <FaArrowRight className="inline text-xs" />
+          </h6>
+          <p className="font-body mt-2 flex-1 text-white text-[11px] capitalize line-clamp-2 max-h-[33px] min-h-[33px]">
+            {project.tags.join(", ")}
+          </p>
         </div>
       </div>
-    </div>
+    </Link>
   );
 };

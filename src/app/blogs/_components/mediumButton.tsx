@@ -9,10 +9,10 @@ export default function MediumButton() {
       title="Visit Medium Profile"
       target="_blank"
       rel="noopener noreferrer"
-      className="w-full flex flex-col gap-2 items-center bg-background dark:bg-white rounded-lg p-4 border text-black shadow-inner duration-300"
+      className="w-full flex flex-col gap-2 items-center group bg-background dark:bg-white rounded-lg p-4 border text-black shadow-inner shadow-gray-200 active:scale-[0.98] duration-300"
     >
-      <FaMediumM className="text-3xl" />
-      <span className="flex items-center gap-2 text-sm">
+      <FaMediumM className="text-xl" />
+      <span className="flex items-center gap-2 text-xs font-heading group-hover:underline">
         Visit Medium Profile <FaExternalLinkAlt className="text-xs" />
       </span>
     </Link>

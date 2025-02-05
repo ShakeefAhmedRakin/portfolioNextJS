@@ -1,7 +1,7 @@
 import { Graph } from "schema-dts";
 import work from "../../../_data/work.json";
 import education from "../../../_data/education.json";
-import { skills } from "@/app/_data/skills";
+import skills from "../../../_data/skills.json";
 import { socialLinks } from "@/app/_data/socialLinks";
 import personalData from "../../../_data/personalData.json";
 
@@ -50,9 +50,7 @@ export function SetSchemaAboutPage() {
           name: item.institution,
           url: item.url,
         })),
-        knowsAbout: skills.flatMap((item) =>
-          item.skills.map((skill) => skill.name)
-        ),
+        knowsAbout: skills.map((skill) => skill.title),
         knowsLanguage: personalData.Person.KnownLanguages,
         image: `${process.env.WEBSITE_URL}/og_images/aboutpage.png`,
         sameAs: [

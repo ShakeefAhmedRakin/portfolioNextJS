@@ -42,28 +42,28 @@ const Blogs = () => {
                     <li key={article.guid}>
                       <Link
                         href={article.link}
-                        className="group"
+                        className="group text-text"
                         aria-label={`Read Blog ${article.title}`}
                         title={`Read Blog ${article.title}`}
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <h2 className="font-heading text-2xl text-left font-bold text-white group-hover:underline">
+                        <h2 className="font-heading text-base md:text-lg lg:text-xl text-left font-bold group-hover:underline">
                           {article.title}
                         </h2>
-                        <div className="flex gap-2 items-center text-white font-body font-light text-sm mt-3">
+                        <div className="flex gap-2 items-center font-body font-light text-sm mt-3">
                           <Image
                             src={"/hero.jpg"}
-                            width={20}
-                            height={20}
+                            width={18}
+                            height={18}
                             alt="test"
                             className="rounded-full aspect-square object-cover"
                           ></Image>
-                          <span className="text-white font-body font-light text-sm">
+                          <span className="font-body font-light text-xs md:text-sm">
                             {article.author}
                           </span>
                           <IoMdStar className="text-yellow-500"></IoMdStar>
-                          <span>
+                          <span className="text-xs md:text-sm">
                             {new Date(article.pubDate).toLocaleDateString(
                               "en-US",
                               {
@@ -90,7 +90,9 @@ const Blogs = () => {
                   </h2>
                 </>
               )}
-              <MediumButton></MediumButton>
+              <div className="block md:hidden">
+                <MediumButton></MediumButton>
+              </div>
             </ul>
           </>
         )}

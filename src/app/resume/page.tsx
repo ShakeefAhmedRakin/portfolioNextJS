@@ -21,9 +21,8 @@ export default function ResumePage() {
           ariaLabel="Download Resume"
           openInNewTab={true}
           className="w-full md:w-auto"
-          icon={<GrDocumentDownload className="w-4 h-4" />}
         >
-          Download Resume
+          Download Resume <GrDocumentDownload className="w-4 h-4" />
         </ButtonPrimaryFilled>
         <hr className="my-3" />
         <iframe

@@ -1,32 +1,57 @@
 import { Graph } from "schema-dts";
 import projects from "../../../_data/projects.json";
+import personalData from "../../../_data/personalData.json";
 
 export function SetSchemaProjectsPage() {
   const graph: Graph = {
     "@context": "https://schema.org",
     "@graph": [
-      // ITEM LISTS
       {
-        "@type": "ItemList",
+        "@type": "CollectionPage",
+        "@id": `${process.env.WEBSITE_URL}/projects/#project-listing`,
+        dateCreated: "2025-01-02T23:22:12.039Z",
+        dateModified: new Date().toISOString(),
+        name: `Projects worked on by ${personalData.Person.FullName}`,
+        headline: `Projects worked on by ${personalData.Person.FullName}`,
+        about: {
+          "@type": "Person",
+          name: `${personalData.Person.FullName}`,
+          description: `${personalData.Person.Description}`,
+        },
+        breadcrumb: {
+          "@id": `${process.env.WEBSITE_URL}/projects/#breadcrumb`,
+        },
+        mainEntity: {
+          "@id": `${process.env.WEBSITE_URL}/projects/#projects`,
+        },
+      },
+      // PROJECTS LIST
+      {
         "@id": `${process.env.WEBSITE_URL}/projects/#projects`,
+        "@type": "ItemList",
+        name: "Projects",
+        numberOfItems: projects.length,
         itemListElement: projects
-          .filter((project) => project.isFeatured)
+          .sort(
+            (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+          )
           .map((project, index) => ({
-            "@type": "ListItem",
+            "@type": "SoftwareSourceCode",
+            name: `${project.title} - ${project.subtitle}`,
+            headline: `${project.title} - ${project.subtitle}`,
+            description: project?.summary,
+            about: project?.summary,
+            datePublished: project.date,
+            url: `${process.env.WEBSITE_URL}/projects/${project.id}`,
+            codeRepository: `${process.env.WEBSITE_URL}/projects/${project.id}`,
             position: index + 1,
-            item: {
-              "@type": "CreativeWork",
-              name: project.title,
-              url: `${process.env.WEBSITE_URL}/projects/${project.id}`,
-              image: `${process.env.WEBSITE_URL}${project.coverPhoto}`,
-              dateCreated: project.date,
-              creator: "Shakeef Ahmed Rakin",
-              author: "Shakeef Ahmed Rakin",
-              description: project.summary,
+            creator: {
+              "@type": "Person",
+              name: personalData.Person.FullName,
             },
           })),
       },
-      // BREAD CRUMBS
+      // BREADCRUMBS
       {
         "@type": "BreadcrumbList",
         "@id": `${process.env.WEBSITE_URL}/projects/#breadcrumb`,

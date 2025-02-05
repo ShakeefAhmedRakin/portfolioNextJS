@@ -228,7 +228,7 @@
   },
   {
     "id": "An-optimized-deep-learning-based-pipeline-for-recognition-of-sign-language-from-low-resolution-thermal-imagery",
-    "isFeatured": true,
+    "isFeatured": false,
     "status": { "label": "Ongoing", "color": "red" },
     "isPublished": false,
     "lastUpdatedDate": "02/01/2024",

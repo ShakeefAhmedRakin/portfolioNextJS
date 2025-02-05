@@ -41,7 +41,7 @@ export async function generateMetadataForResearchDetailsPage({
       images: [
         {
           url: research?.thumbnail || "/logos/logo.png",
-          alt: "Achievement Image",
+          alt: "Research Image",
         },
       ],
     },

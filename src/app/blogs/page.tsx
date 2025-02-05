@@ -17,11 +17,11 @@ export default function BlogPage() {
       <LayoutWrapper>
         <TitleLarge firstTitle="My" secondTitle="Blogs" isPrimary></TitleLarge>
         <hr className="mb-4" />
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-3 min-h-[50vh]">
           <div className="col-span-2 order-2 md:order-1">
             <Blogs />
           </div>
-          <div className="order-1 h-full">
+          <div className="order-1 h-full hidden md:block">
             <MediumProfile />
           </div>
         </div>

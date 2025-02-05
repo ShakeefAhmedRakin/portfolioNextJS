@@ -42,28 +42,28 @@ const Blogs = () => {
                     <li key={article.guid}>
                       <Link
                         href={article.link}
-                        className="group"
+                        className="group text-white"
                         aria-label={`Read Blog ${article.title}`}
                         title={`Read Blog ${article.title}`}
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <h2 className="font-heading text-2xl text-left font-bold text-white group-hover:underline">
+                        <h4 className="font-heading text-base md:text-lg lg:text-xl text-left font-bold group-hover:underline">
                           {article.title}
-                        </h2>
-                        <div className="flex gap-2 items-center text-white font-body font-light text-sm mt-3">
+                        </h4>
+                        <div className="flex gap-2 items-center font-body font-light text-sm mt-3">
                           <Image
                             src={"/hero.jpg"}
-                            width={20}
-                            height={20}
+                            width={18}
+                            height={18}
                             alt="test"
                             className="rounded-full aspect-square object-cover"
                           ></Image>
-                          <span className="text-white font-body font-light text-sm">
+                          <span className="font-body font-light text-xs md:text-sm">
                             {article.author}
                           </span>
                           <IoMdStar className="text-yellow-500"></IoMdStar>
-                          <span>
+                          <span className="text-xs md:text-sm">
                             {new Date(article.pubDate).toLocaleDateString(
                               "en-US",
                               {
@@ -94,7 +94,7 @@ const Blogs = () => {
                 href={"/blogs"}
                 aria-label="Read All Blogs"
                 title="Read All Blogs"
-                className="w-full flex justify-center gap-2 items-center font-heading font-bold bg-background dark:bg-white rounded-lg p-4 border text-black shadow-inner duration-300 mt-3 text-sm"
+                className="w-full flex justify-center gap-2 items-center font-heading font-bold text-white active:scale-[0.98] rounded-lg py-2 md:py-3  hover:bg-white hover:text-black border shadow-inner duration-300 mt-3 text-xs"
               >
                 View All Blogs <FaArrowRight></FaArrowRight>
               </Link>

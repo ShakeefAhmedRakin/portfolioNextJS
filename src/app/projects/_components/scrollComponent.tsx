@@ -1,5 +1,6 @@
 "use client";
 import { useCallback } from "react";
+import { RiScrollToBottomLine } from "react-icons/ri";
 
 interface ProjectsByType {
   [key: string]: unknown;
@@ -13,7 +14,7 @@ export default function ScrollToViewComponent({
   const scrollTo = useCallback((sectionId: string) => {
     const section = document.getElementById(sectionId);
     if (section) {
-      const offset = 120;
+      const offset = 150;
       const top = section.getBoundingClientRect().top + window.scrollY - offset;
 
       window.scrollTo({ top, behavior: "smooth" });
@@ -21,10 +22,7 @@ export default function ScrollToViewComponent({
   }, []);
 
   return (
-    <div className="mb-8">
-      <h2 className="font-heading text-base md:text-base font-semibold text-text mb-4">
-        Explore Projects By Type
-      </h2>
+    <div>
       <p className="font-body text-xs md:text-sm text-text mb-4">
         Select a project type below to quickly navigate to that section.
       </p>
@@ -35,10 +33,11 @@ export default function ScrollToViewComponent({
             <button
               key={type}
               onClick={() => scrollTo(type)}
-              className="font-heading text-xs lg:text-sm font-semibold text-primary border-b-2 border-gray-300 dark:border-gray-700 dark:hover:border-primary hover:border-primary transition duration-300"
+              className="rounded-lg px-4 py-2 text-white bg-gradient-to-br from-primary to-secondary flex items-center gap-2 hover:underline duration-300 active:scale-[0.99] font-heading text-xs md:text-sm font-bold"
               aria-label={`Scroll to ${type} section`}
+              title={`Scroll to ${type} section`}
             >
-              {type}
+              {type} <RiScrollToBottomLine className="text-sm md:text-lg" />
             </button>
           ))}
       </div>
