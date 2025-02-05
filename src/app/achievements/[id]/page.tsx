@@ -9,7 +9,8 @@ import InfoCard from "./_components/infoCard";
 import ArticleComponent from "./_components/articleComponent";
 import MediumButton from "@/app/blogs/_components/mediumButton";
 import { GrAchievement } from "react-icons/gr";
-import BlogNotFound from "@/app/achievements/_components/achievementblognotfound";
+import { notFound } from "next/navigation";
+import { MetadataNotFoundPage } from "@/app/_util/metadata/NotFoundPage/MetaDataNotFoundPage";
 
 export async function generateStaticParams() {
   return achievements.map((achievement) => ({
@@ -23,8 +24,13 @@ export async function generateMetadata({
   params: Promise<{ id: string }>;
 }): Promise<Metadata> {
   const { id } = await params;
+  const achievement = achievements.find((achievement) => achievement.id === id);
 
-  return generateMetadataForAchievementBlogPage({ id });
+  if (achievement) {
+    return generateMetadataForAchievementBlogPage({ id });
+  } else {
+    return MetadataNotFoundPage;
+  }
 }
 
 export default async function AchievementDetails({
@@ -36,11 +42,7 @@ export default async function AchievementDetails({
   const achievement = achievements.find((achievement) => achievement.id === id);
 
   if (!achievement) {
-    return (
-      <LayoutWrapper>
-        <BlogNotFound />
-      </LayoutWrapper>
-    );
+    return notFound();
   }
 
   return (

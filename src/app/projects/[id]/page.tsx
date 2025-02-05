@@ -1,5 +1,4 @@
 import projects from "../../_data/projects.json";
-import ProjectNotFound from "@/app/projects/_components/projectnotfound";
 import { Metadata } from "next";
 import { generateMetadataForProjectDetailsPage } from "@/app/_util/metadata/ProjectsPage/ProjectDetailsPage/MetadataProjectDetailsPage";
 import { SetSchemaProjectDetailsPage } from "@/app/_util/metadata/ProjectsPage/ProjectDetailsPage/SetSchemaProjectDetailsPage";
@@ -9,6 +8,8 @@ import TableOfContent from "./_components/TableOfContent";
 import CoreFeatures from "./_components/CoreFeatures";
 import TechnologyStack from "./_components/TechnologyStack";
 import ProjectOverview from "./_components/ProjectOverview/ProjectOverview";
+import { notFound } from "next/navigation";
+import { MetadataNotFoundPage } from "@/app/_util/metadata/NotFoundPage/MetaDataNotFoundPage";
 
 export async function generateStaticParams() {
   return projects.map((project) => ({
@@ -22,8 +23,13 @@ export async function generateMetadata({
   params: Promise<{ id: string }>;
 }): Promise<Metadata> {
   const { id } = await params;
+  const project = projects.find((project) => project.id === id);
 
-  return generateMetadataForProjectDetailsPage({ id });
+  if (project) {
+    return generateMetadataForProjectDetailsPage({ id });
+  } else {
+    return MetadataNotFoundPage;
+  }
 }
 
 export default async function ProjectDetailsPage({
@@ -35,11 +41,7 @@ export default async function ProjectDetailsPage({
   const project = projects.find((project) => project.id === id);
 
   if (!project) {
-    return (
-      <LayoutWrapper>
-        <ProjectNotFound></ProjectNotFound>
-      </LayoutWrapper>
-    );
+    return notFound();
   }
 
   return (

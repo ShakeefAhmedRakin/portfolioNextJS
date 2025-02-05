@@ -4,10 +4,11 @@ import TitleLarge from "@/app/_components/ui/TitleLarge";
 import AuthorList from "./_components/authorList";
 import JournalStatus from "./_components/journalStatus";
 import PaperDetails from "./_components/paperDetails";
-import ResearchNotFound from "./_components/researchnotfound";
 import { Metadata } from "next";
 import { generateMetadataForResearchDetailsPage } from "@/app/_util/metadata/ResearchPage/ResearchDetailsPage/MetadataResearchDetailsPage";
 import { SetSchemaResearchDetailsPage } from "@/app/_util/metadata/ResearchPage/ResearchDetailsPage/SetSchemaResearchDetailsPage";
+import { notFound } from "next/navigation";
+import { MetadataNotFoundPage } from "@/app/_util/metadata/NotFoundPage/MetaDataNotFoundPage";
 
 export async function generateStaticParams() {
   return allResearch.map((research) => ({
@@ -21,8 +22,13 @@ export async function generateMetadata({
   params: Promise<{ id: string }>;
 }): Promise<Metadata> {
   const { id } = await params;
+  const research = allResearch.find((research) => research.id === id);
 
-  return generateMetadataForResearchDetailsPage({ id });
+  if (research) {
+    return generateMetadataForResearchDetailsPage({ id });
+  } else {
+    return MetadataNotFoundPage;
+  }
 }
 
 export default async function ResearchDetailsPage({
@@ -35,11 +41,7 @@ export default async function ResearchDetailsPage({
   const research = allResearch.find((research) => research.id === id);
 
   if (!research) {
-    return (
-      <LayoutWrapper>
-        <ResearchNotFound></ResearchNotFound>
-      </LayoutWrapper>
-    );
+    return notFound();
   }
 
   return (

@@ -61,14 +61,5 @@
     "isShownOnNav": false,
     "isShownOnFooterNav": false,
     "isShownOnFooterResources": true
-  },
-  {
-    "label": "View Resume",
-    "title": "Resume",
-    "aria-label": "Navigate to the Resume page",
-    "route": "/resume",
-    "isShownOnNav": false,
-    "isShownOnFooterNav": false,
-    "isShownOnFooterResources": true
   }
 ]
