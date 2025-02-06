@@ -1,5 +1,5 @@
 import { BsGithub, BsLinkedin, BsStackOverflow } from "react-icons/bs";
-import { SiLeetcode } from "react-icons/si";
+// import { SiLeetcode } from "react-icons/si";
 import { FaMediumM } from "react-icons/fa";
 export const socialLinks = [
   {
@@ -23,13 +23,13 @@ export const socialLinks = [
     title: "Stack Overflow",
     ariaLabel: "View Stack Overflow Profile",
   },
-  {
-    name: "LeetCode",
-    url: "https://leetcode.com/u/Shakeef-Ahmed-Rakin",
-    icon: <SiLeetcode />,
-    title: "LeetCode",
-    ariaLabel: "View LeetCode Profile",
-  },
+  // {
+  //   name: "LeetCode",
+  //   url: "https://leetcode.com/u/Shakeef-Ahmed-Rakin",
+  //   icon: <SiLeetcode />,
+  //   title: "LeetCode",
+  //   ariaLabel: "View LeetCode Profile",
+  // },
   {
     name: "Medium",
     url: "https://medium.com/@shakeef.rakin321",

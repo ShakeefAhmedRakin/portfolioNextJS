@@ -65,7 +65,9 @@ export default function Hero() {
               <Image
                 src={"/hero.jpg"}
                 draggable={false}
+                sizes="1000"
                 fill={true}
+                title={`${personalData.Person.FullName}`}
                 alt="photo"
                 className="aspect-square z-10 border border-primary shadow-primary shadow-md object-cover rounded-full"
               ></Image>

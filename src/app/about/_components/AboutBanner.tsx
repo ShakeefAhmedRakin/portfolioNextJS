@@ -15,6 +15,7 @@ export default function AboutBanner() {
         <div className="relative rounded-lg border-4 border-primary aspect-square w-full max-w-[230px] border-white">
           <Image
             src={"/hero.jpg"}
+            title={`${personalData.Person.FullName}`}
             fill={true}
             priority={true}
             draggable={false}

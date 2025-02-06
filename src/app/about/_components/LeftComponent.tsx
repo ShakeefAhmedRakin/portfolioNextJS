@@ -7,8 +7,8 @@ export default function LeftComponent() {
     <div className="space-y-5">
       {/* PERSONAL INFO */}
       <PersonalInformation />
-      <Skills />
       <Education />
+      <Skills />
     </div>
   );
 }

@@ -11,7 +11,9 @@ export default function AchievementsCards() {
             <Image
               key={index}
               src={achievement.photo}
-              fill
+              fill={true}
+              sizes="100"
+              title={`Logo for ${achievement.eventName}`}
               draggable={false}
               alt={achievement.title}
             ></Image>

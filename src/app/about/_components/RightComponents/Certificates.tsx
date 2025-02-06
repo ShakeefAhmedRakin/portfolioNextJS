@@ -20,6 +20,7 @@ export default function Certificates() {
                 alt={certificate.organizationLink}
                 width={32}
                 height={32}
+                title={`Logo for ${certificate.organization}`}
                 className="rounded-lg h-fit"
               />
               <div className="flex-1">
@@ -32,17 +33,19 @@ export default function Certificates() {
                       year: "numeric",
                     })}
                   </p>
-                  <Link
-                    className="font-heading font-medium text-xs md:text-sm hover:underline w-fit"
-                    href={certificate.linkCertificate}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {certificate.title}
-                  </Link>
-                  <h4 className="text-[10px] md:text-xs font-body text-text mt-1">
-                    {certificate.organization}
+                  <h4>
+                    <Link
+                      className="font-heading font-medium text-xs md:text-sm hover:underline w-fit"
+                      href={certificate.linkCertificate}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {certificate.title}
+                    </Link>
                   </h4>
+                  <h5 className="text-[10px] md:text-xs font-body text-text mt-1">
+                    {certificate.organization}
+                  </h5>
                   <hr className="my-2 max-w-xs" />
                   <p className="font-body text-[10px] md:text-xs font-light">
                     {certificate.description}

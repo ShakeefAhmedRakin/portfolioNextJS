@@ -15,8 +15,8 @@ export default function Footer() {
               <Logo isFooter />
             </div>
             <p className="text-white font-body text-xs md:text-base text-center md:text-left">
-              Full Stack Engineer | Dhaka, Bangladesh <br /> Web Apps & AI
-              Solutions
+              {personalData.Person.Title} | {personalData.Person.Location}{" "}
+              <br /> Web Apps & AI Solutions
             </p>
             <nav aria-label="Social Links" className="flex space-x-6">
               {socialLinks.map((link, index) => (

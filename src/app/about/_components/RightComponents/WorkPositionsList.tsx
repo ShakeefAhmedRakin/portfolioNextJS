@@ -61,6 +61,7 @@ export default function WorkPositionsList({
                     <Image
                       src={item.companyLogo}
                       alt={`${item.company}-logo`}
+                      title={`${item.company}-logo`}
                       height={22}
                       width={22}
                       className="rounded aspect-square object-scale-down"
@@ -102,6 +103,7 @@ export default function WorkPositionsList({
                           <Image
                             src={project.logo}
                             alt={`Logo for ${project.name}`}
+                            title={`Logo for ${project.name}`}
                             width={22}
                             height={22}
                             className="rounded aspect-square object-scale-down"

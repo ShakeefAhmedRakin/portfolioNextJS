@@ -1,62 +1,191 @@
 [
   {
-    "title": "TypeScript",
-    "logo": "/skillLogos/typescript.png"
+    "category": "Programming Languages",
+    "skills": [
+      {
+        "title": "JavaScript",
+        "logo": "/skillLogos/javascript.png"
+      },
+      {
+        "title": "TypeScript",
+        "logo": "/skillLogos/typescript.png"
+      },
+      {
+        "title": "Python",
+        "logo": "/skillLogos/python.png"
+      },
+      {
+        "title": "C#",
+        "logo": "/skillLogos/csharp.png"
+      }
+    ]
   },
   {
-    "title": "Python",
-    "logo": "/skillLogos/python.png"
+    "category": "Frontend Development",
+    "skills": [
+      {
+        "title": "HTML5",
+        "logo": "/skillLogos/html.png"
+      },
+      {
+        "title": "CSS3",
+        "logo": "/skillLogos/css.png"
+      },
+      {
+        "title": "Tailwind",
+        "logo": "/skillLogos/tailwind.png"
+      },
+      {
+        "title": "Bootstrap",
+        "logo": "/skillLogos/bootstrap.png"
+      },
+      {
+        "title": "MUI",
+        "logo": "/skillLogos/mui.png"
+      },
+      {
+        "title": "ShadCN UI",
+        "logo": "/skillLogos/shadcn.png"
+      },
+      {
+        "title": "React.js",
+        "logo": "/skillLogos/react.png"
+      },
+      {
+        "title": "Next.js",
+        "logo": "/skillLogos/nextjs.png"
+      },
+      {
+        "title": "Axios",
+        "logo": "/skillLogos/axios.png"
+      },
+      {
+        "title": "TanStack Query",
+        "logo": "/skillLogos/tanstack.png"
+      }
+    ]
   },
   {
-    "title": "C#",
-    "logo": "/skillLogos/csharp.png"
+    "category": "Backend Development",
+    "skills": [
+      {
+        "title": "Node.js",
+        "logo": "/skillLogos/nodejs.png"
+      },
+      {
+        "title": "Express.js",
+        "logo": "/skillLogos/expressjs.png"
+      },
+      {
+        "title": "MongoDB",
+        "logo": "/skillLogos/mongo.png"
+      },
+      {
+        "title": "Mongoose",
+        "logo": "/skillLogos/mongoose.png"
+      },
+      {
+        "title": "MySQL",
+        "logo": "/skillLogos/mysql.png"
+      },
+      {
+        "title": "JWT",
+        "logo": "/skillLogos/jwt.svg"
+      },
+      {
+        "title": "Supabase",
+        "logo": "/skillLogos/supabase.png"
+      },
+      {
+        "title": "Firebase",
+        "logo": "/skillLogos/firebase.png"
+      },
+      {
+        "title": "Stripe",
+        "logo": "/skillLogos/stripe.png"
+      },
+      {
+        "title": "Lemon Squeezy",
+        "logo": "/skillLogos/lemon.png"
+      },
+      {
+        "title": "FastAPI",
+        "logo": "/skillLogos/fastapi.png"
+      }
+    ]
   },
   {
-    "title": "Next.js",
-    "logo": "/skillLogos/nextjs.png"
+    "category": "Development Tools & Hosting",
+    "skills": [
+      {
+        "title": "Firebase Hosting",
+        "logo": "/skillLogos/firebase.png"
+      },
+      {
+        "title": "Vercel",
+        "logo": "/skillLogos/vercel.png"
+      },
+      {
+        "title": "Netlify",
+        "logo": "/skillLogos/netlify.png"
+      },
+      {
+        "title": "VS Code",
+        "logo": "/skillLogos/vsc.png"
+      },
+      {
+        "title": "VS",
+        "logo": "/skillLogos/vs.png"
+      }
+    ]
   },
   {
-    "title": "Firebase",
-    "logo": "/skillLogos/firebase.png"
-  },
-  {
-    "title": "Supabase",
-    "logo": "/skillLogos/supabase.png"
-  },
-  {
-    "title": "MUI",
-    "logo": "/skillLogos/mui.png"
-  },
-  {
-    "title": "ShadCN UI",
-    "logo": "/skillLogos/shadcn.png"
-  },
-  {
-    "title": "Stripe",
-    "logo": "/skillLogos/stripe.png"
-  },
-  {
-    "title": "Lemon Squeezy",
-    "logo": "/skillLogos/lemon.png"
-  },
-  {
-    "title": "Express.js",
-    "logo": "/skillLogos/expressjs.png"
-  },
-  {
-    "title": "Node.js",
-    "logo": "/skillLogos/nodejs.png"
-  },
-  {
-    "title": "MongoDB",
-    "logo": "/skillLogos/mongo.png"
-  },
-  {
-    "title": "Mongoose",
-    "logo": "/skillLogos/mongoose.png"
-  },
-  {
-    "title": "MySQL",
-    "logo": "/skillLogos/mysql.png"
+    "category": "Machine Learning & AI",
+    "skills": [
+      {
+        "title": "Numpy",
+        "logo": "/skillLogos/numpy.png"
+      },
+      {
+        "title": "Scikit Learn",
+        "logo": "/skillLogos/scikit.png"
+      },
+      {
+        "title": "Pandas",
+        "logo": "/skillLogos/pandas.png"
+      },
+      {
+        "title": "Matplotlib",
+        "logo": "/skillLogos/matplot.png"
+      },
+      {
+        "title": "Seaborn",
+        "logo": "/skillLogos/seaborn.png"
+      },
+      {
+        "title": "OpenCV",
+        "logo": "/skillLogos/opencv.png"
+      },
+      {
+        "title": "Pytorch",
+        "logo": "/skillLogos/pytorch.png"
+      },
+      {
+        "title": "TensorFlow",
+        "logo": "/skillLogos/tensorflow.png"
+      },
+      {
+        "title": "Larq",
+        "logo": "/skillLogos/larq.png"
+      },
+      {
+        "title": "Mediapipe",
+        "logo": "/skillLogos/mediapipe.png"
+      },
+      {
+        "title": "Streamlit",
+        "logo": "/skillLogos/streamlit.png"
+      }
+    ]
   }
 ]
