@@ -12,7 +12,7 @@
       "alt": "Blood Bridge - Cover Photo"
     },
     "date": "2023-11-25",
-    "tags": ["React", "Express", "Node.js", "MongoDB", "Firebase"],
+    "tags": ["MongoDB", "Express.js", "React.js", "Node.js", "Firebase"],
     "summary": "This project is a web application designed to connect blood donors, recipients, and volunteers. It includes features like user role management, donation request handling, and content creation. Donors can manage profiles and donation requests, while volunteers can update donation statuses and manage requests. Admins have full control over user accounts, donation management, and blog content. The platform also supports secure payments through Stripe for funding donations. It is built with a responsive design, ensuring usability across mobile, tablet, and desktop devices. The application leverages Firebase authentication, JWT tokens for security, and integrates with MongoDB for efficient data management.",
     "githubLinks": [
       {
@@ -26,7 +26,7 @@
     ],
     "demoLinks": [
       {
-        "label": "View Website",
+        "label": "Website",
         "url": "https://bloodbridge-140aa.web.app/"
       }
     ],
@@ -305,7 +305,7 @@
       "alt": "TopShelf - Cover Photo"
     },
     "date": "2023-11-09",
-    "tags": ["React", "Express", "Node.js", "MongoDB", "Firebase"],
+    "tags": ["MongoDB", "Express.js", "React.js", "Node.js", "Firebase"],
     "summary": "TopShelf is a user-centric library management system designed to allow users to browse, borrow, and return books easily. The platform features a responsive design, category-based book display, borrowing and return system, and robust user authentication with Firebase. It integrates JWT tokens for secure operations and allows users to download books as PDFs. TopShelf ensures a seamless experience across devices with key features focused on usability and security.",
     "githubLinks": [
       {
@@ -319,7 +319,7 @@
     ],
     "demoLinks": [
       {
-        "label": "View Website",
+        "label": "Website",
         "url": "https://topshelf-79995.web.app/"
       }
     ],
@@ -479,6 +479,645 @@
         "hasTitle": true,
         "title": "Final Conclusion",
         "content": "Developing TopShelf was an excellent opportunity to apply and refine my full-stack development skills. I gained extensive experience in frontend and backend development, working with technologies like React, Node.js, Express, and MongoDB. Implementing JWT authentication, real-time data updates, and PDF generation allowed me to deepen my understanding of web security, data management, and user interface development. Each feature presented its own challenges, and solving these helped me grow as a developer."
+      }
+    ]
+  },
+  {
+    "id": "compharbor",
+    "isFeatured": true,
+    "isWorkInProgress": false,
+    "type": "Web Development",
+    "title": "Comp Harbor",
+    "subtitle": "E-Commerce Platform",
+    "coverPhoto": {
+      "caption": "Comp Harbor - Site Overview",
+      "url": "/projects/web/compharbor/cover.png",
+      "alt": "Comp Harbor - Cover Photo"
+    },
+    "date": "2023-10-21",
+    "tags": ["MongoDB", "Express.js", "React.js", "Node.js", "Firebase"],
+    "summary": "Computer Harbor is a tech e-commerce platform developed to enhance skills in building a MongoDB-Express.js backend and integrating it with a React frontend. The project focuses on implementing RESTful APIs for product and cart management, handling authentication with Firebase, and ensuring efficient data flow between the client and server. It also explores private routes, state management, and responsive UI design, with deployment on Vercel for the backend and Firebase for the frontend. Through this project, key concepts in full-stack development were reinforced, particularly in backend structuring.",
+    "githubLinks": [
+      {
+        "label": "Frontend",
+        "url": "https://github.com/ShakeefAhmedRakin/CompHarbor-client"
+      },
+      {
+        "label": "Backend",
+        "url": "https://github.com/ShakeefAhmedRakin/CompHarbor-server"
+      }
+    ],
+    "demoLinks": [
+      {
+        "label": "Website",
+        "url": "https://bytebrilliance-5c61e.web.app/"
+      }
+    ],
+    "coreFeatures": {
+      "featureList": [
+        {
+          "title": "Product Management",
+          "points": [
+            "Brand-centric homepage displaying brand images and names for quick navigation.",
+            "Private route for adding and updating products with image uploads and category details.",
+            "Detailed product pages displaying product information with add-to-cart functionality."
+          ]
+        },
+        {
+          "title": "Cart Functionalities",
+          "points": [
+            "User-specific cart where each user can independently add or remove products.",
+            "Private route for viewing and managing the cart, with options to delete unwanted items.",
+            "Global product information synchronization ensuring cart updates reflect product changes."
+          ]
+        },
+        {
+          "title": "Authentication and Security",
+          "points": [
+            "Firebase authentication with email/password login and Google sign-in.",
+            "Error handling for registration and login forms with relevant toasts for feedback.",
+            "Dynamic redirects after login, registration, and product updates for a seamless user experience."
+          ]
+        },
+        {
+          "title": "Additional Features",
+          "points": [
+            "Responsive design ensuring compatibility across desktop and mobile devices.",
+            "Dark/light theme toggle implemented using Tailwind dark classes.",
+            "Dynamic page redirections based on user actions, such as login, product addition, or updates."
+          ]
+        },
+        {
+          "title": "Backend and Data Management",
+          "points": [
+            "Node.js and Express.js backend with MongoDB for storing product and cart data.",
+            "Data persistence with real-time updates reflected across all relevant sections."
+          ]
+        }
+      ]
+    },
+    "techStack": [
+      {
+        "title": "Frontend",
+        "techList": [
+          "React.js",
+          "Tailwind CSS",
+          "DaisyUI",
+          "React Icons",
+          "React Router",
+          "Firebase",
+          "Sonner",
+          "SwiperJS",
+          "react-rating"
+        ]
+      },
+      {
+        "title": "Backend",
+        "techList": ["Node.js", "Express.js", "MongoDB"]
+      },
+      {
+        "title": "Deployment",
+        "techList": ["Vercel", "Firebase Hosting"]
+      }
+    ],
+    "overviewSections": [
+      {
+        "type": "text",
+        "hasTitle": true,
+        "title": "Introduction & Purpose",
+        "content": "Computer Harbor is a tech e-commerce platform designed to manage and display products from various brands. The primary objective was to develop a scalable system that integrates a MongoDB-Express backend with a React frontend. This project focused on implementing core functionalities such as product management, authentication, cart operations, and dynamic data synchronization while ensuring security and performance optimizations."
+      },
+      {
+        "type": "text-image",
+        "hasTitle": true,
+        "title": "Brand-Centric Product Display",
+        "imageOnLeft": false,
+        "content": {
+          "text": "The homepage is structured to display brand names and images, enabling users to browse products by brand. This required designing an efficient database schema in MongoDB to associate products with specific brands and implementing React state management for seamless UI updates. Advertisements were integrated to highlight featured brands dynamically.",
+          "image": {
+            "caption": "Brand-Based Navigation",
+            "url": "/projects/web/compharbor/gallery1.png",
+            "alt": "Computer Harbor - Brand Display"
+          }
+        }
+      },
+      {
+        "type": "image",
+        "hasTitle": true,
+        "title": "Product Management System",
+        "content": {
+          "image": {
+            "caption": "Product Add/Update Interface",
+            "url": "/projects/web/compharbor/gallery2.png",
+            "alt": "Computer Harbor - Product Management"
+          }
+        }
+      },
+      {
+        "type": "text",
+        "hasTitle": false,
+        "title": "",
+        "content": "Users can add and update product details through a private route with a structured form. Product data is stored in MongoDB, ensuring persistence. The backend, built with Node.js and Express, handles image uploads and validates input before updating the database. The challenge was ensuring real-time updates across the UI after any modification."
+      },
+      {
+        "type": "list",
+        "hasTitle": false,
+        "title": "",
+        "content": [
+          "Product additions trigger real-time updates, ensuring immediate visibility across relevant sections.",
+          "Backend routes handle CRUD operations with Express.js while ensuring data validation and error handling.",
+          "Product details are dynamically fetched and displayed using React Router and state management."
+        ]
+      },
+      {
+        "type": "text-image",
+        "hasTitle": true,
+        "title": "Cart System with User-Specific Data",
+        "imageOnLeft": false,
+        "content": {
+          "text": "Each authenticated user has a dedicated cart where products can be added or removed. Cart data is securely stored in MongoDB and associated with the user's ID. The backend ensures data persistence, while React manages state updates in real-time. This feature required optimizing database queries to handle multiple concurrent user operations efficiently.",
+          "image": {
+            "caption": "User Cart Management",
+            "url": "/projects/web/compharbor/gallery3.png",
+            "alt": "Computer Harbor - Cart System"
+          }
+        }
+      },
+      {
+        "type": "text",
+        "hasTitle": true,
+        "title": "Authentication and Security",
+        "content": "Firebase authentication is integrated for secure user login and registration. Users can authenticate using email/password or Google login. Error handling mechanisms provide feedback on login failures, invalid credentials, and registration issues."
+      },
+      {
+        "type": "image",
+        "hasTitle": false,
+        "title": "",
+        "content": {
+          "image": {
+            "caption": "Authentication System",
+            "url": "/projects/web/compharbor/gallery4.png",
+            "alt": "Computer Harbor - Login System"
+          }
+        }
+      },
+      {
+        "type": "text",
+        "hasTitle": true,
+        "title": "Responsive UI and Theming",
+        "content": "The platform features a responsive design built with Tailwind CSS and DaisyUI, ensuring usability across different devices. A theme toggle allows users to switch between light and dark modes, implemented using Tailwind dark mode classes. React components dynamically adjust styling based on the selected theme."
+      },
+      {
+        "type": "text",
+        "hasTitle": true,
+        "title": "Conclusion",
+        "content": "Developing Computer Harbor provided hands-on experience in full-stack development with React, Node.js, Express, and MongoDB. The project emphasized data synchronization, real-time UI updates, authentication security, and efficient database structuring. Implementing features like user-specific carts and Firebase authentication strengthened backend integration skills, while responsive design and theming enhanced frontend capabilities."
+      }
+    ]
+  },
+  {
+    "id": "offensive-tweet-classifier",
+    "isFeatured": true,
+    "isWorkInProgress": false,
+    "type": "AI & Machine Learning",
+    "title": "Offensive Tweet Classifier",
+    "subtitle": "Offensive Tweet Detection and Categorization",
+    "coverPhoto": {
+      "caption": "Offensive Tweet Classifier - Cover Photo",
+      "url": "/projects/machinelearning/offensive/cover.png",
+      "alt": "Offensive Tweet Classifier - Cover Photo"
+    },
+    "date": "2023-8-30",
+    "tags": [
+      "NLP",
+      "Logistic Regression",
+      "TF-IDF",
+      "Classification",
+      "Scikit-learn"
+    ],
+    "summary": "This project, developed for the Natural Language Processing (CSE440) course at BRAC University, focuses on detecting and categorizing offensive tweets using machine learning. Utilizing the Offensive Language Identification Dataset (OLID), I trained a logistic regression model with TF-IDF vectorization to classify tweets as offensive or non-offensive and further categorize them into targeted insults, threats, or untargeted profanity. I implemented data preprocessing techniques such as tokenization, lemmatization, and mention/symbol removal to enhance model performance. The model was evaluated using classification reports and confusion matrices. Through this project, I gained hands-on experience in text preprocessing, feature engineering, model training, and evaluation in NLP.",
+    "githubLinks": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/ShakeefAhmedRakin/Offensive-Tweet-Classifier"
+      }
+    ],
+    "demoLinks": null,
+
+    "coreFeatures": {
+      "featureList": [
+        {
+          "title": "Text Preprocessing",
+          "points": [
+            "Dropped the 'id' column to remove unnecessary data.",
+            "Handled missing values by filling NULLs in the category column and removing rows with missing tweet values.",
+            "Converted all text to lowercase for uniform processing.",
+            "Removed '@user' mentions to anonymize data and reduce noise.",
+            "Eliminated non-alphanumeric characters and symbols.",
+            "Tokenized text into words using NLTK's word_tokenize().",
+            "Applied lemmatization using NLTK's WordNetLemmatizer for text normalization."
+          ]
+        },
+        {
+          "title": "Feature Extraction",
+          "points": [
+            "Utilized TfidfVectorizer from sklearn to convert preprocessed text into numerical feature vectors.",
+            "Applied a trained TF-IDF vectorizer to transform new text data for model input."
+          ]
+        },
+        {
+          "title": "Model Training",
+          "points": [
+            "Implemented Logistic Regression for classification tasks.",
+            "Trained two separate models: one for offensive detection and another for category detection.",
+            "Configured Logistic Regression with max_iter=1000 to ensure proper model convergence."
+          ]
+        },
+        {
+          "title": "Model Evaluation",
+          "points": [
+            "Used classification reports to analyze precision, recall, and F1-score for each class.",
+            "Generated confusion matrices to evaluate model performance on test data.",
+            "Examined true positives, true negatives, false positives, and false negatives to assess classification accuracy."
+          ]
+        }
+      ]
+    },
+
+    "techStack": [
+      {
+        "title": "Stack",
+        "techList": [
+          "Pandas",
+          "Scikit-Learn",
+          "NLTK",
+          "TF-IDF Vectorizer",
+          "Logistic Regression"
+        ]
+      }
+    ],
+    "overviewSections": [
+      {
+        "type": "text",
+        "hasTitle": true,
+        "title": "Introduction & Purpose",
+        "content": "This project focuses on building a machine learning model to classify tweets as offensive or non-offensive and categorize offensive tweets into specific types. The goal is to create a model that can identify offensive content on social media platforms and categorize it."
+      },
+      {
+        "type": "text",
+        "hasTitle": true,
+        "title": "Dataset",
+        "content": "The dataset used is the Offensive Language Identification Dataset (OLID) v1.0, introduced in \"Predicting the Type and Target of Offensive Posts in Social Media\" by Zampieri et al. (2019). It contains multiple levels of classification: Level A (Offensive vs. Not Offensive), Level B (Targeted Insults vs. Untargeted), and Level C (Target type: Individual, Group, Other)."
+      },
+      {
+        "type": "image",
+        "hasTitle": false,
+        "title": null,
+        "content": {
+          "image": {
+            "caption": "Dataset",
+            "url": "/projects/machinelearning/offensive/gallery3.png",
+            "alt": "Dataset"
+          }
+        }
+      },
+      {
+        "type": "text",
+        "hasTitle": true,
+        "title": "Preprocessing",
+        "content": "The text data undergoes the following preprocessing steps:"
+      },
+      {
+        "type": "list",
+        "hasTitle": false,
+        "title": null,
+        "content": [
+          "Column Removal: Dropped the 'id' column.",
+          "Missing Value Handling: Filled NULL values in the category column with 'NULL' and removed rows with missing tweet values.",
+          "Lowercasing: Converted all text to lowercase.",
+          "Mention Removal: Removed '@user' mentions.",
+          "Symbol Removal: Removed non-alphanumeric characters and symbols.",
+          "Tokenization: Used NLTK's word_tokenize() function.",
+          "Lemmatization: Applied NLTK's WordNetLemmatizer.",
+          "Vectorization: Converted text into TF-IDF features using sklearn's TfidfVectorizer."
+        ]
+      },
+      {
+        "type": "text",
+        "hasTitle": true,
+        "title": "Model Training",
+        "content": "The model is trained using logistic regression.\n- Two instances of logistic regression are used for offensive detection and category detection.\n- Parameters: max_iter=1000 to ensure sufficient iterations for optimization."
+      },
+      {
+        "type": "text",
+        "hasTitle": true,
+        "title": "Model Evaluation",
+        "content": "The trained models are evaluated using classification reports and confusion matrices.\n- The classification report provides precision, recall, and F1-score for each class.\n- The confusion matrix details true positives, true negatives, false positives, and false negatives."
+      },
+      {
+        "type": "image",
+        "hasTitle": false,
+        "title": null,
+        "content": {
+          "image": {
+            "caption": "Confusion Matrix - Offensive",
+            "url": "/projects/machinelearning/offensive/gallery1.png",
+            "alt": "Confusion Matrix - Offensive"
+          }
+        }
+      },
+      {
+        "type": "image",
+        "hasTitle": false,
+        "title": null,
+        "content": {
+          "image": {
+            "caption": "Confusion Matrix - Classification",
+            "url": "/projects/machinelearning/offensive/gallery2.png",
+            "alt": "Confusion Matrix - Classification"
+          }
+        }
+      },
+      {
+        "type": "list",
+        "hasTitle": true,
+        "title": "References",
+        "content": [
+          "Zampieri, M., Malmasi, S., Nakov, P., Rosenthal, S., Farra, N., & Kumar, R. (2019). Predicting the Type and Target of Offensive Posts in Social Media. Proceedings of NAACL.",
+          "Zampieri, M., Malmasi, S., Nakov, P., Rosenthal, S., Farra, N., & Kumar, R. (2019). SemEval-2019 Task 6: Identifying and Categorizing Offensive Language in Social Media (OffensEval). Proceedings of The 13th International Workshop on Semantic Evaluation (SemEval)."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "task-logger",
+    "isFeatured": false,
+    "isWorkInProgress": false,
+    "type": "Web Development",
+    "title": "Task Logger",
+    "subtitle": "Interactive Task Manager",
+    "coverPhoto": {
+      "caption": "Task Logger - Cover Photo",
+      "url": "/projects/web/tasklogger/cover.png",
+      "alt": "Task Logger - Cover Photo"
+    },
+    "date": "2023-12-22",
+    "tags": ["MongoDB", "Express.js", "React.js", "Node.js", "Firebase"],
+    "summary": "Task Logger is a drag-and-drop task management web application built with MongoDB, Express.js, React, Node.js (MERN stack), and Firebase, focusing on RESTful API development, authentication, and efficient data flow. It features secure authentication with Firebase, protected private routes, and real-time task organization with drag-and-drop functionality. The backend manages task storage and updates in MongoDB, while the React is used for the frontend. The backend is deployed on Vercel, while the frontend is hosted on Firebase, ensuring scalability and seamless client-server interaction. This project reinforces key full-stack development concepts, including API structuring, authentication workflows, and backend architecture.",
+    "githubLinks": [
+      {
+        "label": "Frontend",
+        "url": "https://github.com/ShakeefAhmedRakin/TaskLogger-client"
+      },
+      {
+        "label": "Backend",
+        "url": "https://github.com/ShakeefAhmedRakin/TaskLogger-server"
+      }
+    ],
+    "demoLinks": [
+      {
+        "label": "Website",
+        "url": "https://tasklogger-4b2b9.web.app/"
+      }
+    ],
+    "coreFeatures": {
+      "featureList": [
+        {
+          "title": "Task Management",
+          "points": [
+            "Drag-and-drop functionality for organizing tasks efficiently.",
+            "Task creation, editing, and deletion with real-time updates.",
+            "Categorization of tasks for better workflow management."
+          ]
+        },
+        {
+          "title": "User Authentication and Security",
+          "points": [
+            "Firebase authentication for secure login and registration.",
+            "Protected routes implemented using React Router DOM.",
+            "Error handling for authentication processes to ensure a smooth user experience."
+          ]
+        },
+        {
+          "title": "Database and API Integration",
+          "points": [
+            "MongoDB as the primary database for task storage and retrieval.",
+            "Express.js RESTful API for handling task-related CRUD operations.",
+            "Axios for efficient data fetching and communication between client and server."
+          ]
+        },
+        {
+          "title": "State Management and UI Enhancements",
+          "points": [
+            "React Query for managing API calls and caching data.",
+            "React Hook Form for efficient form handling and validation.",
+            "Real-time animations using AOS for a smooth user experience.",
+            "Tailwind CSS and DaisyUI for responsive and modern UI design."
+          ]
+        }
+      ]
+    },
+
+    "techStack": [
+      {
+        "title": "Frontend",
+        "techList": [
+          "React.js",
+          "Vite",
+          "Tailwind CSS",
+          "DaisyUI",
+          "React Router DOM",
+          "React DnD",
+          "React Hook Form",
+          "TanStack React Query"
+        ]
+      },
+      {
+        "title": "Backend",
+        "techList": [
+          "Node.js",
+          "Express.js",
+          "MongoDB",
+          "Cors",
+          "Dotenv",
+          "Axios"
+        ]
+      },
+      {
+        "title": "Hosting & Deployment",
+        "techList": ["Vercel (Backend)", "Firebase (Frontend & Authentication)"]
+      }
+    ],
+    "overviewSections": [
+      {
+        "type": "text",
+        "hasTitle": true,
+        "title": "Introduction & Purpose",
+        "content": "Task Logger is a drag-and-drop task management application designed to enhance productivity by enabling users to organize and manage their tasks efficiently. It provides a seamless full-stack experience using React for the frontend, Express and MongoDB for the backend, and Firebase for authentication."
+      },
+      {
+        "type": "text",
+        "hasTitle": true,
+        "title": "Features",
+        "content": "Task Logger includes features such as user authentication, task categorization, real-time updates, and private routes for secure access. The drag-and-drop functionality allows intuitive task reordering and prioritization."
+      },
+      {
+        "type": "image",
+        "hasTitle": false,
+        "title": null,
+        "content": {
+          "image": {
+            "caption": "Task Logger UI",
+            "url": "/projects/web/tasklogger/gallery1.png",
+            "alt": "Task Logger Interface"
+          }
+        }
+      },
+      {
+        "type": "text",
+        "hasTitle": true,
+        "title": "Backend & API",
+        "content": "The backend is built using Node.js and Express.js, with MongoDB as the database. It provides RESTful APIs for task management, authentication, and user data handling. CORS and dotenv are used for security and environment configuration."
+      },
+      {
+        "type": "text",
+        "hasTitle": true,
+        "title": "Frontend Implementation",
+        "content": "The frontend is built with React and Vite, utilizing Tailwind CSS and DaisyUI for a responsive UI. React Router DOM manages private and protected routes, while TanStack Query handles data fetching and state synchronization."
+      },
+      {
+        "type": "list",
+        "hasTitle": true,
+        "title": "Key Technologies",
+        "content": [
+          "React with Vite for fast frontend development.",
+          "React DnD for drag-and-drop functionality.",
+          "Firebase Authentication for secure user login.",
+          "MongoDB with Express.js for database and API management.",
+          "React Query for efficient server-state management."
+        ]
+      },
+      {
+        "type": "text",
+        "hasTitle": true,
+        "title": "Hosting & Deployment",
+        "content": "The backend is hosted on Vercel, while the frontend is deployed on Firebase, ensuring scalability and fast access."
+      }
+    ]
+  },
+  {
+    "id": "agri-smart",
+    "isFeatured": true,
+    "isWorkInProgress": false,
+    "type": "Web Development",
+    "title": "AgriSmart",
+    "subtitle": "Farm Management Website",
+    "coverPhoto": {
+      "caption": "AgriSmart - Cover Photo",
+      "url": "/projects/web/agrismart/cover.png",
+      "alt": "AgriSmart - Cover Photo"
+    },
+    "date": "2024-03-24",
+    "tags": [
+      "Gemini",
+      "MongoDB",
+      "Express.js",
+      "React.js",
+      "Node.js",
+      "Firebase"
+    ],
+    "summary": "AgriSmart is a full-stack web application developed for a hackathon, designed to empower farmers with AI-driven assistance and comprehensive farm management tools. It features an AI assistant powered by Gemini AI to answer farming-related queries, alongside a community guide and forum for knowledge sharing. The platform includes a dashboard for tracking seed capacity, equipment status, crop and soil health monitoring, and storage capacities. While the implementation of cameras and sensors was not physically realized, the demo showcased how farmers could leverage smart technology for real-time farm insights, tool tracking, and maintenance scheduling.",
+    "githubLinks": [
+      {
+        "label": "Frontend",
+        "url": "https://github.com/ShakeefAhmedRakin/AgriSmart-frontend"
+      },
+      {
+        "label": "Backend",
+        "url": "https://github.com/ShakeefAhmedRakin/AgriSmart-backend"
+      }
+    ],
+    "demoLinks": [
+      {
+        "label": "Website",
+        "url": "https://agrismart-a3c49.web.app"
+      }
+    ],
+    "coreFeatures": {
+      "featureList": [
+        {
+          "title": "AI-Powered Farming Assistance",
+          "points": [
+            "Integration of Gemini AI for natural language processing and real-time query resolution.",
+            "RESTful API endpoints for AI-based responses to farming-related queries.",
+            "Efficient state management for seamless user interactions with the AI assistant."
+          ]
+        },
+        {
+          "title": "Community Engagement and Knowledge Sharing",
+          "points": [
+            "Implementation of a forum using MongoDB and Express.js for user discussions.",
+            "Authentication and authorization using Firebase for secure user interactions.",
+            "Real-time data updates with React Query for smooth forum engagement."
+          ]
+        },
+        {
+          "title": "Farm Management Dashboard",
+          "points": [
+            "Dynamic UI built with React, Tailwind CSS, and DaisyUI for responsive design.",
+            "Database architecture using MongoDB to store seed capacity, equipment status, and crop monitoring data.",
+            "Express.js API to handle CRUD operations for managing farming resources."
+          ]
+        },
+        {
+          "title": "Smart Farming Integrations",
+          "points": [
+            "Conceptual IoT integration for tracking soil and crop health with sensor data processing.",
+            "Potential use of WebSockets for real-time data streaming from sensors and cameras.",
+            "Scalable architecture for future IoT and machine learning model deployment."
+          ]
+        }
+      ]
+    },
+    "techStack": [
+      {
+        "title": "Frontend",
+        "techList": [
+          "React.js",
+          "Vite",
+          "Tailwind CSS",
+          "DaisyUI",
+          "React Router DOM",
+          "React Hook Form",
+          "TanStack React Query",
+          "Firebase"
+        ]
+      },
+      {
+        "title": "Backend",
+        "techList": [
+          "Node.js",
+          "Express.js",
+          "MongoDB",
+          "Cors",
+          "Dotenv",
+          "Axios",
+          "Gemini AI",
+          "Nodemon"
+        ]
+      },
+      {
+        "title": "Hosting & Deployment",
+        "techList": ["Vercel (Backend)", "Firebase (Frontend & Authentication)"]
+      }
+    ],
+
+    "overviewSections": [
+      {
+        "type": "text",
+        "hasTitle": true,
+        "title": "Work-In-Progress Section",
+        "content": ""
       }
     ]
   }

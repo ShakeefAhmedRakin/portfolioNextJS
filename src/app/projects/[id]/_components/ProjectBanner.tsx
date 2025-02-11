@@ -67,7 +67,7 @@ export default function ProjectBanner({ projectId }: { projectId: string }) {
             project?.githubLinks.map((link) => (
               <ButtonTertiaryOutline
                 href={link.url}
-                ariaLabel={`View Code For ${link.label}`}
+                ariaLabel={`View ${link.label}`}
                 key={link.url}
                 className="w-full flex-1"
                 openInNewTab
@@ -81,7 +81,7 @@ export default function ProjectBanner({ projectId }: { projectId: string }) {
             project?.demoLinks.map((link) => (
               <ButtonTertiaryFilled
                 href={link.url}
-                ariaLabel={`View Code For ${link.label}`}
+                ariaLabel={`View ${link.label}`}
                 key={link.url}
                 className="w-full flex-1"
                 openInNewTab

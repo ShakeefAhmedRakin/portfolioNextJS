@@ -29,26 +29,32 @@ export default function ProjectsPage() {
 
         <div className="space-y-4 mt-4">
           {Object.keys(sortedAndGroupedProjects).map((type) => (
-            <section key={type} id={type} aria-labelledby={`${type}-heading`}>
-              <h3
-                id={`${type}-heading`}
-                title={type}
-                className="font-heading font-bold text-base md:text-xl lg:text-2xl text-primary"
+            <div key={type} id={type}>
+              <hr className="my-4" />
+              <section
+                aria-labelledby={`${type}-heading`}
+                className="flex flex-col md:flex-row gap-4"
               >
-                {type}
-              </h3>
-              <div className="bg-gradient-to-br from-primary to-secondary py-0.5 w-full  rounded-lg shadow shadow-primary mt-3 mb-4"></div>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2">
-                {sortedAndGroupedProjects[type]
-                  .sort(
-                    (a, b) =>
-                      new Date(b.date).getTime() - new Date(a.date).getTime()
-                  )
-                  .map((project) => (
-                    <ProjectCard key={project.id} project={project} />
-                  ))}
-              </div>
-            </section>
+                <h3
+                  id={`${type}-heading`}
+                  title={type}
+                  className="font-heading font-bold text-2xl md:text-xl text-text md:max-w-[220px] w-full"
+                >
+                  {type}
+                </h3>
+                {/* <div className="bg-gradient-to-br from-primary to-secondary py-0.5 w-full  rounded-lg shadow shadow-primary mt-3 mb-4"></div> */}
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-x-2 gap-y-4 flex-1">
+                  {sortedAndGroupedProjects[type]
+                    .sort(
+                      (a, b) =>
+                        new Date(b.date).getTime() - new Date(a.date).getTime()
+                    )
+                    .map((project) => (
+                      <ProjectCard key={project.id} project={project} />
+                    ))}
+                </div>
+              </section>
+            </div>
           ))}
         </div>
       </LayoutWrapper>
