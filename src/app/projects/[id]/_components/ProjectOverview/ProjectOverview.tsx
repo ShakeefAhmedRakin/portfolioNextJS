@@ -27,7 +27,7 @@ export default function ProjectOverview({ projectId }: { projectId: string }) {
                           <CaseText
                             key={index}
                             hasTitle={section?.hasTitle}
-                            title={section?.title}
+                            title={section?.title || ""}
                             content={section?.content as string}
                           />
                         );
@@ -37,8 +37,12 @@ export default function ProjectOverview({ projectId }: { projectId: string }) {
                           <CaseTextImage
                             key={index}
                             hasTitle={section?.hasTitle}
-                            title={section?.title}
-                            imageOnLeft={section?.imageOnLeft ?? false}
+                            title={section?.title || ""}
+                            imageOnLeft={
+                              "imageOnLeft" in section
+                                ? section?.imageOnLeft
+                                : false
+                            }
                             content={
                               typeof section.content === "object" &&
                               !Array.isArray(section.content)
@@ -53,7 +57,7 @@ export default function ProjectOverview({ projectId }: { projectId: string }) {
                           <CaseList
                             key={index}
                             hasTitle={section?.hasTitle}
-                            title={section?.title}
+                            title={section?.title || ""}
                             content={section?.content as string[]}
                           />
                         );
@@ -63,7 +67,7 @@ export default function ProjectOverview({ projectId }: { projectId: string }) {
                           <CaseImage
                             key={index}
                             hasTitle={section?.hasTitle}
-                            title={section?.title}
+                            title={section?.title || ""}
                             content={
                               typeof section.content === "object" &&
                               !Array.isArray(section.content)

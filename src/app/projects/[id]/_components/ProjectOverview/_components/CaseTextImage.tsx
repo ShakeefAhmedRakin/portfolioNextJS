@@ -13,7 +13,7 @@ interface CaseTextImageProps {
   };
   hasTitle: boolean;
   title?: string;
-  imageOnLeft: boolean;
+  imageOnLeft: boolean | undefined;
 }
 
 export default function CaseTextImage({
