@@ -1,0 +1,24 @@
+import { SectionWrapper } from "@/components/ui/wrappers";
+import { SectionHeader } from "@/components/ui/section-header";
+// import BackgroundGridOverlay from "@/components/ui/background-grid-overlay";
+import ResearchGrid from "./research-grid";
+
+export default function ResearchSection() {
+  return (
+    <SectionWrapper
+      innerClassName="space-y-4 relative"
+      // wrapperClassName="bg-gradient-to-b from-transparent via-secondary/25 to-transparent"
+    >
+      <SectionHeader
+        title="Some of my ongoing and published research"
+        description="Discover my latest research projects that I've collaborated with esteemed colleagues and institutions"
+        linkText="Learn More"
+        linkHref="/research"
+      />
+
+      <ResearchGrid />
+
+      {/* <BackgroundGridOverlay /> */}
+    </SectionWrapper>
+  );
+}
