@@ -28,6 +28,12 @@ const SiteMetadata = {
       pathParam: achievement.permalink,
     };
   },
+  PROJECTS: {
+    title: `Projects | ${SiteConfig.fullName}`,
+    description: `Explore all the completed and ongoing projects of ${SiteConfig.fullName}, a ${SiteConfig.title} from ${SiteConfig.location}.`,
+    openGraphImageUrl: `/images/og_images/projects.png`,
+    pathParam: `/projects`,
+  },
 
   // NOT FOUND METADATA
   NOT_FOUND: {

@@ -1,4 +1,5 @@
 import { defineCollection, s } from "velite";
+import { projectCategoriesEnum } from "./types/enums";
 
 export const achievements = defineCollection({
   name: "Achievements",
@@ -22,30 +23,6 @@ export const achievements = defineCollection({
     })),
 });
 
-export const projects = defineCollection({
-  name: "Projects",
-  pattern: "projects/**/*.mdx",
-  schema: s
-    .object({
-      slug: s.slug("projects"),
-      title: s.string().max(99),
-      subTitle: s.string().max(99),
-      category: s.string().max(99),
-      date: s.isodate(),
-      tags: s.array(s.string()).min(1),
-      thumbnail: s.image(),
-      isFeatured: s.boolean(),
-      isOngoing: s.boolean(),
-      workId: s.string().nullable(),
-      excerpt: s.excerpt(),
-      content: s.mdx(),
-    })
-    .transform((data) => ({
-      ...data,
-      permalink: `/projects/${data.slug}`,
-    })),
-});
-
 export const workExperiences = defineCollection({
   name: "Work",
   pattern: "workExperience/**/*.mdx",
@@ -60,4 +37,28 @@ export const workExperiences = defineCollection({
     endDate: s.isodate().nullable(),
     content: s.mdx(),
   }),
+});
+
+export const projects = defineCollection({
+  name: "Projects",
+  pattern: "projects/**/*.mdx",
+  schema: s
+    .object({
+      slug: s.slug("projects"),
+      title: s.string().max(99),
+      subTitle: s.string().max(99),
+      category: s.enum(projectCategoriesEnum),
+      date: s.isodate(),
+      tags: s.array(s.string()).min(1),
+      thumbnail: s.image(),
+      isFeatured: s.boolean(),
+      isOngoing: s.boolean(),
+      workId: s.string().nullable(),
+      excerpt: s.excerpt(),
+      content: s.mdx(),
+    })
+    .transform((data) => ({
+      ...data,
+      permalink: `/projects/${data.slug}`,
+    })),
 });
