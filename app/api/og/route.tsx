@@ -187,6 +187,11 @@ export async function GET(request: Request) {
           weight: 800,
         },
       ],
+      status: 200,
+      headers: {
+        "Content-Type": "image/png",
+        "Cache-Control": "public, immutable, max-age=31536000",
+      },
     },
   );
 }
