@@ -74,10 +74,12 @@ export default function HeroSection() {
       </div>
       <div className="animate-fade-up animate-ease animate-delay-800 animate-duration-[1500ms] animate-once relative flex min-w-[50%] justify-center">
         <Image
-          src={"/images/branding/main-hero.png"}
+          src={SiteConfig.heroImage.split(process.env.WEBSITE_URL ?? "")[1]}
           priority
           height={350}
           width={350}
+          blurDataURL={SiteConfig.heroImageBlurURL}
+          placeholder="blur"
           draggable={false}
           title={`${SiteConfig.fullName}`}
           alt={`${SiteConfig.fullName}-hero`}

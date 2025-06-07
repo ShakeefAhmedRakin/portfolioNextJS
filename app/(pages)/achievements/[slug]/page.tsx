@@ -60,6 +60,8 @@ export default async function AchievementDetails({
             <Image
               src={achievement.mainCover.src}
               priority
+              placeholder="blur"
+              blurDataURL={achievement.mainCover.blurDataURL}
               alt={achievement.title}
               title={achievement.title}
               fill

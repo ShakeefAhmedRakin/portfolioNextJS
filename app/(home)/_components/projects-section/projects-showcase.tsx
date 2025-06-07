@@ -72,6 +72,8 @@ export default function ProjectsShowcase() {
                   <Image
                     src={project.thumbnail.src}
                     fill
+                    placeholder="blur"
+                    blurDataURL={project.thumbnail.blurDataURL}
                     priority
                     draggable={false}
                     alt="test"

@@ -54,6 +54,8 @@ export default function ProjectCard({ project }: { project: Projects }) {
           <Image
             src={project.thumbnail.src}
             fill
+            placeholder="blur"
+            blurDataURL={project.thumbnail.blurDataURL}
             draggable={false}
             alt={project.title}
             title={project.title}

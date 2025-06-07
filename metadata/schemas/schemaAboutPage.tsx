@@ -12,10 +12,6 @@ export default function SetSchemaAboutPage() {
       {
         "@type": "ProfilePage",
         "@id": `${process.env.WEBSITE_URL}/#aboutpage`,
-        mainEntityOfPage: {
-          "@type": "WebPage",
-          "@id": `${process.env.WEBSITE_URL}/#aboutpage`,
-        },
         url: `${process.env.WEBSITE_URL}/about`,
         isPartOf: {
           "@id": websiteId,
@@ -43,8 +39,8 @@ export default function SetSchemaAboutPage() {
       {
         "@type": "ImageObject",
         "@id": `${process.env.WEBSITE_URL}/about/#about-main-image`,
-        contentUrl: `${process.env.WEBSITE_URL}/images/branding/about-1.png`,
-        url: `${process.env.WEBSITE_URL}/images/branding/about-1.png`,
+        contentUrl: SiteConfig.heroImageSecondary,
+        url: SiteConfig.heroImageSecondary,
         caption: `${SiteConfig.fullName} | ${SiteConfig.title}`,
         inLanguage: "en-US",
       },

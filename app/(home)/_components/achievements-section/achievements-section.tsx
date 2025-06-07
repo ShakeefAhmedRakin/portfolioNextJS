@@ -35,6 +35,8 @@ export default function AchievementsSection() {
               width={110}
               draggable={false}
               height={110}
+              placeholder="blur"
+              blurDataURL={achievement.awardCover.blurDataURL}
               alt={achievement.awardTitle}
               title={achievement.awardTitle}
             />
