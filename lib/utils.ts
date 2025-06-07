@@ -73,7 +73,7 @@ export function generateOgImageUrl({
   title?: string;
   subtitle?: string;
 }): string {
-  const baseUrl = "http://localhost:3000";
+  const baseUrl = process.env.WEBSITE_URL ?? "http://localhost:3000";
   const params = new URLSearchParams();
 
   if (title) params.set("title", title);
