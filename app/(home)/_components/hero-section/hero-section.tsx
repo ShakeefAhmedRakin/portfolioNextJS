@@ -75,6 +75,7 @@ export default function HeroSection() {
       <div className="animate-fade-up animate-ease animate-delay-800 animate-duration-[1500ms] animate-once relative flex min-w-[50%] justify-center">
         <Image
           src={"/images/branding/main-hero.png"}
+          priority
           height={350}
           width={350}
           draggable={false}

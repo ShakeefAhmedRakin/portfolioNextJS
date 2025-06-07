@@ -72,6 +72,7 @@ export default function ProjectsShowcase() {
                   <Image
                     src={project.thumbnail.src}
                     fill
+                    priority
                     draggable={false}
                     alt="test"
                     className="bg-secondary/50 rounded-2xl object-cover object-top duration-300 md:brightness-75 md:group-hover:brightness-100"

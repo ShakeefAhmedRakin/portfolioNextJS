@@ -13,6 +13,7 @@ export default function HeroSection() {
         <Image
           src={"/images/branding/about-1.png"}
           height={350}
+          priority
           width={350}
           title={`${SiteConfig.fullName}`}
           draggable={false}

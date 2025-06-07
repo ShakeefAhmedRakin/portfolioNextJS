@@ -59,6 +59,7 @@ export default async function AchievementDetails({
           <div className="relative aspect-video max-h-[450px] w-full">
             <Image
               src={achievement.mainCover.src}
+              priority
               alt={achievement.title}
               title={achievement.title}
               fill
