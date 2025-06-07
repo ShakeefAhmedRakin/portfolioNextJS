@@ -43,8 +43,8 @@ export default function SetSchemaAboutPage() {
       {
         "@type": "ImageObject",
         "@id": `${process.env.WEBSITE_URL}/about/#about-main-image`,
-        contentUrl: `${process.env.WEBSITE_URL}/images/branding/about-1.jpg`,
-        url: `${process.env.WEBSITE_URL}/images/branding/about-1.jpg`,
+        contentUrl: `${process.env.WEBSITE_URL}/images/branding/about-1.png`,
+        url: `${process.env.WEBSITE_URL}/images/branding/about-1.png`,
         caption: `${SiteConfig.fullName} | ${SiteConfig.title}`,
         inLanguage: "en-US",
       },

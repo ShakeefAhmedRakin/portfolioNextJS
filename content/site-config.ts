@@ -6,7 +6,7 @@ const SiteConfig = {
   title: title,
   fullName: "Shakeef Ahmed Rakin",
   nationality: "Bangladeshi",
-  heroImage: `${process.env.WEBSITE_URL}/images/branding/main-hero.jpg`,
+  heroImage: `${process.env.WEBSITE_URL}/images/branding/main-hero.png`,
   birthPlace: birthPlace,
   location: "Dhaka, Bangladesh",
   gender: "male",

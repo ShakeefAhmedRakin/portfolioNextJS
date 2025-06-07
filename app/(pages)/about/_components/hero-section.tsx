@@ -11,7 +11,7 @@ export default function HeroSection() {
     <SectionWrapper innerClassName="flex justify-between items-center flex-col lg:flex-row gap-8">
       <div className="animate-fade-up animate-ease animate-delay-200 animate-duration-[1500ms] animate-once relative flex items-center justify-center">
         <Image
-          src={"/images/branding/about-1.jpg"}
+          src={"/images/branding/about-1.png"}
           height={350}
           width={350}
           title={`${SiteConfig.fullName}`}
