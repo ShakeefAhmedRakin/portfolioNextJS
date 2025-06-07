@@ -2,7 +2,6 @@ import PageHeader from "@/components/ui/page-header";
 import { SectionWrapper } from "@/components/ui/wrappers";
 import SiteMetadata from "@/content/site-metadata";
 import setMetadata from "@/metadata/utils/setMetadata";
-
 import FilterControls from "./_components/filter-control";
 import { projectCategoriesEnum } from "@/types/enums";
 import { notFound } from "next/navigation";

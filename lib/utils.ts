@@ -65,3 +65,25 @@ export function formatDateString(date: string) {
     year: "numeric",
   });
 }
+
+export function generateOgImageUrl({
+  title,
+  subtitle,
+}: {
+  title?: string;
+  subtitle?: string;
+}): string {
+  const baseUrl = "http://localhost:3000";
+  const params = new URLSearchParams();
+
+  if (title) params.set("title", title);
+  if (subtitle) params.set("subtitle", subtitle);
+
+  return `${baseUrl}/api/og?${params.toString()}`;
+}
+
+export function arrayBufferToBase64(buffer: ArrayBuffer): string {
+  const bytes = new Uint8Array(buffer);
+  const binary = bytes.reduce((acc, b) => acc + String.fromCharCode(b), "");
+  return `data:image/png;base64,${Buffer.from(binary, "binary").toString("base64")}`;
+}

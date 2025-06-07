@@ -1,4 +1,4 @@
-import { achievements } from "@/.velite";
+import { achievements, workExperiences } from "@/.velite";
 import SiteConfig from "@/content/site-config";
 import { siteSocials } from "@/content/site-socials";
 import type { Person } from "schema-dts";
@@ -33,6 +33,13 @@ export const personJsonLd: Person = {
     "@type": "Place",
     address: SiteConfig.location,
   },
+  worksFor: workExperiences.map((work) => ({
+    "@type": "Organization",
+    name: work.company,
+    ...(work.companyLink
+      ? { sameAs: work.companyLink, url: work.companyLink }
+      : {}),
+  })),
   sameAs: [
     ...[process.env.WEBSITE_URL].filter(
       (url): url is string => typeof url === "string",
