@@ -2,13 +2,16 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   images: {
-    dangerouslyAllowSVG: true,
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "**",
+        hostname: "images.unsplash.com",
       },
-    ], // Add the external image domain here
+      {
+        protocol: "https",
+        hostname: "cdn-images-1.medium.com",
+      },
+    ],
   },
 };
 

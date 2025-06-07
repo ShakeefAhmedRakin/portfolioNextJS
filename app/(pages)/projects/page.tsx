@@ -1,0 +1,79 @@
+import PageHeader from "@/components/ui/page-header";
+import { SectionWrapper } from "@/components/ui/wrappers";
+import SiteMetadata from "@/content/site-metadata";
+import setMetadata from "@/metadata/utils/setMetadata";
+import FilterControls from "./_components/filter-control";
+import { projectCategoriesEnum } from "@/types/enums";
+import { notFound } from "next/navigation";
+import { projects } from "@/.velite";
+import ProjectCard from "./_components/project-card";
+import { paragraphVariants } from "@/components/ui/typography";
+
+export function generateMetadata() {
+  return setMetadata(SiteMetadata.PROJECTS);
+}
+
+export default async function ProjectsListingPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ category: string }>;
+}) {
+  const { category } = await searchParams;
+
+  if (category) {
+    if (
+      !projectCategoriesEnum.includes(
+        category as (typeof projectCategoriesEnum)[number],
+      )
+    ) {
+      return notFound();
+    }
+  }
+
+  const filteredProjects = category
+    ? projects.filter((project) => project.category === category)
+    : projects;
+
+  return (
+    <>
+      <PageHeader
+        title="Projects"
+        subtitle="All of my completed and ongoing projects"
+      />
+      <SectionWrapper innerClassName="min-h-[80vh]">
+        <FilterControls setCategory={category} />
+        {filteredProjects.length === 0 ? (
+          <div className="intersect:animate-fade-up intersect:animate-delay-200 animate-ease animate-duration-[1500ms] intersect-once mt-6 flex min-h-[300px] items-center justify-center">
+            <p
+              className={paragraphVariants({
+                level: "small",
+                className:
+                  "text-foreground/60 intersect:animate-fade-up intersect:animate-delay-200 animate-ease animate-duration-[1500ms] intersect-once my-2",
+              })}
+            >
+              No projects found
+            </p>
+          </div>
+        ) : (
+          <>
+            <p
+              className={paragraphVariants({
+                level: "small",
+                className:
+                  "text-foreground/60 intersect:animate-fade-up intersect:animate-delay-200 animate-ease animate-duration-[1500ms] intersect-once my-2",
+              })}
+            >
+              {filteredProjects.length} project
+              {filteredProjects.length > 1 && "s"} found
+            </p>
+            <ul className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3">
+              {filteredProjects.map((project) => (
+                <ProjectCard project={project} key={project.slug} />
+              ))}
+            </ul>
+          </>
+        )}
+      </SectionWrapper>
+    </>
+  );
+}

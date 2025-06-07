@@ -1,0 +1,26 @@
+[
+  {
+    "slug": "podcas-io",
+    "title": "Podcas.io",
+    "subTitle": "Transforming Podcast Creation with AI Technology",
+    "category": "Web Development",
+    "date": "2024-02-01T00:00:00.000Z",
+    "tags": [
+      "NextJS, Supabase,"
+    ],
+    "thumbnail": {
+      "src": "/static/thumbnail-26b97f61.PNG",
+      "height": 758,
+      "width": 1288,
+      "blurDataURL": "data:image/webp;base64,UklGRiwAAABXRUJQVlA4ICAAAACQAQCdASoIAAUADMDOJZQAAqwa0zAA/hSgmjwG96AAAA==",
+      "blurWidth": 8,
+      "blurHeight": 5
+    },
+    "isFeatured": true,
+    "isOngoing": true,
+    "workId": null,
+    "excerpt": "Podcas.io is an innovative platform that revolutionizes podcast creation using AI technology. It streamlines the production process, allowing users to create engaging episodes with ease. Key features include customizable characters, a vast library of lifelike ",
+    "content": "const{jsx:e}=arguments[0];function _createMdxContent(n){const t={h1:\"h1\",...n.components};return e(t.h1,{children:\"This is a NALI achievement using Velite schema.\"})}return{default:function(n={}){const{wrapper:t}=n.components||{};return t?e(t,{...n,children:e(_createMdxContent,{...n})}):_createMdxContent(n)}};",
+    "permalink": "/projects/podcas-io"
+  }
+]
