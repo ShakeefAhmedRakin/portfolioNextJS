@@ -8,4 +8,5 @@ export const mainHeroImageJsonLd = generateImageObjectSchema({
   id: mainHeroImageId,
   title: SiteConfig.gallery.mainHeroImage.name,
   src: SiteConfig.gallery.mainHeroImage.src,
+  pageUrl: "/",
 });

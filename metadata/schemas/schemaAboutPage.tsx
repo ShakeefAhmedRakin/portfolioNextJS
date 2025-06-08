@@ -29,6 +29,7 @@ export default function SetSchemaAboutPage() {
             id: `${process.env.WEBSITE_URL}/about/#about-main-image`,
             title: SiteConfig.gallery.aboutHeroImage.name,
             src: SiteConfig.gallery.aboutHeroImage.src,
+            pageUrl: "/about",
           }),
         ],
         about: {

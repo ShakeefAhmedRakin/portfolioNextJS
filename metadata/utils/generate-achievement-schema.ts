@@ -2,7 +2,6 @@ import { Achievements } from "@/.velite";
 import type { CreativeWork } from "schema-dts";
 import { personId } from "../shared/person";
 import { organizationId } from "../shared/organization";
-import SiteConfig from "@/content/site-config";
 import { extractImagesFromMDX } from "@/lib/utils";
 import generateImageObjectSchema from "./generateImageObjectSchema";
 
@@ -35,18 +34,16 @@ export default function GenerateAchievementSchema(
       "@id": `${process.env.WEBSITE_URL}${achievement.permalink}`,
     },
     image: [
-      {
-        "@type": "ImageObject",
-        contentUrl: `${process.env.WEBSITE_URL}${achievement.mainCover.src}`,
-        caption: achievement.title,
-        inLanguage: "en-US",
-        creditText: SiteConfig.fullName,
-        copyrightNotice: `© ${SiteConfig.fullName}`,
-      },
+      generateImageObjectSchema({
+        title: achievement.title,
+        src: achievement.mainCover.src,
+        pageUrl: achievement.permalink,
+      }),
       ...imagesInBlog.map((image) =>
         generateImageObjectSchema({
           title: image.title,
           src: image.src,
+          pageUrl: achievement.permalink,
         }),
       ),
     ],
