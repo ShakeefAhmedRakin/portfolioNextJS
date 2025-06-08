@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "concurrently \"next dev --turbopack\" \"npx velite dev\"",
-    "build": "next build &&  pnpm velite",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
