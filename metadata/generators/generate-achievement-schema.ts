@@ -3,7 +3,8 @@ import type { CreativeWork } from "schema-dts";
 import { personId } from "../shared/person";
 import { organizationId } from "../shared/organization";
 import { extractImagesFromMDX } from "@/lib/utils";
-import generateImageObjectSchema from "./generateImageObjectSchema";
+import generateImageObjectSchema from "./generate-image-object-schema";
+import { siteNavigationMap } from "@/content/site-navigation";
 
 export default function GenerateAchievementSchema(
   achievement: Achievements,
@@ -20,7 +21,7 @@ export default function GenerateAchievementSchema(
     datePublished: achievement.date,
     isPartOf: {
       "@type": "Blog",
-      "@id": `${process.env.WEBSITE_URL}/#achievementspage`,
+      "@id": `${process.env.WEBSITE_URL}/#${siteNavigationMap.ACHIEVEMENTS.key}`,
     },
     author: {
       "@id": personId,

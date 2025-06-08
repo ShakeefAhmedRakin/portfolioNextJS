@@ -1,6 +1,6 @@
-import BaseSchema from "../utils/baseSchema";
+import BaseSchema from "../shared/base-schema";
 import { Achievements } from "@/.velite";
-import GenerateAchievementSchema from "../utils/generate-achievement-schema";
+import GenerateAchievementSchema from "../generators/generate-achievement-schema";
 
 export default function SetSchemaAchievementPage({
   achievement,

@@ -11,12 +11,22 @@ type SiteSocial = {
   ariaLabel: string;
 };
 
+export enum SiteNavKey {
+  HOME = "HOME",
+  ABOUT = "ABOUT",
+  ACHIEVEMENTS = "ACHIEVEMENTS",
+  PROJECTS = "PROJECTS",
+  RESEARCH = "RESEARCH",
+  LICENSE = "LICENSE",
+  BLOGS = "BLOGS",
+  RESUME = "RESUME",
+}
+
 export enum SiteSocialKey {
-  LinkedIn = "LinkedIn",
-  GitHub = "GitHub",
-  StackOverflow = "Stack Overflow",
-  // LeetCode = "LeetCode",
-  Medium = "Medium",
+  LinkedIn = "LINKEDIN",
+  GitHub = "GITHUB",
+  StackOverflow = "STACKOVERFLOW",
+  Medium = "MEDIUM",
 }
 
 export const siteSocials: SiteSocial[] = [
@@ -64,5 +74,5 @@ export const siteSocials: SiteSocial[] = [
 
 export const siteSocialMap: Record<SiteSocialKey, SiteSocial> =
   Object.fromEntries(
-    siteSocials.map((social) => [social.key as SiteSocialKey, social]),
+    siteSocials.map((social) => [social.key, social]),
   ) as Record<SiteSocialKey, SiteSocial>;

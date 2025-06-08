@@ -1,6 +1,7 @@
 import { Achievements } from "@/.velite";
 import SiteConfig from "./site-config";
 import { generateOgImageUrl } from "@/lib/utils";
+import { siteNavigationMap } from "./site-navigation";
 
 const SiteMetadata = {
   HOME: {
@@ -10,7 +11,7 @@ const SiteMetadata = {
       title: SiteConfig.fullName,
       subtitle: SiteConfig.title,
     }),
-    pathParam: `/`,
+    pathParam: siteNavigationMap.HOME.href,
   },
   ABOUT: {
     title: `About Me | ${SiteConfig.fullName}`,
@@ -19,7 +20,7 @@ const SiteMetadata = {
       title: "About Me",
       subtitle: SiteConfig.fullName,
     }),
-    pathParam: `/about`,
+    pathParam: siteNavigationMap.ABOUT.href,
   },
   ACHIEVEMENTS: {
     title: `Achievements | ${SiteConfig.fullName}`,
@@ -28,7 +29,7 @@ const SiteMetadata = {
       title: "Achievements",
       subtitle: SiteConfig.fullName,
     }),
-    pathParam: `/achievements`,
+    pathParam: siteNavigationMap.ACHIEVEMENTS.href,
   },
   getAchievementMetadata(achievement: Achievements) {
     return {
@@ -45,7 +46,7 @@ const SiteMetadata = {
       title: "Projects",
       subtitle: SiteConfig.fullName,
     }),
-    pathParam: `/projects`,
+    pathParam: siteNavigationMap.PROJECTS.href,
   },
 
   // NOT FOUND METADATA

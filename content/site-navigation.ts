@@ -1,7 +1,19 @@
 import SiteConfig from "./site-config";
-import { SiteSocialKey, siteSocialMap } from "./site-socials";
+import { siteSocialMap } from "./site-socials";
+
+export enum SiteNavKey {
+  HOME = "HOME",
+  ABOUT = "ABOUT",
+  ACHIEVEMENTS = "ACHIEVEMENTS",
+  PROJECTS = "PROJECTS",
+  RESEARCH = "RESEARCH",
+  LICENSE = "LICENSE",
+  BLOGS = "BLOGS",
+  RESUME = "RESUME",
+}
 
 export type NavItem = {
+  key: SiteNavKey;
   label: string;
   title: string;
   ariaLabel: string;
@@ -14,6 +26,7 @@ export type NavItem = {
 
 export const siteNavigation: NavItem[] = [
   {
+    key: SiteNavKey.HOME,
     label: "Home",
     title: "Home",
     ariaLabel: "Navigate to the Home page",
@@ -24,6 +37,7 @@ export const siteNavigation: NavItem[] = [
     isExternal: false,
   },
   {
+    key: SiteNavKey.ABOUT,
     label: "About",
     title: "About",
     ariaLabel: "Navigate to the About page",
@@ -34,6 +48,7 @@ export const siteNavigation: NavItem[] = [
     isExternal: false,
   },
   {
+    key: SiteNavKey.ACHIEVEMENTS,
     label: "Achievements",
     title: "Achievements",
     ariaLabel: "Navigate to the Achievements page",
@@ -44,6 +59,7 @@ export const siteNavigation: NavItem[] = [
     isExternal: false,
   },
   {
+    key: SiteNavKey.PROJECTS,
     label: "Projects",
     title: "Projects",
     ariaLabel: "Navigate to the Projects page",
@@ -53,8 +69,8 @@ export const siteNavigation: NavItem[] = [
     isShownOnFooterResources: false,
     isExternal: false,
   },
-
   {
+    key: SiteNavKey.RESEARCH,
     label: "Research",
     title: "Research",
     ariaLabel: "Navigate to the Research page",
@@ -65,6 +81,7 @@ export const siteNavigation: NavItem[] = [
     isExternal: false,
   },
   {
+    key: SiteNavKey.LICENSE,
     label: "License",
     title: "License",
     ariaLabel: "Navigate to the License page",
@@ -74,18 +91,19 @@ export const siteNavigation: NavItem[] = [
     isShownOnFooterResources: true,
     isExternal: false,
   },
-  // EXTERNAL LINKS
   {
+    key: SiteNavKey.BLOGS,
     label: "Blogs",
     title: "Medium",
     ariaLabel: "Navigate to the Blogs page",
-    href: siteSocialMap[SiteSocialKey.Medium].url,
+    href: siteSocialMap.MEDIUM.url,
     isShownOnNav: false,
     isShownOnFooterNav: false,
     isShownOnFooterResources: true,
     isExternal: true,
   },
   {
+    key: SiteNavKey.RESUME,
     label: "Resume",
     title: "Resume",
     ariaLabel: "Navigate to the Resume page",
@@ -96,3 +114,9 @@ export const siteNavigation: NavItem[] = [
     isExternal: true,
   },
 ];
+
+export const siteNavigationMap: Record<SiteNavKey, NavItem> =
+  Object.fromEntries(siteNavigation.map((item) => [item.key, item])) as Record<
+    SiteNavKey,
+    NavItem
+  >;

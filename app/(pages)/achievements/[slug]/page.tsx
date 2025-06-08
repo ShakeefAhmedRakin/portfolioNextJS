@@ -1,4 +1,5 @@
 import { achievements } from "@/.velite";
+import BackgroundGridOverlay from "@/components/ui/background-grid-overlay";
 import { Badge } from "@/components/ui/badge";
 import { MDXContent } from "@/components/ui/mdx-content";
 import {
@@ -7,9 +8,9 @@ import {
   TypographyH1,
 } from "@/components/ui/typography";
 import SiteMetadata from "@/content/site-metadata";
-import { extractImagesFromMDX, formatDateString } from "@/lib/utils";
+import { formatDateString } from "@/lib/utils";
 import SetSchemaAchievementPage from "@/metadata/schemas/schemaAchievementPage";
-import setMetadata from "@/metadata/utils/setMetadata";
+import getMetadata from "@/metadata/utils/get-metadata";
 import { Dot } from "lucide-react";
 import Image from "next/image";
 import { notFound } from "next/navigation";
@@ -31,9 +32,9 @@ export async function generateMetadata({
   );
 
   if (achievement) {
-    return setMetadata(SiteMetadata.getAchievementMetadata(achievement));
+    return getMetadata(SiteMetadata.getAchievementMetadata(achievement));
   } else {
-    return setMetadata(SiteMetadata.NOT_FOUND);
+    return getMetadata(SiteMetadata.NOT_FOUND);
   }
 }
 
@@ -50,8 +51,6 @@ export default async function AchievementDetails({
   if (!achievement) {
     return notFound();
   }
-
-  console.log(extractImagesFromMDX(achievement.content));
 
   return (
     <>
@@ -90,8 +89,11 @@ export default async function AchievementDetails({
           </div>
           <hr className="border-primary/50" />
         </header>
-        <div className="intersect:animate-fade-up shadow-primary/5 intersect:animate-delay-200 animate-ease animate-duration-[1500ms] intersect-once">
-          <MDXContent code={achievement.content} />
+        <div className="relative">
+          <BackgroundGridOverlay />
+          <div className="intersect:animate-fade-up shadow-primary/5 intersect:animate-delay-200 animate-ease animate-duration-[1500ms] intersect-once">
+            <MDXContent code={achievement.content} />
+          </div>
         </div>
       </article>
     </>

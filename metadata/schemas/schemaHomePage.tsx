@@ -1,20 +1,21 @@
-import BaseSchema from "../utils/baseSchema";
+import BaseSchema from "../shared/base-schema";
 import { websiteId } from "../shared/website";
 import SiteConfig from "@/content/site-config";
 import { mainHeroImageId } from "../shared/main-hero-image";
 import { personId } from "../shared/person";
 import { organizationId } from "../shared/organization";
+import { siteNavigationMap } from "@/content/site-navigation";
 
 export default function SetSchemaHomePage() {
   const graph = BaseSchema({
-    pathParam: "/",
+    pathParam: siteNavigationMap.HOME.href,
     currentPageSchemas: [
       {
         "@type": "WebPage",
-        "@id": `${process.env.WEBSITE_URL}/#homepage`,
+        "@id": `${process.env.WEBSITE_URL}/#${siteNavigationMap.HOME.key}`,
         mainEntityOfPage: {
           "@type": "WebPage",
-          "@id": `${process.env.WEBSITE_URL}/#homepage`,
+          "@id": `${process.env.WEBSITE_URL}/#${siteNavigationMap.HOME.key}`,
         },
         url: process.env.WEBSITE_URL,
         isPartOf: {

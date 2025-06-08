@@ -5,11 +5,11 @@ import AchievementsSection from "./_components/achievements-section/achievements
 import ResearchSection from "./_components/research-section/research-section";
 import BlogsSection from "./_components/blogs-section/blogs-section";
 import SetSchemaHomePage from "@/metadata/schemas/schemaHomePage";
-import setMetadata from "@/metadata/utils/setMetadata";
+import getMetadata from "@/metadata/utils/get-metadata";
 import SiteMetadata from "@/content/site-metadata";
 
 export function generateMetadata() {
-  return setMetadata(SiteMetadata.HOME);
+  return getMetadata(SiteMetadata.HOME);
 }
 
 export default function HomePage() {

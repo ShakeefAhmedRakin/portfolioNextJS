@@ -1,11 +1,12 @@
 import { buttonVariants } from "@/components/ui/button";
 import { SectionWrapper } from "@/components/ui/wrappers";
 import SiteMetadata from "@/content/site-metadata";
-import setMetadata from "@/metadata/utils/setMetadata";
+import { siteNavigationMap } from "@/content/site-navigation";
+import getMetadata from "@/metadata/utils/get-metadata";
 import Link from "next/link";
 
 export function generateMetadata() {
-  return setMetadata(SiteMetadata.NOT_FOUND);
+  return getMetadata(SiteMetadata.NOT_FOUND);
 }
 
 export default function NotFoundPage() {
@@ -18,7 +19,7 @@ export default function NotFoundPage() {
         The requested page could not be found
       </p>
       <Link
-        href={"/"}
+        href={siteNavigationMap.HOME.href}
         title="Back To Home"
         aria-label="Go back to homepage"
         className={buttonVariants({

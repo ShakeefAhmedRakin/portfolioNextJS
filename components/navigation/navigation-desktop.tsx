@@ -1,5 +1,5 @@
 "use client";
-import { siteNavigation } from "@/content/site-navigation";
+import { siteNavigation, siteNavigationMap } from "@/content/site-navigation";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -14,7 +14,8 @@ export default function NavigationDesktop() {
           .map((link) => {
             const isActive =
               pathname === link.href ||
-              (pathname.startsWith(link.href) && link.href !== "/");
+              (pathname.startsWith(link.href) &&
+                link.href !== siteNavigationMap.HOME.href);
             return (
               <Link
                 href={link.href}

@@ -1,7 +1,7 @@
 import PageHeader from "@/components/ui/page-header";
 import { SectionWrapper } from "@/components/ui/wrappers";
 import SiteMetadata from "@/content/site-metadata";
-import setMetadata from "@/metadata/utils/setMetadata";
+import getMetadata from "@/metadata/utils/get-metadata";
 import FilterControls from "./_components/filter-control";
 import { projectCategoriesEnum } from "@/types/enums";
 import { notFound } from "next/navigation";
@@ -10,7 +10,7 @@ import ProjectCard from "./_components/project-card";
 import { paragraphVariants } from "@/components/ui/typography";
 
 export function generateMetadata() {
-  return setMetadata(SiteMetadata.PROJECTS);
+  return getMetadata(SiteMetadata.PROJECTS);
 }
 
 export default async function ProjectsListingPage({

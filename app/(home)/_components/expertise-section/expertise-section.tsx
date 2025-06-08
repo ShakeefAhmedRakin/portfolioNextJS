@@ -4,6 +4,7 @@ import ExpertiseStatGrid from "./expertise-stat-card";
 import { expertiseContent } from "@/content/home/expertise-section";
 import BackgroundGridOverlay from "../../../../components/ui/background-grid-overlay";
 import { SectionHeader } from "@/components/ui/section-header";
+import { siteNavigationMap } from "@/content/site-navigation";
 
 export default function ExpertiseSection() {
   return (
@@ -15,7 +16,7 @@ export default function ExpertiseSection() {
         title={expertiseContent.title}
         description={expertiseContent.description}
         linkText="More About Me"
-        linkHref="/about"
+        linkHref={siteNavigationMap.ABOUT.href}
       />
 
       <ExpertiseStatGrid />

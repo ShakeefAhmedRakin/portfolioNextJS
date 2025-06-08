@@ -9,12 +9,12 @@ import { SectionWrapper } from "@/components/ui/wrappers";
 import SiteMetadata from "@/content/site-metadata";
 import { formatDateString, sortAchievementsByDate } from "@/lib/utils";
 import SetSchemaAchievementsListingPage from "@/metadata/schemas/schemaAchievementsListingPage";
-import setMetadata from "@/metadata/utils/setMetadata";
+import getMetadata from "@/metadata/utils/get-metadata";
 import { ChevronRight } from "lucide-react";
 import Link from "next/link";
 
 export function generateMetadata() {
-  return setMetadata(SiteMetadata.ACHIEVEMENTS);
+  return getMetadata(SiteMetadata.ACHIEVEMENTS);
 }
 
 export default function AchievementsListingPage() {

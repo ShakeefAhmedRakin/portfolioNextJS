@@ -2,6 +2,7 @@ import { SectionWrapper } from "@/components/ui/wrappers";
 import { SectionHeader } from "@/components/ui/section-header";
 // import BackgroundGridOverlay from "@/components/ui/background-grid-overlay";
 import ResearchGrid from "./research-grid";
+import { siteNavigationMap } from "@/content/site-navigation";
 
 export default function ResearchSection() {
   return (
@@ -13,7 +14,7 @@ export default function ResearchSection() {
         title="Some of my ongoing and published research"
         description="Discover my latest research projects that I've collaborated with esteemed colleagues and institutions"
         linkText="Learn More"
-        linkHref="/research"
+        linkHref={siteNavigationMap.RESEARCH.href}
       />
 
       <ResearchGrid />

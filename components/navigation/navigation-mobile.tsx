@@ -11,7 +11,7 @@ import { Menu, XIcon } from "lucide-react";
 import { useState } from "react";
 import Logo from "../branding/logo";
 import Link from "next/link";
-import { siteNavigation } from "@/content/site-navigation";
+import { siteNavigation, siteNavigationMap } from "@/content/site-navigation";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { Button } from "../ui/button";
@@ -46,7 +46,8 @@ export default function NavigationMobile() {
               .map((link) => {
                 const isActive =
                   pathname === link.href ||
-                  (pathname.startsWith(link.href) && link.href !== "/");
+                  (pathname.startsWith(link.href) &&
+                    link.href !== siteNavigationMap.HOME.href);
                 return (
                   <Link
                     href={link.href}

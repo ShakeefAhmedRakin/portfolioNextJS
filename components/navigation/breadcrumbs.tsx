@@ -8,6 +8,7 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
+import { siteNavigationMap } from "@/content/site-navigation";
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -18,7 +19,9 @@ const FADE_DURATION = 200;
 export function Breadcrumbs() {
   const currentPath = usePathname();
   const [displayedPath, setDisplayedPath] = useState(currentPath);
-  const [isVisible, setIsVisible] = useState(currentPath !== "/");
+  const [isVisible, setIsVisible] = useState(
+    currentPath !== siteNavigationMap.HOME.href,
+  );
 
   useEffect(() => {
     if (currentPath === displayedPath) return;
@@ -27,13 +30,15 @@ export function Breadcrumbs() {
 
     const timeout = setTimeout(() => {
       setDisplayedPath(currentPath);
-      setIsVisible(currentPath !== "/");
+      setIsVisible(currentPath !== siteNavigationMap.HOME.href);
     }, FADE_DURATION);
 
     return () => clearTimeout(timeout);
   }, [currentPath, displayedPath]);
 
-  const pathNames = displayedPath.split("/").filter((path) => path);
+  const pathNames = displayedPath
+    .split(siteNavigationMap.HOME.href)
+    .filter((path) => path);
 
   return (
     <div
@@ -45,14 +50,14 @@ export function Breadcrumbs() {
         <BreadcrumbList className="flex-nowrap text-[11px]">
           <BreadcrumbItem>
             <BreadcrumbLink asChild>
-              <Link href={"/"}>Home</Link>
+              <Link href={siteNavigationMap.HOME.href}>Home</Link>
             </BreadcrumbLink>
           </BreadcrumbItem>
 
           {pathNames.length > 0 && <BreadcrumbSeparator />}
 
           {pathNames.map((link, index) => {
-            const href = `/${pathNames.slice(0, index + 1).join("/")}`;
+            const href = `/${pathNames.slice(0, index + 1).join(siteNavigationMap.HOME.href)}`;
             const isActive = href === displayedPath;
             const linkLabel = link
               .replace(/-/g, " ")

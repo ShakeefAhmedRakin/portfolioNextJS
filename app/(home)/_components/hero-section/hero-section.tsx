@@ -8,6 +8,7 @@ import {
 
 import { SectionWrapper } from "@/components/ui/wrappers";
 import SiteConfig from "@/content/site-config";
+import { siteNavigationMap } from "@/content/site-navigation";
 import { siteSocials } from "@/content/site-socials";
 import Image from "next/image";
 
@@ -57,7 +58,7 @@ export default function HeroSection() {
               size: "lg",
               variant: "outline",
             })}
-            href={"/about"}
+            href={siteNavigationMap.ABOUT.href}
           >
             About Me
           </Link>

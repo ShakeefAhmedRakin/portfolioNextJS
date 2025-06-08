@@ -1,7 +1,7 @@
 import SiteConfig from "@/content/site-config";
 import { Metadata } from "next";
 
-export default function setMetadata({
+export default function getMetadata({
   title,
   description,
   openGraphImageUrl,

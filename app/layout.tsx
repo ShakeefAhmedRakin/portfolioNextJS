@@ -5,7 +5,7 @@ import ClientObserver from "@/lib/client-observer";
 import SiteFooter from "@/components/navigation/site-footer";
 import { Toaster } from "sonner";
 
-import { baseMetadata } from "@/metadata/utils/baseMetadata";
+import { baseMetadata } from "@/metadata/shared/base-metadata";
 
 export const metadata = baseMetadata;
 

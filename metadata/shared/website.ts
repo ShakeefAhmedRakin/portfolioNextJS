@@ -61,20 +61,19 @@ export const websiteJsonLd: WebSite = {
     })),
   ],
   hasPart: [
-    {
-      "@type": "WebPage",
-      "@id": `${process.env.WEBSITE_URL}/#homepage`,
-    },
-    {
-      "@type": "WebPage",
-      "@id": `${process.env.WEBSITE_URL}/#aboutpage`,
-    },
-    {
-      "@type": "WebPage",
-      "@id": `${process.env.WEBSITE_URL}/#achievementspage`,
-    },
+    ...siteNavigation
+      .filter((navItem) => !navItem.isExternal)
+      .map((navItem) => {
+        return {
+          "@type": "Webpage",
+          "@id": `${process.env.WEBSITE_URL}/#${navItem.key}`,
+          name: `${navItem.title} Page`,
+        };
+      }),
     ...achievements.map((achievement) => {
       return {
+        "@type": "Webpage",
+        name: `${achievement.title} Page`,
         "@id": `${process.env.WEBSITE_URL}${achievement.permalink}`,
       };
     }),

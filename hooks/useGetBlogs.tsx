@@ -1,5 +1,5 @@
 "use client";
-import { SiteSocialKey, siteSocialMap } from "@/content/site-socials";
+import { siteSocialMap } from "@/content/site-socials";
 import { Article } from "@/types/blogs";
 import { useState, useEffect } from "react";
 
@@ -16,7 +16,7 @@ const useBlogs = ({ maxBlogs }: { maxBlogs?: number } = {}) => {
     const fetchArticles = async () => {
       try {
         const response = await fetch(
-          `https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@${siteSocialMap[SiteSocialKey.Medium].url.split("@")[1]}`,
+          `https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@${siteSocialMap.MEDIUM.url.split("@")[1]}`,
         );
         const data = await response.json();
         const fetchedArticles = (

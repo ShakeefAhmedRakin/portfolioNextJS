@@ -3,6 +3,7 @@ import { SectionWrapper } from "@/components/ui/wrappers";
 import { achievements } from "@/.velite";
 import Image from "next/image";
 import { SectionHeader } from "@/components/ui/section-header";
+import { siteNavigationMap } from "@/content/site-navigation";
 
 export default function AchievementsSection() {
   const featuredAchievements = achievements
@@ -21,7 +22,7 @@ export default function AchievementsSection() {
         collaborated with teams to develop practical solutions to real-world
         problems."
         linkText="Learn More"
-        linkHref="/achievements"
+        linkHref={siteNavigationMap.ACHIEVEMENTS.href}
       />
 
       <ul className="intersect:animate-delay-200 intersect-once intersect:animate-fade-up animate-ease animate-duration-[1500ms] grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-6">

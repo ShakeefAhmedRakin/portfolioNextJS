@@ -1,20 +1,21 @@
-import BaseSchema from "../utils/baseSchema";
+import BaseSchema from "../shared/base-schema";
 import { websiteId } from "../shared/website";
 import SiteConfig from "@/content/site-config";
 import { personId } from "../shared/person";
 import { organizationId } from "../shared/organization";
 import SiteMetadata from "@/content/site-metadata";
 import { siteSocials } from "@/content/site-socials";
-import generateImageObjectSchema from "../utils/generateImageObjectSchema";
+import generateImageObjectSchema from "../generators/generate-image-object-schema";
+import { siteNavigationMap } from "@/content/site-navigation";
 
 export default function SetSchemaAboutPage() {
   const graph = BaseSchema({
-    pathParam: "/about",
+    pathParam: siteNavigationMap.ABOUT.href,
     currentPageSchemas: [
       {
         "@type": "ProfilePage",
-        "@id": `${process.env.WEBSITE_URL}/#aboutpage`,
-        url: `${process.env.WEBSITE_URL}/about`,
+        "@id": `${process.env.WEBSITE_URL}/#${siteNavigationMap.ABOUT.key}`,
+        url: `${process.env.WEBSITE_URL}${siteNavigationMap.ABOUT.href}`,
         mainEntity: {
           "@id": personId,
         },
@@ -22,14 +23,14 @@ export default function SetSchemaAboutPage() {
           "@id": websiteId,
         },
         primaryImageOfPage: {
-          "@id": `${process.env.WEBSITE_URL}/about/#about-main-image`,
+          "@id": `${process.env.WEBSITE_URL}${siteNavigationMap.ABOUT.href}/#about-main-image`,
         },
         image: [
           generateImageObjectSchema({
-            id: `${process.env.WEBSITE_URL}/about/#about-main-image`,
+            id: `${process.env.WEBSITE_URL}${siteNavigationMap.ABOUT.href}/#about-main-image`,
             title: SiteConfig.gallery.aboutHeroImage.name,
             src: SiteConfig.gallery.aboutHeroImage.src,
-            pageUrl: "/about",
+            pageUrl: siteNavigationMap.ABOUT.href,
           }),
         ],
         about: {

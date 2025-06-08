@@ -2,6 +2,7 @@ import { SectionWrapper } from "@/components/ui/wrappers";
 import { SectionHeader } from "@/components/ui/section-header";
 import BackgroundGridOverlay from "@/components/ui/background-grid-overlay";
 import ProjectsShowcase from "./projects-showcase";
+import { siteNavigationMap } from "@/content/site-navigation";
 
 export default function ProjectsSection() {
   return (
@@ -15,7 +16,7 @@ export default function ProjectsSection() {
         voluptas ipsam placeat delectus exercitationem tenetur magnam saepe qui
         quibusdam."
         linkText="View All Projects"
-        linkHref="/projects"
+        linkHref={siteNavigationMap.PROJECTS.href}
       />
 
       <ProjectsShowcase />

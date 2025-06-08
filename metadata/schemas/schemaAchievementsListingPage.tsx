@@ -1,20 +1,21 @@
-import BaseSchema from "../utils/baseSchema";
+import BaseSchema from "../shared/base-schema";
 import { websiteId } from "../shared/website";
 import { personId } from "../shared/person";
 import { organizationId } from "../shared/organization";
 import SiteMetadata from "@/content/site-metadata";
 import { achievements } from "@/.velite";
-import GenerateAchievementSchema from "../utils/generate-achievement-schema";
+import GenerateAchievementSchema from "../generators/generate-achievement-schema";
+import { siteNavigationMap } from "@/content/site-navigation";
 
 export default function SetSchemaAchievementsListingPage() {
   const achievementsSchemas = achievements.map(GenerateAchievementSchema);
   const graph = BaseSchema({
-    pathParam: "/achievements",
+    pathParam: siteNavigationMap.ACHIEVEMENTS.href,
     currentPageSchemas: [
       {
         "@type": "Blog",
-        "@id": `${process.env.WEBSITE_URL}/#achievementspage`,
-        url: `${process.env.WEBSITE_URL}/achievements`,
+        "@id": `${process.env.WEBSITE_URL}/#${siteNavigationMap.ACHIEVEMENTS.key}`,
+        url: `${process.env.WEBSITE_URL}${siteNavigationMap.ACHIEVEMENTS.href}`,
         isPartOf: {
           "@id": websiteId,
         },
