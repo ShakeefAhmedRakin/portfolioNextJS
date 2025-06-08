@@ -15,10 +15,7 @@ export async function GET(request: Request) {
   ).then((res) => res.arrayBuffer());
 
   const heroData = await fetch(
-    new URL(
-      SiteConfig.heroImage.split(process.env.WEBSITE_URL ?? "")[1],
-      request.url,
-    ),
+    new URL(SiteConfig.gallery.mainHeroImage.src, request.url),
   ).then((res) => res.arrayBuffer());
 
   const dottedGridData = await fetch(

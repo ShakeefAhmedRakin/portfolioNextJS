@@ -2,6 +2,7 @@ import { Achievements } from "@/.velite";
 import type { CreativeWork } from "schema-dts";
 import { personId } from "../shared/person";
 import { organizationId } from "../shared/organization";
+import SiteConfig from "@/content/site-config";
 
 export default function GenerateAchievementSchema(
   achievement: Achievements,
@@ -13,6 +14,7 @@ export default function GenerateAchievementSchema(
     name: achievement.title,
     headline: achievement.title,
     description: achievement.excerpt,
+    dateModified: achievement.date,
     datePublished: achievement.date,
     isPartOf: {
       "@type": "Blog",
@@ -31,10 +33,11 @@ export default function GenerateAchievementSchema(
     },
     image: {
       "@type": "ImageObject",
-      url: `${process.env.WEBSITE_URL}${achievement.mainCover.src}`,
       contentUrl: `${process.env.WEBSITE_URL}${achievement.mainCover.src}`,
       caption: achievement.title,
       inLanguage: "en-US",
+      creditText: SiteConfig.fullName,
+      copyrightNotice: `© ${SiteConfig.fullName}`,
     },
   };
 }

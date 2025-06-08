@@ -1,4 +1,5 @@
 import SiteConfig from "./site-config";
+import { SiteSocialKey, siteSocialMap } from "./site-socials";
 
 export type NavItem = {
   label: string;
@@ -68,7 +69,7 @@ export const siteNavigation: NavItem[] = [
     label: "Blogs",
     title: "Medium",
     ariaLabel: "Navigate to the Blogs page",
-    href: SiteConfig.mediumLink,
+    href: siteSocialMap[SiteSocialKey.Medium].url,
     isShownOnNav: false,
     isShownOnFooterNav: false,
     isShownOnFooterResources: true,

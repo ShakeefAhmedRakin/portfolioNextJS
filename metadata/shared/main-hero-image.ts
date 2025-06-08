@@ -8,7 +8,8 @@ export const mainHeroImageJsonLd: ImageObject = {
   "@type": "ImageObject",
   "@id": mainHeroImageId,
   inLanguage: "en-US",
-  url: SiteConfig.heroImage,
-  contentUrl: SiteConfig.heroImage,
-  caption: `${SiteConfig.fullName} | ${SiteConfig.title}`,
+  contentUrl: SiteConfig.gallery.mainHeroImage.absoluteSrc,
+  caption: SiteConfig.gallery.mainHeroImage.name,
+  creditText: SiteConfig.fullName,
+  copyrightNotice: `© ${SiteConfig.fullName}`,
 };

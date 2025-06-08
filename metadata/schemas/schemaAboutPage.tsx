@@ -4,6 +4,7 @@ import SiteConfig from "@/content/site-config";
 import { personId } from "../shared/person";
 import { organizationId } from "../shared/organization";
 import SiteMetadata from "@/content/site-metadata";
+import { siteSocials } from "@/content/site-socials";
 
 export default function SetSchemaAboutPage() {
   const graph = BaseSchema({
@@ -13,6 +14,9 @@ export default function SetSchemaAboutPage() {
         "@type": "ProfilePage",
         "@id": `${process.env.WEBSITE_URL}/#aboutpage`,
         url: `${process.env.WEBSITE_URL}/about`,
+        mainEntity: {
+          "@id": personId,
+        },
         isPartOf: {
           "@id": websiteId,
         },
@@ -25,6 +29,12 @@ export default function SetSchemaAboutPage() {
         about: {
           "@id": personId,
         },
+        sameAs: [
+          ...[process.env.WEBSITE_URL].filter(
+            (url): url is string => typeof url === "string",
+          ),
+          ...siteSocials.map((social) => social.url),
+        ],
         author: {
           "@id": personId,
         },
@@ -39,10 +49,11 @@ export default function SetSchemaAboutPage() {
       {
         "@type": "ImageObject",
         "@id": `${process.env.WEBSITE_URL}/about/#about-main-image`,
-        contentUrl: SiteConfig.heroImageSecondary,
-        url: SiteConfig.heroImageSecondary,
-        caption: `${SiteConfig.fullName} | ${SiteConfig.title}`,
+        contentUrl: SiteConfig.gallery.aboutHeroImage.absoluteSrc,
+        caption: SiteConfig.gallery.aboutHeroImage.name,
         inLanguage: "en-US",
+        creditText: SiteConfig.fullName,
+        copyrightNotice: `© ${SiteConfig.fullName}`,
       },
     ],
   });

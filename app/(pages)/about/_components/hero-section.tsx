@@ -11,19 +11,15 @@ export default function HeroSection() {
     <SectionWrapper innerClassName="flex justify-between items-center flex-col lg:flex-row gap-8">
       <div className="animate-fade-up animate-ease animate-delay-200 animate-duration-[1500ms] animate-once relative flex items-center justify-center">
         <Image
-          src={
-            SiteConfig.heroImageSecondary.split(
-              process.env.WEBSITE_URL ?? "",
-            )[1]
-          }
-          blurDataURL={SiteConfig.heroImageSecondaryBlurURL}
+          src={SiteConfig.gallery.aboutHeroImage.src}
+          blurDataURL={SiteConfig.gallery.aboutHeroImage.blurURL}
           placeholder="blur"
           height={350}
           priority
           width={350}
-          title={`${SiteConfig.fullName}`}
+          title={SiteConfig.gallery.aboutHeroImage.name}
           draggable={false}
-          alt={`${SiteConfig.fullName}-about`}
+          alt={SiteConfig.gallery.aboutHeroImage.name}
           className="aspect-square rounded-[50px] object-cover"
         />
       </div>

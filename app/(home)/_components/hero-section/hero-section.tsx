@@ -74,15 +74,15 @@ export default function HeroSection() {
       </div>
       <div className="animate-fade-up animate-ease animate-delay-800 animate-duration-[1500ms] animate-once relative flex min-w-[50%] justify-center">
         <Image
-          src={SiteConfig.heroImage.split(process.env.WEBSITE_URL ?? "")[1]}
+          src={SiteConfig.gallery.mainHeroImage.src}
           priority
           height={350}
           width={350}
-          blurDataURL={SiteConfig.heroImageBlurURL}
+          blurDataURL={SiteConfig.gallery.mainHeroImage.blurURL}
           placeholder="blur"
           draggable={false}
-          title={`${SiteConfig.fullName}`}
-          alt={`${SiteConfig.fullName}-hero`}
+          title={SiteConfig.gallery.aboutHeroImage.name}
+          alt={SiteConfig.gallery.aboutHeroImage.name}
           className="aspect-square rounded-[50px] object-cover"
         />
       </div>

@@ -1,8 +1,9 @@
 import { BsGithub, BsLinkedin, BsStackOverflow } from "react-icons/bs";
 // import { SiLeetcode } from "react-icons/si";
 import { FaMediumM } from "react-icons/fa";
-import SiteConfig from "./site-config";
+
 type SiteSocial = {
+  key: string;
   name: string;
   url: string;
   icon: React.ReactNode;
@@ -10,8 +11,17 @@ type SiteSocial = {
   ariaLabel: string;
 };
 
+export enum SiteSocialKey {
+  LinkedIn = "LinkedIn",
+  GitHub = "GitHub",
+  StackOverflow = "Stack Overflow",
+  // LeetCode = "LeetCode",
+  Medium = "Medium",
+}
+
 export const siteSocials: SiteSocial[] = [
   {
+    key: SiteSocialKey.LinkedIn,
     name: "LinkedIn",
     url: "https://www.linkedin.com/in/shakeef-ahmed-rakin",
     icon: <BsLinkedin />,
@@ -19,6 +29,7 @@ export const siteSocials: SiteSocial[] = [
     ariaLabel: "View LinkedIn Profile",
   },
   {
+    key: SiteSocialKey.GitHub,
     name: "GitHub",
     url: "https://github.com/ShakeefAhmedRakin",
     icon: <BsGithub />,
@@ -26,6 +37,7 @@ export const siteSocials: SiteSocial[] = [
     ariaLabel: "View GitHub Profile",
   },
   {
+    key: SiteSocialKey.StackOverflow,
     name: "Stack Overflow",
     url: "https://stackoverflow.com/users/28897060/shakeef-ahmed-rakin",
     icon: <BsStackOverflow />,
@@ -33,6 +45,7 @@ export const siteSocials: SiteSocial[] = [
     ariaLabel: "View Stack Overflow Profile",
   },
   // {
+  //   key: "LeetCode",
   //   name: "LeetCode",
   //   url: "https://leetcode.com/u/Shakeef-Ahmed-Rakin",
   //   icon: <SiLeetcode />,
@@ -40,10 +53,16 @@ export const siteSocials: SiteSocial[] = [
   //   ariaLabel: "View LeetCode Profile",
   // },
   {
+    key: SiteSocialKey.Medium,
     name: "Medium",
-    url: SiteConfig.mediumLink,
+    url: "https://medium.com/@shakeef.rakin321",
     icon: <FaMediumM />,
     title: "Medium",
     ariaLabel: "View Medium Profile",
   },
 ];
+
+export const siteSocialMap: Record<SiteSocialKey, SiteSocial> =
+  Object.fromEntries(
+    siteSocials.map((social) => [social.key as SiteSocialKey, social]),
+  ) as Record<SiteSocialKey, SiteSocial>;
