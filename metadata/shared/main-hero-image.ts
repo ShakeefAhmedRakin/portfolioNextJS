@@ -1,15 +1,11 @@
 import SiteConfig from "@/content/site-config";
 
-import type { ImageObject } from "schema-dts";
+import generateImageObjectSchema from "../utils/generateImageObjectSchema";
 
 export const mainHeroImageId = `${process.env.WEBSITE_URL}/#main-hero-image`;
 
-export const mainHeroImageJsonLd: ImageObject = {
-  "@type": "ImageObject",
-  "@id": mainHeroImageId,
-  inLanguage: "en-US",
-  contentUrl: SiteConfig.gallery.mainHeroImage.absoluteSrc,
-  caption: SiteConfig.gallery.mainHeroImage.name,
-  creditText: SiteConfig.fullName,
-  copyrightNotice: `© ${SiteConfig.fullName}`,
-};
+export const mainHeroImageJsonLd = generateImageObjectSchema({
+  id: mainHeroImageId,
+  title: SiteConfig.gallery.mainHeroImage.name,
+  src: SiteConfig.gallery.mainHeroImage.src,
+});

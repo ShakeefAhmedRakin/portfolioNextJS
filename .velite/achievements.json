@@ -30,36 +30,6 @@
     "permalink": "/achievements/gdsc-crce-bitnbuild-2024"
   },
   {
-    "title": "Top 10 Finalists at DevHack 2023",
-    "awardTitle": "DevHack 2023",
-    "awardCover": {
-      "src": "/static/devhack2023-78cf9a94.png",
-      "height": 200,
-      "width": 200,
-      "blurDataURL": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4WAoAAAAQAAAABwAABwAAQUxQSC8AAAABX6C2bRs25Ja2JiICfEo5igUFkW1Tq4HbwShEG0F+CUSO6H9AksB+f802OiS1AABWUDggJAAAAHABAJ0BKggACAAMwM4lmALsAUAAAP7lEoAL6CuUDQPXKNRoAA==",
-      "blurWidth": 8,
-      "blurHeight": 8
-    },
-    "isFeatured": true,
-    "mainCover": {
-      "src": "/static/main-992b6092.PNG",
-      "height": 638,
-      "width": 1138,
-      "blurDataURL": "data:image/webp;base64,UklGRjAAAABXRUJQVlA4ICQAAACwAQCdASoIAAQADMDOJYgC7ADx9FgAAP6Xc5PG5Fk5dGQeAAA=",
-      "blurWidth": 8,
-      "blurHeight": 4
-    },
-    "slug": "devhack-2023",
-    "date": "2023-12-15T00:00:00.000Z",
-    "metadata": {
-      "readingTime": 1,
-      "wordCount": 8
-    },
-    "excerpt": "Our team secured a spot in the Top 10 Finalists at DevHack 2023 for our innovative project, BillsGo. It was a remarkable journey filled with creativity and collaboration, addressing real-world challenges in utility bill management.",
-    "content": "const{jsx:e}=arguments[0];function _createMdxContent(n){const t={h1:\"h1\",...n.components};return e(t.h1,{children:\"This is a NALI achievement using Velite schema.\"})}return{default:function(n={}){const{wrapper:t}=n.components||{};return t?e(t,{...n,children:e(_createMdxContent,{...n})}):_createMdxContent(n)}};",
-    "permalink": "/achievements/devhack-2023"
-  },
-  {
     "title": "Fifth Place at InnoJam 2023 - Smart Sustainable City",
     "awardTitle": "InnoJam 2023 - Smart Sustainable City",
     "awardCover": {
@@ -88,6 +58,36 @@
     "excerpt": "Our team secured 5th place at InnoJam 2023 with ReCycgo, a mobile application for businesses aimed at optimizing waste management through smart logistics. The project tackled critical challenges in achieving Malaysia's recycling goals.",
     "content": "const{jsx:e}=arguments[0];function _createMdxContent(n){const t={h1:\"h1\",...n.components};return e(t.h1,{children:\"This is a NALI achievement using Velite schema.\"})}return{default:function(n={}){const{wrapper:t}=n.components||{};return t?e(t,{...n,children:e(_createMdxContent,{...n})}):_createMdxContent(n)}};",
     "permalink": "/achievements/innojam-smart-sustainable-city-2023"
+  },
+  {
+    "title": "Top 10 Finalists at DevHack 2023",
+    "awardTitle": "DevHack 2023",
+    "awardCover": {
+      "src": "/static/devhack2023-78cf9a94.png",
+      "height": 200,
+      "width": 200,
+      "blurDataURL": "data:image/webp;base64,UklGRnoAAABXRUJQVlA4WAoAAAAQAAAABwAABwAAQUxQSC8AAAABX6C2bRs25Ja2JiICfEo5igUFkW1Tq4HbwShEG0F+CUSO6H9AksB+f802OiS1AABWUDggJAAAAHABAJ0BKggACAAMwM4lmALsAUAAAP7lEoAL6CuUDQPXKNRoAA==",
+      "blurWidth": 8,
+      "blurHeight": 8
+    },
+    "isFeatured": true,
+    "mainCover": {
+      "src": "/static/main-992b6092.PNG",
+      "height": 638,
+      "width": 1138,
+      "blurDataURL": "data:image/webp;base64,UklGRjAAAABXRUJQVlA4ICQAAACwAQCdASoIAAQADMDOJYgC7ADx9FgAAP6Xc5PG5Fk5dGQeAAA=",
+      "blurWidth": 8,
+      "blurHeight": 4
+    },
+    "slug": "devhack-2023",
+    "date": "2023-12-15T00:00:00.000Z",
+    "metadata": {
+      "readingTime": 1,
+      "wordCount": 8
+    },
+    "excerpt": "Our team secured a spot in the Top 10 Finalists at DevHack 2023 for our innovative project, BillsGo. It was a remarkable journey filled with creativity and collaboration, addressing real-world challenges in utility bill management.",
+    "content": "const{jsx:e}=arguments[0];function _createMdxContent(n){const t={h1:\"h1\",...n.components};return e(t.h1,{children:\"This is a NALI achievement using Velite schema.\"})}return{default:function(n={}){const{wrapper:t}=n.components||{};return t?e(t,{...n,children:e(_createMdxContent,{...n})}):_createMdxContent(n)}};",
+    "permalink": "/achievements/devhack-2023"
   },
   {
     "title": "2nd Place at MyRapid Bus x UTM Data Hackathon 2023",
@@ -173,10 +173,10 @@
     "date": "2024-10-01T00:00:00.000Z",
     "metadata": {
       "readingTime": 2,
-      "wordCount": 489
+      "wordCount": 471
     },
     "excerpt": "In October 2024, I had the chance to present MASRETT (Malaysian Sign Language Real-Time Tutorial) at the Pre-NALI 2024 workshops, hosted by Universiti Teknologi Malaysia (UTM). The event, aimed at exploring innovative ways to integrate research into teaching, provided a platform for educators, researchers, and technology enthusiasts to share ideas and insights. It was an exciting opportunity for our team to showcase a demo of MASRETT, a project we’ve been working on to make learning Malaysian Sign Language (MSL) more accessible and interactive for the deaf and hard-of-hearing community in Malaysia.",
-    "content": "const{Fragment:e,jsx:t,jsxs:n}=arguments[0];function _createMdxContent(i){const o={em:\"em\",h2:\"h2\",p:\"p\",...i.components};return n(e,{children:[t(o.h2,{children:\"About MASRETT\"}),\"\\n\",t(o.p,{children:\"MASRETT is designed to allow users to practice MSL using their webcams, providing real-time feedback on their signs. The platform includes features like progress tracking, quizzes, and a sandbox mode where learners can practice at their own pace. While the project is still in its early stages, our demo highlighted what’s to come: a powerful tool for MSL learning that integrates AI and real-time technology. The primary focus of our demo was the real-time model implementation, which tracks user progress and gives feedback as they practice.\"}),\"\\n\",t(o.h2,{children:\"Technical Contributions\"}),\"\\n\",t(o.p,{children:\"Adnan Shafi and I contributed remotely to MASRETT, focusing on the technical side of things. Our responsibilities included developing the web platform using the MERN stack (MongoDB, Express.js, React, Node.js) and implementing the real-time sign language detection model. The integration of this AI-powered model was one of the most exciting parts of the project, as it allowed us to give users immediate feedback on their sign language skills. Although the real-time detection system isn’t fully complete, the demo provided a glimpse into the potential of what we’re building.\"}),\"\\n\",t(o.h2,{children:\"MASRETT Web Platform Demo\"}),\"\\n\",t(o.p,{children:t(o.em,{children:\"Coming soon – a demo of the MASRETT web platform showcasing real-time sign detection and user interaction features.\"})}),\"\\n\",t(o.h2,{children:\"Future Plans\"}),\"\\n\",t(o.p,{children:\"The project isn’t finished yet—there’s still a lot of work to be done before MASRETT is ready for full release. While we’ve successfully implemented features like progress tracking and real-time sign language feedback, we plan to expand the platform with more interactive elements, better model accuracy, and enhanced user engagement. Our team, including Toya Lazmin Khan, Nicholas Pang Jia Chern, Nazihah Surati, and our supervisor, Dr. Yusliza Yusoff, is committed to completing MASRETT and turning it into a fully functional platform for learning MSL.\"}),\"\\n\",t(o.h2,{children:\"Recognition at NALI 2024\"}),\"\\n\",t(o.p,{children:\"At NALI 2024, the bronze medal we received wasn’t just a recognition of our work—it was a reminder of the impact that this project could have on the community. MASRETT is still a work in progress, but the feedback and interest we received at the event have only motivated us to finish the project and make it as accessible and user-friendly as possible. I’m looking forward to what comes next and can’t wait to see how MASRETT evolves in the future.\"}),\"\\n\",t(o.h2,{children:\"Bronze Medal Award\"}),\"\\n\",t(o.p,{children:\"Working on MASRETT has been a challenging yet deeply meaningful experience for me. Presenting it at NALI 2024 felt like a milestone—not because of the award, but because it was a chance to show people something our team truly believes in. Hearing firsthand how MASRETT could help people in the deaf and hard-of-hearing community reminded me why we started this project. There’s still a lot to do, and some days are tough, but seeing the positive response motivates me to keep going. I’m looking forward to building on this momentum and bringing MASRETT closer to a platform that can make a real difference.\"})]})}return{default:function(e={}){const{wrapper:n}=e.components||{};return n?t(n,{...e,children:t(_createMdxContent,{...e})}):_createMdxContent(e)}};",
+    "content": "const{Fragment:e,jsx:t,jsxs:n}=arguments[0];function _createMdxContent(i){const a={a:\"a\",h2:\"h2\",img:\"img\",p:\"p\",...i.components};return n(e,{children:[t(a.h2,{children:\"About MASRETT\"}),\"\\n\",t(a.p,{children:\"MASRETT is designed to allow users to practice MSL using their webcams, providing real-time feedback on their signs. The platform includes features like progress tracking, quizzes, and a sandbox mode where learners can practice at their own pace. While the project is still in its early stages, our demo highlighted what’s to come: a powerful tool for MSL learning that integrates AI and real-time technology. The primary focus of our demo was the real-time model implementation, which tracks user progress and gives feedback as they practice.\"}),\"\\n\",t(a.h2,{children:\"Technical Contributions\"}),\"\\n\",n(a.p,{children:[t(a.a,{href:\"https://www.linkedin.com/in/adnan-shafi1/\",children:\"Adnan Shafi\"}),\" and I contributed remotely to MASRETT, focusing on the technical side of things. Our responsibilities included developing the web platform using the MERN stack (MongoDB, Express.js, React, Node.js) and implementing the real-time sign language detection model. The integration of this AI-powered model was one of the most exciting parts of the project, as it allowed us to give users immediate feedback on their sign language skills. Although the real-time detection system isn’t fully complete, the demo provided a glimpse into the potential of what we’re building.\"]}),\"\\n\",t(a.h2,{children:\"MASRETT Web Platform Demo\"}),\"\\n\",t(a.p,{children:t(a.img,{src:\"/static/demo-9584f950.png\",alt:\"MASRETT Web Platform Demo\"})}),\"\\n\",t(a.h2,{children:\"Future Plans\"}),\"\\n\",n(a.p,{children:[\"The project isn’t finished yet—there’s still a lot of work to be done before MASRETT is ready for full release. While we’ve successfully implemented features like progress tracking and real-time sign language feedback, we plan to expand the platform with more interactive elements, better model accuracy, and enhanced user engagement. Our team, including \",t(a.a,{href:\"https://www.linkedin.com/in/toya-lazmi-khan-470a98219/\",children:\"Toya Lazmin Khan\"}),\", \",t(a.a,{href:\"https://eportfolio.utm.my/user/nicholas-pang-jia-chern\",children:\"Nicholas Pang Jia Chern\"}),\", \",t(a.a,{href:\"https://www.linkedin.com/in/nazihah-surati-7b2069271/\",children:\"Nazihah Surati\"}),\", and our supervisor, \",t(a.a,{href:\"https://www.linkedin.com/in/yusliza/\",children:\"Dr. Yusliza Yusoff\"}),\", is committed to completing MASRETT and turning it into a fully functional platform for learning MSL.\"]}),\"\\n\",t(a.h2,{children:\"Recognition at NALI 2024\"}),\"\\n\",t(a.p,{children:\"At NALI 2024, the bronze medal we received wasn’t just a recognition of our work—it was a reminder of the impact that this project could have on the community. MASRETT is still a work in progress, but the feedback and interest we received at the event have only motivated us to finish the project and make it as accessible and user-friendly as possible. I’m looking forward to what comes next and can’t wait to see how MASRETT evolves in the future.\"}),\"\\n\",t(a.h2,{children:\"Bronze Medal Award\"}),\"\\n\",t(a.p,{children:t(a.img,{src:\"/static/medal-dd012f0e.jpg\",alt:\"Bronze Medal\"})}),\"\\n\",t(a.p,{children:\"Working on MASRETT has been a challenging yet deeply meaningful experience for me. Presenting it at NALI 2024 felt like a milestone—not because of the award, but because it was a chance to show people something our team truly believes in. Hearing firsthand how MASRETT could help people in the deaf and hard-of-hearing community reminded me why we started this project. There’s still a lot to do, and some days are tough, but seeing the positive response motivates me to keep going. I’m looking forward to building on this momentum and bringing MASRETT closer to a platform that can make a real difference.\"})]})}return{default:function(e={}){const{wrapper:n}=e.components||{};return n?t(n,{...e,children:t(_createMdxContent,{...e})}):_createMdxContent(e)}};",
     "permalink": "/achievements/new-academia-learning-innovation-2024"
   }
 ]

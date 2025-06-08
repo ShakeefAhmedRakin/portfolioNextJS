@@ -5,6 +5,7 @@ import { personId } from "../shared/person";
 import { organizationId } from "../shared/organization";
 import SiteMetadata from "@/content/site-metadata";
 import { siteSocials } from "@/content/site-socials";
+import generateImageObjectSchema from "../utils/generateImageObjectSchema";
 
 export default function SetSchemaAboutPage() {
   const graph = BaseSchema({
@@ -23,9 +24,13 @@ export default function SetSchemaAboutPage() {
         primaryImageOfPage: {
           "@id": `${process.env.WEBSITE_URL}/about/#about-main-image`,
         },
-        image: {
-          "@id": `${process.env.WEBSITE_URL}/about/#about-main-image`,
-        },
+        image: [
+          generateImageObjectSchema({
+            id: `${process.env.WEBSITE_URL}/about/#about-main-image`,
+            title: SiteConfig.gallery.aboutHeroImage.name,
+            src: SiteConfig.gallery.aboutHeroImage.src,
+          }),
+        ],
         about: {
           "@id": personId,
         },
@@ -45,15 +50,6 @@ export default function SetSchemaAboutPage() {
         name: SiteMetadata.ABOUT.title,
         description: SiteMetadata.ABOUT.description,
         headline: SiteMetadata.ABOUT.title,
-      },
-      {
-        "@type": "ImageObject",
-        "@id": `${process.env.WEBSITE_URL}/about/#about-main-image`,
-        contentUrl: SiteConfig.gallery.aboutHeroImage.absoluteSrc,
-        caption: SiteConfig.gallery.aboutHeroImage.name,
-        inLanguage: "en-US",
-        creditText: SiteConfig.fullName,
-        copyrightNotice: `© ${SiteConfig.fullName}`,
       },
     ],
   });

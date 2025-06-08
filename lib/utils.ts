@@ -87,3 +87,18 @@ export function arrayBufferToBase64(buffer: ArrayBuffer): string {
   const binary = bytes.reduce((acc, b) => acc + String.fromCharCode(b), "");
   return `data:image/png;base64,${Buffer.from(binary, "binary").toString("base64")}`;
 }
+
+export function extractImagesFromMDX(content: string) {
+  const matches = [
+    ...content.matchAll(
+      /t\(a\.img,\s*{[^}]*src:\s*"([^"]+)",\s*alt:\s*"([^"]+)"/g,
+    ),
+  ];
+
+  const images = matches.map((match) => ({
+    src: match[1],
+    title: match[2],
+  }));
+
+  return images;
+}

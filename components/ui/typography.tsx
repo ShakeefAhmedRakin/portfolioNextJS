@@ -93,14 +93,14 @@ export function TypographyP({
   );
 }
 
-export function TypographyLink({ ...props }: LinkProps) {
+export function TypographyLink({
+  ...props
+}: LinkProps & React.AnchorHTMLAttributes<HTMLAnchorElement>) {
   return (
     <Link
       className={cn(
-        "text-primary/90 hover:text-primary/100 font-medium underline underline-offset-4 duration-300",
+        "text-primary/90 hover:text-primary/100 underline underline-offset-4 duration-300",
       )}
-      target="_blank"
-      rel="noopener noreferrer"
       {...props}
     />
   );

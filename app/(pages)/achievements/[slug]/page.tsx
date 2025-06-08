@@ -7,7 +7,7 @@ import {
   TypographyH1,
 } from "@/components/ui/typography";
 import SiteMetadata from "@/content/site-metadata";
-import { formatDateString } from "@/lib/utils";
+import { extractImagesFromMDX, formatDateString } from "@/lib/utils";
 import SetSchemaAchievementPage from "@/metadata/schemas/schemaAchievementPage";
 import setMetadata from "@/metadata/utils/setMetadata";
 import { Dot } from "lucide-react";
@@ -51,12 +51,14 @@ export default async function AchievementDetails({
     return notFound();
   }
 
+  console.log(extractImagesFromMDX(achievement.content));
+
   return (
     <>
       <SetSchemaAchievementPage achievement={achievement} />
       <article className="container mx-auto mb-8 px-4 pt-10 md:px-10 lg:px-56 xl:px-64">
         <header className="intersect:animate-fade-up shadow-primary/5 intersect:animate-delay-200 animate-ease animate-duration-[1500ms] intersect-once mb-4 space-y-4">
-          <div className="relative aspect-video max-h-[450px] w-full">
+          <div className="bg-primary/5 relative aspect-video max-h-[450px] w-full">
             <Image
               src={achievement.mainCover.src}
               priority
@@ -66,7 +68,7 @@ export default async function AchievementDetails({
               title={achievement.title}
               fill
               draggable={false}
-              className="bg-primary/5 object-contain object-center"
+              className="object-contain object-center"
             />
           </div>
           <hr className="border-primary/50" />

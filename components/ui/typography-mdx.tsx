@@ -13,6 +13,19 @@ import {
   TypographyOrderedList,
 } from "./typography";
 import { LinkProps } from "next/link";
+import React from "react";
+
+const MDXImage = (props: ImageProps) => (
+  <div className="bg-primary/5 relative mb-6 aspect-video max-h-[450px] w-full overflow-hidden rounded">
+    <Image
+      {...props}
+      title={props.alt}
+      draggable={false}
+      fill
+      className="object-contain"
+    />
+  </div>
+);
 
 export const createMDXComponents = (isSmall = false) => ({
   h1: (props: React.ComponentPropsWithoutRef<"h1">) => (
@@ -30,14 +43,32 @@ export const createMDXComponents = (isSmall = false) => ({
   h5: (props: React.ComponentPropsWithoutRef<"h5">) => (
     <TypographyH5 className="mb-4" {...props} />
   ),
-  p: (props: React.ComponentPropsWithoutRef<"p">) => (
-    <TypographyP
-      className="text-foreground/80 mb-4"
-      {...props}
-      level={isSmall ? "small" : "default"}
-    />
+  p: (props: React.ComponentPropsWithoutRef<"p">) => {
+    const children = props.children;
+
+    const isImageBlock =
+      React.Children.count(children) === 1 &&
+      React.isValidElement(children) &&
+      children.type === MDXImage;
+
+    // TO PREVENT <img/> FROM RENDERING INSIDE OF <p> tag in final html.
+    if (isImageBlock) {
+      return children;
+    }
+
+    return (
+      <TypographyP
+        className="text-foreground/80 mb-4"
+        {...props}
+        level={isSmall ? "small" : "default"}
+      />
+    );
+  },
+
+  a: (props: LinkProps & React.AnchorHTMLAttributes<HTMLAnchorElement>) => (
+    <TypographyLink {...props} target="_blank" rel="noopener noreferrer" />
   ),
-  a: (props: LinkProps) => <TypographyLink {...props} />,
+
   blockquote: (props: React.ComponentPropsWithoutRef<"blockquote">) => (
     <TypographyBlockquote
       className="text-foreground/80 mb-4"
@@ -63,9 +94,5 @@ export const createMDXComponents = (isSmall = false) => ({
 
   hr: () => <hr className="border-primary/30 mb-4" />,
 
-  image: (props: ImageProps) => (
-    <div className="mb-6 overflow-hidden rounded">
-      <Image {...props} draggable={false} />
-    </div>
-  ),
+  img: MDXImage,
 });
