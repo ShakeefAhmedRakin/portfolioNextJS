@@ -1,6 +1,5 @@
 import { defineCollection, s } from "velite";
 import { projectCategoriesEnum } from "./types/enums";
-import { siteNavigationMap } from "./content/site-navigation";
 
 export const achievements = defineCollection({
   name: "Achievements",
@@ -20,7 +19,7 @@ export const achievements = defineCollection({
     })
     .transform((data) => ({
       ...data,
-      permalink: `${siteNavigationMap.ACHIEVEMENTS.href}/${data.slug}`,
+      permalink: `/achievements/${data.slug}`,
     })),
 });
 
@@ -60,6 +59,6 @@ export const projects = defineCollection({
     })
     .transform((data) => ({
       ...data,
-      permalink: `${siteNavigationMap.PROJECTS.href}${data.slug}`,
+      permalink: `/projects/${data.slug}`,
     })),
 });

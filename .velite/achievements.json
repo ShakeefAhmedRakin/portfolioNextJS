@@ -1,35 +1,5 @@
 [
   {
-    "title": "Top 10 Finalists at GDSC CRCE BitNBuild’24 Hackathon",
-    "awardTitle": "GDSC CRCE BitNBuild’24 Hackathon",
-    "awardCover": {
-      "src": "/static/bitnbuild-e9c7d679.png",
-      "height": 200,
-      "width": 200,
-      "blurDataURL": "data:image/webp;base64,UklGRogAAABXRUJQVlA4WAoAAAAQAAAABwAABwAAQUxQSEEAAAAAAAAAAAAAAAAPIh4lHREnCHL/+fy0aP8yY97NrGNGzSzO0cjP5FaTyPn+/v7/3fTlKCgqKigvLhwAAAAAAAAAAABWUDggIAAAAJABAJ0BKggACAAMwM4lpAAC5mfwAAD6C7wxx7AwAAAA",
-      "blurWidth": 8,
-      "blurHeight": 8
-    },
-    "isFeatured": true,
-    "mainCover": {
-      "src": "/static/mainImage-dccd7b86.jpeg",
-      "height": 473,
-      "width": 669,
-      "blurDataURL": "data:image/webp;base64,UklGRiwAAABXRUJQVlA4ICAAAABwAQCdASoIAAYADMDOJaACdAFAAAD+3ryR33J+iMAAAA==",
-      "blurWidth": 8,
-      "blurHeight": 6
-    },
-    "slug": "gdsc-crce-bitnbuild-2024",
-    "date": "2024-02-01T00:00:00.000Z",
-    "metadata": {
-      "readingTime": 1,
-      "wordCount": 8
-    },
-    "excerpt": "Our team’s project, AgriSmart, made it to the Top 10 Finalists at the GDSC CRCE BitNBuild’24 Hackathon. The 24-hour challenge pushed me to test my limits, and I came away with not only a solid project but also a renewed sense of confidence in my ability to work under pressure.",
-    "content": "const{jsx:e}=arguments[0];function _createMdxContent(n){const t={h1:\"h1\",...n.components};return e(t.h1,{children:\"This is a NALI achievement using Velite schema.\"})}return{default:function(n={}){const{wrapper:t}=n.components||{};return t?e(t,{...n,children:e(_createMdxContent,{...n})}):_createMdxContent(n)}};",
-    "permalink": "/achievements/gdsc-crce-bitnbuild-2024"
-  },
-  {
     "title": "Top 10 Finalists at DevHack 2023",
     "awardTitle": "DevHack 2023",
     "awardCover": {
@@ -90,34 +60,34 @@
     "permalink": "/achievements/innojam-smart-sustainable-city-2023"
   },
   {
-    "title": "Participatory Award at Kitahack 2024",
-    "awardTitle": "Kitahack 2024",
+    "title": "Top 10 Finalists at GDSC CRCE BitNBuild’24 Hackathon",
+    "awardTitle": "GDSC CRCE BitNBuild’24 Hackathon",
     "awardCover": {
-      "src": "/static/kitahack2024-f2de59f3.png",
+      "src": "/static/bitnbuild-e9c7d679.png",
       "height": 200,
       "width": 200,
-      "blurDataURL": "data:image/webp;base64,UklGRpIAAABXRUJQVlA4WAoAAAAQAAAABwAABwAAQUxQSDsAAAABYBzJtqlz78eOq/8TsG0r/5yQQ0QQTNJU2zH4yUTMRPgoK1znbTxGt/nU836em1E2rW11AQAiwudfAQBWUDggMAAAALABAJ0BKggACAAMwM4lsAJ0APIz5AAA76AMBq3fC+xjSsGaMkU0c2MdLgzVz1NYAA==",
+      "blurDataURL": "data:image/webp;base64,UklGRogAAABXRUJQVlA4WAoAAAAQAAAABwAABwAAQUxQSEEAAAAAAAAAAAAAAAAPIh4lHREnCHL/+fy0aP8yY97NrGNGzSzO0cjP5FaTyPn+/v7/3fTlKCgqKigvLhwAAAAAAAAAAABWUDggIAAAAJABAJ0BKggACAAMwM4lpAAC5mfwAAD6C7wxx7AwAAAA",
       "blurWidth": 8,
       "blurHeight": 8
     },
     "isFeatured": true,
     "mainCover": {
-      "src": "/static/mainImage-6b00b7a9.jpeg",
-      "height": 1414,
-      "width": 2000,
-      "blurDataURL": "data:image/webp;base64,UklGRjIAAABXRUJQVlA4ICYAAACwAQCdASoIAAYADMDOJbACdADIv14AAP4VpFggoJCqJcmx0VeAAA==",
+      "src": "/static/mainImage-dccd7b86.jpeg",
+      "height": 473,
+      "width": 669,
+      "blurDataURL": "data:image/webp;base64,UklGRiwAAABXRUJQVlA4ICAAAABwAQCdASoIAAYADMDOJaACdAFAAAD+3ryR33J+iMAAAA==",
       "blurWidth": 8,
       "blurHeight": 6
     },
-    "slug": "kita-hack-2024",
+    "slug": "gdsc-crce-bitnbuild-2024",
     "date": "2024-02-01T00:00:00.000Z",
     "metadata": {
       "readingTime": 1,
       "wordCount": 8
     },
-    "excerpt": "Despite not securing the top spot, our team received a Participatory Award at Kitahack 2024 for our innovative project, ReWaste. The experience was filled with valuable lessons that will shape my approach to future projects.",
+    "excerpt": "Our team’s project, AgriSmart, made it to the Top 10 Finalists at the GDSC CRCE BitNBuild’24 Hackathon. The 24-hour challenge pushed me to test my limits, and I came away with not only a solid project but also a renewed sense of confidence in my ability to work under pressure.",
     "content": "const{jsx:e}=arguments[0];function _createMdxContent(n){const t={h1:\"h1\",...n.components};return e(t.h1,{children:\"This is a NALI achievement using Velite schema.\"})}return{default:function(n={}){const{wrapper:t}=n.components||{};return t?e(t,{...n,children:e(_createMdxContent,{...n})}):_createMdxContent(n)}};",
-    "permalink": "/achievements/kita-hack-2024"
+    "permalink": "/achievements/gdsc-crce-bitnbuild-2024"
   },
   {
     "title": "2nd Place at MyRapid Bus x UTM Data Hackathon 2023",
@@ -148,6 +118,36 @@
     "excerpt": "Our team earned 2nd place at the MyRapid Bus x UTM Data Hackathon 2023 with MaintainIQ, a Smart Maintenance Management System. The project focused on AI-driven predictive maintenance for buses, tackling real-world challenges like early detection of breakdowns and inventory management.",
     "content": "const{jsx:e}=arguments[0];function _createMdxContent(n){const t={h1:\"h1\",...n.components};return e(t.h1,{children:\"This is a NALI achievement using Velite schema.\"})}return{default:function(n={}){const{wrapper:t}=n.components||{};return t?e(t,{...n,children:e(_createMdxContent,{...n})}):_createMdxContent(n)}};",
     "permalink": "/achievements/my-rapid-bus-utm-2023"
+  },
+  {
+    "title": "Participatory Award at Kitahack 2024",
+    "awardTitle": "Kitahack 2024",
+    "awardCover": {
+      "src": "/static/kitahack2024-f2de59f3.png",
+      "height": 200,
+      "width": 200,
+      "blurDataURL": "data:image/webp;base64,UklGRpIAAABXRUJQVlA4WAoAAAAQAAAABwAABwAAQUxQSDsAAAABYBzJtqlz78eOq/8TsG0r/5yQQ0QQTNJU2zH4yUTMRPgoK1znbTxGt/nU836em1E2rW11AQAiwudfAQBWUDggMAAAALABAJ0BKggACAAMwM4lsAJ0APIz5AAA76AMBq3fC+xjSsGaMkU0c2MdLgzVz1NYAA==",
+      "blurWidth": 8,
+      "blurHeight": 8
+    },
+    "isFeatured": true,
+    "mainCover": {
+      "src": "/static/mainImage-6b00b7a9.jpeg",
+      "height": 1414,
+      "width": 2000,
+      "blurDataURL": "data:image/webp;base64,UklGRjIAAABXRUJQVlA4ICYAAACwAQCdASoIAAYADMDOJbACdADIv14AAP4VpFggoJCqJcmx0VeAAA==",
+      "blurWidth": 8,
+      "blurHeight": 6
+    },
+    "slug": "kita-hack-2024",
+    "date": "2024-02-01T00:00:00.000Z",
+    "metadata": {
+      "readingTime": 1,
+      "wordCount": 8
+    },
+    "excerpt": "Despite not securing the top spot, our team received a Participatory Award at Kitahack 2024 for our innovative project, ReWaste. The experience was filled with valuable lessons that will shape my approach to future projects.",
+    "content": "const{jsx:e}=arguments[0];function _createMdxContent(n){const t={h1:\"h1\",...n.components};return e(t.h1,{children:\"This is a NALI achievement using Velite schema.\"})}return{default:function(n={}){const{wrapper:t}=n.components||{};return t?e(t,{...n,children:e(_createMdxContent,{...n})}):_createMdxContent(n)}};",
+    "permalink": "/achievements/kita-hack-2024"
   },
   {
     "title": "Presenting MASRETT at New Academia Learning Innovation 2024",
