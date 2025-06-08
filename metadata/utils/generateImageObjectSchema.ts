@@ -19,8 +19,13 @@ export default function generateImageObjectSchema({
     caption: title,
     inLanguage: "en-US",
     creditText: SiteConfig.fullName,
-    creator: SiteConfig.fullName,
+    creator: {
+      "@type": "Person",
+      name: SiteConfig.fullName,
+    },
     copyrightNotice: `© ${SiteConfig.fullName}`,
+    license: `${process.env.WEBSITE_URL}/license`,
+    acquireLicensePage: `${process.env.WEBSITE_URL}/license`,
   };
 
   if (id) {

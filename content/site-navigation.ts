@@ -64,6 +64,16 @@ export const siteNavigation: NavItem[] = [
     isShownOnFooterResources: false,
     isExternal: false,
   },
+  {
+    label: "License",
+    title: "License",
+    ariaLabel: "Navigate to the License page",
+    href: "/license",
+    isShownOnNav: false,
+    isShownOnFooterNav: false,
+    isShownOnFooterResources: true,
+    isExternal: false,
+  },
   // EXTERNAL LINKS
   {
     label: "Blogs",
