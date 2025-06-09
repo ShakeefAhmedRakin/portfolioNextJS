@@ -1,5 +1,5 @@
 import { Achievements } from "@/.velite";
-import type { CreativeWork } from "schema-dts";
+import type { BlogPosting } from "schema-dts";
 import { personId } from "../shared/person";
 import { organizationId } from "../shared/organization";
 import { extractImagesFromMDX } from "@/lib/utils";
@@ -8,7 +8,7 @@ import { siteNavigationMap } from "@/content/site-navigation";
 
 export default function GenerateAchievementSchema(
   achievement: Achievements,
-): CreativeWork {
+): BlogPosting {
   const imagesInBlog = extractImagesFromMDX(achievement.content);
 
   return {

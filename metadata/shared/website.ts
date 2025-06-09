@@ -7,7 +7,7 @@ import { organizationId } from "./organization";
 import { siteNavigation } from "@/content/site-navigation";
 import { expertiseContent } from "@/content/home/expertise-section";
 import { skillSets } from "@/content/skills/skills";
-import { achievements } from "@/.velite";
+import { achievements, projects } from "@/.velite";
 
 export const websiteId = `${process.env.WEBSITE_URL}/#website`;
 
@@ -72,9 +72,16 @@ export const websiteJsonLd: WebSite = {
       }),
     ...achievements.map((achievement) => {
       return {
-        "@type": "Webpage",
+        "@type": "BlogPosting",
         name: `${achievement.title} Page`,
         "@id": `${process.env.WEBSITE_URL}${achievement.permalink}`,
+      };
+    }),
+    ...projects.map((project) => {
+      return {
+        "@type": "CollectionPage",
+        name: `${project.title} Page`,
+        "@id": `${process.env.WEBSITE_URL}${project.permalink}`,
       };
     }),
   ],

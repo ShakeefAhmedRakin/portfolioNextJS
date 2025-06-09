@@ -1,4 +1,4 @@
-import { Achievements } from "@/.velite";
+import { Achievements, Projects } from "@/.velite";
 import SiteConfig from "./site-config";
 import { generateOgImageUrl } from "@/lib/utils";
 import { siteNavigationMap } from "./site-navigation";
@@ -33,7 +33,7 @@ const SiteMetadata = {
   },
   getAchievementMetadata(achievement: Achievements) {
     return {
-      title: achievement.title,
+      title: `${achievement.title} | ${SiteConfig.fullName}`,
       description: achievement.excerpt,
       openGraphImageUrl: achievement.mainCover.src,
       pathParam: achievement.permalink,
@@ -48,7 +48,14 @@ const SiteMetadata = {
     }),
     pathParam: siteNavigationMap.PROJECTS.href,
   },
-
+  getProjectMetadata(project: Projects) {
+    return {
+      title: `${project.title} | ${SiteConfig.fullName}`,
+      description: project.excerpt,
+      openGraphImageUrl: project.thumbnail.src,
+      pathParam: project.permalink,
+    };
+  },
   // NOT FOUND METADATA
   NOT_FOUND: {
     title: "Page Not Found",

@@ -60,36 +60,6 @@
     "permalink": "/achievements/devhack-2023"
   },
   {
-    "title": "Fifth Place at InnoJam 2023 - Smart Sustainable City",
-    "awardTitle": "InnoJam 2023 - Smart Sustainable City",
-    "awardCover": {
-      "src": "/static/innojam-47095f55.png",
-      "height": 200,
-      "width": 200,
-      "blurDataURL": "data:image/webp;base64,UklGRo4AAABXRUJQVlA4WAoAAAAQAAAABwAABwAAQUxQSDEAAAABYFTbtpJ7Hl28gI8poCNI4g696RARqR9mhhmShKSi76ty6OJo35/5G10BhiMAAfoBAFZQOCA2AAAAkAEAnQEqCAAIAAzAziWwAnQA8wIAAP0cxJolHARx8A653ysJqXnXotVbLFImPoM+ltg6mvAA",
-      "blurWidth": 8,
-      "blurHeight": 8
-    },
-    "isFeatured": true,
-    "mainCover": {
-      "src": "/static/team-d78195f6.jpeg",
-      "height": 878,
-      "width": 1170,
-      "blurDataURL": "data:image/webp;base64,UklGRi4AAABXRUJQVlA4ICIAAACwAQCdASoIAAYADMDOJZQAAuWuZ7SwAPtjPmBPpDC8AAAA",
-      "blurWidth": 8,
-      "blurHeight": 6
-    },
-    "slug": "innojam-smart-sustainable-city-2023",
-    "date": "2023-09-01T00:00:00.000Z",
-    "metadata": {
-      "readingTime": 1,
-      "wordCount": 216
-    },
-    "excerpt": "Our team secured 5th place at InnoJam 2023 with ReCycgo, a mobile application for businesses aimed at optimizing waste management through smart logistics. The project tackled critical challenges in achieving Malaysia's recycling goals.",
-    "content": "const{Fragment:e,jsx:n,jsxs:t}=arguments[0];function _createMdxContent(i){const a={h2:\"h2\",img:\"img\",p:\"p\",...i.components};return t(e,{children:[n(a.h2,{children:\"About ReCycgo\"}),\"\\n\",n(a.p,{children:\"ReCycgo is a mobile application designed to help businesses (B2B) optimize waste management. The app leverages smart logistics to monitor trash weight via connected smart dustbins, provides real-time updates to lorry drivers and waste collectors, and predicts future trash volumes using data analytics. The goal is to reduce logistical delays and improve Malaysia's recycling rate to achieve the national target of 40% by 2025.\"}),\"\\n\",n(a.p,{children:n(a.img,{src:\"/static/overview-825de933.png\",alt:\"ReCycgo System Overview\"})}),\"\\n\",n(a.h2,{children:\"My Contribution\"}),\"\\n\",n(a.p,{children:\"I contributed remotely to the project by brainstorming the idea with the team, preparing presentation slides, and crafting the pitch to effectively communicate our solution's vision and potential impact. My focus was on ensuring the presentation demonstrated the practical and technical aspects of ReCycgo.\"}),\"\\n\",n(a.h2,{children:\"Key Insights\"}),\"\\n\",n(a.p,{children:\"Malaysia loses an estimated RM476 million annually due to poor recycling practices. Our solution addresses this by combining technology and logistics to reduce landfill costs and delays in waste management. During the event, we highlighted the potential of our system to improve operational efficiency for businesses while contributing to sustainability.\"}),\"\\n\",n(a.h2,{children:\"Event Experience\"}),\"\\n\",n(a.p,{children:\"InnoJam 2023 was held in conjunction with InnoEx 2023 and organized by Cyberview. The event gathered participants from diverse backgrounds, including university students and professionals, to design sustainable solutions for urban challenges in Cyberjaya. Over two days, we worked on leveraging open data to envision Cyberjaya as a model Smart Sustainable City.\"}),\"\\n\",n(a.p,{children:n(a.img,{src:\"/static/og-d9ce61ae.jpeg\",alt:\"InnoJam 2023 Event Overview\"})})]})}return{default:function(e={}){const{wrapper:t}=e.components||{};return t?n(t,{...e,children:n(_createMdxContent,{...e})}):_createMdxContent(e)}};",
-    "permalink": "/achievements/innojam-smart-sustainable-city-2023"
-  },
-  {
     "title": "2nd Place at MyRapid Bus x UTM Data Hackathon 2023",
     "awardTitle": "MyRapid Bus x UTM Data Hackathon 2023",
     "awardCover": {
@@ -120,36 +90,6 @@
     "permalink": "/achievements/my-rapid-bus-utm-2023"
   },
   {
-    "title": "Participatory Award at Kitahack 2024",
-    "awardTitle": "Kitahack 2024",
-    "awardCover": {
-      "src": "/static/kitahack2024-f2de59f3.png",
-      "height": 200,
-      "width": 200,
-      "blurDataURL": "data:image/webp;base64,UklGRpIAAABXRUJQVlA4WAoAAAAQAAAABwAABwAAQUxQSDsAAAABYBzJtqlz78eOq/8TsG0r/5yQQ0QQTNJU2zH4yUTMRPgoK1znbTxGt/nU836em1E2rW11AQAiwudfAQBWUDggMAAAALABAJ0BKggACAAMwM4lsAJ0APIz5AAA76AMBq3fC+xjSsGaMkU0c2MdLgzVz1NYAA==",
-      "blurWidth": 8,
-      "blurHeight": 8
-    },
-    "isFeatured": true,
-    "mainCover": {
-      "src": "/static/mainImage-6b00b7a9.jpeg",
-      "height": 1414,
-      "width": 2000,
-      "blurDataURL": "data:image/webp;base64,UklGRjIAAABXRUJQVlA4ICYAAACwAQCdASoIAAYADMDOJbACdADIv14AAP4VpFggoJCqJcmx0VeAAA==",
-      "blurWidth": 8,
-      "blurHeight": 6
-    },
-    "slug": "kita-hack-2024",
-    "date": "2024-02-01T00:00:00.000Z",
-    "metadata": {
-      "readingTime": 2,
-      "wordCount": 469
-    },
-    "excerpt": "Despite not securing the top spot, our team received a Participatory Award at Kitahack 2024 for our innovative project, ReWaste. The experience was filled with valuable lessons that will shape my approach to future projects.",
-    "content": "const{Fragment:e,jsx:t,jsxs:a}=arguments[0];function _createMdxContent(n){const i={h2:\"h2\",img:\"img\",p:\"p\",...n.components};return a(e,{children:[t(i.h2,{children:\"About ReWaste\"}),\"\\n\",t(i.p,{children:\"ReWaste was an innovative platform designed to tackle the underutilization of agricultural waste in Malaysia. The platform connects sellers of agricultural waste with power plant owners, enabling them to engage in a sustainable bidding process that contributes to cleaner energy production. By utilizing AI-driven tools, we streamlined the selling process, creating a win-win situation for both sellers and power plant owners.\"}),\"\\n\",t(i.p,{children:t(i.img,{src:\"/static/rewaste-beb7db94.png\",alt:\"ReWaste Project\"})}),\"\\n\",t(i.h2,{children:\"Our Project Idea\"}),\"\\n\",t(i.p,{children:\"The core idea behind ReWaste was to create an online auction platform for agricultural waste. Sellers would put their waste up for auction where they would add listings specifying the type of waste available (e.g., coconut waste, palm oil biomass), the quantity, initial price, and any specific terms or conditions. Buyers bid on the listings to compete for prices. Buyers place competitive bids on the agricultural waste listings that match their requirements. This would allow them to access these resources at lower prices, fostering an efficient and cost-effective marketplace.\"}),\"\\n\",t(i.p,{children:\"The idea of ReWaste was unique. For Plant Owners, they would experience reduced operational costs by securing agricultural waste at lower prices compared to coal. Through co-firing, they would achieve a cleaner, eco-conscious approach, consuming less coal and significantly decreasing carbon emissions. For Farmers, they would find a new avenue for waste utilization, earning revenue while contributing to a greener environment.\"}),\"\\n\",t(i.h2,{children:\"Key Takeaways\"}),\"\\n\",t(i.p,{children:\"The journey was filled with valuable lessons, the most important being the significance of pre-planning and design. I realized that diving straight into implementation without adequate planning hindered our progress. This reinforced my belief in the value of systematic approaches, such as the concepts taught in 'System Analysis and Design' courses, including use cases and activity diagrams. Proper preparation is crucial to the success of any project.\"}),\"\\n\",t(i.h2,{children:\"Personal Experience\"}),\"\\n\",t(i.p,{children:\"While we didn’t clinch the top spot, the experience was invaluable. I learned a great deal about the importance of structured planning, teamwork, and AI integration in solving real-world challenges. My teammates and I faced challenges, but our collaboration allowed us to create something meaningful and impactful. This experience has definitely shaped my approach to future endeavors.\"}),\"\\n\",t(i.h2,{children:\"What I Learned\"}),\"\\n\",t(i.p,{children:\"The biggest lesson from Kitahack 2024 was the importance of proper planning and design in the success of a project. It also reinforced my belief in the power of teamwork, as every member contributed to our project in meaningful ways. Even though we didn't win, the journey itself was a rewarding experience that taught me valuable lessons that I will carry forward into my future projects.\"}),\"\\n\",t(i.p,{children:\"ReWaste, while a failed endeavor at Kitahack 2024, has the potential to make a lasting impact. The participatory award we received was a reflection of the hard work and dedication of our team. I'm proud of what we achieved and excited to continue exploring ways to apply technology to sustainability.\"})]})}return{default:function(e={}){const{wrapper:a}=e.components||{};return a?t(a,{...e,children:t(_createMdxContent,{...e})}):_createMdxContent(e)}};",
-    "permalink": "/achievements/kita-hack-2024"
-  },
-  {
     "title": "Presenting MASRETT at New Academia Learning Innovation 2024",
     "awardTitle": "New Academia Learning Innovation 2024",
     "awardCover": {
@@ -178,5 +118,65 @@
     "excerpt": "In October 2024, I had the chance to present MASRETT (Malaysian Sign Language Real-Time Tutorial) at the Pre-NALI 2024 workshops, hosted by Universiti Teknologi Malaysia (UTM). The event, aimed at exploring innovative ways to integrate research into teaching, provided a platform for educators, researchers, and technology enthusiasts to share ideas and insights. It was an exciting opportunity for our team to showcase a demo of MASRETT, a project we’ve been working on to make learning Malaysian Sign Language (MSL) more accessible and interactive for the deaf and hard-of-hearing community in Malaysia.",
     "content": "const{Fragment:e,jsx:t,jsxs:n}=arguments[0];function _createMdxContent(i){const a={a:\"a\",h2:\"h2\",img:\"img\",p:\"p\",...i.components};return n(e,{children:[t(a.h2,{children:\"About MASRETT\"}),\"\\n\",t(a.p,{children:\"MASRETT is designed to allow users to practice MSL using their webcams, providing real-time feedback on their signs. The platform includes features like progress tracking, quizzes, and a sandbox mode where learners can practice at their own pace. While the project is still in its early stages, our demo highlighted what’s to come: a powerful tool for MSL learning that integrates AI and real-time technology. The primary focus of our demo was the real-time model implementation, which tracks user progress and gives feedback as they practice.\"}),\"\\n\",t(a.h2,{children:\"Technical Contributions\"}),\"\\n\",n(a.p,{children:[t(a.a,{href:\"https://www.linkedin.com/in/adnan-shafi1/\",children:\"Adnan Shafi\"}),\" and I contributed remotely to MASRETT, focusing on the technical side of things. Our responsibilities included developing the web platform using the MERN stack (MongoDB, Express.js, React, Node.js) and implementing the real-time sign language detection model. The integration of this AI-powered model was one of the most exciting parts of the project, as it allowed us to give users immediate feedback on their sign language skills. Although the real-time detection system isn’t fully complete, the demo provided a glimpse into the potential of what we’re building.\"]}),\"\\n\",t(a.h2,{children:\"MASRETT Web Platform Demo\"}),\"\\n\",t(a.p,{children:t(a.img,{src:\"/static/demo-9584f950.png\",alt:\"MASRETT Web Platform Demo\"})}),\"\\n\",t(a.h2,{children:\"Future Plans\"}),\"\\n\",n(a.p,{children:[\"The project isn’t finished yet—there’s still a lot of work to be done before MASRETT is ready for full release. While we’ve successfully implemented features like progress tracking and real-time sign language feedback, we plan to expand the platform with more interactive elements, better model accuracy, and enhanced user engagement. Our team, including \",t(a.a,{href:\"https://www.linkedin.com/in/toya-lazmi-khan-470a98219/\",children:\"Toya Lazmin Khan\"}),\", \",t(a.a,{href:\"https://eportfolio.utm.my/user/nicholas-pang-jia-chern\",children:\"Nicholas Pang Jia Chern\"}),\", \",t(a.a,{href:\"https://www.linkedin.com/in/nazihah-surati-7b2069271/\",children:\"Nazihah Surati\"}),\", and our supervisor, \",t(a.a,{href:\"https://www.linkedin.com/in/yusliza/\",children:\"Dr. Yusliza Yusoff\"}),\", is committed to completing MASRETT and turning it into a fully functional platform for learning MSL.\"]}),\"\\n\",t(a.h2,{children:\"Recognition at NALI 2024\"}),\"\\n\",t(a.p,{children:\"At NALI 2024, the bronze medal we received wasn’t just a recognition of our work—it was a reminder of the impact that this project could have on the community. MASRETT is still a work in progress, but the feedback and interest we received at the event have only motivated us to finish the project and make it as accessible and user-friendly as possible. I’m looking forward to what comes next and can’t wait to see how MASRETT evolves in the future.\"}),\"\\n\",t(a.h2,{children:\"Bronze Medal Award\"}),\"\\n\",t(a.p,{children:t(a.img,{src:\"/static/medal-dd012f0e.jpg\",alt:\"Bronze Medal\"})}),\"\\n\",t(a.p,{children:\"Working on MASRETT has been a challenging yet deeply meaningful experience for me. Presenting it at NALI 2024 felt like a milestone—not because of the award, but because it was a chance to show people something our team truly believes in. Hearing firsthand how MASRETT could help people in the deaf and hard-of-hearing community reminded me why we started this project. There’s still a lot to do, and some days are tough, but seeing the positive response motivates me to keep going. I’m looking forward to building on this momentum and bringing MASRETT closer to a platform that can make a real difference.\"})]})}return{default:function(e={}){const{wrapper:n}=e.components||{};return n?t(n,{...e,children:t(_createMdxContent,{...e})}):_createMdxContent(e)}};",
     "permalink": "/achievements/new-academia-learning-innovation-2024"
+  },
+  {
+    "title": "Fifth Place at InnoJam 2023 - Smart Sustainable City",
+    "awardTitle": "InnoJam 2023 - Smart Sustainable City",
+    "awardCover": {
+      "src": "/static/innojam-47095f55.png",
+      "height": 200,
+      "width": 200,
+      "blurDataURL": "data:image/webp;base64,UklGRo4AAABXRUJQVlA4WAoAAAAQAAAABwAABwAAQUxQSDEAAAABYFTbtpJ7Hl28gI8poCNI4g696RARqR9mhhmShKSi76ty6OJo35/5G10BhiMAAfoBAFZQOCA2AAAAkAEAnQEqCAAIAAzAziWwAnQA8wIAAP0cxJolHARx8A653ysJqXnXotVbLFImPoM+ltg6mvAA",
+      "blurWidth": 8,
+      "blurHeight": 8
+    },
+    "isFeatured": true,
+    "mainCover": {
+      "src": "/static/team-d78195f6.jpeg",
+      "height": 878,
+      "width": 1170,
+      "blurDataURL": "data:image/webp;base64,UklGRi4AAABXRUJQVlA4ICIAAACwAQCdASoIAAYADMDOJZQAAuWuZ7SwAPtjPmBPpDC8AAAA",
+      "blurWidth": 8,
+      "blurHeight": 6
+    },
+    "slug": "innojam-smart-sustainable-city-2023",
+    "date": "2023-09-01T00:00:00.000Z",
+    "metadata": {
+      "readingTime": 1,
+      "wordCount": 216
+    },
+    "excerpt": "Our team secured 5th place at InnoJam 2023 with ReCycgo, a mobile application for businesses aimed at optimizing waste management through smart logistics. The project tackled critical challenges in achieving Malaysia's recycling goals.",
+    "content": "const{Fragment:e,jsx:n,jsxs:t}=arguments[0];function _createMdxContent(i){const a={h2:\"h2\",img:\"img\",p:\"p\",...i.components};return t(e,{children:[n(a.h2,{children:\"About ReCycgo\"}),\"\\n\",n(a.p,{children:\"ReCycgo is a mobile application designed to help businesses (B2B) optimize waste management. The app leverages smart logistics to monitor trash weight via connected smart dustbins, provides real-time updates to lorry drivers and waste collectors, and predicts future trash volumes using data analytics. The goal is to reduce logistical delays and improve Malaysia's recycling rate to achieve the national target of 40% by 2025.\"}),\"\\n\",n(a.p,{children:n(a.img,{src:\"/static/overview-825de933.png\",alt:\"ReCycgo System Overview\"})}),\"\\n\",n(a.h2,{children:\"My Contribution\"}),\"\\n\",n(a.p,{children:\"I contributed remotely to the project by brainstorming the idea with the team, preparing presentation slides, and crafting the pitch to effectively communicate our solution's vision and potential impact. My focus was on ensuring the presentation demonstrated the practical and technical aspects of ReCycgo.\"}),\"\\n\",n(a.h2,{children:\"Key Insights\"}),\"\\n\",n(a.p,{children:\"Malaysia loses an estimated RM476 million annually due to poor recycling practices. Our solution addresses this by combining technology and logistics to reduce landfill costs and delays in waste management. During the event, we highlighted the potential of our system to improve operational efficiency for businesses while contributing to sustainability.\"}),\"\\n\",n(a.h2,{children:\"Event Experience\"}),\"\\n\",n(a.p,{children:\"InnoJam 2023 was held in conjunction with InnoEx 2023 and organized by Cyberview. The event gathered participants from diverse backgrounds, including university students and professionals, to design sustainable solutions for urban challenges in Cyberjaya. Over two days, we worked on leveraging open data to envision Cyberjaya as a model Smart Sustainable City.\"}),\"\\n\",n(a.p,{children:n(a.img,{src:\"/static/og-d9ce61ae.jpeg\",alt:\"InnoJam 2023 Event Overview\"})})]})}return{default:function(e={}){const{wrapper:t}=e.components||{};return t?n(t,{...e,children:n(_createMdxContent,{...e})}):_createMdxContent(e)}};",
+    "permalink": "/achievements/innojam-smart-sustainable-city-2023"
+  },
+  {
+    "title": "Participatory Award at Kitahack 2024",
+    "awardTitle": "Kitahack 2024",
+    "awardCover": {
+      "src": "/static/kitahack2024-f2de59f3.png",
+      "height": 200,
+      "width": 200,
+      "blurDataURL": "data:image/webp;base64,UklGRpIAAABXRUJQVlA4WAoAAAAQAAAABwAABwAAQUxQSDsAAAABYBzJtqlz78eOq/8TsG0r/5yQQ0QQTNJU2zH4yUTMRPgoK1znbTxGt/nU836em1E2rW11AQAiwudfAQBWUDggMAAAALABAJ0BKggACAAMwM4lsAJ0APIz5AAA76AMBq3fC+xjSsGaMkU0c2MdLgzVz1NYAA==",
+      "blurWidth": 8,
+      "blurHeight": 8
+    },
+    "isFeatured": true,
+    "mainCover": {
+      "src": "/static/mainImage-6b00b7a9.jpeg",
+      "height": 1414,
+      "width": 2000,
+      "blurDataURL": "data:image/webp;base64,UklGRjIAAABXRUJQVlA4ICYAAACwAQCdASoIAAYADMDOJbACdADIv14AAP4VpFggoJCqJcmx0VeAAA==",
+      "blurWidth": 8,
+      "blurHeight": 6
+    },
+    "slug": "kita-hack-2024",
+    "date": "2024-02-01T00:00:00.000Z",
+    "metadata": {
+      "readingTime": 2,
+      "wordCount": 469
+    },
+    "excerpt": "Despite not securing the top spot, our team received a Participatory Award at Kitahack 2024 for our innovative project, ReWaste. The experience was filled with valuable lessons that will shape my approach to future projects.",
+    "content": "const{Fragment:e,jsx:t,jsxs:a}=arguments[0];function _createMdxContent(n){const i={h2:\"h2\",img:\"img\",p:\"p\",...n.components};return a(e,{children:[t(i.h2,{children:\"About ReWaste\"}),\"\\n\",t(i.p,{children:\"ReWaste was an innovative platform designed to tackle the underutilization of agricultural waste in Malaysia. The platform connects sellers of agricultural waste with power plant owners, enabling them to engage in a sustainable bidding process that contributes to cleaner energy production. By utilizing AI-driven tools, we streamlined the selling process, creating a win-win situation for both sellers and power plant owners.\"}),\"\\n\",t(i.p,{children:t(i.img,{src:\"/static/rewaste-beb7db94.png\",alt:\"ReWaste Project\"})}),\"\\n\",t(i.h2,{children:\"Our Project Idea\"}),\"\\n\",t(i.p,{children:\"The core idea behind ReWaste was to create an online auction platform for agricultural waste. Sellers would put their waste up for auction where they would add listings specifying the type of waste available (e.g., coconut waste, palm oil biomass), the quantity, initial price, and any specific terms or conditions. Buyers bid on the listings to compete for prices. Buyers place competitive bids on the agricultural waste listings that match their requirements. This would allow them to access these resources at lower prices, fostering an efficient and cost-effective marketplace.\"}),\"\\n\",t(i.p,{children:\"The idea of ReWaste was unique. For Plant Owners, they would experience reduced operational costs by securing agricultural waste at lower prices compared to coal. Through co-firing, they would achieve a cleaner, eco-conscious approach, consuming less coal and significantly decreasing carbon emissions. For Farmers, they would find a new avenue for waste utilization, earning revenue while contributing to a greener environment.\"}),\"\\n\",t(i.h2,{children:\"Key Takeaways\"}),\"\\n\",t(i.p,{children:\"The journey was filled with valuable lessons, the most important being the significance of pre-planning and design. I realized that diving straight into implementation without adequate planning hindered our progress. This reinforced my belief in the value of systematic approaches, such as the concepts taught in 'System Analysis and Design' courses, including use cases and activity diagrams. Proper preparation is crucial to the success of any project.\"}),\"\\n\",t(i.h2,{children:\"Personal Experience\"}),\"\\n\",t(i.p,{children:\"While we didn’t clinch the top spot, the experience was invaluable. I learned a great deal about the importance of structured planning, teamwork, and AI integration in solving real-world challenges. My teammates and I faced challenges, but our collaboration allowed us to create something meaningful and impactful. This experience has definitely shaped my approach to future endeavors.\"}),\"\\n\",t(i.h2,{children:\"What I Learned\"}),\"\\n\",t(i.p,{children:\"The biggest lesson from Kitahack 2024 was the importance of proper planning and design in the success of a project. It also reinforced my belief in the power of teamwork, as every member contributed to our project in meaningful ways. Even though we didn't win, the journey itself was a rewarding experience that taught me valuable lessons that I will carry forward into my future projects.\"}),\"\\n\",t(i.p,{children:\"ReWaste, while a failed endeavor at Kitahack 2024, has the potential to make a lasting impact. The participatory award we received was a reflection of the hard work and dedication of our team. I'm proud of what we achieved and excited to continue exploring ways to apply technology to sustainability.\"})]})}return{default:function(e={}){const{wrapper:a}=e.components||{};return a?t(a,{...e,children:t(_createMdxContent,{...e})}):_createMdxContent(e)}};",
+    "permalink": "/achievements/kita-hack-2024"
   }
 ]

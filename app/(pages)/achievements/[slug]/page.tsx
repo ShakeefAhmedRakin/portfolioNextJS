@@ -55,7 +55,8 @@ export default async function AchievementDetails({
   return (
     <>
       <SetSchemaAchievementPage achievement={achievement} />
-      <article className="container mx-auto mb-8 px-4 pt-10 md:px-10 lg:px-56 xl:px-64">
+      <article className="relative container mx-auto mb-8 px-4 pt-10 md:px-10 lg:px-56 xl:px-64">
+        <BackgroundGridOverlay />
         <header className="intersect:animate-fade-up shadow-primary/5 intersect:animate-delay-200 animate-ease animate-duration-[1500ms] intersect-once mb-4 space-y-4">
           <div className="bg-primary/5 relative aspect-video max-h-[450px] w-full">
             <Image
@@ -89,11 +90,9 @@ export default async function AchievementDetails({
           </div>
           <hr className="border-primary/50" />
         </header>
-        <div className="relative">
-          <BackgroundGridOverlay />
-          <div className="intersect:animate-fade-up shadow-primary/5 intersect:animate-delay-200 animate-ease animate-duration-[1500ms] intersect-once">
-            <MDXContent code={achievement.content} />
-          </div>
+
+        <div className="intersect:animate-fade-up shadow-primary/5 intersect:animate-delay-200 animate-ease animate-duration-[1500ms] intersect-once">
+          <MDXContent code={achievement.content} />
         </div>
       </article>
     </>

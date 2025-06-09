@@ -19,7 +19,7 @@ export default function RootLayout({
       <body className={`relative antialiased`}>
         <Toaster />
         <ClientObserver />
-        <div className="absolute -top-[90px] -z-20 h-screen w-full overflow-hidden">
+        <div className="absolute -top-[90px] z-0 h-screen w-full overflow-hidden">
           <Spotlight />
         </div>
         <SiteHeader />

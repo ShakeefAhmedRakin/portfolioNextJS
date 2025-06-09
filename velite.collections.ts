@@ -54,7 +54,7 @@ export const projects = defineCollection({
       isFeatured: s.boolean(),
       isOngoing: s.boolean(),
       workId: s.string().nullable(),
-      excerpt: s.excerpt(),
+      excerpt: s.string(),
       content: s.mdx(),
     })
     .transform((data) => ({

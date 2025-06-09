@@ -7,7 +7,7 @@ import Link from "next/link";
 import WorkDuration from "../../../../components/ui/work-duration";
 import { MDXContent } from "@/components/ui/mdx-content";
 import WorkDate from "@/components/ui/work-dates";
-import { Badge } from "@/components/ui/badge";
+import { badgeVariants } from "@/components/ui/badge";
 import BackgroundGridOverlay from "@/components/ui/background-grid-overlay";
 
 export default function WorkExperienceSection() {
@@ -67,17 +67,19 @@ export default function WorkExperienceSection() {
                 {work.company}
               </h4>
             )}
-            <div className="ml-4">
+            <div className="mt-2 ml-4">
               <MDXContent code={work.content} isSmall />
-              <ul className="mt-4 flex gap-1">
+              <ul className="mt-4 flex">
                 {work.tags.map((tag) => (
-                  <Badge
+                  <li
                     key={`${work.company}-${tag}`}
-                    variant={"outline"}
-                    className="rounded-2xl"
+                    className={badgeVariants({
+                      variant: "outline",
+                      className: "rounded-2xl",
+                    })}
                   >
                     {tag}
-                  </Badge>
+                  </li>
                 ))}
               </ul>
             </div>

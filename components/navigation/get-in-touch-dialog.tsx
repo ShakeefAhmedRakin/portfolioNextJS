@@ -54,6 +54,7 @@ export function GetInTouchDialog({ children }: { children: ReactNode }) {
                 aria-label={link.ariaLabel}
                 title={link.title}
               >
+                <span className="sr-only">{link.ariaLabel}</span>
                 {link.icon}
               </Link>
             ))}

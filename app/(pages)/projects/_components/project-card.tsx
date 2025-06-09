@@ -4,6 +4,7 @@ import {
   paragraphVariants,
   TypographyP,
 } from "@/components/ui/typography";
+import { formatDateString } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -32,7 +33,7 @@ export default function ProjectCard({ project }: { project: Projects }) {
             {project.isOngoing ? (
               <span>ONGOING</span>
             ) : (
-              <span>{project.date}</span>
+              <time>{formatDateString(project.date)}</time>
             )}
           </span>
         </div>

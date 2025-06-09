@@ -50,7 +50,12 @@ export function Breadcrumbs() {
         <BreadcrumbList className="flex-nowrap text-[11px]">
           <BreadcrumbItem>
             <BreadcrumbLink asChild>
-              <Link href={siteNavigationMap.HOME.href}>Home</Link>
+              <Link
+                href={siteNavigationMap.HOME.href}
+                title={siteNavigationMap.HOME.label}
+              >
+                {siteNavigationMap.HOME.label}
+              </Link>
             </BreadcrumbLink>
           </BreadcrumbItem>
 
@@ -76,7 +81,9 @@ export function Breadcrumbs() {
                     </BreadcrumbPage>
                   ) : (
                     <BreadcrumbLink asChild>
-                      <Link href={href}>{linkLabel}</Link>
+                      <Link href={href} title={linkLabel}>
+                        {linkLabel}
+                      </Link>
                     </BreadcrumbLink>
                   )}
                 </BreadcrumbItem>

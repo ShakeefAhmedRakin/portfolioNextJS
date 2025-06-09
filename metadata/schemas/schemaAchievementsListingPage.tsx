@@ -29,17 +29,8 @@ export default function SetSchemaAchievementsListingPage() {
         name: SiteMetadata.ACHIEVEMENTS.title,
         description: SiteMetadata.ACHIEVEMENTS.description,
         headline: SiteMetadata.ACHIEVEMENTS.title,
-        blogPost: [
-          ...achievements.map((achievement) => {
-            return {
-              "@type": "BlogPosting",
-              "@id": `${process.env.WEBSITE_URL}${achievement.permalink}`,
-              name: achievement.title,
-            };
-          }),
-        ],
+        blogPost: [...achievementsSchemas],
       },
-      ...achievementsSchemas,
     ],
   });
 

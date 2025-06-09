@@ -43,6 +43,7 @@ export default function HeroSection() {
               aria-label={link.ariaLabel}
               title={link.title}
             >
+              <span className="sr-only">{link.ariaLabel}</span>
               {link.icon}
             </Link>
           ))}

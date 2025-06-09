@@ -98,13 +98,3 @@ export function extractImagesFromMDX(content: string) {
 
   return images;
 }
-
-// export function extractImagesFromMDX(content: string) {
-//   // FINDING SOURCE HREF OF IMAGES
-//   const regex = /img,\{src:"([^"]*)",alt:/g;
-//   const matches = [...content.matchAll(regex)];
-
-//   const images = matches.map((match) => match[1]);
-//   console.log(images);
-//   return [];
-// }

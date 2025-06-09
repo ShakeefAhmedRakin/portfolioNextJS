@@ -11,17 +11,6 @@ type SiteSocial = {
   ariaLabel: string;
 };
 
-export enum SiteNavKey {
-  HOME = "HOME",
-  ABOUT = "ABOUT",
-  ACHIEVEMENTS = "ACHIEVEMENTS",
-  PROJECTS = "PROJECTS",
-  RESEARCH = "RESEARCH",
-  LICENSE = "LICENSE",
-  BLOGS = "BLOGS",
-  RESUME = "RESUME",
-}
-
 export enum SiteSocialKey {
   LinkedIn = "LINKEDIN",
   GitHub = "GITHUB",

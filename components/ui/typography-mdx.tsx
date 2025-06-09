@@ -14,17 +14,20 @@ import {
 } from "./typography";
 import { LinkProps } from "next/link";
 import React from "react";
+import { badgeVariants } from "./badge";
 
 const MDXImage = (props: ImageProps) => (
-  <div className="bg-primary/5 relative mb-6 aspect-video max-h-[450px] w-full overflow-hidden rounded">
-    <Image
-      {...props}
-      title={props.alt}
-      draggable={false}
-      fill
-      className="object-contain"
-    />
-  </div>
+  <figure className="bg-primary/5 relative mb-6 aspect-video max-h-[450px] w-full overflow-hidden rounded">
+    <Image {...props} draggable={false} fill className="object-contain" />
+    <figcaption
+      className={badgeVariants({
+        className:
+          "bg-secondary/80 absolute bottom-2 left-1/2 -translate-x-1/2 transform text-center text-xs",
+      })}
+    >
+      {props.alt}
+    </figcaption>
+  </figure>
 );
 
 export const createMDXComponents = (isSmall = false) => ({
