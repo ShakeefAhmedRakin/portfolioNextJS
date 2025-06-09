@@ -29,7 +29,7 @@ export default function SetSchemaAchievementsListingPage() {
         name: SiteMetadata.ACHIEVEMENTS.title,
         description: SiteMetadata.ACHIEVEMENTS.description,
         headline: SiteMetadata.ACHIEVEMENTS.title,
-        hasPart: [...achievementsSchemas],
+        blogPost: [...achievementsSchemas],
       },
     ],
   });
