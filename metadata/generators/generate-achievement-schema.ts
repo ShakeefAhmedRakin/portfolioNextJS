@@ -10,6 +10,7 @@ export default function GenerateAchievementSchema(
   achievement: Achievements,
 ): CreativeWork {
   const imagesInBlog = extractImagesFromMDX(achievement.content);
+
   return {
     "@type": "BlogPosting",
     "@id": `${process.env.WEBSITE_URL}${achievement.permalink}`,

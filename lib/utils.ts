@@ -89,16 +89,22 @@ export function arrayBufferToBase64(buffer: ArrayBuffer): string {
 }
 
 export function extractImagesFromMDX(content: string) {
-  const matches = [
-    ...content.matchAll(
-      /t\(a\.img,\s*{[^}]*src:\s*"([^"]+)",\s*alt:\s*"([^"]+)"/g,
-    ),
-  ];
+  const matches = [...content.matchAll(/\{src:"([^"]+)",alt:"([^"]+)"\}/g)];
 
-  const images = matches.map((match) => ({
-    src: match[1],
-    title: match[2],
+  const images = matches.map((m) => ({
+    src: m[1],
+    title: m[2],
   }));
 
   return images;
 }
+
+// export function extractImagesFromMDX(content: string) {
+//   // FINDING SOURCE HREF OF IMAGES
+//   const regex = /img,\{src:"([^"]*)",alt:/g;
+//   const matches = [...content.matchAll(regex)];
+
+//   const images = matches.map((match) => match[1]);
+//   console.log(images);
+//   return [];
+// }

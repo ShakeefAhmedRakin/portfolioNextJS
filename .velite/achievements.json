@@ -1,5 +1,35 @@
 [
   {
+    "title": "Top 10 Finalists at GDSC CRCE BitNBuild’24 Hackathon",
+    "awardTitle": "GDSC CRCE BitNBuild’24 Hackathon",
+    "awardCover": {
+      "src": "/static/bitnbuild-e9c7d679.png",
+      "height": 200,
+      "width": 200,
+      "blurDataURL": "data:image/webp;base64,UklGRogAAABXRUJQVlA4WAoAAAAQAAAABwAABwAAQUxQSEEAAAAAAAAAAAAAAAAPIh4lHREnCHL/+fy0aP8yY97NrGNGzSzO0cjP5FaTyPn+/v7/3fTlKCgqKigvLhwAAAAAAAAAAABWUDggIAAAAJABAJ0BKggACAAMwM4lpAAC5mfwAAD6C7wxx7AwAAAA",
+      "blurWidth": 8,
+      "blurHeight": 8
+    },
+    "isFeatured": true,
+    "mainCover": {
+      "src": "/static/mainImage-dccd7b86.jpeg",
+      "height": 473,
+      "width": 669,
+      "blurDataURL": "data:image/webp;base64,UklGRiwAAABXRUJQVlA4ICAAAABwAQCdASoIAAYADMDOJaACdAFAAAD+3ryR33J+iMAAAA==",
+      "blurWidth": 8,
+      "blurHeight": 6
+    },
+    "slug": "gdsc-crce-bitnbuild-2024",
+    "date": "2024-02-01T00:00:00.000Z",
+    "metadata": {
+      "readingTime": 2,
+      "wordCount": 448
+    },
+    "excerpt": "Our team’s project, AgriSmart, made it to the Top 10 Finalists at the GDSC CRCE BitNBuild’24 Hackathon. The 24-hour challenge pushed me to test my limits, and I came away with not only a solid project but also a renewed sense of confidence in my ability to work under pressure.",
+    "content": "const{Fragment:e,jsx:t,jsxs:a}=arguments[0];function _createMdxContent(n){const i={h2:\"h2\",img:\"img\",p:\"p\",...n.components};return a(e,{children:[t(i.h2,{children:\"About AgriSmart\"}),\"\\n\",t(i.p,{children:\"Our team’s project, AgriSmart, made it to the Top 10 Finalists at the GDSC CRCE BitNBuild’24 Hackathon. The 24-hour challenge pushed me to test my limits, and I came away with not only a solid project but also a renewed sense of confidence in my ability to work under pressure. AgriSmart was built as a Logistics Management Platform aimed at addressing challenges in farming operations. It focused on tracking seeds, tools, and machinery to improve efficiency and productivity for farmers. We also included features like real-time tracking for stock levels, fuel status, and maintenance schedules. The project aimed to create a streamlined system for farmers to manage their resources effectively while tackling the inefficiencies in traditional farming practices.\"}),\"\\n\",t(i.p,{children:t(i.img,{src:\"/static/agrismartcard-8161f040.png\",alt:\"AgriSmart Project\"})}),\"\\n\",t(i.h2,{children:\"Key Features\"}),\"\\n\",t(i.p,{children:\"We packed the platform with features that could genuinely make a difference for farmers. AgriSmart, a module within our project, provided personalized dashboards for tracking resources. Real-time data on tools, seeds, and machinery allowed farmers to stay on top of their operations. One of the standout features was the AI Agri-Guide, which used an AI model to answer farm-related questions and guide new farmers through beginner-friendly resources. We also built a community forum for farmers to connect and share knowledge, adding a collaborative aspect to the platform.\"}),\"\\n\",t(i.h2,{children:\"Personal Experience\"}),\"\\n\",t(i.p,{children:\"This hackathon was a turning point for me. Working under a strict 24-hour deadline was intense, but it showed me what I’m capable of. It was my first experience developing a full-stack application within such a short time, and I even managed to integrate AI into the project. What stood out most was how well our team communicated. My teammates relayed their ideas and plans, and I coded them into reality bit by bit. By the end, I had a functional platform that I was proud of, and I learned that I could handle the pressure of fast-paced development.\"}),\"\\n\",t(i.h2,{children:\"What I Learned\"}),\"\\n\",t(i.p,{children:\"The biggest takeaway for me wasn’t just the technical skills or the project itself—it was realizing that I could build something substantial within a limited time frame. The challenge forced me to think quickly, prioritize effectively, and trust my abilities. It also reaffirmed the importance of teamwork. Everyone brought their strengths to the table, and together we created something meaningful in just a day. I’m looking forward to taking this experience into future challenges.\"}),\"\\n\",t(i.p,{children:\"AgriSmart is still in its early stages, but the potential is clear. While the hackathon is over, the experience has left me motivated to keep refining my skills and exploring new ideas. I now know that even under intense constraints, I can deliver results, and I’m excited to see where this confidence takes me.\"})]})}return{default:function(e={}){const{wrapper:a}=e.components||{};return a?t(a,{...e,children:t(_createMdxContent,{...e})}):_createMdxContent(e)}};",
+    "permalink": "/achievements/gdsc-crce-bitnbuild-2024"
+  },
+  {
     "title": "Top 10 Finalists at DevHack 2023",
     "awardTitle": "DevHack 2023",
     "awardCover": {
@@ -23,10 +53,10 @@
     "date": "2023-12-15T00:00:00.000Z",
     "metadata": {
       "readingTime": 1,
-      "wordCount": 8
+      "wordCount": 394
     },
     "excerpt": "Our team secured a spot in the Top 10 Finalists at DevHack 2023 for our innovative project, BillsGo. It was a remarkable journey filled with creativity and collaboration, addressing real-world challenges in utility bill management.",
-    "content": "const{jsx:e}=arguments[0];function _createMdxContent(n){const t={h1:\"h1\",...n.components};return e(t.h1,{children:\"This is a NALI achievement using Velite schema.\"})}return{default:function(n={}){const{wrapper:t}=n.components||{};return t?e(t,{...n,children:e(_createMdxContent,{...n})}):_createMdxContent(n)}};",
+    "content": "const{Fragment:e,jsx:n,jsxs:i}=arguments[0];function _createMdxContent(a){const t={br:\"br\",h2:\"h2\",img:\"img\",p:\"p\",strong:\"strong\",...a.components};return i(e,{children:[n(t.h2,{children:\"About BillsGo\"}),\"\\n\",n(t.p,{children:\"BillsGo is an all-in-one utility bill payment and collection app designed to simplify bill management for users and service providers. The app integrates features like Google Pay support, centralized bill tracking, and visualized dashboards to address inefficiencies in traditional billing systems.\"}),\"\\n\",n(t.p,{children:n(t.img,{src:\"/static/userside-fed6c3cf.PNG\",alt:\"BillsGo Project - User End\"})}),\"\\n\",n(t.h2,{children:\"The Idea and Teamwork\"}),\"\\n\",n(t.p,{children:\"The idea for BillsGo stemmed from the challenges faced by utility users and companies in managing bills and collections. Adnan and I brainstormed the project idea, refining it through discussions to address real-world problems effectively. Meanwhile, Shimon and Dipto focused on developing the demo app, ensuring it was ready to showcase to the judges. I prepared the slides to clearly present our concept, tying together the technical and business aspects of the project.\"}),\"\\n\",n(t.p,{children:n(t.img,{src:\"/static/serviceside-4d66feaa.PNG\",alt:\"BillsGo Project - Service End\"})}),\"\\n\",n(t.h2,{children:\"Mentorship and Growth\"}),\"\\n\",n(t.p,{children:\"Throughout the competition, Adnan and I were mentored by Mr. Daren Tan, a highly experienced hackathon participant and organizer. He provided valuable insights on ideation, business planning, and presenting ideas effectively. This mentorship helped us understand the importance of aligning technical solutions with user needs and delivering a compelling narrative. The lessons we learned from him about creating impactful presentations and clearly communicating our vision were instrumental in our success.\"}),\"\\n\",n(t.h2,{children:\"Features of BillsGo\"}),\"\\n\",i(t.p,{children:[n(t.strong,{children:\"For Users:\"}),\" BillsGo offers centralized bill management, effortless payments via Google Pay, and automatic reminders for due dates. These features help users avoid late payment charges and simplify the bill management process.\",n(t.br,{}),\"\\n\",n(t.strong,{children:\"For Service Providers:\"}),\" BillsGo includes a Google Maps-integrated dashboard for visualizing overdue bills, streamlining service disconnection, and enhancing operational efficiency.\"]}),\"\\n\",n(t.h2,{children:\"Key Takeaways\"}),\"\\n\",n(t.p,{children:\"Working on BillsGo taught us the value of teamwork, clear communication, and user-focused design. The mentorship we received emphasized the importance of addressing specific pain points with practical solutions while ensuring the project's presentation resonated with judges and stakeholders alike.\"}),\"\\n\",n(t.h2,{children:\"Personal Experience\"}),\"\\n\",n(t.p,{children:\"Participating in DevHack 2023 was an enriching experience. Collaborating with a diverse team and overcoming challenges reinforced the importance of adaptability and perseverance. Securing a spot among the Top 10 Finalists was a testament to our efforts and the impact of our solution.\"}),\"\\n\",n(t.h2,{children:\"Looking Ahead\"}),\"\\n\",n(t.p,{children:\"BillsGo, while a finalist project at DevHack 2023, has the potential to transform bill management processes for users and service providers. The recognition we received highlights the innovation and dedication of our team. Moving forward, we aim to explore ways to bring this concept to life and solve real-world challenges in the utility sector.\"})]})}return{default:function(e={}){const{wrapper:i}=e.components||{};return i?n(i,{...e,children:n(_createMdxContent,{...e})}):_createMdxContent(e)}};",
     "permalink": "/achievements/devhack-2023"
   },
   {
@@ -42,10 +72,10 @@
     },
     "isFeatured": true,
     "mainCover": {
-      "src": "/static/og-d9ce61ae.jpeg",
+      "src": "/static/team-d78195f6.jpeg",
       "height": 878,
       "width": 1170,
-      "blurDataURL": "data:image/webp;base64,UklGRiwAAABXRUJQVlA4ICAAAABQAQCdASoIAAYADMDOJQAAXK4gAP1NHeWB7m8xLRwAAA==",
+      "blurDataURL": "data:image/webp;base64,UklGRi4AAABXRUJQVlA4ICIAAACwAQCdASoIAAYADMDOJZQAAuWuZ7SwAPtjPmBPpDC8AAAA",
       "blurWidth": 8,
       "blurHeight": 6
     },
@@ -53,41 +83,11 @@
     "date": "2023-09-01T00:00:00.000Z",
     "metadata": {
       "readingTime": 1,
-      "wordCount": 8
+      "wordCount": 216
     },
     "excerpt": "Our team secured 5th place at InnoJam 2023 with ReCycgo, a mobile application for businesses aimed at optimizing waste management through smart logistics. The project tackled critical challenges in achieving Malaysia's recycling goals.",
-    "content": "const{jsx:e}=arguments[0];function _createMdxContent(n){const t={h1:\"h1\",...n.components};return e(t.h1,{children:\"This is a NALI achievement using Velite schema.\"})}return{default:function(n={}){const{wrapper:t}=n.components||{};return t?e(t,{...n,children:e(_createMdxContent,{...n})}):_createMdxContent(n)}};",
+    "content": "const{Fragment:e,jsx:n,jsxs:t}=arguments[0];function _createMdxContent(i){const a={h2:\"h2\",img:\"img\",p:\"p\",...i.components};return t(e,{children:[n(a.h2,{children:\"About ReCycgo\"}),\"\\n\",n(a.p,{children:\"ReCycgo is a mobile application designed to help businesses (B2B) optimize waste management. The app leverages smart logistics to monitor trash weight via connected smart dustbins, provides real-time updates to lorry drivers and waste collectors, and predicts future trash volumes using data analytics. The goal is to reduce logistical delays and improve Malaysia's recycling rate to achieve the national target of 40% by 2025.\"}),\"\\n\",n(a.p,{children:n(a.img,{src:\"/static/overview-825de933.png\",alt:\"ReCycgo System Overview\"})}),\"\\n\",n(a.h2,{children:\"My Contribution\"}),\"\\n\",n(a.p,{children:\"I contributed remotely to the project by brainstorming the idea with the team, preparing presentation slides, and crafting the pitch to effectively communicate our solution's vision and potential impact. My focus was on ensuring the presentation demonstrated the practical and technical aspects of ReCycgo.\"}),\"\\n\",n(a.h2,{children:\"Key Insights\"}),\"\\n\",n(a.p,{children:\"Malaysia loses an estimated RM476 million annually due to poor recycling practices. Our solution addresses this by combining technology and logistics to reduce landfill costs and delays in waste management. During the event, we highlighted the potential of our system to improve operational efficiency for businesses while contributing to sustainability.\"}),\"\\n\",n(a.h2,{children:\"Event Experience\"}),\"\\n\",n(a.p,{children:\"InnoJam 2023 was held in conjunction with InnoEx 2023 and organized by Cyberview. The event gathered participants from diverse backgrounds, including university students and professionals, to design sustainable solutions for urban challenges in Cyberjaya. Over two days, we worked on leveraging open data to envision Cyberjaya as a model Smart Sustainable City.\"}),\"\\n\",n(a.p,{children:n(a.img,{src:\"/static/og-d9ce61ae.jpeg\",alt:\"InnoJam 2023 Event Overview\"})})]})}return{default:function(e={}){const{wrapper:t}=e.components||{};return t?n(t,{...e,children:n(_createMdxContent,{...e})}):_createMdxContent(e)}};",
     "permalink": "/achievements/innojam-smart-sustainable-city-2023"
-  },
-  {
-    "title": "Top 10 Finalists at GDSC CRCE BitNBuild’24 Hackathon",
-    "awardTitle": "GDSC CRCE BitNBuild’24 Hackathon",
-    "awardCover": {
-      "src": "/static/bitnbuild-e9c7d679.png",
-      "height": 200,
-      "width": 200,
-      "blurDataURL": "data:image/webp;base64,UklGRogAAABXRUJQVlA4WAoAAAAQAAAABwAABwAAQUxQSEEAAAAAAAAAAAAAAAAPIh4lHREnCHL/+fy0aP8yY97NrGNGzSzO0cjP5FaTyPn+/v7/3fTlKCgqKigvLhwAAAAAAAAAAABWUDggIAAAAJABAJ0BKggACAAMwM4lpAAC5mfwAAD6C7wxx7AwAAAA",
-      "blurWidth": 8,
-      "blurHeight": 8
-    },
-    "isFeatured": true,
-    "mainCover": {
-      "src": "/static/mainImage-dccd7b86.jpeg",
-      "height": 473,
-      "width": 669,
-      "blurDataURL": "data:image/webp;base64,UklGRiwAAABXRUJQVlA4ICAAAABwAQCdASoIAAYADMDOJaACdAFAAAD+3ryR33J+iMAAAA==",
-      "blurWidth": 8,
-      "blurHeight": 6
-    },
-    "slug": "gdsc-crce-bitnbuild-2024",
-    "date": "2024-02-01T00:00:00.000Z",
-    "metadata": {
-      "readingTime": 1,
-      "wordCount": 8
-    },
-    "excerpt": "Our team’s project, AgriSmart, made it to the Top 10 Finalists at the GDSC CRCE BitNBuild’24 Hackathon. The 24-hour challenge pushed me to test my limits, and I came away with not only a solid project but also a renewed sense of confidence in my ability to work under pressure.",
-    "content": "const{jsx:e}=arguments[0];function _createMdxContent(n){const t={h1:\"h1\",...n.components};return e(t.h1,{children:\"This is a NALI achievement using Velite schema.\"})}return{default:function(n={}){const{wrapper:t}=n.components||{};return t?e(t,{...n,children:e(_createMdxContent,{...n})}):_createMdxContent(n)}};",
-    "permalink": "/achievements/gdsc-crce-bitnbuild-2024"
   },
   {
     "title": "2nd Place at MyRapid Bus x UTM Data Hackathon 2023",
@@ -113,10 +113,10 @@
     "date": "2023-09-30T00:00:00.000Z",
     "metadata": {
       "readingTime": 1,
-      "wordCount": 8
+      "wordCount": 347
     },
     "excerpt": "Our team earned 2nd place at the MyRapid Bus x UTM Data Hackathon 2023 with MaintainIQ, a Smart Maintenance Management System. The project focused on AI-driven predictive maintenance for buses, tackling real-world challenges like early detection of breakdowns and inventory management.",
-    "content": "const{jsx:e}=arguments[0];function _createMdxContent(n){const t={h1:\"h1\",...n.components};return e(t.h1,{children:\"This is a NALI achievement using Velite schema.\"})}return{default:function(n={}){const{wrapper:t}=n.components||{};return t?e(t,{...n,children:e(_createMdxContent,{...n})}):_createMdxContent(n)}};",
+    "content": "const{Fragment:e,jsx:t,jsxs:a}=arguments[0];function _createMdxContent(n){const i={h2:\"h2\",img:\"img\",p:\"p\",...n.components};return a(e,{children:[t(i.h2,{children:\"About MaintainIQ\"}),\"\\n\",t(i.p,{children:\"MaintainIQ is a smart maintenance management system designed to predict and prevent bus breakdowns using AI. The system analyzes data collected from bus sensors to forecast engine health and optimize spare parts inventory. The project aims to help improve operational efficiency by identifying potential failures before they occur, reducing downtime and costs.\"}),\"\\n\",t(i.p,{children:t(i.img,{src:\"/static/solution-d1fe2a13.PNG\",alt:\"MaintainIQ System Overview\"})}),\"\\n\",t(i.h2,{children:\"My Contribution\"}),\"\\n\",t(i.p,{children:\"I contributed remotely by focusing on the data analysis and AI model development for the MaintainIQ project. I started by preprocessing large datasets from MyRapid, including Canbus and engine repair data. I filtered the data to focus on MRT feeder buses and extracted the relevant data for 2023. I then analyzed maintenance patterns and identified key metrics like the average number of maintenance entries per bus and the percentage of buses waiting for spare parts. I used the Naive Bayes model for the predictive model, as it was well-suited for the small dataset and the categorization of engine health into discrete labels. After preparing the data, I trained the model to forecast potential engine health issues based on historical data. This predictive model forms the core of MaintainIQ, enabling proactive maintenance decisions.\"}),\"\\n\",t(i.h2,{children:\"Steps Taken in Data Analysis\"}),\"\\n\",t(i.p,{children:\"To build a robust predictive model, I followed a structured approach to data analysis. First, I focused on Canbus and engine repair data, filtering it to include only MRT feeder buses and data from 2023. I then created a CSV file with unique VEH_IDs for MRT feeder buses and filtered the engine repair data to match. Next, I analyzed the data to calculate the average number of maintenance entries per bus (8 times per month) and discovered that 25.3% of buses were waiting for spare parts. I also calculated the time difference between normal maintenance and buses waiting for parts, which averaged 12 days. With the data prepared, I applied a Naive Bayes model to predict engine health based on this historical data.\"}),\"\\n\",t(i.p,{children:t(i.img,{src:\"/static/model-ebc20d40.PNG\",alt:\"Naive Bayes Model for Predictive Maintenance\"})}),\"\\n\",t(i.h2,{children:\"Looking Ahead\"}),\"\\n\",t(i.p,{children:\"This hackathon experience has given us valuable insights into how data-driven solutions can improve the transportation sector. The predictive maintenance model can significantly reduce downtime and improve efficiency for bus fleets.\"})]})}return{default:function(e={}){const{wrapper:a}=e.components||{};return a?t(a,{...e,children:t(_createMdxContent,{...e})}):_createMdxContent(e)}};",
     "permalink": "/achievements/my-rapid-bus-utm-2023"
   },
   {
@@ -142,11 +142,11 @@
     "slug": "kita-hack-2024",
     "date": "2024-02-01T00:00:00.000Z",
     "metadata": {
-      "readingTime": 1,
-      "wordCount": 8
+      "readingTime": 2,
+      "wordCount": 469
     },
     "excerpt": "Despite not securing the top spot, our team received a Participatory Award at Kitahack 2024 for our innovative project, ReWaste. The experience was filled with valuable lessons that will shape my approach to future projects.",
-    "content": "const{jsx:e}=arguments[0];function _createMdxContent(n){const t={h1:\"h1\",...n.components};return e(t.h1,{children:\"This is a NALI achievement using Velite schema.\"})}return{default:function(n={}){const{wrapper:t}=n.components||{};return t?e(t,{...n,children:e(_createMdxContent,{...n})}):_createMdxContent(n)}};",
+    "content": "const{Fragment:e,jsx:t,jsxs:a}=arguments[0];function _createMdxContent(n){const i={h2:\"h2\",img:\"img\",p:\"p\",...n.components};return a(e,{children:[t(i.h2,{children:\"About ReWaste\"}),\"\\n\",t(i.p,{children:\"ReWaste was an innovative platform designed to tackle the underutilization of agricultural waste in Malaysia. The platform connects sellers of agricultural waste with power plant owners, enabling them to engage in a sustainable bidding process that contributes to cleaner energy production. By utilizing AI-driven tools, we streamlined the selling process, creating a win-win situation for both sellers and power plant owners.\"}),\"\\n\",t(i.p,{children:t(i.img,{src:\"/static/rewaste-beb7db94.png\",alt:\"ReWaste Project\"})}),\"\\n\",t(i.h2,{children:\"Our Project Idea\"}),\"\\n\",t(i.p,{children:\"The core idea behind ReWaste was to create an online auction platform for agricultural waste. Sellers would put their waste up for auction where they would add listings specifying the type of waste available (e.g., coconut waste, palm oil biomass), the quantity, initial price, and any specific terms or conditions. Buyers bid on the listings to compete for prices. Buyers place competitive bids on the agricultural waste listings that match their requirements. This would allow them to access these resources at lower prices, fostering an efficient and cost-effective marketplace.\"}),\"\\n\",t(i.p,{children:\"The idea of ReWaste was unique. For Plant Owners, they would experience reduced operational costs by securing agricultural waste at lower prices compared to coal. Through co-firing, they would achieve a cleaner, eco-conscious approach, consuming less coal and significantly decreasing carbon emissions. For Farmers, they would find a new avenue for waste utilization, earning revenue while contributing to a greener environment.\"}),\"\\n\",t(i.h2,{children:\"Key Takeaways\"}),\"\\n\",t(i.p,{children:\"The journey was filled with valuable lessons, the most important being the significance of pre-planning and design. I realized that diving straight into implementation without adequate planning hindered our progress. This reinforced my belief in the value of systematic approaches, such as the concepts taught in 'System Analysis and Design' courses, including use cases and activity diagrams. Proper preparation is crucial to the success of any project.\"}),\"\\n\",t(i.h2,{children:\"Personal Experience\"}),\"\\n\",t(i.p,{children:\"While we didn’t clinch the top spot, the experience was invaluable. I learned a great deal about the importance of structured planning, teamwork, and AI integration in solving real-world challenges. My teammates and I faced challenges, but our collaboration allowed us to create something meaningful and impactful. This experience has definitely shaped my approach to future endeavors.\"}),\"\\n\",t(i.h2,{children:\"What I Learned\"}),\"\\n\",t(i.p,{children:\"The biggest lesson from Kitahack 2024 was the importance of proper planning and design in the success of a project. It also reinforced my belief in the power of teamwork, as every member contributed to our project in meaningful ways. Even though we didn't win, the journey itself was a rewarding experience that taught me valuable lessons that I will carry forward into my future projects.\"}),\"\\n\",t(i.p,{children:\"ReWaste, while a failed endeavor at Kitahack 2024, has the potential to make a lasting impact. The participatory award we received was a reflection of the hard work and dedication of our team. I'm proud of what we achieved and excited to continue exploring ways to apply technology to sustainability.\"})]})}return{default:function(e={}){const{wrapper:a}=e.components||{};return a?t(a,{...e,children:t(_createMdxContent,{...e})}):_createMdxContent(e)}};",
     "permalink": "/achievements/kita-hack-2024"
   },
   {
