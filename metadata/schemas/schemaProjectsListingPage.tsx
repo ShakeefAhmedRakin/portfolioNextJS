@@ -29,17 +29,8 @@ export default function SetSchemaProjectsListingPage() {
         name: SiteMetadata.PROJECTS.title,
         description: SiteMetadata.PROJECTS.description,
         headline: SiteMetadata.PROJECTS.title,
-        hasPart: [
-          ...projects.map((project) => {
-            return {
-              "@type": "TechArticle",
-              "@id": `${process.env.WEBSITE_URL}${project.permalink}`,
-              name: project.title,
-            };
-          }),
-        ],
+        hasPart: [...projectSchemas],
       },
-      ...projectSchemas,
     ],
   });
 
