@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/typography";
 import SiteMetadata from "@/content/site-metadata";
 import { formatDateString } from "@/lib/utils";
-import SetSchemaProjectPage from "@/metadata/schemas/setSchemaProjectPage";
+import SetSchemaProjectPage from "@/metadata/schemas/schemaProjectPage";
 import getMetadata from "@/metadata/utils/get-metadata";
 import { Dot } from "lucide-react";
 import Image from "next/image";
