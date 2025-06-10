@@ -1,5 +1,5 @@
 import { research } from "@/.velite";
-import BackgroundGridOverlay from "@/components/ui/background-grid-overlay";
+
 import { badgeVariants } from "@/components/ui/badge";
 import { buttonVariants } from "@/components/ui/button";
 import { headingVariants, TypographyP } from "@/components/ui/typography";
@@ -52,7 +52,6 @@ export default async function ResearchPage({
     <>
       <SetSchemaResearchPage research={currentResearch} />
       <article className="relative container mx-auto mb-8 px-4 pt-10 md:px-10 lg:px-56 xl:px-64">
-        <BackgroundGridOverlay />
         <header className="intersect:animate-fade-up shadow-primary/5 bg-secondary/20 intersect:animate-delay-200 animate-ease animate-duration-[1500ms] intersect-once p-4">
           <div className="flex flex-col justify-between gap-2 xl:flex-row">
             <div className="flex-1">

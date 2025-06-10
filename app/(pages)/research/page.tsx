@@ -1,5 +1,5 @@
 import { research } from "@/.velite";
-import BackgroundGridOverlay from "@/components/ui/background-grid-overlay";
+
 import { badgeVariants } from "@/components/ui/badge";
 import { buttonVariants } from "@/components/ui/button";
 import PageHeader from "@/components/ui/page-header";
@@ -27,7 +27,6 @@ export default function ResearchListingPage() {
         subtitle="Discover my latest research projects that I've collaborated with esteemed colleagues and institutions"
       />
       <SectionWrapper className="relative">
-        <BackgroundGridOverlay />
         <ul className="grid grid-cols-1 gap-4 md:grid-cols-2">
           {sortResearchByDate(research).map((paper) => (
             <li

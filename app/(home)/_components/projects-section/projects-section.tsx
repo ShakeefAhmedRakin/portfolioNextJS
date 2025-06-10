@@ -1,6 +1,5 @@
 import { SectionWrapper } from "@/components/ui/wrappers";
 import { SectionHeader } from "@/components/ui/section-header";
-import BackgroundGridOverlay from "@/components/ui/background-grid-overlay";
 import ProjectsShowcase from "./projects-showcase";
 import { siteNavigationMap } from "@/content/site-navigation";
 
@@ -20,8 +19,6 @@ export default function ProjectsSection() {
       />
 
       <ProjectsShowcase />
-
-      <BackgroundGridOverlay />
     </SectionWrapper>
   );
 }

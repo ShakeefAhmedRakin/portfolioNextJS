@@ -6,6 +6,7 @@ import SiteFooter from "@/components/navigation/site-footer";
 import { Toaster } from "sonner";
 
 import { baseMetadata } from "@/metadata/shared/base-metadata";
+import BackgroundGridOverlay from "@/components/ui/background-grid-overlay";
 
 export const metadata = baseMetadata;
 
@@ -24,7 +25,10 @@ export default function RootLayout({
         </div>
         <SiteHeader />
 
-        <main className="mt-[90px]">{children}</main>
+        <main className="relative mt-[90px]">
+          <BackgroundGridOverlay />
+          {children}
+        </main>
         <SiteFooter />
       </body>
     </html>

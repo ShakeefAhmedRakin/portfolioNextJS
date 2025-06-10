@@ -1,5 +1,5 @@
 import { achievements } from "@/.velite";
-import BackgroundGridOverlay from "@/components/ui/background-grid-overlay";
+
 import { Badge } from "@/components/ui/badge";
 import { MDXContent } from "@/components/ui/mdx-content";
 import {
@@ -56,7 +56,6 @@ export default async function AchievementDetails({
     <>
       <SetSchemaAchievementPage achievement={achievement} />
       <article className="relative container mx-auto mb-8 px-4 pt-10 md:px-10 lg:px-56 xl:px-64">
-        <BackgroundGridOverlay />
         <header className="intersect:animate-fade-up shadow-primary/5 intersect:animate-delay-200 animate-ease animate-duration-[1500ms] intersect-once mb-4 space-y-4">
           <div className="bg-primary/5 relative aspect-video max-h-[450px] w-full">
             <Image

@@ -1,7 +1,6 @@
 import { headingVariants, paragraphVariants } from "@/components/ui/typography";
 import { SectionWrapper } from "@/components/ui/wrappers";
 
-import BackgroundGridOverlay from "@/components/ui/background-grid-overlay";
 import { skillSets } from "@/content/skills/skills";
 import Image from "next/image";
 
@@ -64,8 +63,6 @@ export default function SkillsSection() {
           </li>
         ))}
       </ul>
-
-      <BackgroundGridOverlay />
     </SectionWrapper>
   );
 }

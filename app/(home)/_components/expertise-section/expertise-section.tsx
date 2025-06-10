@@ -2,7 +2,6 @@ import { SectionWrapper } from "@/components/ui/wrappers";
 import ExpertiseGrid from "./expertise-grid";
 import ExpertiseStatGrid from "./expertise-stat-card";
 import { expertiseContent } from "@/content/home/expertise-section";
-import BackgroundGridOverlay from "../../../../components/ui/background-grid-overlay";
 import { SectionHeader } from "@/components/ui/section-header";
 import { siteNavigationMap } from "@/content/site-navigation";
 
@@ -22,8 +21,6 @@ export default function ExpertiseSection() {
       <ExpertiseStatGrid />
 
       <ExpertiseGrid />
-
-      <BackgroundGridOverlay />
     </SectionWrapper>
   );
 }

@@ -1,6 +1,5 @@
 import { SectionWrapper } from "@/components/ui/wrappers";
 import { SectionHeader } from "@/components/ui/section-header";
-import BackgroundGridOverlay from "@/components/ui/background-grid-overlay";
 import BlogsGrid from "./blogs-grid";
 import { siteSocialMap } from "@/content/site-socials";
 
@@ -18,8 +17,6 @@ export default function BlogsSection() {
       />
 
       <BlogsGrid />
-
-      <BackgroundGridOverlay />
     </SectionWrapper>
   );
 }

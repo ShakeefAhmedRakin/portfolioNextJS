@@ -1,6 +1,6 @@
 import { SectionWrapper } from "@/components/ui/wrappers";
 import { SectionHeader } from "@/components/ui/section-header";
-// import BackgroundGridOverlay from "@/components/ui/background-grid-overlay";
+
 import ResearchGrid from "./research-grid";
 import { siteNavigationMap } from "@/content/site-navigation";
 
@@ -18,8 +18,6 @@ export default function ResearchSection() {
       />
 
       <ResearchGrid />
-
-      {/* <BackgroundGridOverlay /> */}
     </SectionWrapper>
   );
 }

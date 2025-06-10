@@ -1,4 +1,5 @@
 import { achievements } from "@/.velite";
+
 import PageHeader from "@/components/ui/page-header";
 import {
   headingVariants,
@@ -26,7 +27,7 @@ export default function AchievementsListingPage() {
         title="Achievements"
         subtitle="All of my most recent notable achievements"
       />
-      <SectionWrapper>
+      <SectionWrapper wrapperClassName="relative">
         <ul className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3">
           {sortedAchievements.map((achievement) => (
             <li

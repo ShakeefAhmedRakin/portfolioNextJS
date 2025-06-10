@@ -1,5 +1,4 @@
 import { SectionWrapper } from "@/components/ui/wrappers";
-// import BackgroundGridOverlay from "../../../../components/ui/background-grid-overlay";
 import { achievements } from "@/.velite";
 import Image from "next/image";
 import { SectionHeader } from "@/components/ui/section-header";
@@ -44,8 +43,6 @@ export default function AchievementsSection() {
           </li>
         ))}
       </ul>
-
-      {/* <BackgroundGridOverlay /> */}
     </SectionWrapper>
   );
 }

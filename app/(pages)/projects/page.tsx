@@ -9,7 +9,6 @@ import { projects } from "@/.velite";
 import ProjectCard from "./_components/project-card";
 import { paragraphVariants } from "@/components/ui/typography";
 import SetSchemaProjectsListingPage from "@/metadata/schemas/schemaProjectsListingPage";
-import BackgroundGridOverlay from "@/components/ui/background-grid-overlay";
 
 export function generateMetadata() {
   return getMetadata(SiteMetadata.PROJECTS);
@@ -44,7 +43,6 @@ export default async function ProjectsListingPage({
         subtitle="All of my completed and ongoing projects"
       />
       <SectionWrapper innerClassName="min-h-[80vh] relative">
-        <BackgroundGridOverlay />
         <FilterControls setCategory={category} />
         <p
           className={paragraphVariants({

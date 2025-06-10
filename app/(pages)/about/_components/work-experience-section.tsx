@@ -8,7 +8,6 @@ import WorkDuration from "../../../../components/ui/work-duration";
 import { MDXContent } from "@/components/ui/mdx-content";
 import WorkDate from "@/components/ui/work-dates";
 import { badgeVariants } from "@/components/ui/badge";
-import BackgroundGridOverlay from "@/components/ui/background-grid-overlay";
 
 export default function WorkExperienceSection() {
   const sortedWork = getSortedJobs(workExperiences);
@@ -86,7 +85,6 @@ export default function WorkExperienceSection() {
           </li>
         ))}
       </ol>
-      <BackgroundGridOverlay />
     </SectionWrapper>
   );
 }
