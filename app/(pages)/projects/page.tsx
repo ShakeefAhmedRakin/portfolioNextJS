@@ -44,7 +44,7 @@ export default async function ProjectsListingPage({
       />
       <SectionWrapper
         innerClassName="relative"
-        wrapperClassName="relative pb-12 lg:pb-20 xl:pb-24 pt-6 xl:pt-8"
+        wrapperClassName="relative pb-12 lg:pb-20 xl:pb-24 pt-6 xl:pt-8 min-h-[80vh]"
         padding={"header"}
       >
         <FilterControls setCategory={category} />
