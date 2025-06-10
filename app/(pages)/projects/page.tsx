@@ -43,7 +43,7 @@ export default async function ProjectsListingPage({
         subtitle="All of my completed and ongoing projects"
       />
       <SectionWrapper
-        innerClassName="min-h-[80vh] relative"
+        innerClassName="relative"
         wrapperClassName="relative pb-12 lg:pb-20 xl:pb-24 pt-6 xl:pt-8"
         padding={"header"}
       >

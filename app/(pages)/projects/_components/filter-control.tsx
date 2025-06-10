@@ -11,7 +11,7 @@ export default function FilterControls({
   setCategory: string | undefined;
 }) {
   return (
-    <ul className="intersect:animate-fade-up intersect:animate-delay-200 animate-ease animate-duration-[1500ms] intersect-once -mt-4 flex flex-wrap gap-1.5">
+    <ul className="intersect:animate-fade-up intersect:animate-delay-200 animate-ease animate-duration-[1500ms] intersect-once flex flex-wrap gap-1.5">
       <li>
         <FilterButton category="All" setCategory={setCategory} />
       </li>
