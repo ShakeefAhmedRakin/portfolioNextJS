@@ -31,6 +31,7 @@ export default function NavigationMobile() {
       <SheetTrigger
         onClick={() => setOpen((prev) => !prev)}
         className="block md:hidden"
+        aria-label={open ? "Close menu" : "Open menu"}
       >
         {open ? <XIcon /> : <Menu />}
       </SheetTrigger>

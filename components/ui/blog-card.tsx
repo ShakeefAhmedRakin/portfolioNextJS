@@ -10,7 +10,7 @@ export function BlogCard({ article }: { article: Article }) {
         <Image
           src={article.thumbnail}
           fill
-          alt={article.title}
+          alt={`Thumbnail image for article titled "${article.title}"`}
           draggable={false}
           title={article.title}
           className="object-cover brightness-75 duration-300 group-hover:brightness-100"

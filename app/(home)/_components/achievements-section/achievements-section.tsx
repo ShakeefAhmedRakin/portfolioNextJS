@@ -20,7 +20,7 @@ export default function AchievementsSection() {
         competitive events, including hackathons and datathons, where I
         collaborated with teams to develop practical solutions to real-world
         problems."
-        linkText="Learn More"
+        linkText="View All Achievements"
         linkHref={siteNavigationMap.ACHIEVEMENTS.href}
       />
 
