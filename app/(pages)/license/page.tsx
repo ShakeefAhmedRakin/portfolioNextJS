@@ -22,7 +22,11 @@ export default async function LicensePage() {
         title="License and Attribution"
         subtitle="Find out how you can use, share and attribute the content and code used in my site"
       />
-      <SectionWrapper innerClassName="min-h-[80vh] relative space-y-6 intersect:animate-fade-up shadow-primary/5 intersect:animate-delay-200 animate-ease animate-duration-[1500ms] intersect-once">
+      <SectionWrapper
+        wrapperClassName="relative pb-12 lg:pb-20 xl:pb-24 pt-6 xl:pt-8"
+        padding={"header"}
+        innerClassName="relative space-y-6 intersect:animate-fade-up shadow-primary/5 intersect:animate-delay-200 animate-ease animate-duration-[1500ms] intersect-once"
+      >
         <TypographyH2 className="font-light">License</TypographyH2>
 
         <TypographyP className="text-foreground/80">

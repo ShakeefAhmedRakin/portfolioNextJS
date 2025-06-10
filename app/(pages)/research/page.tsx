@@ -26,7 +26,10 @@ export default function ResearchListingPage() {
         title="Research"
         subtitle="Discover my latest research projects that I've collaborated with esteemed colleagues and institutions"
       />
-      <SectionWrapper className="relative">
+      <SectionWrapper
+        wrapperClassName="pb-12 lg:pb-20 xl:pb-24 pt-6 xl:pt-8"
+        padding={"header"}
+      >
         <ul className="grid grid-cols-1 gap-4 md:grid-cols-2">
           {sortResearchByDate(research).map((paper) => (
             <li

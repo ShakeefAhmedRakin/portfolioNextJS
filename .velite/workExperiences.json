@@ -1,21 +1,5 @@
 [
   {
-    "slug": "prudence-college-dublin",
-    "position": ".NET Software Developer",
-    "tags": [
-      "C#",
-      "Telerik",
-      ".NET",
-      "Avalonia"
-    ],
-    "company": "Prudence College Dublin",
-    "companyLink": "https://www.prudencecollege.ie",
-    "isActive": true,
-    "startDate": "2024-08-01T00:00:00.000Z",
-    "endDate": null,
-    "content": "const{Fragment:n,jsx:e,jsxs:t}=arguments[0];function _createMdxContent(r){const i={a:\"a\",h5:\"h5\",li:\"li\",p:\"p\",strong:\"strong\",ul:\"ul\",...r.components};return t(n,{children:[e(i.h5,{children:e(i.a,{href:\"https://www.ucd.ie/holos-ie/\",children:\"HOLOS-IE\"})}),\"\\n\",e(i.p,{children:\"HOLOS-IE is a data-driven digital tool that helps optimize agricultural land use for carbon neutrality, promoting sustainability and reducing environmental impact.\"}),\"\\n\",t(i.ul,{children:[\"\\n\",t(i.li,{children:[\"Developed and maintained features using \",e(i.strong,{children:\"C#\"}),\", \",e(i.strong,{children:\"MVVM\"}),\" (Avalonia), and \",e(i.strong,{children:\"Telerik UI\"}),\".\"]}),\"\\n\",e(i.li,{children:\"Implemented the agroforestry module.\"}),\"\\n\",e(i.li,{children:\"Ported the software from Telerik to Avalonia.\"}),\"\\n\"]})]})}return{default:function(n={}){const{wrapper:t}=n.components||{};return t?e(t,{...n,children:e(_createMdxContent,{...n})}):_createMdxContent(n)}};"
-  },
-  {
     "slug": "twlick",
     "position": "Junior Full Stack Engineer",
     "tags": [
@@ -33,5 +17,21 @@
     "startDate": "2024-10-01T00:00:00.000Z",
     "endDate": null,
     "content": "const{Fragment:e,jsx:n,jsxs:t}=arguments[0];function _createMdxContent(r){const i={a:\"a\",h5:\"h5\",li:\"li\",p:\"p\",strong:\"strong\",ul:\"ul\",...r.components};return t(e,{children:[n(i.h5,{children:n(i.a,{href:\"https://podcas.io/\",children:\"Podcas.io\"})}),\"\\n\",n(i.p,{children:\"Podcas.io simplifies podcast creation by using AI technology, enabling users to quickly turn ideas into fully-produced episodes in minutes.\"}),\"\\n\",t(i.ul,{children:[\"\\n\",t(i.li,{children:[\"Developed and maintained features using \",n(i.strong,{children:\"Next.js\"}),\", \",n(i.strong,{children:\"Supabase\"}),\", \",n(i.strong,{children:\"PostgreSQL\"}),\", and \",n(i.strong,{children:\"ShadCN UI\"}),\".\"]}),\"\\n\",n(i.li,{children:\"Optimized the podcast audio regeneration to enhance efficiency and save resources.\"}),\"\\n\",n(i.li,{children:\"Improved overall site responsiveness for a better user experience.\"}),\"\\n\",n(i.li,{children:\"Added functionality for users to edit video styles of generated podcasts.\"}),\"\\n\"]})]})}return{default:function(e={}){const{wrapper:t}=e.components||{};return t?n(t,{...e,children:n(_createMdxContent,{...e})}):_createMdxContent(e)}};"
+  },
+  {
+    "slug": "prudence-college-dublin",
+    "position": ".NET Software Developer",
+    "tags": [
+      "C#",
+      "Telerik",
+      ".NET",
+      "Avalonia"
+    ],
+    "company": "Prudence College Dublin",
+    "companyLink": "https://www.prudencecollege.ie",
+    "isActive": true,
+    "startDate": "2024-08-01T00:00:00.000Z",
+    "endDate": null,
+    "content": "const{Fragment:n,jsx:e,jsxs:t}=arguments[0];function _createMdxContent(r){const i={a:\"a\",h5:\"h5\",li:\"li\",p:\"p\",strong:\"strong\",ul:\"ul\",...r.components};return t(n,{children:[e(i.h5,{children:e(i.a,{href:\"https://www.ucd.ie/holos-ie/\",children:\"HOLOS-IE\"})}),\"\\n\",e(i.p,{children:\"HOLOS-IE is a data-driven digital tool that helps optimize agricultural land use for carbon neutrality, promoting sustainability and reducing environmental impact.\"}),\"\\n\",t(i.ul,{children:[\"\\n\",t(i.li,{children:[\"Developed and maintained features using \",e(i.strong,{children:\"C#\"}),\", \",e(i.strong,{children:\"MVVM\"}),\" (Avalonia), and \",e(i.strong,{children:\"Telerik UI\"}),\".\"]}),\"\\n\",e(i.li,{children:\"Implemented the agroforestry module.\"}),\"\\n\",e(i.li,{children:\"Ported the software from Telerik to Avalonia.\"}),\"\\n\"]})]})}return{default:function(n={}){const{wrapper:t}=n.components||{};return t?e(t,{...n,children:e(_createMdxContent,{...n})}):_createMdxContent(n)}};"
   }
 ]

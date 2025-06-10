@@ -28,7 +28,10 @@ export default function AchievementsListingPage() {
         title="Achievements"
         subtitle="All of my most recent notable achievements"
       />
-      <SectionWrapper wrapperClassName="relative">
+      <SectionWrapper
+        wrapperClassName="relative pb-12 lg:pb-20 xl:pb-24 pt-6 xl:pt-8"
+        padding={"header"}
+      >
         <ul className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3">
           {sortedAchievements.map((achievement) => (
             <li
