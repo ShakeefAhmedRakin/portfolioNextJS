@@ -75,6 +75,15 @@ const SiteMetadata = {
       pathParam: research.permalink,
     };
   },
+  LICENSE: {
+    title: `License and Attribution | ${SiteConfig.fullName}`,
+    description: `Find out how you can use, share and attribute the content and code of ${SiteConfig.fullName}, a ${SiteConfig.title} from ${SiteConfig.location}.`,
+    openGraphImageUrl: generateOgImageUrl({
+      title: "License and Attribution",
+      subtitle: SiteConfig.fullName,
+    }),
+    pathParam: siteNavigationMap.LICENSE.href,
+  },
   // NOT FOUND METADATA
   NOT_FOUND: {
     title: "Page Not Found",
