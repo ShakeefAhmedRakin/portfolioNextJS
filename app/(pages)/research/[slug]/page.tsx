@@ -109,9 +109,9 @@ export default async function ResearchPage({
                       {currentResearch.publisher.name}
                     </h2>
                   )}
-                  <h3 className="text-center text-xs font-light">
+                  <h2 className="text-center text-xs font-light">
                     {currentResearch.publisher.department}
-                  </h3>
+                  </h2>
                 </>
               )}
               {currentResearch.isPublished ? (

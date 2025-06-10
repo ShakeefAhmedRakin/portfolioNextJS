@@ -61,14 +61,14 @@ export default function ResearchListingPage() {
                   <time>{formatDateString(paper.date)}</time>
                 </li>
               </ul>
-              <h3
+              <h2
                 className={headingVariants({
                   level: "h4",
                   className: "line-clamp-2",
                 })}
               >
                 {paper.title}
-              </h3>
+              </h2>
               <TypographyP
                 level="small"
                 className="text-foreground/70 line-clamp-3"
