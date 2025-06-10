@@ -12,6 +12,7 @@ import { formatDateString, sortAchievementsByDate } from "@/lib/utils";
 import SetSchemaAchievementsListingPage from "@/metadata/schemas/schemaAchievementsListingPage";
 import getMetadata from "@/metadata/utils/get-metadata";
 import { ChevronRight } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 export function generateMetadata() {
@@ -40,12 +41,15 @@ export default function AchievementsListingPage() {
                 aria-label={`View ${achievement.title} blog`}
                 className="relative flex h-full cursor-pointer flex-col overflow-hidden p-4"
               >
-                <div
-                  className="absolute inset-0 bg-cover bg-center brightness-25 transition duration-300 ease-in-out group-hover:brightness-45"
-                  style={{
-                    backgroundImage: `url(${achievement.mainCover.src})`,
-                  }}
-                />
+                <Image
+                  src={achievement.mainCover.src}
+                  alt={achievement.title}
+                  blurDataURL={achievement.mainCover.blurDataURL}
+                  placeholder="blur"
+                  fill
+                  className="absolute inset-0 bg-cover bg-center object-cover brightness-25 transition duration-300 ease-in-out group-hover:brightness-45"
+                ></Image>
+
                 <div className="relative z-10 flex h-full flex-col">
                   <span
                     className={paragraphVariants({

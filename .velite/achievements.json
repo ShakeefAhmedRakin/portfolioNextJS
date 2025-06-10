@@ -60,36 +60,6 @@
     "permalink": "/achievements/devhack-2023"
   },
   {
-    "title": "Participatory Award at Kitahack 2024",
-    "awardTitle": "Kitahack 2024",
-    "awardCover": {
-      "src": "/static/kitahack2024-f2de59f3.png",
-      "height": 200,
-      "width": 200,
-      "blurDataURL": "data:image/webp;base64,UklGRpIAAABXRUJQVlA4WAoAAAAQAAAABwAABwAAQUxQSDsAAAABYBzJtqlz78eOq/8TsG0r/5yQQ0QQTNJU2zH4yUTMRPgoK1znbTxGt/nU836em1E2rW11AQAiwudfAQBWUDggMAAAALABAJ0BKggACAAMwM4lsAJ0APIz5AAA76AMBq3fC+xjSsGaMkU0c2MdLgzVz1NYAA==",
-      "blurWidth": 8,
-      "blurHeight": 8
-    },
-    "isFeatured": true,
-    "mainCover": {
-      "src": "/static/mainImage-6b00b7a9.jpeg",
-      "height": 1414,
-      "width": 2000,
-      "blurDataURL": "data:image/webp;base64,UklGRjIAAABXRUJQVlA4ICYAAACwAQCdASoIAAYADMDOJbACdADIv14AAP4VpFggoJCqJcmx0VeAAA==",
-      "blurWidth": 8,
-      "blurHeight": 6
-    },
-    "slug": "kita-hack-2024",
-    "date": "2024-02-01T00:00:00.000Z",
-    "metadata": {
-      "readingTime": 2,
-      "wordCount": 469
-    },
-    "excerpt": "Despite not securing the top spot, our team received a Participatory Award at Kitahack 2024 for our innovative project, ReWaste. The experience was filled with valuable lessons that will shape my approach to future projects.",
-    "content": "const{Fragment:e,jsx:t,jsxs:a}=arguments[0];function _createMdxContent(n){const i={h2:\"h2\",img:\"img\",p:\"p\",...n.components};return a(e,{children:[t(i.h2,{children:\"About ReWaste\"}),\"\\n\",t(i.p,{children:\"ReWaste was an innovative platform designed to tackle the underutilization of agricultural waste in Malaysia. The platform connects sellers of agricultural waste with power plant owners, enabling them to engage in a sustainable bidding process that contributes to cleaner energy production. By utilizing AI-driven tools, we streamlined the selling process, creating a win-win situation for both sellers and power plant owners.\"}),\"\\n\",t(i.p,{children:t(i.img,{src:\"/static/rewaste-beb7db94.png\",alt:\"ReWaste Project\"})}),\"\\n\",t(i.h2,{children:\"Our Project Idea\"}),\"\\n\",t(i.p,{children:\"The core idea behind ReWaste was to create an online auction platform for agricultural waste. Sellers would put their waste up for auction where they would add listings specifying the type of waste available (e.g., coconut waste, palm oil biomass), the quantity, initial price, and any specific terms or conditions. Buyers bid on the listings to compete for prices. Buyers place competitive bids on the agricultural waste listings that match their requirements. This would allow them to access these resources at lower prices, fostering an efficient and cost-effective marketplace.\"}),\"\\n\",t(i.p,{children:\"The idea of ReWaste was unique. For Plant Owners, they would experience reduced operational costs by securing agricultural waste at lower prices compared to coal. Through co-firing, they would achieve a cleaner, eco-conscious approach, consuming less coal and significantly decreasing carbon emissions. For Farmers, they would find a new avenue for waste utilization, earning revenue while contributing to a greener environment.\"}),\"\\n\",t(i.h2,{children:\"Key Takeaways\"}),\"\\n\",t(i.p,{children:\"The journey was filled with valuable lessons, the most important being the significance of pre-planning and design. I realized that diving straight into implementation without adequate planning hindered our progress. This reinforced my belief in the value of systematic approaches, such as the concepts taught in 'System Analysis and Design' courses, including use cases and activity diagrams. Proper preparation is crucial to the success of any project.\"}),\"\\n\",t(i.h2,{children:\"Personal Experience\"}),\"\\n\",t(i.p,{children:\"While we didn’t clinch the top spot, the experience was invaluable. I learned a great deal about the importance of structured planning, teamwork, and AI integration in solving real-world challenges. My teammates and I faced challenges, but our collaboration allowed us to create something meaningful and impactful. This experience has definitely shaped my approach to future endeavors.\"}),\"\\n\",t(i.h2,{children:\"What I Learned\"}),\"\\n\",t(i.p,{children:\"The biggest lesson from Kitahack 2024 was the importance of proper planning and design in the success of a project. It also reinforced my belief in the power of teamwork, as every member contributed to our project in meaningful ways. Even though we didn't win, the journey itself was a rewarding experience that taught me valuable lessons that I will carry forward into my future projects.\"}),\"\\n\",t(i.p,{children:\"ReWaste, while a failed endeavor at Kitahack 2024, has the potential to make a lasting impact. The participatory award we received was a reflection of the hard work and dedication of our team. I'm proud of what we achieved and excited to continue exploring ways to apply technology to sustainability.\"})]})}return{default:function(e={}){const{wrapper:a}=e.components||{};return a?t(a,{...e,children:t(_createMdxContent,{...e})}):_createMdxContent(e)}};",
-    "permalink": "/achievements/kita-hack-2024"
-  },
-  {
     "title": "2nd Place at MyRapid Bus x UTM Data Hackathon 2023",
     "awardTitle": "MyRapid Bus x UTM Data Hackathon 2023",
     "awardCover": {
@@ -150,6 +120,36 @@
     "permalink": "/achievements/innojam-smart-sustainable-city-2023"
   },
   {
+    "title": "Participatory Award at Kitahack 2024",
+    "awardTitle": "Kitahack 2024",
+    "awardCover": {
+      "src": "/static/kitahack2024-f2de59f3.png",
+      "height": 200,
+      "width": 200,
+      "blurDataURL": "data:image/webp;base64,UklGRpIAAABXRUJQVlA4WAoAAAAQAAAABwAABwAAQUxQSDsAAAABYBzJtqlz78eOq/8TsG0r/5yQQ0QQTNJU2zH4yUTMRPgoK1znbTxGt/nU836em1E2rW11AQAiwudfAQBWUDggMAAAALABAJ0BKggACAAMwM4lsAJ0APIz5AAA76AMBq3fC+xjSsGaMkU0c2MdLgzVz1NYAA==",
+      "blurWidth": 8,
+      "blurHeight": 8
+    },
+    "isFeatured": true,
+    "mainCover": {
+      "src": "/static/mainImage-6b00b7a9.jpeg",
+      "height": 1414,
+      "width": 2000,
+      "blurDataURL": "data:image/webp;base64,UklGRjIAAABXRUJQVlA4ICYAAACwAQCdASoIAAYADMDOJbACdADIv14AAP4VpFggoJCqJcmx0VeAAA==",
+      "blurWidth": 8,
+      "blurHeight": 6
+    },
+    "slug": "kita-hack-2024",
+    "date": "2024-02-01T00:00:00.000Z",
+    "metadata": {
+      "readingTime": 2,
+      "wordCount": 469
+    },
+    "excerpt": "Despite not securing the top spot, our team received a Participatory Award at Kitahack 2024 for our innovative project, ReWaste. The experience was filled with valuable lessons that will shape my approach to future projects.",
+    "content": "const{Fragment:e,jsx:t,jsxs:a}=arguments[0];function _createMdxContent(n){const i={h2:\"h2\",img:\"img\",p:\"p\",...n.components};return a(e,{children:[t(i.h2,{children:\"About ReWaste\"}),\"\\n\",t(i.p,{children:\"ReWaste was an innovative platform designed to tackle the underutilization of agricultural waste in Malaysia. The platform connects sellers of agricultural waste with power plant owners, enabling them to engage in a sustainable bidding process that contributes to cleaner energy production. By utilizing AI-driven tools, we streamlined the selling process, creating a win-win situation for both sellers and power plant owners.\"}),\"\\n\",t(i.p,{children:t(i.img,{src:\"/static/rewaste-beb7db94.png\",alt:\"ReWaste Project\"})}),\"\\n\",t(i.h2,{children:\"Our Project Idea\"}),\"\\n\",t(i.p,{children:\"The core idea behind ReWaste was to create an online auction platform for agricultural waste. Sellers would put their waste up for auction where they would add listings specifying the type of waste available (e.g., coconut waste, palm oil biomass), the quantity, initial price, and any specific terms or conditions. Buyers bid on the listings to compete for prices. Buyers place competitive bids on the agricultural waste listings that match their requirements. This would allow them to access these resources at lower prices, fostering an efficient and cost-effective marketplace.\"}),\"\\n\",t(i.p,{children:\"The idea of ReWaste was unique. For Plant Owners, they would experience reduced operational costs by securing agricultural waste at lower prices compared to coal. Through co-firing, they would achieve a cleaner, eco-conscious approach, consuming less coal and significantly decreasing carbon emissions. For Farmers, they would find a new avenue for waste utilization, earning revenue while contributing to a greener environment.\"}),\"\\n\",t(i.h2,{children:\"Key Takeaways\"}),\"\\n\",t(i.p,{children:\"The journey was filled with valuable lessons, the most important being the significance of pre-planning and design. I realized that diving straight into implementation without adequate planning hindered our progress. This reinforced my belief in the value of systematic approaches, such as the concepts taught in 'System Analysis and Design' courses, including use cases and activity diagrams. Proper preparation is crucial to the success of any project.\"}),\"\\n\",t(i.h2,{children:\"Personal Experience\"}),\"\\n\",t(i.p,{children:\"While we didn’t clinch the top spot, the experience was invaluable. I learned a great deal about the importance of structured planning, teamwork, and AI integration in solving real-world challenges. My teammates and I faced challenges, but our collaboration allowed us to create something meaningful and impactful. This experience has definitely shaped my approach to future endeavors.\"}),\"\\n\",t(i.h2,{children:\"What I Learned\"}),\"\\n\",t(i.p,{children:\"The biggest lesson from Kitahack 2024 was the importance of proper planning and design in the success of a project. It also reinforced my belief in the power of teamwork, as every member contributed to our project in meaningful ways. Even though we didn't win, the journey itself was a rewarding experience that taught me valuable lessons that I will carry forward into my future projects.\"}),\"\\n\",t(i.p,{children:\"ReWaste, while a failed endeavor at Kitahack 2024, has the potential to make a lasting impact. The participatory award we received was a reflection of the hard work and dedication of our team. I'm proud of what we achieved and excited to continue exploring ways to apply technology to sustainability.\"})]})}return{default:function(e={}){const{wrapper:a}=e.components||{};return a?t(a,{...e,children:t(_createMdxContent,{...e})}):_createMdxContent(e)}};",
+    "permalink": "/achievements/kita-hack-2024"
+  },
+  {
     "title": "Presenting MASRETT at New Academia Learning Innovation 2024",
     "awardTitle": "New Academia Learning Innovation 2024",
     "awardCover": {
@@ -180,36 +180,6 @@
     "permalink": "/achievements/new-academia-learning-innovation-2024"
   },
   {
-    "title": "Progressed Through Level 2 Web Development Course at Programming Hero",
-    "awardTitle": "Programming Hero Level 2 Web Development Course",
-    "awardCover": {
-      "src": "/static/programming-hero-e3da25e3.jpeg",
-      "height": 200,
-      "width": 200,
-      "blurDataURL": "data:image/webp;base64,UklGRiwAAABXRUJQVlA4ICAAAABwAQCdASoIAAgADMDOJZgCw7FAAAD+6nMEjSy8P0AAAA==",
-      "blurWidth": 8,
-      "blurHeight": 8
-    },
-    "isFeatured": false,
-    "mainCover": {
-      "src": "/static/ph-level-2-f867b7cf.PNG",
-      "height": 915,
-      "width": 1901,
-      "blurDataURL": "data:image/webp;base64,UklGRiYAAABXRUJQVlA4IBoAAAAwAQCdASoIAAQADMDOJZQAA3AA/uroJeo4AA==",
-      "blurWidth": 8,
-      "blurHeight": 4
-    },
-    "slug": "programming-hero-level-2-progress",
-    "date": "2025-06-10T00:00:00.000Z",
-    "metadata": {
-      "readingTime": 1,
-      "wordCount": 290
-    },
-    "excerpt": "I completed the Level 2 content at Programming Hero but could not finish on time due to personal commitments. Despite that I gained significant skills.",
-    "content": "const{Fragment:e,jsx:n,jsxs:t}=arguments[0];function _createMdxContent(i){const r={h2:\"h2\",li:\"li\",p:\"p\",strong:\"strong\",ul:\"ul\",...i.components};return t(e,{children:[n(r.h2,{children:\"About the Course\"}),\"\\n\",t(r.p,{children:[\"The \",n(r.strong,{children:\"Level 2 Web Development Course\"}),\"—also known as “Next Level”—from Programming Hero builds upon foundational MERN skills and dives into advanced technologies like \",n(r.strong,{children:\"TypeScript, Next.js, Redux, Express, PostgreSQL, Prisma, Docker, AWS, GraphQL, Vitest, and Jest\"}),\". The program includes over 1000 video lessons, ten or more hands‑on assignments, and two industry‑standard projects along with daily live support sessions, all designed to guide learners toward real‑world application development. Students are strongly recommended to spend around 4–5 hours per module or 20 hours weekly to succeed, with flexible pacing to accommodate working professionals .\"]}),\"\\n\",n(r.h2,{children:\"Personal Experience\"}),\"\\n\",n(r.p,{children:\"I engaged deeply with the entire course content and completed each module thoroughly but unfortunately could not finish the final projects within the scheduled timeline due to overlapping life responsibilities. Ultimately, I didn't receive any certification but nonetheless the exposure to advanced backend and frontend tools significantly improved my technical competency and understanding. The mentorship and community support were invaluable and I emerged with a stronger ability to integrate technologies like TypeScript, Docker, GraphQL, and AWS into complex applications.\"}),\"\\n\",n(r.h2,{children:\"What I Learned\"}),\"\\n\",t(r.ul,{children:[\"\\n\",t(r.li,{children:[n(r.strong,{children:\"Advanced Technical Skills\"}),\": Hands‑on practice with TypeScript, Express backends, PostgreSQL via Prisma, Redux state management, Next.js application structure, and testing frameworks like Vitest and Jest.\"]}),\"\\n\",t(r.li,{children:[n(r.strong,{children:\"DevOps Exposure\"}),\": Gained practical familiarity with Docker containerization and AWS deployment basics.\"]}),\"\\n\",t(r.li,{children:[n(r.strong,{children:\"Project Confidence\"}),\": Improved ability to architect full‑stack apps featuring proper DB modeling, API design, state management, and testing strategies.\"]}),\"\\n\",t(r.li,{children:[n(r.strong,{children:\"Time Management Appreciation\"}),\": Balancing course demands and personal commitments taught me practical prioritization and workflow adaptability.\"]}),\"\\n\"]}),\"\\n\",t(r.p,{children:[\"I am proud of the progress I made and remain motivated to complete the remaining projects at a steady pace. Deepest thanks to \",n(r.strong,{children:\"Programming Hero\"}),\" and the dedicated Level 2 mentors and community for their ongoing support.\"]})]})}return{default:function(e={}){const{wrapper:t}=e.components||{};return t?n(t,{...e,children:n(_createMdxContent,{...e})}):_createMdxContent(e)}};",
-    "permalink": "/achievements/programming-hero-level-2-progress"
-  },
-  {
     "title": "Completed SCIC Course & Achieved Black Belt – Batch 08",
     "awardTitle": "SCIC – Super Charged Interviewee Club",
     "awardCover": {
@@ -238,6 +208,36 @@
     "excerpt": "Thrilled to announce my completion of the SCIC course (Batch 08) from Programming Hero, earning the prestigious Black Belt title for outstanding performance.",
     "content": "const{Fragment:e,jsx:n,jsxs:r}=arguments[0];function _createMdxContent(t){const i={h2:\"h2\",li:\"li\",p:\"p\",strong:\"strong\",ul:\"ul\",...t.components};return r(e,{children:[n(i.h2,{children:\"About the Course\"}),\"\\n\",r(i.p,{children:[\"The \",n(i.strong,{children:\"Super Charged Interviewee Club (SCIC)\"}),\" is an exclusive, performance-based career acceleration program offered by Programming Hero to top students who complete the main web development course on time. It provides six weeks of intensive coaching on job search strategies, LinkedIn and GitHub optimization, personal branding, portfolio building, and interview skills. Within SCIC, the \",n(i.strong,{children:\"Black Belt\"}),\" is the highest honor, awarded only to those who consistently excel—achieving high assignment scores (typically 85%+), strong final interview performance (around 25–27/30), and demonstrating outstanding dedication and professionalism..\"]}),\"\\n\",n(i.h2,{children:\"Personal Experience\"}),\"\\n\",n(i.p,{children:\"Participating in Batch 08 of SCIC pushed me to refine every aspect of my career readiness. From crafting standout portfolios and profiles to practicing with mock interviews and receiving feedback on coding interviews, the journey was rigorous and rewarding. Going above and beyond on assignments, I achieved the required 85%+ benchmarks, performed strongly in final assessments, and earned the Black Belt for outstanding performance—proof of my dedication.\"}),\"\\n\",n(i.h2,{children:\"What I Learned\"}),\"\\n\",r(i.ul,{children:[\"\\n\",r(i.li,{children:[n(i.strong,{children:\"Career Strategy\"}),\": Developed targeted job search methods and effective networking on LinkedIn and GitHub.\"]}),\"\\n\",r(i.li,{children:[n(i.strong,{children:\"Self-Marketing\"}),\": Learned how to present my skills and projects professionally and compellingly.\"]}),\"\\n\",r(i.li,{children:[n(i.strong,{children:\"Interview Skills\"}),\": Gained confidence through structured practice, feedback sessions, and storytelling techniques.\"]}),\"\\n\",r(i.li,{children:[n(i.strong,{children:\"Recognition of Excellence\"}),\": Earning the Black Belt reflects my commitment to high standards, top-tier performance, and readiness for the job market.\"]}),\"\\n\"]}),\"\\n\",r(i.p,{children:[\"Completing SCIC and earning the Black Belt confirms my readiness to enter the professional world with strong interviewing, self-presentation, and technical skills. Huge thanks to \",n(i.strong,{children:\"Programming Hero\"}),\" for this invaluable experience and continued support.\"]})]})}return{default:function(e={}){const{wrapper:r}=e.components||{};return r?n(r,{...e,children:n(_createMdxContent,{...e})}):_createMdxContent(e)}};",
     "permalink": "/achievements/programming-hero-scic-batch-08"
+  },
+  {
+    "title": "Progressed Through Level 2 Web Development Course at Programming Hero",
+    "awardTitle": "Programming Hero Level 2 Web Development Course",
+    "awardCover": {
+      "src": "/static/programming-hero-e3da25e3.jpeg",
+      "height": 200,
+      "width": 200,
+      "blurDataURL": "data:image/webp;base64,UklGRiwAAABXRUJQVlA4ICAAAABwAQCdASoIAAgADMDOJZgCw7FAAAD+6nMEjSy8P0AAAA==",
+      "blurWidth": 8,
+      "blurHeight": 8
+    },
+    "isFeatured": false,
+    "mainCover": {
+      "src": "/static/ph-level-2-f867b7cf.PNG",
+      "height": 915,
+      "width": 1901,
+      "blurDataURL": "data:image/webp;base64,UklGRiYAAABXRUJQVlA4IBoAAAAwAQCdASoIAAQADMDOJZQAA3AA/uroJeo4AA==",
+      "blurWidth": 8,
+      "blurHeight": 4
+    },
+    "slug": "programming-hero-level-2-progress",
+    "date": "2025-06-10T00:00:00.000Z",
+    "metadata": {
+      "readingTime": 1,
+      "wordCount": 290
+    },
+    "excerpt": "I completed the Level 2 content at Programming Hero but could not finish on time due to personal commitments. Despite that I gained significant skills.",
+    "content": "const{Fragment:e,jsx:n,jsxs:t}=arguments[0];function _createMdxContent(i){const r={h2:\"h2\",li:\"li\",p:\"p\",strong:\"strong\",ul:\"ul\",...i.components};return t(e,{children:[n(r.h2,{children:\"About the Course\"}),\"\\n\",t(r.p,{children:[\"The \",n(r.strong,{children:\"Level 2 Web Development Course\"}),\"—also known as “Next Level”—from Programming Hero builds upon foundational MERN skills and dives into advanced technologies like \",n(r.strong,{children:\"TypeScript, Next.js, Redux, Express, PostgreSQL, Prisma, Docker, AWS, GraphQL, Vitest, and Jest\"}),\". The program includes over 1000 video lessons, ten or more hands‑on assignments, and two industry‑standard projects along with daily live support sessions, all designed to guide learners toward real‑world application development. Students are strongly recommended to spend around 4–5 hours per module or 20 hours weekly to succeed, with flexible pacing to accommodate working professionals .\"]}),\"\\n\",n(r.h2,{children:\"Personal Experience\"}),\"\\n\",n(r.p,{children:\"I engaged deeply with the entire course content and completed each module thoroughly but unfortunately could not finish the final projects within the scheduled timeline due to overlapping life responsibilities. Ultimately, I didn't receive any certification but nonetheless the exposure to advanced backend and frontend tools significantly improved my technical competency and understanding. The mentorship and community support were invaluable and I emerged with a stronger ability to integrate technologies like TypeScript, Docker, GraphQL, and AWS into complex applications.\"}),\"\\n\",n(r.h2,{children:\"What I Learned\"}),\"\\n\",t(r.ul,{children:[\"\\n\",t(r.li,{children:[n(r.strong,{children:\"Advanced Technical Skills\"}),\": Hands‑on practice with TypeScript, Express backends, PostgreSQL via Prisma, Redux state management, Next.js application structure, and testing frameworks like Vitest and Jest.\"]}),\"\\n\",t(r.li,{children:[n(r.strong,{children:\"DevOps Exposure\"}),\": Gained practical familiarity with Docker containerization and AWS deployment basics.\"]}),\"\\n\",t(r.li,{children:[n(r.strong,{children:\"Project Confidence\"}),\": Improved ability to architect full‑stack apps featuring proper DB modeling, API design, state management, and testing strategies.\"]}),\"\\n\",t(r.li,{children:[n(r.strong,{children:\"Time Management Appreciation\"}),\": Balancing course demands and personal commitments taught me practical prioritization and workflow adaptability.\"]}),\"\\n\"]}),\"\\n\",t(r.p,{children:[\"I am proud of the progress I made and remain motivated to complete the remaining projects at a steady pace. Deepest thanks to \",n(r.strong,{children:\"Programming Hero\"}),\" and the dedicated Level 2 mentors and community for their ongoing support.\"]})]})}return{default:function(e={}){const{wrapper:t}=e.components||{};return t?n(t,{...e,children:n(_createMdxContent,{...e})}):_createMdxContent(e)}};",
+    "permalink": "/achievements/programming-hero-level-2-progress"
   },
   {
     "title": "Completed Programming Hero Complete Web Development Course – Batch 08",

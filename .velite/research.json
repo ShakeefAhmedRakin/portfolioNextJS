@@ -135,6 +135,69 @@
     "permalink": "/research/holos-ie-a-system-model-for-assessing-carbon-emissions-and-balance-in-agricultural-systems"
   },
   {
+    "slug": "an-optimized-deep-learning-based-pipeline-for-recognition-of-sign-language-from-low-resolution-thermal-imagery",
+    "title": "An Optimized Deep-Learning Based Pipeline for Recognition of Sign Language from Low-Resolution Thermal Imagery",
+    "date": "2024-02-01T00:00:00.000Z",
+    "isFeatured": true,
+    "isPublished": false,
+    "publisher": null,
+    "paperLinks": {
+      "link": null,
+      "linkToPDF": null
+    },
+    "keywords": [
+      "Artificial Intelligence (AI)",
+      "Sign Language",
+      "Deep Learning",
+      "Thermal Imaging",
+      "CNNs",
+      "Larq",
+      "BNNs",
+      "DenseNet121",
+      "ResNet50",
+      "VGG16",
+      "BinaryDenseNet45",
+      "BinaryDenseNet37",
+      "BinaryResNetE18"
+    ],
+    "authors": [
+      {
+        "name": "Shakeef Ahmed Rakin",
+        "title": "Department of Computer Science and Engineering, BRAC University, 66 Mohakhali, Dhaka 1212, Bangladesh",
+        "link": "https://www.linkedin.com/in/shakeef-ahmed-rakin/"
+      },
+      {
+        "name": "Md. Tahjid Ahsan",
+        "title": "Department of Computer Science and Engineering, BRAC University, 66 Mohakhali, Dhaka 1212, Bangladesh",
+        "link": null
+      },
+      {
+        "name": "Mohammed Intishar Rahman",
+        "title": "Department of Computer Science and Engineering, BRAC University, 66 Mohakhali, Dhaka 1212, Bangladesh",
+        "link": null
+      },
+      {
+        "name": "Afif Alamgir Lizel",
+        "title": "Department of Computer Science and Engineering, BRAC University, 66 Mohakhali, Dhaka 1212, Bangladesh",
+        "link": "https://www.linkedin.com/in/afif-alamgir-6638aa268/"
+      },
+      {
+        "name": "Md Sifat Mahmud",
+        "title": "Department of Computer Science and Engineering, BRAC University, 66 Mohakhali, Dhaka 1212, Bangladesh",
+        "link": null
+      },
+      {
+        "name": "Md Tanzim Reza",
+        "title": "Department of Computer Science and Engineering, BRAC University, 66 Mohakhali, Dhaka 1212, Bangladesh",
+        "link": "https://www.bracu.ac.bd/about/people/md-tanzim-reza"
+      }
+    ],
+    "abstract": "Sign language is used mainly by handicapped and disabled individuals to communicate with people from within and outside their communities. Since effective communication is mandatory in this interconnected world, each country has its own variant of sign language, which acts as a line of communication between normal and handicapped individuals. Computer-based automated recognition of sign language is important since it can help us learn different sign languages and perform automated translation.\\n\\nThere are quite a few existing sign language detection modules, but it is often difficult to introduce those in daily life activities as those are not prepared for all the difficult scenarios, such as during the night or in low-light conditions. In this research, we propose an optimized pipeline for sign language detection under low-light conditions using thermal images of sign language. The influence and capabilities of thermal imaging in the detection of heat patterns from hand gestures help extract features easily.\\n\\nWe employ Larq, an open-source Python library for training binarized neural networks for optimization purposes, which is effective computationally and has a low cost. These factors are crucial in terms of real-time recognition and accessibility. For comparison, traditional full precision models under similar conditions are evaluated as well. Furthermore, the research is done on a dataset consisting of low-resolution thermal images of sign language digits. The experimental results reveal that the module proves to be competitive with traditional models in terms of performance metrics, while also maintaining low computational requirements. The results lay the groundwork for effective and accessible solutions for sign language recognition. Additionally, it sheds light on the research needed to advance binarized neural networks (BNNs).",
+    "content": "",
+    "excerpt": "This paper presents an optimized deep learning-based pipeline for recognizing sign language from low-resolution thermal imagery, demonstrating improved performance using Binarized Neural Networks (BNNs) and DenseNet121.",
+    "permalink": "/research/an-optimized-deep-learning-based-pipeline-for-recognition-of-sign-language-from-low-resolution-thermal-imagery"
+  },
+  {
     "slug": "malaysian-sign-language-real-time-tutorial-using-cnn-algorithm",
     "title": "Malaysian Sign Language Real-Time Tutorial using CNN Algorithm",
     "date": "2024-12-25T00:00:00.000Z",
@@ -208,68 +271,5 @@
     "content": "",
     "excerpt": "This research aims to develop a real-time Malaysian Sign Language (MSL) tutorial system using Convolutional Neural Networks (CNN) algorithm. The system is designed to provide immediate feedback to users based on their sign language skills.",
     "permalink": "/research/malaysian-sign-language-real-time-tutorial-using-cnn-algorithm"
-  },
-  {
-    "slug": "an-optimized-deep-learning-based-pipeline-for-recognition-of-sign-language-from-low-resolution-thermal-imagery",
-    "title": "An Optimized Deep-Learning Based Pipeline for Recognition of Sign Language from Low-Resolution Thermal Imagery",
-    "date": "2024-02-01T00:00:00.000Z",
-    "isFeatured": true,
-    "isPublished": false,
-    "publisher": null,
-    "paperLinks": {
-      "link": null,
-      "linkToPDF": null
-    },
-    "keywords": [
-      "Artificial Intelligence (AI)",
-      "Sign Language",
-      "Deep Learning",
-      "Thermal Imaging",
-      "CNNs",
-      "Larq",
-      "BNNs",
-      "DenseNet121",
-      "ResNet50",
-      "VGG16",
-      "BinaryDenseNet45",
-      "BinaryDenseNet37",
-      "BinaryResNetE18"
-    ],
-    "authors": [
-      {
-        "name": "Shakeef Ahmed Rakin",
-        "title": "Department of Computer Science and Engineering, BRAC University, 66 Mohakhali, Dhaka 1212, Bangladesh",
-        "link": "https://www.linkedin.com/in/shakeef-ahmed-rakin/"
-      },
-      {
-        "name": "Md. Tahjid Ahsan",
-        "title": "Department of Computer Science and Engineering, BRAC University, 66 Mohakhali, Dhaka 1212, Bangladesh",
-        "link": null
-      },
-      {
-        "name": "Mohammed Intishar Rahman",
-        "title": "Department of Computer Science and Engineering, BRAC University, 66 Mohakhali, Dhaka 1212, Bangladesh",
-        "link": null
-      },
-      {
-        "name": "Afif Alamgir Lizel",
-        "title": "Department of Computer Science and Engineering, BRAC University, 66 Mohakhali, Dhaka 1212, Bangladesh",
-        "link": "https://www.linkedin.com/in/afif-alamgir-6638aa268/"
-      },
-      {
-        "name": "Md Sifat Mahmud",
-        "title": "Department of Computer Science and Engineering, BRAC University, 66 Mohakhali, Dhaka 1212, Bangladesh",
-        "link": null
-      },
-      {
-        "name": "Md Tanzim Reza",
-        "title": "Department of Computer Science and Engineering, BRAC University, 66 Mohakhali, Dhaka 1212, Bangladesh",
-        "link": "https://www.bracu.ac.bd/about/people/md-tanzim-reza"
-      }
-    ],
-    "abstract": "Sign language is used mainly by handicapped and disabled individuals to communicate with people from within and outside their communities. Since effective communication is mandatory in this interconnected world, each country has its own variant of sign language, which acts as a line of communication between normal and handicapped individuals. Computer-based automated recognition of sign language is important since it can help us learn different sign languages and perform automated translation.\\n\\nThere are quite a few existing sign language detection modules, but it is often difficult to introduce those in daily life activities as those are not prepared for all the difficult scenarios, such as during the night or in low-light conditions. In this research, we propose an optimized pipeline for sign language detection under low-light conditions using thermal images of sign language. The influence and capabilities of thermal imaging in the detection of heat patterns from hand gestures help extract features easily.\\n\\nWe employ Larq, an open-source Python library for training binarized neural networks for optimization purposes, which is effective computationally and has a low cost. These factors are crucial in terms of real-time recognition and accessibility. For comparison, traditional full precision models under similar conditions are evaluated as well. Furthermore, the research is done on a dataset consisting of low-resolution thermal images of sign language digits. The experimental results reveal that the module proves to be competitive with traditional models in terms of performance metrics, while also maintaining low computational requirements. The results lay the groundwork for effective and accessible solutions for sign language recognition. Additionally, it sheds light on the research needed to advance binarized neural networks (BNNs).",
-    "content": "",
-    "excerpt": "This paper presents an optimized deep learning-based pipeline for recognizing sign language from low-resolution thermal imagery, demonstrating improved performance using Binarized Neural Networks (BNNs) and DenseNet121.",
-    "permalink": "/research/an-optimized-deep-learning-based-pipeline-for-recognition-of-sign-language-from-low-resolution-thermal-imagery"
   }
 ]
