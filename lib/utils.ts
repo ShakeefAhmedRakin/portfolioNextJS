@@ -1,6 +1,6 @@
 import { clsx, type ClassValue } from "clsx";
 import { twMerge } from "tailwind-merge";
-import { Achievements, workExperiences } from "@/.velite";
+import { Achievements, Research, workExperiences } from "@/.velite";
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
@@ -17,6 +17,14 @@ export function getSortedJobs(
 }
 
 export function sortAchievementsByDate(items: Achievements[]): Achievements[] {
+  return [...items].sort((a, b) => {
+    const dateA = new Date(a.date).getTime();
+    const dateB = new Date(b.date).getTime();
+    return dateB - dateA;
+  });
+}
+
+export function sortResearchByDate(items: Research[]): Research[] {
   return [...items].sort((a, b) => {
     const dateA = new Date(a.date).getTime();
     const dateB = new Date(b.date).getTime();

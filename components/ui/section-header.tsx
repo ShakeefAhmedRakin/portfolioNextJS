@@ -22,10 +22,14 @@ export function SectionHeader({
         <TypographyH2 className="max-w-3xl">{title}</TypographyH2>
         <Link
           href={linkHref}
+          target={linkHref.startsWith("http") ? "_blank" : "_self"}
+          rel={linkHref.startsWith("http") ? "noopener noreferrer" : undefined}
           className={buttonVariants({
             variant: "outline",
             className: "bg-transparent text-xs",
           })}
+          title={linkText}
+          aria-label={linkText}
         >
           {linkText} <ChevronRight />
         </Link>

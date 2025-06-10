@@ -13,7 +13,7 @@ export default function ResearchSection() {
       <SectionHeader
         title="Some of my ongoing and published research"
         description="Discover my latest research projects that I've collaborated with esteemed colleagues and institutions"
-        linkText="Learn More"
+        linkText="View All Research"
         linkHref={siteNavigationMap.RESEARCH.href}
       />
 

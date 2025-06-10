@@ -3,3 +3,4 @@
 export { default as achievements } from './achievements.json'
 export { default as projects } from './projects.json'
 export { default as workExperiences } from './workExperiences.json'
+export { default as research } from './research.json'

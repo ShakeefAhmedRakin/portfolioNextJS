@@ -49,21 +49,22 @@ export default function NavigationMobile() {
                   (pathname.startsWith(link.href) &&
                     link.href !== siteNavigationMap.HOME.href);
                 return (
-                  <Link
-                    href={link.href}
-                    key={link.title}
-                    aria-label={link.ariaLabel}
-                    onClick={handleDelayedClose}
-                    title={link.title}
-                    target={link.isExternal ? "_blank" : "_self"}
-                    rel={link.isExternal ? "noopener noreferrer" : undefined}
-                    className={cn(
-                      "hover:border-b-primary text-primary border-b-[1px] px-0.5 pb-2 text-base font-semibold duration-300",
-                      isActive ? "border-b-primary" : "border-b-primary/10",
-                    )}
-                  >
-                    {link.label}
-                  </Link>
+                  <li key={link.title}>
+                    <Link
+                      href={link.href}
+                      aria-label={link.ariaLabel}
+                      onClick={handleDelayedClose}
+                      title={link.title}
+                      target={link.isExternal ? "_blank" : "_self"}
+                      rel={link.isExternal ? "noopener noreferrer" : undefined}
+                      className={cn(
+                        "hover:border-b-primary text-primary border-b-[1px] px-0.5 pb-2 text-base font-semibold duration-300",
+                        isActive ? "border-b-primary" : "border-b-primary/10",
+                      )}
+                    >
+                      {link.label}
+                    </Link>
+                  </li>
                 );
               })}
             <GetInTouchDialog>

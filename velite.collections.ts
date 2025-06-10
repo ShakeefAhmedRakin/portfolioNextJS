@@ -6,8 +6,8 @@ export const achievements = defineCollection({
   pattern: "achievements/**/*.mdx",
   schema: s
     .object({
-      title: s.string().max(99),
-      awardTitle: s.string().max(99),
+      title: s.string(),
+      awardTitle: s.string(),
       awardCover: s.image(),
       isFeatured: s.boolean(),
       mainCover: s.image(),
@@ -28,10 +28,10 @@ export const workExperiences = defineCollection({
   pattern: "workExperience/**/*.mdx",
   schema: s.object({
     slug: s.slug("works"),
-    position: s.string().max(99),
+    position: s.string(),
     tags: s.array(s.string()).min(1),
-    company: s.string().max(99),
-    companyLink: s.string().max(99).nullable(),
+    company: s.string(),
+    companyLink: s.string().nullable(),
     isActive: s.boolean(),
     startDate: s.isodate(),
     endDate: s.isodate().nullable(),
@@ -45,8 +45,8 @@ export const projects = defineCollection({
   schema: s
     .object({
       slug: s.slug("projects"),
-      title: s.string().max(99),
-      subTitle: s.string().max(99),
+      title: s.string(),
+      subTitle: s.string(),
       category: s.enum(projectCategoriesEnum),
       date: s.isodate(),
       tags: s.array(s.string()).min(1),
@@ -60,5 +60,46 @@ export const projects = defineCollection({
     .transform((data) => ({
       ...data,
       permalink: `/projects/${data.slug}`,
+    })),
+});
+
+export const research = defineCollection({
+  name: "Research",
+  pattern: "research/**/*.mdx",
+  schema: s
+    .object({
+      slug: s.slug("research"),
+      title: s.string(),
+      date: s.isodate(),
+      isFeatured: s.boolean(),
+      isPublished: s.boolean(),
+      publisher: s
+        .object({
+          name: s.string(),
+          link: s.string().nullable(),
+          department: s.string(),
+        })
+        .nullable(),
+      paperLinks: s
+        .object({
+          link: s.string().nullable(),
+          linkToPDF: s.string().nullable(),
+        })
+        .nullable(),
+      keywords: s.array(s.string()).min(1),
+      authors: s.array(
+        s.object({
+          name: s.string(),
+          title: s.string(),
+          link: s.string().nullable(),
+        }),
+      ),
+      abstract: s.string(),
+      content: s.mdx(),
+      excerpt: s.string(),
+    })
+    .transform((data) => ({
+      ...data,
+      permalink: `/research/${data.slug}`,
     })),
 });

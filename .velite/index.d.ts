@@ -12,3 +12,6 @@ export declare const projects: Projects[]
 
 export type Work = Collections['workExperiences']['schema']['_output']
 export declare const workExperiences: Work[]
+
+export type Research = Collections['research']['schema']['_output']
+export declare const research: Research[]

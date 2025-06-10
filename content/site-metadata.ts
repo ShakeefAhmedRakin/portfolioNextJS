@@ -1,4 +1,4 @@
-import { Achievements, Projects } from "@/.velite";
+import { Achievements, Projects, Research } from "@/.velite";
 import SiteConfig from "./site-config";
 import { generateOgImageUrl } from "@/lib/utils";
 import { siteNavigationMap } from "./site-navigation";
@@ -54,6 +54,25 @@ const SiteMetadata = {
       description: project.excerpt,
       openGraphImageUrl: project.thumbnail.src,
       pathParam: project.permalink,
+    };
+  },
+  RESEARCH: {
+    title: `Research | ${SiteConfig.fullName}`,
+    description: `Explore the research projects of ${SiteConfig.fullName}, a ${SiteConfig.title} from ${SiteConfig.location}.`,
+    openGraphImageUrl: generateOgImageUrl({
+      title: "Research",
+      subtitle: SiteConfig.fullName,
+    }),
+    pathParam: siteNavigationMap.RESEARCH.href,
+  },
+  getResearchMetadata(research: Research) {
+    return {
+      title: `${research.title} | ${SiteConfig.fullName}`,
+      description: research.excerpt,
+      openGraphImageUrl: generateOgImageUrl({
+        subtitle: research.title,
+      }),
+      pathParam: research.permalink,
     };
   },
   // NOT FOUND METADATA
