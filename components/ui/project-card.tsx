@@ -69,11 +69,14 @@ export default function ProjectCard({ project }: { project: Projects }) {
           {project.title}
         </h2>
         <TypographyP
-          className="text-foreground/65 truncate group-hover:underline"
+          className="my-1 truncate font-light group-hover:underline"
           level="small"
         >
           {project.subTitle}
         </TypographyP>
+        <p className="text-foreground/70 max-w-[90%] truncate text-[11px] font-light md:max-w-[70%]">
+          {project.tags.join(", ")}
+        </p>
         <div className="relative mt-2 flex-1 rounded-2xl duration-300 md:-bottom-10 md:mt-0 md:group-hover:-bottom-0 md:group-hover:mt-4">
           <Image
             src={project.thumbnail.src}

@@ -11,8 +11,8 @@ export default function AchievementsSection() {
 
   return (
     <SectionWrapper
-      innerClassName="space-y-4 relative"
-      // wrapperClassName="bg-gradient-to-b from-transparent via-secondary/25 to-transparent"
+      innerClassName="space-y-4"
+      wrapperClassName="bg-gradient-to-b from-transparent via-secondary/25 to-transparent"
     >
       <SectionHeader
         title="Some of my titles"

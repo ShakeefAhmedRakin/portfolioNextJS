@@ -13,8 +13,8 @@ import { formatDateString } from "@/lib/utils";
 import SetSchemaProjectPage from "@/metadata/schemas/schemaProjectPage";
 import getMetadata from "@/metadata/utils/get-metadata";
 import { Dot } from "lucide-react";
-import Image from "next/image";
 import { notFound } from "next/navigation";
+import { MDXImage } from "@/components/ui/typography-mdx";
 
 export async function generateStaticParams() {
   return projects.map((project) => ({
@@ -82,19 +82,17 @@ export default async function ProjectPage({
           <TypographyBlockquote className="text-foreground/70 py-3">
             {project.excerpt}
           </TypographyBlockquote>
-          <div className="bg-primary/5 relative aspect-video max-h-[450px] w-full">
-            <Image
-              src={project.thumbnail.src}
-              priority
-              placeholder="blur"
-              blurDataURL={project.thumbnail.blurDataURL}
-              alt={project.title}
-              title={project.title}
-              fill
-              draggable={false}
-              className="object-contain object-center"
-            />
-          </div>
+          <MDXImage
+            src={project.thumbnail.src}
+            priority
+            placeholder="blur"
+            blurDataURL={project.thumbnail.blurDataURL}
+            alt={project.title}
+            title={project.title}
+            fill
+            draggable={false}
+            className="object-contain object-center"
+          />
           <hr className="border-primary/50" />
         </header>
 

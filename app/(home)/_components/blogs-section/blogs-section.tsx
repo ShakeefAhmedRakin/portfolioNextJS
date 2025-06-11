@@ -6,7 +6,7 @@ import { siteSocialMap } from "@/content/site-socials";
 export default function BlogsSection() {
   return (
     <SectionWrapper
-      innerClassName="space-y-4 relative"
+      innerClassName="space-y-4"
       wrapperClassName="bg-gradient-to-b from-transparent via-secondary/25 to-transparent"
     >
       <SectionHeader

@@ -1,0 +1,105 @@
+---
+slug: electron-react-ts-tailwind-shadcn-fastapi-template
+title: Cross Platform App Template
+subTitle: Electron + React + FastAPI Template
+category: Templates
+thumbnail: cover.webp
+date: 2024-04-27T00:00:00.000Z
+tags:
+  [
+    "Electron.js",
+    "React",
+    "TypeScript",
+    "TailwindCSS",
+    "shadcn/ui",
+    "FastAPI",
+    "Vite",
+    "PyInstaller",
+  ]
+isFeatured: false
+isOngoing: false
+workId: null
+excerpt: A fully-featured template for building cross-platform desktop apps using Electron, React + TypeScript, TailwindCSS, shadcn/ui, and a FastAPI backend bundled with PyInstaller. Supports Windows and macOS.
+---
+
+**Code:** [GitHub](https://github.com/ShakeefAhmedRakin/electron-react-ts-tailwind-shadcn-fastapi-template)
+
+## Overview
+
+This template provides a robust foundation for building modern cross-platform desktop applications. It leverages Electron.js for native desktop capabilities, React with TypeScript for a scalable frontend architecture, TailwindCSS and shadcn/ui for rapid, accessible UI development, and a FastAPI backend bundled with PyInstaller for efficient backend service deployment. Built with Vite, it offers fast development and production builds, tested on both Windows and macOS.
+
+## Frontend Customization
+
+- Uses Vite + React + TypeScript — behaves like a standard Vite React project.
+- Easily install or remove npm packages as needed.
+- Replace or extend shadcn/ui components or swap it for any other UI library (e.g., MUI, Chakra UI).
+- Customize Tailwind config, themes, aliases, and project structure freely.
+- Full flexibility to build a UI tailored to your needs while retaining Electron integration benefits.
+
+## Backend Customization
+
+- FastAPI backend bundled with PyInstaller for stable production builds.
+- Add endpoints or scale architecture by refactoring into routers and services.
+- Install any Python packages via requirements.txt as needed.
+- Supports deep FastAPI structuring with multiple modules, routers, service, and database layers.
+- Backend usage and import handling optimized for PyInstaller bundling.
+
+## Getting Started
+
+1. Clone the repo:
+
+   ```bash
+   git clone https://github.com/ShakeefAhmedRakin/electron-react-ts-tailwind-shadcn-fastapi-template.git
+   cd electron-react-ts-tailwind-shadcn-fastapi-template
+   ```
+
+2. Install frontend dependencies:
+
+   ```bash
+   npm install
+   ```
+
+3. Set up the Python backend:
+
+   - Create and activate a virtual environment (Python 3.8+ required).
+   - Install dependencies:
+
+     ```bash
+     pip install -r requirements.txt
+     ```
+
+4. Development mode:
+
+   ```bash
+   npm run dev
+   ```
+
+   Starts FastAPI backend and Electron app with React hot reload.
+
+5. Production build:
+
+   ```bash
+   npm run build
+   ```
+
+   Produces platform-specific build under `release/{version}` (Windows executable or macOS app bundle).
+
+## Tech Stack
+
+**Frontend**
+
+Electron.js, React, TypeScript, TailwindCSS, shadcn/ui, Vite
+
+**Backend**
+
+FastAPI, PyInstaller, Python 3.8+
+
+## Current Status & To-Do
+
+- Stable and production-ready for Windows and macOS.
+- Planned: Add SQLite support to backend.
+- Planned: Test and package for Linux compatibility.
+
+## License
+
+MIT — free to fork and build awesome things.

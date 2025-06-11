@@ -11,14 +11,28 @@ import {
   TypographyBlockquote,
   TypographyUnOrderedList,
   TypographyOrderedList,
+  paragraphVariants,
 } from "./typography";
 import { LinkProps } from "next/link";
 import React from "react";
 import { badgeVariants } from "./badge";
+import { cn } from "@/lib/utils";
+import { containerVariants } from "./containerVariants";
 
-const MDXImage = (props: ImageProps) => (
-  <figure className="bg-primary/5 relative mb-6 aspect-video max-h-[450px] w-full overflow-hidden rounded">
-    <Image {...props} draggable={false} fill className="object-contain" />
+export const MDXImage = (props: ImageProps) => (
+  <figure
+    className={cn(
+      "relative mb-6 aspect-video max-h-[450px] w-full overflow-hidden rounded",
+      containerVariants({ variant: "clear" }),
+    )}
+  >
+    <Image
+      {...props}
+      draggable={false}
+      title={props.alt}
+      fill
+      className="object-contain"
+    />
     <figcaption
       className={badgeVariants({
         className:
@@ -98,4 +112,25 @@ export const createMDXComponents = (isSmall = false) => ({
   hr: () => <hr className="border-primary/30 mb-4" />,
 
   img: MDXImage,
+
+  code: (props: React.ComponentPropsWithoutRef<"code">) => (
+    <code
+      className={paragraphVariants({
+        level: isSmall ? "small" : "default",
+        className: "bg-secondary w-fit rounded-[5px] px-2 pt-0.5 pb-1",
+      })}
+      {...props}
+    />
+  ),
+
+  pre: (props: React.ComponentPropsWithoutRef<"pre">) => (
+    <pre
+      className={paragraphVariants({
+        level: isSmall ? "small" : "default",
+        className: "bg-secondary w-fit rounded-[5px] px-2 pt-0.5 pb-1",
+      })}
+    >
+      <code {...props} />
+    </pre>
+  ),
 });

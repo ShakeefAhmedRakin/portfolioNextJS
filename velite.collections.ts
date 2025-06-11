@@ -41,7 +41,7 @@ export const workExperiences = defineCollection({
 
 export const projects = defineCollection({
   name: "Projects",
-  pattern: "projects/**/*.mdx",
+  pattern: "projects/**/index.mdx",
   schema: s
     .object({
       slug: s.slug("projects"),

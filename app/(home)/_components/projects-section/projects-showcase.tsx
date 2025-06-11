@@ -6,19 +6,14 @@ export default function ProjectsShowcase() {
   const projects = sortProjectsByDate(
     allProjects.filter((project) => project.isFeatured),
   );
-  const item = projects[0];
-  const items = Array.from({ length: 5 }).map((_, i) => ({
-    ...item,
-    slug: `${item.slug}-${i + 1}`,
-  }));
 
   const chunks = [];
   let i = 0;
   let toggle = true;
 
-  while (i < items.length) {
+  while (i < projects.length) {
     const size = toggle ? 3 : 2;
-    chunks.push(items.slice(i, i + size));
+    chunks.push(projects.slice(i, i + size));
     i += size;
     toggle = !toggle;
   }
