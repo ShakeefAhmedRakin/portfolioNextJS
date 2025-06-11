@@ -7,7 +7,8 @@ import {
   TypographyH1,
   TypographyH2,
 } from "@/components/ui/typography";
-import SiteMetadata from "@/content/site-metadata";
+import { ArticleWrapper } from "@/components/ui/wrappers";
+import SiteMetadata from "@/metadata/site-metadata";
 import { formatDateString } from "@/lib/utils";
 import SetSchemaProjectPage from "@/metadata/schemas/schemaProjectPage";
 import getMetadata from "@/metadata/utils/get-metadata";
@@ -51,7 +52,7 @@ export default async function ProjectPage({
   return (
     <>
       <SetSchemaProjectPage project={project} />
-      <article className="relative container mx-auto mb-8 px-4 pt-10 md:px-10 lg:px-56 xl:px-64">
+      <ArticleWrapper>
         <header className="intersect:animate-fade-up shadow-primary/5 intersect:animate-delay-200 animate-ease animate-duration-[1500ms] intersect-once mb-4 space-y-4">
           <div
             className={paragraphVariants({
@@ -100,7 +101,7 @@ export default async function ProjectPage({
         <div className="intersect:animate-fade-up shadow-primary/5 intersect:animate-delay-200 animate-ease animate-duration-[1500ms] intersect-once">
           <MDXContent code={project.content} />
         </div>
-      </article>
+      </ArticleWrapper>
     </>
   );
 }

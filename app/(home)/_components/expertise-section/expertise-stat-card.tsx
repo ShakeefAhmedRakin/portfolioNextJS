@@ -1,5 +1,7 @@
+import { containerVariants } from "@/components/ui/containerVariants";
 import { headingVariants, TypographyP } from "@/components/ui/typography";
 import { expertiseContent } from "@/content/home/expertise-section";
+import { cn } from "@/lib/utils";
 
 export default function ExpertiseStatGrid() {
   return (
@@ -18,7 +20,9 @@ interface ExpertiseStatCardProps {
 
 function ExpertiseStatCard({ title, subtitle }: ExpertiseStatCardProps) {
   return (
-    <ul className="from-secondary/60 to-background border-primary/20 shadow-primary/10 flex-1 border bg-gradient-to-br p-4 shadow">
+    <ul
+      className={cn("flex-1 p-4", containerVariants({ variant: "gradient" }))}
+    >
       <li>
         <span className={headingVariants({ level: "h5" })}>{title}</span>
         <TypographyP className="text-foreground/50" level="small">

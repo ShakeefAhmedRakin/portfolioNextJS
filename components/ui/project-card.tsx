@@ -4,16 +4,25 @@ import {
   paragraphVariants,
   TypographyP,
 } from "@/components/ui/typography";
-import { formatDateString } from "@/lib/utils";
+import { cn, formatDateString } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
+import { badgeVariants } from "./badge";
+import { containerVariants } from "./containerVariants";
 
 export default function ProjectCard({ project }: { project: Projects }) {
   return (
-    <li className="group outline-primary/50 intersect:animate-fade-up intersect:animate-delay-200 animate-ease animate-duration-[1500ms] intersect-once relative h-[300px] cursor-pointer overflow-hidden outline">
+    <li
+      className={cn(
+        "group intersect:animate-fade-up intersect:animate-delay-200 animate-ease animate-duration-[1500ms] intersect-once relative h-[300px] cursor-pointer overflow-hidden",
+        containerVariants({ variant: "outlined" }),
+      )}
+    >
       <Link
         className="relative z-10 flex h-full w-full flex-col p-6"
         href={project.permalink}
+        aria-label={`View project ${project.title}`}
+        title={`View project ${project.title}`}
       >
         <div className="flex justify-between gap-2">
           <span
@@ -31,9 +40,23 @@ export default function ProjectCard({ project }: { project: Projects }) {
             })}
           >
             {project.isOngoing ? (
-              <span>ONGOING</span>
+              <span
+                className={badgeVariants({
+                  className: `text-success text-[10px]`,
+                  variant: "outline",
+                })}
+              >
+                ONGOING
+              </span>
             ) : (
-              <time>{formatDateString(project.date)}</time>
+              <time
+                className={badgeVariants({
+                  className: `text-[10px]`,
+                  variant: "outline",
+                })}
+              >
+                {formatDateString(project.date)}
+              </time>
             )}
           </span>
         </div>

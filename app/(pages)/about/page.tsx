@@ -1,4 +1,4 @@
-import SiteMetadata from "@/content/site-metadata";
+import SiteMetadata from "@/metadata/site-metadata";
 import getMetadata from "@/metadata/utils/get-metadata";
 import HeroSection from "./_components/hero-section";
 import WorkExperienceSection from "./_components/work-experience-section";

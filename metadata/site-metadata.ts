@@ -1,7 +1,7 @@
 import { Achievements, Projects, Research } from "@/.velite";
-import SiteConfig from "./site-config";
-import { generateOgImageUrl } from "@/lib/utils";
-import { siteNavigationMap } from "./site-navigation";
+import SiteConfig from "@/content/site-config";
+import { generateOgImageUrl } from "./generators/generate-open-graph-image";
+import { siteNavigationMap } from "@/content/site-navigation";
 
 const SiteMetadata = {
   HOME: {

@@ -1,7 +1,9 @@
+import { containerVariants } from "@/components/ui/containerVariants";
 import { headingVariants, paragraphVariants } from "@/components/ui/typography";
 import { SectionWrapper } from "@/components/ui/wrappers";
 
 import { skillSets } from "@/content/skills/skills";
+import { cn } from "@/lib/utils";
 import Image from "next/image";
 
 export default function SkillsSection() {
@@ -17,22 +19,25 @@ export default function SkillsSection() {
         Technical Expertise
       </h2>
 
-      <div className="from-primary intersect:animate-fade-up intersect:animate-delay-200 animate-ease animate-duration-[1500ms] intersect-once my-4 h-[1px] bg-gradient-to-r to-transparent"></div>
-
-      <ul className="intersect:animate-fade-up intersect:animate-delay-200 animate-ease animate-duration-[1500ms] intersect-once grid grid-cols-1 gap-4 md:grid-cols-2">
+      <ul className="intersect:animate-fade-up md:border-primary/50 intersect:animate-delay-200 animate-ease animate-duration-[1500ms] intersect-once mt-4 grid grid-cols-1 gap-6 py-2 md:ml-6 md:grid-cols-2 md:border-l md:pl-6">
         {skillSets.map((set) => (
-          <li key={set.title} className="flex h-full flex-col">
+          <li
+            key={set.title}
+            className={cn(
+              "intersect:animate-fade-up intersect:animate-delay-200 animate-ease animate-duration-[1500ms] intersect-once",
+              containerVariants({ variant: "clear" }),
+            )}
+          >
             <h3
               className={headingVariants({
-                level: "h2",
+                level: "h4",
                 weight: "light",
-                className:
-                  "intersect:animate-fade-up intersect:animate-delay-200 animate-ease animate-duration-[1500ms] intersect-once text-foreground/70 text-center",
+                className: "mt-5 text-center",
               })}
             >
               {set.title}
             </h3>
-            <ul className="intersect:animate-fade-up intersect:animate-delay-200 animate-ease animate-duration-[1500ms] intersect-once from-secondary/60 to-background border-primary/20 shadow-primary/10 mt-4 flex h-full flex-wrap items-center justify-center gap-3 border bg-gradient-to-br p-5 shadow">
+            <ul className="flex flex-wrap justify-center gap-6 p-5">
               {set.skills.map((skill) => (
                 <li
                   key={`${skill.name}-img`}

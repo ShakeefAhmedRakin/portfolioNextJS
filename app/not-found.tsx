@@ -1,6 +1,6 @@
 import { buttonVariants } from "@/components/ui/button";
 import { SectionWrapper } from "@/components/ui/wrappers";
-import SiteMetadata from "@/content/site-metadata";
+import SiteMetadata from "@/metadata/site-metadata";
 import { siteNavigationMap } from "@/content/site-navigation";
 import getMetadata from "@/metadata/utils/get-metadata";
 import Link from "next/link";

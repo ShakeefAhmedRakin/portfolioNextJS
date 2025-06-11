@@ -1,9 +1,11 @@
+import { containerVariants } from "@/components/ui/containerVariants";
 import {
   TypographyH3,
   TypographyUnOrderedList,
   TypographyP,
 } from "@/components/ui/typography";
 import { expertiseContent } from "@/content/home/expertise-section";
+import { cn } from "@/lib/utils";
 
 export default function ExpertiseGrid() {
   return (
@@ -39,7 +41,10 @@ function ExpertiseCard({
 }: ExpertiseCardProps) {
   return (
     <div
-      className={`border-primary/50 relative min-h-[300px] space-y-1.5 overflow-hidden border p-8 xl:min-h-[400px] ${className}`}
+      className={cn(
+        `relative min-h-[300px] space-y-1.5 overflow-hidden p-8 xl:min-h-[400px] ${className}`,
+        containerVariants({ variant: "outlined" }),
+      )}
     >
       <TypographyH3>{title}</TypographyH3>
       <TypographyP className="text-foreground/65">{description}</TypographyP>

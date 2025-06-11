@@ -7,7 +7,7 @@ import {
   TypographyP,
 } from "@/components/ui/typography";
 import { SectionWrapper } from "@/components/ui/wrappers";
-import SiteMetadata from "@/content/site-metadata";
+import SiteMetadata from "@/metadata/site-metadata";
 import { formatDateString, sortAchievementsByDate } from "@/lib/utils";
 import SetSchemaAchievementsListingPage from "@/metadata/schemas/schemaAchievementsListingPage";
 import getMetadata from "@/metadata/utils/get-metadata";

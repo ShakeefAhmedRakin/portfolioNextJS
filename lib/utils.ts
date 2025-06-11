@@ -1,6 +1,6 @@
 import { clsx, type ClassValue } from "clsx";
 import { twMerge } from "tailwind-merge";
-import { Achievements, Research, workExperiences } from "@/.velite";
+import { Achievements, Projects, Research, workExperiences } from "@/.velite";
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
@@ -26,6 +26,20 @@ export function sortAchievementsByDate(items: Achievements[]): Achievements[] {
 
 export function sortResearchByDate(items: Research[]): Research[] {
   return [...items].sort((a, b) => {
+    if (a.isPublished !== b.isPublished) {
+      return a.isPublished ? -1 : 1;
+    }
+    const dateA = new Date(a.date).getTime();
+    const dateB = new Date(b.date).getTime();
+    return dateB - dateA;
+  });
+}
+
+export function sortProjectsByDate(items: Projects[]): Projects[] {
+  return [...items].sort((a, b) => {
+    if (a.isOngoing !== b.isOngoing) {
+      return a.isOngoing ? -1 : 1;
+    }
     const dateA = new Date(a.date).getTime();
     const dateB = new Date(b.date).getTime();
     return dateB - dateA;
@@ -72,22 +86,6 @@ export function formatDateString(date: string) {
     month: "long",
     year: "numeric",
   });
-}
-
-export function generateOgImageUrl({
-  title,
-  subtitle,
-}: {
-  title?: string;
-  subtitle?: string;
-}): string {
-  const baseUrl = process.env.WEBSITE_URL ?? "http://localhost:3000";
-  const params = new URLSearchParams();
-
-  if (title) params.set("title", title);
-  if (subtitle) params.set("subtitle", subtitle);
-
-  return `${baseUrl}/api/og?${params.toString()}`;
 }
 
 export function arrayBufferToBase64(buffer: ArrayBuffer): string {

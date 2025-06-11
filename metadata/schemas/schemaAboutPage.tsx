@@ -3,7 +3,7 @@ import { websiteId } from "../shared/website";
 import SiteConfig from "@/content/site-config";
 import { personId } from "../shared/person";
 import { organizationId } from "../shared/organization";
-import SiteMetadata from "@/content/site-metadata";
+import SiteMetadata from "@/metadata/site-metadata";
 import { siteSocials } from "@/content/site-socials";
 import generateImageObjectSchema from "../generators/generate-image-object-schema";
 import { siteNavigationMap } from "@/content/site-navigation";

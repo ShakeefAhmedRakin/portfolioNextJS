@@ -2,7 +2,7 @@ import BaseSchema from "../shared/base-schema";
 import { websiteId } from "../shared/website";
 import { personId } from "../shared/person";
 import { organizationId } from "../shared/organization";
-import SiteMetadata from "@/content/site-metadata";
+import SiteMetadata from "@/metadata/site-metadata";
 import { research } from "@/.velite";
 import { siteNavigationMap } from "@/content/site-navigation";
 import GenerateResearchSchema from "../generators/generate-research-schema";

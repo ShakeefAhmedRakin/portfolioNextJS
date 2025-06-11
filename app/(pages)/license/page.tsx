@@ -1,6 +1,6 @@
 import PageHeader from "@/components/ui/page-header";
 import { SectionWrapper } from "@/components/ui/wrappers";
-import SiteMetadata from "@/content/site-metadata";
+import SiteMetadata from "@/metadata/site-metadata";
 import getMetadata from "@/metadata/utils/get-metadata";
 
 import {

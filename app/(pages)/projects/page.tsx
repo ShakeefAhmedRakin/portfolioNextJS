@@ -1,14 +1,15 @@
 import PageHeader from "@/components/ui/page-header";
 import { SectionWrapper } from "@/components/ui/wrappers";
-import SiteMetadata from "@/content/site-metadata";
+import SiteMetadata from "@/metadata/site-metadata";
 import getMetadata from "@/metadata/utils/get-metadata";
 import FilterControls from "./_components/filter-control";
 import { projectCategoriesEnum } from "@/types/enums";
 import { notFound } from "next/navigation";
 import { projects } from "@/.velite";
-import ProjectCard from "./_components/project-card";
+import ProjectCard from "../../../components/ui/project-card";
 import { paragraphVariants } from "@/components/ui/typography";
 import SetSchemaProjectsListingPage from "@/metadata/schemas/schemaProjectsListingPage";
+import { sortProjectsByDate } from "@/lib/utils";
 
 export function generateMetadata() {
   return getMetadata(SiteMetadata.PROJECTS);
@@ -32,8 +33,10 @@ export default async function ProjectsListingPage({
   }
 
   const filteredProjects = category
-    ? projects.filter((project) => project.category === category)
-    : projects;
+    ? sortProjectsByDate(
+        projects.filter((project) => project.category === category),
+      )
+    : sortProjectsByDate(projects);
 
   return (
     <>

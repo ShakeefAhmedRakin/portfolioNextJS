@@ -6,7 +6,7 @@ import ResearchSection from "./_components/research-section/research-section";
 import BlogsSection from "./_components/blogs-section/blogs-section";
 import SetSchemaHomePage from "@/metadata/schemas/schemaHomePage";
 import getMetadata from "@/metadata/utils/get-metadata";
-import SiteMetadata from "@/content/site-metadata";
+import SiteMetadata from "@/metadata/site-metadata";
 
 export function generateMetadata() {
   return getMetadata(SiteMetadata.HOME);

@@ -11,8 +11,8 @@ export default function SiteFooterNavigation({
 }) {
   return (
     <div className="space-y-2">
-      <span className={headingVariants({ level: "h4" })}>{label}</span>
-      <ul>
+      <span className={headingVariants({ level: "h5" })}>{label}</span>
+      <ul className="mt-1.5">
         {links.map((link) => (
           <li key={`footer-nav-${link.ariaLabel}`}>
             <Link

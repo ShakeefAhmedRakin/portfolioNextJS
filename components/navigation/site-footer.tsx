@@ -10,7 +10,7 @@ import SiteConfig from "@/content/site-config";
 
 export default function SiteFooter() {
   return (
-    <FooterWrapper innerClassName="intersect:animate-fade-up intersect:animate-delay-200 animate-ease animate-duration-[1500ms] intersect-once">
+    <FooterWrapper wrapperClassName="bg-secondary/20">
       <div className="flex flex-col justify-between gap-x-10 gap-y-5 md:flex-row">
         <section className="max-w-sm">
           <Logo />
@@ -20,7 +20,7 @@ export default function SiteFooter() {
           >
             {SiteConfig.footerDescription}
           </TypographyP>
-          <div>
+          <div className="space-x-1">
             {siteSocials.map((link) => (
               <Link
                 href={link.url}
@@ -58,13 +58,13 @@ export default function SiteFooter() {
           className="text-foreground/65 text-center md:text-left"
         >
           &copy; {new Date().getFullYear()} {SiteConfig.fullName}. All rights
-          reserved.
+          reserved
         </TypographyP>
         <TypographyP
           level="small"
           className="text-foreground/65 text-center md:text-right"
         >
-          Built with Next.js, Shadcn UI & Velite.
+          Built with Next.js, Shadcn UI & Velite
         </TypographyP>
       </section>
     </FooterWrapper>
