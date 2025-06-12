@@ -10,7 +10,13 @@ import Link from "next/link";
 import { badgeVariants } from "./badge";
 import { containerVariants } from "./containerVariants";
 
-export default function ProjectCard({ project }: { project: Projects }) {
+export default function ProjectCard({
+  project,
+  isHomePage = false,
+}: {
+  project: Projects;
+  isHomePage?: boolean;
+}) {
   return (
     <li
       className={cn(
@@ -60,14 +66,25 @@ export default function ProjectCard({ project }: { project: Projects }) {
             )}
           </span>
         </div>
-        <h2
-          className={headingVariants({
-            level: "h3",
-            className: "truncate group-hover:underline",
-          })}
-        >
-          {project.title}
-        </h2>
+        {isHomePage ? (
+          <h3
+            className={headingVariants({
+              level: "h3",
+              className: "truncate group-hover:underline",
+            })}
+          >
+            {project.title}
+          </h3>
+        ) : (
+          <h2
+            className={headingVariants({
+              level: "h3",
+              className: "truncate group-hover:underline",
+            })}
+          >
+            {project.title}
+          </h2>
+        )}
         <TypographyP
           className="my-1 truncate font-light group-hover:underline"
           level="small"
@@ -87,6 +104,7 @@ export default function ProjectCard({ project }: { project: Projects }) {
             alt={project.title}
             title={project.title}
             className="bg-secondary/50 rounded-2xl object-cover object-top duration-300 md:brightness-75 md:group-hover:brightness-100"
+            sizes="(max-width: 768px) 100vw, (min-width: 769px) 40vw"
           />
         </div>
       </Link>

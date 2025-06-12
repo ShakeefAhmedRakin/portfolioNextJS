@@ -7,10 +7,12 @@ import { buttonVariants } from "../ui/button";
 import { siteNavigation } from "@/content/site-navigation";
 import SiteFooterNavigation from "./site-footer-navigation";
 import SiteConfig from "@/content/site-config";
+import BackgroundGridOverlay from "../ui/background-grid-overlay";
 
 export default function SiteFooter() {
   return (
-    <FooterWrapper wrapperClassName="bg-secondary/20">
+    <FooterWrapper wrapperClassName="relative">
+      <BackgroundGridOverlay />
       <div className="flex flex-col justify-between gap-x-10 gap-y-5 md:flex-row">
         <section className="max-w-sm">
           <Logo />

@@ -25,7 +25,7 @@ export default function RootLayout({
         </div>
         <SiteHeader />
 
-        <main className="relative mt-[90px]">
+        <main className="relative mt-[90px] min-h-[80vh]">
           <BackgroundGridOverlay />
           {children}
         </main>

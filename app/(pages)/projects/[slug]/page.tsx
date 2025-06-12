@@ -56,13 +56,12 @@ export default async function ProjectPage({
         <header className="intersect:animate-fade-up shadow-primary/5 intersect:animate-delay-200 animate-ease animate-duration-[1500ms] intersect-once mb-4 space-y-4">
           <div
             className={paragraphVariants({
-              className:
-                "text-foreground/70 mb-1 flex items-center font-medium",
+              className: "text-foreground/70 mb-1 flex items-center font-light",
               level: "small",
             })}
           >
             {project.isOngoing ? (
-              <span>ONGOING</span>
+              <span className="text-success">ONGOING</span>
             ) : (
               <time>{formatDateString(project.date)} (COMPLETED)</time>
             )}

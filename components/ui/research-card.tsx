@@ -7,7 +7,13 @@ import Link from "next/link";
 import { ChevronRight } from "lucide-react";
 import { containerVariants } from "./containerVariants";
 
-export default function ResearchCard({ paper }: { paper: Research }) {
+export default function ResearchCard({
+  paper,
+  isHomePage = false,
+}: {
+  paper: Research;
+  isHomePage?: boolean;
+}) {
   return (
     <li
       key={paper.slug}
@@ -36,14 +42,25 @@ export default function ResearchCard({ paper }: { paper: Research }) {
           </li>
         )}
       </ul>
-      <h3
-        className={headingVariants({
-          level: "h4",
-          className: "line-clamp-2",
-        })}
-      >
-        {paper.title}
-      </h3>
+      {isHomePage ? (
+        <h3
+          className={headingVariants({
+            level: "h4",
+            className: "line-clamp-2",
+          })}
+        >
+          {paper.title}
+        </h3>
+      ) : (
+        <h2
+          className={headingVariants({
+            level: "h4",
+            className: "line-clamp-2",
+          })}
+        >
+          {paper.title}
+        </h2>
+      )}
       <TypographyP level="small" className="text-foreground/70 line-clamp-3">
         {paper.excerpt}
       </TypographyP>

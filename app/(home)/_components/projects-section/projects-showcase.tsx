@@ -30,7 +30,7 @@ export default function ProjectsShowcase() {
             }`}
           >
             {chunk.map((project) => (
-              <ProjectCard project={project} key={project.slug} />
+              <ProjectCard project={project} key={project.slug} isHomePage />
             ))}
           </ul>
         </li>

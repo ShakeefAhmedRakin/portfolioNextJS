@@ -3,5 +3,4 @@ export const projectCategoriesEnum = [
   "Machine Learning",
   "Mobile Development",
   "Desktop Development",
-  "Templates",
 ] as const;

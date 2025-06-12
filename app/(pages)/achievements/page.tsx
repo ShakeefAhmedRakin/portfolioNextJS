@@ -29,7 +29,7 @@ export default function AchievementsListingPage() {
         subtitle="All of my most recent notable achievements"
       />
       <SectionWrapper
-        wrapperClassName="relative pb-12 lg:pb-20 xl:pb-24 pt-6 xl:pt-8"
+        wrapperClassName="pb-12 lg:pb-20 xl:pb-24 pt-6 xl:pt-8"
         padding={"header"}
       >
         <ul className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3">
@@ -46,10 +46,12 @@ export default function AchievementsListingPage() {
               >
                 <Image
                   src={achievement.mainCover.src}
-                  alt={achievement.title}
+                  alt={`Image for ${achievement.title}`}
+                  title={achievement.title}
                   blurDataURL={achievement.mainCover.blurDataURL}
                   placeholder="blur"
                   fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   className="absolute inset-0 bg-cover bg-center object-cover brightness-25 transition duration-300 ease-in-out group-hover:brightness-45"
                 ></Image>
 

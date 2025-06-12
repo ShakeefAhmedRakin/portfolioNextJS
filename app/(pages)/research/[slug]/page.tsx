@@ -108,18 +108,20 @@ export default async function ResearchPage({
                         rel="noopener noreferrer"
                         title={`View Publisher`}
                         aria-label={`View Publisher`}
-                        className="text-primary/90 hover:text-primary/100 flex justify-center text-sm font-light underline underline-offset-4 duration-300"
+                        className="text-primary/90 hover:text-primary/100 mx-auto flex w-fit justify-center text-sm font-light underline underline-offset-4 duration-300"
                       >
-                        {currentResearch.publisher.name}
+                        <h2 className="w-fit">
+                          {currentResearch.publisher.name}
+                        </h2>
                       </Link>
                     ) : (
                       <h2 className="text-center text-sm font-light">
                         {currentResearch.publisher.name}
                       </h2>
                     )}
-                    <h2 className="text-center text-xs font-light">
+                    <h3 className="text-center text-xs font-light">
                       {currentResearch.publisher.department}
-                    </h2>
+                    </h3>
                   </>
                 )}
                 {currentResearch.isPublished ? (

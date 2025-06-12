@@ -46,8 +46,7 @@ export default async function ProjectsListingPage({
         subtitle="All of my completed and ongoing projects"
       />
       <SectionWrapper
-        innerClassName="relative"
-        wrapperClassName="relative pb-12 lg:pb-20 xl:pb-24 pt-6 xl:pt-8 min-h-[80vh]"
+        wrapperClassName="pb-12 lg:pb-20 xl:pb-24 pt-6 xl:pt-8"
         padding={"header"}
       >
         <FilterControls setCategory={category} />

@@ -11,9 +11,7 @@ export default function ProjectsSection() {
     >
       <SectionHeader
         title="I've been building a lot of things"
-        description="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis
-        voluptas ipsam placeat delectus exercitationem tenetur magnam saepe qui
-        quibusdam."
+        description="A showcase of my completed and ongoing projects across web, desktop, mobile, and machine learning. Built with modern tools to solve real-world problems."
         linkText="View All Projects"
         linkHref={siteNavigationMap.PROJECTS.href}
       />

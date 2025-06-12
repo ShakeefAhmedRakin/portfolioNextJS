@@ -10,7 +10,7 @@ export default function ResearchGrid() {
       {sortResearchByDate(research)
         .filter((paper) => paper.isFeatured)
         .map((paper) => (
-          <ResearchCard paper={paper} key={paper.slug} />
+          <ResearchCard paper={paper} key={paper.slug} isHomePage />
         ))}
     </ul>
   );

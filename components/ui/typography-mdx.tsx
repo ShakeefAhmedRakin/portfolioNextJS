@@ -117,7 +117,8 @@ export const createMDXComponents = (isSmall = false) => ({
     <code
       className={paragraphVariants({
         level: isSmall ? "small" : "default",
-        className: "bg-secondary w-fit rounded-[5px] px-2 pt-0.5 pb-1",
+        className:
+          "bg-secondary scrollbar-hide w-fit max-w-full overflow-x-auto rounded-[5px] px-2",
       })}
       {...props}
     />
@@ -127,7 +128,8 @@ export const createMDXComponents = (isSmall = false) => ({
     <pre
       className={paragraphVariants({
         level: isSmall ? "small" : "default",
-        className: "bg-secondary w-fit rounded-[5px] px-2 pt-0.5 pb-1",
+        className:
+          "bg-secondary scrollbar-hide mb-2 w-fit max-w-full overflow-x-auto rounded-[5px] px-2",
       })}
     >
       <code {...props} />

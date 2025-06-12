@@ -8,6 +8,7 @@ export function BlogCard({ article }: { article: Article }) {
     <Link href={article.link} target="_blank" className="group space-y-4">
       <div className="relative aspect-video">
         <Image
+          sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
           src={article.thumbnail}
           fill
           alt={`Thumbnail image for article titled "${article.title}"`}

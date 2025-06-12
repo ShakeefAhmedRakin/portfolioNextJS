@@ -76,8 +76,8 @@ export default function HeroSection() {
             target="_blank"
             rel="noopener noreferrer"
             className={buttonVariants({
-              className: "w-36 bg-transparent text-xs",
-              variant: "outline",
+              className: "w-36 text-xs",
+              variant: "default",
               size: "lg",
             })}
           >
