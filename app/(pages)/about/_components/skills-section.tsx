@@ -54,14 +54,14 @@ export default function SkillsSection() {
                       title={skill.name}
                     />
                   </div>
-                  <h4
+                  <p
                     className={paragraphVariants({
                       level: "small",
                       className: "text-foreground/70",
                     })}
                   >
                     {skill.name}
-                  </h4>
+                  </p>
                 </li>
               ))}
             </ul>

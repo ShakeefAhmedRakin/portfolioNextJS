@@ -4,7 +4,7 @@ import { RiChatVoiceAiFill } from "react-icons/ri";
 import { GoCodescan } from "react-icons/go";
 
 export const expertiseContent = {
-  title: "I've been upto a lot of things",
+  title: "I've been up to a lot of things",
   description:
     "I write code that solves real problems, one step at a time. Solid in algorithms, data structures, and fluent in TypeScript, Python and C#. Focused on building efficient, clean and reliable systems.",
   stats: [
