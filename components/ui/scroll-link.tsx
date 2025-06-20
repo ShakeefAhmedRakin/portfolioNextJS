@@ -8,6 +8,8 @@ interface ScrollLinkProps {
   className?: string;
   style?: React.CSSProperties;
   as?: ElementType;
+  title?: string;
+  ariaLabel?: string;
 }
 
 export const ScrollLink: React.FC<ScrollLinkProps> = ({
@@ -17,6 +19,8 @@ export const ScrollLink: React.FC<ScrollLinkProps> = ({
   className = "",
   style = {},
   as: Component = "button",
+  title,
+  ariaLabel,
 }) => {
   const handleClick = (e: React.MouseEvent) => {
     e.preventDefault();
@@ -32,6 +36,8 @@ export const ScrollLink: React.FC<ScrollLinkProps> = ({
       onClick={handleClick}
       className={`cursor-pointer ${className}`}
       style={style}
+      title={title}
+      aria-label={ariaLabel}
     >
       {children}
     </Component>

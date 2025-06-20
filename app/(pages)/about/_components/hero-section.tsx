@@ -51,6 +51,8 @@ export default function HeroSection() {
         <div className="space-y-2 space-x-2">
           <ScrollLink
             to="experience"
+            ariaLabel="Scroll to work experience section"
+            title="Work Experience"
             as="button"
             className={buttonVariants({
               variant: "outline",
@@ -63,6 +65,8 @@ export default function HeroSection() {
           <ScrollLink
             to="expertise"
             as="button"
+            ariaLabel="Scroll to expertise section"
+            title="Technical Expertise"
             className={buttonVariants({
               variant: "outline",
               size: "lg",
@@ -80,6 +84,8 @@ export default function HeroSection() {
               variant: "default",
               size: "lg",
             })}
+            title="Full Resume"
+            aria-label="View Full Resume"
           >
             Full Resume
           </Link>

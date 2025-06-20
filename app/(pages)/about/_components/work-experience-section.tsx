@@ -55,7 +55,7 @@ export default function WorkExperienceSection() {
                 className={headingVariants({
                   level: "h5",
                   weight: "light",
-                  className: "hover:underline",
+                  className: "underline underline-offset-2",
                 })}
               >
                 <h4 className="inline">{work.company}</h4>
