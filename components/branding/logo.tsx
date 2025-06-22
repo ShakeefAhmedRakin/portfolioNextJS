@@ -4,6 +4,7 @@ import Link from "next/link";
 
 type LogoProps = {
   className?: string;
+  onClick?: () => void;
 };
 
 export default function Logo({ className }: LogoProps) {
