@@ -1,22 +1,21 @@
 import { siteNavigationMap } from "@/content/site-navigation";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
+import { AnchorHTMLAttributes } from "react";
 
-type LogoProps = {
-  className?: string;
-  onClick?: () => void;
-};
+type LogoProps = AnchorHTMLAttributes<HTMLAnchorElement>;
 
-export default function Logo({ className }: LogoProps) {
+export default function Logo(props: LogoProps) {
   return (
     <Link
       href={siteNavigationMap.HOME.href}
       title="Home"
       arua-label="Home"
       className={cn(
-        className,
+        props.className,
         "flex w-fit items-center gap-0.5 text-2xl font-bold tracking-widest",
       )}
+      onClick={(props.onClick as () => void) || undefined}
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
