@@ -17,6 +17,10 @@ export const skillSets = [
         image: `${imagePath}/tailwind.png`,
       },
       {
+        name: "Tanstack Query",
+        image: `${imagePath}/tanstack.png`,
+      },
+      {
         name: "Express",
         image: `${imagePath}/express.png`,
       },
@@ -29,8 +33,20 @@ export const skillSets = [
         image: `${imagePath}/mongo.png`,
       },
       {
+        name: "Postgres",
+        image: `${imagePath}/postgres.png`,
+      },
+      {
         name: "MySQL",
         image: `${imagePath}/mysql.png`,
+      },
+      {
+        name: "Drizzle ORM",
+        image: `${imagePath}/drizzle.svg`,
+      },
+      {
+        name: "oRPC Server",
+        image: `${imagePath}/orpc.png`,
       },
       {
         name: "Firebase",
