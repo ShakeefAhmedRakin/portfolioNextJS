@@ -26,8 +26,8 @@ const SiteConfig = {
   birthPlace: birthPlace,
   location: "Dhaka, Bangladesh",
   gender: "male",
-  heroDescription: `${title} from ${birthPlace}, skilled in developing web applications and integrating AI solutions. Experienced in machine learning projects, including natural language processing and computer vision.`,
-  footerDescription: `${title} with expertise in web development, software engineering and AI`,
+  heroDescription: `${title} from ${birthPlace}, specializing in architecting scalable applications across web, mobile, and desktop platforms. Experienced in end-to-end development from system design to deployment, balancing performance and user experience.`,
+  footerDescription: `${title} with expertise in full-stack development and scalable application architecture`,
   languages: ["English", "Bengali"],
   // Contact
   email: "shakeef.rakin321@gmail.com",

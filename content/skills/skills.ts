@@ -2,35 +2,81 @@ const imagePath = "/images/skills";
 
 export const skillSets = [
   {
-    title: "Full Stack Development",
+    title: "Languages",
     skills: [
+      {
+        name: "TypeScript",
+        image: `${imagePath}/typescript.png`,
+      },
+      {
+        name: "JavaScript",
+        image: `${imagePath}/javascript.png`,
+      },
+      {
+        name: "Python",
+        image: `${imagePath}/python.png`,
+      },
+      {
+        name: "C#",
+        image: `${imagePath}/csharp.png`,
+      },
+    ],
+  },
+  {
+    title: "Frontend Development",
+    skills: [
+      {
+        name: "React",
+        image: `${imagePath}/react.png`,
+      },
       {
         name: "Next",
         image: `${imagePath}/nextjs.png`,
       },
       {
-        name: "React",
-        image: `${imagePath}/react.png`,
+        name: "HTML5",
+        image: `${imagePath}/html.png`,
+      },
+      {
+        name: "CSS3",
+        image: `${imagePath}/css.png`,
       },
       {
         name: "Tailwind",
         image: `${imagePath}/tailwind.png`,
       },
       {
+        name: "Material UI",
+        image: `${imagePath}/mui.png`,
+      },
+      {
+        name: "ShadCN UI",
+        image: `${imagePath}/shadcn.png`,
+      },
+      {
+        name: "Axios",
+        image: `${imagePath}/axios.png`,
+      },
+      {
         name: "Tanstack Query",
         image: `${imagePath}/tanstack.png`,
+      },
+    ],
+  },
+  {
+    title: "Backend Development",
+    skills: [
+      {
+        name: "Node.js",
+        image: `${imagePath}/nodejs.png`,
       },
       {
         name: "Express",
         image: `${imagePath}/express.png`,
       },
       {
-        name: "Supabase",
-        image: `${imagePath}/supabase.png`,
-      },
-      {
-        name: "Mongo",
-        image: `${imagePath}/mongo.png`,
+        name: "FastAPI",
+        image: `${imagePath}/FastAPI.png`,
       },
       {
         name: "Postgres",
@@ -41,6 +87,18 @@ export const skillSets = [
         image: `${imagePath}/mysql.png`,
       },
       {
+        name: "Mongo",
+        image: `${imagePath}/mongo.png`,
+      },
+      {
+        name: "Mongoose",
+        image: `${imagePath}/mongoose.png`,
+      },
+      {
+        name: "Supabase",
+        image: `${imagePath}/supabase.png`,
+      },
+      {
         name: "Drizzle ORM",
         image: `${imagePath}/drizzle.svg`,
       },
@@ -49,24 +107,20 @@ export const skillSets = [
         image: `${imagePath}/orpc.png`,
       },
       {
+        name: "JWT",
+        image: `${imagePath}/jwt.svg`,
+      },
+      {
+        name: "Stripe",
+        image: `${imagePath}/stripe.png`,
+      },
+      {
+        name: "Lemon Squeezy",
+        image: `${imagePath}/lemon.png`,
+      },
+      {
         name: "Firebase",
         image: `${imagePath}/firebase.png`,
-      },
-      {
-        name: "FastAPI",
-        image: `${imagePath}/FastAPI.png`,
-      },
-      {
-        name: "ShadCN UI",
-        image: `${imagePath}/shadcn.png`,
-      },
-      {
-        name: "Material UI",
-        image: `${imagePath}/mui.png`,
-      },
-      {
-        name: "Bootstrap",
-        image: `${imagePath}/bootstrap.png`,
       },
     ],
   },
