@@ -2,16 +2,37 @@ import { PiStackMinusFill } from "react-icons/pi";
 import { PiDevices } from "react-icons/pi";
 import { RiChatVoiceAiFill } from "react-icons/ri";
 import { GoCodescan } from "react-icons/go";
+import { siteNavigationMap } from "../site-navigation";
 
 export const expertiseContent = {
   title: "I've been up to a lot of things",
   description:
     "I write code that solves real problems, one step at a time. Solid in algorithms, data structures, and fluent in TypeScript, Python and C#. Focused on building efficient, clean and reliable systems.",
   stats: [
-    { title: "1+ Year", subtitle: "Experience" },
-    { title: "20+ Projects", subtitle: "Completed" },
-    { title: "6+ Hackathons", subtitle: "Attended" },
-    { title: "2+ Papers", subtitle: "Published" },
+    {
+      title: "1+ Year",
+      subtitle: "Experience",
+      href: `${siteNavigationMap.ABOUT.href}#experience`,
+      ariaLabel: siteNavigationMap.ABOUT.ariaLabel,
+    },
+    {
+      title: "20+ Projects",
+      subtitle: "Completed",
+      href: siteNavigationMap.PROJECTS.href,
+      ariaLabel: siteNavigationMap.PROJECTS.ariaLabel,
+    },
+    {
+      title: "6+ Hackathons",
+      subtitle: "Attended",
+      href: siteNavigationMap.ACHIEVEMENTS.href,
+      ariaLabel: siteNavigationMap.ACHIEVEMENTS.ariaLabel,
+    },
+    {
+      title: "2+ Papers",
+      subtitle: "Published",
+      href: siteNavigationMap.RESEARCH.href,
+      ariaLabel: siteNavigationMap.RESEARCH.ariaLabel,
+    },
   ],
   expertiseGroupOne: [
     {

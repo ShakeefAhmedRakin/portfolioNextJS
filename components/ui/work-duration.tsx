@@ -11,7 +11,7 @@ export default function WorkDuration({ work }: { work: Work }) {
         className: "text-foreground/50 font-bold",
       })}
     >
-      {getJobDurationString(work.startDate)}
+      {getJobDurationString(work.startDate, work.endDate)}
     </span>
   );
 }

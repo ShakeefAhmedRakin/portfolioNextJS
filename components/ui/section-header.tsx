@@ -31,7 +31,15 @@ export function SectionHeader({
           title={linkText}
           aria-label={linkText}
         >
-          {linkText} <ChevronRight />
+          {linkText === "View All Achievements" ? (
+            <span>
+              View All{" "}
+              <span className="sr-only md:not-sr-only">Achievements</span>
+            </span>
+          ) : (
+            linkText
+          )}{" "}
+          <ChevronRight />
         </Link>
       </div>
 

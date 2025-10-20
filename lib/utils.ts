@@ -46,16 +46,28 @@ export function sortProjectsByDate(items: Projects[]): Projects[] {
   });
 }
 
-export function getJobDurationString(startDate: string): string {
+export function getJobDurationString(
+  startDate: string,
+  endDate?: string | null,
+): string {
   const start = new Date(startDate);
-  const now = new Date();
+  const end = endDate ? new Date(endDate) : new Date();
 
-  let years = now.getFullYear() - start.getFullYear();
-  let months = now.getMonth() - start.getMonth();
+  let years = end.getFullYear() - start.getFullYear();
+  let months = end.getMonth() - start.getMonth();
 
   if (months < 0) {
     years--;
     months += 12;
+  }
+
+  // Add one extra month to the duration
+  months += 1;
+
+  // Adjust if months exceed 12
+  if (months >= 12) {
+    years += Math.floor(months / 12);
+    months = months % 12;
   }
 
   const yearStr = years > 0 ? `${years} year${years > 1 ? "s" : ""}` : "";
