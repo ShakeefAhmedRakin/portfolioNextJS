@@ -28,7 +28,7 @@ export const expertiseContent = {
       ariaLabel: siteNavigationMap.ACHIEVEMENTS.ariaLabel,
     },
     {
-      title: "2+ Papers",
+      title: "3+ Papers",
       subtitle: "Published",
       href: siteNavigationMap.RESEARCH.href,
       ariaLabel: siteNavigationMap.RESEARCH.ariaLabel,
