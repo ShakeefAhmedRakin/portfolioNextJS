@@ -10,7 +10,7 @@ export const expertiseContent = {
     "I write code that solves real problems, one step at a time. Solid in algorithms, data structures, and fluent in TypeScript, Python and C#. Focused on building efficient, clean and reliable systems.",
   stats: [
     {
-      title: "1+ Year",
+      title: "1.5+ Years",
       subtitle: "Experience",
       href: `${siteNavigationMap.ABOUT.href}#experience`,
       ariaLabel: siteNavigationMap.ABOUT.ariaLabel,
