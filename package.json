@@ -17,7 +17,7 @@
     "concurrently": "^9.1.2",
     "lucide-react": "^0.510.0",
     "motion": "^12.11.3",
-    "next": "15.3.2",
+    "next": "15.3.8",
     "prettier": "^3.5.3",
     "prettier-plugin-tailwindcss": "^0.6.11",
     "react": "^19.0.0",
