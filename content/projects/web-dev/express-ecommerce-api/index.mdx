@@ -1,0 +1,68 @@
+---
+slug: express-ecommerce-api
+title: E-Commerce API
+subTitle: RESTful Backend for Product & Order Management
+category: Web Development
+thumbnail: cover.png
+date: 2024-07-01T00:00:00.000Z
+tags: ["Express", "TypeScript", "MongoDB", "Mongoose", "Joi", "Node.js"]
+isFeatured: false
+isOngoing: false
+workId: null
+excerpt: A backend-only RESTful e-commerce API built with Express and TypeScript as an assignment for the Programming Hero Level 2 Web Development Course. Features product and order management with inventory control, data validation using Joi, and a modular architecture following MVC patterns.
+---
+
+**Live:** [View API](https://express-ts-ecommerce-assignment.vercel.app)
+**Code:** [GitHub](https://github.com/ShakeefAhmedRakin/Express-ts-ecommerce-assignment)
+
+## Overview
+
+This is a backend RESTful API for an e-commerce platform, developed as an assignment for the **Programming Hero Level 2 Web Development Course**. The project focuses on building a robust Express server with TypeScript, integrating MongoDB via Mongoose for data persistence, and enforcing data integrity through Joi validation. It follows a clean modular architecture with separated concerns across routes, controllers, services, and models.
+
+## Product Management
+
+The API provides full CRUD operations for products. Each product includes a name, description, price, category, tags, variants (e.g., color, storage capacity), and inventory tracking. Products can be searched by a search term, retrieved individually by ID, updated, or deleted. The Mongoose schema enforces required fields with custom validation messages.
+
+Key endpoints:
+
+- `POST /api/products` — Create a new product
+- `GET /api/products` — Retrieve all products (supports `?searchTerm=` query)
+- `GET /api/products/:productId` — Retrieve a specific product
+- `PUT /api/products/:productId` — Update a product
+- `DELETE /api/products/:productId` — Delete a product
+
+## Order Management & Inventory Control
+
+The order system handles order creation and retrieval, with built-in inventory management logic. When an order is placed, the system checks available quantity in the inventory, returns an error if the ordered quantity exceeds stock, and automatically updates the inventory count and `inStock` status. Orders can be filtered by user email.
+
+Key endpoints:
+
+- `POST /api/orders` — Create a new order (with inventory validation)
+- `GET /api/orders` — Retrieve all orders (supports `?email=` query)
+
+## Architecture
+
+The codebase follows a modular structure organized by domain:
+
+- **Modules** — Separated into `product` and `order` modules, each with its own interface, model, controller, service, route, and validation layers
+- **Validation** — Joi schemas validate incoming request data before processing
+- **Error Handling** — Custom error responses for scenarios like product not found, insufficient inventory, and invalid routes
+- **Configuration** — Environment variables managed via dotenv for database connection and port configuration
+
+## Tech Stack
+
+**Runtime & Framework**
+
+Express, Node.js, TypeScript
+
+**Database**
+
+MongoDB, Mongoose
+
+**Validation & Tooling**
+
+Joi, ESLint, CORS, dotenv
+
+**Deployment**
+
+Vercel
