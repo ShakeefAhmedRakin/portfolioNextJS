@@ -12,7 +12,7 @@ const SiteConfig = {
       name: `${fullName} | Hero Image`,
       src: "/images/branding/hero-main.png",
       blurURL:
-        "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAAXNSR0IArs4c6QAAANxJREFUKFM1jrFKw2AYRc/9voRWBBFEBcdABskm4iI4uTi6+wKFFhxdfQdXX8LJB3B366AlxRS1JSnFioqG8ksjcrfLPYerx1EVzIRJNDERuXCzv64ZaDmAi16XdDejc97D/6FBUYbIDEncXl2yvr3D0VmnARpDXpTB3XEX/ZtrorVNsuNTJNASHBZlMAdffPA1nfA6eiE9OMTjdmNV/lQGq2d4PUfm1FpF9RvtrRRbGgbDSYi+x8ynz7RaK/wsYhQ+2Uj2kRw95OOg95z+/R1JmlFVM+JYJHsnzYdfA2NHTEyE1bUAAAAASUVORK5CYII=",
+        "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAA2UlEQVR4ARSNDUsCQRCG39m73XRbvTOwkjAVIymo//8zgpD6AZbhRXRd+Lk74zjwwMzwvDOmEwoOvsvt1jn7dlA6SuDTvuj22NxNbvEwm5KzloaXF3TT71Fuc5rdj2k0HMCUZYHgPZzN8DS5xvN0AN86w+eyQl03MK/zd7zM38AgLFa/+PpuYK2DzXP8rzcwAuiQQbRZrGp8VH9wzmKz3SHGCMPMiIqosU0JO07YH6IGBKwhFQQpMlJijPslHkdX+kzAKoowjBbIkJiMpGrWsvxpRI8JswgBOAIAAP//tJLatAAAAAZJREFUAwDGnGcK2ySPXgAAAABJRU5ErkJggg==",
     },
     aboutHeroImage: {
       name: `${fullName} | About Image`,

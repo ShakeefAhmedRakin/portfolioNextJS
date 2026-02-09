@@ -87,8 +87,8 @@ export default function HeroSection() {
           blurDataURL={SiteConfig.gallery.mainHeroImage.blurURL}
           placeholder="blur"
           draggable={false}
-          title={SiteConfig.gallery.aboutHeroImage.name}
-          alt={SiteConfig.gallery.aboutHeroImage.name}
+          title={SiteConfig.gallery.mainHeroImage.name}
+          alt={SiteConfig.gallery.mainHeroImage.name}
           className="aspect-square rounded-[50px] object-cover"
         />
       </div>
