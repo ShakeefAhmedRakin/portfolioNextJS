@@ -1,6 +1,7 @@
 const fullName = "Shakeef Ahmed Rakin";
 const title = "Full Stack Engineer";
 const birthPlace = "Bangladesh";
+export const yearsOfExperience = "1.5+";
 
 const SiteConfig = {
   // Site Meta Data
@@ -26,8 +27,8 @@ const SiteConfig = {
   birthPlace: birthPlace,
   location: "Dhaka, Bangladesh",
   gender: "male",
-  heroDescription: `${title} from ${birthPlace}, specializing in architecting scalable AI-driven applications across web, mobile, and desktop platforms. Experienced in end-to-end development from system design to deployment, balancing performance and user experience.`,
-  footerDescription: `${title} with expertise in full-stack development and scalable application architecture`,
+  heroDescription: `${title} from ${birthPlace} with ${yearsOfExperience} years of experience. I build scalable applications across web, mobile, and desktop with hands-on experience in AI and ML. Focused on end-to-end development from system design to deployment, balancing performance and user experience.`,
+  footerDescription: `${title} with expertise in full-stack development, scalable architecture, and AI/ML integration`,
   languages: ["English", "Bengali"],
   // Contact
   email: "shakeef.rakin321@gmail.com",

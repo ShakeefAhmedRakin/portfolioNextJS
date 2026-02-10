@@ -103,8 +103,16 @@ export const skillSets = [
         image: `${imagePath}/drizzle.svg`,
       },
       {
+        name: "tRPC",
+        image: `${imagePath}/trpc.png`,
+      },
+      {
         name: "oRPC Server",
         image: `${imagePath}/orpc.png`,
+      },
+      {
+        name: "Prisma",
+        image: `${imagePath}/prisma.png`,
       },
       {
         name: "JWT",
@@ -121,6 +129,10 @@ export const skillSets = [
       {
         name: "Firebase",
         image: `${imagePath}/firebase.png`,
+      },
+      {
+        name: "Better Auth",
+        image: `${imagePath}/betterauth.png`,
       },
     ],
   },
