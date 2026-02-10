@@ -7,6 +7,7 @@ import { organizationId } from "./organization";
 import { siteNavigation } from "@/content/site-navigation";
 import { expertiseContent } from "@/content/home/expertise-section";
 import { skillSets } from "@/content/skills/skills";
+import { achievements, projects } from "@/.velite";
 // import { achievements, projects } from "@/.velite";
 
 export const websiteId = `${process.env.WEBSITE_URL}/#website`;
@@ -65,24 +66,24 @@ export const websiteJsonLd: WebSite = {
       .filter((navItem) => !navItem.isExternal)
       .map((navItem) => {
         return {
-          "@type": "Webpage",
+          "@type": "WebPage",
           "@id": `${process.env.WEBSITE_URL}/#${navItem.key}`,
           name: `${navItem.title} Page`,
         };
       }),
-    // ...achievements.map((achievement) => {
-    //   return {
-    //     "@type": "BlogPosting",
-    //     name: `${achievement.title} Page`,
-    //     "@id": `${process.env.WEBSITE_URL}${achievement.permalink}`,
-    //   };
-    // }),
-    // ...projects.map((project) => {
-    //   return {
-    //     "@type": "CollectionPage",
-    //     name: `${project.title} Page`,
-    //     "@id": `${process.env.WEBSITE_URL}${project.permalink}`,
-    //   };
-    // }),
+    ...achievements.map((achievement) => {
+      return {
+        "@type": "BlogPosting",
+        name: `${achievement.title} Page`,
+        "@id": `${process.env.WEBSITE_URL}${achievement.permalink}`,
+      };
+    }),
+    ...projects.map((project) => {
+      return {
+        "@type": "CollectionPage",
+        name: `${project.title} Page`,
+        "@id": `${process.env.WEBSITE_URL}${project.permalink}`,
+      };
+    }),
   ],
 };

@@ -4,7 +4,7 @@ import { BlogCard, BlogCardSkeleton } from "@/components/ui/blog-card";
 import useBlogs from "@/hooks/useGetBlogs";
 
 export default function BlogsGrid() {
-  const maxBlogs = 4;
+  const maxBlogs = 8;
   const { articles, loading } = useBlogs({ maxBlogs: maxBlogs });
 
   return (
