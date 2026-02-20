@@ -45,3 +45,8 @@ public/static
 
 # vscode
 .vscode
+
+# AI assistant rules
+.cursor/
+.claude/
+CLAUDE.md
