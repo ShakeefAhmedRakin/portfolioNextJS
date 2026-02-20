@@ -28,90 +28,39 @@ interface WrapperProps
   innerProps?: HTMLAttributes<HTMLDivElement>;
 }
 
-// Section
-export function SectionWrapper({
+function BaseWrapper({
+  as: Element,
   children,
   wrapperClassName,
   innerClassName,
   innerProps,
-  padding = "section",
-
+  padding,
   ...wrapperProps
-}: WrapperProps) {
+}: WrapperProps & { as: "section" | "header" | "footer" | "article" }) {
   return (
-    <section className={cn(wrapperClassName)} {...wrapperProps}>
+    <Element className={cn(wrapperClassName)} {...wrapperProps}>
       <div
         className={cn(innerContainerVariants({ padding }), innerClassName)}
         {...innerProps}
       >
         {children}
       </div>
-    </section>
+    </Element>
   );
 }
 
-// Header
-export function HeaderWrapper({
-  children,
-  wrapperClassName,
-  innerClassName,
-  innerProps,
-  padding = "header",
-
-  ...wrapperProps
-}: WrapperProps) {
-  return (
-    <header className={cn(wrapperClassName)} {...wrapperProps}>
-      <div
-        className={cn(innerContainerVariants({ padding }), innerClassName)}
-        {...innerProps}
-      >
-        {children}
-      </div>
-    </header>
-  );
+export function SectionWrapper({ padding = "section", ...props }: WrapperProps) {
+  return <BaseWrapper as="section" padding={padding} {...props} />;
 }
 
-// Footer
-export function FooterWrapper({
-  children,
-  wrapperClassName,
-  innerClassName,
-  innerProps,
-  padding = "footer",
-
-  ...wrapperProps
-}: WrapperProps) {
-  return (
-    <footer className={cn(wrapperClassName)} {...wrapperProps}>
-      <div
-        className={cn(innerContainerVariants({ padding }), innerClassName)}
-        {...innerProps}
-      >
-        {children}
-      </div>
-    </footer>
-  );
+export function HeaderWrapper({ padding = "header", ...props }: WrapperProps) {
+  return <BaseWrapper as="header" padding={padding} {...props} />;
 }
 
-// Article
-export function ArticleWrapper({
-  children,
-  wrapperClassName,
-  innerClassName,
-  innerProps,
-  padding = "article",
+export function FooterWrapper({ padding = "footer", ...props }: WrapperProps) {
+  return <BaseWrapper as="footer" padding={padding} {...props} />;
+}
 
-  ...wrapperProps
-}: WrapperProps) {
-  return (
-    <article className={cn(wrapperClassName)} {...wrapperProps}>
-      <div
-        className={cn(innerContainerVariants({ padding }), innerClassName)}
-        {...innerProps}
-      >
-        {children}
-      </div>
-    </article>
-  );
+export function ArticleWrapper({ padding = "article", ...props }: WrapperProps) {
+  return <BaseWrapper as="article" padding={padding} {...props} />;
 }

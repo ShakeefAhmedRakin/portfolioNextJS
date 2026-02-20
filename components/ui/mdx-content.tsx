@@ -1,7 +1,7 @@
 import * as runtime from "react/jsx-runtime";
 import { createMDXComponents } from "./typography-mdx";
 
-const useMDXComponent = (code: string) => {
+const getMDXComponent = (code: string) => {
   const fn = new Function(code);
   return fn({ ...runtime }).default;
 };
@@ -13,7 +13,7 @@ interface MDXProps {
 }
 
 export const MDXContent = ({ code, components, isSmall = false }: MDXProps) => {
-  const Component = useMDXComponent(code);
+  const Component = getMDXComponent(code);
   const sharedComponents = createMDXComponents(isSmall);
 
   return <Component components={{ ...sharedComponents, ...components }} />;

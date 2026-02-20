@@ -1,6 +1,7 @@
 "use client";
-import { siteNavigation, siteNavigationMap } from "@/content/site-navigation";
+import { siteNavigation } from "@/content/site-navigation";
 import { cn } from "@/lib/utils";
+import { isNavActive } from "@/lib/navigation";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -12,10 +13,7 @@ export default function NavigationDesktop() {
         {siteNavigation
           .filter((link) => link.isShownOnNav)
           .map((link) => {
-            const isActive =
-              pathname === link.href ||
-              (pathname.startsWith(link.href) &&
-                link.href !== siteNavigationMap.HOME.href);
+            const isActive = isNavActive(pathname, link);
             return (
               <li key={link.title}>
                 <Link

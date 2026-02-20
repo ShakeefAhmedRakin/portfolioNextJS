@@ -5,7 +5,7 @@ import { headingVariants } from "./typography";
 
 export function BlogCard({ article }: { article: Article }) {
   return (
-    <Link href={article.link} target="_blank" className="group space-y-4">
+    <Link href={article.link} target="_blank" rel="noopener noreferrer" className="group space-y-4">
       <div className="relative aspect-video">
         <Image
           sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"

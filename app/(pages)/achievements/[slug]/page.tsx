@@ -9,7 +9,8 @@ import {
 } from "@/components/ui/typography";
 import { ArticleWrapper } from "@/components/ui/wrappers";
 import SiteMetadata from "@/metadata/site-metadata";
-import { formatDateString } from "@/lib/utils";
+import { ANIMATE_FADE_UP } from "@/lib/animations";
+import { cn, formatDateString } from "@/lib/utils";
 import SetSchemaAchievementPage from "@/metadata/schemas/schemaAchievementPage";
 import getMetadata from "@/metadata/utils/get-metadata";
 import { Dot } from "lucide-react";
@@ -17,8 +18,8 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 
 export async function generateStaticParams() {
-  return achievements.map((achievement) => ({
-    slug: achievement.slug,
+  return achievements.map((a) => ({
+    slug: a.slug,
   }));
 }
 
@@ -28,9 +29,7 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const achievement = achievements.find(
-    (achievement) => achievement.slug === slug,
-  );
+  const achievement = achievements.find((a) => a.slug === slug);
 
   if (achievement) {
     return getMetadata(SiteMetadata.getAchievementMetadata(achievement));
@@ -45,9 +44,7 @@ export default async function AchievementDetails({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const achievement = achievements.find(
-    (achievement) => achievement.slug === slug,
-  );
+  const achievement = achievements.find((a) => a.slug === slug);
 
   if (!achievement) {
     return notFound();
@@ -57,7 +54,7 @@ export default async function AchievementDetails({
     <>
       <SetSchemaAchievementPage achievement={achievement} />
       <ArticleWrapper>
-        <header className="intersect:animate-fade-up shadow-primary/5 intersect:animate-delay-200 animate-ease animate-duration-[1500ms] intersect-once mb-4 space-y-4">
+        <header className={cn("shadow-primary/5 mb-4 space-y-4", ANIMATE_FADE_UP)}>
           <div className="bg-primary/5 relative aspect-video max-h-[450px] w-full">
             <Image
               src={achievement.mainCover.src}
@@ -91,7 +88,7 @@ export default async function AchievementDetails({
           <hr className="border-primary/50" />
         </header>
 
-        <div className="intersect:animate-fade-up shadow-primary/5 intersect:animate-delay-200 animate-ease animate-duration-[1500ms] intersect-once">
+        <div className={cn("shadow-primary/5", ANIMATE_FADE_UP)}>
           <MDXContent code={achievement.content} />
         </div>
       </ArticleWrapper>

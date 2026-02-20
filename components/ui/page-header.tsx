@@ -1,5 +1,7 @@
 import { TypographyH1, TypographyP } from "./typography";
 import { HeaderWrapper } from "./wrappers";
+import { cn } from "@/lib/utils";
+import { ANIMATE_FADE_UP } from "@/lib/animations";
 
 export default function PageHeader({
   title,
@@ -9,7 +11,7 @@ export default function PageHeader({
   subtitle?: string;
 }) {
   return (
-    <HeaderWrapper wrapperClassName="pt-10 xl:pt-16 intersect:animate-fade-up intersect:animate-delay-200 animate-ease animate-duration-[1500ms] intersect-once">
+    <HeaderWrapper wrapperClassName={cn("pt-10 xl:pt-16", ANIMATE_FADE_UP)}>
       <TypographyH1 className="font-light">{title}</TypographyH1>
       {subtitle && (
         <TypographyP className="text-foreground/65 mt-2">

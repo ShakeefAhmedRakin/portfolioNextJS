@@ -6,6 +6,7 @@ import { headingVariants, TypographyP } from "@/components/ui/typography";
 import { PiNewspaperLight } from "react-icons/pi";
 
 import SiteMetadata from "@/metadata/site-metadata";
+import { ANIMATE_FADE_UP } from "@/lib/animations";
 import { cn, formatDateString } from "@/lib/utils";
 
 import SetSchemaResearchPage from "@/metadata/schemas/schemaResearchPage";
@@ -14,12 +15,12 @@ import getMetadata from "@/metadata/utils/get-metadata";
 import Link from "next/link";
 
 import { notFound } from "next/navigation";
-import { containerVariants } from "@/components/ui/containerVariants";
+import { containerVariants } from "@/components/ui/container-variants";
 import { ArticleWrapper } from "@/components/ui/wrappers";
 
 export async function generateStaticParams() {
-  return research.map((research) => ({
-    slug: research.slug,
+  return research.map((r) => ({
+    slug: r.slug,
   }));
 }
 
@@ -29,7 +30,7 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const currentResearch = research.find((project) => project.slug === slug);
+  const currentResearch = research.find((r) => r.slug === slug);
 
   if (currentResearch) {
     return getMetadata(SiteMetadata.getResearchMetadata(currentResearch));
@@ -44,7 +45,7 @@ export default async function ResearchPage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const currentResearch = research.find((research) => research.slug === slug);
+  const currentResearch = research.find((r) => r.slug === slug);
 
   if (!currentResearch) {
     return notFound();
@@ -56,7 +57,8 @@ export default async function ResearchPage({
       <ArticleWrapper>
         <div
           className={cn(
-            "intersect:animate-fade-up intersect:animate-delay-200 animate-ease animate-duration-[1500ms] intersect-once space-y-4 p-4",
+            "space-y-4 p-4",
+            ANIMATE_FADE_UP,
             containerVariants({ variant: "clear" }),
           )}
         >
@@ -94,7 +96,7 @@ export default async function ResearchPage({
                 >
                   {currentResearch.title}
                 </h1>
-                <time className="text-foreground/70 text-sm font-semibold">
+                <time dateTime={currentResearch.date} className="text-foreground/70 text-sm font-semibold">
                   {formatDateString(currentResearch.date)}
                 </time>
               </div>

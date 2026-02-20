@@ -3,6 +3,8 @@ import { achievements } from "@/.velite";
 import Image from "next/image";
 import { SectionHeader } from "@/components/ui/section-header";
 import { siteNavigationMap } from "@/content/site-navigation";
+import { ANIMATE_FADE_UP } from "@/lib/animations";
+import { cn } from "@/lib/utils";
 
 export default function AchievementsSection() {
   const featuredAchievements = achievements
@@ -21,10 +23,11 @@ export default function AchievementsSection() {
         collaborated with teams to develop practical solutions to real-world
         problems."
         linkText="View All Achievements"
+        shortLinkText="View All"
         linkHref={siteNavigationMap.ACHIEVEMENTS.href}
       />
 
-      <ul className="intersect:animate-delay-200 intersect-once intersect:animate-fade-up animate-ease animate-duration-[1500ms] grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-6">
+      <ul className={cn(ANIMATE_FADE_UP, "grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-6")}>
         {featuredAchievements.map((achievement) => (
           <li
             key={achievement.slug}

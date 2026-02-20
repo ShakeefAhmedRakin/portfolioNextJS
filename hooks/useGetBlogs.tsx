@@ -11,6 +11,7 @@ const extractFirstImageSrc = (html: string): string => {
 const useBlogs = ({ maxBlogs }: { maxBlogs?: number } = {}) => {
   const [articles, setArticles] = useState<Article[]>([]);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     const fetchArticles = async () => {
@@ -31,6 +32,7 @@ const useBlogs = ({ maxBlogs }: { maxBlogs?: number } = {}) => {
         setArticles(enrichedArticles);
       } catch (error) {
         console.error("Error fetching articles:", error);
+        setError("Failed to load blog posts");
       } finally {
         setLoading(false);
       }
@@ -39,7 +41,7 @@ const useBlogs = ({ maxBlogs }: { maxBlogs?: number } = {}) => {
     fetchArticles();
   }, [maxBlogs]);
 
-  return { articles, loading };
+  return { articles, loading, error };
 };
 
 export default useBlogs;

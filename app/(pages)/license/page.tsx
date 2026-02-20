@@ -1,6 +1,8 @@
 import PageHeader from "@/components/ui/page-header";
 import { SectionWrapper } from "@/components/ui/wrappers";
 import SiteMetadata from "@/metadata/site-metadata";
+import { ANIMATE_FADE_UP } from "@/lib/animations";
+import { cn } from "@/lib/utils";
 import getMetadata from "@/metadata/utils/get-metadata";
 
 import {
@@ -25,7 +27,7 @@ export default async function LicensePage() {
       <SectionWrapper
         wrapperClassName="pb-12 lg:pb-20 xl:pb-24 pt-6 xl:pt-8"
         padding={"header"}
-        innerClassName="space-y-6 intersect:animate-fade-up shadow-primary/5 intersect:animate-delay-200 animate-ease animate-duration-[1500ms] intersect-once"
+        innerClassName={cn("space-y-6 shadow-primary/5", ANIMATE_FADE_UP)}
       >
         <TypographyH2 className="font-light">License</TypographyH2>
 

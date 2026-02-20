@@ -1,9 +1,7 @@
-import Link from "next/link";
 import Logo from "../branding/logo";
 import { TypographyP } from "../ui/typography";
 import { FooterWrapper } from "../ui/wrappers";
-import { siteSocials } from "@/content/site-socials";
-import { buttonVariants } from "../ui/button";
+import SocialLinks from "../ui/social-links";
 import { siteNavigation } from "@/content/site-navigation";
 import SiteFooterNavigation from "./site-footer-navigation";
 import SiteConfig from "@/content/site-config";
@@ -22,22 +20,7 @@ export default function SiteFooter() {
           >
             {SiteConfig.footerDescription}
           </TypographyP>
-          <div className="space-x-1">
-            {siteSocials.map((link) => (
-              <Link
-                href={link.url}
-                key={`hero-${link.title}`}
-                className={buttonVariants({ variant: "ghost", size: "icon" })}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={link.ariaLabel}
-                title={link.title}
-              >
-                <span className="sr-only">{link.ariaLabel}</span>
-                {link.icon}
-              </Link>
-            ))}
-          </div>
+          <SocialLinks />
         </section>
         {/* Navigation Links */}
         <section className="grid grid-cols-2 gap-x-16 xl:col-span-2">

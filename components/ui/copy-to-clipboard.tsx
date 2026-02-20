@@ -20,11 +20,12 @@ export const CopyToClipboard: React.FC<CopyToClipboardProps> = ({
       toast.success("Copied to clipboard!");
     } catch (err) {
       console.error("Copy failed", err);
+      toast.error("Failed to copy to clipboard");
     }
   };
 
   return (
-    <button onClick={handleCopy} className={className}>
+    <button type="button" onClick={handleCopy} className={className}>
       {children}
     </button>
   );

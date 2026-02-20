@@ -1,8 +1,9 @@
-import { containerVariants } from "@/components/ui/containerVariants";
+import { containerVariants } from "@/components/ui/container-variants";
 import { headingVariants, paragraphVariants } from "@/components/ui/typography";
 import { SectionWrapper } from "@/components/ui/wrappers";
 
 import { skillSets } from "@/content/skills/skills";
+import { ANIMATE_FADE_UP } from "@/lib/animations";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 
@@ -10,21 +11,19 @@ export default function SkillsSection() {
   return (
     <SectionWrapper wrapperClassName="relative -my-8" id="expertise">
       <h2
-        className={headingVariants({
+        className={cn(headingVariants({
           level: "h1",
-          className:
-            "intersect:animate-fade-up intersect:animate-delay-200 animate-ease animate-duration-[1500ms] intersect-once",
-        })}
+        }), ANIMATE_FADE_UP)}
       >
         Technical Expertise
       </h2>
 
-      <ul className="intersect:animate-fade-up md:border-primary/50 intersect:animate-delay-200 animate-ease animate-duration-[1500ms] intersect-once mt-4 grid grid-cols-1 gap-6 py-2 md:ml-6 md:grid-cols-2 md:border-l md:pl-6">
+      <ul className={cn("md:border-primary/50 mt-4 grid grid-cols-1 gap-6 py-2 md:ml-6 md:grid-cols-2 md:border-l md:pl-6", ANIMATE_FADE_UP)}>
         {skillSets.map((set) => (
           <li
             key={set.title}
             className={cn(
-              "intersect:animate-fade-up intersect:animate-delay-200 animate-ease animate-duration-[1500ms] intersect-once",
+              ANIMATE_FADE_UP,
               containerVariants({ variant: "clear" }),
             )}
           >

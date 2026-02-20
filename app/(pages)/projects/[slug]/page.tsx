@@ -9,7 +9,8 @@ import {
 } from "@/components/ui/typography";
 import { ArticleWrapper } from "@/components/ui/wrappers";
 import SiteMetadata from "@/metadata/site-metadata";
-import { formatDateString } from "@/lib/utils";
+import { ANIMATE_FADE_UP } from "@/lib/animations";
+import { cn, formatDateString } from "@/lib/utils";
 import SetSchemaProjectPage from "@/metadata/schemas/schemaProjectPage";
 import getMetadata from "@/metadata/utils/get-metadata";
 import { Dot } from "lucide-react";
@@ -28,7 +29,7 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const project = projects.find((project) => project.slug === slug);
+  const project = projects.find((p) => p.slug === slug);
 
   if (project) {
     return getMetadata(SiteMetadata.getProjectMetadata(project));
@@ -43,7 +44,7 @@ export default async function ProjectPage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const project = projects.find((project) => project.slug === slug);
+  const project = projects.find((p) => p.slug === slug);
 
   if (!project) {
     return notFound();
@@ -53,7 +54,7 @@ export default async function ProjectPage({
     <>
       <SetSchemaProjectPage project={project} />
       <ArticleWrapper>
-        <header className="intersect:animate-fade-up shadow-primary/5 intersect:animate-delay-200 animate-ease animate-duration-[1500ms] intersect-once mb-4 space-y-4">
+        <header className={cn("shadow-primary/5 mb-4 space-y-4", ANIMATE_FADE_UP)}>
           <div
             className={paragraphVariants({
               className: "text-foreground/70 mb-1 flex items-center font-light",
@@ -63,7 +64,7 @@ export default async function ProjectPage({
             {project.isOngoing ? (
               <span className="text-success">ONGOING</span>
             ) : (
-              <time>{formatDateString(project.date)} (COMPLETED)</time>
+              <time dateTime={project.date}>{formatDateString(project.date)} (COMPLETED)</time>
             )}
             <Dot />
             <span className="uppercase">{project.category}</span>
@@ -95,7 +96,7 @@ export default async function ProjectPage({
           <hr className="border-primary/50" />
         </header>
 
-        <div className="intersect:animate-fade-up shadow-primary/5 intersect:animate-delay-200 animate-ease animate-duration-[1500ms] intersect-once">
+        <div className={cn("shadow-primary/5", ANIMATE_FADE_UP)}>
           <MDXContent code={project.content} />
         </div>
       </ArticleWrapper>

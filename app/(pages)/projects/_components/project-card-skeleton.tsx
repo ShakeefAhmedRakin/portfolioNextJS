@@ -1,6 +1,9 @@
+import { ANIMATE_FADE_UP } from "@/lib/animations";
+import { cn } from "@/lib/utils";
+
 export function SkeletonProjectCard() {
   return (
-    <li className="outline-primary/20 intersect:animate-fade-up intersect:animate-delay-200 animate-ease animate-duration-[1500ms] intersect-once relative mt-2 h-[300px] overflow-hidden bg-transparent outline">
+    <li className={cn("outline-primary/20 relative mt-2 h-[300px] overflow-hidden bg-transparent outline", ANIMATE_FADE_UP)}>
       <div className="flex h-full w-full flex-col space-y-3 p-6">
         <div className="flex justify-between gap-2">
           <div className="bg-secondary/80 h-4 w-1/4 animate-pulse rounded" />

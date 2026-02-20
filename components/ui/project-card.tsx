@@ -5,10 +5,11 @@ import {
   TypographyP,
 } from "@/components/ui/typography";
 import { cn, formatDateString } from "@/lib/utils";
+import { ANIMATE_FADE_UP } from "@/lib/animations";
 import Image from "next/image";
 import Link from "next/link";
 import { badgeVariants } from "./badge";
-import { containerVariants } from "./containerVariants";
+import { containerVariants } from "./container-variants";
 
 export default function ProjectCard({
   project,
@@ -20,7 +21,8 @@ export default function ProjectCard({
   return (
     <li
       className={cn(
-        "group intersect:animate-fade-up intersect:animate-delay-200 animate-ease animate-duration-[1500ms] intersect-once relative h-[300px] cursor-pointer overflow-hidden",
+        "group relative h-[300px] cursor-pointer overflow-hidden",
+        ANIMATE_FADE_UP,
         containerVariants({ variant: "outlined" }),
       )}
     >
@@ -56,6 +58,7 @@ export default function ProjectCard({
               </span>
             ) : (
               <time
+                dateTime={project.date}
                 className={badgeVariants({
                   className: `text-[10px]`,
                   variant: "outline",

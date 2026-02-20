@@ -8,8 +8,9 @@ import { notFound } from "next/navigation";
 import { projects } from "@/.velite";
 import ProjectCard from "../../../components/ui/project-card";
 import { paragraphVariants } from "@/components/ui/typography";
+import { ANIMATE_FADE_UP } from "@/lib/animations";
+import { cn, sortProjectsByDate } from "@/lib/utils";
 import SetSchemaProjectsListingPage from "@/metadata/schemas/schemaProjectsListingPage";
-import { sortProjectsByDate } from "@/lib/utils";
 
 export function generateMetadata() {
   return getMetadata(SiteMetadata.PROJECTS);
@@ -49,25 +50,23 @@ export default async function ProjectsListingPage({
         wrapperClassName="pb-12 lg:pb-20 xl:pb-24 pt-6 xl:pt-8"
         padding={"header"}
       >
-        <FilterControls setCategory={category} />
+        <FilterControls activeCategory={category} />
         <p
-          className={paragraphVariants({
+          className={cn(paragraphVariants({
             level: "small",
-            className:
-              "text-foreground/60 intersect:animate-fade-up intersect:animate-delay-200 animate-ease animate-duration-[1500ms] intersect-once my-2",
-          })}
+            className: "text-foreground/60 my-2",
+          }), ANIMATE_FADE_UP)}
         >
           {filteredProjects.length} project
           {filteredProjects.length > 1 && "s"} found
         </p>
         {filteredProjects.length === 0 ? (
-          <div className="intersect:animate-fade-up intersect:animate-delay-200 animate-ease animate-duration-[1500ms] intersect-once mt-6 flex min-h-[300px] items-center justify-center">
+          <div className={cn(ANIMATE_FADE_UP, "mt-6 flex min-h-[300px] items-center justify-center")}>
             <p
-              className={paragraphVariants({
+              className={cn(paragraphVariants({
                 level: "small",
-                className:
-                  "text-foreground/60 intersect:animate-fade-up intersect:animate-delay-200 animate-ease animate-duration-[1500ms] intersect-once my-2",
-              })}
+                className: "text-foreground/60 my-2",
+              }), ANIMATE_FADE_UP)}
             >
               No projects found
             </p>

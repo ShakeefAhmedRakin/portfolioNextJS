@@ -1,4 +1,4 @@
-import { containerVariants } from "@/components/ui/containerVariants";
+import { containerVariants } from "@/components/ui/container-variants";
 import {
   TypographyH3,
   TypographyUnOrderedList,
@@ -6,16 +6,17 @@ import {
 } from "@/components/ui/typography";
 import { expertiseContent } from "@/content/home/expertise-section";
 import { cn } from "@/lib/utils";
+import { ANIMATE_FADE_UP } from "@/lib/animations";
 
 export default function ExpertiseGrid() {
   return (
     <>
-      <div className="intersect:animate-fade-up intersect:animate-delay-200 animate-ease animate-duration-[1500ms] intersect-once flex flex-col gap-4 lg:flex-row">
+      <div className={cn(ANIMATE_FADE_UP, "flex flex-col gap-4 lg:flex-row")}>
         {expertiseContent.expertiseGroupOne.map((feature, i) => (
           <ExpertiseCard key={i} {...feature} />
         ))}
       </div>
-      <div className="intersect:animate-fade-up animate-ease intersect:animate-delay-200 animate-duration-[1500ms] intersect-once mt-4 flex flex-col gap-4 lg:flex-row">
+      <div className={cn(ANIMATE_FADE_UP, "mt-4 flex flex-col gap-4 lg:flex-row")}>
         {expertiseContent.expertiseGroupTwo.map((feature, i) => (
           <ExpertiseCard key={i} {...feature} />
         ))}

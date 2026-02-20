@@ -3,21 +3,22 @@ import { projectCategoriesEnum } from "@/types/enums";
 import { buttonVariants } from "@/components/ui/button";
 import { IoMdCheckmark } from "react-icons/io";
 import { cn } from "@/lib/utils";
+import { ANIMATE_FADE_UP } from "@/lib/animations";
 import { siteNavigationMap } from "@/content/site-navigation";
 
 export default function FilterControls({
-  setCategory,
+  activeCategory,
 }: {
-  setCategory: string | undefined;
+  activeCategory: string | undefined;
 }) {
   return (
-    <ul className="intersect:animate-fade-up intersect:animate-delay-200 animate-ease animate-duration-[1500ms] intersect-once mb-4 flex flex-wrap gap-1.5">
+    <ul className={cn(ANIMATE_FADE_UP, "mb-4 flex flex-wrap gap-1.5")}>
       <li>
-        <FilterButton category="All" setCategory={setCategory} />
+        <FilterButton category="All" activeCategory={activeCategory} />
       </li>
       {projectCategoriesEnum.map((category) => (
         <li key={category}>
-          <FilterButton category={category} setCategory={setCategory} />
+          <FilterButton category={category} activeCategory={activeCategory} />
         </li>
       ))}
     </ul>
@@ -26,13 +27,13 @@ export default function FilterControls({
 
 function FilterButton({
   category,
-  setCategory,
+  activeCategory,
 }: {
   category: string;
-  setCategory: string | undefined;
+  activeCategory: string | undefined;
 }) {
   const isAll = category === "All";
-  const isActive = isAll ? !setCategory : category === setCategory;
+  const isActive = isAll ? !activeCategory : category === activeCategory;
 
   const href = isAll
     ? `${siteNavigationMap.PROJECTS.href}`

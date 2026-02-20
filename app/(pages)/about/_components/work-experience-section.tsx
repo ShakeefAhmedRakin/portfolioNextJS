@@ -2,35 +2,35 @@ import { workExperiences } from "@/.velite";
 import { headingVariants } from "@/components/ui/typography";
 import { SectionWrapper } from "@/components/ui/wrappers";
 
-import { cn, getSortedJobs } from "@/lib/utils";
+import { ANIMATE_FADE_UP } from "@/lib/animations";
+import { cn, sortJobsByDate } from "@/lib/utils";
 import Link from "next/link";
 import WorkDuration from "../../../../components/ui/work-duration";
 import { MDXContent } from "@/components/ui/mdx-content";
 import WorkDate from "@/components/ui/work-dates";
 import { badgeVariants } from "@/components/ui/badge";
-import { containerVariants } from "@/components/ui/containerVariants";
+import { containerVariants } from "@/components/ui/container-variants";
 
 export default function WorkExperienceSection() {
-  const sortedWork = getSortedJobs(workExperiences);
+  const sortedWork = sortJobsByDate(workExperiences);
 
   return (
     <SectionWrapper wrapperClassName="relative -my-8" id="experience">
       <h2
-        className={headingVariants({
+        className={cn(headingVariants({
           level: "h1",
-          className:
-            "intersect:animate-fade-up intersect:animate-delay-200 animate-ease animate-duration-[1500ms] intersect-once",
-        })}
+        }), ANIMATE_FADE_UP)}
       >
         Work Experience
       </h2>
-      <ol className="md:border-primary/50 intersect:animate-fade-up intersect:animate-delay-200 animate-ease animate-duration-[1500ms] intersect-once mt-4 space-y-6 py-2 md:ml-6 md:border-l">
+      <ol className={cn("md:border-primary/50 mt-4 space-y-6 py-2 md:ml-6 md:border-l", ANIMATE_FADE_UP)}>
         {sortedWork.map((work) => (
           <li
             key={work.slug}
             id={work.slug}
             className={cn(
-              "intersect:animate-fade-up intersect:animate-delay-200 animate-ease animate-duration-[1500ms] intersect-once relative px-4 pt-3 pb-4 md:ml-6",
+              "relative px-4 pt-3 pb-4 md:ml-6",
+              ANIMATE_FADE_UP,
               containerVariants({ variant: "outlined" }),
             )}
           >

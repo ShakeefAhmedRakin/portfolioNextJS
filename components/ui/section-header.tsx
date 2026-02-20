@@ -2,12 +2,15 @@ import { ChevronRight } from "lucide-react";
 import Link from "next/link";
 import { buttonVariants } from "@/components/ui/button";
 import { TypographyH2, TypographyP } from "./typography";
+import { cn } from "@/lib/utils";
+import { ANIMATE_FADE_UP } from "@/lib/animations";
 
 interface SectionHeaderProps {
   title: string;
   description: string;
   linkText: string;
   linkHref: string;
+  shortLinkText?: string;
 }
 
 export function SectionHeader({
@@ -15,10 +18,11 @@ export function SectionHeader({
   description,
   linkText,
   linkHref,
+  shortLinkText,
 }: SectionHeaderProps) {
   return (
     <>
-      <div className="intersect:animate-fade-up intersect:animate-delay-200 animate-ease animate-duration-[1500ms] intersect-once flex justify-between gap-4">
+      <div className={cn(ANIMATE_FADE_UP, "flex justify-between gap-4")}>
         <TypographyH2 className="max-w-3xl">{title}</TypographyH2>
         <Link
           href={linkHref}
@@ -31,10 +35,12 @@ export function SectionHeader({
           title={linkText}
           aria-label={linkText}
         >
-          {linkText === "View All Achievements" ? (
+          {shortLinkText ? (
             <span>
-              View All{" "}
-              <span className="sr-only md:not-sr-only">Achievements</span>
+              {shortLinkText}{" "}
+              <span className="sr-only md:not-sr-only">
+                {linkText.replace(shortLinkText, "").trim()}
+              </span>
             </span>
           ) : (
             linkText
@@ -43,7 +49,7 @@ export function SectionHeader({
         </Link>
       </div>
 
-      <TypographyP className="text-foreground/65 intersect:animate-delay-200 intersect-once intersect:animate-fade-up animate-ease animate-duration-[1500ms] max-w-3xl">
+      <TypographyP className={cn(ANIMATE_FADE_UP, "text-foreground/65 max-w-3xl")}>
         {description}
       </TypographyP>
     </>

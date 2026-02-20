@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/alt-text */
 import Image, { ImageProps } from "next/image";
 import {
   TypographyH1,
@@ -17,7 +16,7 @@ import { LinkProps } from "next/link";
 import React from "react";
 import { badgeVariants } from "./badge";
 import { cn } from "@/lib/utils";
-import { containerVariants } from "./containerVariants";
+import { containerVariants } from "./container-variants";
 
 export const MDXImage = (props: ImageProps) => (
   <figure
@@ -28,6 +27,7 @@ export const MDXImage = (props: ImageProps) => (
   >
     <Image
       {...props}
+      alt={props.alt ?? ""}
       draggable={false}
       title={props.alt}
       fill

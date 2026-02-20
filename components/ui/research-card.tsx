@@ -1,11 +1,12 @@
 import { Research } from "@/.velite";
 import { badgeVariants } from "./badge";
 import { cn } from "@/lib/utils";
+import { ANIMATE_FADE_UP } from "@/lib/animations";
 import { headingVariants, TypographyP } from "./typography";
 import { buttonVariants } from "./button";
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
-import { containerVariants } from "./containerVariants";
+import { containerVariants } from "./container-variants";
 
 export default function ResearchCard({
   paper,
@@ -16,9 +17,9 @@ export default function ResearchCard({
 }) {
   return (
     <li
-      key={paper.slug}
       className={cn(
-        "intersect:animate-fade-up intersect:animate-delay-200 animate-ease animate-duration-[1500ms] intersect-once flex flex-col space-y-3 p-4",
+        "flex flex-col space-y-3 p-4",
+        ANIMATE_FADE_UP,
         containerVariants({ variant: "clear" }),
       )}
     >
@@ -67,6 +68,8 @@ export default function ResearchCard({
       <div className="flex flex-1 items-end">
         <Link
           href={paper.permalink}
+          aria-label={`View details for ${paper.title}`}
+          title={`View details for ${paper.title}`}
           className={buttonVariants({
             size: "sm",
             variant: "outline",

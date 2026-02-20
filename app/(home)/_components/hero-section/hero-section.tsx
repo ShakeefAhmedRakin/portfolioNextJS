@@ -1,5 +1,6 @@
 import { GetInTouchDialog } from "@/components/navigation/get-in-touch-dialog";
 import { Button, buttonVariants } from "@/components/ui/button";
+import SocialLinks from "@/components/ui/social-links";
 import {
   headingVariants,
   TypographyH1,
@@ -9,7 +10,6 @@ import {
 import { SectionWrapper } from "@/components/ui/wrappers";
 import SiteConfig from "@/content/site-config";
 import { siteNavigationMap } from "@/content/site-navigation";
-import { siteSocials } from "@/content/site-socials";
 import Image from "next/image";
 
 import Link from "next/link";
@@ -32,22 +32,7 @@ export default function HeroSection() {
         </span>
         <TypographyH1 className="mt-2">{SiteConfig.fullName}</TypographyH1>
 
-        <div className="flex gap-3">
-          {siteSocials.map((link) => (
-            <Link
-              href={link.url}
-              key={`hero-${link.title}`}
-              className={buttonVariants({ variant: "ghost", size: "icon" })}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label={link.ariaLabel}
-              title={link.title}
-            >
-              <span className="sr-only">{link.ariaLabel}</span>
-              {link.icon}
-            </Link>
-          ))}
-        </div>
+        <SocialLinks className="flex gap-3" />
         <TypographyP className="text-foreground/65">
           {SiteConfig.heroDescription}
         </TypographyP>

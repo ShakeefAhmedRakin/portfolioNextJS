@@ -6,7 +6,7 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
-export function getSortedJobs(
+export function sortJobsByDate(
   jobs: typeof workExperiences,
 ): typeof workExperiences {
   return [...jobs].sort((a, b) => {
@@ -101,9 +101,7 @@ export function formatDateString(date: string) {
 }
 
 export function arrayBufferToBase64(buffer: ArrayBuffer): string {
-  const bytes = new Uint8Array(buffer);
-  const binary = bytes.reduce((acc, b) => acc + String.fromCharCode(b), "");
-  return `data:image/png;base64,${Buffer.from(binary, "binary").toString("base64")}`;
+  return `data:image/png;base64,${Buffer.from(buffer).toString("base64")}`;
 }
 
 export function extractImagesFromMDX(content: string) {

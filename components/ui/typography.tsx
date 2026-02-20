@@ -37,47 +37,47 @@ export const paragraphVariants = cva("leading-6 md:leading-7", {
 });
 
 type HeadingProps = HTMLAttributes<HTMLHeadingElement> &
-  VariantProps<typeof headingVariants>;
+  Omit<VariantProps<typeof headingVariants>, "level">;
 
-export function TypographyH1({ className, ...props }: HeadingProps) {
+export function TypographyH1({ className, weight, ...props }: HeadingProps) {
   return (
     <h1
-      className={cn(headingVariants({ level: "h1" }), className)}
+      className={cn(headingVariants({ level: "h1", weight }), className)}
       {...props}
     />
   );
 }
 
-export function TypographyH2({ className, ...props }: HeadingProps) {
+export function TypographyH2({ className, weight, ...props }: HeadingProps) {
   return (
     <h2
-      className={cn(headingVariants({ level: "h2" }), className)}
+      className={cn(headingVariants({ level: "h2", weight }), className)}
       {...props}
     />
   );
 }
 
-export function TypographyH3({ className, ...props }: HeadingProps) {
+export function TypographyH3({ className, weight, ...props }: HeadingProps) {
   return (
     <h3
-      className={cn(headingVariants({ level: "h3" }), className)}
+      className={cn(headingVariants({ level: "h3", weight }), className)}
       {...props}
     />
   );
 }
-export function TypographyH4({ className, ...props }: HeadingProps) {
+export function TypographyH4({ className, weight, ...props }: HeadingProps) {
   return (
     <h4
-      className={cn(headingVariants({ level: "h4" }), className)}
+      className={cn(headingVariants({ level: "h4", weight }), className)}
       {...props}
     />
   );
 }
 
-export function TypographyH5({ className, ...props }: HeadingProps) {
+export function TypographyH5({ className, weight, ...props }: HeadingProps) {
   return (
     <h5
-      className={cn(headingVariants({ level: "h5" }), className)}
+      className={cn(headingVariants({ level: "h5", weight }), className)}
       {...props}
     />
   );
@@ -94,12 +94,14 @@ export function TypographyP({
 }
 
 export function TypographyLink({
+  className,
   ...props
 }: LinkProps & React.AnchorHTMLAttributes<HTMLAnchorElement>) {
   return (
     <Link
       className={cn(
         "text-primary/90 hover:text-primary/100 underline underline-offset-4 duration-300",
+        className,
       )}
       {...props}
     />

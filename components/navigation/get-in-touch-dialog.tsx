@@ -1,4 +1,4 @@
-import { Button, buttonVariants } from "@/components/ui/button";
+import { Button } from "@/components/ui/button";
 import {
   Dialog,
   DialogClose,
@@ -9,9 +9,8 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import SiteConfig from "@/content/site-config";
-import { siteSocials } from "@/content/site-socials";
 import { Copy, Mail } from "lucide-react";
-import Link from "next/link";
+import SocialLinks from "../ui/social-links";
 
 import { ReactNode } from "react";
 import { headingVariants } from "../ui/typography";
@@ -43,22 +42,7 @@ export function GetInTouchDialog({ children }: { children: ReactNode }) {
             </div>
           </CopyToClipboard>
 
-          <div className="space-x-1">
-            {siteSocials.map((link) => (
-              <Link
-                href={link.url}
-                key={`hero-${link.title}`}
-                className={buttonVariants({ variant: "ghost", size: "icon" })}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={link.ariaLabel}
-                title={link.title}
-              >
-                <span className="sr-only">{link.ariaLabel}</span>
-                {link.icon}
-              </Link>
-            ))}
-          </div>
+          <SocialLinks />
         </div>
 
         <DialogClose asChild>

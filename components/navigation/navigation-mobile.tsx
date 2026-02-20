@@ -11,9 +11,10 @@ import { Menu, XIcon } from "lucide-react";
 import { useState } from "react";
 import Logo from "../branding/logo";
 import Link from "next/link";
-import { siteNavigation, siteNavigationMap } from "@/content/site-navigation";
+import { siteNavigation } from "@/content/site-navigation";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
+import { isNavActive } from "@/lib/navigation";
 import { Button } from "../ui/button";
 import SiteConfig from "@/content/site-config";
 import { GetInTouchDialog } from "./get-in-touch-dialog";
@@ -45,10 +46,7 @@ export default function NavigationMobile() {
             {siteNavigation
               .filter((link) => link.isShownOnNav)
               .map((link) => {
-                const isActive =
-                  pathname === link.href ||
-                  (pathname.startsWith(link.href) &&
-                    link.href !== siteNavigationMap.HOME.href);
+                const isActive = isNavActive(pathname, link);
                 return (
                   <li key={link.title}>
                     <Link

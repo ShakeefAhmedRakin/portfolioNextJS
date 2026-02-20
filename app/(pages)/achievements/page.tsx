@@ -8,7 +8,8 @@ import {
 } from "@/components/ui/typography";
 import { SectionWrapper } from "@/components/ui/wrappers";
 import SiteMetadata from "@/metadata/site-metadata";
-import { formatDateString, sortAchievementsByDate } from "@/lib/utils";
+import { ANIMATE_FADE_UP } from "@/lib/animations";
+import { cn, formatDateString, sortAchievementsByDate } from "@/lib/utils";
 import SetSchemaAchievementsListingPage from "@/metadata/schemas/schemaAchievementsListingPage";
 import getMetadata from "@/metadata/utils/get-metadata";
 import { ChevronRight } from "lucide-react";
@@ -36,12 +37,12 @@ export default function AchievementsListingPage() {
           {sortedAchievements.map((achievement) => (
             <li
               key={achievement.slug}
-              className="group intersect:animate-fade-up shadow-primary/5 intersect:animate-delay-200 animate-ease animate-duration-[1500ms] intersect-once min-h-[225px] shadow"
+              className={cn("group shadow-primary/5 min-h-[225px] shadow", ANIMATE_FADE_UP)}
             >
               <Link
                 href={achievement.permalink}
                 title={achievement.title}
-                aria-label={`View ${achievement.title} blog`}
+                aria-label={`View ${achievement.title} achievement`}
                 className="relative flex h-full cursor-pointer flex-col overflow-hidden p-4"
               >
                 <Image
