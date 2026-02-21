@@ -100,6 +100,12 @@
     @apply bg-background text-foreground font-roboto overflow-y-scroll;
   }
 
+  /* Pre-hide intersect-animated elements to prevent flicker before the observer initializes.
+     The animation's fill-mode (forwards/both) overrides this when active. */
+  [class*="intersect:animate-fade"] {
+    opacity: 0;
+  }
+
   /* Scroll bar stylings */
   ::-webkit-scrollbar {
     @apply w-2 bg-transparent;
