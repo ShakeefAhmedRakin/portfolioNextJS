@@ -7,7 +7,6 @@ import { cn, sortJobsByDate } from "@/lib/utils";
 import { containerVariants } from "@/components/ui/container-variants";
 import {
   headingVariants,
-  paragraphVariants,
   TypographyUnOrderedList,
 } from "@/components/ui/typography";
 import Link from "next/link";
