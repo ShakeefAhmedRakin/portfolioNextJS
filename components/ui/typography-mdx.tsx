@@ -10,6 +10,12 @@ import {
   TypographyBlockquote,
   TypographyUnOrderedList,
   TypographyOrderedList,
+  TypographyTable,
+  TypographyTableHead,
+  TypographyTableBody,
+  TypographyTableRow,
+  TypographyTableHeaderCell,
+  TypographyTableCell,
   paragraphVariants,
 } from "./typography";
 import { LinkProps } from "next/link";
@@ -134,5 +140,24 @@ export const createMDXComponents = (isSmall = false) => ({
     >
       <code {...props} />
     </pre>
+  ),
+
+  table: (props: React.ComponentPropsWithoutRef<"table">) => (
+    <TypographyTable {...props} level={isSmall ? "small" : "default"} />
+  ),
+  thead: (props: React.ComponentPropsWithoutRef<"thead">) => (
+    <TypographyTableHead {...props} />
+  ),
+  tbody: (props: React.ComponentPropsWithoutRef<"tbody">) => (
+    <TypographyTableBody {...props} />
+  ),
+  tr: (props: React.ComponentPropsWithoutRef<"tr">) => (
+    <TypographyTableRow {...props} />
+  ),
+  th: (props: React.ComponentPropsWithoutRef<"th">) => (
+    <TypographyTableHeaderCell {...props} />
+  ),
+  td: (props: React.ComponentPropsWithoutRef<"td">) => (
+    <TypographyTableCell {...props} />
   ),
 });

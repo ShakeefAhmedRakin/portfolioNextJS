@@ -157,3 +157,80 @@ export function TypographyUnOrderedList({
     />
   );
 }
+
+export function TypographyTable({
+  className,
+  level = "default",
+  ...props
+}: { level?: "default" | "small" } & HTMLAttributes<HTMLTableElement>) {
+  return (
+    <div className="scrollbar-hide mb-4 w-full overflow-x-auto">
+      <table
+        className={cn(
+          "w-full border-collapse",
+          paragraphVariants({ level }),
+          className,
+        )}
+        {...props}
+      />
+    </div>
+  );
+}
+
+export function TypographyTableHead({
+  className,
+  ...props
+}: HTMLAttributes<HTMLTableSectionElement>) {
+  return (
+    <thead
+      className={cn("border-primary/30 border-b", className)}
+      {...props}
+    />
+  );
+}
+
+export function TypographyTableBody({
+  className,
+  ...props
+}: HTMLAttributes<HTMLTableSectionElement>) {
+  return <tbody className={cn("[&>tr]:border-primary/20", className)} {...props} />;
+}
+
+export function TypographyTableRow({
+  className,
+  ...props
+}: HTMLAttributes<HTMLTableRowElement>) {
+  return (
+    <tr
+      className={cn("border-primary/20 border-b", className)}
+      {...props}
+    />
+  );
+}
+
+export function TypographyTableHeaderCell({
+  className,
+  ...props
+}: HTMLAttributes<HTMLTableCellElement>) {
+  return (
+    <th
+      className={cn(
+        "text-foreground px-3 py-2 text-left font-semibold",
+        className,
+      )}
+      {...props}
+    />
+  );
+}
+
+export function TypographyTableCell({
+  className,
+  ...props
+}: HTMLAttributes<HTMLTableCellElement>) {
+  return (
+    <td
+      className={cn("text-foreground/80 px-3 py-2", className)}
+      {...props}
+    />
+  );
+}
