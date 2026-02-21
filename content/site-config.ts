@@ -27,7 +27,7 @@ const SiteConfig = {
   birthPlace: birthPlace,
   location: "Dhaka, Bangladesh",
   gender: "male",
-  heroDescription: `${title} from ${birthPlace} with ${yearsOfExperience} years of experience. I build scalable applications across web, mobile, and desktop with hands-on experience in AI and ML. Focused on end-to-end development from system design to deployment, balancing performance and user experience.`,
+  heroDescription: `${title} from ${birthPlace}. I build scalable applications across web, mobile, and desktop with hands-on experience in AI and ML. Focused on end-to-end development from system design to deployment, balancing performance and user experience.`,
   footerDescription: `${title} with expertise in full-stack development, scalable architecture, and AI/ML integration`,
   languages: ["English", "Bengali"],
   // Contact

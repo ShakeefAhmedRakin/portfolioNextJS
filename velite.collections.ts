@@ -30,6 +30,7 @@ export const workExperiences = defineCollection({
     slug: s.slug("works"),
     position: s.string(),
     tags: s.array(s.string()).min(1),
+    highlights: s.array(s.string()).min(1),
     company: s.string(),
     companyLink: s.string().nullable(),
     isActive: s.boolean(),
