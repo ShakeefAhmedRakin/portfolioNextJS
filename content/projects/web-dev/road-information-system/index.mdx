@@ -1,15 +1,30 @@
 ---
 slug: road-information-system
 title: Road Information System
-subTitle: Road Inventory & Condition Monitoring Platform
+subTitle: Road inventory, pavement condition assessment, and TTI calculations for BP Kawasan Karimun (PKRMS SE 22/2022)
 category: Web Development
 thumbnail: cover.png
-date: 2025-06-01T00:00:00.000Z
-tags: ["Next.js", "React", "TypeScript", "Tailwind CSS", "PostgreSQL", "Drizzle ORM", "oRPC", "Better Auth", "Turborepo", "Zod"]
+date: 2025-10-12T00:00:00.000Z
+tags:
+  [
+    "Next.js 15",
+    "React 19",
+    "TypeScript",
+    "Tailwind CSS v4",
+    "PostgreSQL",
+    "Neon",
+    "Drizzle ORM",
+    "oRPC",
+    "Better Auth",
+    "Turborepo",
+    "shadcn/ui",
+    "TanStack Query",
+    "Zod",
+  ]
 isFeatured: true
 isOngoing: true
 workId: null
-excerpt: A comprehensive road information system built for BP Kawasan Karimun to manage road inventory, pavement condition assessment, and Treatment Trigger Index (TTI) calculations. Features role-based access control, automated TTI computation based on PKRMS standards, PDF report generation, and internationalization support.
+excerpt: A road infrastructure management system for BP Kawasan Karimun. Manages road inventory, pavement condition assessment, and Treatment Trigger Index (TTI) calculations based on PKRMS Manual (SE 22/2022). Features role-based access, automated TTI computation, PDF report generation, and internationalization (EN/ID).
 ---
 
 **Live:** [View Website](https://sistem-informasi-jalan-bp-kawasan-karimun.vercel.app/)
@@ -17,59 +32,80 @@ excerpt: A comprehensive road information system built for BP Kawasan Karimun to
 
 ## Overview
 
-The Road Information System is an internal management platform developed for BP Kawasan Karimun, designed to track and analyze road infrastructure conditions within the industrial area. Built as a monorepo with Turborepo, it provides a full-stack, type-safe solution for road inventory management, pavement condition assessment, and automated reporting based on Indonesia's PKRMS Manual (SE 22/2022) standards.
+A road infrastructure management system for BP Kawasan Karimun. Manages road inventory, pavement condition assessment, and Treatment Trigger Index (TTI) calculations based on Indonesia's PKRMS Manual (SE 22/2022). Built as a Turborepo monorepo with type-safe APIs (oRPC), session-based auth (Better Auth), and serverless PostgreSQL (Neon).
+
+## Key Features
+
+- **Road & Segment Management** — Create roads with auto-generated segments (configurable interval and generation mode). Track pavement inventory, shoulders, drainage, and land use per segment.
+- **Pavement Damage Assessment** — Detailed damage forms for 5 pavement types (asphalt, concrete, block, gravel, unpaved) with type-specific parameters.
+- **TTI Calculation** — Automated Treatment Trigger Index computation with condition ratings (Good/Fair/Poor/Bad) at segment and road level.
+- **PDF Reports** — Client-side report generation with road condition summaries, segment analysis, and pavement statistics.
+- **Role-Based Access** — Three roles: Admin (user management), Operator (road data entry & reporting), Visitor (view published reports). No public sign-ups.
+- **User Management** — Ban/unban users, revoke sessions, manage passwords, assign roles.
+- **Internationalization** — English and Indonesian language support.
+- **Dark/Light Theme** — System preference detection with manual toggle.
 
 ## Dashboard & Road Overview
 
-The dashboard provides a comprehensive overview of all roads with key metrics including total length, section width, and surface type percentages (Asphalt, Concrete, Block, Gravel, Unpaved). This allows infrastructure managers to quickly assess the state of road inventory at a glance.
+The dashboard provides a comprehensive overview of all roads with key metrics including total length, section width, and surface type percentages (Asphalt, Concrete, Block, Gravel, Unpaved).
 
 ![Dashboard Overview](gallery1.png)
 
 ## Road Management
 
-Administrators and operators can manage the full lifecycle of road data, including creating, updating, and deleting roads. Each road entry includes details such as road number, total length, and section width. The system supports auto-segment generation based on configurable intervals and generation modes.
+Administrators and operators can manage the full lifecycle of road data, including creating, updating, and deleting roads. Each road supports auto-segment generation based on configurable intervals and generation modes.
 
 ![Road Management](gallery2.png)
 
 ## Segment & Pavement Assessment
 
-Each road is divided into segments, and operators can perform detailed pavement condition assessments. The system supports five pavement types — Asphalt, Concrete, Block, Gravel, and Unpaved — each with its own set of damage parameters. For example, asphalt assessments cover 12 parameters including bleeding, disintegration, crack analysis, potholes, rutting, and edge damage.
+Each road is divided into segments. Operators perform detailed pavement condition assessments across 5 pavement types, each with type-specific damage parameters (e.g., asphalt: bleeding, disintegration, crack analysis, potholes, rutting, edge damage).
 
 ![Segment Assessment](gallery3.png)
 
 ## TTI Calculation & Reporting
 
-The Treatment Trigger Index (TTI) is automatically calculated based on weighted distress areas per segment. Roads are classified into four condition categories: Good (TTI < 25), Fair (25-50), Poor (50-75), and Bad (TTI >= 75). Comprehensive PDF reports can be generated client-side with road information, segment-by-segment analysis, and condition statistics.
+TTI is automatically calculated based on weighted distress areas per segment. Roads are classified: Good (TTI < 25), Fair (25–50), Poor (50–75), Bad (TTI ≥ 75). PDF reports are generated client-side with road info, segment analysis, and condition statistics.
 
 ![TTI Reports](gallery4.png)
 
-## Role-Based Access & User Management
+## User Management
 
-The system implements three hierarchical roles — Admin, Operator, and Visitor — with granular permissions. Admins have full control over user management including creating accounts, assigning roles, banning/unbanning users, and revoking sessions. Visitors have controlled, view-only access to roads marked as visible. Authentication is handled via Better Auth with session-based security.
+Admins can create accounts, assign roles (Admin/Operator/Visitor), ban/unban users, revoke sessions, and manage passwords. Authentication via Better Auth with session-based security.
 
 ![User Management](gallery5.png)
 
-## Key Features
-
-- **Road Inventory Management** — Comprehensive road and segment data entry with auto-segment generation
-- **Pavement Condition Assessment** — Support for 5 pavement types with detailed damage schemas
-- **TTI Calculation Engine** — Automated computation based on PKRMS Manual (SE 22/2022)
-- **PDF Report Generation** — Client-side PDF export with road condition reports
-- **Role-Based Access Control** — Admin, Operator, and Visitor roles with hierarchical permissions
-- **Internationalization** — Multi-language support (English & Indonesian)
-- **Dark/Light Theme** — System preference detection with manual toggle
-- **Responsive Design** — Mobile-first design optimized for all screen sizes
-
 ## Tech Stack
 
-**Frontend**
+| Layer | Technologies |
+| ----- | ------------ |
+| **Frontend** | Next.js 15, React 19, Tailwind CSS v4, shadcn/ui, React Hook Form, TanStack Query, Motion, Lucide |
+| **API** | oRPC (type-safe RPC), Better Auth (session-based), Zod validation |
+| **Database** | PostgreSQL (Neon serverless), Drizzle ORM |
+| **Infrastructure** | Turborepo, pnpm, Vercel, GitHub Actions (CI/CD) |
+| **Other** | jsPDF + html2canvas (PDF export) |
 
-Next.js, React, TypeScript, Tailwind CSS, shadcn/ui (Radix UI), React Hook Form, Zod, TanStack Query, Motion (Framer Motion), Lucide React, Sonner, next-themes, jsPDF, html2canvas-pro
+## Project Structure
 
-**Backend**
+```
+├── apps/web/                  # Next.js frontend
+│   └── src/
+│       ├── app/(auth)/        # Sign-in page
+│       ├── app/(dashboard)/   # Dashboard, roads, users, account
+│       ├── components/        # UI components (shadcn/ui + custom)
+│       ├── hooks/             # Auth & admin hooks
+│       ├── i18n/              # Translations (EN/ID)
+│       └── middleware.ts      # Route protection
+├── packages/api/              # Backend API
+│   └── src/modules/
+│       ├── admin/             # User management
+│       ├── auth/              # Authentication (Better Auth)
+│       ├── road/              # Road CRUD + segment generation
+│       ├── segment/           # Segment updates & pavement data
+│       └── results/           # TTI calculation & reporting
+└── packages/shared/           # Shared enums, schemas, types
+```
 
-oRPC, Drizzle ORM, PostgreSQL, Neon Serverless, Better Auth, Zod
+## Production Deployment
 
-**DevOps & Infrastructure**
-
-Turborepo, pnpm, GitHub Actions, Vercel, Neon, TypeScript, Prettier
+Deployed on **Vercel** (frontend + API) with **Neon** (serverless PostgreSQL). GitHub Actions handles migration checks on PRs and auto-runs migrations on merge to `main`.
