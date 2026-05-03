@@ -7,7 +7,7 @@ import { ANIMATE_FADE_UP } from "@/lib/animations";
 
 interface SectionHeaderProps {
   title: string;
-  description: string;
+  description?: string;
   linkText: string;
   linkHref: string;
   shortLinkText?: string;
@@ -49,9 +49,13 @@ export function SectionHeader({
         </Link>
       </div>
 
-      <TypographyP className={cn(ANIMATE_FADE_UP, "text-foreground/65 max-w-3xl")}>
-        {description}
-      </TypographyP>
+      {description && (
+        <TypographyP
+          className={cn(ANIMATE_FADE_UP, "text-foreground/65 max-w-3xl")}
+        >
+          {description}
+        </TypographyP>
+      )}
     </>
   );
 }

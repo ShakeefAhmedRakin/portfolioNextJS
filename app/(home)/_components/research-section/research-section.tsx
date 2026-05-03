@@ -11,8 +11,8 @@ export default function ResearchSection() {
       wrapperClassName="bg-gradient-to-b from-transparent via-secondary/25 to-transparent"
     >
       <SectionHeader
-        title="Some of my ongoing and published research"
-        description="Discover my latest research projects that I've collaborated with esteemed colleagues and institutions"
+        title="Papers I've co-authored"
+        description="Papers I've co-authored with collaborators across multiple institutions."
         linkText="View All Research"
         linkHref={siteNavigationMap.RESEARCH.href}
       />

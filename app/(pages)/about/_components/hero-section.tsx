@@ -28,25 +28,14 @@ export default function HeroSection() {
         <TypographyP className="text-foreground/65 mt-2">
           I&apos;m a{" "}
           <span className="text-foreground/80 font-semibold">
-            {" "}
-            {SiteConfig.title}{" "}
-          </span>
-          from{" "}
+            {SiteConfig.title}
+          </span>{" "}
+          based in{" "}
           <span className="text-foreground/80 font-semibold">
-            {" "}
-            {SiteConfig.birthPlace}{" "}
-          </span>
-          currently situated in
-          <span className="text-foreground/80 font-semibold">
-            {" "}
             {SiteConfig.location}
           </span>
-          . My work spans a wide range of fields, from full-stack web
-          development to mobile development and machine learning, helping me
-          build a strong foundation in both problem-solving and technical
-          skills. Outside of work, I enjoy music, gaming, and anime, which
-          inspire me and bring fresh perspectives to my problem-solving
-          approach.
+          . I work across web, mobile, desktop, and ML. Outside of work, I&apos;m
+          into music, gaming, and anime.
         </TypographyP>
         <div className="space-y-2 space-x-2">
           <ScrollLink

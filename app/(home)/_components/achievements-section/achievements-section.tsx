@@ -17,11 +17,8 @@ export default function AchievementsSection() {
       wrapperClassName="bg-gradient-to-b from-transparent via-secondary/25 to-transparent"
     >
       <SectionHeader
-        title="Some of my achievements"
-        description="During my undergraduate years, I actively participated in multiple
-        competitive events, including hackathons and datathons, where I
-        collaborated with teams to develop practical solutions to real-world
-        problems."
+        title="Hackathons and awards"
+        description="Hackathons, datathons, and competitions from my undergrad years."
         linkText="View All Achievements"
         shortLinkText="View All"
         linkHref={siteNavigationMap.ACHIEVEMENTS.href}

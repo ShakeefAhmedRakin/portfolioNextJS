@@ -1,6 +1,6 @@
 import { SectionWrapper } from "@/components/ui/wrappers";
 import ExpertiseGrid from "./expertise-grid";
-import ExpertiseStatGrid from "./expertise-stat-card";
+import ExpertiseStatStrip from "./expertise-stat-card";
 import { expertiseContent } from "@/content/home/expertise-section";
 import { SectionHeader } from "@/components/ui/section-header";
 import { siteNavigationMap } from "@/content/site-navigation";
@@ -13,12 +13,11 @@ export default function ExpertiseSection() {
     >
       <SectionHeader
         title={expertiseContent.title}
-        description={expertiseContent.description}
         linkText="More About Me"
         linkHref={siteNavigationMap.ABOUT.href}
       />
 
-      <ExpertiseStatGrid />
+      <ExpertiseStatStrip />
 
       <ExpertiseGrid />
     </SectionWrapper>

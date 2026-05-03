@@ -48,10 +48,8 @@ export const personJsonLd: Person = {
   ],
   award: achievements.map((achievement) => achievement.title),
   knowsAbout: [
-    ...expertiseContent.expertiseGroupOne.map((item) => item.title),
-    ...expertiseContent.expertiseGroupTwo.map((item) => item.title),
-    ...expertiseContent.expertiseGroupOne.flatMap((item) => item.points),
-    ...expertiseContent.expertiseGroupTwo.flatMap((item) => item.points),
+    ...expertiseContent.expertise.map((item) => item.title),
+    ...expertiseContent.expertise.flatMap((item) => item.points),
     ...skillSets.map((group) => group.title),
     ...skillSets.flatMap((group) => group.skills.map((skill) => skill.name)),
   ],

@@ -10,8 +10,8 @@ export default function ProjectsSection() {
       wrapperClassName="bg-gradient-to-b from-transparent via-secondary/25 to-transparent"
     >
       <SectionHeader
-        title="I've been building a lot of things"
-        description="A showcase of my completed and ongoing projects across web, desktop, mobile, and machine learning. Built with modern tools to solve real-world problems."
+        title="Things I've built"
+        description="A showcase of my completed and ongoing work across web, desktop, mobile, and machine learning."
         linkText="View All Projects"
         linkHref={siteNavigationMap.PROJECTS.href}
       />

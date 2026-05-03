@@ -52,19 +52,19 @@ export const MDXImage = (props: ImageProps) => (
 
 export const createMDXComponents = (isSmall = false) => ({
   h1: (props: React.ComponentPropsWithoutRef<"h1">) => (
-    <TypographyH1 className="mb-4" {...props} />
+    <TypographyH1 className="mt-12 mb-4 first:mt-0" {...props} />
   ),
   h2: (props: React.ComponentPropsWithoutRef<"h2">) => (
-    <TypographyH2 className="mb-4" {...props} />
+    <TypographyH2 className="mt-12 mb-4 first:mt-0" {...props} />
   ),
   h3: (props: React.ComponentPropsWithoutRef<"h3">) => (
-    <TypographyH3 className="mb-4" {...props} />
+    <TypographyH3 className="mt-8 mb-3 first:mt-0" {...props} />
   ),
   h4: (props: React.ComponentPropsWithoutRef<"h4">) => (
-    <TypographyH4 className="mb-4" {...props} />
+    <TypographyH4 className="mt-6 mb-2 first:mt-0" {...props} />
   ),
   h5: (props: React.ComponentPropsWithoutRef<"h5">) => (
-    <TypographyH5 className="mb-4" {...props} />
+    <TypographyH5 className="mt-6 mb-2 first:mt-0" {...props} />
   ),
   p: (props: React.ComponentPropsWithoutRef<"p">) => {
     const children = props.children;
@@ -94,7 +94,7 @@ export const createMDXComponents = (isSmall = false) => ({
 
   blockquote: (props: React.ComponentPropsWithoutRef<"blockquote">) => (
     <TypographyBlockquote
-      className="text-foreground/80 mb-4"
+      className="text-foreground/80 my-6"
       {...props}
       level={isSmall ? "small" : "default"}
     />
@@ -103,7 +103,7 @@ export const createMDXComponents = (isSmall = false) => ({
     <TypographyUnOrderedList
       {...props}
       level={isSmall ? "small" : "default"}
-      className="text-foreground/80"
+      className="text-foreground/80 mb-4"
     />
   ),
 
@@ -111,11 +111,11 @@ export const createMDXComponents = (isSmall = false) => ({
     <TypographyOrderedList
       {...props}
       level={isSmall ? "small" : "default"}
-      className="text-foreground/80"
+      className="text-foreground/80 mb-4"
     />
   ),
 
-  hr: () => <hr className="border-primary/30 mb-4" />,
+  hr: () => <hr className="border-primary/30 my-8" />,
 
   img: MDXImage,
 

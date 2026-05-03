@@ -20,7 +20,7 @@ export default function ResearchListingPage() {
       <SetSchemaResearchListingPage />
       <PageHeader
         title="Research"
-        subtitle="Discover my latest research projects that I've collaborated with esteemed colleagues and institutions"
+        subtitle="Papers I've co-authored with collaborators across multiple institutions."
       />
       <SectionWrapper
         wrapperClassName="pb-12 lg:pb-20 xl:pb-24 pt-6 xl:pt-8"

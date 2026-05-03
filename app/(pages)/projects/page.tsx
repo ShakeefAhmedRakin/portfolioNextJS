@@ -44,7 +44,7 @@ export default async function ProjectsListingPage({
       <SetSchemaProjectsListingPage />
       <PageHeader
         title="Projects"
-        subtitle="All of my completed and ongoing projects"
+        subtitle="Completed and ongoing work across web, desktop, mobile, and machine learning."
       />
       <SectionWrapper
         wrapperClassName="pb-12 lg:pb-20 xl:pb-24 pt-6 xl:pt-8"

@@ -27,7 +27,7 @@ export default function AchievementsListingPage() {
       <SetSchemaAchievementsListingPage />
       <PageHeader
         title="Achievements"
-        subtitle="All of my most recent notable achievements"
+        subtitle="Hackathons, datathons, and competitions from my undergrad years."
       />
       <SectionWrapper
         wrapperClassName="pb-12 lg:pb-20 xl:pb-24 pt-6 xl:pt-8"
