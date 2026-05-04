@@ -61,6 +61,14 @@ export const skillSets = [
         name: "Tanstack Query",
         image: `${imagePath}/tanstack.png`,
       },
+      {
+        name: "Vite",
+        image: `${imagePath}/vite.jfif`,
+      },
+      {
+        name: "Turborepo",
+        image: `${imagePath}/turborepo.png`,
+      },
     ],
   },
   {
@@ -99,6 +107,14 @@ export const skillSets = [
         image: `${imagePath}/supabase.png`,
       },
       {
+        name: "Neon",
+        image: `${imagePath}/neon.png`,
+      },
+      {
+        name: "Upstash",
+        image: `${imagePath}/upstash.png`,
+      },
+      {
         name: "Drizzle ORM",
         image: `${imagePath}/drizzle.svg`,
       },
@@ -117,6 +133,18 @@ export const skillSets = [
       {
         name: "JWT",
         image: `${imagePath}/jwt.svg`,
+      },
+      {
+        name: "Zod",
+        image: `${imagePath}/zod.png`,
+      },
+      {
+        name: "Joi",
+        image: `${imagePath}/joi.png`,
+      },
+      {
+        name: "OpenAPI",
+        image: `${imagePath}/openapi.png`,
       },
       {
         name: "Stripe",
@@ -159,6 +187,10 @@ export const skillSets = [
         name: "Avalonia UI",
         image: `${imagePath}/avalonia.png`,
       },
+      {
+        name: "PyInstaller",
+        image: `${imagePath}/pyinstaller.png`,
+      },
     ],
   },
   {
@@ -192,6 +224,8 @@ export const skillSets = [
       { name: "Larq", image: `${imagePath}/larq.png` },
       { name: "Mediapipe", image: `${imagePath}/mediapipe.png` },
       { name: "Streamlit", image: `${imagePath}/streamlit.png` },
+      { name: "Gemini", image: `${imagePath}/gemini.png` },
+      { name: "OpenAI", image: `${imagePath}/openai.png` },
     ],
   },
 ];
