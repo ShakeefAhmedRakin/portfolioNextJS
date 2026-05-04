@@ -3,7 +3,7 @@ slug: portfolio-site
 title: Personal Portfolio Site
 subTitle: A meta-engineered portfolio where one edit propagates everywhere
 category: Web Development
-thumbnail: cover.png
+thumbnail: cover.PNG
 date: 2026-05-04T00:00:00.000Z
 tags:
   [
@@ -57,7 +57,7 @@ Frontmatter is validated against a typed schema, MDX is compiled at build time, 
 
 The metadata layer is the most engineered part of the site. JSON-LD is composed from shared primitives (`Person`, `Organization`, `Website`, `BreadcrumbList`, `ImageObject`) and assembled per page type into a connected graph using `@id` references, so every page contributes nodes that link back into a coherent entity model rather than living as isolated blobs.
 
-![JSON-LD Graph](jsonld-tree.png)
+![JSON-LD Graph](jsonld-tree.PNG)
 
 What that buys:
 
@@ -89,14 +89,14 @@ The home page surfaces my Medium articles through an RSS pipeline rather than a 
 
 ## Tech Stack
 
-| Layer         | Technologies                                                       |
-| ------------- | ------------------------------------------------------------------ |
-| **Framework** | Next.js 15 (App Router, Turbopack), React 19                       |
-| **Language**  | TypeScript 5 with strict mode                                      |
-| **Content**   | Velite, MDX, schema-validated frontmatter                          |
-| **Styling**   | Tailwind CSS v4, OKLCH theming, shadcn/ui, Motion                  |
+| Layer         | Technologies                                                         |
+| ------------- | -------------------------------------------------------------------- |
+| **Framework** | Next.js 15 (App Router, Turbopack), React 19                         |
+| **Language**  | TypeScript 5 with strict mode                                        |
+| **Content**   | Velite, MDX, schema-validated frontmatter                            |
+| **Styling**   | Tailwind CSS v4, OKLCH theming, shadcn/ui, Motion                    |
 | **SEO**       | schema-dts, JSON-LD graph per page type, dynamic OG via Edge runtime |
-| **Tooling**   | pnpm, concurrently (Velite watch + Next dev), Prettier             |
+| **Tooling**   | pnpm, concurrently (Velite watch + Next dev), Prettier               |
 
 ## Why It Matters
 
