@@ -29,17 +29,18 @@ export default function ExperienceSection() {
         linkHref={`${siteNavigationMap.ABOUT.href}#experience`}
       />
 
-      <ul
+      <ol
         className={cn(
+          "md:border-primary/50 mt-4 space-y-6 py-2 md:ml-6 md:border-l",
           ANIMATE_FADE_UP,
-          "grid grid-cols-1 gap-4 lg:grid-cols-2",
         )}
       >
         {sortedWork.map((work) => (
           <li
             key={work.slug}
             className={cn(
-              "space-y-1 px-4 pt-3 pb-4",
+              "relative px-4 pt-3 pb-4 md:ml-6",
+              ANIMATE_FADE_UP,
               containerVariants({ variant: "outlined" }),
             )}
           >
@@ -81,7 +82,7 @@ export default function ExperienceSection() {
             )}
             <TypographyUnOrderedList
               level="small"
-              className="text-foreground/65 mt-2"
+              className="text-foreground/65 mt-2 ml-4"
             >
               {work.highlights.map((highlight) => (
                 <li key={highlight}>{highlight}</li>
@@ -89,7 +90,7 @@ export default function ExperienceSection() {
             </TypographyUnOrderedList>
           </li>
         ))}
-      </ul>
+      </ol>
     </SectionWrapper>
   );
 }

@@ -34,8 +34,10 @@ export default function HeroSection() {
           <span className="text-foreground/80 font-semibold">
             {SiteConfig.location}
           </span>
-          . I work across web, mobile, desktop, and ML. Outside of work, I&apos;m
-          into music, gaming, and anime.
+          . I specialize in scalable web, mobile, and desktop ecosystems,
+          architecting end-to-end SaaS products, migrating legacy
+          infrastructures, and shipping production-grade AI/ML pipelines.
+          Outside of work, I&apos;m into music, gaming, and anime.
         </TypographyP>
         <div className="space-y-2 space-x-2">
           <ScrollLink

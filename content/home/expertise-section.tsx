@@ -36,26 +36,27 @@ export const expertiseContent = {
     {
       title: "Full Stack Development",
       points: [
-        "Next.js, React, tRPC, Better Auth",
-        "PostgreSQL, Drizzle, Supabase",
-        "REST + OpenAPI, secure API design",
+        "Architecting SaaS products end to end",
+        "Migrating legacy stacks to modern foundations",
+        "Designing public APIs for teams and AI clients",
       ],
       icon: <PiStackMinusFill />,
     },
     {
       title: "AI & Machine Learning",
       points: [
-        "LLM pipelines (OpenAI, Gemini)",
-        "TTS and audio processing",
-        "NLP, computer vision",
+        "Shipping production AI pipelines",
+        "Training and benchmarking custom models",
+        "Wiring AI into real product flows",
       ],
       icon: <RiChatVoiceAiFill />,
     },
     {
       title: "Mobile & Desktop",
       points: [
-        "React Native, Expo (iOS, Android)",
-        "Native Windows apps",
+        "Mobile apps sharing one backend with web",
+        "Desktop tools for industrial and research work",
+        "Open source templates for cross platform delivery",
       ],
       icon: <PiDevices />,
     },
