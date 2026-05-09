@@ -3,6 +3,7 @@ import type { ScholarlyArticle } from "schema-dts";
 import { extractImagesFromMDX } from "@/lib/utils";
 import generateImageObjectSchema from "./generate-image-object-schema";
 import { siteNavigationMap } from "@/content/site-navigation";
+import { mainHeroImageId } from "../shared/main-hero-image";
 
 export default function GenerateResearchSchema(
   research: Research,
@@ -37,7 +38,8 @@ export default function GenerateResearchSchema(
         "@id": author.name,
         name: author.name,
         sameAs: author.link ?? undefined,
-        url: author.link ?? undefined,
+        url:
+          author.link ?? `${process.env.WEBSITE_URL}${research.permalink}`,
       };
     }),
     potentialAction: [
@@ -76,14 +78,15 @@ export default function GenerateResearchSchema(
           ]
         : []),
     ],
-    image: [
-      ...imagesInResearch.map((image) =>
-        generateImageObjectSchema({
-          title: image.title,
-          src: image.src,
-          pageUrl: research.permalink,
-        }),
-      ),
-    ],
+    image:
+      imagesInResearch.length > 0
+        ? imagesInResearch.map((image) =>
+            generateImageObjectSchema({
+              title: image.title,
+              src: image.src,
+              pageUrl: research.permalink,
+            }),
+          )
+        : [{ "@id": mainHeroImageId }],
   };
 }
