@@ -3,6 +3,9 @@ import { Metadata } from "next";
 
 export const baseMetadata: Metadata = {
   metadataBase: new URL(process.env.WEBSITE_URL || "http://localhost:3000"),
+  verification: {
+    google: process.env.GOOGLE_SITE_VERIFICATION ?? "",
+  },
   authors: [
     {
       name: SiteConfig.fullName,
