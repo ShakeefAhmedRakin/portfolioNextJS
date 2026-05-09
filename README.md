@@ -1,16 +1,18 @@
 # Portfolio Website
 
-A modern, performant portfolio website built with Next.js 15, featuring a content-driven architecture, comprehensive SEO optimization, and dynamic Open Graph image generation.
+A performant portfolio website built with Next.js 15, featuring a content-driven architecture, comprehensive SEO optimization, and dynamic Open Graph image generation.
 
 ## Technical Stack
 
 ### Core Framework
+
 - **Next.js 15.3.8** - React framework with App Router architecture
 - **React 19.0.0** - Latest React with concurrent features
 - **TypeScript 5** - Type-safe development with strict mode enabled
 - **Turbopack** - Fast development bundler (enabled in dev mode)
 
 ### Styling & UI
+
 - **Tailwind CSS 4** - Utility-first CSS framework with PostCSS
 - **shadcn/ui** - High-quality component library built on Radix UI
 - **Radix UI** - Accessible, unstyled component primitives
@@ -25,6 +27,7 @@ A modern, performant portfolio website built with Next.js 15, featuring a conten
 - **clsx** - Conditional class name utility
 
 ### Content Management
+
 - **Velite 0.2.2** - Type-safe content layer for MDX files
   - Schema-based content validation
   - Type generation from content schemas
@@ -32,6 +35,7 @@ A modern, performant portfolio website built with Next.js 15, featuring a conten
   - Collections: Projects, Achievements, Research, Work Experiences
 
 ### Animation & Motion
+
 - **Motion 12.11.3** (Framer Motion) - Production-ready animation library
   - Spotlight effects with animated gradients
   - Fade-up animations on scroll
@@ -39,10 +43,12 @@ A modern, performant portfolio website built with Next.js 15, featuring a conten
 - **simplex-noise** - Procedural noise generation for visual effects
 
 ### Icons & Assets
+
 - **lucide-react** - Icon library (primary)
 - **react-icons** - Additional icon sets
 
 ### SEO & Metadata
+
 - **schema-dts** - TypeScript types for JSON-LD structured data
 - Dynamic Open Graph image generation via Edge runtime
 - Comprehensive metadata management system
@@ -57,11 +63,13 @@ A modern, performant portfolio website built with Next.js 15, featuring a conten
   - Research schemas
 
 ### Utilities & Tools
+
 - **sonner** - Toast notification system
 - **concurrently** - Run multiple commands simultaneously
 - **prettier** - Code formatting with Tailwind plugin
 
 ### Development Tools
+
 - **ESLint 9** - Code linting with Next.js config
 - **TypeScript** - Static type checking
 - **PostCSS** - CSS processing
@@ -145,16 +153,19 @@ The project uses **Velite** for type-safe content management:
 ### SEO Implementation
 
 1. **Metadata Management**:
+
    - Centralized metadata configuration in `metadata/site-metadata.ts`
    - Page-specific metadata generators
    - Dynamic metadata for content pages
 
 2. **Structured Data**:
+
    - JSON-LD schemas for all page types
    - Person, Organization, and WebPage schemas
    - Rich snippets for projects, achievements, and research
 
 3. **Open Graph**:
+
    - Dynamic OG image generation via Edge runtime
    - Custom image generation API route
    - Base64 image encoding for fonts and assets
@@ -183,18 +194,21 @@ The project uses **Velite** for type-safe content management:
 ## Key Features
 
 ### Content-Driven Architecture
+
 - MDX-based content authoring
 - Type-safe content schemas
 - Hot reload in development
 - Automatic type generation
 
 ### Dynamic Open Graph Images
+
 - Edge runtime image generation
 - Custom fonts (Roboto) embedded
 - Dynamic title and subtitle support
 - Base64 image encoding
 
 ### Comprehensive SEO
+
 - JSON-LD structured data
 - Dynamic metadata per page
 - Automatic sitemap generation
@@ -202,6 +216,7 @@ The project uses **Velite** for type-safe content management:
 - Semantic HTML structure
 
 ### Modern UI/UX
+
 - Responsive design
 - Smooth animations
 - Accessible components
@@ -209,6 +224,7 @@ The project uses **Velite** for type-safe content management:
 - Loading states
 
 ### Developer Experience
+
 - TypeScript strict mode
 - ESLint configuration
 - Prettier formatting
@@ -218,15 +234,18 @@ The project uses **Velite** for type-safe content management:
 ## Build & Development
 
 ### Scripts
+
 - `dev` - Development server with Turbopack and Velite watch mode
 - `build` - Production build (runs Velite then Next.js build)
 - `start` - Production server
 - `lint` - ESLint code checking
 
 ### Environment Variables
+
 - `WEBSITE_URL` - Base URL for metadata and sitemap generation
 
 ### Build Process
+
 1. Velite processes MDX files and generates types
 2. Next.js builds the application
 3. Static pages are pre-rendered
@@ -235,6 +254,7 @@ The project uses **Velite** for type-safe content management:
 ## Technical Decisions
 
 ### Why Velite?
+
 - Type-safe content management
 - MDX support out of the box
 - Schema validation
@@ -242,18 +262,21 @@ The project uses **Velite** for type-safe content management:
 - Excellent developer experience
 
 ### Why Edge Runtime for OG Images?
+
 - Faster response times
 - Lower latency
 - Cost-effective
 - Scales automatically
 
 ### Why Tailwind CSS 4?
+
 - Latest features and performance improvements
 - Better PostCSS integration
 - Improved developer experience
 - Modern CSS features
 
 ### Why Motion (Framer Motion)?
+
 - Production-ready animations
 - Excellent performance
 - Rich animation API
