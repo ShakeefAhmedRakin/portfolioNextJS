@@ -11,7 +11,9 @@ export const baseMetadata: Metadata = {
   ],
   creator: SiteConfig.fullName,
   publisher: SiteConfig.fullName,
-  robots: "index, follow",
+  // TEMPORARY: site-wide indexing disabled. To re-enable, swap with the commented line below.
+  robots: "noindex, nofollow",
+  // robots: "index, follow",
 
   icons: {
     icon: [
