@@ -14,7 +14,10 @@ export const baseMetadata: Metadata = {
   ],
   creator: SiteConfig.fullName,
   publisher: SiteConfig.fullName,
-  robots: "noindex, follow",
+  robots:
+    process.env.WEBSITE_URL === "https://www.shakeefahmedrakin.com"
+      ? "index, follow"
+      : "noindex, follow",
 
   icons: {
     icon: [
