@@ -3,9 +3,6 @@ import { Metadata } from "next";
 
 export const baseMetadata: Metadata = {
   metadataBase: new URL(process.env.WEBSITE_URL || "http://localhost:3000"),
-  verification: {
-    google: process.env.GOOGLE_SITE_VERIFICATION ?? "",
-  },
   authors: [
     {
       name: SiteConfig.fullName,
@@ -14,10 +11,7 @@ export const baseMetadata: Metadata = {
   ],
   creator: SiteConfig.fullName,
   publisher: SiteConfig.fullName,
-  robots:
-    process.env.WEBSITE_URL === "https://www.shakeefahmedrakin.com"
-      ? "index, follow"
-      : "noindex, follow",
+  robots: "index, follow",
 
   icons: {
     icon: [
