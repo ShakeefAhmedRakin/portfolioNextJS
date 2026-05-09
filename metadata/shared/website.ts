@@ -74,6 +74,9 @@ export const websiteJsonLd: WebSite = {
         "@type": "BlogPosting",
         name: `${achievement.title} Page`,
         "@id": `${process.env.WEBSITE_URL}${achievement.permalink}`,
+        headline: achievement.title,
+        author: { "@id": personId },
+        image: `${process.env.WEBSITE_URL}${achievement.mainCover.src}`,
       };
     }),
     ...projects.map((project) => {
@@ -81,6 +84,9 @@ export const websiteJsonLd: WebSite = {
         "@type": "CollectionPage",
         name: `${project.title} Page`,
         "@id": `${process.env.WEBSITE_URL}${project.permalink}`,
+        headline: project.title,
+        author: { "@id": personId },
+        image: `${process.env.WEBSITE_URL}${project.thumbnail.src}`,
       };
     }),
   ],
