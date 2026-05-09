@@ -9,5 +9,6 @@ export default function robots(): MetadataRoute.Robots {
       },
     ],
     sitemap: `${process.env.WEBSITE_URL}/sitemap.xml`,
+    host: process.env.WEBSITE_URL,
   };
 }
