@@ -23,7 +23,11 @@ export async function GET(request: Request) {
   const [roboto400, roboto800, heroData, dottedGridData] = await Promise.all([
     getAsset("/fonts/Roboto-Regular.ttf", request.url),
     getAsset("/fonts/Roboto-Bold.ttf", request.url),
-    getAsset(SiteConfig.gallery.mainHeroImage.src, request.url),
+    // Satori (next/og) doesn't support WebP — use the PNG sibling.
+    getAsset(
+      SiteConfig.gallery.mainHeroImage.src.replace(/\.webp$/i, ".png"),
+      request.url,
+    ),
     getAsset("/images/og_images/dotted-grid.png", request.url),
   ]);
 
@@ -165,7 +169,6 @@ export async function GET(request: Request) {
             alt="Hero Image"
             style={{
               width: "390px",
-              background: "red",
               borderRadius: "25px",
             }}
           ></img>
