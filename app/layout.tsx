@@ -9,6 +9,8 @@ import { baseMetadata } from "@/metadata/shared/base-metadata";
 import BackgroundGridOverlay from "@/components/ui/background-grid-overlay";
 import { roboto } from "./fonts";
 import GoogleAnalytics from "@/components/analytics/google-analytics";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata = baseMetadata;
 
@@ -33,6 +35,8 @@ export default function RootLayout({
           {children}
         </main>
         <SiteFooter />
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
