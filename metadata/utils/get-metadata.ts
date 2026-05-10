@@ -26,21 +26,30 @@ export default function getMetadata({
       siteName: `${SiteConfig.fullName}`,
       type: "website",
       url: `${process.env.WEBSITE_URL}${pathParam}`,
+      locale: "en_US",
       images: [
         {
           url: openGraphImageUrl,
           alt: title,
+          width: 1200,
+          height: 630,
+          type: "image/png",
         },
       ],
       description: description,
     },
     twitter: {
+      card: "summary_large_image",
       title: title,
-      creator: `${SiteConfig.fullName}`,
+      creator: "@shakeefahmed",
+      site: "@shakeefahmed",
       images: [
         {
           url: openGraphImageUrl,
           alt: title,
+          width: 1200,
+          height: 630,
+          type: "image/png",
         },
       ],
       description: description,

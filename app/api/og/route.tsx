@@ -5,22 +5,27 @@ import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
 
+// Per-instance memo: assets are static, so each edge worker fetches them
+// once and reuses across requests. Combined with the response Cache-Control
+// below, this drops the per-render cost to a single in-memory lookup.
+const assetCache = new Map<string, Promise<ArrayBuffer>>();
+function getAsset(path: string, base: string): Promise<ArrayBuffer> {
+  const key = new URL(path, base).toString();
+  let cached = assetCache.get(key);
+  if (!cached) {
+    cached = fetch(key).then((res) => res.arrayBuffer());
+    assetCache.set(key, cached);
+  }
+  return cached;
+}
+
 export async function GET(request: Request) {
-  const roboto400 = await fetch(
-    new URL("/fonts/Roboto-Regular.ttf", request.url),
-  ).then((res) => res.arrayBuffer());
-
-  const roboto800 = await fetch(
-    new URL("/fonts/Roboto-Bold.ttf", request.url),
-  ).then((res) => res.arrayBuffer());
-
-  const heroData = await fetch(
-    new URL(SiteConfig.gallery.mainHeroImage.src, request.url),
-  ).then((res) => res.arrayBuffer());
-
-  const dottedGridData = await fetch(
-    new URL("/images/og_images/dotted-grid.png", request.url),
-  ).then((res) => res.arrayBuffer());
+  const [roboto400, roboto800, heroData, dottedGridData] = await Promise.all([
+    getAsset("/fonts/Roboto-Regular.ttf", request.url),
+    getAsset("/fonts/Roboto-Bold.ttf", request.url),
+    getAsset(SiteConfig.gallery.mainHeroImage.src, request.url),
+    getAsset("/images/og_images/dotted-grid.png", request.url),
+  ]);
 
   const heroURL = arrayBufferToBase64(heroData);
   const dottedGridURL = arrayBufferToBase64(dottedGridData);

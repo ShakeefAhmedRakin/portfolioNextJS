@@ -6,7 +6,7 @@ import { siteNavigationMap } from "@/content/site-navigation";
 const SiteMetadata = {
   HOME: {
     title: `${SiteConfig.fullName} | ${SiteConfig.title}`,
-    description: `${SiteConfig.heroDescription}`,
+    description: SiteConfig.seoDescription,
     openGraphImageUrl: generateOgImageUrl({
       title: SiteConfig.fullName,
       subtitle: SiteConfig.title,

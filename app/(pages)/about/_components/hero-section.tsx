@@ -16,7 +16,9 @@ export default function HeroSection() {
           placeholder="blur"
           height={350}
           priority
+          fetchPriority="high"
           width={350}
+          sizes="(min-width: 1024px) 350px, 70vw"
           title={SiteConfig.gallery.aboutHeroImage.name}
           draggable={false}
           alt={SiteConfig.gallery.aboutHeroImage.name}

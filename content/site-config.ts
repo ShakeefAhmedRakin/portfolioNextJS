@@ -12,15 +12,15 @@ const SiteConfig = {
   gallery: {
     mainHeroImage: {
       name: `${fullName} | Hero Image`,
-      src: "/images/branding/hero-main.png",
+      src: "/images/branding/hero-main.webp",
       blurURL:
-        "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAA80lEQVR4ARyNy07CUBiE5xza6g5iNDa9xERKS4s1Mb6BG1a+s3sTE8OGKhhMvCCoWNTSFs7/e2Q1k8z3ZaTretQJQuolJ5Qm6TaTuEfdKKaoE5E0TUskYVsceY5o7jZE4NvCtQ9FGofCdWwhTcNAHLbRajVxduziNPDhew4u+xdIwgByx7JwMxji6WWK8fMc2WQKoyExvHvA6+wdkgGsNxuMxhNkj2+4HmS41332ucCqqiGVUiDS0LpGRQpS21/5EvOPBb5/fiH/7bquNUSwGgL98y4UMZZ6zPNcXzBxUa7YME0uFfPV7YgP9ve4KAouq4r/AAAA//+md4fvAAAABklEQVQDAP1Wc+F5QA/NAAAAAElFTkSuQmCC",
+        "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAACXBIWXMAAAsTAAALEwEAmpwYAAABd0lEQVR4nB3PzU4TUQBA4bvXBCMR7Fhoh9b57fTeKSFYSudHRmI71QQUcaSIgNZAAgtpXBATFj6BiTuXLkx8Al/MhddkjsHlSb7NEYZRLU2zgW05BK02sq3wvBae5+PYHq7jY913tKjVzDKUiixNSeIE6bWI19aI+33Wuz06KiRsh1oYxr3y8uKc6dkJT/Oc6fMBV+/HjPIRR3sFP759pXi2pYVjO+X2k5z9Ypej12OuDnf4cnnOyWTC548X/Pr5nfGLHS18PyiTKCbbyAhailRKBnHMflHwafqByZsDRsOhFp7rlxtJSkd1mL09h12pU52v/h85ffeW44NrmGthW26ZxikyUNydN1ismiwuLGE1bR5nm7zafUkcJVo0m1YZrcf4bsDMzCx+0yLrrqJkiAwkw0HOysqqFqbZKLsPeri2x42bt1h2HaZ7W6i2IokS+r0I1/W1MOtLf6QM9XXM3aloo7Kg67WGfhglejN7pEO1/Ney7N//ABp5qgB0T7TQAAAAAElFTkSuQmCC",
     },
     aboutHeroImage: {
       name: `${fullName} | About Image`,
-      src: `/images/branding/hero-about.png`,
+      src: `/images/branding/hero-about.webp`,
       blurURL:
-        "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAALCAYAAABCm8wlAAAAAXNSR0IArs4c6QAAAVZJREFUKFMFwUsoRFEAgOH/zDjGzBBTlGg8Qh5JiGxIsWCHspFXkZRpCFkpe7FRbFgoLKxloURemYUNJSQkRA0ZY3LNvde9x/eJ6fk55fb68OhxmhpqSUkyCZ3f4P0OcxOViMDMjLISXBg4qMnPpsKfzl/kjcvzKzRbIrrGxpVMcPIR+eL6+AhL0wgOdVFWXEaybSM6RqeUL83HReiU9JdLstxwZ0gGu9t4dvkRAxMBlZFXztnOFiN+i9RYhPucSh51SdyVgugNDKjM7Fy0zzAFTxeIryjh2mbe4zZOhxOxsrGqSpIUGVaMp/1tDE2nvKWdg9co63shRFtTvVoM9iEdEHu8JWaY5BSW8mP80T+7jJifHFad9ZV4ZSJOywKlEIBpGixtHSBO1hZUlkcipcStbBy2jaXrhDWNX81E9LU2qp66UoqqqvEISDRNrPgvm7uHPLx98A9TOJLbqTgCqgAAAABJRU5ErkJggg==",
+        "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAIAAAACUFjqAAAACXBIWXMAAAsTAAALEwEAmpwYAAABQUlEQVR4nAE2Acn+AF9zcnOJiFVxclJyckFQUU5TV5mRh8q9raqSkMKqoAA9V2J3jZFVZWsjMDQRCAcUCAcUEBCgjHuwopWhoJ0AT2twiaKmSm15PEFCfEQsrVc3SycffWZVmoN0cZCdAFZgU5CkpU1kaU9XVKNkRrNOK5NkT2JwbFdZV1NfYQBaZVqKm5dieXN5fnKDTDSCNR5/eGxkf3ppeHJ1hH0AipaSnqejw6+e16aPrFQxpEoq36SQ1r+vi46IeIB9ACUmJcifjve5oO25o9B6WsN3WPO2oPq4n6J2aAUGCABJPzruuaLqtZ/xuaLprJTpqZL0t6D0uKHztZ83LCgAkXtv8L6m3K2X8beg8rWe8rae8rOb4KKL+bigg2FWAMGjk/bIs9SokuqynPCym/Cwme6tlsuRe/e6osqSgMoNnPnNXe+IAAAAAElFTkSuQmCC",
     },
     // ADD MORE IMAGES HERE IF NEEDED, MAKE SURE TO ADD BLUR DATA URL FROM HERE ( https://blur-data-url.com/ )
     // ALSO UPDATE THE BLUR URLS IF YOU UPDATE ANY IMAGES
@@ -29,6 +29,8 @@ const SiteConfig = {
   location: "Dhaka, Bangladesh",
   gender: "male",
   heroDescription: `${title} with over ${yearsOfExperience} years of professional experience and ${projectDepthYears} years of project depth. I architect end-to-end SaaS products across web, mobile, and desktop, and ship production-grade AI/ML pipelines.`,
+  // Short SEO description (<=155 chars) used for meta description / OG / Twitter.
+  seoDescription: `${title} building end-to-end SaaS across web, mobile, and desktop, plus production-grade AI/ML pipelines. ${yearsOfExperience}+ years of experience.`,
   footerDescription: `${title} specializing in scalable web, mobile, and desktop ecosystems with hands-on AI/ML experience.`,
   languages: ["English", "Bengali"],
   // Contact

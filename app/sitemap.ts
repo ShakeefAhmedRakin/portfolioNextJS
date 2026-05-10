@@ -2,6 +2,10 @@ import { achievements, projects, research } from "@/.velite";
 import { siteNavigation } from "@/content/site-navigation";
 import { MetadataRoute } from "next";
 
+// Frozen at build time so the sitemap reports a stable lastModified for static
+// pages instead of "right now" on every crawl.
+const BUILD_TIME = new Date().toISOString();
+
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   return [
     // NAVIGATION LINKS
@@ -10,7 +14,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       .map((link) => ({
         url: `${process.env.WEBSITE_URL}${link.href}`,
         priority: link.href === "/" ? 1 : 0.8,
-        lastModified: new Date().toISOString(),
+        lastModified: BUILD_TIME,
       })),
     // PROJECTS
     ...projects.map((project) => ({

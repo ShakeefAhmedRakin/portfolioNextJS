@@ -3,17 +3,10 @@
 @import "tailwindcss-intersect";
 @import "tw-animate-css";
 
-@font-face {
-  font-family: "Roboto";
-  src: url("/fonts/roboto-variable-font.ttf") format("truetype");
-  font-weight: 100 900;
-  font-style: normal;
-}
-
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
-  --font-roboto: "Roboto";
+  --font-roboto: var(--font-roboto-next);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);

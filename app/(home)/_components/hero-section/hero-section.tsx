@@ -1,11 +1,7 @@
 import { GetInTouchDialog } from "@/components/navigation/get-in-touch-dialog";
 import { Button, buttonVariants } from "@/components/ui/button";
 import SocialLinks from "@/components/ui/social-links";
-import {
-  headingVariants,
-  TypographyH1,
-  TypographyP,
-} from "@/components/ui/typography";
+import { TypographyH1, TypographyP } from "@/components/ui/typography";
 
 import { SectionWrapper } from "@/components/ui/wrappers";
 import SiteConfig from "@/content/site-config";
@@ -21,16 +17,14 @@ export default function HeroSection() {
       wrapperClassName=""
     >
       <div className="animate-fade-up animate-ease animate-delay-200 animate-duration-[1500ms] animate-once flex-1 space-y-2.5">
-        <span
-          className={headingVariants({
-            level: "h3",
-            className: "text-foreground/65",
-            weight: "light",
-          })}
-        >
-          {SiteConfig.title}
-        </span>
-        <TypographyH1 className="mt-2">{SiteConfig.fullName}</TypographyH1>
+        {/* Single H1 for SEO (contains both title + name keywords),
+            visually rendered as title-above-name to match the original look. */}
+        <TypographyH1>
+          <span className="text-foreground/65 mb-2 block text-2xl font-light -tracking-[0.6px]">
+            {SiteConfig.title} <span className="sr-only"> | </span>
+          </span>
+          {SiteConfig.fullName}
+        </TypographyH1>
 
         <SocialLinks className="flex gap-3" />
         <TypographyP className="text-foreground/65">
@@ -67,8 +61,10 @@ export default function HeroSection() {
         <Image
           src={SiteConfig.gallery.mainHeroImage.src}
           priority
+          fetchPriority="high"
           height={350}
           width={350}
+          sizes="(min-width: 1024px) 350px, 70vw"
           blurDataURL={SiteConfig.gallery.mainHeroImage.blurURL}
           placeholder="blur"
           draggable={false}

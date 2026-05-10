@@ -1,0 +1,581 @@
+Skip to main content
+Logo SEO Site Checkup
+Save Report
+You're viewing a free snapshot. Unlock full monitoring, AI visibility tracking, and weekly reports.
+
+Unlock the Full Report
+SEO Report forhttps://shakeefahmedrakin.com
+Your general SEO Checkup Score
+
+
+Download PDF
+SEO Score
+83/100
+Average SEO score of top 100 sites: 75%
+This webpage received an SEO score of 83 out of 100, which is higher than the average score of 75. Our analysis has identified 8 SEO issues that can be addressed to further enhance your website's performance and improve its search engine visibility.
+
+8 Failed
+1 Warnings
+49 Passed
+Want to fix these issues and track your progress?
+Fix my SEO Issues
+Issues to fix
+HIGH
+To improve the website experience for your visitors, it is recommended to eliminate any render-blocking resources on this webpage.
+Details
+HIGH
+To ensure that Search Engines can accurately identify the topic of this webpage, it is important to include the most common keywords in the title tag, meta description, and heading tags.
+Details
+MEDIUM
+Serving resources (images, JS, CSS) from a CDN service, could improve website loading times, reduce bandwidth costs and increase content availability and redundancy.
+Details
+MEDIUM
+Serve properly sized images to reduce page loading times and to improve user's experience.
+Details
+MEDIUM
+Avoid using distorted images, as they can have a negative impact on the user experience.
+Details
+MEDIUM
+Add a Google Analytics script to this website to help in diagnosing potential SEO issues by monitoring site visitors and traffic sources.
+Details
+LOW
+Consider reducing the HTML size to improve loading times and retain visitors.
+Details
+LOW
+Using more than 20 HTTP requests on a webpage can negatively impact the loading time.
+Details
+Common SEO issues
+Score:
+76
+Failed:
+4
+Warnings:
+0
+Passed:
+18
+Meta Title Test
+100% of top 100 sites passed
+This webpage is using a title tag.
+Text: Shakeef Ahmed Rakin | Senior Full Stack Engineer
+Length: 48 characters
+Meta Description Test
+92% of top 100 sites passed
+This webpage is using a meta description tag.
+Text: Senior Full Stack Engineer with over 2 years of professional experience and 4+ years of project depth. I architect end-to-end SaaS products across web, mobile, and desktop, and ship production-grade AI/ML pipelines.
+Length: 215 characters
+Google Search Results Preview Test
+Desktop version
+Mobile version
+Social Media Meta Tags Test
+89% of top 100 sites passed
+This webpage is using social media meta tags.
+Open Graph Meta Tags
+og:title	Shakeef Ahmed Rakin | Senior Full Stack Engineer
+og:description	Senior Full Stack Engineer with over 2 years of professional experience and 4+ years of project depth. I architect end-to-end SaaS products across web, mobile, and desktop, and ship production-grade AI/ML pipelines.
+og:url	https://shakeefahmedrakin.com
+og:site_name	Shakeef Ahmed Rakin
+og:image	https://shakeefahmedrakin.com/api/og?title=Shakeef+Ahmed+Rakin&subtitle=Senior+Full+Stack+Engineer
+og:image:alt	Shakeef Ahmed Rakin | Senior Full Stack Engineer
+og:type	website
+Twitter Card Meta Tags
+twitter:card	summary_large_image
+twitter:creator	Shakeef Ahmed Rakin
+twitter:title	Shakeef Ahmed Rakin | Senior Full Stack Engineer
+twitter:description	Senior Full Stack Engineer with over 2 years of professional experience and 4+ years of project depth. I architect end-to-end SaaS products across web, mobile, and desktop, and ship production-grade AI/ML pipelines.
+twitter:image	https://shakeefahmedrakin.com/api/og?title=Shakeef+Ahmed+Rakin&subtitle=Senior+Full+Stack+Engineer
+twitter:image:alt	Shakeef Ahmed Rakin | Senior Full Stack Engineer
+Most Common Keywords Test
+There is likely no optimal keyword density (search engine algorithms have evolved beyond keyword density metrics as a significant ranking factor). It can be useful, however, to note which keywords appear most often on your page and if they reflect the intended topic of your page. More importantly, the keywords on your page should appear within natural sounding and grammatically correct copy.
+Keywords Usage Test
+48% of top 100 sites passed
+The most common keywords of this webpage are not distributed across the important HTML tags! Primary keywords should appear in title tag, meta description and heading tags to help Search Engines to properly identify the topic of this webpage.
+Keyword
+Title tag
+Meta description
+Headings
+view
+stack
+desktop
+profile
+development
+Keywords Cloud Test
+achievementsagriculturalahmedakinamericanappsassessingauthoredawardsbalancebasedbinarizedbloodbnnsbuildingbuiltcarboncrossdesigneddesktopdetailsdeveloperdevelopmentdrizzleelectronemissionsengineerexperienceexpressfastapifirebasegenerationgithubhackathonhackathonsholosholosielanguagelearninglegacylinkedinmachinemanagementmanagingmediummobilemodelmodelsmodulesmongodbmonthsmultimultiplenetworksneuralnodeongoingopenoverflowpapersperformancepipelinesplatformpodcastportfoliopostgresqlproductionproductsprofessionalprofileprojectspublicpublishedrakinreactrealrecognitionresearchresourcesresumeroadsaasscalableseniorshadcnshakeefsignsoftwaresourcestackteamstemplatetouchtraditionaltypescriptusingviewworkyearyears
+Related Keywords Test
+Related Keywords
+See which keywords rank your URL in Google’s top 20
+Get key keyword metrics like average position, search volume, CPC, and more.
+
+Get Keyword Metrics
+
+Competitor Domains Test
+Related Keywords
+Understand your competitors' SEO and backlink profile
+Get related competitors and their domain authority score in relation to your domain.
+
+Get Competitor Info
+
+Heading Tags Test
+62% of top 100 sites passed
+This webpage contains headings tags.
+H1 tags
+Shakeef Ahmed Rakin
+H2 tags
+What I work on
+Where I've worked
+Hackathons and awards
+Things I've built
+Papers I've co-authored
+Recent writing
+Robots.txt Test
+99% of top 100 sites passed
+This website is using a robots.txt file.
+https://shakeefahmedrakin.com/robots.txt
+Sitemap Test
+83% of top 100 sites passed
+This website has a sitemap file.
+https://shakeefahmedrakin.com/sitemap.xml
+Image Alt Test
+78% of top 100 sites passed
+All "img" tags from this webpage have the required "alt" attribute.
+Responsive Image Test
+29% of top 100 sites passed
+Not all images in this webpage are properly sized! This webpage is serving images that are larger than needed for the size of the user's viewport.
+
+See results list
+
+How to fix
+Image Aspect Ratio Test
+75% of top 100 sites passed
+Not all image display dimensions match the natural aspect ratio! Fix aspect ratio issues to avoid distorted images on this website!
+
+See results list
+
+How to fix
+Deprecated HTML Tags Test
+94% of top 100 sites passed
+This webpage does not use HTML deprecated tags.
+Google Analytics Test
+72% of top 100 sites passed
+A Google Analytics script is not detected on this page. While there are several tools available to monitor your site's visitors and traffic sources, Google Analytics is a free, commonly recommended program to help diagnose potential SEO issues.
+
+How to fix
+Favicon Test
+100% of top 100 sites passed
+favicon
+This website appears to have a favicon.
+Backlinks Test
+Related Keywords
+Get a full and detailed list of your backlinks
+See every website linking to yours, along with detailed backlink data.
+
+Monitor your Backlinks
+
+JS Error Test
+83% of top 100 sites passed
+There are no severe JavaScript errors on this webpage.
+Console Errors Test
+27% of top 100 sites passed
+This webpage doesn't have any warnings or errors caught by the Chrome DevTools Console.
+Charset Declaration Test
+96% of top 100 sites passed
+This webpage has a character encoding declaration.
+Content-Type: text/html; charset=utf-8
+Speed optimizations
+Score:
+81
+Failed:
+4
+Warnings:
+0
+Passed:
+16
+HTML Page Size Test
+23% of top 100 sites passed
+The size of this webpage's HTML is 90.67 Kb, and is greater than the average size of 33 Kb! This can lead to slower loading times, lost visitors, and decreased revenue. Good steps to reduce HTML size include: using HTML compression, CSS layouts, external style sheets, and moving javascript to external files.
+
+How to fix
+DOM Size Test
+56% of top 100 sites passed
+The Document Object Model (DOM) of this webpage has 479 nodes which is less than the recommended value of 1,500 nodes.
+HTML Compression/GZIP Test
+99% of top 100 sites passed
+This webpage is successfully compressed using br compression on your code. The HTML code is compressed from 357.86 Kb to 90.67 Kb (75% size savings). This helps ensure a faster loading webpage and improved user experience.
+Site Loading Speed Test
+71% of top 100 sites passed
+The loading time of this webpage (measured from N. Virginia, US) is around 1.17 seconds and this is under the average loading speed which is 5 seconds.
+Related Keywords
+Accurate historical loading speed monitor and reports
+Get detailed and accurate loading speed reports for your websites and see how your pages are being loaded over time.
+
+Monitor Loading Speed
+
+JS Execution Time Test
+53% of top 100 sites passed
+The JavaScript code used by this webpage is executed in less than 2 seconds.
+Page Objects Test
+7% of top 100 sites passed
+This webpage is using more than 20 http requests, which can slow down page loading and negatively impact user experience!
+Content size by content type
+Content type
+Percent
+Size
+font
+30.7 %
+256.97 Kb
+javascript
+26.2 %
+219.41 Kb
+image
+23.1 %
+193.15 Kb
+other
+14.0 %
+117.46 Kb
+html
+4.8 %
+39.94 Kb
+css
+1.2 %
+9.79 Kb
+TOTAL
+100%
+836.73 Kb
+Requests by content type
+Content type
+Percent
+Requests
+javascript
+45.9 %
+17
+image
+32.4 %
+12
+other
+13.5 %
+5
+html
+2.7 %
+1
+css
+2.7 %
+1
+font
+2.7 %
+1
+TOTAL
+100%
+37
+Content size by domain
+Domain
+Percent
+Size
+shakeefahmedrakin.com
+95.7 %
+800.79 Kb
+api.rss2json.com
+4.3 %
+35.93 Kb
+TOTAL
+100%
+836.73 Kb
+Requests by domain
+Domain
+Percent
+Requests
+shakeefahmedrakin.com
+97.3 %
+36
+api.rss2json.com
+2.7 %
+1
+TOTAL
+100%
+37
+CDN Usage Test
+95% of top 100 sites passed
+This webpage is not serving resources (images, javascript and css) from CDNs!
+
+See results list
+
+How to fix
+Modern Image Format Test
+43% of top 100 sites passed
+This webpage is using images in a modern format.
+Image Metadata Test
+72% of top 100 sites passed
+This webpage is not using images with large metadata.
+Image Caching Test
+95% of top 100 sites passed
+This website is using cache headers for images and the browsers will display these images from the cache.
+JavaScript Caching Test
+96% of top 100 sites passed
+This webpage is using cache headers for all JavaScript resources.
+CSS Caching Test
+98% of top 100 sites passed
+This webpage is using cache headers for all CSS resources.
+JavaScript Minification Test
+98% of top 100 sites passed
+All JavaScript files used by this webpage are minified.
+
+See results list
+CSS Minification Test
+100% of top 100 sites passed
+All CSS resources used by this webpage are minified.
+
+See results list
+Render Blocking Resources Test
+15% of top 100 sites passed
+This webpage is using render blocking resources! Eliminating render-blocking resources can help this webpage to load significantly faster and will improve the website experience for your visitors.
+
+See results list
+
+How to fix
+URL Redirects Test
+97% of top 100 sites passed
+This URL doesn't have any redirects (which could potentially cause site indexation issues and site loading delays).
+Time To First Byte Test
+99% of top 100 sites passed
+The Time To First Byte value of this webpage is 0.001 seconds. To provide a good user experience, Google recommends that sites should strive to have a TTFB of 0.8 seconds or less.
+0.001 s0.8 s1.8 s
+First Contentful Paint Test
+90% of top 100 sites passed
+The First Contentful Paint value of this webpage is 0.936 seconds. To provide a good user experience, Google recommends that sites should strive to have a First Contentful Paint value of 1.8 seconds or less.
+0.936 s1.8 s3 s
+Largest Contentful Paint Test
+77% of top 100 sites passed
+The Largest Contentful Paint duration of this webpage is 0.0 seconds. To provide a good user experience, Google recommends that sites should strive to have Largest Contentful Paint of 2.5 seconds or less.
+0 s2.5 s4 s
+Cumulative Layout Shift Test
+91% of top 100 sites passed
+The CLS score of this webpage is 0.0000. To provide a good user experience, Google recommends that sites should strive to have a CLS score of 0.1 or less.
+00.10.25
+Server and security
+Score:
+100
+Failed:
+0
+Warnings:
+0
+Passed:
+7
+URL Canonicalization Test
+93% of top 100 sites passed
+https://shakeefahmedrakin.com/ and https://www.shakeefahmedrakin.com/ resolve to the same URL.
+SSL Checker and HTTPS Test
+100% of top 100 sites passed
+This website is successfully using HTTPS, a secure communication protocol over the Internet.
+The certificate is not used before the activation date.
+The certificate has not expired.
+The hostname "shakeefahmedrakin.com" is correctly listed in the certificate.
+The certificate should be trusted by all major web browsers.
+The certificate was not revoked.
+The certificate was signed with a secure hash.
+Certificate Chain:
+Server certificate
+Common Name
+shakeefahmedrakin.com
+Subject Alternative Names
+shakeefahmedrakin.com
+Not Valid Before
+Sat, May 9, 2026 at 3:15:09 PM GMT+6
+Not Valid After
+Fri, August 7, 2026 at 3:15:08 PM GMT+6
+Signature Algorithm
+sha256WithRsaEncryption
+Issuer
+R13
+Intermediate certificate
+Common Name
+R13
+Organization
+Let's Encrypt
+Location
+US
+Not Valid Before
+Wed, March 13, 2024 at 6:00:00 AM GMT+6
+Not Valid After
+Sat, March 13, 2027 at 5:59:59 AM GMT+6
+Signature Algorithm
+sha256WithRsaEncryption
+Issuer
+ISRG Root X1
+Root certificate
+Common Name
+ISRG Root X1
+Organization
+Internet Security Research Group
+Location
+US
+Not Valid Before
+Thu, June 4, 2015 at 5:04:38 PM GMT+6
+Not Valid After
+Mon, June 4, 2035 at 5:04:38 PM GMT+6
+Signature Algorithm
+sha256WithRsaEncryption
+Issuer
+ISRG Root X1
+Mixed Content Test (HTTP over HTTPS)
+100% of top 100 sites passed
+This webpage does not use mixed content - both the initial HTML and all other resources are loaded over HTTPS.
+HTTP2 Test
+99% of top 100 sites passed
+This webpage is using the HTTP/2 protocol.
+HSTS Test
+84% of top 100 sites passed
+This webpage is using the Strict-Transport-Security header.
+strict-transport-security:max-age=63072000
+Plaintext Emails Test
+97% of top 100 sites passed
+This webpage does not include email addresses in plaintext.
+Unsafe Cross-Origin Links Test
+45% of top 100 sites passed
+This webpage is not using target="_blank" links without rel="noopener" or rel="noreferrer" attribute.
+Mobile usability
+Score:
+100
+Failed:
+0
+Warnings:
+0
+Passed:
+3
+Meta Viewport Test
+92% of top 100 sites passed
+This webpage is using a viewport meta tag.
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+Media Query Responsive Test
+98% of top 100 sites passed
+This webpage is using CSS media queries, which is the base for responsive design functionalities.
+Mobile Snapshot Test
+Mobile view
+Advanced SEO
+Score:
+98
+Failed:
+0
+Warnings:
+1
+Passed:
+8
+Structured Data Test
+66% of top 100 sites passed
+This webpage is using structured data.
+
+See results list
+Custom 404 Error Page Test
+80% of top 100 sites passed
+This website is using a custom 404 error page. We recommend to have a custom 404 error page in order to improve the website's user experience by letting users know that only a specific page is missing/broken (and not the entire site), providing them helpful links, the opportunity to report bugs, and potentially track the source of broken links.
+Noindex Tag Test
+99% of top 100 sites passed
+This webpage does not use the noindex meta tag. This means that it can be indexed by search engines.
+Canonical Tag Test
+93% of top 100 sites passed
+This webpage is using the canonical link tag. This tag specifies that the URL: https://shakeefahmedrakin.com/ is preferred to be used in search results. Please ensure that this specification is correct, as canonical tags are often hard-coded and may not always reflect the latest changes in a site's URL structure.
+<link href="https://shakeefahmedrakin.com" rel="canonical"/>
+Nofollow Tag Test
+This webpage does not use the nofollow meta tag. This means that search engines will crawl all links from this webpage.
+Disallow Directive Test
+The robots.txt file does not use the disallow directive. This means that the whole website can be crawled by search engines.
+Meta Refresh Test
+98% of top 100 sites passed
+This webpage is not using a meta refresh tag.
+SPF Records Test
+94% of top 100 sites passed
+This DNS server is using an SPF record.
+v=spf1 include:spf.efwd.registrar-servers.com ~all
+Ads.txt Validation Test
+67% of top 100 sites passed
+This website doesn't use an ads.txt file! Ads.txt is a text file that contains a list of Authorized Digital Sellers. The purpose of ads.txt files is to give advertisers and advertising networks the ability to verify who is allowed to sell advertising on your website.
+SEO Report forhttps://shakeefahmedrakin.com
+Your general SEO Checkup Score
+
+
+Download PDF
+SEO Score
+83/100
+Average SEO score of top 100 sites: 75%
+This webpage received an SEO score of 83 out of 100, which is higher than the average score of 75. Our analysis has identified 8 SEO issues that can be addressed to further enhance your website's performance and improve its search engine visibility.
+
+8 Failed
+1 Warnings
+49 Passed
+
+Dominate search on Google and AI Engines.
+Join 85,000+ SaaS & e-commerce teams already winning search.
+
+Start for Free
+General
+8
+1
+49
+Common SEO issues
+4
+0
+18
+Speed optimizations
+4
+0
+16
+Server and security
+0
+0
+7
+Mobile usability
+0
+0
+3
+Advanced SEO
+0
+1
+8
+Complete SEO & AI monitoring
+
+Dominate search today on Google and AI Engines.
+Join 85,000+ SaaS Marketers, Growth Agencies, Content-Led Companies and E-commerce Brands.
+
+Start for Free
+See Pricing
+Dashboard preview showing SEO site checkup metrics, page group insights, and issue prioritization
+Logo SEO Site Checkup
+Website URL
+AI brand visibility. Domain-level SEO audits. Keyword tracking. Backlinks checker. Plus much more, all in one platform.
+
+Follow us on LinkedIn (opens in new tab)
+Follow us on Facebook (opens in new tab)
+Follow us on Instagram (opens in new tab)
+Follow us on X (opens in new tab)
+Product
+Free Tools
+Pricing
+Articles
+Company
+About Us
+FAQs
+SEO Checkups
+Contact
+Features
+AI Content Analysis
+Backlinks Checker
+Deep Domain Analysis
+Keyword Position Tracker
+Keyword Research
+LLM Visibility Checker
+Site Speed & Outage
+Technical SEO Audits
+Top Keywords
+White Label Reports
+Use Cases
+Content-Led Companies
+E-commerce Brands
+Growth Agencies
+SaaS Marketers
+Comparisons
+Ahrefs
+Peec AI
+Profound
+SE Ranking
+Semrush
+Surfer SEO
+© SEO Site Checkup 2013 - 2026 • All rights reserved.
+
+Terms of Service  •  Privacy Policy  •  Refund Policy

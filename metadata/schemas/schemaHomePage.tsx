@@ -38,8 +38,8 @@ export default function SetSchemaHomePage() {
           "@id": organizationId,
         },
         name: `${SiteConfig.fullName} | ${SiteConfig.title}`,
-        description: SiteConfig.heroDescription,
-        headline: SiteConfig.fullName,
+        description: SiteConfig.seoDescription,
+        headline: `${SiteConfig.fullName} | ${SiteConfig.title}`,
       },
     ],
   });

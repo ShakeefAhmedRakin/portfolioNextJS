@@ -1,5 +1,4 @@
 import SiteConfig from "@/content/site-config";
-import { siteSocials } from "@/content/site-socials";
 import type { WebSite } from "schema-dts";
 import { mainHeroImageId } from "./main-hero-image";
 import { personId } from "./person";
@@ -8,7 +7,6 @@ import { siteNavigation } from "@/content/site-navigation";
 import { expertiseContent } from "@/content/home/expertise-section";
 import { skillSets } from "@/content/skills/skills";
 import { achievements, projects } from "@/.velite";
-// import { achievements, projects } from "@/.velite";
 
 export const websiteId = `${process.env.WEBSITE_URL}/#website`;
 
@@ -45,20 +43,6 @@ export const websiteJsonLd: WebSite = {
     ...skillSets.flatMap((group) => group.skills.map((skill) => skill.name)),
   ],
   inLanguage: "en-US",
-  potentialAction: [
-    ...siteNavigation.map((link) => ({
-      "@type": "ViewAction" as const,
-      name: `View ${link.label} Page`,
-      target: link.isExternal
-        ? link.href
-        : `${process.env.WEBSITE_URL}${link.href}`,
-    })),
-    ...siteSocials.map((link) => ({
-      "@type": "FollowAction" as const,
-      name: `Follow ${link.name}`,
-      target: link.url,
-    })),
-  ],
   hasPart: [
     ...siteNavigation
       .filter((navItem) => !navItem.isExternal)

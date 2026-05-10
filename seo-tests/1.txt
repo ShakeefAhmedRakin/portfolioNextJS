@@ -1,0 +1,306 @@
+Check page
+You have 2of 3 checks left today
+
+Page URL
+https://shakeefahmedrakin.com/
+Crawl mode
+HTTP authentication: Username
+Username
+HTTP authentication: Password
+Password
+
+Checks
+
+Elements
+
+Miscellaneous
+On-page score
+Issues:
+1
+Warning
+81%
+On-page score
+Meta data
+80 %
+Page quality
+94 %
+Page structure
+87 %
+Links
+88 %
+Server
+100 %
+External factors
+3 %
+HTML page
+Himmelimherzen
+Meta title
+Shakeef Ahmed Rakin | Senior Full Stack Engineer
+
+Meta description
+Senior Full Stack Engineer with over 2 years of professional experience and 4+ years of project depth. I architect end-to-end SaaS products across web, mobile, and desktop, and ship production-grade AI/ML pipelines.
+
+URL
+https://shakeefahmedrakin.com/
+Status code
+200
+Page status
+Follow
+Index
+Language
+EN
+Response time
+0.06 sec
+File size
+344.40 kB
+Word count
+760
+To-Do List
+Tasks sorted by priority
+
+To-Do
+
+Importance
+
+Action
+Improve the text of the meta description.
+Warning
+
+More details
+light bulb icon
+Not sure how to complete these tasks?
+Our SEO software Seobility helps you fix these issues with clear, easy-to-understand reports for your entire website. Each report explains what an issue means, why it matters for SEO, and how to fix it.
+
+Learn more
+Checks
+Meta data
+80%
+Title
+
+Learn more
+3/3
+Very important
+Shakeef Ahmed Rakin | Senior Full Stack Engineer
+The length of the page title is perfect. (454 pixels out of 580 max pixel length)
+There are no duplicate words in the title.
+light bulb icon
+Tip: Each page on your website should have a unique meta title
+This check only looks at the title of the checked URL, but if multiple pages on your website have the same title, it can still hurt your rankings. To find duplicate page titles on your website, you can use Seobility's Website Audit.
+
+Learn more
+Meta description
+
+Learn more
+Warning
+1/2
+Very important
+Senior Full Stack Engineer with over 2 years of professional experience and 4+ years of project depth. I architect end-to-end SaaS products across web, mobile, and desktop, and ship production-grade AI/ML pipelines.
+The meta description is too long: 1335 pixels from max. 1000 pixels.
+Crawlability
+
+Learn more
+1/1
+Very important
+There are no problems in accessing the page.
+Canonical link
+
+Learn more
+2/2
+Important
+https://shakeefahmedrakin.com/
+There is a valid canonical link specified.
+Language
+
+Learn more
+4/4
+Low importance
+Language detected in text: en
+Language defined in HTML: en
+Server location: Germany
+The following language is defined in the HTML code: en
+Alternate/hreflang links
+
+Learn more
+1/1
+Low importance
+There are no alternate links specified on this page.
+Other meta tags
+
+Learn more
+2/2
+Low importance
+There is no rel=next meta tag on this page.
+There is no rel=prev meta tag on this page.
+Domain
+
+Learn more
+Warning
+2/3
+Low importance
+The domain name is very long.
+The domain is not a subdomain.
+The domain name does not contain any non-Latin characters.
+Page URL
+
+Learn more
+3/3
+Low importance
+No parameters were found in the URL.
+No session ID was found in the URL.
+The URL does not have too many subdirectories.
+Charset encoding
+
+Learn more
+1/1
+Low importance
+The charset encoding (UTF-8) is set correctly.
+Doctype
+
+Learn more
+2/2
+Nice to have
+The doctype HTML 5 is set correctly.
+The doctype is placed first in the HTML code.
+Favicon
+
+Learn more
+1/1
+Nice to have
+The favicon is linked correctly.
+Page quality
+94%
+Content
+
+Learn more
+10/10
+Very important
+The word count of 760 words is fine.
+18.2% of the text are stop words.
+Keywords used in the page title are also used in the page content. That's good!
+Some words from the page title are not used within H1 headings
+The page contains a list, which indicates a good text structure.
+8 paragraphs (text blocks) were found on this page.
+The text content is perfect.
+No placeholder texts or images were found.
+There are no duplicates on the site
+The average sentence length of 23.2 words is good.
+Frames
+
+Learn more
+1/1
+Very important
+This page does not use a frameset.
+Mobile optimization
+
+Learn more
+2/2
+Low importance
+A viewport (width=device-width, initial-scale=1) is provided.
+One or more Apple Touch icons are specified.
+Strong and bold tags
+
+Learn more
+1/1
+Low importance
+The usage of strong and bold tags is perfect. We recommend the use of up to 15 tags for this page.
+Image SEO
+
+Learn more
+1/1
+Low importance
+ALT text (alternative text) is correctly used on all found images.
+Social media
+
+Learn more
+Warning
+0/1
+Nice to have
+There are few social sharing options on the page. Sharing plugins can increase the page's reach on social media.
+Additional markup
+
+Learn more
+1/1
+Nice to have
+This page uses Google authorship information without an image.
+HTTPS
+
+Learn more
+2/2
+Low importance
+This page uses HTTPS to protect the privacy and integrity of information exchanged.
+All included files are also transferred via HTTPS.
+Others
+87%
+H1 heading
+
+Learn more
+Warning
+1/2
+Very important
+Shakeef Ahmed Rakin
+The H1 heading is too short (19 characters). It should be at least 20 characters long.
+Headings
+
+Learn more
+Warning
+0/1
+Important
+There are 31 headings on the page. The number of headings should be more in proportion to the amount of text.
+Link structure
+88%
+Internal links
+
+Learn more
+Warning
+2/4
+Important
+Some anchor texts are used more than once
+Some internal link anchor texts are too long.
+The number of internal links is ok.
+There are no dynamic parameters used in internal links.
+External links
+
+Learn more
+1/1
+Nice to have
+There are 15 external links on this page.
+Server configuration
+100%
+HTTP redirects
+
+Learn more
+2/2
+Very important
+The checked page does not redirect to another URL.
+The redirect of URLs with www and non-www subdomain is configured correctly.
+HTTP header
+
+Learn more
+2/2
+Important
+No X-Powered HTTP header is sent.
+This page uses compression for data transfer.
+Performance
+
+Learn more
+2/2
+Low importance
+The HTML page response time of 0,06 seconds is below the target of 0.40 seconds.
+The file size of the HTML document is fine. (344 kB)
+External factors
+3%
+Backlinks
+
+Learn more
+Warning
+0/4
+Very important
+This page has only a few links from other websites
+This page only has backlinks from 1 referring domains.
+This page only has 1 backlinks.
+This page only has backlinks from 1 different IP addresses
+light bulb icon
+Tip: Check the rest of your website for similar SEO issues
+The SEO Checker only looks at your checked URL. With Seobility’s full Website Audit, you can automatically crawl your entire website, get a prioritized to-do list, and monitor your progress over time.
+
+Learn more
