@@ -96,7 +96,10 @@ export default async function ResearchPage({
                 >
                   {currentResearch.title}
                 </h1>
-                <time dateTime={currentResearch.date} className="text-foreground/70 text-sm font-semibold">
+                <time
+                  dateTime={currentResearch.date}
+                  className="text-foreground/70 text-sm font-semibold"
+                >
                   {formatDateString(currentResearch.date)}
                 </time>
               </div>
@@ -112,7 +115,7 @@ export default async function ResearchPage({
                         aria-label={`View Publisher`}
                         className="text-primary/90 hover:text-primary/100 mx-auto flex w-fit justify-center text-sm font-light underline underline-offset-4 duration-300"
                       >
-                        <h2 className="w-fit">
+                        <h2 className="w-fit text-center">
                           {currentResearch.publisher.name}
                         </h2>
                       </Link>
@@ -162,7 +165,7 @@ export default async function ResearchPage({
                     )}
                   </div>
                 ) : (
-                  <div className="py-5 text-center text-sm text-red-500">
+                  <div className="py-1 text-center text-sm text-red-500">
                     <span>ONGOING PUBLICATION</span>
                   </div>
                 )}
@@ -198,7 +201,9 @@ export default async function ResearchPage({
                       author.name
                     )}
                   </h3>
-                  <h4 className="mt-1 text-xs font-light">{author.title}</h4>
+                  {author.title && (
+                    <h4 className="mt-1 text-xs font-light">{author.title}</h4>
+                  )}
                 </li>
               ))}
             </ol>
