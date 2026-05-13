@@ -17,7 +17,6 @@ export default function SiteFooterNavigation({
           <li key={`footer-nav-${link.ariaLabel}`}>
             <Link
               href={link.href}
-              title={link.label}
               target={link.isExternal ? "_blank" : "_self"}
               rel={link.isExternal ? "noopener noreferrer" : undefined}
               className={paragraphVariants({
@@ -25,7 +24,6 @@ export default function SiteFooterNavigation({
                 className:
                   "text-foreground/65 hover:text-foreground/80 duration-300 hover:underline",
               })}
-              aria-label={link.ariaLabel}
             >
               {link.label}
             </Link>

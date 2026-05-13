@@ -24,8 +24,6 @@ export default function ExpertiseStatStrip() {
           <li>
             <Link
               href={stat.href}
-              title={stat.ariaLabel}
-              aria-label={stat.ariaLabel}
               className="hover:text-foreground duration-300"
             >
               {stat.label}

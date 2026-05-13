@@ -111,36 +111,32 @@ export default async function ResearchPage({
                         href={currentResearch.publisher.link}
                         target="_blank"
                         rel="noopener noreferrer"
-                        title={`View Publisher`}
-                        aria-label={`View Publisher`}
-                        className="text-primary/90 hover:text-primary/100 mx-auto flex w-fit justify-center text-sm font-light underline underline-offset-4 duration-300"
+                        className="text-primary/90 hover:text-primary/100 mx-auto flex min-h-11 w-fit touch-manipulation items-center justify-center px-3 py-2 text-center text-sm font-light underline underline-offset-4 duration-300"
                       >
-                        <h2 className="w-fit text-center">
+                        <span className="block max-w-full">
                           {currentResearch.publisher.name}
-                        </h2>
+                        </span>
                       </Link>
                     ) : (
-                      <h2 className="text-center text-sm font-light">
+                      <p className="text-center text-sm font-light">
                         {currentResearch.publisher.name}
-                      </h2>
+                      </p>
                     )}
-                    <h3 className="text-center text-xs font-light">
+                    <h2 className="text-center text-xs font-light">
                       {currentResearch.publisher.department}
-                    </h3>
+                    </h2>
                   </>
                 )}
                 {currentResearch.isPublished ? (
-                  <div className="flex items-center justify-center gap-2">
+                  <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3">
                     {currentResearch.paperLinks?.link && (
                       <Link
                         href={currentResearch.paperLinks?.link}
                         target="_blank"
                         rel="noopener noreferrer"
-                        title={`View Paper`}
-                        aria-label={`View Paper`}
                         className={buttonVariants({
                           variant: "secondary",
-                          className: "bg-transparent",
+                          className: "touch-manipulation bg-transparent",
                         })}
                       >
                         <PiNewspaperLight />
@@ -152,11 +148,9 @@ export default async function ResearchPage({
                         href={currentResearch.paperLinks?.linkToPDF}
                         target="_blank"
                         rel="noopener noreferrer"
-                        title={`View PDF`}
-                        aria-label={`View PDF`}
                         className={buttonVariants({
                           variant: "secondary",
-                          className: "bg-transparent",
+                          className: "touch-manipulation bg-transparent",
                         })}
                       >
                         <PiNewspaperLight />
@@ -180,20 +174,13 @@ export default async function ResearchPage({
             <ol className="grid grid-cols-1 gap-3 md:grid-cols-2 xl:grid-cols-3">
               {currentResearch.authors.map((author) => (
                 <li key={`${currentResearch.slug}-${author.name}`}>
-                  <h3
-                    className={cn(
-                      "text-primary/95",
-                      author.link &&
-                        "text-primary/95 hover:text-primary/100 underline underline-offset-4 duration-300",
-                    )}
-                  >
+                  <h3 className="text-primary/95">
                     {author.link ? (
                       <Link
                         href={author.link}
                         target="_blank"
                         rel="noopener noreferrer"
-                        title={author.name}
-                        aria-label={`View ${author.name} profile`}
+                        className="hover:text-primary/100 inline-flex min-h-11 touch-manipulation items-center underline underline-offset-4 duration-300"
                       >
                         {author.name}
                       </Link>

@@ -4,7 +4,7 @@ import { Spotlight } from "@/components/ui/spotlight";
 import ClientObserver from "@/lib/client-observer";
 import SiteFooter from "@/components/navigation/site-footer";
 import { Toaster } from "sonner";
-
+import { VercelToolbar } from "@vercel/toolbar/next";
 import { baseMetadata } from "@/metadata/shared/base-metadata";
 import BackgroundGridOverlay from "@/components/ui/background-grid-overlay";
 import { roboto } from "./fonts";
@@ -19,6 +19,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const shouldInjectToolbar = process.env.ENVIRONMENT === "development";
   return (
     <html lang="en" className={roboto.variable}>
       <body className={`relative antialiased`}>
@@ -37,6 +38,7 @@ export default function RootLayout({
         <SiteFooter />
         <Analytics />
         <SpeedInsights />
+        {shouldInjectToolbar && <VercelToolbar />}
       </body>
     </html>
   );

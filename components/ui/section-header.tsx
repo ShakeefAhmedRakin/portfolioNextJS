@@ -32,8 +32,6 @@ export function SectionHeader({
             variant: "outline",
             className: "bg-transparent text-xs",
           })}
-          title={linkText}
-          aria-label={linkText}
         >
           {shortLinkText ? (
             <span>

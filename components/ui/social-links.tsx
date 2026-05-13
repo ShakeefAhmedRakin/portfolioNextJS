@@ -16,11 +16,13 @@ export default function SocialLinks({
           className={buttonVariants({ variant: "ghost", size: "icon" })}
           target="_blank"
           rel="noopener noreferrer"
-          aria-label={link.ariaLabel}
-          title={link.title}
         >
-          <span className="sr-only">{link.ariaLabel}</span>
-          {link.icon}
+          <span className="sr-only">
+            {link.name} (opens in new tab)
+          </span>
+          <span aria-hidden className="inline-flex">
+            {link.icon}
+          </span>
         </Link>
       ))}
     </div>

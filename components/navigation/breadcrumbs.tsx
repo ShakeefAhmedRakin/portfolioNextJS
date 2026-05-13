@@ -45,6 +45,7 @@ export function Breadcrumbs() {
       className={`scrollbar-hide w-full overflow-x-auto whitespace-nowrap transition-opacity duration-200 ${
         isVisible ? "opacity-100" : "pointer-events-none opacity-0"
       }`}
+      inert={!isVisible ? true : undefined}
     >
       <Breadcrumb>
         <BreadcrumbList className="flex-nowrap text-[11px]">

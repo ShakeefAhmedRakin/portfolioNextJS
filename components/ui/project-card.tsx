@@ -29,8 +29,6 @@ export default function ProjectCard({
       <Link
         className="relative z-10 flex h-full w-full flex-col p-6"
         href={project.permalink}
-        aria-label={`View project ${project.title}`}
-        title={`View project ${project.title}`}
       >
         <div className="flex justify-between gap-2">
           <span
@@ -104,8 +102,7 @@ export default function ProjectCard({
             placeholder="blur"
             blurDataURL={project.thumbnail.blurDataURL}
             draggable={false}
-            alt={project.title}
-            title={project.title}
+            alt={`Thumbnail preview for ${project.title}, a ${project.category} project`}
             className="bg-secondary/50 rounded-2xl object-cover object-top duration-300 md:brightness-75 md:group-hover:brightness-100"
             sizes="(max-width: 768px) 100vw, (min-width: 769px) 40vw"
           />

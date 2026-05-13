@@ -40,7 +40,6 @@ export default function AchievementsSection() {
               alt={achievement.awardTitle}
               title={achievement.awardTitle}
             />
-            <h3 className="sr-only">{achievement.awardTitle}</h3>
           </li>
         ))}
       </ul>

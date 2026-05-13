@@ -38,6 +38,7 @@ export const ScrollLink: React.FC<ScrollLinkProps> = ({
       style={style}
       title={title}
       aria-label={ariaLabel}
+      {...(Component === "button" ? { type: "button" as const } : {})}
     >
       {children}
     </Component>

@@ -18,8 +18,6 @@ export default function NavigationDesktop() {
               <li key={link.title}>
                 <Link
                   href={link.href}
-                  aria-label={link.ariaLabel}
-                  title={link.title}
                   target={link.isExternal ? "_blank" : "_self"}
                   rel={link.isExternal ? "noopener noreferrer" : undefined}
                   className={cn(

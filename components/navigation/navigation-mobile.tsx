@@ -51,9 +51,7 @@ export default function NavigationMobile() {
                   <li key={link.title}>
                     <Link
                       href={link.href}
-                      aria-label={link.ariaLabel}
                       onClick={handleDelayedClose}
-                      title={link.title}
                       target={link.isExternal ? "_blank" : "_self"}
                       rel={link.isExternal ? "noopener noreferrer" : undefined}
                       className={cn(

@@ -66,7 +66,10 @@ export const createMDXComponents = (isSmall = false) => ({
   h5: (props: React.ComponentPropsWithoutRef<"h5">) => (
     <TypographyH5 className="mt-6 mb-2 first:mt-0" {...props} />
   ),
-  p: (props: React.ComponentPropsWithoutRef<"p">) => {
+  p: ({
+    className,
+    ...props
+  }: React.ComponentPropsWithoutRef<"p">) => {
     const children = props.children;
 
     const isImageBlock =
@@ -81,8 +84,11 @@ export const createMDXComponents = (isSmall = false) => ({
 
     return (
       <TypographyP
-        className="text-foreground/80 mb-4"
         {...props}
+        className={cn(
+          "text-foreground/80 mb-4 [&_a]:mr-3",
+          className,
+        )}
         level={isSmall ? "small" : "default"}
       />
     );

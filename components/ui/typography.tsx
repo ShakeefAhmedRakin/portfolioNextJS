@@ -100,7 +100,7 @@ export function TypographyLink({
   return (
     <Link
       className={cn(
-        "text-primary/90 hover:text-primary/100 underline underline-offset-4 duration-300",
+        "text-primary/90 hover:text-primary/100 touch-manipulation inline-flex min-h-11 min-w-6 items-center px-2 py-2 underline underline-offset-4 duration-300",
         className,
       )}
       {...props}

@@ -41,14 +41,11 @@ export default function AchievementsListingPage() {
             >
               <Link
                 href={achievement.permalink}
-                title={achievement.title}
-                aria-label={`View ${achievement.title} achievement`}
                 className="relative flex h-full cursor-pointer flex-col overflow-hidden p-4"
               >
                 <Image
                   src={achievement.mainCover.src}
-                  alt={`Image for ${achievement.title}`}
-                  title={achievement.title}
+                  alt={`Cover image for ${achievement.title} — ${achievement.awardTitle}`}
                   blurDataURL={achievement.mainCover.blurDataURL}
                   placeholder="blur"
                   fill

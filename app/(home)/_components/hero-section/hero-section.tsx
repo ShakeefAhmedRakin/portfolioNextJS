@@ -38,7 +38,6 @@ export default function HeroSection() {
               size: "lg",
               variant: "outline",
             })}
-            aria-label="View about page"
             title="About Me"
             href={siteNavigationMap.ABOUT.href}
           >
@@ -48,7 +47,6 @@ export default function HeroSection() {
             <Button
               variant={"outline"}
               size={"lg"}
-              aria-label="Open get in touch dialog"
               title="Get In Touch"
               className="flex-1 bg-transparent text-xs"
             >
