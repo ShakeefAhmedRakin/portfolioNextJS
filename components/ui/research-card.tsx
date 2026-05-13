@@ -1,6 +1,6 @@
 import { Research } from "@/.velite";
 import { badgeVariants } from "./badge";
-import { cn } from "@/lib/utils";
+import { cn, formatDateString } from "@/lib/utils";
 import { ANIMATE_FADE_UP } from "@/lib/animations";
 import { headingVariants, TypographyP } from "./typography";
 import { buttonVariants } from "./button";
@@ -62,6 +62,12 @@ export default function ResearchCard({
           {paper.title}
         </h2>
       )}
+      <time
+        dateTime={paper.date}
+        className="text-foreground/70 text-xs font-semibold"
+      >
+        {formatDateString(paper.date)}
+      </time>
       <TypographyP level="small" className="text-foreground/70 line-clamp-3">
         {paper.excerpt}
       </TypographyP>

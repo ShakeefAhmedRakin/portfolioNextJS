@@ -26,9 +26,6 @@ export function sortAchievementsByDate(items: Achievements[]): Achievements[] {
 
 export function sortResearchByDate(items: Research[]): Research[] {
   return [...items].sort((a, b) => {
-    if (a.isPublished !== b.isPublished) {
-      return a.isPublished ? -1 : 1;
-    }
     const dateA = new Date(a.date).getTime();
     const dateB = new Date(b.date).getTime();
     return dateB - dateA;
