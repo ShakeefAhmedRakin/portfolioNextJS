@@ -1,7 +1,8 @@
 import { SectionWrapper } from "@/components/ui/wrappers";
 import { SectionHeader } from "@/components/ui/section-header";
-import BlogsGrid from "./blogs-grid";
+import BlogsGrid, { BlogsGridSkeleton } from "./blogs-grid";
 import { siteSocialMap } from "@/content/site-socials";
+import { Suspense } from "react";
 
 export default function BlogsSection() {
   return (
@@ -16,7 +17,9 @@ export default function BlogsSection() {
         linkHref={siteSocialMap.MEDIUM.url}
       />
 
-      <BlogsGrid />
+      <Suspense fallback={<BlogsGridSkeleton />}>
+        <BlogsGrid />
+      </Suspense>
     </SectionWrapper>
   );
 }

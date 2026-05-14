@@ -100,7 +100,7 @@ export function TypographyLink({
   return (
     <Link
       className={cn(
-        "text-primary/90 hover:text-primary/100 touch-manipulation inline-flex min-h-11 min-w-6 items-center px-2 py-2 underline underline-offset-4 duration-300",
+        "text-primary/90 hover:text-primary/100 underline underline-offset-4 duration-300",
         className,
       )}
       {...props}
@@ -182,10 +182,7 @@ export function TypographyTableHead({
   ...props
 }: HTMLAttributes<HTMLTableSectionElement>) {
   return (
-    <thead
-      className={cn("border-primary/30 border-b", className)}
-      {...props}
-    />
+    <thead className={cn("border-primary/30 border-b", className)} {...props} />
   );
 }
 
@@ -193,7 +190,9 @@ export function TypographyTableBody({
   className,
   ...props
 }: HTMLAttributes<HTMLTableSectionElement>) {
-  return <tbody className={cn("[&>tr]:border-primary/20", className)} {...props} />;
+  return (
+    <tbody className={cn("[&>tr]:border-primary/20", className)} {...props} />
+  );
 }
 
 export function TypographyTableRow({
@@ -201,10 +200,7 @@ export function TypographyTableRow({
   ...props
 }: HTMLAttributes<HTMLTableRowElement>) {
   return (
-    <tr
-      className={cn("border-primary/20 border-b", className)}
-      {...props}
-    />
+    <tr className={cn("border-primary/20 border-b", className)} {...props} />
   );
 }
 
@@ -228,9 +224,6 @@ export function TypographyTableCell({
   ...props
 }: HTMLAttributes<HTMLTableCellElement>) {
   return (
-    <td
-      className={cn("text-foreground/80 px-3 py-2", className)}
-      {...props}
-    />
+    <td className={cn("text-foreground/80 px-3 py-2", className)} {...props} />
   );
 }

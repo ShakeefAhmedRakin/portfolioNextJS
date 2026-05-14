@@ -85,10 +85,7 @@ export const createMDXComponents = (isSmall = false) => ({
     return (
       <TypographyP
         {...props}
-        className={cn(
-          "text-foreground/80 mb-4 [&_a]:mr-3",
-          className,
-        )}
+        className={cn("text-foreground/80 mb-4", className)}
         level={isSmall ? "small" : "default"}
       />
     );

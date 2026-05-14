@@ -12,7 +12,7 @@ type SiteSocial = {
 export enum SiteSocialKey {
   LinkedIn = "LINKEDIN",
   GitHub = "GITHUB",
-  StackOverflow = "STACKOVERFLOW",
+  // StackOverflow = "STACKOVERFLOW",
   Medium = "MEDIUM",
 }
 
@@ -29,12 +29,12 @@ export const siteSocials: SiteSocial[] = [
     url: "https://github.com/ShakeefAhmedRakin",
     icon: <BsGithub />,
   },
-  {
-    key: SiteSocialKey.StackOverflow,
-    name: "Stack Overflow",
-    url: "https://stackoverflow.com/users/28897060/shakeef-ahmed-rakin",
-    icon: <BsStackOverflow />,
-  },
+  // {
+  //   key: SiteSocialKey.StackOverflow,
+  //   name: "Stack Overflow",
+  //   url: "https://stackoverflow.com/users/28897060/shakeef-ahmed-rakin",
+  //   icon: <BsStackOverflow />,
+  // },
   // {
   //   key: "LeetCode",
   //   name: "LeetCode",
