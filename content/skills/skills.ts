@@ -63,7 +63,7 @@ export const skillSets = [
       },
       {
         name: "Vite",
-        image: `${imagePath}/vite.jfif`,
+        image: `${imagePath}/vitelogo.png`,
       },
       {
         name: "Turborepo",
