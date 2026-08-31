@@ -1,9 +1,16 @@
 import { Research } from "@/.velite";
-import type { ScholarlyArticle } from "schema-dts";
-import { extractImagesFromMDX } from "@/lib/utils";
+import type { FollowAction, ScholarlyArticle } from "schema-dts";
+import { extractImagesFromMDX, getWebsiteUrl } from "@/lib/utils";
 import generateImageObjectSchema from "./generate-image-object-schema";
 import { siteNavigationMap } from "@/content/site-navigation";
 import { mainHeroImageId } from "../shared/main-hero-image";
+
+function buildFollowAction(
+  name: string,
+  target: string | null | undefined,
+): FollowAction | null {
+  return target ? { "@type": "FollowAction", name, target } : null;
+}
 
 export default function GenerateResearchSchema(
   research: Research,
@@ -12,12 +19,12 @@ export default function GenerateResearchSchema(
 
   return {
     "@type": "ScholarlyArticle",
-    "@id": `${process.env.WEBSITE_URL}${research.permalink}`,
-    url: `${process.env.WEBSITE_URL}${research.permalink}`,
+    "@id": `${getWebsiteUrl()}${research.permalink}`,
+    url: `${getWebsiteUrl()}${research.permalink}`,
     headline: research.title,
     name: research.title,
     isPartOf: {
-      "@id": `${process.env.WEBSITE_URL}/#${siteNavigationMap.RESEARCH.key}`,
+      "@id": `${getWebsiteUrl()}/#${siteNavigationMap.RESEARCH.key}`,
     },
     keywords: research.keywords,
     abstract: research.abstract,
@@ -39,45 +46,20 @@ export default function GenerateResearchSchema(
         name: author.name,
         sameAs: author.link ?? undefined,
         url:
-          author.link ?? `${process.env.WEBSITE_URL}${research.permalink}`,
+          author.link ?? `${getWebsiteUrl()}${research.permalink}`,
       };
     }),
     potentialAction: [
-      ...research.authors
-        .filter((author) => !!author.link)
-        .map((author) => ({
-          "@type": "FollowAction" as const,
-          name: `Follow ${author.name}`,
-          target: author.link!,
-        })),
-      ...(research.paperLinks?.link
-        ? [
-            {
-              "@type": "FollowAction" as const,
-              name: `Follow Paper Link`,
-              target: research.paperLinks.link,
-            },
-          ]
-        : []),
-      ...(research.paperLinks?.linkToPDF
-        ? [
-            {
-              "@type": "FollowAction" as const,
-              name: `Follow Link To PDF`,
-              target: research.paperLinks.linkToPDF,
-            },
-          ]
-        : []),
-      ...(research.isPublished && research.publisher && research.publisher.link
-        ? [
-            {
-              "@type": "FollowAction" as const,
-              name: `Follow Link To ${research.publisher.name}`,
-              target: research.publisher.link,
-            },
-          ]
-        : []),
-    ],
+      ...research.authors.map((author) =>
+        buildFollowAction(`Follow ${author.name}`, author.link),
+      ),
+      buildFollowAction("Follow Paper Link", research.paperLinks?.link),
+      buildFollowAction("Follow Link To PDF", research.paperLinks?.linkToPDF),
+      buildFollowAction(
+        `Follow Link To ${research.publisher?.name}`,
+        research.isPublished ? research.publisher?.link : null,
+      ),
+    ].filter((action): action is FollowAction => action !== null),
     image:
       imagesInResearch.length > 0
         ? imagesInResearch.map((image) =>

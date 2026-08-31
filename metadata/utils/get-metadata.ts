@@ -1,5 +1,6 @@
 import SiteConfig from "@/content/site-config";
 import { Metadata } from "next";
+import { getWebsiteUrl } from "@/lib/utils";
 
 export default function getMetadata({
   title,
@@ -18,14 +19,14 @@ export default function getMetadata({
     title: title,
     description: description,
     alternates: {
-      canonical: `${process.env.WEBSITE_URL}${pathParam}`,
+      canonical: `${getWebsiteUrl()}${pathParam}`,
     },
     ...(robots ? { robots } : {}),
     openGraph: {
       title: title,
       siteName: `${SiteConfig.fullName}`,
       type: "website",
-      url: `${process.env.WEBSITE_URL}${pathParam}`,
+      url: `${getWebsiteUrl()}${pathParam}`,
       locale: "en_US",
       images: [
         {
@@ -41,8 +42,8 @@ export default function getMetadata({
     twitter: {
       card: "summary_large_image",
       title: title,
-      creator: "@shakeefahmed",
-      site: "@shakeefahmed",
+      creator: SiteConfig.twitterHandle,
+      site: SiteConfig.twitterHandle,
       images: [
         {
           url: openGraphImageUrl,

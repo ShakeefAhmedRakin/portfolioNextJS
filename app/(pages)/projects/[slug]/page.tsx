@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/typography";
 import { ArticleWrapper } from "@/components/ui/wrappers";
 import SiteMetadata from "@/metadata/site-metadata";
-import { ANIMATE_FADE_UP } from "@/lib/animations";
+import { ANIMATE_FADE_UP } from "@/lib/utils/animations";
 import { cn, formatDateString } from "@/lib/utils";
 import SetSchemaProjectPage from "@/metadata/schemas/schemaProjectPage";
 import getMetadata from "@/metadata/utils/get-metadata";

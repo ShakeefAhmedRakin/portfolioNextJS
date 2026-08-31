@@ -4,9 +4,10 @@ import SiteConfig from "@/content/site-config";
 import { personId } from "../shared/person";
 import { organizationId } from "../shared/organization";
 import SiteMetadata from "@/metadata/site-metadata";
-import { siteSocials } from "@/content/site-socials";
 import generateImageObjectSchema from "../generators/generate-image-object-schema";
 import { siteNavigationMap } from "@/content/site-navigation";
+import { getSiteSameAs } from "../shared/site-links";
+import { getWebsiteUrl } from "@/lib/utils";
 
 export default function SetSchemaAboutPage() {
   const graph = BaseSchema({
@@ -14,8 +15,8 @@ export default function SetSchemaAboutPage() {
     currentPageSchemas: [
       {
         "@type": "ProfilePage",
-        "@id": `${process.env.WEBSITE_URL}/#${siteNavigationMap.ABOUT.key}`,
-        url: `${process.env.WEBSITE_URL}${siteNavigationMap.ABOUT.href}`,
+        "@id": `${getWebsiteUrl()}/#${siteNavigationMap.ABOUT.key}`,
+        url: `${getWebsiteUrl()}${siteNavigationMap.ABOUT.href}`,
         mainEntity: {
           "@id": personId,
         },
@@ -23,11 +24,11 @@ export default function SetSchemaAboutPage() {
           "@id": websiteId,
         },
         primaryImageOfPage: {
-          "@id": `${process.env.WEBSITE_URL}${siteNavigationMap.ABOUT.href}/#about-main-image`,
+          "@id": `${getWebsiteUrl()}${siteNavigationMap.ABOUT.href}/#about-main-image`,
         },
         image: [
           generateImageObjectSchema({
-            id: `${process.env.WEBSITE_URL}${siteNavigationMap.ABOUT.href}/#about-main-image`,
+            id: `${getWebsiteUrl()}${siteNavigationMap.ABOUT.href}/#about-main-image`,
             title: SiteConfig.gallery.aboutHeroImage.name,
             src: SiteConfig.gallery.aboutHeroImage.src,
             pageUrl: siteNavigationMap.ABOUT.href,
@@ -36,12 +37,7 @@ export default function SetSchemaAboutPage() {
         about: {
           "@id": personId,
         },
-        sameAs: [
-          ...[process.env.WEBSITE_URL].filter(
-            (url): url is string => typeof url === "string",
-          ),
-          ...siteSocials.map((social) => social.url),
-        ],
+        sameAs: getSiteSameAs(),
         author: {
           "@id": personId,
         },

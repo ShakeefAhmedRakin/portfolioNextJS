@@ -2,8 +2,8 @@ import { Achievements } from "@/.velite";
 import type { BlogPosting } from "schema-dts";
 import { personId } from "../shared/person";
 import { organizationId } from "../shared/organization";
-import { extractImagesFromMDX } from "@/lib/utils";
-import generateImageObjectSchema from "./generate-image-object-schema";
+import { extractImagesFromMDX, getWebsiteUrl } from "@/lib/utils";
+import { buildImageList } from "./generate-image-object-schema";
 import { siteNavigationMap } from "@/content/site-navigation";
 
 export default function GenerateAchievementSchema(
@@ -13,16 +13,15 @@ export default function GenerateAchievementSchema(
 
   return {
     "@type": "BlogPosting",
-    "@id": `${process.env.WEBSITE_URL}${achievement.permalink}`,
-    url: `${process.env.WEBSITE_URL}${achievement.permalink}`,
+    "@id": `${getWebsiteUrl()}${achievement.permalink}`,
+    url: `${getWebsiteUrl()}${achievement.permalink}`,
     name: achievement.title,
     headline: achievement.title,
     description: achievement.excerpt,
     dateModified: achievement.date,
     datePublished: achievement.date,
     isPartOf: {
-      "@type": "Blog",
-      "@id": `${process.env.WEBSITE_URL}/#${siteNavigationMap.ACHIEVEMENTS.key}`,
+      "@id": `${getWebsiteUrl()}/#${siteNavigationMap.ACHIEVEMENTS.key}`,
     },
     author: {
       "@id": personId,
@@ -33,21 +32,12 @@ export default function GenerateAchievementSchema(
     award: achievement.awardTitle,
     inLanguage: "en-US",
     mainEntityOfPage: {
-      "@id": `${process.env.WEBSITE_URL}${achievement.permalink}`,
+      "@id": `${getWebsiteUrl()}${achievement.permalink}`,
     },
-    image: [
-      generateImageObjectSchema({
-        title: achievement.title,
-        src: achievement.mainCover.src,
-        pageUrl: achievement.permalink,
-      }),
-      ...imagesInBlog.map((image) =>
-        generateImageObjectSchema({
-          title: image.title,
-          src: image.src,
-          pageUrl: achievement.permalink,
-        }),
-      ),
-    ],
+    image: buildImageList(
+      { title: achievement.title, src: achievement.mainCover.src },
+      imagesInBlog,
+      achievement.permalink,
+    ),
   };
 }

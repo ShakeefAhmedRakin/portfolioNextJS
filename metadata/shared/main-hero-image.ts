@@ -2,8 +2,9 @@ import SiteConfig from "@/content/site-config";
 
 import generateImageObjectSchema from "../generators/generate-image-object-schema";
 import { siteNavigationMap } from "@/content/site-navigation";
+import { getWebsiteUrl } from "@/lib/utils";
 
-export const mainHeroImageId = `${process.env.WEBSITE_URL}/#main-hero-image`;
+export const mainHeroImageId = `${getWebsiteUrl()}/#main-hero-image`;
 
 export const mainHeroImageJsonLd = generateImageObjectSchema({
   id: mainHeroImageId,

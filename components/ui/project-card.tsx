@@ -1,11 +1,11 @@
 import { Projects } from "@/.velite";
 import {
-  headingVariants,
+  CardHeading,
   paragraphVariants,
   TypographyP,
 } from "@/components/ui/typography";
 import { cn, formatDateString } from "@/lib/utils";
-import { ANIMATE_FADE_UP } from "@/lib/animations";
+import { ANIMATE_FADE_UP } from "@/lib/utils/animations";
 import Image from "next/image";
 import Link from "next/link";
 import { badgeVariants } from "./badge";
@@ -67,25 +67,13 @@ export default function ProjectCard({
             )}
           </span>
         </div>
-        {isHomePage ? (
-          <h3
-            className={headingVariants({
-              level: "h3",
-              className: "truncate group-hover:underline",
-            })}
-          >
-            {project.title}
-          </h3>
-        ) : (
-          <h2
-            className={headingVariants({
-              level: "h3",
-              className: "truncate group-hover:underline",
-            })}
-          >
-            {project.title}
-          </h2>
-        )}
+        <CardHeading
+          as={isHomePage ? "h3" : "h2"}
+          level="h3"
+          className="truncate group-hover:underline"
+        >
+          {project.title}
+        </CardHeading>
         <TypographyP
           className="my-1 truncate font-light group-hover:underline"
           level="small"

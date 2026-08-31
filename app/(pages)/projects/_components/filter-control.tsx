@@ -3,7 +3,7 @@ import { projectCategoriesEnum } from "@/types/enums";
 import { buttonVariants } from "@/components/ui/button";
 import { IoMdCheckmark } from "react-icons/io";
 import { cn } from "@/lib/utils";
-import { ANIMATE_FADE_UP } from "@/lib/animations";
+import { ANIMATE_FADE_UP } from "@/lib/utils/animations";
 import { siteNavigationMap } from "@/content/site-navigation";
 
 export default function FilterControls({
@@ -35,10 +35,9 @@ function FilterButton({
   const isAll = category === "All";
   const isActive = isAll ? !activeCategory : category === activeCategory;
 
-  const href = isAll
-    ? `${siteNavigationMap.PROJECTS.href}`
-    : isActive
-      ? `${siteNavigationMap.PROJECTS.href}`
+  const href =
+    isAll || isActive
+      ? siteNavigationMap.PROJECTS.href
       : `${siteNavigationMap.PROJECTS.href}?category=${encodeURIComponent(category)}`;
 
   return (

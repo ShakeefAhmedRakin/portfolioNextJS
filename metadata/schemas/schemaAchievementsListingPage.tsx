@@ -6,6 +6,7 @@ import SiteMetadata from "@/metadata/site-metadata";
 import { achievements } from "@/.velite";
 import GenerateAchievementSchema from "../generators/generate-achievement-schema";
 import { siteNavigationMap } from "@/content/site-navigation";
+import { getWebsiteUrl } from "@/lib/utils";
 
 export default function SetSchemaAchievementsListingPage() {
   const achievementsSchemas = achievements.map(GenerateAchievementSchema);
@@ -14,8 +15,8 @@ export default function SetSchemaAchievementsListingPage() {
     currentPageSchemas: [
       {
         "@type": "Blog",
-        "@id": `${process.env.WEBSITE_URL}/#${siteNavigationMap.ACHIEVEMENTS.key}`,
-        url: `${process.env.WEBSITE_URL}${siteNavigationMap.ACHIEVEMENTS.href}`,
+        "@id": `${getWebsiteUrl()}/#${siteNavigationMap.ACHIEVEMENTS.key}`,
+        url: `${getWebsiteUrl()}${siteNavigationMap.ACHIEVEMENTS.href}`,
         isPartOf: {
           "@id": websiteId,
         },

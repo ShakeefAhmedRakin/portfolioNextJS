@@ -10,3 +10,10 @@ export function isNavActive(
       link.href !== siteNavigationMap.HOME.href)
   );
 }
+
+export function externalLinkProps(isExternal: boolean) {
+  return {
+    target: isExternal ? "_blank" : ("_self" as const),
+    rel: isExternal ? "noopener noreferrer" : undefined,
+  };
+}

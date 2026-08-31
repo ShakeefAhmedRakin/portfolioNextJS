@@ -1,6 +1,6 @@
 import { HeaderWrapper, SectionWrapper } from "@/components/ui/wrappers";
 import { SkeletonProjectCard } from "./_components/project-card-skeleton";
-import { ANIMATE_FADE_UP } from "@/lib/animations";
+import { ANIMATE_FADE_UP } from "@/lib/utils/animations";
 import { cn } from "@/lib/utils";
 
 export default function Loading() {

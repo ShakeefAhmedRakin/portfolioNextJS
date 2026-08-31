@@ -1,16 +1,15 @@
 // lib/schema/breadcrumb.ts
 import type { BreadcrumbList, ListItem } from "schema-dts";
+import { getWebsiteUrl, slugToTitleCase } from "@/lib/utils";
 
 export function getBreadcrumbSchema(pathname: string): BreadcrumbList {
   const segments = pathname.split("/").filter(Boolean);
 
   const crumbs: { name: string; item: string | undefined }[] = [
-    { name: "Home", item: process.env.WEBSITE_URL },
+    { name: "Home", item: getWebsiteUrl() },
     ...segments.map((segment, index) => ({
-      name: decodeURIComponent(segment)
-        .replace(/-/g, " ")
-        .replace(/\b\w/g, (l) => l.toUpperCase()),
-      item: `${process.env.WEBSITE_URL}/${segments.slice(0, index + 1).join("/")}`,
+      name: slugToTitleCase(decodeURIComponent(segment)),
+      item: `${getWebsiteUrl()}/${segments.slice(0, index + 1).join("/")}`,
     })),
   ];
 

@@ -1,5 +1,6 @@
 import SiteConfig from "@/content/site-config";
 import type { ImageObject } from "schema-dts";
+import { getWebsiteUrl } from "@/lib/utils";
 
 export default function generateImageObjectSchema({
   id,
@@ -15,7 +16,7 @@ export default function generateImageObjectSchema({
   const imageObject: ImageObject = {
     "@type": "ImageObject",
     name: title,
-    contentUrl: `${process.env.WEBSITE_URL}${src}`,
+    contentUrl: `${getWebsiteUrl()}${src}`,
     caption: title,
     inLanguage: "en-US",
     creditText: SiteConfig.fullName,
@@ -24,8 +25,8 @@ export default function generateImageObjectSchema({
       name: SiteConfig.fullName,
     },
     copyrightNotice: `© ${SiteConfig.fullName}`,
-    license: `${process.env.WEBSITE_URL}/license`,
-    acquireLicensePage: `${process.env.WEBSITE_URL}/license`,
+    license: `${getWebsiteUrl()}/license`,
+    acquireLicensePage: `${getWebsiteUrl()}/license`,
   };
 
   if (id) {
@@ -33,8 +34,22 @@ export default function generateImageObjectSchema({
   }
 
   if (pageUrl) {
-    imageObject["url"] = `${process.env.WEBSITE_URL}${pageUrl}`;
+    imageObject["url"] = `${getWebsiteUrl()}${pageUrl}`;
   }
 
   return imageObject;
+}
+
+export function buildImageList(
+  main: { title: string; src: string },
+  contentImages: { title: string; src: string }[],
+  pageUrl: string,
+): ImageObject[] {
+  return [main, ...contentImages].map((image) =>
+    generateImageObjectSchema({
+      title: image.title,
+      src: image.src,
+      pageUrl,
+    }),
+  );
 }

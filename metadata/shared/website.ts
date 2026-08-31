@@ -4,11 +4,11 @@ import { mainHeroImageId } from "./main-hero-image";
 import { personId } from "./person";
 import { organizationId } from "./organization";
 import { siteNavigation } from "@/content/site-navigation";
-import { expertiseContent } from "@/content/home/expertise-section";
-import { skillSets } from "@/content/skills/skills";
-import { achievements, projects } from "@/.velite";
+import { achievements, projects, research } from "@/.velite";
+import { getExpertiseAndSkillTerms } from "./site-links";
+import { getWebsiteUrl } from "@/lib/utils";
 
-export const websiteId = `${process.env.WEBSITE_URL}/#website`;
+export const websiteId = `${getWebsiteUrl()}/#website`;
 
 export const websiteJsonLd: WebSite = {
   "@type": "WebSite",
@@ -18,7 +18,7 @@ export const websiteJsonLd: WebSite = {
   about: {
     "@id": personId,
   },
-  url: process.env.WEBSITE_URL,
+  url: getWebsiteUrl(),
   author: {
     "@id": personId,
   },
@@ -37,10 +37,7 @@ export const websiteJsonLd: WebSite = {
   keywords: [
     SiteConfig.fullName,
     SiteConfig.title,
-    ...expertiseContent.expertise.map((item) => item.title),
-    ...expertiseContent.expertise.flatMap((item) => item.points),
-    ...skillSets.map((group) => group.title),
-    ...skillSets.flatMap((group) => group.skills.map((skill) => skill.name)),
+    ...getExpertiseAndSkillTerms(),
   ],
   inLanguage: "en-US",
   hasPart: [
@@ -49,7 +46,7 @@ export const websiteJsonLd: WebSite = {
       .map((navItem) => {
         return {
           "@type": "WebPage",
-          "@id": `${process.env.WEBSITE_URL}/#${navItem.key}`,
+          "@id": `${getWebsiteUrl()}/#${navItem.key}`,
           name: `${navItem.title} Page`,
         };
       }),
@@ -57,20 +54,29 @@ export const websiteJsonLd: WebSite = {
       return {
         "@type": "BlogPosting",
         name: `${achievement.title} Page`,
-        "@id": `${process.env.WEBSITE_URL}${achievement.permalink}`,
+        "@id": `${getWebsiteUrl()}${achievement.permalink}`,
         headline: achievement.title,
         author: { "@id": personId },
-        image: `${process.env.WEBSITE_URL}${achievement.mainCover.src}`,
+        image: `${getWebsiteUrl()}${achievement.mainCover.src}`,
       };
     }),
     ...projects.map((project) => {
       return {
         "@type": "CollectionPage",
         name: `${project.title} Page`,
-        "@id": `${process.env.WEBSITE_URL}${project.permalink}`,
+        "@id": `${getWebsiteUrl()}${project.permalink}`,
         headline: project.title,
         author: { "@id": personId },
-        image: `${process.env.WEBSITE_URL}${project.thumbnail.src}`,
+        image: `${getWebsiteUrl()}${project.thumbnail.src}`,
+      };
+    }),
+    ...research.map((paper) => {
+      return {
+        "@type": "ScholarlyArticle",
+        name: `${paper.title} Page`,
+        "@id": `${getWebsiteUrl()}${paper.permalink}`,
+        headline: paper.title,
+        author: { "@id": personId },
       };
     }),
   ],

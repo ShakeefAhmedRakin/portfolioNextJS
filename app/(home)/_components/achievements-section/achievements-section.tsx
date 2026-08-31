@@ -3,13 +3,13 @@ import { achievements } from "@/.velite";
 import Image from "next/image";
 import { SectionHeader } from "@/components/ui/section-header";
 import { siteNavigationMap } from "@/content/site-navigation";
-import { ANIMATE_FADE_UP } from "@/lib/animations";
-import { cn } from "@/lib/utils";
+import { ANIMATE_FADE_UP } from "@/lib/utils/animations";
+import { cn, sortAchievementsByDate } from "@/lib/utils";
 
 export default function AchievementsSection() {
-  const featuredAchievements = achievements
-    .filter((achievement) => achievement.isFeatured)
-    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+  const featuredAchievements = sortAchievementsByDate(
+    achievements.filter((achievement) => achievement.isFeatured),
+  );
 
   return (
     <SectionWrapper

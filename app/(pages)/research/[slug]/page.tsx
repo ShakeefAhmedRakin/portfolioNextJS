@@ -6,7 +6,7 @@ import { headingVariants, TypographyP } from "@/components/ui/typography";
 import { PiNewspaperLight } from "react-icons/pi";
 
 import SiteMetadata from "@/metadata/site-metadata";
-import { ANIMATE_FADE_UP } from "@/lib/animations";
+import { ANIMATE_FADE_UP } from "@/lib/utils/animations";
 import { cn, formatDateString } from "@/lib/utils";
 
 import SetSchemaResearchPage from "@/metadata/schemas/schemaResearchPage";

@@ -13,6 +13,7 @@ import { siteNavigationMap } from "@/content/site-navigation";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React, { useEffect, useState } from "react";
+import { slugToTitleCase, truncate } from "@/lib/utils";
 
 const FADE_DURATION = 200;
 
@@ -65,21 +66,13 @@ export function Breadcrumbs() {
           {pathNames.map((link, index) => {
             const href = `/${pathNames.slice(0, index + 1).join(siteNavigationMap.HOME.href)}`;
             const isActive = href === displayedPath;
-            const linkLabel = link
-              .replace(/-/g, " ")
-              .replace(/\b\w/g, (char) => char.toUpperCase());
+            const linkLabel = slugToTitleCase(link);
 
             return (
               <React.Fragment key={index}>
                 <BreadcrumbItem>
                   {isActive ? (
-                    <BreadcrumbPage>
-                      {linkLabel.length > 40 ? (
-                        <>{linkLabel.substring(0, 40)}...</>
-                      ) : (
-                        <>{linkLabel}</>
-                      )}
-                    </BreadcrumbPage>
+                    <BreadcrumbPage>{truncate(linkLabel, 40)}</BreadcrumbPage>
                   ) : (
                     <BreadcrumbLink asChild>
                       <Link href={href} title={linkLabel}>

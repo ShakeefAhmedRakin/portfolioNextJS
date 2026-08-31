@@ -6,6 +6,7 @@ import SiteMetadata from "@/metadata/site-metadata";
 import { projects } from "@/.velite";
 import { siteNavigationMap } from "@/content/site-navigation";
 import GenerateProjectSchema from "../generators/generate-project-schema";
+import { getWebsiteUrl } from "@/lib/utils";
 
 export default function SetSchemaProjectsListingPage() {
   const projectSchemas = projects.map(GenerateProjectSchema);
@@ -14,8 +15,8 @@ export default function SetSchemaProjectsListingPage() {
     currentPageSchemas: [
       {
         "@type": "CollectionPage",
-        "@id": `${process.env.WEBSITE_URL}/#${siteNavigationMap.PROJECTS.key}`,
-        url: `${process.env.WEBSITE_URL}${siteNavigationMap.PROJECTS.href}`,
+        "@id": `${getWebsiteUrl()}/#${siteNavigationMap.PROJECTS.key}`,
+        url: `${getWebsiteUrl()}${siteNavigationMap.PROJECTS.href}`,
         isPartOf: {
           "@id": websiteId,
         },

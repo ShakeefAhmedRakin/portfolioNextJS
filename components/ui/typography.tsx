@@ -1,6 +1,6 @@
 import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
-import { HTMLAttributes } from "react";
+import { HTMLAttributes, ReactNode } from "react";
 import Link, { LinkProps } from "next/link";
 
 export const headingVariants = cva("tracking-tight", {
@@ -80,6 +80,28 @@ export function TypographyH5({ className, weight, ...props }: HeadingProps) {
       className={cn(headingVariants({ level: "h5", weight }), className)}
       {...props}
     />
+  );
+}
+
+/**
+ * Renders a heading with a chosen tag (for correct document outline)
+ * independent of its visual size (`level`) — e.g. a card title that must be
+ * an `h3` on the home page but an `h2` on a listing page, while always
+ * looking the same size.
+ */
+export function CardHeading({
+  as: Tag,
+  level,
+  className,
+  children,
+}: {
+  as: "h2" | "h3" | "h4";
+  level: NonNullable<VariantProps<typeof headingVariants>["level"]>;
+  className?: string;
+  children: ReactNode;
+}) {
+  return (
+    <Tag className={headingVariants({ level, className })}>{children}</Tag>
   );
 }
 

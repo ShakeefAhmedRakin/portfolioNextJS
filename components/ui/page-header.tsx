@@ -1,7 +1,7 @@
 import { TypographyH1, TypographyP } from "./typography";
 import { HeaderWrapper } from "./wrappers";
 import { cn } from "@/lib/utils";
-import { ANIMATE_FADE_UP } from "@/lib/animations";
+import { ANIMATE_FADE_UP } from "@/lib/utils/animations";
 
 export default function PageHeader({
   title,

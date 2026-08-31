@@ -2,7 +2,7 @@ import { buttonVariants } from "@/components/ui/button";
 import { SectionWrapper } from "@/components/ui/wrappers";
 import SiteMetadata from "@/metadata/site-metadata";
 import { siteNavigationMap } from "@/content/site-navigation";
-import { ANIMATE_FADE_UP } from "@/lib/animations";
+import { ANIMATE_FADE_UP } from "@/lib/utils/animations";
 import { cn } from "@/lib/utils";
 import getMetadata from "@/metadata/utils/get-metadata";
 import Link from "next/link";

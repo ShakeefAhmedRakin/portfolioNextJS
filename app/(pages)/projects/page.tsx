@@ -8,7 +8,7 @@ import { notFound } from "next/navigation";
 import { projects } from "@/.velite";
 import ProjectCard from "../../../components/ui/project-card";
 import { paragraphVariants } from "@/components/ui/typography";
-import { ANIMATE_FADE_UP } from "@/lib/animations";
+import { ANIMATE_FADE_UP } from "@/lib/utils/animations";
 import { cn, sortProjectsByDate } from "@/lib/utils";
 import SetSchemaProjectsListingPage from "@/metadata/schemas/schemaProjectsListingPage";
 

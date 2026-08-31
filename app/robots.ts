@@ -1,4 +1,5 @@
 import { MetadataRoute } from "next";
+import { getWebsiteUrl } from "@/lib/utils";
 
 export default function robots(): MetadataRoute.Robots {
   return {
@@ -8,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/", // Allow all robots to crawl all pages
       },
     ],
-    sitemap: `${process.env.WEBSITE_URL}/sitemap.xml`,
+    sitemap: `${getWebsiteUrl()}/sitemap.xml`,
   };
 }

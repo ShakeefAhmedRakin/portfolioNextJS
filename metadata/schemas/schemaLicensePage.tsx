@@ -5,6 +5,7 @@ import { organizationId } from "../shared/organization";
 import SiteMetadata from "@/metadata/site-metadata";
 
 import { siteNavigationMap } from "@/content/site-navigation";
+import { getWebsiteUrl } from "@/lib/utils";
 
 export default function SetSchemaLicensePage() {
   const graph = BaseSchema({
@@ -12,8 +13,8 @@ export default function SetSchemaLicensePage() {
     currentPageSchemas: [
       {
         "@type": "WebPage",
-        "@id": `${process.env.WEBSITE_URL}/#${siteNavigationMap.LICENSE.key}`,
-        url: `${process.env.WEBSITE_URL}${siteNavigationMap.LICENSE.href}`,
+        "@id": `${getWebsiteUrl()}/#${siteNavigationMap.LICENSE.key}`,
+        url: `${getWebsiteUrl()}${siteNavigationMap.LICENSE.href}`,
         name: SiteMetadata.LICENSE.title,
         description: SiteMetadata.LICENSE.description,
         isPartOf: {

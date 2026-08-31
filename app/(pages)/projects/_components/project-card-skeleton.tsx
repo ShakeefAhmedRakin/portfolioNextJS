@@ -1,4 +1,4 @@
-import { ANIMATE_FADE_UP } from "@/lib/animations";
+import { ANIMATE_FADE_UP } from "@/lib/utils/animations";
 import { cn } from "@/lib/utils";
 
 export function SkeletonProjectCard() {

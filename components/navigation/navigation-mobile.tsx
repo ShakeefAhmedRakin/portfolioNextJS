@@ -14,7 +14,7 @@ import Link from "next/link";
 import { siteNavigation } from "@/content/site-navigation";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
-import { isNavActive } from "@/lib/navigation";
+import { externalLinkProps, isNavActive } from "@/lib/utils/navigation";
 import { Button } from "../ui/button";
 import SiteConfig from "@/content/site-config";
 import { GetInTouchDialog } from "./get-in-touch-dialog";
@@ -52,8 +52,7 @@ export default function NavigationMobile() {
                     <Link
                       href={link.href}
                       onClick={handleDelayedClose}
-                      target={link.isExternal ? "_blank" : "_self"}
-                      rel={link.isExternal ? "noopener noreferrer" : undefined}
+                      {...externalLinkProps(link.isExternal)}
                       className={cn(
                         "hover:border-b-primary text-primary border-b-[1px] px-0.5 pb-2 text-base font-semibold duration-300",
                         isActive ? "border-b-primary" : "border-b-primary/10",

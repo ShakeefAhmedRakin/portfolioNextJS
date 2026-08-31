@@ -12,7 +12,7 @@ interface ScrollLinkProps {
   ariaLabel?: string;
 }
 
-export const ScrollLink: React.FC<ScrollLinkProps> = ({
+export function ScrollLink({
   to,
   offset = -90,
   children,
@@ -21,7 +21,7 @@ export const ScrollLink: React.FC<ScrollLinkProps> = ({
   as: Component = "button",
   title,
   ariaLabel,
-}) => {
+}: ScrollLinkProps) {
   const handleClick = (e: React.MouseEvent) => {
     e.preventDefault();
     const target = document.getElementById(to);
@@ -43,4 +43,4 @@ export const ScrollLink: React.FC<ScrollLinkProps> = ({
       {children}
     </Component>
   );
-};
+}

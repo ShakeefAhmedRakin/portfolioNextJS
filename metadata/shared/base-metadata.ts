@@ -1,12 +1,13 @@
 import SiteConfig from "@/content/site-config";
 import { Metadata } from "next";
+import { getWebsiteUrl } from "@/lib/utils";
 
 export const baseMetadata: Metadata = {
-  metadataBase: new URL(process.env.WEBSITE_URL || "http://localhost:3000"),
+  metadataBase: new URL(getWebsiteUrl()),
   authors: [
     {
       name: SiteConfig.fullName,
-      url: process.env.WEBSITE_URL,
+      url: getWebsiteUrl(),
     },
   ],
   creator: SiteConfig.fullName,
@@ -21,4 +22,8 @@ export const baseMetadata: Metadata = {
     ],
     apple: [{ url: "/images/favicon/180.png", sizes: "180x180" }],
   },
+
+  ...(process.env.GOOGLE_SITE_VERIFICATION
+    ? { verification: { google: process.env.GOOGLE_SITE_VERIFICATION } }
+    : {}),
 };

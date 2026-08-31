@@ -6,6 +6,7 @@ import SiteMetadata from "@/metadata/site-metadata";
 import { research } from "@/.velite";
 import { siteNavigationMap } from "@/content/site-navigation";
 import GenerateResearchSchema from "../generators/generate-research-schema";
+import { getWebsiteUrl } from "@/lib/utils";
 
 export default function SetSchemaResearchListingPage() {
   const researchSchemas = research.map(GenerateResearchSchema);
@@ -14,8 +15,8 @@ export default function SetSchemaResearchListingPage() {
     currentPageSchemas: [
       {
         "@type": "CollectionPage",
-        "@id": `${process.env.WEBSITE_URL}/#${siteNavigationMap.RESEARCH.key}`,
-        url: `${process.env.WEBSITE_URL}${siteNavigationMap.RESEARCH.href}`,
+        "@id": `${getWebsiteUrl()}/#${siteNavigationMap.RESEARCH.key}`,
+        url: `${getWebsiteUrl()}${siteNavigationMap.RESEARCH.href}`,
         isPartOf: {
           "@id": websiteId,
         },

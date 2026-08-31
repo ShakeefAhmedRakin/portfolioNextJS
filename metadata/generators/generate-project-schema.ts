@@ -1,25 +1,25 @@
 import { Projects } from "@/.velite";
 import { siteNavigationMap } from "@/content/site-navigation";
-import { extractImagesFromMDX } from "@/lib/utils";
+import { extractImagesFromMDX, getWebsiteUrl } from "@/lib/utils";
 import { TechArticle } from "schema-dts";
 import { personId } from "../shared/person";
 import { organizationId } from "../shared/organization";
-import generateImageObjectSchema from "./generate-image-object-schema";
+import { buildImageList } from "./generate-image-object-schema";
 
 export default function GenerateProjectSchema(project: Projects): TechArticle {
   const imagesInProject = extractImagesFromMDX(project.content);
 
   return {
     "@type": "TechArticle",
-    "@id": `${process.env.WEBSITE_URL}${project.permalink}`,
-    url: `${process.env.WEBSITE_URL}${project.permalink}`,
+    "@id": `${getWebsiteUrl()}${project.permalink}`,
+    url: `${getWebsiteUrl()}${project.permalink}`,
     name: project.title,
     headline: project.title,
     description: project.excerpt,
     dateModified: project.date,
     datePublished: project.date,
     isPartOf: {
-      "@id": `${process.env.WEBSITE_URL}/#${siteNavigationMap.PROJECTS.key}`,
+      "@id": `${getWebsiteUrl()}/#${siteNavigationMap.PROJECTS.key}`,
     },
     author: {
       "@id": personId,
@@ -29,21 +29,12 @@ export default function GenerateProjectSchema(project: Projects): TechArticle {
     },
     inLanguage: "en-US",
     mainEntityOfPage: {
-      "@id": `${process.env.WEBSITE_URL}${project.permalink}`,
+      "@id": `${getWebsiteUrl()}${project.permalink}`,
     },
-    image: [
-      generateImageObjectSchema({
-        title: project.title,
-        src: project.thumbnail.src,
-        pageUrl: project.permalink,
-      }),
-      ...imagesInProject.map((image) =>
-        generateImageObjectSchema({
-          title: image.title,
-          src: image.src,
-          pageUrl: project.permalink,
-        }),
-      ),
-    ],
+    image: buildImageList(
+      { title: project.title, src: project.thumbnail.src },
+      imagesInProject,
+      project.permalink,
+    ),
   };
 }

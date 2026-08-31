@@ -1,5 +1,5 @@
 import { projects as allProjects } from "@/.velite";
-import { sortProjectsByDate } from "@/lib/utils";
+import { chunkAlternating, sortProjectsByDate } from "@/lib/utils";
 import ProjectCard from "@/components/ui/project-card";
 
 export default function ProjectsShowcase() {
@@ -7,16 +7,7 @@ export default function ProjectsShowcase() {
     allProjects.filter((project) => project.isFeatured),
   );
 
-  const chunks = [];
-  let i = 0;
-  let toggle = true;
-
-  while (i < projects.length) {
-    const size = toggle ? 3 : 2;
-    chunks.push(projects.slice(i, i + size));
-    i += size;
-    toggle = !toggle;
-  }
+  const chunks = chunkAlternating(projects, [3, 2]);
 
   return (
     <ul className="list-none space-y-4">

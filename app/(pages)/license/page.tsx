@@ -1,7 +1,7 @@
 import PageHeader from "@/components/ui/page-header";
 import { SectionWrapper } from "@/components/ui/wrappers";
 import SiteMetadata from "@/metadata/site-metadata";
-import { ANIMATE_FADE_UP } from "@/lib/animations";
+import { ANIMATE_FADE_UP } from "@/lib/utils/animations";
 import { cn } from "@/lib/utils";
 import getMetadata from "@/metadata/utils/get-metadata";
 

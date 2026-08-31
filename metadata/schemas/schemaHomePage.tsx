@@ -5,6 +5,7 @@ import { mainHeroImageId } from "../shared/main-hero-image";
 import { personId } from "../shared/person";
 import { organizationId } from "../shared/organization";
 import { siteNavigationMap } from "@/content/site-navigation";
+import { getWebsiteUrl } from "@/lib/utils";
 
 export default function SetSchemaHomePage() {
   const graph = BaseSchema({
@@ -12,12 +13,12 @@ export default function SetSchemaHomePage() {
     currentPageSchemas: [
       {
         "@type": "WebPage",
-        "@id": `${process.env.WEBSITE_URL}/#${siteNavigationMap.HOME.key}`,
+        "@id": `${getWebsiteUrl()}/#${siteNavigationMap.HOME.key}`,
         mainEntityOfPage: {
           "@type": "WebPage",
-          "@id": `${process.env.WEBSITE_URL}/#${siteNavigationMap.HOME.key}`,
+          "@id": `${getWebsiteUrl()}/#${siteNavigationMap.HOME.key}`,
         },
-        url: process.env.WEBSITE_URL,
+        url: getWebsiteUrl(),
         isPartOf: {
           "@id": websiteId,
         },

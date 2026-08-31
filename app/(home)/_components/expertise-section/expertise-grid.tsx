@@ -5,7 +5,7 @@ import {
 } from "@/components/ui/typography";
 import { expertiseContent } from "@/content/home/expertise-section";
 import { cn } from "@/lib/utils";
-import { ANIMATE_FADE_UP } from "@/lib/animations";
+import { ANIMATE_FADE_UP } from "@/lib/utils/animations";
 
 export default function ExpertiseGrid() {
   return (

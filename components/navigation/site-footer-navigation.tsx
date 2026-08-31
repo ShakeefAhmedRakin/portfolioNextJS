@@ -1,6 +1,7 @@
 import { NavItem } from "@/content/site-navigation";
 import { headingVariants, paragraphVariants } from "../ui/typography";
 import Link from "next/link";
+import { externalLinkProps } from "@/lib/utils/navigation";
 
 export default function SiteFooterNavigation({
   links,
@@ -17,8 +18,7 @@ export default function SiteFooterNavigation({
           <li key={`footer-nav-${link.ariaLabel}`}>
             <Link
               href={link.href}
-              target={link.isExternal ? "_blank" : "_self"}
-              rel={link.isExternal ? "noopener noreferrer" : undefined}
+              {...externalLinkProps(link.isExternal)}
               className={paragraphVariants({
                 level: "small",
                 className:

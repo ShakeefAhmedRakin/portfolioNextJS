@@ -2,16 +2,10 @@ import { workExperiences } from "@/.velite";
 import { SectionWrapper } from "@/components/ui/wrappers";
 import { SectionHeader } from "@/components/ui/section-header";
 import { siteNavigationMap } from "@/content/site-navigation";
-import { ANIMATE_FADE_UP } from "@/lib/animations";
+import { ANIMATE_FADE_UP } from "@/lib/utils/animations";
 import { cn, sortJobsByDate } from "@/lib/utils";
-import { containerVariants } from "@/components/ui/container-variants";
-import {
-  headingVariants,
-  TypographyUnOrderedList,
-} from "@/components/ui/typography";
-import Link from "next/link";
-import WorkDuration from "@/components/ui/work-duration";
-import WorkDate from "@/components/ui/work-dates";
+import { TypographyUnOrderedList } from "@/components/ui/typography";
+import { WorkExperienceListItem } from "@/components/ui/work-experience-list-item";
 
 export default function ExperienceSection() {
   const sortedWork = sortJobsByDate(workExperiences);
@@ -36,50 +30,7 @@ export default function ExperienceSection() {
         )}
       >
         {sortedWork.map((work) => (
-          <li
-            key={work.slug}
-            className={cn(
-              "relative px-4 pt-3 pb-4 md:ml-6",
-              ANIMATE_FADE_UP,
-              containerVariants({ variant: "outlined" }),
-            )}
-          >
-            <div className="flex justify-between">
-              <WorkDuration work={work} />
-              <WorkDate work={work} />
-            </div>
-            <h3
-              className={headingVariants({
-                level: "h4",
-              })}
-            >
-              {work.position}
-            </h3>
-            {work.companyLink ? (
-              <Link
-                href={work.companyLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                title={`View ${work.company} website`}
-                aria-label={`View ${work.company} website`}
-                className={headingVariants({
-                  level: "h5",
-                  weight: "light",
-                  className: "underline underline-offset-2",
-                })}
-              >
-                <h4 className="inline">{work.company}</h4>
-              </Link>
-            ) : (
-              <h4
-                className={headingVariants({
-                  level: "h5",
-                  weight: "light",
-                })}
-              >
-                {work.company}
-              </h4>
-            )}
+          <WorkExperienceListItem key={work.slug} work={work}>
             <TypographyUnOrderedList
               level="small"
               className="text-foreground/65 mt-2 ml-4"
@@ -88,7 +39,7 @@ export default function ExperienceSection() {
                 <li key={highlight}>{highlight}</li>
               ))}
             </TypographyUnOrderedList>
-          </li>
+          </WorkExperienceListItem>
         ))}
       </ol>
     </SectionWrapper>

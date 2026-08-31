@@ -1,12 +1,11 @@
 import { achievements, workExperiences } from "@/.velite";
 import SiteConfig from "@/content/site-config";
-import { siteSocials } from "@/content/site-socials";
 import type { Person } from "schema-dts";
 import { mainHeroImageId } from "./main-hero-image";
-import { expertiseContent } from "@/content/home/expertise-section";
-import { skillSets } from "@/content/skills/skills";
+import { getExpertiseAndSkillTerms, getSiteSameAs } from "./site-links";
+import { getWebsiteUrl } from "@/lib/utils";
 
-export const personId = `${process.env.WEBSITE_URL}/#person`;
+export const personId = `${getWebsiteUrl()}/#person`;
 
 export const personJsonLd: Person = {
   "@type": "Person",
@@ -14,7 +13,7 @@ export const personJsonLd: Person = {
   name: SiteConfig.fullName,
   description: SiteConfig.heroDescription,
   jobTitle: SiteConfig.title,
-  url: process.env.WEBSITE_URL,
+  url: getWebsiteUrl(),
   email: `mailto:${SiteConfig.email}`,
   image: {
     "@id": mainHeroImageId,
@@ -40,18 +39,8 @@ export const personJsonLd: Person = {
       ? { sameAs: work.companyLink, url: work.companyLink }
       : {}),
   })),
-  sameAs: [
-    ...[process.env.WEBSITE_URL].filter(
-      (url): url is string => typeof url === "string",
-    ),
-    ...siteSocials.map((social) => social.url),
-  ],
+  sameAs: getSiteSameAs(),
   award: achievements.map((achievement) => achievement.title),
-  knowsAbout: [
-    ...expertiseContent.expertise.map((item) => item.title),
-    ...expertiseContent.expertise.flatMap((item) => item.points),
-    ...skillSets.map((group) => group.title),
-    ...skillSets.flatMap((group) => group.skills.map((skill) => skill.name)),
-  ],
+  knowsAbout: getExpertiseAndSkillTerms(),
   knowsLanguage: SiteConfig.languages,
 };

@@ -3,7 +3,8 @@ import Link from "next/link";
 import { buttonVariants } from "@/components/ui/button";
 import { TypographyH2, TypographyP } from "./typography";
 import { cn } from "@/lib/utils";
-import { ANIMATE_FADE_UP } from "@/lib/animations";
+import { ANIMATE_FADE_UP } from "@/lib/utils/animations";
+import { externalLinkProps } from "@/lib/utils/navigation";
 
 interface SectionHeaderProps {
   title: string;
@@ -26,8 +27,7 @@ export function SectionHeader({
         <TypographyH2 className="max-w-3xl">{title}</TypographyH2>
         <Link
           href={linkHref}
-          target={linkHref.startsWith("http") ? "_blank" : "_self"}
-          rel={linkHref.startsWith("http") ? "noopener noreferrer" : undefined}
+          {...externalLinkProps(linkHref.startsWith("http"))}
           className={buttonVariants({
             variant: "outline",
             className: "bg-transparent text-xs",

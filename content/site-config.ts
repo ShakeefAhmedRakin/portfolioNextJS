@@ -37,6 +37,16 @@ const SiteConfig = {
   email: "shakeef.rakin321@gmail.com",
   resumeLink:
     "https://drive.google.com/file/d/1KEX5j0xOPu2IFVyMyHDRlAR04qb7Pauz/view",
+  // Used for Twitter/X Card metadata (og:card creator/site handles), including the "@"
+  twitterHandle: "@shakeefahmed",
+  // Toggle whole home-page sections on/off — e.g. set `research: false` if you
+  // have no published papers. Does not remove the underlying /achievements,
+  // /research routes, only their section on the home page.
+  sections: {
+    achievements: true,
+    research: true,
+    blogs: true,
+  },
 };
 
 export default SiteConfig;

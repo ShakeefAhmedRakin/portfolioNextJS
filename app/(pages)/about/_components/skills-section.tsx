@@ -2,7 +2,7 @@ import { headingVariants, paragraphVariants } from "@/components/ui/typography";
 import { SectionWrapper } from "@/components/ui/wrappers";
 
 import { skillSets } from "@/content/skills/skills";
-import { ANIMATE_FADE_UP } from "@/lib/animations";
+import { ANIMATE_FADE_UP } from "@/lib/utils/animations";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 

@@ -1,35 +1,22 @@
-import { clsx, type ClassValue } from "clsx";
-import { twMerge } from "tailwind-merge";
 import { Achievements, Projects, Research, workExperiences } from "@/.velite";
 
-export function cn(...inputs: ClassValue[]) {
-  return twMerge(clsx(inputs));
+function byDateDesc<T>(getDate: (item: T) => string) {
+  return (a: T, b: T) =>
+    new Date(getDate(b)).getTime() - new Date(getDate(a)).getTime();
 }
 
 export function sortJobsByDate(
   jobs: typeof workExperiences,
 ): typeof workExperiences {
-  return [...jobs].sort((a, b) => {
-    const dateA = new Date(a.startDate).getTime();
-    const dateB = new Date(b.startDate).getTime();
-    return dateB - dateA;
-  });
+  return [...jobs].sort(byDateDesc((job) => job.startDate));
 }
 
 export function sortAchievementsByDate(items: Achievements[]): Achievements[] {
-  return [...items].sort((a, b) => {
-    const dateA = new Date(a.date).getTime();
-    const dateB = new Date(b.date).getTime();
-    return dateB - dateA;
-  });
+  return [...items].sort(byDateDesc((item) => item.date));
 }
 
 export function sortResearchByDate(items: Research[]): Research[] {
-  return [...items].sort((a, b) => {
-    const dateA = new Date(a.date).getTime();
-    const dateB = new Date(b.date).getTime();
-    return dateB - dateA;
-  });
+  return [...items].sort(byDateDesc((item) => item.date));
 }
 
 export function sortProjectsByDate(items: Projects[]): Projects[] {
@@ -37,9 +24,7 @@ export function sortProjectsByDate(items: Projects[]): Projects[] {
     if (a.isOngoing !== b.isOngoing) {
       return a.isOngoing ? -1 : 1;
     }
-    const dateA = new Date(a.date).getTime();
-    const dateB = new Date(b.date).getTime();
-    return dateB - dateA;
+    return byDateDesc<Projects>((item) => item.date)(a, b);
   });
 }
 
@@ -73,6 +58,10 @@ export function getJobDurationString(
   return [yearStr, monthStr].filter(Boolean).join(" ");
 }
 
+function formatMonthYear(date: Date, month: "short" | "long") {
+  return date.toLocaleString("default", { month, year: "numeric" });
+}
+
 export function getJobStartEndDateString(
   start: string,
   endDate: string | null,
@@ -80,34 +69,12 @@ export function getJobStartEndDateString(
   const startDate = new Date(start);
   const end = endDate ? new Date(endDate) : null;
 
-  const format = (date: Date) =>
-    date.toLocaleString("default", { month: "short", year: "numeric" });
-
-  const startStr = format(startDate);
-  const endStr = end ? format(end) : "Present";
+  const startStr = formatMonthYear(startDate, "short");
+  const endStr = end ? formatMonthYear(end, "short") : "Present";
 
   return `${startStr} – ${endStr}`;
 }
 
 export function formatDateString(date: string) {
-  const parsedDate = new Date(date);
-  return parsedDate.toLocaleString("default", {
-    month: "long",
-    year: "numeric",
-  });
-}
-
-export function arrayBufferToBase64(buffer: ArrayBuffer): string {
-  return `data:image/png;base64,${Buffer.from(buffer).toString("base64")}`;
-}
-
-export function extractImagesFromMDX(content: string) {
-  const matches = [...content.matchAll(/\{src:"([^"]+)",alt:"([^"]+)"\}/g)];
-
-  const images = matches.map((m) => ({
-    src: m[1],
-    title: m[2],
-  }));
-
-  return images;
+  return formatMonthYear(new Date(date), "long");
 }

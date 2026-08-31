@@ -8,6 +8,7 @@ import BlogsSection from "./_components/blogs-section/blogs-section";
 import SetSchemaHomePage from "@/metadata/schemas/schemaHomePage";
 import getMetadata from "@/metadata/utils/get-metadata";
 import SiteMetadata from "@/metadata/site-metadata";
+import SiteConfig from "@/content/site-config";
 
 export function generateMetadata() {
   return getMetadata(SiteMetadata.HOME);
@@ -20,10 +21,10 @@ export default function HomePage() {
       <HeroSection />
       <ExpertiseSection />
       <ExperienceSection />
-      <AchievementsSection />
+      {SiteConfig.sections.achievements && <AchievementsSection />}
       <ProjectsSection />
-      <ResearchSection />
-      <BlogsSection />
+      {SiteConfig.sections.research && <ResearchSection />}
+      {SiteConfig.sections.blogs && <BlogsSection />}
     </>
   );
 }

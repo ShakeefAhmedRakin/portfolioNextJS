@@ -1,8 +1,8 @@
 import { Research } from "@/.velite";
 import { badgeVariants } from "./badge";
 import { cn, formatDateString } from "@/lib/utils";
-import { ANIMATE_FADE_UP } from "@/lib/animations";
-import { headingVariants, TypographyP } from "./typography";
+import { ANIMATE_FADE_UP } from "@/lib/utils/animations";
+import { CardHeading, TypographyP } from "./typography";
 import { buttonVariants } from "./button";
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
@@ -43,25 +43,13 @@ export default function ResearchCard({
           </li>
         )}
       </ul>
-      {isHomePage ? (
-        <h3
-          className={headingVariants({
-            level: "h4",
-            className: "line-clamp-2",
-          })}
-        >
-          {paper.title}
-        </h3>
-      ) : (
-        <h2
-          className={headingVariants({
-            level: "h4",
-            className: "line-clamp-2",
-          })}
-        >
-          {paper.title}
-        </h2>
-      )}
+      <CardHeading
+        as={isHomePage ? "h3" : "h2"}
+        level="h4"
+        className="line-clamp-2"
+      >
+        {paper.title}
+      </CardHeading>
       <time
         dateTime={paper.date}
         className="text-foreground/70 text-xs font-semibold"

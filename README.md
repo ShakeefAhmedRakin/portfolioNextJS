@@ -6,8 +6,8 @@ A performant portfolio website built with Next.js 15, featuring a content-driven
 
 ### Core Framework
 
-- **Next.js 15.3.8** - React framework with App Router architecture
-- **React 19.0.0** - Latest React with concurrent features
+- **Next.js 15.5** - React framework with App Router architecture
+- **React 19** - Latest React with concurrent features
 - **TypeScript 5** - Type-safe development with strict mode enabled
 - **Turbopack** - Fast development bundler (enabled in dev mode)
 
@@ -108,8 +108,12 @@ A performant portfolio website built with Next.js 15, featuring a content-driven
 │   ├── schemas/                  # JSON-LD schema components
 │   ├── generators/               # Metadata generators
 │   └── shared/                   # Shared metadata utilities
-├── lib/                          # Utility functions
-├── hooks/                        # React hooks
+├── lib/
+│   ├── client-observer.ts        # Client-side intersection observer
+│   └── utils/                    # Pure utility functions, one concern per file
+│       ├── cn.ts / dates.ts / images.ts / arrays.ts / strings.ts
+│       ├── navigation.ts / animations.ts / site-url.ts
+│       └── index.ts              # re-exports everything; import from "@/lib/utils"
 ├── types/                        # TypeScript type definitions
 └── public/                       # Static assets
 ```
@@ -148,7 +152,7 @@ The project uses **Velite** for type-safe content management:
 - **Color System**: OKLCH color space for consistent colors
 - **Typography**: Roboto variable font with fallbacks
 - **Responsive Design**: Mobile-first approach with Tailwind breakpoints
-- **Dark Theme**: Built-in dark mode support (ready for implementation)
+- **Dark Theme**: Dark-mode only — a single OKLCH palette on `:root`, no light/dark toggle
 
 ### SEO Implementation
 
@@ -242,7 +246,12 @@ The project uses **Velite** for type-safe content management:
 
 ### Environment Variables
 
-- `WEBSITE_URL` - Base URL for metadata and sitemap generation
+Copy `.env.example` to `.env.local` and fill in the values you need.
+
+- `WEBSITE_URL` - **Required.** Base URL of the deployed site, no trailing slash (e.g. `https://example.com`). Used to build canonical URLs, Open Graph/Twitter URLs, `sitemap.xml`, `robots.txt`, and every JSON-LD `@id`/`url` field. If left unset, the build still succeeds, but it falls back to `http://localhost:3000` everywhere — meaning canonical tags, the sitemap, robots.txt, and structured data will all point at localhost in production instead of failing loudly.
+- `GOOGLE_SITE_VERIFICATION` - Optional. Google Search Console site-verification token (the `content` value from the HTML tag verification method). When unset, no verification meta tag is rendered.
+- `NEXT_PUBLIC_GA_ID` - Optional. Google Analytics 4 Measurement ID (starts with `G-`). When unset, the GA4 script is not injected at all.
+- `ENVIRONMENT` - Optional. Set to `development` to render the Vercel Toolbar in the root layout. When unset, the toolbar is simply not rendered.
 
 ### Build Process
 

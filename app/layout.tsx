@@ -20,6 +20,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   const shouldInjectToolbar = process.env.ENVIRONMENT === "development";
+  // Vercel Analytics/Speed Insights no-op safely when not deployed on Vercel,
+  // so this is enabled by default; set NEXT_PUBLIC_DISABLE_VERCEL_ANALYTICS=true
+  // to opt out entirely (e.g. deploying elsewhere and don't want the scripts loaded).
+  const shouldRenderVercelAnalytics =
+    process.env.NEXT_PUBLIC_DISABLE_VERCEL_ANALYTICS !== "true";
   return (
     <html lang="en" className={roboto.variable}>
       <body className={`relative antialiased`}>
@@ -36,8 +41,12 @@ export default function RootLayout({
           {children}
         </main>
         <SiteFooter />
-        <Analytics />
-        <SpeedInsights />
+        {shouldRenderVercelAnalytics && (
+          <>
+            <Analytics />
+            <SpeedInsights />
+          </>
+        )}
         {shouldInjectToolbar && <VercelToolbar />}
       </body>
     </html>

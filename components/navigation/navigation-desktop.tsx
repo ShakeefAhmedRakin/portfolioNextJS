@@ -1,7 +1,7 @@
 "use client";
 import { siteNavigation } from "@/content/site-navigation";
 import { cn } from "@/lib/utils";
-import { isNavActive } from "@/lib/navigation";
+import { externalLinkProps, isNavActive } from "@/lib/utils/navigation";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -18,8 +18,7 @@ export default function NavigationDesktop() {
               <li key={link.title}>
                 <Link
                   href={link.href}
-                  target={link.isExternal ? "_blank" : "_self"}
-                  rel={link.isExternal ? "noopener noreferrer" : undefined}
+                  {...externalLinkProps(link.isExternal)}
                   className={cn(
                     "hover:border-b-primary border-b-[1px] px-0.5 pb-[1px] text-sm font-semibold duration-300",
                     isActive ? "border-b-primary" : "border-b-primary/10",

@@ -1,6 +1,6 @@
 import { paragraphVariants } from "@/components/ui/typography";
 import { expertiseContent } from "@/content/home/expertise-section";
-import { ANIMATE_FADE_UP } from "@/lib/animations";
+import { ANIMATE_FADE_UP } from "@/lib/utils/animations";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { Fragment } from "react";

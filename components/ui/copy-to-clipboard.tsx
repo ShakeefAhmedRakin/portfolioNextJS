@@ -8,11 +8,11 @@ interface CopyToClipboardProps {
   className?: string;
 }
 
-export const CopyToClipboard: React.FC<CopyToClipboardProps> = ({
+export function CopyToClipboard({
   text,
   children,
   className = "",
-}) => {
+}: CopyToClipboardProps) {
   const handleCopy = async () => {
     try {
       await navigator.clipboard.writeText(text);
@@ -29,4 +29,4 @@ export const CopyToClipboard: React.FC<CopyToClipboardProps> = ({
       {children}
     </button>
   );
-};
+}
